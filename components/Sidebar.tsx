@@ -1,5 +1,5 @@
 import React from 'react';
-import { LayoutDashboard, Building2, FileText, BrainCircuit, PieChart } from 'lucide-react';
+import { LayoutDashboard, Building2, FileText, BrainCircuit, Wand2 } from 'lucide-react';
 
 interface SidebarProps {
   activeTab: string;
@@ -10,6 +10,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
   const menuItems = [
     { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
     { id: 'hospitals', label: 'Unidades Hospitalares', icon: Building2 },
+    { id: 'documents', label: 'Gerador ETP / DFD / TR', icon: Wand2 },
     { id: 'audit', label: 'Auditoria IA', icon: BrainCircuit },
     { id: 'reports', label: 'Relatórios & Pareceres', icon: FileText },
   ];

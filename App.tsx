@@ -4,6 +4,7 @@ import Dashboard from './components/Dashboard';
 import HospitalList from './components/HospitalList';
 import AIAudit from './components/AIAudit';
 import Reports from './components/Reports';
+import DocumentGenerator from './components/DocumentGenerator';
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -14,6 +15,8 @@ const App: React.FC = () => {
         return <Dashboard />;
       case 'hospitals':
         return <HospitalList />;
+      case 'documents':
+        return <DocumentGenerator />;
       case 'audit':
         return <AIAudit />;
       case 'reports':
