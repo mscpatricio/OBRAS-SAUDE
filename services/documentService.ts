@@ -109,6 +109,10 @@ export const generateDocument = async (
   type: DocType,
   data: DemandInput
 ): Promise<string> => {
+  if (!process.env.API_KEY) {
+    return `## ${DOC_TITLES[type]}\n\n> **Geração por IA indisponível nesta versão pública.**\n\nA chave de API do Gemini (\`GEMINI_API_KEY\`) não está configurada neste ambiente. A interface, navegação e exportação (PDF/DOCX) funcionam normalmente, mas a redação automática do documento exige uma chave.\n\n**Para habilitar a geração:**\n1. Obtenha uma chave gratuita em https://aistudio.google.com/apikey\n2. Rode o app localmente com um arquivo \`.env.local\` contendo \`GEMINI_API_KEY=sua_chave\`\n3. Execute \`npm install\` e \`npm run dev\``;
+  }
+
   try {
     const prompt = `
 ${buildContext(data)}
