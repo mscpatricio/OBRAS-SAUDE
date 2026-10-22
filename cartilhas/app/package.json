@@ -1,0 +1,24 @@
+{
+  "name": "dentista-tea-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minha visita ao dentista — app para iOS e Android (perfis Dentista e Criança) sobre atendimento odontológico à pessoa com TEA. Coautoria: Dr. Patrício Almeida.",
+  "scripts": {
+    "start": "npx http-server www -p 8080 -c-1",
+    "icons": "node build-icons.mjs",
+    "screenshots": "node screenshots.mjs",
+    "test": "node test-flow.mjs",
+    "cap:init": "npx cap init \"Dentista TEA\" br.com.dentistatea.app --web-dir www",
+    "cap:add": "npx cap add android && npx cap add ios",
+    "cap:sync": "npx cap sync",
+    "android": "npx cap open android",
+    "ios": "npx cap open ios"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^6.1.0",
+    "@capacitor/cli": "^6.1.0",
+    "@capacitor/core": "^6.1.0",
+    "@capacitor/ios": "^6.1.0",
+    "http-server": "^14.1.1"
+  }
+}

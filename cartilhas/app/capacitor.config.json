@@ -1,0 +1,8 @@
+{
+  "appId": "br.com.dentistatea.app",
+  "appName": "Dentista TEA",
+  "webDir": "www",
+  "server": { "androidScheme": "https" },
+  "ios": { "contentInset": "always", "backgroundColor": "#EAF6FF" },
+  "android": { "backgroundColor": "#EAF6FF", "allowMixedContent": false }
+}
