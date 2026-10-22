@@ -6,7 +6,8 @@ composto por duas peças que trabalham juntas:
 | Peça | Para quem | Arquivo-fonte | PDF |
 |---|---|---|---|
 | **Cartilha do cirurgião-dentista** (8 páginas A4): manejo antes, durante e depois da consulta, informativo sobre o TEA e ficha do perfil do paciente | Dentista e equipe do consultório | `cartilha-dentista/index.html` | `dist/Cartilha-Cirurgiao-Dentista-TEA.pdf` |
-| **Card "Minha visita ao dentista"** (frente e verso A4): história social ilustrada em 10 passos, sinais combinados (PARE / pausa / tudo bem), checklist "Eu consegui!" e orientações para quem cuida, com mini-card recortável | Paciente e cuidadores (entregue pelo dentista) | `card-paciente/index.html` | `dist/Card-Minha-Visita-ao-Dentista.pdf` |
+| **Cartilha "Minha visita ao dentista"** (15 páginas A4): história social detalhada em 20 passos, cada um com ilustração grande, "o que eu posso sentir" (som, luz, gosto, toque, cheiro) e "o que eu posso fazer"; páginas "Quem eu vou encontrar", "O que tem na sala do dentista", "Meus sinais", checklist "Eu consegui!" com espaço para carimbos e guia para quem cuida | Paciente e cuidadores (entregue pelo dentista) | `cartilha-paciente/index.html` | `dist/Cartilha-Minha-Visita-ao-Dentista.pdf` |
+| **Card resumido "Minha visita ao dentista"** (frente e verso A4): versão curta em 10 passos, sinais combinados, checklist e mini-card recortável | Paciente e cuidadores (acesso rápido) | `card-paciente/index.html` | `dist/Card-Minha-Visita-ao-Dentista.pdf` |
 
 A cartilha mescla os três formatos pedidos: **sequência visual da consulta**, **história social ilustrada**
 e **passo a passo em quadrinhos**.
@@ -20,6 +21,7 @@ cartilhas/
 │   ├── style.css     # estilo de impressão compartilhado (A4, fontes, caixas)
 │   └── fonts/        # Baloo 2, Comic Neue e Nunito (Google Fonts, licença OFL)
 ├── cartilha-dentista/index.html
+├── cartilha-paciente/index.html   # os 20 passos ficam em um array no fim do arquivo
 ├── card-paciente/index.html
 ├── build/
 │   ├── render.mjs         # gera PDF + PNG de cada página com o Chromium (Playwright)
@@ -41,7 +43,7 @@ pose, cor de roupa ou texto de balão, basta editar a cena correspondente.
 
 ```bash
 npm i -D playwright            # uma vez; ou use uma instalação global
-node cartilhas/build/render.mjs            # gera as duas peças
+node cartilhas/build/render.mjs            # gera as três peças
 node cartilhas/build/render.mjs card-paciente   # só uma delas
 node cartilhas/build/render.mjs preview-cenas   # PNGs com todas as cenas, para revisão
 ```

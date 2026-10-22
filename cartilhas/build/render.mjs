@@ -21,6 +21,7 @@ fs.mkdirSync(dist, { recursive: true });
 const DOCS = {
   'cartilha-dentista': { file: 'cartilha-dentista/index.html', out: 'Cartilha-Cirurgiao-Dentista-TEA.pdf', format: 'A4' },
   'card-paciente': { file: 'card-paciente/index.html', out: 'Card-Minha-Visita-ao-Dentista.pdf', format: 'A4' },
+  'cartilha-paciente': { file: 'cartilha-paciente/index.html', out: 'Cartilha-Minha-Visita-ao-Dentista.pdf', format: 'A4' },
   'preview-cenas': { file: 'build/preview-cenas.html', out: 'preview-cenas.pdf', format: 'A4', pngOnly: true },
 };
 

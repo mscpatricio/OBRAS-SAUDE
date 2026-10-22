@@ -208,7 +208,9 @@
       headphones: !!o.headphones, sunglasses: !!o.sunglasses, glasses: !!o.glasses, mask: !!o.mask,
       holdL: o.holdL || null, holdR: o.holdR || null, blush: !!o.blush, skirt: !!o.skirt,
       sleeveColor: o.coat || o.shirt || '#F7C21B', name: o.name || '',
+      maskUp: !!o.maskUp, gloves: !!o.gloves, bib: !!o.bib,
     };
+    const handColor = c.gloves ? '#A8D8EA' : c.skin;
     let out = '';
     // cabelo (parte de trás)
     out += hairSvg(c.hairStyle, c.hair, 'back');
@@ -236,6 +238,9 @@
       out += `<circle cx="100" cy="170" r="3" fill="${OUT}"/><circle cx="100" cy="190" r="3" fill="${OUT}"/>`;
       out += `<rect x="118" y="160" width="22" height="20" rx="3" fill="${c.coat}" ${S}/>`;
     }
+    if (c.bib) {
+      out += `<path d="M64 126 Q100 140 136 126 L138 196 Q100 204 62 196 Z" fill="#CFEFF7" ${S}/><path d="M84 118 Q100 130 116 118" fill="none" ${S}/>`;
+    }
     // braços
     const L = armPath('L', c.armL, c, c.sleeve);
     const R = armPath('R', c.armR, c, c.sleeve);
@@ -246,9 +251,9 @@
     // mãos
     const hand = (h, pose) => {
       if (pose === 'stop' || pose === 'ok') {
-        return `<path d="M${h[0] - 12} ${h[1] + 6} L${h[0] - 12} ${h[1] - 14} L${h[0] - 4} ${h[1] - 20} L${h[0] + 4} ${h[1] - 22} L${h[0] + 12} ${h[1] - 16} L${h[0] + 14} ${h[1] + 2} Q${h[0]} ${h[1] + 14} ${h[0] - 12} ${h[1] + 6} Z" fill="${c.skin}" ${S}/>`;
+        return `<path d="M${h[0] - 12} ${h[1] + 6} L${h[0] - 12} ${h[1] - 14} L${h[0] - 4} ${h[1] - 20} L${h[0] + 4} ${h[1] - 22} L${h[0] + 12} ${h[1] - 16} L${h[0] + 14} ${h[1] + 2} Q${h[0]} ${h[1] + 14} ${h[0] - 12} ${h[1] + 6} Z" fill="${handColor}" ${S}/>`;
       }
-      return `<circle cx="${h[0]}" cy="${h[1]}" r="11" fill="${c.skin}" ${S}/>`;
+      return `<circle cx="${h[0]}" cy="${h[1]}" r="11" fill="${handColor}" ${S}/>`;
     };
     const lateL = c.armL === 'ears', lateR = c.armR === 'ears';
     if (!lateL) out += hand(L.hand, c.armL);
@@ -263,7 +268,9 @@
     out += hairSvg(c.hairStyle, c.hair, 'front');
     if (lateL) out += hand(L.hand, c.armL);
     if (lateR) out += hand(R.hand, c.armR);
-    if (c.mask) {
+    if (c.maskUp) {
+      out += `<path d="M64 84 Q100 78 136 84 L132 112 Q100 124 68 112 Z" fill="#A8D8EA" ${S}/><line x1="64" y1="86" x2="52" y2="76" ${S}/><line x1="136" y1="86" x2="148" y2="76" ${S}/><line x1="68" y1="110" x2="54" y2="92" ${S}/><line x1="132" y1="110" x2="146" y2="92" ${S}/>`;
+    } else if (c.mask) {
       out += `<rect x="76" y="108" width="48" height="22" rx="6" fill="#A8D8EA" ${S}/><line x1="76" y1="114" x2="54" y2="88" ${S}/><line x1="124" y1="114" x2="146" y2="88" ${S}/>`;
     }
     if (c.headphones) {
@@ -301,6 +308,11 @@
   ITEMS.tablet = () => `<g><rect x="-34" y="-24" width="68" height="48" rx="5" fill="#2C3E50" ${S}/><rect x="-29" y="-19" width="58" height="38" rx="2" fill="#AED6F1"/><polygon points="-6,-10 10,0 -6,10" fill="#FFFFFF" ${S}/></g>`;
   ITEMS.pen = () => `<g transform="rotate(35)"><rect x="-4" y="-28" width="8" height="44" rx="3" fill="#F39C12" ${S}/><polygon points="-4,16 4,16 0,26" fill="#F7D6B9" ${S}/></g>`;
   ITEMS.card = () => `<g transform="rotate(-8)"><rect x="-30" y="-20" width="60" height="42" rx="4" fill="#FFFFFF" ${S}/><rect x="-24" y="-13" width="12" height="12" rx="2" fill="#F7C21B"/><rect x="-8" y="-13" width="12" height="12" rx="2" fill="#5DADE2"/><rect x="8" y="-13" width="12" height="12" rx="2" fill="#58D68D"/><rect x="-24" y="4" width="44" height="4" rx="2" fill="#BDC3C7"/><rect x="-24" y="12" width="30" height="4" rx="2" fill="#BDC3C7"/></g>`;
+  ITEMS.suction = () => `<g><path d="M0 8 L0 -34 Q0 -52 16 -52 L30 -52" fill="none" stroke="${OUT}" stroke-width="12" stroke-linecap="round"/><path d="M0 8 L0 -34 Q0 -52 16 -52 L30 -52" fill="none" stroke="#BDC3C7" stroke-width="6" stroke-linecap="round"/><rect x="26" y="-58" width="18" height="12" rx="3" fill="#F7C21B" ${S}/></g>`;
+  ITEMS.spray = () => `<g transform="rotate(-25)"><rect x="-6" y="-50" width="12" height="62" rx="5" fill="#95A5A6" ${S}/><rect x="-8" y="-62" width="16" height="16" rx="4" fill="#3498DB" ${S}/><circle cx="-14" cy="-74" r="3.5" fill="#AED6F1" ${S}/><circle cx="2" cy="-80" r="3.5" fill="#AED6F1" ${S}/><circle cx="16" cy="-72" r="3.5" fill="#AED6F1" ${S}/></g>`;
+  ITEMS.polisher = () => `<g transform="rotate(-25)"><rect x="-6" y="-46" width="12" height="60" rx="5" fill="#95A5A6" ${S}/><rect x="-11" y="-60" width="22" height="16" rx="4" fill="#E67E22" ${S}/><ellipse cx="0" cy="-62" rx="9" ry="4" fill="#F7C21B" ${S}/></g>`;
+  ITEMS.cup = () => `<g><path d="M-12 -14 L12 -14 L9 14 L-9 14 Z" fill="#5DADE2" ${S}/><ellipse cx="0" cy="-14" rx="12" ry="4" fill="#AED6F1" ${S}/></g>`;
+  ITEMS.sunglassesItem = () => `<g transform="scale(.8)"><rect x="-30" y="-10" width="26" height="20" rx="8" fill="#1F2A36" ${S}/><rect x="4" y="-10" width="26" height="20" rx="8" fill="#1F2A36" ${S}/><line x1="-4" y1="-4" x2="4" y2="-4" ${S}/></g>`;
   ITEMS.clipboard = () => `<g transform="rotate(8)"><rect x="-24" y="-30" width="48" height="60" rx="4" fill="#A0522D" ${S}/><rect x="-19" y="-24" width="38" height="50" fill="#FFFFFF" ${S}/><rect x="-10" y="-34" width="20" height="10" rx="3" fill="#7F8C8D" ${S}/><line x1="-13" y1="-10" x2="13" y2="-10" ${S}/><line x1="-13" y1="0" x2="13" y2="0" ${S}/><line x1="-13" y1="10" x2="6" y2="10" ${S}/></g>`;
 
   // ------------------------------------------------------------
@@ -431,6 +443,11 @@
     check: () => `<circle cx="32" cy="32" r="26" fill="#58D68D" ${S}/><path d="M18 33 L28 43 L46 22" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>`,
     warn: () => `<path d="M32 6 L60 56 H4 Z" fill="#F7C21B" ${S}/><rect x="29" y="22" width="6" height="18" rx="2" fill="${OUT}"/><circle cx="32" cy="47" r="3.5" fill="${OUT}"/>`,
     steps: () => `<rect x="6" y="40" width="16" height="18" fill="#5DADE2" ${S}/><rect x="24" y="26" width="16" height="32" fill="#58D68D" ${S}/><rect x="42" y="10" width="16" height="48" fill="#F7C21B" ${S}/>`,
+    ear: () => `<path d="M22 24 C22 8 46 6 46 26 C46 36 38 38 36 46 C34 56 22 58 20 48" fill="#F7D6B9" ${S}/><path d="M30 26 C30 18 40 18 40 26 C40 32 34 32 34 38" fill="none" ${S}/>`,
+    eye: () => `<path d="M6 32 Q32 8 58 32 Q32 56 6 32 Z" fill="#fff" ${S}/><circle cx="32" cy="32" r="10" fill="#3498DB" ${S}/><circle cx="32" cy="32" r="4" fill="${OUT}"/><circle cx="36" cy="28" r="2" fill="#fff"/>`,
+    tongue: () => `<path d="M10 24 Q32 18 54 24 Q52 50 32 52 Q12 50 10 24 Z" fill="#C0392B" ${S}/><path d="M22 34 Q32 28 42 34 Q42 50 32 50 Q22 50 22 34 Z" fill="#F08080" ${S}/>`,
+    touch: () => `<path d="M26 58 L26 22 Q26 14 32 14 Q38 14 38 22 L38 36 L44 30 Q50 26 52 34 L50 48 Q48 58 38 58 Z" fill="#F7D6B9" ${S}/><path d="M18 20 q-8 -8 0 -16 M14 24 q-12 -10 -2 -22" fill="none" ${S}/>`,
+    nose: () => `<path d="M32 10 L32 34 Q22 44 30 50 Q32 52 34 50 Q42 44 32 34" fill="#F7D6B9" ${S}/><path d="M44 18 q6 6 0 12 M50 14 q10 10 0 20" fill="none" ${S}/>`,
     toy: () => at(ITEMS.teddy(), 32, 28, 1),
     brinde: () => at(ITEMS.gift(), 32, 32, 0.9),
   };
@@ -659,6 +676,125 @@
     ${put(KID({ armL: 'wave', armR: 'hold', holdR: 'gift', expr: 'bigsmile', headphones: true }), 112, 166, 0.4, true)}
     ${bubble({ x: 6, y: 6, w: 110, h: 34, text: 'Tchau! Até a próxima.', tail: [60, 60], size: 10 })}
   `);
+
+
+  // ======= CARTILHA DA CRIANÇA (cenas grandes 420x300) =======
+  const HOME = (extra = '') => `${plainWall(420, 232, '#FDF2D0')}${floor(420, 232, 68, '#D7A86E')}${extra}`;
+  const ROOM = (extra = '') => `${tiles(420, 232, '#6CBF4A')}${floor(420, 232, 68, '#F2E394')}${extra}`;
+  const LOBBY = (extra = '') => `${plainWall(420, 232, '#D6EAF8')}${floor(420, 232, 68, '#F2E394')}${extra}`;
+
+  function wallCalendar(x, y, w = 110, h = 96) {
+    let cells = '';
+    for (let r = 0; r < 4; r++) for (let c = 0; c < 7; c++) {
+      const cx = x + 8 + c * ((w - 16) / 7), cy = y + 26 + r * ((h - 32) / 4);
+      cells += `<rect x="${cx}" y="${cy}" width="${(w - 16) / 7 - 2}" height="${(h - 32) / 4 - 2}" fill="#F4F6F7"/>`;
+    }
+    const dx = x + 8 + 3 * ((w - 16) / 7) + ((w - 16) / 14), dy = y + 26 + 1 * ((h - 32) / 4) + ((h - 32) / 8);
+    return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="5" fill="#fff" ${S}/><rect x="${x}" y="${y}" width="${w}" height="20" rx="5" fill="#E74C3C" ${S}/>${cells}<circle cx="${dx}" cy="${dy}" r="9" fill="none" stroke="#E74C3C" stroke-width="3"/>${at(ICON.tooth(), dx - 7, dy - 7, 0.22)}`;
+  }
+  function cuspidor(x, y) {
+    return `<g transform="translate(${x} ${y})"><rect x="-8" y="-60" width="16" height="60" fill="#95A5A6" ${S}/><ellipse cx="0" cy="-62" rx="34" ry="12" fill="#ECF0F1" ${S}/><ellipse cx="0" cy="-62" rx="20" ry="6" fill="#AED6F1" ${S}/><rect x="-40" y="-120" width="8" height="56" rx="3" fill="#95A5A6" ${S}/><path d="M-36 -120 q0 -10 10 -10 h8" fill="none" ${S} stroke-width="5"/></g>`;
+  }
+
+  SCENES.k_calendar = () => scene(420, 300, HOME(`
+    ${wallCalendar(40, 40)}
+    ${window_(290, 36, 100, 70)}
+    ${put(MOM({ armR: 'point', expr: 'happy' }), 250, 296, 0.8, true)}
+    ${put(KID({ armL: 'point', armR: 'hold', holdR: 'teddy', expr: 'surprised' }), 150, 296, 0.72)}
+    ${bubble({ x: 170, y: 10, w: 220, h: 54, text: 'Hoje é o dia do dentista! Está marcado no calendário.', tail: [250, 108], size: 12 })}
+  `));
+  SCENES.k_prepare = () => scene(420, 300, HOME(`
+    <rect x="200" y="170" width="200" height="14" rx="4" fill="#A0522D" ${S}/><rect x="214" y="184" width="12" height="48" fill="#A0522D" ${S}/><rect x="374" y="184" width="12" height="48" fill="#A0522D" ${S}/>
+    ${at(ICON.headphones(), 220, 118, 0.8)}${at(ITEMS.sunglassesItem(), 310, 150, 1)}${at(ITEMS.card(), 360, 150, 0.8)}
+    ${put(KID({ armL: 'hold', holdL: 'teddy', armR: 'point', expr: 'happy' }), 110, 296, 0.8)}
+    ${bubble({ x: 20, y: 10, w: 220, h: 54, text: 'Meu brinquedo, meus fones, meus óculos e meu card.', tail: [110, 92], size: 12 })}
+  `));
+  SCENES.k_reception = () => scene(420, 300, LOBBY(`
+    ${put(RECEP({ armL: 'down', expr: 'happy' }), 110, 196, 0.62)}
+    ${deskReception(30, 240, 160, 90, true)}
+    ${put(MOM({ armL: 'hold', holdL: 'clipboard', armR: 'hold', holdR: 'pen', expr: 'happy' }), 280, 296, 0.8)}
+    ${put(KID({ armR: 'hold', holdR: 'teddy', headphones: true, expr: 'neutral' }), 372, 296, 0.66)}
+    ${bubble({ x: 20, y: 10, w: 180, h: 50, text: 'Bom dia! Sejam bem-vindos.', tail: [110, 98], size: 12 })}
+  `));
+  SCENES.k_bib = () => scene(420, 300, ROOM(`
+    ${at(dentalChair(), 160, 60, 0.72)}
+    ${put(KID({ sit: true, headphones: true, bib: true, armL: 'hold', holdL: 'teddy', expr: 'happy' }), 268, 240, 0.64)}
+    ${put(DENTIST({ maskUp: true, gloves: true, armR: 'wave', expr: 'happy' }), 100, 296, 0.8)}
+    ${bubble({ x: 10, y: 10, w: 200, h: 60, text: 'Coloquei máscara e luvas, mas sou eu mesmo! O babador protege sua roupa.', tail: [100, 118], size: 11 })}
+  `));
+  SCENES.k_glasses = () => scene(420, 300, ROOM(`
+    ${lamp(330, 110, true)}
+    ${at(dentalChair(), 150, 60, 0.72)}
+    ${put(KID({ sit: true, headphones: true, sunglasses: true, bib: true, armL: 'hold', holdL: 'teddy', expr: 'happy' }), 258, 240, 0.64)}
+    ${put(DENTIST({ maskUp: true, gloves: true, armR: 'point', expr: 'happy' }), 90, 296, 0.8)}
+    ${bubble({ x: 10, y: 10, w: 190, h: 56, text: 'Vou ligar a luz agora. Ela ilumina a boca, não os olhos.', tail: [90, 118], size: 11 })}
+  `));
+  SCENES.k_mirror = () => scene(420, 300, ROOM(`
+    ${at(dentalChair(), 160, 60, 0.72)}
+    ${put(KID({ sit: true, headphones: true, sunglasses: true, bib: true, armL: 'hold', holdL: 'teddy', armR: 'ok', expr: 'happy' }), 268, 240, 0.64)}
+    ${put(DENTIST({ maskUp: true, gloves: true, armR: 'show', holdR: 'mirror', expr: 'happy' }), 100, 296, 0.8)}
+    ${bubble({ x: 10, y: 10, w: 200, h: 56, text: 'Este é o espelhinho. Toca com o dedo: é frio e liso.', tail: [100, 118], size: 11 })}
+  `));
+  SCENES.k_suction = () => scene(420, 300, ROOM(`
+    ${at(dentalChair(), 160, 60, 0.72)}
+    ${put(KID({ sit: true, headphones: true, sunglasses: true, bib: true, armL: 'hold', holdL: 'teddy', expr: 'open' }), 268, 240, 0.64)}
+    ${put(DENTIST({ maskUp: true, gloves: true, armR: 'show', holdR: 'suction', expr: 'happy' }), 100, 296, 0.8)}
+    ${htmlText(306, 86, 110, 30, 'shhhhhh', 18, 700, '#2C3E50')}
+    ${bubble({ x: 10, y: 10, w: 190, h: 56, text: 'O canudinho faz “shhh” e puxa a água. Ouve primeiro, longe da boca.', tail: [100, 118], size: 11 })}
+  `));
+  SCENES.k_polish = () => scene(420, 300, ROOM(`
+    ${at(dentalChair(), 160, 60, 0.72)}
+    ${put(KID({ sit: true, headphones: true, sunglasses: true, bib: true, armL: 'hold', holdL: 'teddy', expr: 'open' }), 268, 240, 0.64)}
+    ${put(DENTIST({ maskUp: true, gloves: true, armR: 'show', holdR: 'polisher', expr: 'happy' }), 100, 296, 0.8)}
+    ${sparkles(340, 80)}
+    ${bubble({ x: 10, y: 10, w: 200, h: 56, text: 'A escovinha gira e faz cócegas. A pastinha tem gosto de fruta.', tail: [100, 118], size: 11 })}
+  `));
+  SCENES.k_rinse = () => scene(420, 300, ROOM(`
+    ${cuspidor(330, 232)}
+    ${put(KID({ armR: 'hold', holdR: 'cup', headphones: true, bib: true, expr: 'happy' }), 250, 296, 0.72)}
+    ${put(DENTIST({ maskUp: true, gloves: true, armR: 'point', expr: 'happy' }), 100, 296, 0.8)}
+    ${bubble({ x: 10, y: 10, w: 200, h: 54, text: 'Agora pode enxaguar e cuspir aqui na pia pequena.', tail: [100, 118], size: 11 })}
+  `));
+  SCENES.k_next = () => scene(420, 300, LOBBY(`
+    ${put(RECEP({ armL: 'hold', holdL: 'card', expr: 'happy' }), 110, 196, 0.62)}
+    ${deskReception(30, 240, 160, 90, false)}
+    ${at(ICON.calendar(), 60, 100, 0.9)}
+    ${put(MOM({ armL: 'down', expr: 'happy' }), 290, 296, 0.8)}
+    ${put(KID({ armR: 'hold', holdR: 'gift', headphones: true, expr: 'bigsmile' }), 380, 296, 0.66)}
+    ${bubble({ x: 180, y: 10, w: 220, h: 54, text: 'Até o próximo dia! Vamos marcar no calendário.', tail: [300, 110], size: 12 })}
+  `));
+  SCENES.k_cover = () => scene(420, 470, `
+    ${tiles(420, 332, '#5DADE2', '#FFFFFF')}${floor(420, 332, 138, '#F2E394')}
+    ${window_(296, 40, 96, 72)}
+    ${at(dentalChair(), 34, 100, 0.84)}
+    ${lamp(28, 130, true)}
+    ${put(KID({ headphones: true, armL: 'wave', armR: 'hold', holdR: 'teddy', expr: 'bigsmile' }), 150, 398, 0.9)}
+    ${put(DENTIST({ armL: 'wave', expr: 'bigsmile' }), 320, 398, 0.86)}
+    ${toothMascot(392, 372, 0.5)}
+  `, '', 'xMidYMax slice');
+
+  // retratos (quem eu vou encontrar)
+  SCENES.p_dentist = () => scene(200, 310, put(DENTIST({ armL: 'wave', expr: 'bigsmile' }), 100, 305, 1));
+  SCENES.p_dentist_mask = () => scene(200, 310, put(DENTIST({ maskUp: true, gloves: true, armL: 'wave', expr: 'happy' }), 100, 305, 1));
+  SCENES.p_assist = () => scene(200, 310, put(ASSIST({ armL: 'wave', expr: 'bigsmile' }), 100, 305, 1));
+  SCENES.p_recep = () => scene(200, 310, put(RECEP({ armL: 'wave', expr: 'bigsmile' }), 100, 305, 1));
+  SCENES.p_mom = () => scene(200, 310, put(MOM({ armL: 'wave', expr: 'bigsmile' }), 100, 305, 1));
+  SCENES.p_kid = () => scene(200, 310, put(KID({ armL: 'wave', armR: 'hold', holdR: 'teddy', headphones: true, expr: 'bigsmile' }), 100, 305, 1));
+
+  // objetos (o que tem na sala)
+  const OBJ = (inner) => scene(120, 120, `<rect x="2" y="2" width="116" height="116" rx="12" fill="#FFFFFF"/>${inner}`);
+  SCENES.o_chair = () => OBJ(at(dentalChair(), 8, 8, 0.36));
+  SCENES.o_lamp = () => OBJ(`<g transform="translate(16 8) scale(.8)">${lamp(30, 90, true)}</g>`);
+  SCENES.o_mirror = () => OBJ(at(ITEMS.mirror(), 60, 62, 1.4));
+  SCENES.o_suction = () => OBJ(at(ITEMS.suction(), 40, 96, 1.3));
+  SCENES.o_spray = () => OBJ(at(ITEMS.spray(), 56, 98, 1.05));
+  SCENES.o_polisher = () => OBJ(at(ITEMS.polisher(), 56, 92, 1.1));
+  SCENES.o_bib = () => OBJ(`<path d="M30 30 Q60 46 90 30 L94 100 Q60 110 26 100 Z" fill="#CFEFF7" ${S}/><path d="M44 22 Q60 34 76 22" fill="none" ${S} stroke-width="4"/>`);
+  SCENES.o_glasses = () => OBJ(at(ITEMS.sunglassesItem(), 60, 60, 2.2));
+  SCENES.o_headphones = () => OBJ(at(ICON.headphones(), 14, 14, 1.45));
+  SCENES.o_cup = () => OBJ(at(ITEMS.cup(), 60, 60, 2.4));
+  SCENES.o_gloves = () => OBJ(`<path d="M44 108 L44 48 Q44 38 52 38 Q60 38 60 48 L60 30 Q60 20 68 20 Q76 20 76 30 L76 52 L84 44 Q92 38 94 48 L92 80 Q90 108 70 108 Z" fill="#A8D8EA" ${S}/>`);
+  SCENES.o_mask = () => OBJ(`<path d="M28 44 Q60 36 92 44 L88 84 Q60 98 32 84 Z" fill="#A8D8EA" ${S}/><path d="M28 46 q-14 -4 -16 10 M92 46 q14 -4 16 10 M32 82 q-14 2 -16 -8 M88 82 q14 2 16 -8" fill="none" ${S}/>`);
 
   // --- sinais do card ---
   SCENES.sig_stop = () => scene(120, 120, `<circle cx="60" cy="60" r="54" fill="#E74C3C" ${S}/>${at(ICON.stop(), 28, 24, 1.1)}`);

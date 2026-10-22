@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Minha visita ao dentista — cartilha do paciente</title>
+<link rel="stylesheet" href="../shared/style.css">
+<style>
+  /* ---------- capa ---------- */
+  .cover { background: var(--blue); }
+  .cover .tiles { position: absolute; inset: 0; background-image: linear-gradient(#fff 0 3px, transparent 3px), linear-gradient(90deg, #fff 0 3px, transparent 3px); background-size: 24mm 24mm; opacity: .7; }
+  .cover .titlebox { position: absolute; left: 14mm; right: 14mm; top: 14mm; background: #fff; border: 3px solid var(--ink); border-radius: 10px; padding: 7mm 8mm 6mm; box-shadow: 5px 5px 0 var(--ink); text-align: center; }
+  .cover .titlebox .hq-title { font-size: 40pt; }
+  .cover .titlebox .sub { margin-top: 3mm; font-family: var(--comic); font-weight: 700; font-size: 14pt; line-height: 1.2; }
+  .cover .titlebox .name { margin-top: 4mm; font-family: var(--comic); font-weight: 700; font-size: 15pt; }
+  .cover .titlebox .name .line { display: inline-block; width: 70mm; border-bottom: 3px solid var(--ink); }
+  .cover .art { position: absolute; left: 0; right: 0; top: 78mm; bottom: 0; }
+  .cover .art .ill { width: 100%; height: 100%; }
+  .cover .foot { position: absolute; left: 14mm; right: 14mm; bottom: 12mm; display: flex; justify-content: space-between; align-items: flex-end; }
+  .cover .foot .who { font-family: var(--title); font-weight: 800; font-size: 11pt; background: #fff; border: 3px solid var(--ink); border-radius: 999px; padding: 2mm 6mm; box-shadow: 3px 3px 0 var(--ink); }
+  .cover .foot .org { font-size: 9pt; font-weight: 700; text-align: right; background: rgba(255,255,255,.92); border: 2.5px solid var(--ink); border-radius: 8px; padding: 1.5mm 4mm; }
+
+  /* ---------- páginas internas ---------- */
+  .head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 4mm; }
+  .head .hq-title { font-size: 24pt; }
+  .head .mini { font-family: var(--title); font-weight: 800; font-size: 9pt; color: #666; }
+  .page .pad { display: flex; flex-direction: column; }
+
+  /* passo */
+  .step { display: flex; flex-direction: column; gap: 3mm; flex: 1; min-height: 0; padding: 3mm 0; justify-content: center; }
+  .step + .step { border-top: 3px dashed #CFD8DC; }
+  .step .main { display: flex; gap: 4mm; align-items: center; }
+  .step .n { flex: 0 0 13mm; width: 13mm; height: 13mm; border-radius: 50%; border: 3px solid var(--ink); background: var(--yellow-strong); font-family: var(--title); font-weight: 800; font-size: 16pt; display: flex; align-items: center; justify-content: center; box-shadow: 2px 2px 0 var(--ink); }
+  .step .main p { margin: 0; font-family: var(--comic); font-weight: 700; font-size: 14pt; line-height: 1.25; }
+  .step .body { display: grid; grid-template-columns: 116mm 1fr; gap: 5mm; align-items: stretch; }
+  .step .art { border: 3px solid var(--ink); border-radius: 8px; overflow: hidden; height: 83mm; background: #fff; }
+  .step .art .ill { height: 100%; }
+  .step .txt { display: flex; flex-direction: column; gap: 3mm; justify-content: center; }
+  .chips { border: 2.5px solid var(--ink); border-radius: 8px; padding: 2.5mm 3mm; }
+  .chips.feel { background: #FFF6B0; }
+  .chips.can { background: #E3F7D9; }
+  .chips h5 { margin: 0 0 1.5mm; font-family: var(--title); font-weight: 800; font-size: 9pt; text-transform: uppercase; letter-spacing: .6px; }
+  .chip { display: flex; align-items: center; gap: 2mm; font-family: var(--comic); font-weight: 700; font-size: 10.2pt; line-height: 1.15; margin-bottom: 1.5mm; }
+  .chip:last-child { margin-bottom: 0; }
+  .chip .ic { width: 8mm; height: 8mm; flex: 0 0 8mm; }
+  .tip { background: var(--blue-pale); border: 3px dashed var(--blue); border-radius: 10px; padding: 3mm 4mm; font-size: 10.5pt; display: flex; gap: 3mm; align-items: center; }
+  .tip .ic { width: 11mm; height: 11mm; flex: 0 0 11mm; }
+  .tip b { font-family: var(--title); font-weight: 800; }
+
+  /* quem eu vou encontrar */
+  .people { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; flex: 1; }
+  .person { border: 3px solid var(--ink); border-radius: 12px; padding: 4mm; display: flex; gap: 4mm; align-items: center; box-shadow: 4px 4px 0 var(--ink); background: #fff; }
+  .person .ill { width: 34mm; height: 50mm; flex: 0 0 34mm; }
+  .person h4 { margin: 0 0 1.5mm; font-family: var(--title); font-weight: 800; font-size: 14pt; }
+  .person p { margin: 0 0 1.5mm; font-family: var(--comic); font-weight: 700; font-size: 10.5pt; line-height: 1.25; }
+  .person .line { display: inline-block; width: 100%; border-bottom: 2.5px solid var(--ink); height: 5mm; }
+
+  /* objetos */
+  .objects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; flex: 1; }
+  .obj { border: 3px solid var(--ink); border-radius: 10px; padding: 3mm; display: flex; gap: 3mm; align-items: center; background: #fff; }
+  .obj .ill { width: 24mm; height: 24mm; flex: 0 0 24mm; border: 2px solid var(--ink); border-radius: 8px; background: #fff; }
+  .obj h4 { margin: 0 0 1mm; font-family: var(--title); font-weight: 800; font-size: 12pt; }
+  .obj p { margin: 0; font-family: var(--comic); font-weight: 700; font-size: 9.4pt; line-height: 1.2; }
+  .obj .tag { display: inline-block; margin-top: 1mm; font-size: 8pt; color: #444; background: #FFF6B0; border-radius: 4px; padding: .5mm 1.5mm; letter-spacing: 0; text-transform: none; }
+
+  /* sinais / consegui */
+  .sig-big { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5mm; }
+  .sig-card { border: 3px solid var(--ink); border-radius: 12px; padding: 4mm; text-align: center; background: #fff; box-shadow: 4px 4px 0 var(--ink); }
+  .sig-card .ill { width: 30mm; height: 30mm; margin: 0 auto 2mm; }
+  .sig-card h4 { margin: 0 0 1mm; font-family: var(--title); font-weight: 800; font-size: 14pt; }
+  .sig-card p { margin: 0; font-family: var(--comic); font-weight: 700; font-size: 10.5pt; line-height: 1.2; }
+  .done-big { border: 3px solid var(--ink); border-radius: 12px; padding: 5mm 6mm; background: #E3F7D9; box-shadow: 4px 4px 0 var(--ink); }
+  .done-big h3 { margin: 0 0 3mm; font-family: var(--title); font-weight: 800; font-size: 18pt; text-align: center; }
+  .done-big .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm 8mm; font-family: var(--comic); font-weight: 700; font-size: 12pt; }
+  .done-big .grid div { display: flex; align-items: center; }
+  .done-big .checkbox { width: 7mm; height: 7mm; }
+  .stamps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4mm; margin-top: 4mm; }
+  .stamp { border: 2.5px dashed var(--ink); border-radius: 10px; height: 22mm; display: flex; align-items: flex-end; justify-content: center; font-family: var(--comic); font-weight: 700; font-size: 9pt; padding-bottom: 1.5mm; background: #fff; }
+
+  /* cuidadores */
+  .back h2 { font-family: var(--title); font-weight: 800; font-size: 20pt; margin: 0 0 1mm; }
+  .back p { margin: 0 0 2mm; font-size: 10.2pt; }
+  .back .box ul li { font-size: 9.8pt; }
+  .agenda { border: 3px solid var(--ink); border-radius: 12px; background: var(--blue-light); padding: 3mm 5mm; box-shadow: 4px 4px 0 var(--ink); }
+  .agenda .field { font-family: var(--comic); font-size: 10.5pt; margin-bottom: 2.4mm; }
+  .cutline { border-top: 2px dashed #999; margin: 2mm 0; position: relative; }
+  .cutline::before { content: '✂'; position: absolute; left: 4mm; top: -3.2mm; background: #fff; padding: 0 1mm; color: #999; font-size: 10pt; }
+  .minicard { border: 3px solid var(--ink); border-radius: 10px; padding: 3mm 4mm; background: #fff; display: grid; grid-template-columns: repeat(5, 1fr); gap: 2mm; }
+  .minicard .m { text-align: center; font-family: var(--comic); font-weight: 700; font-size: 8.4pt; line-height: 1.1; }
+  .minicard .m .ill { height: 15mm; border: 2px solid var(--ink); border-radius: 6px; overflow: hidden; margin-bottom: 1mm; }
+  .minicard .m .n { display: inline-block; width: 5mm; height: 5mm; border-radius: 50%; background: var(--yellow-strong); border: 2px solid var(--ink); font-family: var(--title); font-weight: 800; font-size: 8pt; line-height: 4.2mm; margin-right: 1mm; }
+</style>
+</head>
+<body>
+
+<!-- ================= CAPA ================= -->
+<section class="page cover">
+  <div class="tiles"></div>
+  <div class="art"><div class="ill" data-scene="k_cover"></div></div>
+  <div class="titlebox">
+    <div class="hq-title">Minha visita<br>ao dentista</div>
+    <div class="sub">Minha cartilha: tudo o que vai acontecer na consulta,<br>passo a passo, do começo ao fim.</div>
+    <div class="name">Eu me chamo <span class="line"></span></div>
+  </div>
+  <div class="foot">
+    <div class="who">Para ler em casa, todos os dias, antes da consulta</div>
+    <div class="org">História social ilustrada<br>Acompanha a cartilha do cirurgião-dentista</div>
+  </div>
+</section>
+
+<!-- ================= QUEM EU VOU ENCONTRAR ================= -->
+<section class="page">
+  <div class="pad">
+    <div class="head"><span class="hq-title">Quem eu vou encontrar</span><span class="mini">Minha visita ao dentista</span></div>
+    <div class="people">
+      <div class="person"><div class="ill" data-scene="p_dentist"></div><div><h4>O dentista</h4><p>Cuida dos meus dentes. Ele explica tudo antes de fazer e para quando eu levanto a mão.</p><p>O nome dele(a) é:</p><span class="line"></span></div></div>
+      <div class="person"><div class="ill" data-scene="p_dentist_mask"></div><div><h4>O dentista de máscara</h4><p>Às vezes ele usa máscara e luvas azuis para deixar tudo limpinho. Continua sendo a mesma pessoa, com a mesma voz.</p></div></div>
+      <div class="person"><div class="ill" data-scene="p_assist"></div><div><h4>O auxiliar</h4><p>Ajuda o dentista: entrega as coisas e segura o canudinho que puxa a água. Também pode usar máscara.</p><p>O nome dele(a) é:</p><span class="line"></span></div></div>
+      <div class="person"><div class="ill" data-scene="p_recep"></div><div><h4>A pessoa da recepção</h4><p>Diz “oi” quando a gente chega, anota o meu nome e chama quando é a minha vez.</p></div></div>
+      <div class="person" style="grid-column: 1 / -1; background:#FFF6B0"><div class="ill" data-scene="p_mom" style="height:40mm"></div><div><h4>Quem vai comigo</h4><p>Meu acompanhante fica comigo o tempo todo, em um lugar onde eu posso ver. Se eu precisar, ele fala por mim.</p><p>Vai comigo: <span class="line" style="width:70mm"></span></p></div></div>
+    </div>
+  </div>
+  <div class="pagenum">2</div>
+</section>
+
+<!-- ================= O QUE TEM NA SALA ================= -->
+<section class="page">
+  <div class="pad">
+    <div class="head"><span class="hq-title">O que tem na sala do dentista</span><span class="mini">Minha visita ao dentista</span></div>
+    <p style="margin:0 0 4mm;font-family:var(--comic);font-weight:700;font-size:11pt">Antes de usar qualquer coisa, o dentista me mostra, deixa eu tocar e explica. Nada acontece de surpresa.</p>
+    <div class="objects">
+      <div class="obj"><div class="ill" data-scene="o_chair"></div><div><h4>A cadeira</h4><p>Sobe, desce e deita devagar.</p><span class="tag">Movimento: lento, com aviso</span></div></div>
+      <div class="obj"><div class="ill" data-scene="o_lamp"></div><div><h4>A luz</h4><p>Ilumina a boca para o dentista enxergar.</p><span class="tag">Luz: forte, com óculos fica fraca</span></div></div>
+      <div class="obj"><div class="ill" data-scene="o_mirror"></div><div><h4>O espelhinho</h4><p>Mostra os dentes de trás.</p><span class="tag">Toque: frio e liso</span></div></div>
+      <div class="obj"><div class="ill" data-scene="o_suction"></div><div><h4>O canudinho</h4><p>Puxa a água e a saliva da boca.</p><span class="tag">Som: “shhhh” · cócegas</span></div></div>
+      <div class="obj"><div class="ill" data-scene="o_spray"></div><div><h4>O chuveirinho</h4><p>Joga ar e água para limpar.</p><span class="tag">Toque: fresquinho e molhado</span></div></div>
+      <div class="obj"><div class="ill" data-scene="o_polisher"></div><div><h4>A escovinha</h4><p>Gira e limpa os dentes com uma pastinha.</p><span class="tag">Som: “zzzz” baixinho · gosto de fruta</span></div></div>
+      <div class="obj"><div class="ill" data-scene="o_bib"></div><div><h4>O babador</h4><p>Fica no meu peito e protege a roupa.</p><span class="tag">Toque: papel macio</span></div></div>
+      <div class="obj"><div class="ill" data-scene="o_mask"></div><div><h4>A máscara</h4><p>O dentista usa para deixar tudo limpo.</p><span class="tag">Ele continua sendo o mesmo</span></div></div>
+      <div class="obj"><div class="ill" data-scene="o_gloves"></div><div><h4>As luvas</h4><p>Azuis, de borracha macia.</p><span class="tag">Toque: lisinhas</span></div></div>
+      <div class="obj"><div class="ill" data-scene="o_glasses"></div><div><h4>Meus óculos escuros</h4><p>Deixam a luz fraquinha.</p><span class="tag">Posso trazer os meus</span></div></div>
+      <div class="obj"><div class="ill" data-scene="o_headphones"></div><div><h4>Meus fones</h4><p>Deixam os sons baixinhos.</p><span class="tag">Posso usar o tempo todo</span></div></div>
+      <div class="obj"><div class="ill" data-scene="o_cup"></div><div><h4>O copinho</h4><p>Para enxaguar a boca no fim.</p><span class="tag">Gosto: água</span></div></div>
+    </div>
+  </div>
+  <div class="pagenum">3</div>
+</section>
+
+<!-- ================= PASSOS (gerados pelo script abaixo) ================= -->
+<div id="steps"></div>
+
+<!-- ================= MEUS SINAIS + EU CONSEGUI ================= -->
+<section class="page">
+  <div class="pad" style="gap:5mm">
+    <div class="head"><span class="hq-title">Meus sinais</span><span class="mini">Minha visita ao dentista</span></div>
+    <p style="margin:0;font-family:var(--comic);font-weight:700;font-size:11.5pt">Eu não preciso falar para ser entendido. Combinei estes sinais com o dentista e com quem cuida de mim. Eles sempre funcionam.</p>
+    <div class="sig-big">
+      <div class="sig-card"><div class="ill" data-scene="sig_stop"></div><h4>Mão levantada</h4><p><b>PARE.</b> O dentista para na mesma hora. Eu posso respirar e descansar.</p></div>
+      <div class="sig-card"><div class="ill" data-scene="sig_pause"></div><h4>Pausa</h4><p>Quero descansar um pouco, abraçar meu brinquedo e depois continuar.</p></div>
+      <div class="sig-card"><div class="ill" data-scene="sig_ok"></div><h4>Polegar para cima</h4><p>Tudo bem, pode continuar.</p></div>
+    </div>
+    <div class="done-big">
+      <h3>Eu consegui!</h3>
+      <div class="grid">
+        <div><span class="checkbox"></span>Entrar no consultório</div>
+        <div><span class="checkbox"></span>Esperar na sala de espera</div>
+        <div><span class="checkbox"></span>Entrar na sala do dentista</div>
+        <div><span class="checkbox"></span>Sentar na cadeira</div>
+        <div><span class="checkbox"></span>Usar o babador</div>
+        <div><span class="checkbox"></span>Tocar no espelhinho</div>
+        <div><span class="checkbox"></span>Abrir a boca</div>
+        <div><span class="checkbox"></span>Deixar contar os dentes</div>
+        <div><span class="checkbox"></span>Ouvir o canudinho</div>
+        <div><span class="checkbox"></span>Limpar os dentes</div>
+        <div><span class="checkbox"></span>Enxaguar a boca</div>
+        <div><span class="checkbox"></span>Ganhar o brinde</div>
+      </div>
+      <div style="font-family:var(--title);font-weight:800;font-size:11pt;margin-top:4mm">Carimbos ou adesivos de cada visita:</div>
+      <div class="stamps"><div class="stamp">1ª visita</div><div class="stamp">2ª visita</div><div class="stamp">3ª visita</div><div class="stamp">4ª visita</div></div>
+    </div>
+    <div class="tip" style="margin-top:auto"><div class="ic" data-icon="heart"></div><div><b>Cada passo conta.</b> Se hoje eu só sentei na cadeira, já foi uma visita que deu certo. Na próxima vez, eu tento mais um passo.</div></div>
+  </div>
+  <div class="pagenum">14</div>
+</section>
+
+<!-- ================= PARA QUEM CUIDA ================= -->
+<section class="page back">
+  <div class="pad" style="gap:4mm">
+    <div class="row" style="justify-content:space-between;align-items:flex-start">
+      <div>
+        <h2>Para quem cuida: como usar esta cartilha</h2>
+        <p>Esta cartilha é uma <b>história social</b>: conta, em primeira pessoa e com figuras, exatamente o que vai acontecer na consulta, o que a criança pode sentir e o que ela pode fazer. Saber o que vem a seguir diminui a ansiedade e torna a visita ao dentista mais tranquila.</p>
+      </div>
+      <div class="ill" data-scene="momKid" style="width:30mm;height:36mm;flex:0 0 30mm"></div>
+    </div>
+    <div class="agenda">
+      <div class="field">Minha consulta será no dia <span class="line" style="flex:0 0 26mm"></span> às <span class="line" style="flex:0 0 18mm"></span> com o(a) dentista <span class="line"></span></div>
+      <div class="field" style="margin-bottom:0">Endereço: <span class="line"></span> Telefone: <span class="line" style="flex:0 0 36mm"></span></div>
+    </div>
+    <div class="grid2">
+      <div class="box" style="padding:5mm">
+        <h3>Antes da consulta</h3>
+        <ul>
+          <li><div class="ic" data-icon="notes"></div><div><b>Leia a cartilha todos os dias</b> na semana da consulta, sempre do mesmo jeito, apontando cada quadro. Leia só os passos que ele aguenta; vá acrescentando.</div></li>
+          <li><div class="ic" data-icon="video"></div><div><b>Assista ao vídeo</b> do consultório que o dentista enviou e mostre as páginas “Quem eu vou encontrar” e “O que tem na sala”.</div></li>
+          <li><div class="ic" data-icon="toothbrush"></div><div><b>Treine em casa:</b> abrir a boca na frente do espelho, contar os dentes até dez, deixar tocar nos dentes com a escova. Brinque de dentista com o brinquedo dele.</div></li>
+          <li><div class="ic" data-icon="stop"></div><div><b>Pratique os sinais</b> (mão levantada, pausa, polegar) até ele usar sozinho.</div></li>
+          <li><div class="ic" data-icon="toy"></div><div><b>Separe</b> o brinquedo de conforto, fones ou abafadores, óculos escuros e esta cartilha.</div></li>
+        </ul>
+      </div>
+      <div class="box" style="padding:5mm">
+        <h3>No dia e depois</h3>
+        <ul>
+          <li><div class="ic" data-icon="clock"></div><div><b>Chegue no horário</b>, nem muito antes nem atrasado. Deixe o dia leve, sem outros compromissos difíceis.</div></li>
+          <li><div class="ic" data-icon="talk"></div><div><b>Na sala, deixe o dentista conduzir.</b> Fique onde ele possa te ver, com voz calma. Uma voz só de cada vez.</div></li>
+          <li><div class="ic" data-icon="pause"></div><div><b>Se ele ficar sobrecarregado</b> (tapar ouvidos, chorar, querer sair), é hora de pausa, não de insistir. Terminar bem e voltar outro dia também é sucesso.</div></li>
+          <li><div class="ic" data-icon="gift"></div><div><b>Comemore o que ele conseguiu</b>, por menor que pareça. Marque na página “Eu consegui!” e cole o adesivo da visita.</div></li>
+          <li><div class="ic" data-icon="calendar"></div><div><b>Marque o retorno</b> e mantenha a rotina de escovação: mesma hora, mesma ordem, 2 vezes ao dia, com creme dental com flúor.</div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="cutline"></div>
+    <div style="font-family:var(--title);font-weight:800;font-size:10.5pt;margin:-1mm 0 1mm">Mini-card para a carteira ou a geladeira</div>
+    <div class="minicard">
+      <div class="m"><div class="ill" data-scene="c1_arrive"></div><span class="n">1</span>Chego</div>
+      <div class="m"><div class="ill" data-scene="c2_wait"></div><span class="n">2</span>Espero</div>
+      <div class="m"><div class="ill" data-scene="c3_called"></div><span class="n">3</span>Chamam meu nome</div>
+      <div class="m"><div class="ill" data-scene="c4_enter"></div><span class="n">4</span>Entro na sala</div>
+      <div class="m"><div class="ill" data-scene="c5_show"></div><span class="n">5</span>Vejo as coisas</div>
+      <div class="m"><div class="ill" data-scene="c6_sit"></div><span class="n">6</span>Sento</div>
+      <div class="m"><div class="ill" data-scene="c7_open"></div><span class="n">7</span>Abro a boca</div>
+      <div class="m"><div class="ill" data-scene="c8_clean"></div><span class="n">8</span>Limpeza</div>
+      <div class="m"><div class="ill" data-scene="c9_gift"></div><span class="n">9</span>Brinde</div>
+      <div class="m"><div class="ill" data-scene="c10_bye"></div><span class="n">10</span>Tchau!</div>
+    </div>
+    <div class="small center" style="margin-top:auto">Material educativo que acompanha a cartilha “Atendimento Odontológico à Pessoa com TEA”. Pode ser reproduzido gratuitamente para fins educativos.</div>
+  </div>
+  <div class="pagenum">15</div>
+</section>
+
+<script>
+  // Os 20 passos da história social: cena, frase principal, o que posso sentir, o que eu posso fazer.
+  const STEPS = [
+    { s: 'k_calendar', t: 'Hoje é o dia de ir ao dentista. Está marcado no calendário, com um dentinho.',
+      feel: [['eye', 'Nada de diferente: é um dia normal, com uma coisa a mais.']],
+      can: [['notes', 'Ler esta cartilha com meu acompanhante.'], ['talk', 'Perguntar o que eu quiser.']] },
+    { s: 'k_prepare', t: 'Eu me preparo: pego meu brinquedo, meus fones, meus óculos escuros e esta cartilha.',
+      feel: [['touch', 'Minhas coisas de sempre, que eu conheço.']],
+      can: [['toy', 'Levar meu brinquedo preferido.'], ['headphones', 'Usar os fones desde casa, se eu quiser.']] },
+    { s: 'c1_arrive', t: 'Chegamos ao consultório. Tem uma porta e uma placa. Entro com meu acompanhante.',
+      feel: [['ear', 'Pessoas conversando baixinho.'], ['nose', 'Um cheiro de limpeza, de leve.']],
+      can: [['family', 'Dar a mão para quem cuida de mim.'], ['headphones', 'Ficar com meus fones.']] },
+    { s: 'k_reception', t: 'Na recepção, uma pessoa diz “oi”. Meu acompanhante preenche um papel. Eu só espero.',
+      feel: [['ear', 'Vozes baixas e, às vezes, o telefone tocando.']],
+      can: [['family', 'Ficar perto do meu acompanhante.'], ['talk', 'Não preciso falar se não quiser.']] },
+    { s: 'c2_wait', t: 'Espero na sala de espera. Pode demorar um pouquinho. Sento, olho meu brinquedo e uso meus fones.',
+      feel: [['ear', 'Outras pessoas, a porta abrindo e fechando.'], ['eye', 'Luz normal, como em casa.']],
+      can: [['headphones', 'Deixar os sons baixinhos com os fones.'], ['pause', 'Pedir para esperar em um lugar mais quieto.']] },
+    { s: 'c3_called', t: 'Chamam o meu nome. É a minha vez!',
+      feel: [['ear', 'Alguém diz o meu nome, com voz calma.']],
+      can: [['check', 'Levantar e ir com meu acompanhante.'], ['toy', 'Levar meu brinquedo junto.']] },
+    { s: 'c4_enter', t: 'Entro na sala. O dentista diz “oi”. Meu acompanhante entra comigo e fica onde eu posso ver.',
+      feel: [['nose', 'Cheiro diferente, de coisa limpa.'], ['eye', 'Uma sala com cadeira grande e luz.']],
+      can: [['talk', 'Dizer “oi” ou só acenar com a mão.'], ['family', 'Olhar para meu acompanhante quando quiser.']] },
+    { s: 'c5_show', t: 'O dentista me mostra a sala: a cadeira que sobe e desce, a luz, o espelhinho, a pia pequena. Posso tocar.',
+      feel: [['touch', 'Coisas frias e lisas.'], ['ear', 'A cadeira faz um barulhinho quando se mexe.']],
+      can: [['talk', 'Perguntar o que é cada coisa.'], ['touch', 'Tocar só se eu quiser.']] },
+    { s: 'c6_sit', t: 'Sento na cadeira. Ela sobe e desce devagar, e pode deitar um pouco. O dentista avisa antes de mexer.',
+      feel: [['touch', 'A cadeira é macia. Ela se mexe devagar.'], ['ear', 'Um zumbido baixinho quando ela sobe.']],
+      can: [['pause', 'Pedir para ficar sentado, sem deitar.'], ['toy', 'Segurar meu brinquedo no colo.']] },
+    { s: 'k_bib', t: 'O dentista coloca um babador no meu peito. Ele pode usar máscara e luvas. Continua sendo o mesmo dentista.',
+      feel: [['touch', 'Um papel macio no peito, com uma cordinha no pescoço.'], ['eye', 'O rosto do dentista fica meio escondido, mas a voz é a mesma.']],
+      can: [['eye', 'Ver o rosto do dentista antes de ele colocar a máscara.'], ['stop', 'Levantar a mão se não quiser o babador agora.']] },
+    { s: 'k_glasses', t: 'Coloco meus óculos escuros e meus fones. A luz acende e ilumina a minha boca, não os meus olhos.',
+      feel: [['eye', 'A luz é forte, mas com os óculos fica fraquinha.']],
+      can: [['check', 'Fechar os olhos se eu quiser.'], ['headphones', 'Deixar os fones o tempo todo.']] },
+    { s: 'k_mirror', t: 'O dentista me mostra o espelhinho. Toco com o dedo: é frio e liso. Depois ele encosta o espelhinho nos meus dentes.',
+      feel: [['touch', 'Frio e liso, primeiro no dedo, depois no dente.']],
+      can: [['touch', 'Tocar primeiro no meu dedo.'], ['stop', 'Levantar a mão para parar.']] },
+    { s: 'c7_open', t: 'Abro a boca bem grande. O dentista conta meus dentes: 1, 2, 3… até 10 e para. Depois conta de novo.',
+      feel: [['touch', 'Um toque leve nos dentes.'], ['ear', 'A voz do dentista contando.']],
+      can: [['check', 'Fechar a boca quando ele chegar no 10.'], ['stop', 'Levantar a mão para parar.']] },
+    { s: 'k_suction', t: 'O canudinho faz “shhhh” e puxa a água da boca. O dentista liga ele longe primeiro, para eu ouvir.',
+      feel: [['ear', 'Um som de “shhhh”, como um aspirador pequeno.'], ['touch', 'Faz cócegas na bochecha.']],
+      can: [['headphones', 'Ouvir primeiro, de longe, com os fones.'], ['touch', 'Segurar o canudinho na minha mão.']] },
+    { s: 'k_polish', t: 'Se eu quiser, o dentista limpa meus dentes com uma escovinha que gira. Faz cócegas e a pastinha tem gosto de fruta.',
+      feel: [['ear', 'Um “zzzz” baixinho.'], ['tongue', 'Gosto de fruta.'], ['touch', 'Cócegas nos dentes.']],
+      can: [['talk', 'Dizer que hoje não quero.'], ['check', 'Tentar só em um dente primeiro.']] },
+    { s: 'k_rinse', t: 'Quando termina, enxáguo a boca com água do copinho e cuspo na pia pequena.',
+      feel: [['tongue', 'Gosto de água fresquinha.'], ['ear', 'A pia faz um barulho de água.']],
+      can: [['family', 'Pedir ajuda com o copinho.'], ['check', 'Engolir, se eu não souber cuspir. Tudo bem.']] },
+    { s: 'stopSign', t: 'Se eu precisar parar, levanto a mão. O dentista para na hora. Respiro, descanso e, quando eu quiser, a gente continua.',
+      feel: [['eye', 'Tudo fica parado e calmo.']],
+      can: [['stop', 'Levantar a mão: PARE.'], ['pause', 'Pedir uma pausa.'], ['toy', 'Abraçar meu brinquedo.']] },
+    { s: 'c9_gift', t: 'Deu tudo certo! Eu ganho um brinde e um carimbo na página “Eu consegui!”.',
+      feel: [['ear', 'O dentista diz o que eu fiz de bom.']],
+      can: [['gift', 'Escolher o brinde.'], ['thumbs', 'Mostrar o polegar: tudo bem!']] },
+    { s: 'k_next', t: 'Digo tchau. Marcamos o próximo dia no calendário. Vou voltar para o dentista ver meus dentes de novo.',
+      feel: [['eye', 'Nada de novo: a gente só combina o próximo dia.']],
+      can: [['talk', 'Dizer tchau ou acenar.'], ['calendar', 'Marcar o dia no meu calendário em casa.']] },
+    { s: 'homeHygiene', t: 'Em casa, escovo os dentes de manhã e à noite, igual ao cartaz. Meus dentes ficam fortes e o dentista fica feliz.',
+      feel: [['tongue', 'Gosto do meu creme dental.'], ['touch', 'A escova macia nos dentes.']],
+      can: [['toothbrush', 'Usar minha escova e meu creme preferidos.'], ['family', 'Pedir ajuda para escovar os dentes de trás.']] },
+  ];
+  const ICN = (n) => `<div class="ic" data-icon="${n}"></div>`;
+  let html = '';
+  for (let i = 0; i < STEPS.length; i += 2) {
+    const pageNo = 4 + i / 2;
+    html += `<section class="page"><div class="pad"><div class="head"><span class="hq-title">Passo a passo</span><span class="mini">Minha visita ao dentista · passos ${i + 1} e ${i + 2}</span></div>`;
+    STEPS.slice(i, i + 2).forEach((st, j) => {
+      html += `<div class="step">
+        <div class="main"><div class="n">${i + j + 1}</div><p>${st.t}</p></div>
+        <div class="body">
+          <div class="art"><div class="ill" data-scene="${st.s}"></div></div>
+          <div class="txt">
+            <div class="chips feel"><h5>O que eu posso sentir</h5>${st.feel.map(f => `<div class="chip">${ICN(f[0])}<div>${f[1]}</div></div>`).join('')}</div>
+            <div class="chips can"><h5>O que eu posso fazer</h5>${st.can.map(f => `<div class="chip">${ICN(f[0])}<div>${f[1]}</div></div>`).join('')}</div>
+          </div>
+        </div></div>`;
+    });
+    html += `</div><div class="pagenum">${pageNo}</div></section>`;
+  }
+  document.getElementById('steps').outerHTML = html;
+</script>
+<script src="../shared/ill.js"></script>
+</body>
+</html>
