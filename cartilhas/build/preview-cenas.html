@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Pré-visualização das cenas</title>
+<link rel="stylesheet" href="../shared/style.css">
+<style>
+  .page { padding: 8mm; }
+  .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+  .cell { border: 2px solid #999; }
+  .cell .name { font: 700 9pt var(--body); padding: 1mm 2mm; background: #eee; }
+</style>
+</head>
+<body>
+<script>
+  const names = ['cover','threeFormats','before_phone','before_video','before_card','waiting','tellShowDo','countTeeth','stopSign','overload','reward','homeHygiene','record','cardCover','c1_arrive','c2_wait','c3_called','c4_enter','c5_show','c6_sit','c7_open','c8_clean','c9_gift','c10_bye','sig_stop','sig_ok','sig_pause','kidWave','dentistWave','momKid'];
+  const perPage = 6;
+  for (let p = 0; p < names.length; p += perPage) {
+    document.write('<div class="page"><div class="wrap">');
+    names.slice(p, p + perPage).forEach(n => document.write(`<div class="cell"><div class="name">${n}</div><div class="ill" data-scene="${n}"></div></div>`));
+    document.write('</div></div>');
+  }
+</script>
+<script src="../shared/ill.js"></script>
+</body>
+</html>

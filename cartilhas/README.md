@@ -1,0 +1,58 @@
+# Cartilhas — Atendimento Odontológico à Pessoa com TEA
+
+Material educativo em estilo HQ (inspirado na cartilha "Higiene Bucal" das HQs do Lucas),
+composto por duas peças que trabalham juntas:
+
+| Peça | Para quem | Arquivo-fonte | PDF |
+|---|---|---|---|
+| **Cartilha do cirurgião-dentista** (8 páginas A4): manejo antes, durante e depois da consulta, informativo sobre o TEA e ficha do perfil do paciente | Dentista e equipe do consultório | `cartilha-dentista/index.html` | `dist/Cartilha-Cirurgiao-Dentista-TEA.pdf` |
+| **Card "Minha visita ao dentista"** (frente e verso A4): história social ilustrada em 10 passos, sinais combinados (PARE / pausa / tudo bem), checklist "Eu consegui!" e orientações para quem cuida, com mini-card recortável | Paciente e cuidadores (entregue pelo dentista) | `card-paciente/index.html` | `dist/Card-Minha-Visita-ao-Dentista.pdf` |
+
+A cartilha mescla os três formatos pedidos: **sequência visual da consulta**, **história social ilustrada**
+e **passo a passo em quadrinhos**.
+
+## Estrutura
+
+```
+cartilhas/
+├── shared/
+│   ├── ill.js        # biblioteca de ilustrações vetoriais (personagens, cenário, balões, ícones)
+│   ├── style.css     # estilo de impressão compartilhado (A4, fontes, caixas)
+│   └── fonts/        # Baloo 2, Comic Neue e Nunito (Google Fonts, licença OFL)
+├── cartilha-dentista/index.html
+├── card-paciente/index.html
+├── build/
+│   ├── render.mjs         # gera PDF + PNG de cada página com o Chromium (Playwright)
+│   └── preview-cenas.html # página de teste com todas as cenas
+└── dist/                  # PDFs finais e PNGs de pré-visualização de cada página
+```
+
+Todas as ilustrações são SVG geradas em `shared/ill.js`: cada cena é uma função
+(`SCENES.nome`) montada com personagens (`KID`, `DENTIST`, `MOM`, `RECEP`), objetos
+(cadeira, refletor, balcão, TV, brinde…) e balões de fala. Para trocar uma expressão,
+pose, cor de roupa ou texto de balão, basta editar a cena correspondente.
+
+## Como editar e gerar os PDFs
+
+1. Abra `cartilha-dentista/index.html` ou `card-paciente/index.html` no navegador para
+   visualizar (as ilustrações são montadas ao carregar a página).
+2. Edite os textos direto no HTML; as cenas em `shared/ill.js`.
+3. Gere os PDFs (precisa de Node 18+ e do pacote `playwright` com Chromium):
+
+```bash
+npm i -D playwright            # uma vez; ou use uma instalação global
+node cartilhas/build/render.mjs            # gera as duas peças
+node cartilhas/build/render.mjs card-paciente   # só uma delas
+node cartilhas/build/render.mjs preview-cenas   # PNGs com todas as cenas, para revisão
+```
+
+Os arquivos saem em `cartilhas/dist/`. O PDF é vetorial (texto selecionável), em A4,
+pronto para impressão. Para imprimir o card em frente e verso, use "virar na borda longa".
+
+## Personalização sugerida
+
+- Preencher os créditos na última página da cartilha (concepção, revisão técnica, edição).
+- Inserir o logotipo da instituição na capa (há espaço no rodapé) e no verso do card.
+- Ajustar nomes e falas dos personagens para refletir a equipe real do consultório.
+- Se quiser ilustrações em outro estilo, as cenas podem ser substituídas por imagens
+  (`<img>`) mantendo o mesmo layout.

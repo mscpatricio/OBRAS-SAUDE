@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Cartilha — Atendimento Odontológico à Pessoa com TEA</title>
+<link rel="stylesheet" href="../shared/style.css">
+<style>
+  /* ---------- capa ---------- */
+  .cover { background: var(--green); }
+  .cover .tiles { position: absolute; inset: 0; background-image: linear-gradient(#fff 0 3px, transparent 3px), linear-gradient(90deg, #fff 0 3px, transparent 3px); background-size: 24mm 24mm; opacity: .7; }
+  .cover .titlebox { position: absolute; left: 14mm; right: 14mm; top: 16mm; background: #fff; border: 3px solid var(--ink); border-radius: 10px; padding: 7mm 8mm 6mm; box-shadow: 5px 5px 0 var(--ink); text-align: center; }
+  .cover .titlebox .hq-title { font-size: 36pt; }
+  .cover .titlebox .sub { margin-top: 3mm; font-family: var(--title); font-weight: 600; font-size: 14pt; line-height: 1.15; }
+  .cover .art { position: absolute; left: 0; right: 0; top: 72mm; bottom: 0; }
+  .cover .art .ill { width: 100%; height: 100%; }
+  .cover .badge { position: absolute; left: 14mm; top: 69mm; transform: rotate(-6deg); }
+  .cover .foot { position: absolute; left: 14mm; right: 14mm; bottom: 12mm; display: flex; justify-content: space-between; align-items: flex-end; }
+  .cover .foot .who { font-family: var(--title); font-weight: 800; font-size: 11pt; background: #fff; border: 3px solid var(--ink); border-radius: 999px; padding: 2mm 6mm; box-shadow: 3px 3px 0 var(--ink); }
+  .cover .foot .org { font-size: 9pt; font-weight: 700; text-align: right; background: rgba(255,255,255,.92); border: 2.5px solid var(--ink); border-radius: 8px; padding: 1.5mm 4mm; }
+
+  /* ---------- cabeçalhos de seção ---------- */
+  .section-head { display: flex; align-items: center; gap: 5mm; margin-bottom: 4mm; }
+  .section-head .num { width: 16mm; height: 16mm; border-radius: 50%; border: 3px solid var(--ink); display: flex; align-items: center; justify-content: center; font-family: var(--title); font-weight: 800; font-size: 22pt; box-shadow: 3px 3px 0 var(--ink); }
+  .section-head .hq-title { font-size: 28pt; }
+  .section-head .sub { font-family: var(--title); font-weight: 600; font-size: 12pt; color: #444; }
+  .moment-antes .num { background: var(--blue); }
+  .moment-durante .num { background: var(--green); }
+  .moment-depois .num { background: var(--yellow-strong); }
+  .moment-antes .hq-title { color: #7FD1F5; }
+  .moment-durante .hq-title { color: #8FE26E; }
+  .moment-depois .hq-title { color: #FFD54F; }
+
+  .strip { position: absolute; left: 0; top: 0; bottom: 0; width: 7mm; }
+  .moment-antes .strip { background: var(--blue); }
+  .moment-durante .strip { background: var(--green); }
+  .moment-depois .strip { background: var(--yellow-strong); }
+
+  /* layout das páginas de conteúdo */
+  .content { position: absolute; left: 16mm; right: 12mm; top: 12mm; bottom: 12mm; display: flex; flex-direction: column; }
+  .panels { display: grid; gap: 4mm; }
+  .panels.two { grid-template-columns: 1fr 1fr; }
+  .panel-wrap { display: flex; flex-direction: column; gap: 2mm; }
+  .panel-wrap .caption { padding: 0 1mm; }
+  .fill { flex: 1; }
+  .box.compact li { margin-bottom: 2.2mm; font-size: 10.2pt; line-height: 1.3; }
+  .box.compact h3 { font-size: 14pt; }
+  .tip { background: var(--blue-pale); border: 3px dashed var(--blue); border-radius: 10px; padding: 3mm 4mm; font-size: 10pt; display: flex; gap: 3mm; align-items: center; }
+  .tip .ic { width: 11mm; height: 11mm; flex: 0 0 11mm; }
+  .tip b { font-family: var(--title); font-weight: 800; }
+
+  /* página 2 */
+  .intro h2 { font-family: var(--title); font-weight: 800; font-size: 20pt; margin: 0 0 2mm; }
+  .intro p { margin: 0 0 3mm; font-size: 11pt; }
+  .kits { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+  .kit { border: 3px solid var(--ink); border-radius: 12px; padding: 4mm; display: flex; gap: 4mm; align-items: center; box-shadow: 4px 4px 0 var(--ink); }
+  .kit .ill { width: 28mm; height: 36mm; flex: 0 0 28mm; }
+  .kit h4 { margin: 0 0 1.5mm; font-family: var(--title); font-weight: 800; font-size: 13pt; line-height: 1.05; }
+  .kit p { margin: 0; font-size: 10pt; }
+  .kit.a { background: #FFF8DC; } .kit.b { background: #EAF6FF; }
+  .moments { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4mm; }
+  .moment { border: 3px solid var(--ink); border-radius: 10px; padding: 3mm 4mm; font-size: 10pt; }
+  .moment b { display: block; font-family: var(--title); font-weight: 800; font-size: 13pt; }
+  .moment.antes { background: #D6EAF8; } .moment.durante { background: #DFF5D3; } .moment.depois { background: #FFF0B3; }
+
+  /* página informativo */
+  .info { background: #4FC3F7; }
+  .info .stripes { position: absolute; inset: 0; opacity: .55; }
+  .info .content { left: 12mm; }
+  .info .dashed-box { height: 100%; display: flex; flex-direction: column; }
+  .info .hq-title { font-size: 30pt; text-align: center; display: block; margin-bottom: 3mm; }
+  .info p, .info li { font-family: var(--comic); font-weight: 700; font-size: 11pt; line-height: 1.35; color: #0B2A3A; }
+  .info p { margin: 0 0 2.4mm; }
+  .info h4 { font-family: var(--title); font-weight: 800; font-size: 13.5pt; margin: 3mm 0 2mm; color: #0B2A3A; }
+  .info table { width: 100%; border-collapse: collapse; background: rgba(255,255,255,.85); border: 2.5px solid var(--ink); border-radius: 8px; overflow: hidden; }
+  .info th, .info td { border: 2px solid var(--ink); padding: 2mm 2.6mm; font-family: var(--comic); font-weight: 700; font-size: 10.2pt; vertical-align: top; text-align: left; }
+  .info th { font-family: var(--title); font-weight: 800; font-size: 10.5pt; background: #FFF6B0; }
+  .info td.no { background: #FDE2E0; } .info td.yes { background: #E3F7D9; }
+
+  /* ficha */
+  .ficha h2 { font-family: var(--title); font-weight: 800; font-size: 20pt; margin: 0 0 1mm; }
+  .ficha .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+  .ficha h4 { font-family: var(--title); font-weight: 800; font-size: 12pt; margin: 3mm 0 1.5mm; border-bottom: 2.5px solid var(--ink); }
+  .ficha .opts { font-size: 9.6pt; line-height: 2.1; }
+  .ficha .opts .line { display: inline-block; border-bottom: 2px solid var(--ink); height: 4mm; vertical-align: baseline; }
+  .credits { border: 3px solid var(--ink); border-radius: 10px; padding: 4mm; background: #F3F8E8; font-size: 9pt; margin-top: auto; }
+  .credits b { font-family: var(--title); font-weight: 800; }
+</style>
+</head>
+<body>
+
+<!-- ================= PÁGINA 1 — CAPA ================= -->
+<section class="page cover">
+  <div class="tiles"></div>
+  <div class="titlebox">
+    <div class="hq-title">Atendimento Odontológico<br>à Pessoa com TEA</div>
+    <div class="sub">Cartilha de orientação para o cirurgião-dentista:<br>antes, durante e depois da consulta</div>
+  </div>
+  <div class="art"><div class="ill" data-scene="cover"></div></div>
+  <div class="badge"><span class="label">Níveis de suporte 1 e 2</span></div>
+  <div class="foot">
+    <div class="who">Para o consultório, a equipe e a família</div>
+    <div class="org">Material educativo<br>Acompanha o card “Minha visita ao dentista”</div>
+  </div>
+</section>
+
+<!-- ================= PÁGINA 2 — APRESENTAÇÃO ================= -->
+<section class="page">
+  <div class="pad intro" style="display:flex;flex-direction:column;gap:4mm">
+    <div>
+      <h2>Como usar esta cartilha</h2>
+      <p>Pessoas com Transtorno do Espectro Autista (TEA) podem ter dificuldade com <b>imprevistos, barulhos, luzes, cheiros e toques</b>, além de se comunicarem de maneiras diferentes. No consultório, isso costuma gerar recusa, choro ou “fuga”, não por birra, mas por <b>sobrecarga e falta de previsibilidade</b>. A boa notícia: com preparo simples, a consulta pode dar certo.</p>
+      <p>Este material mescla três recursos que funcionam bem com pessoas autistas, e vem em duas peças que trabalham juntas:</p>
+    </div>
+    <div class="ill" data-scene="threeFormats" style="height:40mm"></div>
+    <div class="kits">
+      <div class="kit a">
+        <div class="ill" data-scene="dentistWave"></div>
+        <div><h4>1. Esta cartilha (para o dentista)</h4><p>O manejo passo a passo: o que fazer <b>antes</b> (preparo), <b>durante</b> (acolhimento e procedimento) e <b>depois</b> (reforço e continuidade). Fica no consultório, à mão de toda a equipe.</p></div>
+      </div>
+      <div class="kit b">
+        <div class="ill" data-scene="kidWave"></div>
+        <div><h4>2. O card “Minha visita ao dentista”</h4><p>Uma <b>história social ilustrada</b> em 10 passos, na voz do paciente. O dentista entrega ao cuidador, que lê com o paciente em casa, todos os dias, antes da consulta. Assim ele chega sabendo o que vai acontecer.</p></div>
+      </div>
+    </div>
+    <div class="moments">
+      <div class="moment antes"><b>ANTES</b>Conhecer o paciente, preparar a família e o ambiente, entregar o card.</div>
+      <div class="moment durante"><b>DURANTE</b>Acolher com calma, apresentar tudo (Falar–Mostrar–Fazer), respeitar o sinal de PARE.</div>
+      <div class="moment depois"><b>DEPOIS</b>Recompensar, orientar a higiene em casa, registrar o que funcionou e marcar o retorno.</div>
+    </div>
+    <div class="tip"><div class="ic" data-icon="heart"></div><div><b>Regra de ouro:</b> previsibilidade, uma coisa de cada vez e nunca forçar. Uma consulta em que o paciente apenas sentou na cadeira e saiu feliz é uma consulta que <b>deu certo</b>, porque a próxima será mais fácil.</div></div>
+    <div class="box" style="padding:4mm 6mm;box-shadow:none;background:#FAFAFA">
+      <h3 style="font-size:13pt;margin-bottom:2mm">O que você encontra aqui</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1mm 8mm;font-size:10pt">
+        <div><b>3</b> · Antes da consulta: entrevista, vídeo, card, agenda e ambiente</div>
+        <div><b>6</b> · Depois: brinde, higiene em casa, registro e retorno</div>
+        <div><b>4</b> · Durante, a chegada: acolhimento e Falar–Mostrar–Fazer</div>
+        <div><b>7</b> · Informativo: o TEA no consultório, o que dizer e evitar</div>
+        <div><b>5</b> · Durante, o procedimento: degraus, sinal de PARE, sobrecarga</div>
+        <div><b>8</b> · Ficha do perfil do paciente e registro das consultas</div>
+      </div>
+    </div>
+    <div class="small">Os níveis de suporte 1 e 2 (DSM-5) indicam pessoas que precisam de apoio ou apoio substancial. Esta cartilha é educativa e não substitui a avaliação clínica individual nem a orientação da equipe multiprofissional que acompanha o paciente.</div>
+  </div>
+  <div class="pagenum">2</div>
+</section>
+
+<!-- ================= PÁGINA 3 — ANTES ================= -->
+<section class="page moment-antes">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head">
+      <div class="num">1</div>
+      <div><div class="hq-title">ANTES da consulta</div><div class="sub">Conhecer o paciente e preparar o caminho</div></div>
+    </div>
+    <div class="panels two">
+      <div class="panel-wrap"><div class="panel" style="height:76mm"><div class="ill" data-scene="before_phone"></div></div><div class="caption">1. Antes de marcar, o dentista conversa com quem cuida: como o paciente se comunica, o que o incomoda, o que ele adora.</div></div>
+      <div class="panel-wrap"><div class="panel" style="height:76mm"><div class="ill" data-scene="before_video"></div></div><div class="caption">2. A família recebe um vídeo curto do consultório e da equipe. Em casa, o paciente vê o que vai encontrar.</div></div>
+    </div>
+    <div style="height:4mm"></div>
+    <div class="box compact">
+      <h3>Checklist do ANTES</h3>
+      <ul>
+        <li><div class="ic" data-icon="phone"></div><div><b>Entrevista prévia com pais ou cuidadores</b> (telefone, mensagem ou ficha da página 8): como se comunica (fala, figuras, gestos), sensibilidades (som, luz, cheiro, toque, texturas), interesses e reforçadores, gatilhos e sinais de desconforto, experiências anteriores, medicações e outras condições de saúde.</div></li>
+        <li><div class="ic" data-icon="video"></div><div><b>Envie vídeo ou fotos</b> do consultório, da equipe (sem máscara, para o rosto ser reconhecido) e dos equipamentos que farão barulho ou luz.</div></li>
+        <li><div class="ic" data-icon="notes"></div><div><b>Entregue o card “Minha visita ao dentista”</b> para a família ler em casa, todos os dias, na semana da consulta. Peça que preencham o nome e a data.</div></li>
+        <li><div class="ic" data-icon="calendar"></div><div><b>Agende o primeiro horário</b> do turno ou o de menor movimento. Nada de espera longa; consulta curta (20 a 30 min).</div></li>
+        <li><div class="ic" data-icon="door"></div><div><b>Visita de ambientação</b>, se possível: só conhecer a sala, sentar na cadeira e ganhar um brinde. Sem procedimento.</div></li>
+        <li><div class="ic" data-icon="lampdim"></div><div><b>Prepare o ambiente:</b> luz do refletor desligada até a hora, sem música ou TV alta, cheiros neutros, poucas pessoas na sala. Separe óculos escuros, fones abafadores e o brinde.</div></li>
+        <li><div class="ic" data-icon="stop"></div><div><b>Combine com a família o sinal de PARE</b> (mão levantada) e um sinal de “tudo bem” (polegar). Eles também aparecem no card.</div></li>
+      </ul>
+    </div>
+    <div class="fill"></div>
+    <div class="tip"><div class="ic" data-icon="family"></div><div><b>Use os interesses a favor:</b> se o paciente adora dinossauros, o espelhinho vira o “explorador de dentes de dinossauro”. O que a família contou na entrevista é o seu melhor instrumento.</div></div>
+  </div>
+  <div class="pagenum">3</div>
+</section>
+
+<!-- ================= PÁGINA 4 — DURANTE (ACOLHIMENTO) ================= -->
+<section class="page moment-durante">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head">
+      <div class="num">2</div>
+      <div><div class="hq-title">DURANTE: a chegada</div><div class="sub">Acolher, apresentar e combinar</div></div>
+    </div>
+    <div class="panels two">
+      <div class="panel-wrap"><div class="panel" style="height:76mm"><div class="ill" data-scene="waiting"></div></div><div class="caption">3. Sala de espera calma: pouca gente, sem TV alta, luz suave. O paciente pode ficar com seu objeto de conforto e os fones.</div></div>
+      <div class="panel-wrap"><div class="panel" style="height:76mm"><div class="ill" data-scene="tellShowDo"></div></div><div class="caption">4. Falar–Mostrar–Fazer: o dentista explica, deixa tocar e só então usa cada instrumento. O acompanhante fica ao lado.</div></div>
+    </div>
+    <div style="height:4mm"></div>
+    <div class="box compact">
+      <h3>Como proceder no acolhimento</h3>
+      <ul>
+        <li><div class="ic" data-icon="talk"></div><div><b>Chame pelo nome, com voz calma</b>, na altura dos olhos. Não exija contato visual. Evite toques de surpresa (avise antes: “vou tocar no seu ombro”).</div></li>
+        <li><div class="ic" data-icon="family"></div><div><b>Acompanhante sempre na sala</b>, de preferência onde o paciente possa vê-lo. Peça a ele que só intervenha se o dentista pedir, para não ter duas vozes ao mesmo tempo.</div></li>
+        <li><div class="ic" data-icon="mirror"></div><div><b>Falar–Mostrar–Fazer:</b> apresente a cadeira, a luz, o espelhinho, o sugador (“o canudo que faz barulho”), o “chuveirinho”. Deixe tocar, ligue cada um longe da boca antes de usar.</div></li>
+        <li><div class="ic" data-icon="headphones"></div><div><b>Ofereça fones abafadores e óculos escuros.</b> Ligue o refletor só depois dos óculos, e nunca direto nos olhos.</div></li>
+        <li><div class="ic" data-icon="steps"></div><div><b>Linguagem clara e literal:</b> frases curtas, uma instrução por vez, sempre na mesma ordem. Evite metáforas e ironia. Diga o que vai sentir (“vai fazer cócegas”, “vai ficar frio”), em vez de “não vai doer”.</div></li>
+        <li><div class="ic" data-icon="timer"></div><div><b>Dê previsibilidade:</b> conte em voz alta (“até dez e paro”) ou use uma ampulheta. Avise cada etapa antes de começar e quando termina.</div></li>
+        <li><div class="ic" data-icon="chair"></div><div><b>Cadeira:</b> mova devagar, avisando (“vai subir”, “vai deitar um pouquinho”). Se ele não quiser deitar, atenda sentado.</div></li>
+      </ul>
+    </div>
+    <div class="fill"></div>
+    <div class="tip"><div class="ic" data-icon="check"></div><div><b>Mesma equipe, mesma sala, mesma sequência</b> em todas as consultas. A repetição é o que transforma o consultório em um lugar seguro.</div></div>
+  </div>
+  <div class="pagenum">4</div>
+</section>
+
+<!-- ================= PÁGINA 5 — DURANTE (PROCEDIMENTO) ================= -->
+<section class="page moment-durante">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head">
+      <div class="num">3</div>
+      <div><div class="hq-title">DURANTE: o procedimento</div><div class="sub">Pequenos passos, sinal de PARE e limites</div></div>
+    </div>
+    <div class="panels two">
+      <div class="panel-wrap"><div class="panel" style="height:70mm"><div class="ill" data-scene="countTeeth"></div></div><div class="caption">5. Começa pelo mais simples: abrir a boca e contar os dentes, com contagem em voz alta. Depois, se der, a limpeza.</div></div>
+      <div class="panel-wrap"><div class="panel" style="height:70mm"><div class="ill" data-scene="stopSign"></div></div><div class="caption">6. Mão levantada é PARE. O dentista para na hora, respira junto e só continua quando o paciente permitir.</div></div>
+    </div>
+    <div style="height:4mm"></div>
+    <div style="display:grid;grid-template-columns:1fr 54mm;gap:4mm;align-items:stretch">
+      <div class="box compact">
+        <h3>Como proceder no procedimento</h3>
+        <ul>
+          <li><div class="ic" data-icon="steps"></div><div><b>Dessensibilização gradual:</b> sentar → abrir a boca → contar os dentes → escovação → flúor → profilaxia → restaurações simples. Avance um degrau por consulta e volte um se precisar.</div></li>
+          <li><div class="ic" data-icon="stop"></div><div><b>Respeite o sinal de PARE</b> imediatamente, sempre. Pausas combinadas (“contamos até dez e paramos”) dão controle ao paciente.</div></li>
+          <li><div class="ic" data-icon="thumbs"></div><div><b>Reforço positivo imediato e específico:</b> “você abriu a boca bem grande!”. Elogie a tentativa, não só o resultado.</div></li>
+          <li><div class="ic" data-icon="warn"></div><div><b>Nunca force nem segure</b> o paciente. Estabilização protetora só com indicação clínica, consentimento da família e protocolo. Em caso de recusa, encerre de forma positiva e reagende.</div></li>
+          <li><div class="ic" data-icon="pause"></div><div><b>Sinais de sobrecarga:</b> tapar os ouvidos, balançar o corpo, gritar, chorar, morder, tentar sair. Ação: pare, reduza estímulos (luz, som, pessoas), ofereça o objeto de conforto, dê tempo.</div></li>
+          <li><div class="ic" data-icon="mute"></div><div><b>Reduza o imprevisível:</b> avise antes de ligar qualquer aparelho, apresente um instrumento por vez, sem conversas paralelas na sala.</div></li>
+        </ul>
+      </div>
+      <div class="panel-wrap">
+        <div class="panel" style="height:40mm;flex:0 0 auto"><div class="ill" data-scene="overload"></div></div>
+        <div class="caption" style="font-size:9.4pt"><b style="color:var(--red)">O que evitar:</b> barulho súbito, luz forte no rosto, cheiros fortes, várias pessoas falando, toques sem aviso e “só mais um pouquinho” depois do PARE.</div>
+        <div class="fill"></div>
+        <div class="tip" style="flex-direction:column;align-items:flex-start;gap:1.5mm"><b>Meta do dia</b><div>Defina com a família um objetivo pequeno e concreto (“hoje: contar os dentes”). Alcançou? A consulta foi um sucesso.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="pagenum">5</div>
+</section>
+
+<!-- ================= PÁGINA 6 — DEPOIS ================= -->
+<section class="page moment-depois">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head">
+      <div class="num">4</div>
+      <div><div class="hq-title">DEPOIS da consulta</div><div class="sub">Recompensar, orientar e dar continuidade</div></div>
+    </div>
+    <div class="panels two">
+      <div class="panel-wrap"><div class="panel" style="height:76mm"><div class="ill" data-scene="reward"></div></div><div class="caption">7. Terminou? Brinde e elogio específico, mesmo que só tenha sentado na cadeira. A consulta sempre acaba bem.</div></div>
+      <div class="panel-wrap"><div class="panel" style="height:76mm"><div class="ill" data-scene="homeHygiene"></div></div><div class="caption">8. Em casa, a escovação segue uma rotina visual: mesma hora, mesma ordem, com apoio de figuras.</div></div>
+    </div>
+    <div style="height:4mm"></div>
+    <div style="display:grid;grid-template-columns:1fr 54mm;gap:4mm;align-items:stretch">
+      <div class="box compact">
+        <h3>Como proceder depois</h3>
+        <ul>
+          <li><div class="ic" data-icon="gift"></div><div><b>Encerre sempre de forma positiva:</b> brinde, adesivo ou carimbo no card (“Eu consegui!”). Diga o que ele fez de bom e o que vai acontecer na próxima vez.</div></li>
+          <li><div class="ic" data-icon="toothbrush"></div><div><b>Orientações de higiene oral para casa:</b> escovar 2x ao dia com rotina visual (figuras com a sequência), creme dental com flúor em sabor suave, escova macia (ou elétrica, se tolerar a vibração), fio dental com apoio do cuidador. Comece com poucos segundos e aumente aos poucos.</div></li>
+          <li><div class="ic" data-icon="notes"></div><div><b>Registre o que funcionou e o que não funcionou</b> (ficha da página 8): fones? óculos? contagem? música? Na próxima consulta, repita exatamente o que deu certo.</div></li>
+          <li><div class="ic" data-icon="calendar"></div><div><b>Marque o retorno</b> antes de a família sair, em intervalo curto (30 a 90 dias). Consultas frequentes e curtas funcionam melhor do que raras e longas.</div></li>
+          <li><div class="ic" data-icon="talk"></div><div><b>Converse com o cuidador</b> sobre o próximo degrau, reforce o uso do card e combine o que praticar em casa (ex.: abrir a boca na frente do espelho, deixar contar os dentes com a escova).</div></li>
+        </ul>
+      </div>
+      <div class="panel-wrap">
+        <div class="panel" style="height:44mm;flex:0 0 auto"><div class="ill" data-scene="record"></div></div>
+        <div class="caption" style="font-size:9.4pt">9. O dentista anota o que funcionou. Na próxima consulta, a sequência se repete, e um novo passo é tentado.</div>
+        <div class="fill"></div>
+        <div class="tip" style="flex-direction:column;align-items:flex-start;gap:1.5mm"><b>Prevenção é tudo</b><div>Quanto menos cárie, menos procedimentos difíceis. Flúor, selantes e escovação orientada são os melhores aliados.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="pagenum">6</div>
+</section>
+
+<!-- ================= PÁGINA 7 — INFORMATIVO ================= -->
+<section class="page info">
+  <div class="stripes"></div>
+  <div class="content">
+    <div class="dashed-box">
+      <span class="hq-title white">Informativo</span>
+      <h4>O TEA no consultório, em poucas palavras</h4>
+      <p>O autismo é um espectro: cada pessoa é única. Nos <b>níveis de suporte 1 e 2</b>, o paciente geralmente se comunica (com fala, figuras ou gestos) e consegue ser atendido no consultório comum, desde que haja <b>preparo, previsibilidade e respeito ao ritmo dele</b>. Quatro pontos mudam tudo:</p>
+      <ul style="margin:0 0 3mm;padding-left:5mm">
+        <li><b>Sensorial:</b> sons, luzes, cheiros, sabores e toques podem ser sentidos de forma muito intensa. Fones, óculos escuros, creme dental com sabor suave e avisos antes de tocar reduzem a sobrecarga.</li>
+        <li><b>Comunicação:</b> entendimento literal. Diga o que vai acontecer, em frases curtas, e mostre com figuras ou objetos. Pergunte à família como ele diz “sim”, “não” e “dor”.</li>
+        <li><b>Previsibilidade:</b> mudanças geram ansiedade. Mesma equipe, mesma sala, mesma sequência, e o card lido em casa antes.</li>
+        <li><b>Interesses intensos:</b> são aliados. Use o tema favorito para explicar e para recompensar.</li>
+      </ul>
+      <h4>O que dizer e o que evitar</h4>
+      <table>
+        <tr><th style="width:50%">Evite</th><th>Prefira</th></tr>
+        <tr><td class="no">“Não vai doer nada.”</td><td class="yes">“Você vai sentir frio e cócegas. Eu aviso antes.”</td></tr>
+        <tr><td class="no">“Abre a boca que eu vou dar uma olhadinha rapidinho.”</td><td class="yes">“Abre a boca. Vou contar seus dentes até dez. Um, dois…”</td></tr>
+        <tr><td class="no">“Se não deixar, vai ter que tomar injeção.”</td><td class="yes">“Quando você levantar a mão, eu paro. Combinado?”</td></tr>
+        <tr><td class="no">Vários profissionais falando ao mesmo tempo.</td><td class="yes">Uma voz só, calma, sempre a mesma pessoa.</td></tr>
+        <tr><td class="no">Ligar o motor ou a luz de surpresa.</td><td class="yes">“Agora vou ligar o canudo que faz barulho. Ouve primeiro.”</td></tr>
+        <tr><td class="no">Segurar, insistir ou negociar “só mais um pouquinho”.</td><td class="yes">Parar, respirar, reduzir estímulos e, se preciso, encerrar bem e remarcar.</td></tr>
+      </table>
+      <h4>Sinais de sobrecarga sensorial</h4>
+      <p>Tapar os ouvidos, fechar os olhos com força, balançar o corpo, repetir frases, chorar, gritar, morder, tentar sair da cadeira ou “desligar” (ficar imóvel e sem responder). Diante deles: <b>pare, diminua luz e som, ofereça o objeto de conforto e dê tempo</b>. Retomar só se o paciente sinalizar que está pronto.</p>
+      <h4>Sinais combinados (iguais aos do card)</h4>
+      <div class="row" style="gap:6mm;justify-content:center">
+        <div class="row"><div class="ill" data-scene="sig_stop" style="width:16mm;height:16mm"></div><p style="margin:0"><b>Mão levantada</b><br>PARE</p></div>
+        <div class="row"><div class="ill" data-scene="sig_pause" style="width:16mm;height:16mm"></div><p style="margin:0"><b>Pausa</b><br>quero descansar</p></div>
+        <div class="row"><div class="ill" data-scene="sig_ok" style="width:16mm;height:16mm"></div><p style="margin:0"><b>Polegar</b><br>tudo bem, pode continuar</p></div>
+      </div>
+      <div class="fill"></div>
+      <p style="margin:0;font-size:9pt">Referências de base: Falar–Mostrar–Fazer (tell-show-do), dessensibilização sistemática, histórias sociais, apoio visual (PECS) e reforço positivo, recomendados na odontopediatria e na odontologia para pacientes com necessidades especiais.</p>
+    </div>
+  </div>
+  <div class="pagenum" style="color:#0B2A3A">7</div>
+</section>
+
+<!-- ================= PÁGINA 8 — FICHA + CRÉDITOS ================= -->
+<section class="page">
+  <div class="pad ficha" style="display:flex;flex-direction:column">
+    <h2>Ficha: perfil do paciente com TEA</h2>
+    <div class="small" style="margin-bottom:3mm">Preencha com a família na entrevista prévia e atualize após cada consulta. Guarde no prontuário.</div>
+    <div class="field">Nome: <span class="line"></span> Idade: <span class="line" style="flex:0 0 18mm"></span></div>
+    <div class="field">Responsável: <span class="line"></span> Telefone: <span class="line" style="flex:0 0 40mm"></span></div>
+    <div class="field">Nível de suporte: <span class="checkbox"></span>1 <span class="checkbox"></span>2 &nbsp; Outras condições / medicações: <span class="line"></span></div>
+    <div class="cols">
+      <div>
+        <h4>Comunicação</h4>
+        <div class="opts"><span class="checkbox"></span>Fala &nbsp;<span class="checkbox"></span>Figuras (PECS) &nbsp;<span class="checkbox"></span>Gestos &nbsp;<span class="checkbox"></span>Tablet<br>Como diz “sim” / “não” / “dor”: <span class="line" style="display:inline-block;width:40mm"></span></div>
+        <h4>Sensibilidades (marque o que incomoda)</h4>
+        <div class="opts"><span class="checkbox"></span>Sons altos &nbsp;<span class="checkbox"></span>Luz forte &nbsp;<span class="checkbox"></span>Cheiros &nbsp;<span class="checkbox"></span>Toque no rosto<br><span class="checkbox"></span>Sabores / texturas &nbsp;<span class="checkbox"></span>Água na boca &nbsp;<span class="checkbox"></span>Deitar<br>Outros: <span class="line" style="display:inline-block;width:52mm"></span></div>
+        <h4>Interesses e reforçadores</h4>
+        <div class="opts">Gosta de: <span class="line" style="display:inline-block;width:60mm"></span><br>Brinde que funciona: <span class="line" style="display:inline-block;width:46mm"></span><br>Objeto de conforto: <span class="line" style="display:inline-block;width:48mm"></span></div>
+      </div>
+      <div>
+        <h4>Gatilhos e sinais de desconforto</h4>
+        <div class="opts">O que desencadeia crise: <span class="line" style="display:inline-block;width:40mm"></span><br>Como demonstra desconforto: <span class="line" style="display:inline-block;width:34mm"></span><br>O que acalma: <span class="line" style="display:inline-block;width:58mm"></span></div>
+        <h4>Experiências anteriores no dentista</h4>
+        <div class="opts"><span class="checkbox"></span>Nunca foi &nbsp;<span class="checkbox"></span>Foi bem &nbsp;<span class="checkbox"></span>Foi difícil<br>Observações: <span class="line" style="display:inline-block;width:58mm"></span></div>
+        <h4>Apoios combinados</h4>
+        <div class="opts"><span class="checkbox"></span>Fones &nbsp;<span class="checkbox"></span>Óculos escuros &nbsp;<span class="checkbox"></span>Contagem &nbsp;<span class="checkbox"></span>Ampulheta<br><span class="checkbox"></span>Card lido em casa &nbsp;<span class="checkbox"></span>Vídeo enviado &nbsp;<span class="checkbox"></span>Visita de ambientação<br>Sinal de PARE combinado: <span class="line" style="display:inline-block;width:42mm"></span></div>
+      </div>
+    </div>
+    <h4>Registro das consultas</h4>
+    <table style="width:100%;border-collapse:collapse;font-size:9pt">
+      <tr style="font-family:var(--title);font-weight:800;background:#EAF6FF"><td style="border:2px solid var(--ink);padding:1.5mm;width:20mm">Data</td><td style="border:2px solid var(--ink);padding:1.5mm">Até onde chegou (degrau)</td><td style="border:2px solid var(--ink);padding:1.5mm">O que funcionou</td><td style="border:2px solid var(--ink);padding:1.5mm">Próximo passo</td></tr>
+      <tr><td style="border:2px solid var(--ink);height:9mm"></td><td style="border:2px solid var(--ink)"></td><td style="border:2px solid var(--ink)"></td><td style="border:2px solid var(--ink)"></td></tr>
+      <tr><td style="border:2px solid var(--ink);height:9mm"></td><td style="border:2px solid var(--ink)"></td><td style="border:2px solid var(--ink)"></td><td style="border:2px solid var(--ink)"></td></tr>
+      <tr><td style="border:2px solid var(--ink);height:9mm"></td><td style="border:2px solid var(--ink)"></td><td style="border:2px solid var(--ink)"></td><td style="border:2px solid var(--ink)"></td></tr>
+      <tr><td style="border:2px solid var(--ink);height:9mm"></td><td style="border:2px solid var(--ink)"></td><td style="border:2px solid var(--ink)"></td><td style="border:2px solid var(--ink)"></td></tr>
+      <tr><td style="border:2px solid var(--ink);height:9mm"></td><td style="border:2px solid var(--ink)"></td><td style="border:2px solid var(--ink)"></td><td style="border:2px solid var(--ink)"></td></tr>
+      <tr><td style="border:2px solid var(--ink);height:9mm"></td><td style="border:2px solid var(--ink)"></td><td style="border:2px solid var(--ink)"></td><td style="border:2px solid var(--ink)"></td></tr>
+      <tr><td style="border:2px solid var(--ink);height:9mm"></td><td style="border:2px solid var(--ink)"></td><td style="border:2px solid var(--ink)"></td><td style="border:2px solid var(--ink)"></td></tr>
+    </table>
+    <div class="credits">
+      <b>Sobre este material.</b> Cartilha educativa para cirurgiões-dentistas e equipes de saúde bucal sobre o atendimento de pessoas com TEA (níveis de suporte 1 e 2). Inspirada no formato das HQs educativas de higiene bucal. Ilustrações vetoriais originais. Pode ser reproduzida gratuitamente para fins educativos, com citação da fonte.<br>
+      <b>Concepção e roteiro:</b> ______________________ &nbsp; <b>Revisão técnica:</b> ______________________ &nbsp; <b>Edição:</b> 1ª · ______ / ______
+    </div>
+  </div>
+  <div class="pagenum">8</div>
+</section>
+
+<script src="../shared/ill.js"></script>
+</body>
+</html>

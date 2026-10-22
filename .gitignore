@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# PDFs finais das cartilhas ficam versionados
+!cartilhas/dist
