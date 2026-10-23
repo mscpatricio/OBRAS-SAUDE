@@ -1310,6 +1310,17 @@
     <rect x="230" y="20" width="180" height="200" rx="10" fill="#FFF6B0" ${S}/>
     ${htmlText(236, 26, 168, 30, '1ª lei: energia se conserva', 10, 800, OUT, 'left', 'Baloo 2')}${htmlText(236, 58, 168, 30, '2ª lei: entropia ↑, calor sempre sobra', 10, 800, OUT, 'left', 'Baloo 2')}${htmlText(236, 96, 168, 30, 'ATP = moeda energética', 10, 800, '#8E44AD', 'left', 'Baloo 2')}${htmlText(236, 130, 168, 80, 'Febre e hipotermia: manejo pela física do calor (compressas, ambiente fresco, aquecimento)', 9, 700, OUT, 'left')}
   `);
+  SCENES.f_termo = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    ${put(KID({ expr: 'neutral', armL: 'down', armR: 'down' }), 110, 236, 0.74)}
+    <rect x="30" y="40" width="40" height="18" rx="4" fill="#5DADE2" ${S}/>${htmlText(0, 60, 100, 22, 'compressa', 8.5, 800, OUT)}
+    ${arrow(70, 60, 86, 82, '#2E86C1')}${htmlText(0, 84, 70, 22, 'condução', 8, 800, '#2E86C1')}
+    ${arrow(150, 120, 190, 110, '#1ABC9C')}${arrow(150, 150, 190, 150, '#1ABC9C')}${htmlText(160, 88, 80, 22, 'convecção', 8.5, 800, '#1ABC9C')}
+    ${Array.from({ length: 3 }, (_, i) => `<path d="M${40 + i * 8} 180 q-6 -10 0 -20 q6 -10 0 -20" fill="none" stroke="#E67E22" stroke-width="2.5"/>`).join('')}${htmlText(10, 186, 70, 22, 'radiação', 8.5, 800, '#E67E22')}
+    <circle cx="90" cy="40" r="4" fill="#5DADE2"/><circle cx="130" cy="36" r="4" fill="#5DADE2"/>${htmlText(84, 8, 70, 22, 'evaporação', 8.5, 800, '#2E86C1')}
+    <rect x="230" y="20" width="180" height="200" rx="10" fill="#FFF6B0" ${S}/>
+    ${htmlText(236, 26, 168, 30, 'Termostato: hipotálamo ~37 °C', 10, 800, OUT, 'left', 'Baloo 2')}${htmlText(236, 58, 168, 34, 'Calor: vasodilatação + sudorese', 9.5, 800, '#C0392B', 'left', 'Baloo 2')}${htmlText(236, 94, 168, 34, 'Frio: vasoconstrição + tremores', 9.5, 800, '#2E86C1', 'left', 'Baloo 2')}${htmlText(236, 132, 168, 60, 'Febre: pirógenos elevam o set point; o corpo defende uma temperatura maior (calafrios)', 8.5, 800, '#8E44AD', 'left')}
+  `);
   SCENES.b_sinais = () => scene(420, 300, HOSP(`
     ${bpMonitor(60, 232)}${monitor(360, 232)}
     ${put(ELDER({ sit: true, expr: 'happy', armL: 'down' }), 210, 240, 0.64)}
@@ -1512,6 +1523,151 @@
     ${put(BIOMED({ armR: 'show', holdR: 'tube', expr: 'happy' }), 300, 296, 0.8)}
     ${bubble({ x: 150, y: 40, w: 250, h: 60, text: 'O osmômetro mede o abaixamento do ponto de congelamento: quanto mais partículas, mais baixo congela.', tail: [300, 108], size: 10 })}
   `));
+
+  // ======= FISIOLOGIA II — SISTEMAS ORGÂNICOS INTEGRADOS =======
+  function box(x, y, w, h, fill, text, size = 9.5, color = OUT) {
+    return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="7" fill="${fill}" ${S}/>${htmlText(x + 2, y, w - 4, h, text, size, 800, color, 'center', 'Baloo 2')}`;
+  }
+  SCENES.f_cover = () => scene(420, 470, `
+    ${plainWall(420, 332, '#FDF2E9')}${floor(420, 332, 138, '#D5DBDB')}<rect x="0" y="230" width="420" height="10" fill="#E74C3C" ${S}/>
+    ${whiteboard(26, 34, 226, 124, `${htmlText(6, 4, 214, 28, 'DC = FC × VS', 18, 800, '#C0392B', 'center', 'Baloo 2')}${htmlText(6, 34, 214, 26, 'PA = DC × RVP', 14, 800, '#2E86C1', 'center', 'Baloo 2')}${htmlText(6, 62, 214, 26, 'TFG ≈ 125 mL/min', 13, 800, '#E67E22', 'center', 'Baloo 2')}${htmlText(6, 90, 214, 26, 'TRH → TSH → T₃/T₄ ⊣', 13, 800, '#8E44AD', 'center', 'Baloo 2')}`)}
+    ${window_(300, 40, 96, 72)}
+    ${labBench(250, 332, 170)}${analyzer(262, 332, 110, 80, 'ANALISADOR', ['Troponina', 'Creatinina'], '#E74C3C')}${tubeRack(340, 332)}
+    ${put(PROF({ armL: 'point', armR: 'hold', holdR: 'marker', expr: 'bigsmile', coat: '#FFFFFF', shirt: '#E74C3C' }), 300, 440, 1.0)}
+    ${put(BIOMED({ armL: 'hold', holdL: 'clipboard', expr: 'happy' }), 110, 436, 0.78)}
+    ${put(BIOMED2({ armR: 'show', holdR: 'tube', expr: 'happy' }), 200, 436, 0.78)}
+  `, '', 'xMidYMax slice');
+
+  SCENES.f_feedback = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    ${htmlText(0, 4, 250, 22, 'Alça de feedback negativo', 11.5, 800, OUT, 'center', 'Baloo 2')}
+    ${box(70, 34, 110, 34, '#FFF6B0', 'VARIÁVEL (glicemia, PA, T°)', 8.5)}
+    ${box(150, 96, 90, 34, '#D6EAF8', 'SENSOR', 10)}
+    ${box(150, 160, 90, 40, '#E8DAEF', 'CENTRO INTEGRADOR (set point)', 8.5)}
+    ${box(10, 120, 90, 40, '#D5F5E3', 'EFETOR', 10)}
+    ${arrow(180, 68, 190, 94, OUT)}${arrow(195, 132, 195, 158, OUT)}${arrow(148, 178, 100, 150, OUT)}${arrow(55, 118, 100, 70, OUT)}
+    ${htmlText(60, 196, 140, 30, 'reverte o desvio → estabiliza', 8.5, 800, '#1E8449')}
+    ${htmlText(8, 60, 60, 40, 'desvio detectado', 7.5, 800, '#C0392B')}
+    <circle cx="330" cy="120" r="70" fill="#F7C21B" ${S}/>
+    <path d="M330 120 L330 50 A70 70 0 0 1 390 155 Z" fill="#5DADE2" ${S}/>
+    <path d="M330 120 L390 155 A70 70 0 0 1 335 190 Z" fill="#AED6F1" ${S}/>
+    ${htmlText(262, 100, 70, 40, 'LIC ⅔ K⁺', 11, 800, OUT)}${htmlText(338, 78, 60, 40, 'LEC ⅓ Na⁺', 9.5, 800, '#1F618D')}${htmlText(338, 150, 60, 22, 'interstício', 7.5, 800, OUT)}${htmlText(350, 106, 60, 22, 'plasma', 8, 800, '#1F618D')}
+    ${htmlText(260, 4, 140, 22, 'Água: 60% do peso', 11, 800, OUT, 'center', 'Baloo 2')}
+    ${htmlText(255, 200, 150, 34, 'LEC = meio interno; o plasma é o que o laboratório dosa', 8.5, 800, OUT)}
+  `);
+
+  SCENES.f_coracao = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    <path d="M120 60 Q120 20 160 24 Q200 28 210 60 Q220 28 260 24 Q300 20 300 60 Q300 120 210 200 Q120 120 120 60 Z" fill="#F5B7B1" ${S}/>
+    <line x1="210" y1="60" x2="210" y2="190" ${S}/><line x1="130" y1="100" x2="290" y2="100" ${S}/>
+    ${htmlText(132, 62, 76, 36, 'AD', 12, 800, '#2E86C1')}${htmlText(214, 62, 76, 36, 'AE', 12, 800, '#C0392B')}${htmlText(140, 118, 68, 36, 'VD', 12, 800, '#2E86C1')}${htmlText(214, 118, 76, 36, 'VE', 12, 800, '#C0392B')}
+    <rect x="160" y="96" width="36" height="8" rx="3" fill="#F7C21B" ${S} stroke-width="2"/><rect x="226" y="96" width="36" height="8" rx="3" fill="#F7C21B" ${S} stroke-width="2"/>
+    ${htmlText(126, 104, 70, 16, 'tricúspide', 7, 800, OUT)}${htmlText(226, 104, 70, 16, 'mitral', 7, 800, OUT)}
+    ${arrow(60, 80, 118, 80, '#2E86C1')}${htmlText(10, 56, 100, 22, 'veias cavas', 8, 800, '#2E86C1')}
+    ${arrow(170, 40, 150, 10, '#2E86C1')}${htmlText(80, 2, 100, 22, 'a. pulmonar → pulmões', 7.5, 800, '#2E86C1')}
+    ${arrow(300, 80, 360, 80, '#C0392B')}${htmlText(320, 56, 100, 22, 'aorta → corpo', 8, 800, '#C0392B')}
+    ${arrow(280, 10, 262, 40, '#C0392B')}${htmlText(262, 2, 110, 22, 'veias pulmonares', 7.5, 800, '#C0392B')}
+    ${htmlText(10, 150, 110, 80, 'Circulação pulmonar: coração direito → pulmões. B1 = fecham AV (sístole)', 8.5, 800, '#2E86C1')}
+    ${htmlText(300, 150, 115, 80, 'Circulação sistêmica: VE espesso (mais resistência). B2 = fecham semilunares', 8.5, 800, '#C0392B')}
+    <rect x="130" y="206" width="160" height="28" rx="6" fill="#FFF6B0" ${S}/>${htmlText(130, 206, 160, 28, 'DC = FC × VS ≈ 5 L/min', 12, 800, OUT, 'center', 'Baloo 2')}
+  `);
+
+  SCENES.f_ecg = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    <rect x="10" y="20" width="400" height="120" fill="#FDEDEC" ${S}/>
+    ${Array.from({ length: 20 }, (_, i) => `<line x1="${10 + i * 20}" y1="20" x2="${10 + i * 20}" y2="140" stroke="#F5B7B1" stroke-width="1"/>`).join('')}${Array.from({ length: 6 }, (_, i) => `<line x1="10" y1="${20 + i * 20}" x2="410" y2="${20 + i * 20}" stroke="#F5B7B1" stroke-width="1"/>`).join('')}
+    <path d="M20 100 L60 100 Q75 80 90 100 L120 100 L130 108 L140 40 L150 125 L160 100 L200 100 Q220 70 240 100 L280 100 Q295 80 310 100 L340 100 L350 108 L360 40 L370 125 L380 100 L400 100" fill="none" stroke="#C0392B" stroke-width="3"/>
+    ${htmlText(60, 58, 40, 20, 'P', 12, 800, '#2E86C1', 'center', 'Baloo 2')}${htmlText(118, 22, 50, 20, 'QRS', 12, 800, '#8E44AD', 'center', 'Baloo 2')}${htmlText(200, 48, 40, 20, 'T', 12, 800, '#1E8449', 'center', 'Baloo 2')}
+    ${box(10, 150, 120, 30, '#D6EAF8', 'P: despolarização atrial', 8.5, '#2E86C1')}
+    ${box(150, 150, 120, 30, '#E8DAEF', 'QRS: despolarização ventricular', 8, '#8E44AD')}
+    ${box(290, 150, 120, 30, '#D5F5E3', 'T: repolarização ventricular', 8, '#1E8449')}
+    ${box(10, 196, 74, 30, '#FFF6B0', 'nó SA', 9)}${arrow(86, 211, 98, 211, OUT)}${box(100, 196, 74, 30, '#FFF6B0', 'átrios', 9)}${arrow(176, 211, 188, 211, OUT)}${box(190, 196, 74, 30, '#FFF6B0', 'nó AV (retardo)', 8)}${arrow(266, 211, 278, 211, OUT)}${box(280, 196, 60, 30, '#FFF6B0', 'His', 9)}${arrow(342, 211, 354, 211, OUT)}${box(356, 196, 54, 30, '#FFF6B0', 'Purkinje', 8)}
+  `);
+
+  SCENES.f_volumes = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    ${axes(40, 20, 240, 200, 'tempo', 'volume (L)')}
+    <path d="M44 150 q10 -20 20 0 q10 20 20 0 q10 -20 20 0 q10 20 20 0 L150 60 L180 190 L210 150 q10 -20 20 0 q10 20 20 0 L270 150" fill="none" stroke="#2E86C1" stroke-width="3"/>
+    <line x1="40" y1="60" x2="280" y2="60" stroke="#BDC3C7" stroke-width="1.5" stroke-dasharray="5 3"/><line x1="40" y1="130" x2="280" y2="130" stroke="#BDC3C7" stroke-width="1.5" stroke-dasharray="5 3"/><line x1="40" y1="150" x2="280" y2="150" stroke="#BDC3C7" stroke-width="1.5" stroke-dasharray="5 3"/><line x1="40" y1="190" x2="280" y2="190" stroke="#BDC3C7" stroke-width="1.5" stroke-dasharray="5 3"/>
+    ${htmlText(0, 52, 40, 16, '6', 8, 800, OUT)}${htmlText(0, 182, 40, 16, '1,2', 8, 800, OUT)}${htmlText(0, 212, 40, 16, '0', 8, 800, OUT)}
+    ${htmlText(60, 100, 60, 30, 'VRI', 9, 800, '#2E86C1')}${htmlText(124, 140, 30, 18, 'VC', 9, 800, '#C0392B')}${htmlText(60, 160, 60, 30, 'VRE', 9, 800, '#2E86C1')}${htmlText(60, 196, 60, 22, 'VR', 9, 800, '#7F8C8D')}
+    <rect x="290" y="20" width="120" height="200" rx="8" fill="#F4F6F7" ${S}/>
+    ${htmlText(290, 24, 120, 22, 'Capacidades', 10.5, 800, OUT, 'center', 'Baloo 2')}
+    ${htmlText(294, 48, 112, 50, 'CV = VRI + VC + VRE (o máximo mobilizável)', 8.5, 800, '#2E86C1')}
+    ${htmlText(294, 100, 112, 40, 'CPT = CV + VR', 8.5, 800, OUT)}
+    ${htmlText(294, 140, 112, 76, 'Espirometria: VEF₁/CVF ↓ = obstrutivo (asma, DPOC); volumes ↓ com relação normal = restritivo', 8, 800, '#C0392B')}
+  `);
+
+  SCENES.f_digest = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    ${box(10, 10, 92, 44, '#FFF6B0', 'BOCA: saliva (amilase)', 8.5)}
+    ${box(112, 10, 110, 44, '#FADBD8', 'ESTÔMAGO: HCl, pepsina, fator intrínseco', 8)}
+    ${box(232, 10, 90, 44, '#D5F5E3', 'DUODENO: bicarbonato neutraliza', 8)}
+    ${box(332, 10, 80, 44, '#D6EAF8', 'DELGADO: absorção (vilosidades)', 7.5)}
+    ${arrow(102, 32, 110, 32, OUT)}${arrow(222, 32, 230, 32, OUT)}${arrow(322, 32, 330, 32, OUT)}
+    ${box(120, 90, 110, 44, '#E8DAEF', 'PÂNCREAS: amilase, lipase, proteases + HCO₃⁻', 7.5)}
+    ${box(240, 90, 100, 44, '#F9E79F', 'FÍGADO/VESÍCULA: bile emulsiona gorduras', 7.5)}
+    ${arrow(190, 88, 262, 56, '#8E44AD')}${arrow(280, 88, 272, 56, '#B7950B')}
+    ${htmlText(10, 92, 100, 44, 'Via porta → fígado (açúcares, aminoácidos); linfa (lipídios)', 7.5, 800, OUT)}
+    ${htmlText(0, 146, 420, 20, 'Regulação hormonal', 10.5, 800, OUT, 'center', 'Baloo 2')}
+    ${box(10, 170, 125, 56, '#FADBD8', 'GASTRINA → ↑ ácido gástrico', 8.5, '#C0392B')}
+    ${box(148, 170, 125, 56, '#D5F5E3', 'SECRETINA → ↑ bicarbonato pancreático', 8.5, '#1E8449')}
+    ${box(286, 170, 125, 56, '#E8DAEF', 'CCK → enzimas pancreáticas + contração da vesícula', 8, '#7D3C98')}
+  `);
+
+  SCENES.f_eixo = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    ${box(20, 14, 150, 40, '#E8DAEF', 'HIPOTÁLAMO: TRH', 10, '#7D3C98')}
+    ${arrow(95, 56, 95, 78, OUT)}
+    ${box(20, 80, 150, 40, '#D6EAF8', 'ADENO-HIPÓFISE: TSH', 10, '#2E86C1')}
+    ${arrow(95, 122, 95, 144, OUT)}
+    ${box(20, 146, 150, 40, '#FFF6B0', 'TIREOIDE: T₃ e T₄', 10, '#B7950B')}
+    ${arrow(95, 188, 95, 206, OUT)}${htmlText(10, 208, 170, 30, '↑ metabolismo basal', 9, 800, OUT)}
+    <path d="M172 166 Q215 166 215 120 Q215 34 172 34" fill="none" stroke="#C0392B" stroke-width="3" stroke-dasharray="7 4"/><line x1="166" y1="26" x2="166" y2="42" stroke="#C0392B" stroke-width="4"/>
+    <path d="M172 166 Q200 166 200 120 Q200 100 172 100" fill="none" stroke="#C0392B" stroke-width="3" stroke-dasharray="7 4"/><line x1="166" y1="92" x2="166" y2="108" stroke="#C0392B" stroke-width="4"/>
+    ${htmlText(196, 194, 74, 40, 'feedback negativo ⊣', 8, 800, '#C0392B')}
+    <rect x="270" y="14" width="140" height="210" rx="8" fill="#F4F6F7" ${S}/>
+    ${htmlText(270, 18, 140, 22, 'Ler pares hormonais', 10, 800, OUT, 'center', 'Baloo 2')}
+    ${box(278, 44, 124, 50, '#FADBD8', 'Hipotireoidismo primário: TSH ↑ · T₄ livre ↓', 8.5, '#C0392B')}
+    ${box(278, 102, 124, 50, '#D6EAF8', 'Hipertireoidismo primário: TSH ↓ · T₄ livre ↑', 8.5, '#2E86C1')}
+    ${htmlText(278, 158, 124, 64, 'A mesma lógica vale para ACTH → cortisol (ritmo circadiano, mais alto de manhã) e FSH/LH → gônadas', 8, 800, OUT)}
+  `);
+
+  SCENES.f_glicemia = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    ${htmlText(0, 4, 420, 22, 'Glicemia: dois hormônios antagônicos, um feedback negativo', 10.5, 800, OUT, 'center', 'Baloo 2')}
+    <line x1="30" y1="130" x2="390" y2="130" stroke="#F7C21B" stroke-width="6"/><polygon points="200,118 215,140 185,140" fill="#2C3E50"/>
+    ${box(40, 40, 140, 70, '#FADBD8', 'APÓS A REFEIÇÃO: glicemia ↑ → células β → INSULINA → captação e armazenamento → glicemia ↓', 8, '#C0392B')}
+    ${box(240, 40, 140, 70, '#D6EAF8', 'JEJUM: glicemia ↓ → células α → GLUCAGON → fígado libera glicose → glicemia ↑', 8, '#2E86C1')}
+    ${arrow(110, 112, 110, 126, '#C0392B')}${arrow(310, 112, 310, 126, '#2E86C1')}
+    ${box(20, 160, 180, 64, '#FFF6B0', 'Diabetes tipo 1: falta insulina. Tipo 2: resistência à insulina. Resultado: hiperglicemia crônica', 8.5)}
+    ${box(220, 160, 180, 64, '#D5F5E3', 'Laboratório: glicemia de jejum, HbA1c (média de semanas), insulina e peptídeo C', 8.5, '#1E8449')}
+  `);
+
+  SCENES.f_ciclo = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    ${axes(30, 30, 380, 150, 'dias do ciclo (28)', 'hormônios')}
+    <rect x="30" y="30" width="190" height="150" fill="#FDEBD0" opacity=".5"/><rect x="220" y="30" width="190" height="150" fill="#E8DAEF" opacity=".5"/>
+    <path d="M34 170 Q140 160 200 80 Q215 60 220 110 Q260 150 300 150 Q350 150 400 172" fill="none" stroke="#E67E22" stroke-width="3"/>
+    <path d="M34 175 L190 170 L210 40 L228 170 L400 176" fill="none" stroke="#8E44AD" stroke-width="3"/>
+    <path d="M34 178 L225 176 Q300 60 340 90 Q380 120 400 176" fill="none" stroke="#1E8449" stroke-width="3"/>
+    <path d="M34 150 Q90 120 180 150 Q210 165 230 160 Q300 150 400 160" fill="none" stroke="#2E86C1" stroke-width="2" stroke-dasharray="5 3"/>
+    ${htmlText(60, 40, 120, 20, 'FASE FOLICULAR', 9.5, 800, '#B9770E', 'center', 'Baloo 2')}${htmlText(260, 40, 120, 20, 'FASE LÚTEA', 9.5, 800, '#7D3C98', 'center', 'Baloo 2')}
+    ${htmlText(150, 100, 60, 20, 'estrogênio', 8, 800, '#E67E22')}${htmlText(180, 28, 70, 20, 'pico de LH', 8.5, 800, '#8E44AD')}${htmlText(300, 62, 80, 20, 'progesterona', 8, 800, '#1E8449')}${htmlText(60, 126, 60, 20, 'FSH', 8, 800, '#2E86C1')}
+    <line x1="215" y1="30" x2="215" y2="180" stroke="#C0392B" stroke-width="2" stroke-dasharray="4 3"/>${htmlText(220, 160, 90, 18, 'ovulação ~dia 14', 8, 800, '#C0392B', 'left')}
+    ${htmlText(10, 212, 400, 26, 'Útero: menstrual → proliferativa (estrogênio) → secretora (progesterona). Gravidez: hCG mantém o corpo lúteo', 8.5, 800, OUT)}
+  `);
+
+  const labCase = (title, lines, color, who, bubbleText, expr = 'happy') => scene(420, 300, LAB(`
+    ${labBench(20, 232, 200)}${analyzer(40, 232, 130, 96, title, lines, color)}${tubeRack(176, 232)}
+    ${put(who({ armL: 'hold', holdL: 'clipboard', armR: 'point', expr }), 300, 296, 0.8)}
+    ${bubble({ x: 150, y: 40, w: 250, h: 60, text: bubbleText, tail: [300, 108], size: 10 })}
+  `));
+  SCENES.f_lab_tropo = () => labCase('MARCADORES CARDÍACOS', ['Troponina I 0,9 → 2,4 ▲', 'CK-MB ▲ · BNP normal'], '#E74C3C', BIOMED2, 'Troponina em ascensão nas dosagens seriadas: lesão do miócito. A curva temporal é tão importante quanto o valor.', 'worried');
+  SCENES.f_lab_renal = () => labCase('FUNÇÃO RENAL', ['Creatinina 3,2 · Ureia 110', 'TFGe 22 mL/min · K⁺ 5,9'], '#E67E22', BIOMED, 'Creatinina e ureia sobem porque a filtração caiu. Potássio alto e acidose metabólica costumam acompanhar.', 'surprised');
+  SCENES.f_lab_hepat = () => labCase('PERFIL HEPÁTICO', ['ALT 180 · AST 150 ▲', 'Bilirrubina 4,5 · GGT ▲'], '#B7950B', BIOMED2, 'ALT e AST vêm do hepatócito lesado; GGT e fosfatase alcalina apontam para a via biliar; a bilirrubina explica a icterícia.');
+  SCENES.f_lab_tsh = () => labCase('HORMÔNIOS', ['TSH 12,0 ▲', 'T₄ livre 0,5 ▼'], '#8E44AD', BIOMED, 'TSH alto com T₄ livre baixo: a tireoide falhou e a hipófise insiste. É o padrão do hipotireoidismo primário.');
+  SCENES.f_lab_hcg = () => labCase('REPRODUTIVO', ['β-hCG 1 250 mUI/mL', 'Progesterona ▲'], '#1ABC9C', BIOMED2, 'hCG do trofoblasto mantém o corpo lúteo produzindo progesterona. Na leitura de FSH, LH e estradiol, a fase do ciclo muda tudo.');
 
   // --- sinais do card ---
   SCENES.sig_stop = () => scene(120, 120, `<circle cx="60" cy="60" r="54" fill="#E74C3C" ${S}/>${at(ICON.stop(), 28, 24, 1.1)}`);
