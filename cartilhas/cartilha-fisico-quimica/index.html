@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Cartilha — Físico-Química Aplicada às Ciências Biomédicas</title>
+<link rel="stylesheet" href="../shared/style.css">
+<style>
+  :root { --teal: #8E44AD; --teal-light: #E8DAEF; }
+  .cover { background: #7D3C98; }
+  .cover .tiles { position: absolute; inset: 0; background-image: linear-gradient(#fff 0 3px, transparent 3px), linear-gradient(90deg, #fff 0 3px, transparent 3px); background-size: 24mm 24mm; opacity: .35; }
+  .cover .titlebox { position: absolute; left: 14mm; right: 14mm; top: 14mm; background: #fff; border: 3px solid var(--ink); border-radius: 10px; padding: 7mm 8mm 6mm; box-shadow: 5px 5px 0 var(--ink); text-align: center; }
+  .cover .titlebox .hq-title { font-size: 34pt; color: #D7BDE2; }
+  .cover .titlebox .sub { margin-top: 3mm; font-family: var(--title); font-weight: 600; font-size: 13.5pt; line-height: 1.15; }
+  .cover .art { position: absolute; left: 0; right: 0; top: 82mm; bottom: 0; }
+  .cover .art .ill { width: 100%; height: 100%; }
+  .cover .badge { position: absolute; left: 14mm; top: 76mm; transform: rotate(-5deg); }
+  .cover .foot { position: absolute; left: 14mm; right: 14mm; bottom: 12mm; display: flex; justify-content: space-between; align-items: flex-end; }
+  .cover .foot .who { font-family: var(--title); font-weight: 800; font-size: 11pt; background: #fff; border: 3px solid var(--ink); border-radius: 999px; padding: 2mm 6mm; box-shadow: 3px 3px 0 var(--ink); }
+  .cover .foot .org { font-size: 9pt; font-weight: 700; text-align: right; background: rgba(255,255,255,.92); border: 2.5px solid var(--ink); border-radius: 8px; padding: 1.5mm 4mm; }
+
+  .section-head { display: flex; align-items: center; gap: 5mm; margin-bottom: .5mm; }
+  .section-head .num { width: 16mm; height: 16mm; border-radius: 50%; border: 3px solid var(--ink); display: flex; align-items: center; justify-content: center; font-family: var(--title); font-weight: 800; font-size: 20pt; box-shadow: 3px 3px 0 var(--ink); background: var(--teal); }
+  .section-head .hq-title { font-size: 21pt; }
+  .section-head .sub { font-family: var(--title); font-weight: 600; font-size: 11.5pt; color: #444; }
+  .strip { position: absolute; left: 0; top: 0; bottom: 0; width: 7mm; }
+  .u1 .num, .u1 .strip { background: #3D8FD1; } .u1 .hq-title { color: #7FD1F5; }
+  .u2 .num, .u2 .strip { background: #C6720C; } .u2 .hq-title { color: #FAD7A0; }
+  .u3 .num, .u3 .strip { background: #F7C21B; } .u3 .hq-title { color: #FFD54F; }
+  .u4 .num, .u4 .strip { background: #8E44AD; } .u4 .hq-title { color: #D7BDE2; }
+  .u5 .num, .u5 .strip { background: #E74C3C; } .u5 .hq-title { color: #F5B7B1; }
+  .u6 .num, .u6 .strip { background: #5DADE2; } .u6 .hq-title { color: #AED6F1; }
+  .u7 .num, .u7 .strip { background: #F5B041; } .u7 .hq-title { color: #FFD27F; }
+  .u8 .num, .u8 .strip { background: #E67E22; } .u8 .hq-title { color: #F8C471; }
+  .u9 .num, .u9 .strip { background: #7F8C8D; } .u9 .hq-title { color: #D5DBDB; }
+  .content { position: absolute; left: 15mm; right: 11mm; top: 10mm; bottom: 10mm; display: flex; flex-direction: column; gap: 4mm; }
+  .panels { display: grid; gap: 4mm; grid-template-columns: 1fr 1fr; }
+  .panel-wrap { display: flex; flex-direction: column; gap: 1.2mm; } .panel-wrap .caption { padding: 0 1mm; font-size: 9.2pt; }
+  .fill { flex: 1; }
+  .box.compact { padding: 4mm 5mm; } .box.compact li { margin-bottom: 1.6mm; font-size: 9.6pt; line-height: 1.3; } .box.compact h3 { font-size: 13pt; margin-bottom: 2mm; }
+  .tip { background: var(--blue-pale); border: 3px dashed var(--blue); border-radius: 10px; padding: 2.5mm 4mm; font-size: 10.2pt; display: flex; gap: 3mm; align-items: center; }
+  .tip .ic { width: 10mm; height: 10mm; flex: 0 0 10mm; } .tip b { font-family: var(--title); font-weight: 800; }
+  .tip.red { background: #FDE2E0; border-color: var(--red); } .tip.yellow { background: #FFF6B0; border-color: var(--yellow-strong); }
+  .kc { border: 3px solid var(--ink); border-radius: 10px; padding: 3mm 4mm; background: var(--teal-light); font-size: 10.3pt; line-height: 1.33; }
+  .kc b.lbl { font-family: var(--title); font-weight: 800; font-size: 10pt; text-transform: uppercase; letter-spacing: .6px; color: #6C3483; display: block; margin-bottom: 1mm; }
+  .kc.y { background: #FFF6B0; } .kc.y b.lbl { color: #9A7D0A; } .kc.r { background: #FDE2E0; } .kc.r b.lbl { color: #C0392B; } .kc.b { background: #D6EAF8; } .kc.b b.lbl { color: #2E86C1; } .kc.p { background: #E8DAEF; } .kc.p b.lbl { color: #7D3C98; }
+  .formula { font-family: var(--title); font-weight: 800; font-size: 16pt; text-align: center; background: #fff; border: 2.5px solid var(--ink); border-radius: 8px; padding: 1.5mm 3mm; margin: 1mm 0; }
+  table.t { width: 100%; border-collapse: collapse; background: #fff; border: 2.5px solid var(--ink); font-size: 10pt; }
+  table.t th, table.t td { border: 2px solid var(--ink); padding: 1.6mm 2.2mm; vertical-align: top; text-align: left; line-height: 1.2; }
+  table.t th { font-family: var(--title); font-weight: 800; background: #FFF6B0; font-size: 10.4pt; }
+  table.t td.k { font-family: var(--title); font-weight: 800; background: #FAFAFA; }
+  .case { border: 3px solid var(--ink); border-radius: 12px; overflow: hidden; display: grid; grid-template-columns: 66mm 1fr; min-height: 60mm; background: #fff; box-shadow: 4px 4px 0 var(--ink); }
+  .case .art { border-right: 3px solid var(--ink); } .case .art .ill { height: 100%; }
+  .case .txt { padding: 3mm 4.5mm; font-size: 10.2pt; line-height: 1.33; }
+  .case h3 { margin: 0 0 1.5mm; font-family: var(--title); font-weight: 800; font-size: 13pt; }
+  .case p { margin: 0 0 1.2mm; }
+  .case .say { font-family: var(--comic); font-weight: 700; background: #FFF6B0; border-radius: 6px; padding: 2mm 3mm; margin-top: 2mm; display: inline-block; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 4.5mm; }
+  .diagram { border: 3px solid var(--ink); border-radius: 10px; overflow: hidden; background: #fff; }
+  .diagram .ill { height: 100%; }
+
+  .intro h2 { font-family: var(--title); font-weight: 800; font-size: 19pt; margin: 0 0 2mm; }
+  .intro p { margin: 0 0 2.5mm; font-size: 10.6pt; }
+  .units { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; }
+  .unit { border: 3px solid var(--ink); border-radius: 10px; padding: 2.5mm 3mm; font-size: 9.2pt; line-height: 1.25; }
+  .unit b { display: block; font-family: var(--title); font-weight: 800; font-size: 11pt; }
+  .unit small { display: block; color: #555; font-weight: 700; }
+
+  .ph { display: flex; border: 2.5px solid var(--ink); border-radius: 8px; overflow: hidden; }
+  .ph div { flex: 1; text-align: center; font-family: var(--title); font-weight: 800; font-size: 10.5pt; padding: 2mm 0; }
+  .ph .n { font-size: 8.5pt; font-family: var(--body); display: block; }
+  .acidbase { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm; }
+  .acidbase div { border: 2.5px solid var(--ink); border-radius: 8px; padding: 2.2mm 3mm; font-size: 10pt; line-height: 1.3; }
+  .acidbase b { font-family: var(--title); font-weight: 800; display: block; }
+
+  .tool { border: 3px solid var(--ink); border-radius: 10px; padding: 3mm 4mm; background: #fff; font-size: 9.6pt; line-height: 1.3; }
+  .tool h3 { margin: 0 0 .8mm; font-family: var(--title); font-weight: 800; font-size: 10.5pt; }
+  .quiz { columns: 2; column-gap: 6mm; font-size: 9.6pt; line-height: 1.3; }
+  .quiz .q { break-inside: avoid; margin-bottom: 2.2mm; }
+  .quiz .q b { font-family: var(--title); font-weight: 800; }
+  .quiz .q span { display: block; padding-left: 4mm; }
+  .gab { font-family: var(--comic); font-weight: 700; font-size: 9pt; background: #E3F7D9; border: 2.5px solid var(--ink); border-radius: 8px; padding: 2mm 3mm; }
+  .info { background: #7D3C98; }
+  .info .stripes { position: absolute; inset: 0; opacity: .3; background: repeating-linear-gradient(135deg, #BB8FCE 0 10px, transparent 10px 20px); }
+  .info .content { left: 12mm; gap: 2mm; }
+  .info .dashed-box { height: 100%; display: flex; flex-direction: column; gap: 2mm; padding: 6mm; }
+  .info .hq-title { font-size: 28pt; text-align: center; display: block; margin-bottom: 1mm; }
+  .info h4 { font-family: var(--title); font-weight: 800; font-size: 13pt; margin: 1.5mm 0 .5mm; color: #fff; text-shadow: 1px 1px 0 var(--ink); }
+  .peg { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm; }
+  .peg div { background: rgba(255,255,255,.92); border: 2.5px solid var(--ink); border-radius: 8px; padding: 2mm 3mm; font-family: var(--comic); font-weight: 700; font-size: 9.8pt; line-height: 1.28; }
+  .peg div b { font-family: var(--title); color: var(--red); }
+  .nums { background: rgba(255,255,255,.92); border: 2.5px solid var(--ink); border-radius: 8px; padding: 2.5mm 3.5mm; font-size: 9.3pt; line-height: 1.35; columns: 3; column-gap: 4mm; }
+  .nums b { font-family: var(--title); font-weight: 800; }
+</style>
+</head>
+<body>
+
+<!-- ================= CAPA ================= -->
+<section class="page cover">
+  <div class="tiles"></div>
+  <div class="art"><div class="ill" data-scene="q_cover"></div></div>
+  <div class="titlebox">
+    <div class="hq-title" style="font-size:28pt">Físico-Química Aplicada<br>às Ciências Biomédicas</div>
+    <div class="sub">Cartilha ilustrada: os princípios físico-químicos que fundamentam<br>a bioquímica e as análises clínicas</div>
+  </div>
+  <div class="badge"><span class="label">Bacharelado em Biomedicina · 2º semestre · 80 h/a</span></div>
+  <div class="foot">
+    <div class="who">Para estudantes de Biomedicina e profissionais do laboratório</div>
+    <div class="org">Autoria: Prof. Dr. Patrício da Silva Almeida<br>Síntese ilustrada do Material Didático do Discente (FTA Meta, 2026.2)</div>
+  </div>
+</section>
+
+<!-- ================= PÁGINA 2 — APRESENTAÇÃO ================= -->
+<section class="page">
+  <div class="pad intro" style="display:flex;flex-direction:column;gap:3.2mm">
+    <div>
+      <h2>Por trás de cada exame há uma lei físico-química</h2>
+      <p>A <b>Físico-Química</b> reúne os princípios da física e da química que explicam como e por que os processos ocorrem: por que uma reação libera ou absorve calor, por que alguns processos são espontâneos, como se estabelece um equilíbrio, o que determina o pH de uma solução, como a velocidade de uma reação depende da temperatura e de catalisadores, e como se geram e medem sinais elétricos em soluções. Para o biomédico, é a base das técnicas laboratoriais: a termodinâmica explica o metabolismo, o equilíbrio ácido-base fundamenta a gasometria, as coligativas embasam a osmometria, a cinética enzimática está por trás das dosagens de enzimas e a eletroquímica sustenta a potenciometria e a condutometria.</p>
+    </div>
+    <div class="case">
+      <div class="art"><div class="ill" data-scene="q_lab_dilui"></div></div>
+      <div class="txt"><h3>A rotina mais frequente do laboratório é físico-química</h3>
+        <p>Preparar 500 mL de uma solução 0,05 M a partir de um estoque 1 M (Caso 2 da apostila) é aplicar C₁V₁ = C₂V₂: a quantidade de soluto não muda quando se dilui. Diluições, padrões, tampões, calibração de eletrodos e leitura de analisadores dependem dos conceitos desta cartilha.</p>
+        <span class="say">Cada unidade da apostila virou uma página: conceito-chave, fórmula, diagrama, correlação clínico-laboratorial e a pegadinha de prova.</span></div>
+    </div>
+    <div class="units">
+      <div class="unit"><b>1 · Estados da matéria e gases</b><small>21 e 28/08</small>PV = nRT, Boyle, Charles, Gay-Lussac, gases reais, Dalton.</div>
+      <div class="unit"><b>2 · Termodinâmica e termoquímica</b><small>04 e 11/09</small>1ª lei, energia interna, entalpia, exo/endotérmico, lei de Hess.</div>
+      <div class="unit"><b>3 · Entropia e energia livre</b><small>18/09</small>2ª lei, entropia, ΔG = ΔH − TΔS, acoplamento e ATP.</div>
+      <div class="unit"><b>4 · Equilíbrio químico</b><small>25/09</small>Equilíbrio dinâmico, Keq, Le Chatelier, efeito Bohr.</div>
+      <div class="unit"><b>5 · Ácido-base, pH e tampões</b><small>02 e 09/10</small>pH, Ka e pKa, Henderson-Hasselbalch, bicarbonato.</div>
+      <div class="unit"><b>6 · Soluções e coligativas</b><small>16 e 17/10 · AV1</small>Concentração, diluição, as 4 coligativas, osmose.</div>
+      <div class="unit"><b>7 · Cinética e catálise</b><small>30/10 e 06/11</small>Velocidade, Ea, catalisador, enzimas, Michaelis-Menten.</div>
+      <div class="unit"><b>8 · Eletroquímica</b><small>13 a 28/11 · AV2 02/12</small>Redox, pilhas, potenciometria, ISE, condutometria.</div>
+      <div class="unit"><b>9 · Superfície, coloides e integração</b><small>04 a 19/12 · AV3</small>Tensão superficial, adsorção, Tyndall, análises clínicas.</div>
+    </div>
+    <div class="tip yellow"><div class="ic" data-icon="notes"></div><div><b>Como a disciplina avalia:</b> AV1 (5,0 de atividades + 5,0 de prova analítico-discursiva, 19 a 23/10), AV2 (5,0 de atividades + 5,0 de prova objetiva, 02/12) e AV3 (maior nota entre AV1/AV2 + maior nota entre AT1/AT2; Jornada Acadêmica/PROJETI em 19/12). Média final = [(AV1+AV2)/2 + AV3]/2; aprovação com 7,0.</div></div>
+    <div class="small">Esta cartilha resume o Material Didático do Discente e o Plano de Disciplina de Físico-Química (Faculdade de Tecnologia do Amapá, Bacharelado em Biomedicina, 2026.2). Não substitui as aulas, as práticas de laboratório, os livros-texto nem as atividades do AVA.</div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 2</div>
+</section>
+
+<!-- ================= PÁGINA 3 — UNIDADE 1 ================= -->
+<section class="page u1">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">1</div><div><div class="hq-title">Estados da matéria e gases</div><div class="sub">PV = nRT e a temperatura sempre em kelvin</div></div></div>
+    <div class="grid2" style="grid-template-columns:1.2fr 1fr">
+      <div class="diagram" style="height:56mm"><div class="ill" data-scene="q_gases"></div></div>
+      <div class="kc b"><b class="lbl">O gás ideal e a equação de estado</b>Partículas de volume desprezível e sem interação: descreve bem os gases reais a <b>baixa pressão e alta temperatura</b>.<div class="formula">PV = nRT</div>P pressão, V volume, n mols, R constante dos gases, T temperatura <b>absoluta (K = °C + 273)</b>. Os <b>gases reais</b> desviam-se da idealidade em <b>alta pressão e baixa temperatura</b> (van der Waals).</div>
+    </div>
+    <table class="t">
+      <tr><th>Lei</th><th>O que fica constante</th><th>Relação</th></tr>
+      <tr><td class="k">Boyle</td><td>Temperatura</td><td>P e V <b>inversamente</b> proporcionais (PV = k)</td></tr>
+      <tr><td class="k">Charles</td><td>Pressão</td><td>V e T <b>diretamente</b> proporcionais (V/T = k)</td></tr>
+      <tr><td class="k">Gay-Lussac</td><td>Volume</td><td>P e T <b>diretamente</b> proporcionais (P/T = k)</td></tr>
+      <tr><td class="k">Dalton</td><td>Misturas</td><td>P total = soma das pressões parciais; cada uma ∝ fração do gás</td></tr>
+    </table>
+    <div class="grid2">
+      <div class="kc"><b class="lbl">Estados da matéria</b><b>Sólido</b> (forma e volume definidos), <b>líquido</b> (volume definido, forma variável) e <b>gasoso</b> (forma e volume variáveis), que diferem pela intensidade das forças entre as partículas. Fusão, vaporização, condensação, solidificação e sublimação <b>envolvem energia</b>, mas <b>não alteram a identidade química</b> da substância.</div>
+      <div class="kc y"><b class="lbl">Por que importa no laboratório</b>A lei de Dalton explica o ar (O₂ ~21%, PO₂ ~160 mmHg), as trocas gasosas e a <b>gasometria arterial</b> (PaO₂ e PaCO₂). Em altitude (Caso 13), a pressão atmosférica cai e, com ela, a PO₂ inspirada: hipoxemia sem mudar a fração de O₂. Avogadro: V ∝ número de mols.</div>
+    </div>
+    <div class="case">
+      <div class="art"><div class="ill" data-scene="q_lab_gaso"></div></div>
+      <div class="txt"><h3>Correlação clínico-laboratorial: gases e a gasometria arterial</h3>
+        <p>Um paciente com insuficiência respiratória (Caso 1) mostra PaO₂ reduzida e PaCO₂ elevada. A lei de Dalton e as pressões parciais explicam por que os gases se difundem e como são quantificados nos analisadores de gases sanguíneos.</p>
+        <span class="say">Dominar pressão parcial e o comportamento dos gases permite interpretar a gasometria e entender o princípio físico-químico dos analisadores do laboratório clínico.</span></div>
+    </div>
+    <div class="fill"></div>
+    <div class="tip red"><div class="ic" data-icon="warn"></div><div><b>Pegadinhas:</b> na equação dos gases a temperatura é sempre em <b>kelvin</b>; usar °C dá resultado errado. Boyle é <b>inverso</b>; Charles e Gay-Lussac são <b>diretos</b>. Gás real foge do ideal em <b>alta P e baixa T</b>, não o contrário.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 3</div>
+</section>
+
+<!-- ================= PÁGINA 4 — UNIDADES 2 E 3 ================= -->
+<section class="page u2">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">2</div><div><div class="hq-title">Termodinâmica, termoquímica e energia livre</div><div class="sub">Unidades 2 e 3: da 1ª lei ao ΔG que financia a vida</div></div></div>
+    <div class="grid2" style="grid-template-columns:1.2fr 1fr">
+      <div class="diagram" style="height:54mm"><div class="ill" data-scene="q_entalpia"></div></div>
+      <div class="kc r"><b class="lbl">1ª lei e entalpia</b><div class="formula" style="font-size:14pt">ΔU = Q − W</div>A energia não é criada nem destruída: a energia interna varia pelo calor trocado e pelo trabalho realizado. À <b>pressão constante</b> (a regra no corpo e na bancada), o calor trocado é a variação de <b>entalpia</b> (H = U + PV). <b>Exotérmico</b>: ΔH &lt; 0, libera calor (combustão, degradação metabólica). <b>Endotérmico</b>: ΔH &gt; 0, absorve calor (fotossíntese, sínteses).</div>
+    </div>
+    <div class="kc y"><b class="lbl">Lei de Hess: o caminho não importa</b>A entalpia é <b>função de estado</b> (depende só dos estados inicial e final). Logo, o ΔH de uma reação é o mesmo em uma ou em várias etapas, e pode ser calculado somando etapas conhecidas ou pelas <b>entalpias de formação</b> (produtos − reagentes). Por isso a energia liberada na oxidação completa da glicose é a mesma numa chama ou no metabolismo celular, e o <b>calor de combustão</b> dos alimentos (bomba calorimétrica, Caso 14) corresponde ao seu valor energético em calorias.</div>
+    <div class="grid2" style="grid-template-columns:1.2fr 1fr">
+      <div class="diagram" style="height:54mm"><div class="ill" data-scene="q_gibbs"></div></div>
+      <div class="kc p"><b class="lbl">2ª lei, entropia e Gibbs (Unidade 3)</b>Em todo processo espontâneo a <b>entropia do universo aumenta</b>; a entropia (S) mede a desordem ou a dispersão da energia. Os seres vivos mantêm baixa entropia interna às custas de aumentá-la no ambiente.<div class="formula" style="font-size:14pt">ΔG = ΔH − TΔS</div>A energia livre é a energia disponível para trabalho útil a T e P constantes. O ATP tem hidrólise fortemente <b>exergônica</b> e financia síntese, transporte ativo e contração.</div>
+    </div>
+    <table class="t">
+      <tr><th>ΔG</th><th>Classificação</th><th>Significado</th></tr>
+      <tr><td class="k">ΔG &lt; 0</td><td>Exergônico</td><td>Espontâneo; libera energia útil (Keq elevado)</td></tr>
+      <tr><td class="k">ΔG &gt; 0</td><td>Endergônico</td><td>Não espontâneo; requer energia (acoplamento ao ATP)</td></tr>
+      <tr><td class="k">ΔG = 0</td><td>Equilíbrio</td><td>Sem tendência líquida de mudança</td></tr>
+    </table>
+    <div class="fill"></div>
+    <div class="tip red"><div class="ic" data-icon="warn"></div><div><b>Pegadinhas:</b> <b>espontâneo não é rápido</b>: ΔG diz se a reação pode ocorrer; a velocidade é assunto da cinética (Unidade 7). Entalpia é calor a <b>pressão</b> constante, não a volume. Exotérmico = ΔH <b>negativo</b>. Hess vale porque H é <b>função de estado</b>.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 4</div>
+</section>
+
+<!-- ================= PÁGINA 5 — UNIDADE 4 ================= -->
+<section class="page u4">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">4</div><div><div class="hq-title">Equilíbrio químico</div><div class="sub">O equilíbrio é dinâmico e foge da perturbação</div></div></div>
+    <div class="grid2">
+      <div class="kc p"><b class="lbl">Equilíbrio dinâmico</b>Reações reversíveis ocorrem nos dois sentidos. Quando as velocidades direta e inversa se igualam, as <b>concentrações ficam constantes</b>, embora as reações continuem. Uma reação com ΔG muito negativo tende a Keq elevado: o equilíbrio é a ponte entre termodinâmica e concentrações.</div>
+      <div class="kc y"><b class="lbl">Constante de equilíbrio</b><div class="formula" style="font-size:13pt">Keq = [C]ᶜ[D]ᵈ / [A]ᵃ[B]ᵇ</div>Para aA + bB ⇌ cC + dD. <b>Keq alto</b>: favorece produtos; <b>baixo</b>: favorece reagentes. Depende da <b>temperatura</b>, não das concentrações iniciais.</div>
+    </div>
+    <table class="t">
+      <tr><th>Perturbação (Le Chatelier)</th><th>Resposta do sistema</th></tr>
+      <tr><td class="k">↑ concentração de um reagente</td><td>Desloca para os <b>produtos</b> (e vice-versa)</td></tr>
+      <tr><td class="k">↑ pressão (gases)</td><td>Desloca para o lado com <b>menor número de mols gasosos</b></td></tr>
+      <tr><td class="k">↑ temperatura</td><td>Favorece o sentido <b>endotérmico</b>; ↓ T favorece o exotérmico</td></tr>
+      <tr><td class="k">Catalisador</td><td><b>Não desloca</b>: acelera igualmente ida e volta, Keq inalterado</td></tr>
+    </table>
+    <div class="grid2" style="grid-template-columns:1.2fr 1fr">
+      <div class="diagram" style="height:60mm"><div class="ill" data-scene="q_lechatelier"></div></div>
+      <div class="kc b"><b class="lbl">Equilíbrios vitais</b>O <b>tampão bicarbonato</b> regula o pH do sangue: mais CO₂ desloca o equilíbrio para a direita, produz H⁺ e reduz o pH. A <b>ligação hemoglobina-O₂</b> também é um equilíbrio deslocável: CO₂, pH baixo e temperatura alta favorecem a liberação de O₂ nos tecidos (<b>efeito Bohr</b>). Em um ensaio de equilíbrio sensível à temperatura (Caso 12), mudar a incubação muda o resultado.</div>
+    </div>
+    <div class="kc"><b class="lbl">Correlação clínico-laboratorial</b>Compreender o equilíbrio químico e Le Chatelier permite entender a regulação do pH, o transporte de gases e diversos ensaios laboratoriais baseados em reações reversíveis, como os equilíbrios de precipitação sensíveis à concentração de um íon (Caso 16). Em um precipitado, adicionar o íon comum desloca o equilíbrio para o sólido.</div>
+    <div class="fill"></div>
+    <div class="tip red"><div class="ic" data-icon="warn"></div><div><b>Pegadinhas:</b> o catalisador <b>não desloca</b> o equilíbrio nem muda o Keq; apenas o alcança mais rápido. Keq depende da <b>temperatura</b>, não das concentrações iniciais. Aumentar T favorece o sentido <b>endotérmico</b>.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 5</div>
+</section>
+
+<!-- ================= PÁGINA 6 — UNIDADE 5 ================= -->
+<section class="page u5">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">5</div><div><div class="hq-title">Equilíbrio ácido-base, pH e tampões</div><div class="sub">Um tampão trabalha melhor quando pH ≈ pKa</div></div></div>
+    <div class="grid2">
+      <div class="kc r"><b class="lbl">Ácidos, bases e pH</b><b>Ácido</b> doa H⁺; <b>base</b> recebe H⁺ (Brønsted-Lowry). A água se autoioniza (H₂O ⇌ H⁺ + OH⁻, produto iônico Kw).<div class="formula">pH = −log[H⁺]</div>Escala 0 a 14: &lt;7 ácido, 7 neutro, &gt;7 básico. <b>Logarítmica</b>: 1 unidade = 10× em [H⁺].</div>
+      <div class="kc y"><b class="lbl">Força dos ácidos: Ka e pKa</b>Ácido <b>forte</b> ioniza-se quase totalmente; <b>fraco</b>, parcialmente, com constante de acidez <b>Ka</b>. <b>pKa = −log Ka</b>: quanto <b>menor o pKa, mais forte</b> o ácido. No pH igual ao pKa, o ácido está <b>metade ionizado</b>: ponto de maior capacidade tamponante. O pKa define a forma predominante de fármacos e biomoléculas em cada pH.</div>
+    </div>
+    <div class="ph">
+      <div style="background:#E74C3C;color:#fff">0<span class="n">ácido gástrico ~1,5</span></div><div style="background:#F5B041">3<span class="n">suco de limão</span></div><div style="background:#F7C21B">5<span class="n">urina (4,5–8)</span></div><div style="background:#58D68D">7<span class="n">água · sangue 7,4</span></div><div style="background:#5DADE2">9<span class="n">bicarbonato</span></div><div style="background:#8E44AD;color:#fff">14<span class="n">base forte</span></div>
+    </div>
+    <div class="grid2" style="grid-template-columns:1.2fr 1fr">
+      <div class="diagram" style="height:58mm"><div class="ill" data-scene="q_tampao"></div></div>
+      <div class="kc"><b class="lbl">Sistemas tampão</b>Solução que <b>resiste a variações de pH</b> ao receber pequenas quantidades de ácido ou base: um <b>ácido fraco + sua base conjugada</b>. A capacidade é máxima quando <b>pH ≈ pKa</b> (razão base/ácido próxima de 1). O bicarbonato é eficaz no sangue porque seus componentes são regulados pelos <b>pulmões (CO₂)</b> e pelos <b>rins (HCO₃⁻)</b>, mantendo o pH entre <b>7,35 e 7,45</b>.</div>
+    </div>
+    <table class="t">
+      <tr><th>Tampão</th><th>Par ácido/base</th><th>Onde atua</th></tr>
+      <tr><td class="k">Bicarbonato</td><td>H₂CO₃ / HCO₃⁻</td><td>Sangue e líquido extracelular (principal)</td></tr>
+      <tr><td class="k">Fosfato</td><td>H₂PO₄⁻ / HPO₄²⁻</td><td>Intracelular e urina</td></tr>
+      <tr><td class="k">Proteínas</td><td>grupos ionizáveis</td><td>Sangue e células (ex.: hemoglobina)</td></tr>
+    </table>
+    <div class="kc b"><b class="lbl">Correlação: gasometria e distúrbios ácido-base</b>A gasometria mede pH, PaCO₂ e bicarbonato, e a equação de Henderson-Hasselbalch os relaciona. <b>Vômitos intensos</b> (Caso 7): perda de ácido, pH e HCO₃⁻ elevados, <b>alcalose metabólica</b>. <b>Acidose metabólica grave</b> (Caso 17): administrar bicarbonato repõe a base conjugada e eleva a razão [HCO₃⁻]/[CO₂], corrigindo o pH. Retenção de CO₂ gera <b>acidose respiratória</b>; hiperventilação, <b>alcalose respiratória</b>.</div>
+    <div class="fill"></div>
+    <div class="tip red"><div class="ic" data-icon="warn"></div><div><b>Pegadinhas:</b> <b>menor pKa = ácido mais forte</b>. Em pH = pKa, metade ionizado. Tampão é ácido <b>fraco</b> + base conjugada (nunca ácido forte). Henderson-Hasselbalch: pH = pKa + log(<b>base</b>/<b>ácido</b>), base em cima.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 6</div>
+</section>
+
+<!-- ================= PÁGINA 7 — UNIDADE 6 ================= -->
+<section class="page u6">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">6</div><div><div class="hq-title">Soluções e propriedades coligativas</div><div class="sub">Só o número de partículas importa</div></div></div>
+    <div class="grid2">
+      <div class="kc b"><b class="lbl">Concentração e diluição</b>Solução = mistura homogênea de soluto em solvente. <b>Molaridade (M)</b>: mol de soluto por litro de solução (a mais usada no laboratório). Também: molalidade (mol/kg de solvente), g/L, porcentagem (m/m, m/v, v/v) e ppm.<div class="formula">C₁V₁ = C₂V₂</div>Ao diluir, a quantidade de soluto não muda: só se adiciona solvente.</div>
+      <div class="kc y"><b class="lbl">Osmose e pressão osmótica</b>A <b>osmose</b> é a passagem de água por membrana semipermeável do meio menos para o mais concentrado. A pressão osmótica é a que impede esse fluxo:<div class="formula">π = iMRT</div><b>i</b> = fator de van’t Hoff (NaCl → 2 partículas), M molaridade, R constante, T em kelvin. Mais partículas, maior π. Isso liga as coligativas à <b>osmolaridade</b>.</div>
+    </div>
+    <div class="diagram" style="height:58mm"><div class="ill" data-scene="q_coligativas"></div></div>
+    <div class="kc"><b class="lbl">Soluções parenterais</b>Classificadas em relação ao plasma: <b>isotônicas</b> (mesma osmolaridade, como o soro fisiológico 0,9%), <b>hipotônicas</b> e <b>hipertônicas</b>. A administração inadequada causa entrada excessiva de água na célula (edema, hemólise) ou saída (desidratação celular). Preparar e administrar uma solução isotônica (Caso 11) exige calcular a osmolaridade contando as partículas, não só os mols.</div>
+    <div class="case">
+      <div class="art"><div class="ill" data-scene="q_lab_osmo"></div></div>
+      <div class="txt"><h3>Correlação clínico-laboratorial: osmometria</h3>
+        <p>A osmometria mede a osmolalidade de soro e urina (Caso 3) explorando uma propriedade coligativa, geralmente o <b>abaixamento do ponto de congelamento</b> (crioscopia). Quanto mais partículas dissolvidas, mais baixo o soro congela. Preparo de reagentes, diluições e escolha de soluções isotônicas são rotinas do laboratório.</p>
+        <span class="say">Molaridade, C₁V₁ = C₂V₂, van’t Hoff e crioscopia: quatro ideias que o biomédico usa todos os dias.</span></div>
+    </div>
+    <div class="fill"></div>
+    <div class="tip red"><div class="ic" data-icon="warn"></div><div><b>Pegadinhas:</b> coligativas dependem do <b>número</b> de partículas, não da identidade. Eletrólito tem efeito <b>maior</b> que não eletrólito na mesma molaridade (não esqueça o <b>i</b>). A osmometria clínica usa a <b>crioscopia</b>. Soluto abaixa o congelamento e <b>eleva</b> a ebulição.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 7</div>
+</section>
+
+<!-- ================= PÁGINA 8 — UNIDADE 7 ================= -->
+<section class="page u7">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">7</div><div><div class="hq-title">Cinética química e catálise enzimática</div><div class="sub">A termodinâmica diz se ocorre; a cinética, quão rápido</div></div></div>
+    <div class="grid2" style="grid-template-columns:1.2fr 1fr">
+      <div class="diagram" style="height:56mm"><div class="ill" data-scene="q_cinetica"></div></div>
+      <div class="kc y"><b class="lbl">Velocidade, Ea e catálise</b>Fatores que aceleram: <b>↑ concentração</b>, <b>↑ temperatura</b>, <b>↑ superfície de contato</b> e <b>catalisador</b>. Para reagir, as partículas colidem com orientação adequada e energia suficiente para vencer a <b>energia de ativação (Ea)</b> e formar o complexo ativado. A temperatura aumenta a fração de colisões energéticas (Arrhenius). O <b>catalisador</b> oferece um caminho com menor Ea, sem ser consumido e <b>sem alterar ΔG nem o equilíbrio</b>. A <b>ordem de reação</b> é determinada experimentalmente.</div>
+    </div>
+    <div class="grid2">
+      <div class="kc"><b class="lbl">Enzimas</b>Catalisadores biológicos (geralmente proteínas) que reduzem a Ea das reações do metabolismo. Atuam no <b>sítio ativo</b>, com alta <b>especificidade</b>; dependem de temperatura, pH e concentração de substrato, e podem ser afetadas por <b>inibidores</b>, princípio de muitos fármacos. Otimizar a temperatura de incubação de um ensaio (Caso 10) é mexer na Ea efetiva.</div>
+      <div class="kc p"><b class="lbl">Modelo de Michaelis-Menten</b><div class="formula" style="font-size:13pt">V = Vmax · [S] / (Km + [S])</div><b>Vmax</b>: velocidade máxima, enzima <b>saturada</b> de substrato. <b>Km</b>: concentração de substrato em que V = Vmax/2; mede (inversamente) a <b>afinidade</b>: menor Km, maior afinidade. Curva em hipérbole: quase linear em [S] baixo, platô em [S] alto.</div>
+    </div>
+    <div class="case">
+      <div class="art"><div class="ill" data-scene="q_lab_enzima"></div></div>
+      <div class="txt"><h3>Correlação clínico-laboratorial: dosagem cinética de enzimas</h3>
+        <p>ALT, AST, CK e amilase são dosadas por <b>métodos cinéticos</b> (Caso 4): acompanha-se a variação de absorbância ao longo do tempo, e a velocidade da reação é proporcional à atividade da enzima na amostra. Para que isso valha, o substrato deve estar em excesso (região da Vmax), com temperatura e pH padronizados.</p>
+        <span class="say">Vmax, Km e saturação não são só teoria: são as condições de validade do ensaio que você vai liberar.</span></div>
+    </div>
+    <div class="fill"></div>
+    <div class="tip red"><div class="ic" data-icon="warn"></div><div><b>Pegadinhas:</b> o catalisador <b>diminui a Ea</b>, mas não muda ΔH, ΔG nem a posição do equilíbrio: afeta a <b>velocidade</b>, não a espontaneidade nem a extensão. Km <b>baixo</b> = afinidade <b>alta</b>. Vmax só com a enzima <b>saturada</b>.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 8</div>
+</section>
+
+<!-- ================= PÁGINA 9 — UNIDADE 8 ================= -->
+<section class="page u8">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">8</div><div><div class="hq-title">Eletroquímica</div><div class="sub">Perde = oxida, ganha = reduz</div></div></div>
+    <div class="grid2" style="grid-template-columns:1.2fr 1fr">
+      <div class="diagram" style="height:58mm"><div class="ill" data-scene="q_pilha"></div></div>
+      <div class="kc r"><b class="lbl">Oxirredução</b>Transferência de elétrons. <b>Oxidação</b>: perde elétrons (número de oxidação sobe). <b>Redução</b>: ganha elétrons. Ocorrem juntas: quem se oxida é o <b>agente redutor</b> (doa e⁻); quem se reduz é o <b>agente oxidante</b> (recebe e⁻). A dosagem de glicose (Caso 9) usa uma reação redox acoplada a um indicador colorido: a cor é proporcional à glicose oxidada.</div>
+    </div>
+    <table class="t">
+      <tr><th>Eletrodo</th><th>Processo</th><th>Elétrons</th><th>Polo na pilha</th></tr>
+      <tr><td class="k">Ânodo</td><td>Oxidação</td><td>Perde (doa)</td><td>Negativo</td></tr>
+      <tr><td class="k">Cátodo</td><td>Redução</td><td>Ganha (recebe)</td><td>Positivo</td></tr>
+    </table>
+    <div class="grid2">
+      <div class="kc y"><b class="lbl">Potenciais e pilhas</b>O <b>potencial de eletrodo (E°)</b> mede a tendência de uma espécie se reduzir, em relação ao eletrodo padrão de hidrogênio. Combinando duas semirreações forma-se a <b>pilha</b> (célula galvânica), que converte energia química em elétrica de forma <b>espontânea (ΔG &lt; 0)</b>; a diferença de potencial é a força eletromotriz. A <b>eletrólise</b> faz o inverso: usa energia elétrica para forçar reações não espontâneas.</div>
+      <div class="kc b"><b class="lbl">Potenciometria e condutometria</b><b>Potenciometria</b> mede a diferença de potencial entre eletrodos: o <b>eletrodo de vidro</b> do pHmetro mede pH; os <b>eletrodos íon-seletivos (ISE)</b> medem Na⁺, K⁺, Cl⁻, Ca²⁺ e são a base dos analisadores de eletrólitos e de gasometria. <b>Condutometria</b> mede a condutividade da solução (quantidade e mobilidade dos íons): eletrólitos, grau de ionização, pureza da água.</div>
+    </div>
+    <div class="case">
+      <div class="art"><div class="ill" data-scene="q_lab_ise"></div></div>
+      <div class="txt"><h3>Correlação clínico-laboratorial: eletrólitos por ISE</h3>
+        <p>O analisador mede sódio e potássio séricos por eletrodos íon-seletivos (Caso 5): cada eletrodo gera um potencial proporcional à concentração do íon. Entender redox, potenciais e potenciometria é o que permite operar o equipamento, calibrar, interpretar e reconhecer fontes de erro, como a hemólise que eleva falsamente o potássio.</p>
+        <span class="say">O pHmetro da bancada e o analisador de gasometria são, no fundo, o mesmo princípio: uma pilha cuja voltagem depende do íon.</span></div>
+    </div>
+    <div class="fill"></div>
+    <div class="tip red"><div class="ic" data-icon="warn"></div><div><b>Pegadinhas:</b> <b>ânodo = oxidação</b>, <b>cátodo = redução</b>, em qualquer célula. Agente <b>oxidante</b> é o que se <b>reduz</b>. Pilha é espontânea (ΔG &lt; 0); eletrólise, forçada. pHmetro = <b>potenciometria</b>; condutividade = <b>condutometria</b>.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 9</div>
+</section>
+
+<!-- ================= PÁGINA 10 — UNIDADE 9 ================= -->
+<section class="page u9">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">9</div><div><div class="hq-title">Superfície, coloides e integração</div><div class="sub">Da tensão superficial ao laboratório inteiro</div></div></div>
+    <div class="grid2">
+      <div class="kc"><b class="lbl">Fenômenos de superfície</b><b>Tensão superficial</b>: na interface líquido-ar as moléculas sofrem forças diferentes, criando uma “película” que minimiza a área. <b>Surfactantes</b> (tensoativos) a reduzem; o surfactante pulmonar impede o colapso dos alvéolos. <b>Adsorção</b>: adesão de moléculas à <b>superfície</b> de um material (difere da absorção, que envolve o volume); é a base da <b>cromatografia</b> (Caso 8).</div>
+      <div class="kc y"><b class="lbl">Sistemas coloidais</b>Partículas de tamanho <b>intermediário</b> entre soluções e suspensões: não sedimentam nem são retidas por filtração comum. Sol, gel, emulsão (leite), aerossol. <b>Efeito Tyndall</b>: dispersão da luz que torna o feixe visível. O <b>plasma</b>, com suas proteínas, é um coloide; sua estabilidade depende de cargas superficiais e do pH.</div>
+    </div>
+    <div class="diagram" style="height:56mm"><div class="ill" data-scene="q_coloide"></div></div>
+    <div class="kc b"><b class="lbl">Aplicações biomédicas</b>As proteínas plasmáticas determinam a pressão oncótica e são dosadas por <b>turbidimetria</b> (mede a redução da luz transmitida) e <b>nefelometria</b> (mede a luz espalhada), aplicações do efeito Tyndall; uma proteína específica pode ser dosada pela turbidez do complexo antígeno-anticorpo (Caso 6). A <b>cromatografia</b> (adsorção/partição) separa biomoléculas.</div>
+    <table class="t">
+      <tr><th>Tema físico-químico</th><th>Aplicação nas análises clínicas</th><th style="width:14%">Unidade</th></tr>
+      <tr><td class="k">Gases e pressões parciais</td><td>Gasometria arterial</td><td>1</td></tr>
+      <tr><td class="k">Termodinâmica e ΔG</td><td>Bioenergética, metabolismo, calorimetria</td><td>2 e 3</td></tr>
+      <tr><td class="k">Equilíbrio químico</td><td>Bicarbonato, efeito Bohr, ensaios reversíveis</td><td>4</td></tr>
+      <tr><td class="k">Ácido-base, pH e tampões</td><td>pH sanguíneo; gasometria; tampões de reagentes</td><td>5</td></tr>
+      <tr><td class="k">Soluções e coligativas</td><td>Diluições; osmometria (osmolalidade)</td><td>6</td></tr>
+      <tr><td class="k">Cinética enzimática</td><td>Dosagem de enzimas (métodos cinéticos)</td><td>7</td></tr>
+      <tr><td class="k">Eletroquímica (potenciometria)</td><td>Eletrólitos e gases (ISE), pHmetro, condutometria</td><td>8</td></tr>
+      <tr><td class="k">Coloides e superfície</td><td>Turbidimetria, nefelometria, cromatografia</td><td>9</td></tr>
+    </table>
+    <div class="fill"></div>
+    <div class="tip red"><div class="ic" data-icon="warn"></div><div><b>Pegadinhas:</b> adsorção é na <b>superfície</b>; absorção, no volume. Coloide <b>não</b> sedimenta nem filtra; suspensão, sim. Turbidimetria mede luz <b>transmitida</b>; nefelometria, luz <b>espalhada</b>. Surfactante <b>reduz</b> a tensão superficial.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 10</div>
+</section>
+
+<!-- ================= PÁGINA 11 — FÓRMULAS, PEGADINHAS E GLOSSÁRIO ================= -->
+<section class="page info">
+  <div class="stripes"></div>
+  <div class="content"><div class="dashed-box">
+    <span class="hq-title white">Fórmulas e números da prova</span>
+    <div class="nums">
+      <b>Gás ideal:</b> PV = nRT (T em kelvin)<br>
+      <b>Kelvin:</b> K = °C + 273<br>
+      <b>Ar:</b> O₂ ~21% · PO₂ ~160 mmHg<br>
+      <b>1ª lei:</b> ΔU = Q − W<br>
+      <b>Entalpia:</b> H = U + PV<br>
+      <b>Exotérmico:</b> ΔH &lt; 0 · <b>Endotérmico:</b> ΔH &gt; 0<br>
+      <b>Gibbs:</b> ΔG = ΔH − TΔS<br>
+      <b>Espontâneo:</b> ΔG &lt; 0 · <b>Equilíbrio:</b> ΔG = 0<br>
+      <b>Keq:</b> [C]ᶜ[D]ᵈ / [A]ᵃ[B]ᵇ<br>
+      <b>pH:</b> −log[H⁺] · sangue 7,35–7,45<br>
+      <b>pKa:</b> −log Ka (menor = mais forte)<br>
+      <b>Henderson-Hasselbalch:</b> pH = pKa + log([base]/[ácido])<br>
+      <b>Bicarbonato:</b> pKa 6,1 · razão 20:1 → pH 7,4<br>
+      <b>Diluição:</b> C₁V₁ = C₂V₂<br>
+      <b>Pressão osmótica:</b> π = iMRT<br>
+      <b>van’t Hoff:</b> NaCl i ≈ 2 · glicose i = 1<br>
+      <b>Plasma:</b> ~290 mOsm/kg<br>
+      <b>Michaelis-Menten:</b> V = Vmax[S]/(Km+[S])<br>
+      <b>Km:</b> [S] em que V = Vmax/2
+    </div>
+    <h4>Pegadinhas que mais aparecem</h4>
+    <div class="peg">
+      <div><b>Kelvin sempre</b> em PV = nRT. Boyle é inverso; Charles e Gay-Lussac, diretos. Gás real foge do ideal em alta P e baixa T.</div>
+      <div><b>Hess</b> vale porque a entalpia é função de estado. Exotérmico = ΔH negativo. Entalpia = calor a pressão constante.</div>
+      <div><b>Espontâneo ≠ rápido.</b> ΔG &lt; 0 diz que pode ocorrer; a velocidade é da cinética. ATP acopla reações endergônicas.</div>
+      <div><b>Catalisador</b> não desloca o equilíbrio nem muda Keq ou ΔG: só reduz a Ea. Keq depende da temperatura.</div>
+      <div><b>Menor pKa = ácido mais forte.</b> Tampão = ácido fraco + base conjugada; melhor quando pH ≈ pKa. Mais CO₂ → pH cai.</div>
+      <div><b>Coligativas</b> contam partículas: eletrólito tem efeito maior (fator i). Osmometria clínica = crioscopia. SF 0,9% é isotônico.</div>
+      <div><b>Km baixo = afinidade alta.</b> Vmax só com a enzima saturada. Dosagem cinética mede a velocidade da reação.</div>
+      <div><b>Ânodo oxida, cátodo reduz.</b> Agente oxidante se reduz. pHmetro e ISE = potenciometria. Tyndall = coloide; turbidimetria mede luz transmitida.</div>
+    </div>
+    <h4>Glossário rápido</h4>
+    <div class="nums" style="columns:2;font-size:9pt">
+      <b>Adsorção:</b> adesão de moléculas à superfície de um material.<br>
+      <b>Agente oxidante / redutor:</b> recebe / doa elétrons.<br>
+      <b>Complexo ativado:</b> estado de transição no topo da Ea.<br>
+      <b>Condutometria:</b> mede a condutividade de uma solução.<br>
+      <b>Efeito Bohr:</b> deslocamento da ligação Hb-O₂ por pH e CO₂.<br>
+      <b>Efeito Tyndall:</b> dispersão da luz pelas partículas coloidais.<br>
+      <b>Entropia (S):</b> medida da desordem ou dispersão da energia.<br>
+      <b>Equilíbrio dinâmico:</b> velocidades iguais, concentrações constantes.<br>
+      <b>Função de estado:</b> depende só dos estados inicial e final.<br>
+      <b>ISE:</b> eletrodo íon-seletivo (Na⁺, K⁺, Cl⁻, Ca²⁺).<br>
+      <b>Molaridade:</b> mol de soluto por litro de solução.<br>
+      <b>Osmolaridade:</b> partículas osmoticamente ativas por litro.<br>
+      <b>Sítio ativo:</b> local da enzima onde o substrato se liga.<br>
+      <b>Surfactante:</b> reduz a tensão superficial.
+    </div>
+    <div class="fill"></div>
+    <p style="margin:0;font-size:8.8pt;color:#fff;font-weight:700;text-shadow:1px 1px 0 var(--ink)">Referências básicas: ATKINS, P.; DE PAULA, J. <i>Físico-Química</i> (LTC, 2018); CHANG, R. <i>Físico-Química para as Ciências Químicas e Biológicas</i> (AMGH, 2010); ATKINS, P.; JONES, L. <i>Princípios de Química</i> (Bookman, 2018). Complementares: CASTELLAN, G. <i>Fundamentos de Físico-Química</i> (LTC, 1996); BALL, D. W. <i>Físico-Química</i> (Cengage, 2005); BROWN, T. L. et al. <i>Química: a ciência central</i> (Pearson, 2016).</p>
+  </div></div>
+  <div class="pagenum" style="color:#fff"><span class="credit" style="color:#eee">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 11</div>
+</section>
+
+<!-- ================= PÁGINA 12 — MINI-SIMULADO ================= -->
+<section class="page">
+  <div class="pad" style="display:flex;flex-direction:column;gap:3mm">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end"><div><span class="hq-title" style="font-size:24pt;color:#D7BDE2">Mini-simulado</span><div style="font-family:var(--title);font-weight:600;font-size:11pt">Doze questões selecionadas das questões de fixação da apostila (uma ou duas por unidade). Marque e confira o gabarito.</div></div><span class="label">AV1 · AV2</span></div>
+    <div class="quiz">
+      <div class="q"><b>1.</b> Na equação PV = nRT, a temperatura deve ser expressa em:<span>a) graus Celsius. b) kelvin (temperatura absoluta). c) graus Fahrenheit. d) mmHg. e) mols.</span></div>
+      <div class="q"><b>2.</b> Os gases reais afastam-se do comportamento ideal em condições de:<span>a) baixa pressão e alta temperatura. b) alta pressão e baixa temperatura. c) vácuo absoluto. d) temperatura infinita. e) ausência de partículas.</span></div>
+      <div class="q"><b>3.</b> Um processo exotérmico apresenta:<span>a) ΔH positivo e absorve calor. b) ΔH negativo e libera calor. c) ΔH nulo. d) ΔG positivo sempre. e) entropia negativa sempre.</span></div>
+      <div class="q"><b>4.</b> A lei de Hess baseia-se no fato de que a entalpia é uma:<span>a) função de caminho. b) função de estado. c) grandeza indefinida. d) constante universal. e) velocidade.</span></div>
+      <div class="q"><b>5.</b> Um processo com ΔG &lt; 0 é classificado como:<span>a) endergônico. b) exergônico (espontâneo). c) em equilíbrio. d) impossível. e) isotérmico.</span></div>
+      <div class="q"><b>6.</b> A adição de um catalisador a um sistema em equilíbrio:<span>a) desloca o equilíbrio para os produtos. b) não desloca o equilíbrio; apenas acelera para atingi-lo. c) aumenta o Keq. d) diminui o Keq. e) desloca para os reagentes.</span></div>
+      <div class="q"><b>7.</b> Quanto menor o pKa de um ácido, ele é:<span>a) mais fraco. b) mais forte. c) neutro. d) mais volátil. e) menos solúvel.</span></div>
+      <div class="q"><b>8.</b> A capacidade tamponante é máxima quando:<span>a) pH = 0. b) pH ≈ pKa. c) pH = 14. d) [ácido] = 0. e) [base] = 0.</span></div>
+      <div class="q"><b>9.</b> A osmometria clínica baseia-se, com frequência, na propriedade coligativa de:<span>a) elevação do ponto de ebulição. b) abaixamento do ponto de congelamento (crioscopia). c) aumento da pressão de vapor. d) condutividade. e) adsorção.</span></div>
+      <div class="q"><b>10.</b> A constante de Michaelis (Km) corresponde à concentração de substrato em que:<span>a) V = 0. b) V = Vmax/2. c) V = Vmax. d) a enzima se desnatura. e) o pH é neutro.</span></div>
+      <div class="q"><b>11.</b> Em uma pilha, a oxidação ocorre no:<span>a) cátodo. b) ânodo. c) eletrólito. d) voltímetro. e) ponte salina.</span></div>
+      <div class="q"><b>12.</b> O efeito Tyndall consiste na:<span>a) sedimentação das partículas. b) dispersão da luz pelas partículas coloidais. c) ionização do solvente. d) elevação do ponto de ebulição. e) adsorção na superfície.</span></div>
+    </div>
+    <div class="gab"><b>Gabarito:</b> 1-b · 2-b · 3-b · 4-b · 5-b · 6-b · 7-b · 8-b · 9-b · 10-b · 11-b · 12-b. Errou? Volte à unidade correspondente e releia o conceito-chave. Os simulados 1, 2 e 3 da apostila têm 25 questões cada, com gabarito comentado, e o Apêndice A traz 17 casos aplicados.</div>
+    <div class="grid2">
+      <div class="tool" style="background:#FFF6B0"><h3>Discursivas para treinar (AV1)</h3>
+        <div>• Explique PV = nRT e as leis de Boyle e Charles, relacionando a pressão parcial (Dalton) à gasometria arterial.</div>
+        <div>• Explique a 1ª lei e a entalpia, e mostre como a lei de Hess se aplica ao metabolismo energético.</div>
+        <div>• Mostre como ΔG = ΔH − TΔS determina a espontaneidade e fundamenta o acoplamento de reações ao ATP.</div>
+        <div>• Explique pH, pKa e o funcionamento de um tampão por Henderson-Hasselbalch, relacionando-os à gasometria.</div>
+        <div>• Explique a energia de ativação, a ação dos catalisadores e o modelo de Michaelis-Menten nas dosagens enzimáticas.</div></div>
+      <div class="tool" style="background:#E8DAEF"><h3>Roteiro de estudo (da apostila)</h3>
+        <div><b>Antes da aula:</b> leia os objetivos e as palavras-chave da unidade.</div>
+        <div><b>Durante a leitura:</b> grife os conceitos-chave e as fórmulas; refaça os diagramas (exo/endotérmico, Ea com e sem catalisador, curva V × [S]).</div>
+        <div><b>Depois da aula:</b> resolva as questões de fixação e confira o gabarito comentado; faça a atividade de aprendizagem e poste no AVA.</div>
+        <div><b>Na revisão:</b> releia as sínteses e o glossário, resolva os casos do Apêndice A e os três simulados.</div>
+        <div style="margin-top:2mm" class="row"><div class="ill" data-scene="studentsWave" style="width:26mm;height:30mm;flex:0 0 26mm"></div><div style="font-family:var(--comic);font-weight:700;font-size:9.6pt">“Compreender esses princípios é compreender o funcionamento dos métodos que o biomédico utiliza.”</div></div></div>
+    </div>
+    <div class="small center" style="margin-top:auto">Cartilha educativa da disciplina Físico-Química · Faculdade de Tecnologia do Amapá · Autoria: Prof. Dr. Patrício da Silva Almeida · Pode ser reproduzida para fins educativos.</div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 12</div>
+</section>
+
+<script src="../shared/ill.js"></script>
+</body>
+</html>

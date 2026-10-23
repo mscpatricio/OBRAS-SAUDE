@@ -30,6 +30,7 @@ const DOCS = {
   'pais-hospital': { file: 'pais-hospital/index.html', out: 'Cartilha-Pais-Hospital-TEA.pdf', format: 'A4' },
   'cartilha-didatica': { file: 'cartilha-didatica/index.html', out: 'Cartilha-Didatica-Aplicada-Enfermagem.pdf', format: 'A4' },
   'cartilha-biofisica': { file: 'cartilha-biofisica/index.html', out: 'Cartilha-Biofisica-Aplicada-Saude.pdf', format: 'A4' },
+  'cartilha-fisico-quimica': { file: 'cartilha-fisico-quimica/index.html', out: 'Cartilha-Fisico-Quimica-Ciencias-Biomedicas.pdf', format: 'A4' },
   'cartilha-paciente': { file: 'cartilha-paciente/index.html', out: 'Cartilha-Minha-Visita-ao-Dentista.pdf', format: 'A4' },
   'preview-cenas': { file: 'build/preview-cenas.html', out: 'preview-cenas.pdf', format: 'A4', pngOnly: true },
 };

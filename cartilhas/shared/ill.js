@@ -1324,6 +1324,195 @@
     ${bubble({ x: 170, y: 6, w: 230, h: 60, text: 'SF 0,9% é isotônico: a hemácia mantém o volume. Hipertônico rápido? Nunca.', tail: [350, 110], size: 10.5 })}
   `));
 
+  // ======= FÍSICO-QUÍMICA APLICADA ÀS CIÊNCIAS BIOMÉDICAS =======
+  const BIOMED = (o = {}) => person(Object.assign({ skin: '#F2C9A6', hair: '#2C3E50', hairStyle: 'long', shirt: '#1ABC9C', pants: '#2C3E50', coat: '#FFFFFF', sleeve: 'long', shoes: '#FFFFFF', glasses: true, gloves: true }, o));
+  const BIOMED2 = (o = {}) => person(Object.assign({ skin: '#8D5B3A', hair: '#1C1C1C', hairStyle: 'cap', shirt: '#8E44AD', pants: '#2C3E50', coat: '#FFFFFF', sleeve: 'long', shoes: '#FFFFFF', gloves: true }, o));
+  ITEMS.tube = () => `<g transform="rotate(-15)"><path d="M-6 -40 L-6 6 Q-6 14 0 14 Q6 14 6 6 L6 -40 Z" fill="#D6EAF8" ${S}/><path d="M-6 -12 L-6 6 Q-6 14 0 14 Q6 14 6 6 L6 -12 Z" fill="#E74C3C"/><rect x="-9" y="-44" width="18" height="6" rx="2" fill="#ECF0F1" ${S}/></g>`;
+  ITEMS.pipette = () => `<g transform="rotate(-40)"><rect x="-3" y="-52" width="6" height="60" rx="2" fill="#ECF0F1" ${S}/><rect x="-7" y="-64" width="14" height="14" rx="4" fill="#3498DB" ${S}/><path d="M-3 8 L0 20 L3 8 Z" fill="#ECF0F1" ${S}/></g>`;
+  function flask(x, y, h = 60, color = '#AED6F1', label = '') {
+    const w = h * 0.9;
+    return `<g transform="translate(${x} ${y})"><path d="M${-w * 0.14} ${-h} L${-w * 0.14} ${-h * 0.55} L${-w / 2} 0 L${w / 2} 0 L${w * 0.14} ${-h * 0.55} L${w * 0.14} ${-h} Z" fill="#F4F6F7" ${S}/><path d="M${-w * 0.33} ${-h * 0.28} L${-w / 2 + 2} -2 L${w / 2 - 2} -2 L${w * 0.33} ${-h * 0.28} Z" fill="${color}"/><rect x="${-w * 0.2}" y="${-h - 6}" width="${w * 0.4}" height="8" rx="2" fill="#ECF0F1" ${S}/>${label ? htmlText(-40, 4, 80, 20, label, 9, 800, OUT) : ''}</g>`;
+  }
+  function tubeRack(x, y) {
+    const cols = ['#E74C3C', '#F7C21B', '#58D68D', '#5DADE2'];
+    return `<g transform="translate(${x} ${y})"><rect x="0" y="-14" width="76" height="14" rx="3" fill="#8D6E63" ${S}/>${cols.map((c, i) => `<path d="M${8 + i * 18} -50 L${8 + i * 18} -16 Q${8 + i * 18} -10 ${13 + i * 18} -10 Q${18 + i * 18} -10 ${18 + i * 18} -16 L${18 + i * 18} -50 Z" fill="#D6EAF8" ${S} stroke-width="2"/><path d="M${8 + i * 18} -30 L${8 + i * 18} -16 Q${8 + i * 18} -10 ${13 + i * 18} -10 Q${18 + i * 18} -10 ${18 + i * 18} -16 L${18 + i * 18} -30 Z" fill="${c}"/>`).join('')}</g>`;
+  }
+  function labBench(x, y, w) {
+    return `<rect x="${x}" y="${y}" width="${w}" height="14" rx="3" fill="#2C3E50" ${S}/><rect x="${x + 6}" y="${y + 14}" width="${w - 12}" height="60" fill="#ECF0F1" ${S}/><line x1="${x + w / 2}" y1="${y + 14}" x2="${x + w / 2}" y2="${y + 74}" ${S} stroke-width="2"/><rect x="${x + 16}" y="${y + 24}" width="18" height="6" rx="2" fill="#BDC3C7" ${S} stroke-width="2"/><rect x="${x + w / 2 + 10}" y="${y + 24}" width="18" height="6" rx="2" fill="#BDC3C7" ${S} stroke-width="2"/>`;
+  }
+  function analyzer(x, y, w, h, title, lines = [], color = '#5DADE2') {
+    return `<g transform="translate(${x} ${y})"><rect x="0" y="${-h}" width="${w}" height="${h}" rx="8" fill="#F4F6F7" ${S}/><rect x="8" y="${-h + 8}" width="${w - 16}" height="${h * 0.5}" rx="4" fill="#1C2833" ${S}/>${htmlText(10, -h + 10, w - 20, 18, title, 9, 800, color, 'center', 'Baloo 2')}${lines.map((l, i) => htmlText(10, -h + 28 + i * 15, w - 20, 16, l, 9, 800, '#58D68D', 'left', 'Baloo 2')).join('')}<rect x="12" y="${-h * 0.4}" width="${w - 24}" height="${h * 0.14}" rx="3" fill="${color}" ${S} stroke-width="2"/><circle cx="${w - 18}" cy="${-h * 0.14}" r="5" fill="#E74C3C" ${S} stroke-width="2"/><circle cx="${w - 34}" cy="${-h * 0.14}" r="5" fill="#58D68D" ${S} stroke-width="2"/></g>`;
+  }
+  function LAB(inner) {
+    return `${plainWall(420, 300, '#EAF2F8')}<rect x="0" y="0" width="420" height="30" fill="#AED6F1" ${S}/>${htmlText(0, 4, 420, 24, 'LABORATÓRIO DE ANÁLISES CLÍNICAS', 10, 800, '#1F618D', 'center', 'Baloo 2')}${floor(420, 232, 68, '#D5DBDB')}${inner}`;
+  }
+  function axes(x, y, w, h, xl, yl) {
+    return `<line x1="${x}" y1="${y + h}" x2="${x + w}" y2="${y + h}" ${S}/><line x1="${x}" y1="${y + h}" x2="${x}" y2="${y}" ${S}/>${htmlText(x, y + h + 4, w, 18, xl, 9, 800, OUT)}${htmlText(x - 2, y - 20, 90, 18, yl, 9, 800, OUT, 'left')}`;
+  }
+
+  SCENES.q_cover = () => scene(420, 470, `
+    ${plainWall(420, 332, '#EAF2F8')}${floor(420, 332, 138, '#D5DBDB')}<rect x="0" y="230" width="420" height="10" fill="#8E44AD" ${S}/>
+    ${whiteboard(26, 34, 226, 124, `${htmlText(6, 4, 214, 28, 'PV = nRT', 18, 800, '#2E86C1', 'center', 'Baloo 2')}${htmlText(6, 34, 214, 26, 'ΔG = ΔH − TΔS', 14, 800, '#8E44AD', 'center', 'Baloo 2')}${htmlText(6, 62, 214, 26, 'pH = pKa + log([A⁻]/[HA])', 12.5, 800, '#C0392B', 'center', 'Baloo 2')}${htmlText(6, 90, 214, 26, 'V = Vmax·[S] / (Km + [S])', 12.5, 800, '#1E8449', 'center', 'Baloo 2')}`)}
+    ${window_(300, 40, 96, 72)}
+    ${labBench(250, 332, 170)}${flask(290, 332, 52, '#F5B7B1')}${flask(340, 332, 40, '#58D68D')}${tubeRack(330, 332)}
+    ${put(PROF({ armL: 'point', armR: 'hold', holdR: 'tube', expr: 'bigsmile', coat: '#FFFFFF', shirt: '#8E44AD' }), 300, 440, 1.0)}
+    ${put(BIOMED({ armL: 'hold', holdL: 'clipboard', expr: 'happy' }), 110, 436, 0.78)}
+    ${put(BIOMED2({ armR: 'show', holdR: 'pipette', expr: 'happy' }), 200, 436, 0.78)}
+  `, '', 'xMidYMax slice');
+
+  SCENES.q_gases = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    ${htmlText(0, 4, 420, 24, 'PV = nRT: as leis dos gases', 12, 800, OUT, 'center', 'Baloo 2')}
+    <rect x="30" y="60" width="70" height="140" rx="4" fill="#EBF5FB" ${S}/><rect x="26" y="70" width="78" height="10" rx="2" fill="#7F8C8D" ${S}/><rect x="60" y="34" width="10" height="40" fill="#7F8C8D" ${S}/>
+    ${Array.from({ length: 10 }, (_, i) => `<circle cx="${40 + (i % 4) * 17}" cy="${100 + Math.floor(i / 4) * 30}" r="4" fill="#3498DB"/>`).join('')}
+    <rect x="120" y="60" width="70" height="140" rx="4" fill="#EBF5FB" ${S}/><rect x="116" y="130" width="78" height="10" rx="2" fill="#7F8C8D" ${S}/><rect x="150" y="34" width="10" height="100" fill="#7F8C8D" ${S}/>
+    ${Array.from({ length: 10 }, (_, i) => `<circle cx="${130 + (i % 4) * 17}" cy="${150 + Math.floor(i / 4) * 18}" r="4" fill="#3498DB"/>`).join('')}
+    ${arrow(104, 40, 116, 40, OUT)}
+    ${htmlText(20, 204, 190, 34, 'Boyle (T const.): ↑ P → ↓ V', 10, 800, '#2E86C1')}
+    <circle cx="300" cy="120" r="62" fill="#AED6F1" ${S}/>
+    <path d="M300 120 L300 58 A62 62 0 0 1 359 101 Z" fill="#E74C3C" ${S}/>
+    <path d="M300 120 L359 101 A62 62 0 0 1 356 140 Z" fill="#F7C21B" ${S}/>
+    ${htmlText(250, 112, 70, 24, 'N₂ 78%', 11, 800, '#1F618D')}${htmlText(318, 66, 60, 22, 'O₂ 21%', 10, 800, '#C0392B')}${htmlText(356, 112, 60, 22, 'outros', 8, 800, OUT, 'left')}
+    ${htmlText(230, 190, 150, 40, 'Dalton: P total = soma das pressões parciais (PO₂ ≈ 160 mmHg)', 9.5, 800, '#C0392B')}
+    ${htmlText(230, 30, 150, 24, 'Ar atmosférico', 11, 800, OUT, 'center', 'Baloo 2')}
+  `);
+
+  SCENES.q_entalpia = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    ${axes(30, 48, 170, 152, 'caminho da reação', 'energia')}
+    <path d="M40 90 L90 90 Q120 40 150 90 L150 150 L190 150" fill="none" stroke="#E74C3C" stroke-width="4"/>
+    ${arrow(170, 92, 170, 146, '#E74C3C')}${htmlText(96, 100, 110, 22, 'ΔH < 0', 11, 800, '#C0392B')}
+    ${htmlText(34, 70, 60, 20, 'reagentes', 8, 800, OUT)}${htmlText(140, 152, 60, 20, 'produtos', 8, 800, OUT)}
+    ${htmlText(30, 6, 170, 24, 'EXOTÉRMICO: libera calor', 11, 800, '#C0392B', 'center', 'Baloo 2')}
+    ${axes(240, 48, 170, 152, 'caminho da reação', 'energia')}
+    <path d="M250 150 L300 150 Q330 60 360 90 L360 90 L400 90" fill="none" stroke="#3498DB" stroke-width="4"/>
+    ${arrow(380, 148, 380, 94, '#2E86C1')}${htmlText(300, 108, 110, 22, 'ΔH > 0', 11, 800, '#2E86C1')}
+    ${htmlText(244, 152, 60, 20, 'reagentes', 8, 800, OUT)}${htmlText(350, 72, 60, 20, 'produtos', 8, 800, OUT)}
+    ${htmlText(240, 6, 170, 24, 'ENDOTÉRMICO: absorve calor', 11, 800, '#2E86C1', 'center', 'Baloo 2')}
+  `);
+
+  SCENES.q_gibbs = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    ${htmlText(0, 4, 420, 24, 'ΔG = ΔH − TΔS: o sinal decide a espontaneidade', 11.5, 800, OUT, 'center', 'Baloo 2')}
+    <rect x="20" y="40" width="120" height="70" rx="8" fill="#D5F5E3" ${S}/>${htmlText(20, 44, 120, 24, 'ΔG < 0', 14, 800, '#1E8449', 'center', 'Baloo 2')}${htmlText(24, 68, 112, 40, 'exergônico: espontâneo, libera energia útil', 9, 800, OUT)}
+    <rect x="150" y="40" width="120" height="70" rx="8" fill="#FFF6B0" ${S}/>${htmlText(150, 44, 120, 24, 'ΔG = 0', 14, 800, '#9A7D0A', 'center', 'Baloo 2')}${htmlText(154, 68, 112, 40, 'equilíbrio: sem tendência líquida de mudança', 9, 800, OUT)}
+    <rect x="280" y="40" width="120" height="70" rx="8" fill="#FDE2E0" ${S}/>${htmlText(280, 44, 120, 24, 'ΔG > 0', 14, 800, '#C0392B', 'center', 'Baloo 2')}${htmlText(284, 68, 112, 40, 'endergônico: não espontâneo, requer energia', 9, 800, OUT)}
+    ${htmlText(0, 118, 420, 22, 'Acoplamento: o ATP “financia” a reação endergônica', 10.5, 800, '#8E44AD', 'center', 'Baloo 2')}
+    <line x1="40" y1="220" x2="400" y2="220" ${S}/>
+    <rect x="60" y="190" width="70" height="30" fill="#FDE2E0" ${S}/>${htmlText(60, 194, 70, 22, 'A → B', 10, 800, '#C0392B')}${htmlText(40, 166, 110, 22, 'ΔG = +15', 9.5, 800, '#C0392B')}
+    <rect x="170" y="160" width="90" height="60" fill="#D5F5E3" ${S}/>${htmlText(170, 180, 90, 22, 'ATP → ADP', 10, 800, '#1E8449')}${htmlText(160, 140, 110, 22, 'ΔG = −30', 9.5, 800, '#1E8449')}
+    ${htmlText(262, 176, 30, 30, '=', 20, 800, OUT)}
+    <rect x="300" y="175" width="90" height="45" fill="#D5F5E3" ${S}/>${htmlText(300, 186, 90, 22, 'soma', 10, 800, '#1E8449')}${htmlText(290, 150, 110, 22, 'ΔG = −15 ✓', 9.5, 800, '#1E8449')}
+  `);
+
+  SCENES.q_lechatelier = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    ${htmlText(0, 4, 420, 24, 'Le Chatelier no equilíbrio do bicarbonato', 11.5, 800, OUT, 'center', 'Baloo 2')}
+    ${htmlText(0, 30, 420, 26, 'CO₂ + H₂O ⇌ H₂CO₃ ⇌ H⁺ + HCO₃⁻', 15, 800, '#2C3E50', 'center', 'Baloo 2')}
+    <rect x="20" y="70" width="185" height="150" rx="8" fill="#FDE2E0" ${S}/>
+    ${htmlText(20, 74, 185, 22, '↑ CO₂ (hipoventilação)', 10.5, 800, '#C0392B', 'center', 'Baloo 2')}
+    ${arrow(60, 130, 160, 130, '#C0392B')}${htmlText(40, 104, 145, 22, 'desloca para a direita', 9.5, 800, OUT)}
+    ${htmlText(30, 140, 165, 70, '↑ H⁺ → pH cai: ACIDOSE respiratória. O rim compensa retendo HCO₃⁻.', 9.5, 800, OUT)}
+    <rect x="215" y="70" width="185" height="150" rx="8" fill="#D6EAF8" ${S}/>
+    ${htmlText(215, 74, 185, 22, '↓ CO₂ (hiperventilação)', 10.5, 800, '#2E86C1', 'center', 'Baloo 2')}
+    ${arrow(355, 130, 255, 130, '#2E86C1')}${htmlText(235, 104, 145, 22, 'desloca para a esquerda', 9.5, 800, OUT)}
+    ${htmlText(225, 140, 165, 70, '↓ H⁺ → pH sobe: ALCALOSE respiratória. O rim compensa eliminando HCO₃⁻.', 9.5, 800, OUT)}
+  `);
+
+  SCENES.q_tampao = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    ${axes(40, 30, 220, 170, 'base adicionada (OH⁻)', 'pH')}
+    <path d="M44 190 Q90 170 110 130 L150 120 Q170 110 190 50 L250 40" fill="none" stroke="#8E44AD" stroke-width="4"/>
+    <rect x="100" y="100" width="100" height="50" fill="#FFF6B0" opacity=".7"/>
+    <line x1="40" y1="125" x2="150" y2="125" stroke="#C0392B" stroke-width="2" stroke-dasharray="6 4"/>
+    <circle cx="150" cy="125" r="6" fill="#C0392B" ${S} stroke-width="2"/>
+    ${htmlText(0, 114, 40, 22, 'pKa', 10, 800, '#C0392B')}
+    ${htmlText(96, 150, 110, 40, 'região tampão: pH ≈ pKa ± 1', 8.5, 800, '#9A7D0A')}
+    ${htmlText(150, 100, 110, 22, '[A⁻] = [HA]', 9, 800, '#C0392B', 'left')}
+    <rect x="270" y="30" width="140" height="170" rx="8" fill="#F4F6F7" ${S}/>
+    ${htmlText(270, 34, 140, 24, 'Henderson-Hasselbalch', 10, 800, OUT, 'center', 'Baloo 2')}
+    ${htmlText(274, 60, 132, 44, 'pH = pKa + log ([base conj.] / [ácido])', 10.5, 800, '#8E44AD')}
+    ${htmlText(274, 108, 132, 30, 'Sangue: pH 7,4', 10, 800, '#C0392B')}${htmlText(274, 132, 132, 60, '[HCO₃⁻] 24 mM / [CO₂] 1,2 mM = 20 : 1 → 6,1 + log 20 ≈ 7,4', 9, 800, OUT)}
+  `);
+
+  SCENES.q_coligativas = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    ${htmlText(0, 4, 420, 24, 'As 4 propriedades coligativas: só o NÚMERO de partículas importa', 10.5, 800, OUT, 'center', 'Baloo 2')}
+    ${beaker(18, 60, 80, 90, '#AED6F1', 'Tonoscopia', `<path d="M16 -16 q6 -10 0 -20 M34 -16 q6 -10 0 -20" fill="none" stroke="#95A5A6" stroke-width="2.5"/><text x="56" y="-18" font-size="16" font-weight="800" fill="#2E86C1">↓</text>` + htmlText(0, 20, 80, 40, '↓ pressão de vapor', 8.5, 800, OUT))}
+    ${beaker(118, 60, 80, 90, '#F5B7B1', 'Ebulioscopia', `<circle cx="20" cy="60" r="4" fill="#fff" ${S} stroke-width="1.5"/><circle cx="40" cy="48" r="5" fill="#fff" ${S} stroke-width="1.5"/><circle cx="58" cy="66" r="4" fill="#fff" ${S} stroke-width="1.5"/>` + htmlText(0, 10, 80, 40, '↑ ponto de ebulição', 8.5, 800, OUT))}
+    ${beaker(218, 60, 80, 90, '#D6EAF8', 'Crioscopia', `<path d="M40 30 l0 30 M25 37 l30 16 M25 53 l30 -16" stroke="#2E86C1" stroke-width="3" fill="none"/>` + htmlText(0, 64, 80, 30, '↓ ponto de congelamento', 8, 800, OUT))}
+    ${beaker(318, 60, 80, 90, '#D5F5E3', 'Pressão osmótica', `<line x1="40" y1="0" x2="40" y2="90" stroke="#7F8C8D" stroke-width="3" stroke-dasharray="4 3"/><rect x="42" y="0" width="38" height="90" fill="#58D68D" opacity=".5"/>` + arrow(14, 50, 32, 50, '#1E8449') + htmlText(0, 10, 80, 40, 'π = iMRT', 9.5, 800, '#1E8449'))}
+    ${htmlText(10, 190, 400, 44, 'Fator de van’t Hoff: NaCl → Na⁺ + Cl⁻ (i ≈ 2). Na mesma molaridade, o eletrólito tem o dobro do efeito do não eletrólito (glicose, i = 1).', 9.5, 800, OUT)}
+  `);
+
+  SCENES.q_cinetica = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    ${axes(30, 48, 170, 152, 'caminho da reação', 'energia')}
+    <path d="M40 120 L80 120 Q115 20 150 150 L190 150" fill="none" stroke="#E74C3C" stroke-width="4"/>
+    <path d="M40 120 L80 120 Q115 70 150 150" fill="none" stroke="#1E8449" stroke-width="4" stroke-dasharray="7 4"/>
+    ${arrow(100, 118, 100, 48, '#C0392B')}${htmlText(104, 52, 60, 20, 'Ea', 10, 800, '#C0392B', 'left')}
+    ${arrow(130, 118, 130, 86, '#1E8449')}${htmlText(134, 80, 70, 20, 'Ea c/ enzima', 8.5, 800, '#1E8449', 'left')}
+    ${htmlText(30, 6, 170, 24, 'Catalisador: ↓ Ea, ΔG igual', 11, 800, OUT, 'center', 'Baloo 2')}
+    ${axes(240, 48, 170, 152, '[S] substrato', 'V')}
+    <path d="M240 200 Q270 70 400 52" fill="none" stroke="#8E44AD" stroke-width="4"/>
+    <line x1="240" y1="48" x2="410" y2="48" stroke="#BDC3C7" stroke-width="2" stroke-dasharray="6 4"/>${htmlText(360, 28, 60, 20, 'Vmax', 10, 800, '#8E44AD')}
+    <line x1="240" y1="124" x2="290" y2="124" stroke="#BDC3C7" stroke-width="2" stroke-dasharray="6 4"/><line x1="290" y1="124" x2="290" y2="200" stroke="#BDC3C7" stroke-width="2" stroke-dasharray="6 4"/>
+    ${htmlText(236, 104, 60, 20, 'Vmax/2', 9, 800, OUT, 'left')}${htmlText(276, 180, 40, 20, 'Km', 10, 800, '#C0392B')}
+    ${htmlText(240, 6, 170, 24, 'Michaelis-Menten', 11, 800, OUT, 'center', 'Baloo 2')}
+    ${htmlText(300, 150, 110, 40, '↓ Km = ↑ afinidade', 9, 800, '#8E44AD')}
+  `);
+
+  SCENES.q_pilha = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    ${htmlText(0, 2, 420, 22, 'Pilha (célula galvânica): ΔG < 0, energia química → elétrica', 10.5, 800, OUT, 'center', 'Baloo 2')}
+    ${beaker(40, 92, 120, 92, '#D6EAF8', 'ÂNODO (−): oxidação', `<rect x="50" y="-38" width="20" height="100" fill="#95A5A6" ${S}/>` + htmlText(0, 60, 120, 24, 'Zn → Zn²⁺ + 2e⁻', 9, 800, '#2E86C1'))}
+    ${beaker(260, 92, 120, 92, '#FADBD8', 'CÁTODO (+): redução', `<rect x="50" y="-38" width="20" height="100" fill="#CD853F" ${S}/>` + htmlText(0, 60, 120, 24, 'Cu²⁺ + 2e⁻ → Cu', 9, 800, '#C0392B'))}
+    <path d="M150 112 L150 90 Q150 80 160 80 L260 80 Q270 80 270 90 L270 112" fill="none" stroke="#F7C21B" stroke-width="12"/><path d="M150 112 L150 90 Q150 80 160 80 L260 80 Q270 80 270 90 L270 112" fill="none" ${S}/>
+    ${htmlText(160, 96, 100, 20, 'ponte salina', 9, 800, OUT)}
+    <line x1="100" y1="54" x2="100" y2="46" ${S}/><line x1="100" y1="46" x2="192" y2="46" ${S}/><line x1="228" y1="46" x2="320" y2="46" ${S}/><line x1="320" y1="46" x2="320" y2="54" ${S}/>
+    <circle cx="210" cy="46" r="18" fill="#FFFFFF" ${S}/>${htmlText(192, 35, 36, 22, 'V', 13, 800, OUT, 'center', 'Baloo 2')}
+    ${arrow(120, 36, 180, 36, '#1E8449')}${htmlText(120, 22, 60, 16, 'e⁻', 9, 800, '#1E8449')}
+    ${htmlText(0, 216, 420, 22, 'PERDE = OXIDA (ânodo) · GANHA = REDUZ (cátodo) · agente redutor doa e⁻', 9.5, 800, '#8E44AD', 'center', 'Baloo 2')}
+  `);
+  SCENES.q_coloide = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    ${htmlText(0, 4, 420, 24, 'Solução · coloide · suspensão: o efeito Tyndall', 11.5, 800, OUT, 'center', 'Baloo 2')}
+    <rect x="0" y="96" width="30" height="22" rx="3" fill="#2C3E50" ${S}/>${htmlText(0, 120, 40, 20, 'laser', 8, 800, OUT)}
+    <line x1="30" y1="107" x2="150" y2="107" stroke="#E74C3C" stroke-width="3" opacity=".35"/>
+    ${beaker(40, 50, 100, 110, '#D6EAF8', 'Solução (<1 nm)', htmlText(0, 76, 100, 30, 'feixe invisível', 8, 800, OUT))}
+    <line x1="150" y1="107" x2="290" y2="107" stroke="#E74C3C" stroke-width="7"/>
+    ${beaker(170, 50, 100, 110, '#FADBD8', 'Coloide (1–1000 nm)', Array.from({ length: 9 }, (_, i) => `<circle cx="${14 + (i % 3) * 36}" cy="${20 + Math.floor(i / 3) * 34}" r="4" fill="#C0392B"/>`).join('') + htmlText(0, 76, 100, 30, 'feixe VISÍVEL', 8, 800, '#C0392B'))}
+    <line x1="290" y1="107" x2="400" y2="107" stroke="#E74C3C" stroke-width="3" opacity=".35"/>
+    ${beaker(300, 50, 100, 110, '#EBF5FB', 'Suspensão (>1000 nm)', `<ellipse cx="50" cy="95" rx="40" ry="10" fill="#8D6E63"/>` + htmlText(0, 20, 100, 30, 'sedimenta e filtra', 8, 800, OUT))}
+    ${htmlText(10, 196, 400, 40, 'Plasma = coloide de proteínas. Turbidimetria mede a luz transmitida; nefelometria mede a luz espalhada.', 9.5, 800, '#8E44AD')}
+  `);
+
+  SCENES.q_lab_dilui = () => scene(420, 300, LAB(`
+    ${labBench(20, 232, 220)}${flask(60, 232, 56, '#AED6F1', '1 M')}${flask(120, 232, 70, '#D6EAF8', '0,05 M')}${tubeRack(160, 232)}
+    ${put(BIOMED({ armR: 'show', holdR: 'pipette', armL: 'point', expr: 'happy' }), 320, 296, 0.8)}
+    ${bubble({ x: 150, y: 40, w: 250, h: 60, text: 'C₁V₁ = C₂V₂: 1 M × V₁ = 0,05 M × 500 mL → V₁ = 25 mL do estoque e completo com água até 500 mL.', tail: [320, 108], size: 10 })}
+  `));
+  SCENES.q_lab_gaso = () => scene(420, 300, LAB(`
+    ${labBench(20, 232, 200)}${analyzer(40, 232, 130, 96, 'GASOMETRIA', ['pH 7,28', 'PaCO₂ 58', 'HCO₃⁻ 26'])}
+    ${put(BIOMED2({ armL: 'hold', holdL: 'clipboard', armR: 'point', expr: 'worried' }), 300, 296, 0.8)}
+    ${bubble({ x: 150, y: 40, w: 250, h: 60, text: 'pH baixo com PaCO₂ alta: acidose respiratória. Eletrodo de vidro (pH) e eletrodos íon-seletivos fizeram a leitura.', tail: [300, 108], size: 10 })}
+  `));
+  SCENES.q_lab_enzima = () => scene(420, 300, LAB(`
+    ${labBench(20, 232, 200)}${analyzer(40, 232, 130, 96, 'ESPECTROFOTÔMETRO', ['ALT: ΔA/min', '340 nm · 37 °C'], '#8E44AD')}
+    ${put(BIOMED({ armR: 'hold', holdR: 'tube', armL: 'point', expr: 'happy' }), 300, 296, 0.8)}
+    ${bubble({ x: 150, y: 40, w: 250, h: 60, text: 'Método cinético: a velocidade da reação é proporcional à atividade da enzima. Por isso temperatura e pH são padronizados.', tail: [300, 108], size: 10 })}
+  `));
+  SCENES.q_lab_ise = () => scene(420, 300, LAB(`
+    ${labBench(20, 232, 200)}${analyzer(40, 232, 130, 96, 'ELETRÓLITOS (ISE)', ['Na⁺ 138 mmol/L', 'K⁺ 6,2 mmol/L ▲'], '#E67E22')}
+    ${put(BIOMED2({ armL: 'hold', holdL: 'clipboard', armR: 'point', expr: 'surprised' }), 300, 296, 0.8)}
+    ${bubble({ x: 150, y: 40, w: 250, h: 60, text: 'Cada eletrodo íon-seletivo gera um potencial proporcional ao íon. Potássio alto: confirmo hemólise antes de liberar.', tail: [300, 108], size: 10 })}
+  `));
+  SCENES.q_lab_osmo = () => scene(420, 300, LAB(`
+    ${labBench(20, 232, 200)}${analyzer(40, 232, 130, 96, 'OSMÔMETRO', ['soro: 290 mOsm/kg', 'crioscopia −0,54 °C'], '#1ABC9C')}${tubeRack(176, 232)}
+    ${put(BIOMED({ armR: 'show', holdR: 'tube', expr: 'happy' }), 300, 296, 0.8)}
+    ${bubble({ x: 150, y: 40, w: 250, h: 60, text: 'O osmômetro mede o abaixamento do ponto de congelamento: quanto mais partículas, mais baixo congela.', tail: [300, 108], size: 10 })}
+  `));
+
   // --- sinais do card ---
   SCENES.sig_stop = () => scene(120, 120, `<circle cx="60" cy="60" r="54" fill="#E74C3C" ${S}/>${at(ICON.stop(), 28, 24, 1.1)}`);
   SCENES.sig_ok = () => scene(120, 120, `<circle cx="60" cy="60" r="54" fill="#58D68D" ${S}/>${at(ICON.thumbs(), 26, 26, 1.1)}`);
