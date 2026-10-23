@@ -1196,6 +1196,134 @@
   SCENES.profWave = () => scene(200, 310, put(PROF({ armL: 'wave', armR: 'hold', holdR: 'marker', expr: 'bigsmile' }), 100, 305, 1));
   SCENES.studentsWave = () => scene(260, 310, put(STU1({ armL: 'wave', expr: 'bigsmile' }), 80, 305, 0.9) + put(STU2({ armR: 'wave', expr: 'bigsmile', armL: 'hold', holdL: 'clipboard' }), 190, 305, 0.9));
 
+
+  // ======= BIOFÍSICA APLICADA À SAÚDE =======
+  function beaker(x, y, w, h, color, label, inner = '') {
+    return `<g transform="translate(${x} ${y})"><path d="M0 0 L0 ${h} Q0 ${h + 10} 10 ${h + 10} L${w - 10} ${h + 10} Q${w} ${h + 10} ${w} ${h} L${w} 0" fill="${color}" ${S}/><rect x="-6" y="-8" width="${w + 12}" height="10" rx="3" fill="#ECF0F1" ${S}/>${inner}${htmlText(0, h + 14, w, 22, label, 11, 800, OUT, 'center', 'Baloo 2')}</g>`;
+  }
+  function rbc(x, y, rx, ry, expr = 'happy', color = '#E74C3C') {
+    const face = expr === 'happy' ? `<path d="M${x - 8} ${y + 4} Q${x} ${y + 12} ${x + 8} ${y + 4}" fill="none" ${S}/>` : expr === 'sad' ? `<path d="M${x - 8} ${y + 10} Q${x} ${y + 2} ${x + 8} ${y + 10}" fill="none" ${S}/>` : `<ellipse cx="${x}" cy="${y + 8}" rx="5" ry="6" fill="#C0392B" ${S}/>`;
+    return `<ellipse cx="${x}" cy="${y}" rx="${rx}" ry="${ry}" fill="${color}" ${S}/><ellipse cx="${x}" cy="${y}" rx="${rx * 0.45}" ry="${ry * 0.4}" fill="#C0392B" opacity=".35"/><circle cx="${x - 7}" cy="${y - 4}" r="2.5" fill="${OUT}"/><circle cx="${x + 7}" cy="${y - 4}" r="2.5" fill="${OUT}"/>${face}`;
+  }
+  const arrow = (x1, y1, x2, y2, color = '#2E86C1') => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${color}" stroke-width="4" stroke-linecap="round"/><polygon points="${x2},${y2} ${x2 - 10 * Math.cos(Math.atan2(y2 - y1, x2 - x1) - .5)},${y2 - 10 * Math.sin(Math.atan2(y2 - y1, x2 - x1) - .5)} ${x2 - 10 * Math.cos(Math.atan2(y2 - y1, x2 - x1) + .5)},${y2 - 10 * Math.sin(Math.atan2(y2 - y1, x2 - x1) + .5)}" fill="${color}"/>`;
+
+  SCENES.b_cover = () => scene(420, 470, `
+    ${plainWall(420, 332, '#E8F6F3')}${floor(420, 332, 138, '#D5DBDB')}<rect x="0" y="230" width="420" height="10" fill="#1ABC9C" ${S}/>
+    ${whiteboard(30, 36, 220, 120, `${htmlText(6, 4, 208, 30, 'Q = ΔP / R', 18, 800, '#2E86C1', 'center', 'Baloo 2')}${htmlText(6, 36, 208, 26, 'pH = −log[H⁺]', 14, 800, '#C0392B', 'center', 'Baloo 2')}${htmlText(6, 64, 208, 26, 'P × V = constante', 14, 800, '#27AE60', 'center', 'Baloo 2')}${htmlText(6, 90, 208, 26, '3 Na⁺ fora · 2 K⁺ dentro', 12, 800, '#8E44AD', 'center', 'Baloo 2')}`)}
+    ${window_(300, 40, 96, 72)}
+    ${ivPole(300, 330)}${monitor(380, 330)}
+    ${put(PROF({ armL: 'point', armR: 'hold', holdR: 'marker', expr: 'bigsmile', coat: '#1ABC9C' }), 300, 440, 1.0)}
+    ${put(STU2({ armL: 'hold', holdL: 'clipboard', expr: 'happy' }), 110, 436, 0.78)}
+    ${put(STU1({ armR: 'show', holdR: 'cup', expr: 'happy' }), 200, 436, 0.78)}
+  `, '', 'xMidYMax slice');
+  SCENES.b_tonicidade = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    ${beaker(20, 40, 110, 130, '#AED6F1', 'Isotônica (SF 0,9%)', rbc(55, 60, 30, 22, 'happy'))}
+    ${beaker(155, 40, 110, 130, '#D6EAF8', 'Hipotônica (água)', rbc(55, 62, 42, 38, 'open') + arrow(8, 14, 24, 32, '#3D8FD1') + arrow(102, 14, 86, 32, '#3D8FD1') + arrow(8, 112, 24, 94, '#3D8FD1') + arrow(102, 112, 86, 94, '#3D8FD1'))}
+    ${beaker(290, 40, 110, 130, '#F5B7B1', 'Hipertônica (NaCl 3%)', rbc(55, 62, 22, 14, 'sad') + arrow(42, 40, 20, 18, '#9C2A4E') + arrow(68, 40, 90, 18, '#9C2A4E') + arrow(42, 84, 20, 106, '#9C2A4E') + arrow(68, 84, 90, 106, '#9C2A4E'))}
+    ${htmlText(0, 6, 420, 24, 'A água segue o soluto: mantém · incha (hemólise) · murcha (crenação)', 11, 800, OUT, 'center', 'Baloo 2')}
+  `);
+  SCENES.b_membrana = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    <rect x="0" y="0" width="420" height="100" fill="#FDEBD0"/><rect x="0" y="140" width="420" height="100" fill="#D5F5E3"/>
+    ${htmlText(10, 6, 200, 22, 'FORA: muito Na⁺', 12, 800, '#C0392B', 'left', 'Baloo 2')}${htmlText(10, 212, 200, 22, 'DENTRO: muito K⁺ · −70 mV', 12, 800, '#1E8449', 'left', 'Baloo 2')}
+    ${Array.from({ length: 14 }, (_, i) => `<circle cx="${15 + i * 30}" cy="108" r="8" fill="#F7C21B" ${S} stroke-width="2"/><line x1="${15 + i * 30}" y1="116" x2="${15 + i * 30}" y2="126" ${S} stroke-width="2"/><circle cx="${15 + i * 30}" cy="132" r="8" fill="#F7C21B" ${S} stroke-width="2"/><line x1="${15 + i * 30}" y1="124" x2="${15 + i * 30}" y2="114" ${S} stroke-width="2"/>`).join('')}
+    <rect x="150" y="90" width="60" height="60" rx="14" fill="#8E44AD" ${S}/>${htmlText(150, 90, 60, 60, 'Na⁺/K⁺ ATPase', 9, 800, '#fff', 'center', 'Baloo 2')}
+    ${arrow(140, 160, 140, 80, '#C0392B')}${htmlText(100, 160, 60, 22, '3 Na⁺', 11, 800, '#C0392B')}
+    ${arrow(222, 80, 222, 160, '#1E8449')}${htmlText(226, 160, 60, 22, '2 K⁺', 11, 800, '#1E8449')}
+    <rect x="290" y="92" width="36" height="56" rx="8" fill="#5DADE2" ${S}/>${htmlText(280, 150, 60, 22, 'canal', 9, 800, OUT)}
+    ${arrow(308, 86, 308, 70, '#1E8449')}${htmlText(318, 60, 80, 22, 'K⁺ vaza', 9, 800, '#1E8449', 'left')}
+    ${htmlText(330, 100, 86, 40, 'ATP', 14, 800, '#8E44AD', 'center', 'Baloo 2')}
+  `);
+  SCENES.b_pa = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    <line x1="30" y1="200" x2="400" y2="200" ${S}/><line x1="30" y1="200" x2="30" y2="20" ${S}/>
+    <path d="M30 150 L80 150 L90 120 L100 40 L110 60 L120 160 L130 190 L150 170 L170 150 L200 150" fill="none" stroke="#8E44AD" stroke-width="4"/>
+    <line x1="30" y1="150" x2="200" y2="150" stroke="#BDC3C7" stroke-width="2" stroke-dasharray="6 4"/><line x1="30" y1="40" x2="200" y2="40" stroke="#BDC3C7" stroke-width="2" stroke-dasharray="6 4"/>
+    ${htmlText(0, 28, 30, 22, '+30', 9, 800, OUT, 'center')}${htmlText(0, 140, 30, 22, '−70', 9, 800, OUT, 'center')}${htmlText(0, 112, 30, 22, '−55', 9, 800, '#C0392B', 'center')}
+    ${htmlText(80, 60, 60, 40, 'Na⁺ entra', 10, 800, '#C0392B')}${htmlText(118, 90, 70, 40, 'K⁺ sai', 10, 800, '#1E8449')}${htmlText(36, 152, 60, 22, 'repouso', 9, 800, OUT, 'left')}${htmlText(60, 118, 50, 22, 'limiar', 9, 800, '#C0392B')}${htmlText(118, 190, 90, 30, 'hiperpolarização', 8, 800, OUT)}
+    ${htmlText(30, 205, 200, 22, 'tempo (ms)', 9, 800, OUT, 'center')}
+    <rect x="230" y="20" width="180" height="180" rx="8" fill="#FDFEFE" ${S}/>
+    ${htmlText(230, 24, 180, 24, 'Pressão arterial', 12, 800, OUT, 'center', 'Baloo 2')}
+    <path d="M240 150 Q255 70 270 110 T300 150 Q315 70 330 110 T360 150 Q375 70 390 110 T400 150" fill="none" stroke="#C0392B" stroke-width="3"/>
+    <line x1="240" y1="80" x2="400" y2="80" stroke="#BDC3C7" stroke-width="2" stroke-dasharray="6 4"/><line x1="240" y1="150" x2="400" y2="150" stroke="#BDC3C7" stroke-width="2" stroke-dasharray="6 4"/>
+    ${htmlText(236, 60, 170, 22, 'sistólica ~120 mmHg', 9, 800, '#C0392B', 'left')}${htmlText(236, 152, 170, 22, 'diastólica ~80 mmHg', 9, 800, '#2E86C1', 'left')}${htmlText(236, 172, 170, 24, 'PAM ≈ diast. + ⅓ pressão de pulso', 8.5, 800, OUT, 'left')}
+  `);
+  SCENES.b_alveolo = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    <circle cx="150" cy="120" r="95" fill="#FDFEFE" ${S}/><circle cx="150" cy="120" r="80" fill="#EBF5FB"/>
+    ${htmlText(90, 70, 120, 24, 'ALVÉOLO', 13, 800, '#2E86C1', 'center', 'Baloo 2')}${htmlText(80, 96, 140, 22, 'PO₂ ~100 mmHg', 11, 800, '#C0392B')}${htmlText(80, 118, 140, 22, 'PCO₂ ~40 mmHg', 11, 800, '#5D6D7E')}
+    <path d="M250 40 Q290 120 250 200" fill="none" stroke="#E74C3C" stroke-width="40"/><path d="M250 40 Q290 120 250 200" fill="none" stroke="#C0392B" stroke-width="2" stroke-dasharray="4 4"/>
+    ${htmlText(286, 52, 130, 24, 'CAPILAR (venoso)', 11, 800, '#C0392B', 'left', 'Baloo 2')}${htmlText(286, 78, 130, 22, 'PO₂ ~40', 11, 800, '#C0392B', 'left')}${htmlText(286, 100, 130, 22, 'PCO₂ ~46', 11, 800, '#5D6D7E', 'left')}
+    ${arrow(215, 100, 262, 100, '#C0392B')}${htmlText(214, 78, 60, 22, 'O₂', 12, 800, '#C0392B')}
+    ${arrow(262, 150, 215, 150, '#5D6D7E')}${htmlText(214, 152, 60, 22, 'CO₂', 12, 800, '#5D6D7E')}
+    ${htmlText(286, 130, 134, 60, 'Lei de Fick: ↑ área, ↑ gradiente, ↓ espessura', 10, 800, OUT, 'left')}${htmlText(286, 186, 134, 40, 'Surfactante: ↓ tensão (Laplace)', 9.5, 800, '#1E8449', 'left')}
+  `);
+  SCENES.b_nefron = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    <circle cx="110" cy="100" r="60" fill="#FADBD8" ${S}/><path d="M70 100 q20 -40 40 0 t40 0" fill="none" stroke="#C0392B" stroke-width="10"/>
+    ${htmlText(60, 30, 100, 22, 'Glomérulo', 12, 800, OUT, 'center', 'Baloo 2')}
+    ${arrow(150, 130, 190, 150, '#2E86C1')}${htmlText(140, 150, 80, 36, 'P. hidrostática favorece', 8.5, 800, '#2E86C1')}
+    ${arrow(100, 150, 100, 125, '#9C2A4E')}${htmlText(20, 160, 110, 36, 'P. oncótica opõe', 8.5, 800, '#9C2A4E')}
+    <path d="M190 160 h60 v-80 h40 v120 h40 v-60 h40" fill="none" stroke="#F5B041" stroke-width="16" stroke-linejoin="round"/><path d="M190 160 h60 v-80 h40 v120 h40 v-60 h40" fill="none" stroke="#FFF6B0" stroke-width="8" stroke-linejoin="round"/>
+    ${htmlText(250, 40, 80, 36, 'Reabsorção (osmose · ativo)', 8.5, 800, OUT)}${htmlText(330, 200, 80, 36, 'Secreção (H⁺)', 8.5, 800, OUT)}
+    ${htmlText(220, 190, 110, 30, 'TFG ~125 mL/min', 11, 800, '#C0392B')}
+    ${htmlText(10, 210, 200, 24, 'Néfron: filtra, reabsorve, secreta', 10, 800, OUT, 'left', 'Baloo 2')}
+  `);
+  SCENES.b_radio = () => scene(420, 300, HOSP(`
+    <rect x="30" y="60" width="90" height="172" rx="8" fill="#5D6D7E" ${S}/><rect x="40" y="70" width="70" height="90" rx="4" fill="#1C2833"/>${htmlText(30, 170, 90, 24, 'Raio X', 11, 800, '#fff', 'center', 'Baloo 2')}
+    ${Array.from({ length: 5 }, (_, i) => `<line x1="120" y1="${90 + i * 18}" x2="190" y2="${100 + i * 18}" stroke="#F7C21B" stroke-width="3" stroke-dasharray="6 5"/>`).join('')}
+    <rect x="200" y="60" width="18" height="172" fill="#7F8C8D" ${S}/>${htmlText(192, 36, 40, 22, 'Pb', 11, 800, OUT)}
+    ${put(NURSE({ coat: '#7F8C8D', armR: 'hold', holdR: 'clipboard', expr: 'happy' }), 300, 296, 0.8)}
+    ${bubble({ x: 230, y: 10, w: 180, h: 60, text: 'Tempo, distância e blindagem. Avental, dosímetro e ALARA.', tail: [300, 118], size: 11 })}
+    ${htmlText(110, 240, 90, 24, 'distância', 9, 800, OUT)}
+  `, '#FDFEFE'));
+  SCENES.b_gasometria = () => scene(420, 300, HOSP(`
+    ${hospBed(30, 232, 200)}
+    ${put(ELDER({ sit: true, expr: 'worried', armL: 'hold' }), 130, 236, 0.58)}
+    ${put(NURSE({ armL: 'hold', holdL: 'clipboard', armR: 'point', expr: 'happy' }), 320, 296, 0.8)}
+    ${bubble({ x: 150, y: 6, w: 240, h: 60, text: 'Hiperventilando: elimina CO₂, o pH sobe. Vamos respirar devagar comigo.', tail: [320, 110], size: 10.5 })}
+    <rect x="30" y="96" width="110" height="34" rx="6" fill="#FFFFFF" ${S}/>${htmlText(30, 96, 110, 34, 'pH 7,52 · PCO₂ 28', 10, 800, '#C0392B', 'center', 'Baloo 2')}
+  `));
+  SCENES.b_oximetro = () => scene(420, 300, HOSP(`
+    ${hospBed(30, 232, 200)}${oxygen(300, 232)}
+    ${put(KID({ sit: true, expr: 'happy', armL: 'hold', holdL: 'teddy', hairStyle: 'cap', headphones: false }), 130, 236, 0.58)}
+    ${put(NURSE({ armR: 'show', holdR: 'oximeter', expr: 'happy' }), 380, 296, 0.74)}
+    ${bubble({ x: 150, y: 6, w: 240, h: 60, text: 'O oxímetro lê a luz que a hemoglobina absorve: 97% de saturação.', tail: [380, 110], size: 10.5 })}
+  `));
+  SCENES.b_dialise = () => scene(420, 300, HOSP(`
+    ${hospBed(20, 232, 190)}
+    ${put(ELDER({ sit: true, expr: 'happy', armL: 'hold' }), 115, 236, 0.58)}
+    <rect x="250" y="70" width="80" height="162" rx="8" fill="#ECF0F1" ${S}/><rect x="262" y="84" width="56" height="60" rx="4" fill="#2C3E50"/>${htmlText(250, 150, 80, 24, 'Dialisador', 10, 800, OUT, 'center', 'Baloo 2')}<rect x="270" y="176" width="40" height="44" rx="4" fill="#AED6F1" ${S}/>
+    <path d="M200 160 q40 -40 56 -60" fill="none" stroke="#C0392B" stroke-width="5"/><path d="M200 180 q40 20 56 40" fill="none" stroke="#2E86C1" stroke-width="5"/>
+    ${put(NURSE({ armL: 'point', expr: 'happy' }), 380, 296, 0.74)}
+    ${bubble({ x: 190, y: 6, w: 220, h: 56, text: 'A ureia sai por difusão; a água, por ultrafiltração. É a Unidade 1 salvando vidas.', tail: [380, 110], size: 10.5 })}
+  `));
+  SCENES.b_termo = () => scene(420, 240, `
+    <rect width="420" height="240" fill="#FFFFFF"/>
+    ${put(KID({ expr: 'neutral', armL: 'down', armR: 'down' }), 110, 236, 0.74)}
+    <rect x="30" y="40" width="40" height="18" rx="4" fill="#5DADE2" ${S}/>${htmlText(0, 60, 100, 22, 'compressa', 8.5, 800, OUT)}
+    ${arrow(70, 60, 86, 82, '#2E86C1')}${htmlText(0, 84, 70, 22, 'condução', 8, 800, '#2E86C1')}
+    ${arrow(150, 120, 190, 110, '#1ABC9C')}${arrow(150, 150, 190, 150, '#1ABC9C')}${htmlText(160, 88, 80, 22, 'convecção', 8.5, 800, '#1ABC9C')}
+    ${Array.from({ length: 3 }, (_, i) => `<path d="M${40 + i * 8} 180 q-6 -10 0 -20 q6 -10 0 -20" fill="none" stroke="#E67E22" stroke-width="2.5"/>`).join('')}${htmlText(10, 186, 70, 22, 'radiação', 8.5, 800, '#E67E22')}
+    <circle cx="90" cy="40" r="4" fill="#5DADE2"/><circle cx="130" cy="36" r="4" fill="#5DADE2"/>${htmlText(84, 8, 70, 22, 'evaporação', 8.5, 800, '#2E86C1')}
+    <rect x="230" y="20" width="180" height="200" rx="10" fill="#FFF6B0" ${S}/>
+    ${htmlText(236, 26, 168, 30, '1ª lei: energia se conserva', 10, 800, OUT, 'left', 'Baloo 2')}${htmlText(236, 58, 168, 30, '2ª lei: entropia ↑, calor sempre sobra', 10, 800, OUT, 'left', 'Baloo 2')}${htmlText(236, 96, 168, 30, 'ATP = moeda energética', 10, 800, '#8E44AD', 'left', 'Baloo 2')}${htmlText(236, 130, 168, 80, 'Febre e hipotermia: manejo pela física do calor (compressas, ambiente fresco, aquecimento)', 9, 700, OUT, 'left')}
+  `);
+  SCENES.b_sinais = () => scene(420, 300, HOSP(`
+    ${bpMonitor(60, 232)}${monitor(360, 232)}
+    ${put(ELDER({ sit: true, expr: 'happy', armL: 'down' }), 210, 240, 0.64)}
+    <rect x="160" y="206" width="100" height="26" rx="6" fill="#5DADE2" ${S}/><rect x="168" y="232" width="8" height="50" fill="#7F8C8D" ${S}/><rect x="244" y="232" width="8" height="50" fill="#7F8C8D" ${S}/>
+    ${put(NURSE({ armR: 'show', holdR: 'cuff', expr: 'happy' }), 110, 296, 0.78)}
+    ${bubble({ x: 10, y: 6, w: 220, h: 60, text: '1º som de Korotkoff: sistólica. Some o som: diastólica. Manguito do tamanho certo!', tail: [110, 118], size: 10.5 })}
+  `));
+  SCENES.b_soro = () => scene(420, 300, HOSP(`
+    ${hospBed(30, 232, 200)}${ivPole(250, 232)}
+    ${put(ELDER({ sit: true, expr: 'happy' }), 130, 236, 0.58)}
+    ${put(NURSE({ armR: 'point', armL: 'hold', holdL: 'clipboard', expr: 'happy' }), 350, 296, 0.78)}
+    ${bubble({ x: 170, y: 6, w: 230, h: 60, text: 'SF 0,9% é isotônico: a hemácia mantém o volume. Hipertônico rápido? Nunca.', tail: [350, 110], size: 10.5 })}
+  `));
+
   // --- sinais do card ---
   SCENES.sig_stop = () => scene(120, 120, `<circle cx="60" cy="60" r="54" fill="#E74C3C" ${S}/>${at(ICON.stop(), 28, 24, 1.1)}`);
   SCENES.sig_ok = () => scene(120, 120, `<circle cx="60" cy="60" r="54" fill="#58D68D" ${S}/>${at(ICON.thumbs(), 26, 26, 1.1)}`);

@@ -17,6 +17,7 @@ composto por duas peças que trabalham juntas:
 | **Cartilha para pais: UBS** (8 páginas, autoria Dr. Patrício Almeida): mesma estrutura, para consultas, vacinas, exames e curativos no posto | Pais e cuidadores | `pais-ubs/config.js` | `dist/Cartilha-Pais-UBS-TEA.pdf` |
 | **Cartilha para pais: hospital** (8 páginas, autoria Dr. Patrício Almeida): mesma estrutura, para emergência, internação, exames, cirurgia e alta | Pais e cuidadores | `pais-hospital/config.js` | `dist/Cartilha-Pais-Hospital-TEA.pdf` |
 | **Cartilha Didática Aplicada à Enfermagem** (11 páginas A4, **autoria: Prof. Dr. Patrício da Silva Almeida**): síntese ilustrada do Material Didático do Discente da disciplina (FTA Meta, 2026.2): as 6 unidades (fundamentos, tendências e teorias, planejamento e Bloom, métodos e metodologias ativas, avaliação, educação em saúde) com estudos de caso em HQ, caixa de ferramentas (plano de aula, verbos, rubrica, roteiro da ação educativa), pegadinhas de prova, glossário e mini-simulado | Estudantes de enfermagem, enfermeiros e técnicos que ensinam | `cartilha-didatica/index.html` | `dist/Cartilha-Didatica-Aplicada-Enfermagem.pdf` |
+| **Cartilha Biofísica Aplicada à Saúde** (12 páginas A4, **autoria: Prof. Dr. Patrício da Silva Almeida**): síntese ilustrada do Material Didático do Discente e do Plano de Disciplina de Biofísica (FTA Meta, 2026.2): as 9 unidades (água e osmose, pH e ácido-base, membranas e bioeletricidade, circulação, respiração, rim e hidroeletrolítico, termodinâmica e sentidos, radiações e equipamentos) com diagramas, fórmulas, aplicações clínicas em HQ, pegadinhas de prova, números de referência, glossário e mini-simulado com gabarito | Estudantes de enfermagem, enfermeiros e técnicos | `cartilha-biofisica/index.html` | `dist/Cartilha-Biofisica-Aplicada-Saude.pdf` |
 | **App para iOS e Android** (PWA + Capacitor): perfis **Dentista** (modo consulta, checklists, pacientes, informativo) e **Criança** (história em 20 passos com voz, sinais PARE, Eu consegui!). Veja `app/README.md` | Dentista, paciente e cuidadores | `app/www/` | `dist/App-Minha-Visita-ao-Dentista.html` (arquivo único, abre no celular) |
 | **Card resumido "Minha visita ao dentista"** (frente e verso A4): versão curta em 10 passos, sinais combinados, checklist e mini-card recortável | Paciente e cuidadores (acesso rápido) | `card-paciente/index.html` | `dist/Card-Minha-Visita-ao-Dentista.pdf` |
 
@@ -37,6 +38,7 @@ cartilhas/
 ├── cartilha-enfermagem/index.html
 ├── cartilha-hospital/index.html
 ├── cartilha-didatica/index.html
+├── cartilha-biofisica/index.html
 ├── cartilha-paciente/index.html   # os 20 passos ficam em um array no fim do arquivo
 ├── card-paciente/index.html
 ├── crianca-ubs/, crianca-hospital/      # config.js + index.html; gerados por shared/crianca.js

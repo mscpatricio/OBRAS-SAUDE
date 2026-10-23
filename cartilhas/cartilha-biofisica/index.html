@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Cartilha — Biofísica Aplicada à Saúde</title>
+<link rel="stylesheet" href="../shared/style.css">
+<style>
+  :root { --teal: #1ABC9C; --teal-light: #D5F5E3; }
+  .cover { background: #16A085; }
+  .cover .tiles { position: absolute; inset: 0; background-image: linear-gradient(#fff 0 3px, transparent 3px), linear-gradient(90deg, #fff 0 3px, transparent 3px); background-size: 24mm 24mm; opacity: .35; }
+  .cover .titlebox { position: absolute; left: 14mm; right: 14mm; top: 14mm; background: #fff; border: 3px solid var(--ink); border-radius: 10px; padding: 7mm 8mm 6mm; box-shadow: 5px 5px 0 var(--ink); text-align: center; }
+  .cover .titlebox .hq-title { font-size: 34pt; color: #7DE2C9; }
+  .cover .titlebox .sub { margin-top: 3mm; font-family: var(--title); font-weight: 600; font-size: 13.5pt; line-height: 1.15; }
+  .cover .art { position: absolute; left: 0; right: 0; top: 78mm; bottom: 0; }
+  .cover .art .ill { width: 100%; height: 100%; }
+  .cover .badge { position: absolute; left: 14mm; top: 72mm; transform: rotate(-5deg); }
+  .cover .foot { position: absolute; left: 14mm; right: 14mm; bottom: 12mm; display: flex; justify-content: space-between; align-items: flex-end; }
+  .cover .foot .who { font-family: var(--title); font-weight: 800; font-size: 11pt; background: #fff; border: 3px solid var(--ink); border-radius: 999px; padding: 2mm 6mm; box-shadow: 3px 3px 0 var(--ink); }
+  .cover .foot .org { font-size: 9pt; font-weight: 700; text-align: right; background: rgba(255,255,255,.92); border: 2.5px solid var(--ink); border-radius: 8px; padding: 1.5mm 4mm; }
+
+  .section-head { display: flex; align-items: center; gap: 5mm; margin-bottom: .5mm; }
+  .section-head .num { width: 16mm; height: 16mm; border-radius: 50%; border: 3px solid var(--ink); display: flex; align-items: center; justify-content: center; font-family: var(--title); font-weight: 800; font-size: 20pt; box-shadow: 3px 3px 0 var(--ink); background: var(--teal); }
+  .section-head .hq-title { font-size: 21pt; }
+  .section-head .sub { font-family: var(--title); font-weight: 600; font-size: 11.5pt; color: #444; }
+  .strip { position: absolute; left: 0; top: 0; bottom: 0; width: 7mm; }
+  .u1 .num, .u1 .strip { background: #3D8FD1; } .u1 .hq-title { color: #7FD1F5; }
+  .u2 .num, .u2 .strip { background: #C6720C; } .u2 .hq-title { color: #FAD7A0; }
+  .u3 .num, .u3 .strip { background: #F7C21B; } .u3 .hq-title { color: #FFD54F; }
+  .u4 .num, .u4 .strip { background: #8E44AD; } .u4 .hq-title { color: #D7BDE2; }
+  .u5 .num, .u5 .strip { background: #E74C3C; } .u5 .hq-title { color: #F5B7B1; }
+  .u6 .num, .u6 .strip { background: #5DADE2; } .u6 .hq-title { color: #AED6F1; }
+  .u7 .num, .u7 .strip { background: #F5B041; } .u7 .hq-title { color: #FFD27F; }
+  .u8 .num, .u8 .strip { background: #E67E22; } .u8 .hq-title { color: #F8C471; }
+  .u9 .num, .u9 .strip { background: #7F8C8D; } .u9 .hq-title { color: #D5DBDB; }
+  .content { position: absolute; left: 15mm; right: 11mm; top: 10mm; bottom: 10mm; display: flex; flex-direction: column; gap: 4mm; }
+  .panels { display: grid; gap: 4mm; grid-template-columns: 1fr 1fr; }
+  .panel-wrap { display: flex; flex-direction: column; gap: 1.2mm; } .panel-wrap .caption { padding: 0 1mm; font-size: 9.2pt; }
+  .fill { flex: 1; }
+  .box.compact { padding: 4mm 5mm; } .box.compact li { margin-bottom: 1.6mm; font-size: 9.6pt; line-height: 1.3; } .box.compact h3 { font-size: 13pt; margin-bottom: 2mm; }
+  .tip { background: var(--blue-pale); border: 3px dashed var(--blue); border-radius: 10px; padding: 2.5mm 4mm; font-size: 10.2pt; display: flex; gap: 3mm; align-items: center; }
+  .tip .ic { width: 10mm; height: 10mm; flex: 0 0 10mm; } .tip b { font-family: var(--title); font-weight: 800; }
+  .tip.red { background: #FDE2E0; border-color: var(--red); } .tip.yellow { background: #FFF6B0; border-color: var(--yellow-strong); }
+  .kc { border: 3px solid var(--ink); border-radius: 10px; padding: 3mm 4mm; background: var(--teal-light); font-size: 10.3pt; line-height: 1.33; }
+  .kc b.lbl { font-family: var(--title); font-weight: 800; font-size: 10pt; text-transform: uppercase; letter-spacing: .6px; color: #117A65; display: block; margin-bottom: 1mm; }
+  .kc.y { background: #FFF6B0; } .kc.y b.lbl { color: #9A7D0A; } .kc.r { background: #FDE2E0; } .kc.r b.lbl { color: #C0392B; } .kc.b { background: #D6EAF8; } .kc.b b.lbl { color: #2E86C1; } .kc.p { background: #E8DAEF; } .kc.p b.lbl { color: #7D3C98; }
+  .formula { font-family: var(--title); font-weight: 800; font-size: 16pt; text-align: center; background: #fff; border: 2.5px solid var(--ink); border-radius: 8px; padding: 1.5mm 3mm; margin: 1mm 0; }
+  table.t { width: 100%; border-collapse: collapse; background: #fff; border: 2.5px solid var(--ink); font-size: 10pt; }
+  table.t th, table.t td { border: 2px solid var(--ink); padding: 1.6mm 2.2mm; vertical-align: top; text-align: left; line-height: 1.2; }
+  table.t th { font-family: var(--title); font-weight: 800; background: #FFF6B0; font-size: 10.4pt; }
+  table.t td.k { font-family: var(--title); font-weight: 800; background: #FAFAFA; }
+  .case { border: 3px solid var(--ink); border-radius: 12px; overflow: hidden; display: grid; grid-template-columns: 66mm 1fr; min-height: 60mm; background: #fff; box-shadow: 4px 4px 0 var(--ink); }
+  .case .art { border-right: 3px solid var(--ink); } .case .art .ill { height: 100%; }
+  .case .txt { padding: 3mm 4.5mm; font-size: 10.2pt; line-height: 1.33; }
+  .case h3 { margin: 0 0 1.5mm; font-family: var(--title); font-weight: 800; font-size: 13pt; }
+  .case p { margin: 0 0 1.2mm; }
+  .case .say { font-family: var(--comic); font-weight: 700; background: #FFF6B0; border-radius: 6px; padding: 2mm 3mm; margin-top: 2mm; display: inline-block; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 4.5mm; }
+  .diagram { border: 3px solid var(--ink); border-radius: 10px; overflow: hidden; background: #fff; }
+  .diagram .ill { height: 100%; }
+
+  .intro h2 { font-family: var(--title); font-weight: 800; font-size: 19pt; margin: 0 0 2mm; }
+  .intro p { margin: 0 0 2.5mm; font-size: 10.6pt; }
+  .units { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; }
+  .unit { border: 3px solid var(--ink); border-radius: 10px; padding: 2.5mm 3mm; font-size: 9.2pt; line-height: 1.25; }
+  .unit b { display: block; font-family: var(--title); font-weight: 800; font-size: 11pt; }
+  .unit small { display: block; color: #555; font-weight: 700; }
+
+  .ph { display: flex; border: 2.5px solid var(--ink); border-radius: 8px; overflow: hidden; }
+  .ph div { flex: 1; text-align: center; font-family: var(--title); font-weight: 800; font-size: 10.5pt; padding: 2mm 0; }
+  .ph .n { font-size: 8.5pt; font-family: var(--body); display: block; }
+  .acidbase { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm; }
+  .acidbase div { border: 2.5px solid var(--ink); border-radius: 8px; padding: 2.2mm 3mm; font-size: 10pt; line-height: 1.3; }
+  .acidbase b { font-family: var(--title); font-weight: 800; display: block; }
+
+  .tool { border: 3px solid var(--ink); border-radius: 10px; padding: 3mm 4mm; background: #fff; font-size: 9.6pt; line-height: 1.3; }
+  .tool h3 { margin: 0 0 .8mm; font-family: var(--title); font-weight: 800; font-size: 10.5pt; }
+  .quiz { columns: 2; column-gap: 6mm; font-size: 9.6pt; line-height: 1.3; }
+  .quiz .q { break-inside: avoid; margin-bottom: 2.2mm; }
+  .quiz .q b { font-family: var(--title); font-weight: 800; }
+  .quiz .q span { display: block; padding-left: 4mm; }
+  .gab { font-family: var(--comic); font-weight: 700; font-size: 9pt; background: #E3F7D9; border: 2.5px solid var(--ink); border-radius: 8px; padding: 2mm 3mm; }
+  .info { background: #16A085; }
+  .info .stripes { position: absolute; inset: 0; opacity: .3; background: repeating-linear-gradient(135deg, #48C9B0 0 10px, transparent 10px 20px); }
+  .info .content { left: 12mm; gap: 2mm; }
+  .info .dashed-box { height: 100%; display: flex; flex-direction: column; gap: 2mm; padding: 6mm; }
+  .info .hq-title { font-size: 28pt; text-align: center; display: block; margin-bottom: 1mm; }
+  .info h4 { font-family: var(--title); font-weight: 800; font-size: 13pt; margin: 1.5mm 0 .5mm; color: #fff; text-shadow: 1px 1px 0 var(--ink); }
+  .peg { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm; }
+  .peg div { background: rgba(255,255,255,.92); border: 2.5px solid var(--ink); border-radius: 8px; padding: 2mm 3mm; font-family: var(--comic); font-weight: 700; font-size: 9.8pt; line-height: 1.28; }
+  .peg div b { font-family: var(--title); color: var(--red); }
+  .nums { background: rgba(255,255,255,.92); border: 2.5px solid var(--ink); border-radius: 8px; padding: 2.5mm 3.5mm; font-size: 9.3pt; line-height: 1.35; columns: 3; column-gap: 4mm; }
+  .nums b { font-family: var(--title); font-weight: 800; }
+</style>
+</head>
+<body>
+
+<!-- ================= CAPA ================= -->
+<section class="page cover">
+  <div class="tiles"></div>
+  <div class="art"><div class="ill" data-scene="b_cover"></div></div>
+  <div class="titlebox">
+    <div class="hq-title">Biofísica Aplicada<br>à Saúde</div>
+    <div class="sub">Cartilha ilustrada: os princípios físicos que regem os fenômenos<br>biológicos e suas aplicações na assistência de enfermagem</div>
+  </div>
+  <div class="badge"><span class="label">Bacharelado em Enfermagem · 2º semestre · 40 h/a</span></div>
+  <div class="foot">
+    <div class="who">Para estudantes, enfermeiros e técnicos de enfermagem</div>
+    <div class="org">Autoria: Prof. Dr. Patrício da Silva Almeida<br>Síntese ilustrada do Material Didático do Discente (FTA Meta, 2026.2)</div>
+  </div>
+</section>
+
+<!-- ================= PÁGINA 2 — APRESENTAÇÃO ================= -->
+<section class="page">
+  <div class="pad intro" style="display:flex;flex-direction:column;gap:3.2mm">
+    <div>
+      <h2>A física está em cada acesso venoso</h2>
+      <p>A <b>Biofísica</b> aplica as leis da física aos sistemas vivos: explica como a água se move entre os compartimentos do corpo, como os gases se difundem nos pulmões, como o sangue circula sob pressão e como os impulsos nervosos são conduzidos. Para a enfermagem, é uma disciplina eminentemente prática: fundamenta a administração de soluções, a interpretação de sinais vitais, o equilíbrio hidroeletrolítico e ácido-base, a oxigenoterapia, a hemodiálise e o uso seguro de equipamentos e radiações.</p>
+    </div>
+    <div class="diagram" style="height:50mm"><div class="ill" data-scene="b_tonicidade"></div></div>
+    <div class="caption" style="font-size:9.6pt">A hemácia em três soluções: a imagem que resume a Unidade 1 e que volta nas Unidades 5, 6 e 7. Osmose, pressão e difusão são os três fios condutores do curso.</div>
+    <div class="units">
+      <div class="unit"><b>1 · Água, soluções, difusão e osmose</b><small>28/08</small>Propriedades da água, osmolaridade, lei de Fick, tonicidade.</div>
+      <div class="unit"><b>2 · pH, tampões e ácido-base</b><small>11/09</small>pH, bicarbonato, Henderson-Hasselbalch, acidoses e alcaloses.</div>
+      <div class="unit"><b>3 · Membranas e transporte</b><small>25/09</small>Mosaico fluido, passivo e ativo, bomba Na⁺/K⁺, potencial de repouso.</div>
+      <div class="unit"><b>4 · Bioeletricidade</b><small>09/10</small>Potencial de ação, tudo ou nada, mielina, sinapse, ECG.</div>
+      <div class="unit"><b>5 · Circulação</b><small>17/10 · AV1</small>Q = ΔP/R, Poiseuille, pressão arterial, Laplace, Korotkoff.</div>
+      <div class="unit"><b>6 · Respiração</b><small>06/11</small>Boyle, Dalton, Fick, surfactante, hemoglobina, oximetria.</div>
+      <div class="unit"><b>7 · Rim e hidroeletrolítico</b><small>27/11</small>Starling, TFG, reabsorção, clearance, hemodiálise.</div>
+      <div class="unit"><b>8 · Termodinâmica e sentidos</b><small>04/12 · AV2 02/12</small>Leis da termodinâmica, calor, visão e audição.</div>
+      <div class="unit"><b>9 · Radiações e equipamentos</b><small>18/12 · AV3</small>Ionizantes, dose, radioproteção, princípios dos equipamentos.</div>
+    </div>
+    <div class="kc"><b class="lbl">Como ler esta cartilha</b>Cada unidade da apostila virou uma página: conceito-chave, fórmula, um diagrama ou cena de aplicação clínica e a pegadinha de prova. As duas últimas páginas reúnem os números que caem em prova, o glossário e um mini-simulado com gabarito. Os simulados completos (1, 2 e 3) estão na apostila.</div>
+    <div class="tip yellow"><div class="ic" data-icon="notes"></div><div><b>Como a disciplina avalia:</b> AV1 (5,0 de atividades + 5,0 de prova analítico-discursiva, 19 a 23/10), AV2 (5,0 de atividades + 5,0 de prova objetiva, 02/12) e AV3 (maior nota entre AV1/AV2 + maior nota entre AT1/AT2; Jornada Acadêmica/PROJETI em 18/12). Média final = [(AV1+AV2)/2 + AV3]/2; aprovação com 7,0.</div></div>
+    <div class="small">Esta cartilha resume o Material Didático do Discente e o Plano de Disciplina de Biofísica (Faculdade de Tecnologia do Amapá, Bacharelado em Enfermagem, 2026.2). Não substitui as aulas, as leituras indicadas nem as atividades do AVA.</div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 2</div>
+</section>
+
+<!-- ================= PÁGINA 3 — UNIDADE 1 ================= -->
+<section class="page u1">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">1</div><div><div class="hq-title">Água, soluções, difusão e osmose</div><div class="sub">A água segue o soluto</div></div></div>
+    <div class="grid2">
+      <div class="kc b"><b class="lbl">A água: a molécula da vida</b>Cerca de <b>60%</b> do peso do adulto. Molécula <b>polar</b> (pontes de hidrogênio): <b>solvente universal</b>, <b>alto calor específico</b> (termorregulação), <b>alto calor de vaporização</b> (o suor resfria), coesão e adesão. Distribui-se no <b>LIC</b> (intracelular) e no <b>LEC</b> (plasma + interstício), regulados pela osmose.</div>
+      <div class="kc y"><b class="lbl">Soluções e osmolaridade</b>Solução = soluto + solvente. <b>Molaridade</b> conta mols; <b>osmolaridade</b> conta partículas osmoticamente ativas (mOsm/L). O que move a água é o <b>número de partículas</b>: 1 mol de NaCl → Na⁺ + Cl⁻ → cerca de <b>2 osmóis</b>. Plasma: <b>~290 mOsm/L</b>.</div>
+    </div>
+    <div class="grid2">
+      <div class="kc"><b class="lbl">Difusão e lei de Fick</b>Soluto vai do mais para o menos concentrado, <b>passivo</b>, sem gasto de energia.<div class="formula">Fluxo ∝ área × gradiente ÷ espessura</div>Mais área e mais gradiente favorecem; mais espessura dificulta. Volta nas trocas gasosas (Unidade 6).</div>
+      <div class="kc"><b class="lbl">Osmose e pressão osmótica</b>Caso particular de difusão: <b>água</b> atravessa membrana semipermeável em direção ao meio com <b>mais soluto</b>. <b>Pressão osmótica</b>: a que impediria esse fluxo. <b>Pressão oncótica</b>: a parcela exercida pelas proteínas (albumina), central nas trocas entre sangue e tecidos (Unidades 5 e 7).</div>
+    </div>
+    <table class="t">
+      <tr><th>Solução</th><th>Osmolaridade relativa</th><th>Efeito na hemácia</th></tr>
+      <tr><td class="k">Isotônica (ex.: SF 0,9%)</td><td>Igual à intracelular</td><td>Mantém o volume</td></tr>
+      <tr><td class="k">Hipotônica (ex.: água, SG diluído)</td><td>Menor que a intracelular</td><td>Entra água → incha → <b>hemólise</b></td></tr>
+      <tr><td class="k">Hipertônica (ex.: NaCl 3%)</td><td>Maior que a intracelular</td><td>Sai água → murcha → <b>crenação</b></td></tr>
+    </table>
+    <div class="case">
+      <div class="art"><div class="ill" data-scene="b_soro"></div></div>
+      <div class="txt"><h3>Aplicação clínica: a escolha da solução na hidratação venosa</h3>
+        <p>O soro fisiológico 0,9% é aproximadamente isotônico em relação ao plasma: repõe volume sem provocar movimento acentuado de água para dentro ou para fora das células. Soluções muito hipotônicas ou hipertônicas administradas de forma inadequada causam dano celular.</p>
+        <span class="say">Entender tonicidade é entender por que certas soluções são escolhidas, administrar com segurança, reconhecer o risco da infusão rápida de hipertônicos e monitorar o paciente. A biofísica da osmose está, literalmente, em cada acesso venoso.</span></div>
+    </div>
+    <div class="fill"></div>
+    <div class="tip red"><div class="ic" data-icon="warn"></div><div><b>Pegadinha:</b> difusão move <b>soluto</b>; osmose move <b>água</b>. Molaridade não é osmolaridade. E o SF 0,9% é a referência de isotonia: hemácia feliz, sem inchar nem murchar.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 3</div>
+</section>
+
+<!-- ================= PÁGINA 4 — UNIDADE 2 ================= -->
+<section class="page u2">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">2</div><div><div class="hq-title">pH, sistemas tampão e equilíbrio ácido-base</div><div class="sub">Mais CO₂, mais ácido</div></div></div>
+    <div class="grid2">
+      <div class="kc r"><b class="lbl">O conceito de pH</b><div class="formula">pH = −log[H⁺]</div>Escala de 0 a 14: &lt;7 ácido, 7 neutro, &gt;7 básico. <b>Logarítmica</b>: 1 unidade de pH = 10× na [H⁺]. Sangue arterial: <b>7,35 a 7,45</b>. Três linhas de defesa: tampões (imediato), pulmões (minutos), rins (horas a dias).</div>
+      <div class="kc y"><b class="lbl">O tampão bicarbonato</b><div class="formula" style="font-size:12pt">CO₂ + H₂O ⇌ H₂CO₃ ⇌ H⁺ + HCO₃⁻</div>Principal tampão do LEC. Eficiente porque os dois componentes são regulados de forma independente: o <b>CO₂ pelos pulmões</b> e o <b>HCO₃⁻ pelos rins</b>. Henderson-Hasselbalch: pH = pKa + log([HCO₃⁻]/[CO₂ dissolvido]); o pH depende da <b>razão</b> base/ácido.</div>
+    </div>
+    <div class="ph">
+      <div style="background:#E74C3C;color:#fff">0<span class="n">ácido gástrico ~1,5</span></div><div style="background:#F5B041">3<span class="n">suco de limão</span></div><div style="background:#F7C21B">5<span class="n">urina (4,5–8)</span></div><div style="background:#58D68D">7<span class="n">água · sangue 7,4</span></div><div style="background:#5DADE2">9<span class="n">bicarbonato</span></div><div style="background:#8E44AD;color:#fff">14<span class="n">base forte</span></div>
+    </div>
+    <div class="acidbase">
+      <div style="background:#FDE2E0"><b>Acidose respiratória (pH ↓)</b>Retenção de CO₂: hipoventilação, DPOC. Compensam os rins (↑ HCO₃⁻).</div>
+      <div style="background:#D6EAF8"><b>Alcalose respiratória (pH ↑)</b>Eliminação excessiva de CO₂: hiperventilação, ansiedade. Compensam os rins.</div>
+      <div style="background:#FDE2E0"><b>Acidose metabólica (pH ↓)</b>Acúmulo de ácidos ou perda de HCO₃⁻: diarreia intensa, cetoacidose. Compensam os pulmões (hiperventilação).</div>
+      <div style="background:#D6EAF8"><b>Alcalose metabólica (pH ↑)</b>Perda de ácidos ou ganho de HCO₃⁻: vômitos intensos. Compensam os pulmões (hipoventilação).</div>
+    </div>
+    <table class="t">
+      <tr><th>Tampão</th><th>Onde atua</th><th>Observação</th></tr>
+      <tr><td class="k">Bicarbonato (HCO₃⁻/CO₂)</td><td>Sangue e LEC</td><td>Principal tampão do LEC; pulmões e rins</td></tr>
+      <tr><td class="k">Fosfato</td><td>Intracelular e urina</td><td>Importante no meio intracelular e na urina</td></tr>
+      <tr><td class="k">Proteínas (hemoglobina)</td><td>Sangue e células</td><td>Grande capacidade tamponante; a hemoglobina tampona H⁺</td></tr>
+    </table>
+    <div class="case">
+      <div class="art"><div class="ill" data-scene="b_gasometria"></div></div>
+      <div class="txt"><h3>Aplicação clínica: interpretando à beira do leito</h3>
+        <p>Um paciente em crise de ansiedade hiperventila, elimina CO₂ em excesso e pode desenvolver <b>alcalose respiratória</b> (pH elevado). Um paciente com DPOC que retém CO₂ apresenta <b>acidose respiratória</b>. A <b>gasometria arterial</b> avalia pH, PCO₂ e bicarbonato, identificando o distúrbio e a compensação.</p>
+        <span class="say">Reconhecer a relação ventilação → CO₂ → pH ajuda a interpretar frequência respiratória e nível de consciência, ler a gasometria e intervir: orientar a respiração ou monitorar a oxigenoterapia.</span></div>
+    </div>
+    <div class="fill"></div>
+    <div class="tip red"><div class="ic" data-icon="warn"></div><div><b>Pegadinha:</b> no sistema bicarbonato, o <b>CO₂ se comporta como ácido</b>. Hiperventilar elimina CO₂ e <b>eleva</b> o pH; hipoventilar retém CO₂ e <b>reduz</b> o pH. Problema respiratório é compensado pelo rim; problema metabólico, pelo pulmão.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 4</div>
+</section>
+
+<!-- ================= PÁGINA 5 — UNIDADES 3 E 4 ================= -->
+<section class="page u3">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">3</div><div><div class="hq-title">Membranas, transporte e bioeletricidade</div><div class="sub">Unidades 3 e 4: da bomba de sódio-potássio ao potencial de ação</div></div></div>
+    <div class="grid2" style="grid-template-columns:1.2fr 1fr">
+      <div class="diagram" style="height:62mm"><div class="ill" data-scene="b_membrana"></div></div>
+      <div class="kc y"><b class="lbl">Mosaico fluido e transporte</b>Bicamada de fosfolipídios com proteínas móveis, colesterol e carboidratos: <b>permeabilidade seletiva</b>. Pequeno e apolar (O₂, CO₂) passa direto; íon e polar precisam de proteína.<br><b>Passivo</b> (sem energia, a favor do gradiente): difusão simples, difusão facilitada (glicose, por proteína) e osmose (aquaporinas).<br><b>Ativo</b> (ATP, contra o gradiente): bomba Na⁺/K⁺ (<b>3 Na⁺ fora, 2 K⁺ dentro</b>), cotransporte Na⁺-glicose, endocitose e exocitose.</div>
+    </div>
+    <div class="kc"><b class="lbl">Potencial de repouso (~−70 mV)</b>Resulta de três fatores: distribuição desigual de íons (muito K⁺ dentro, muito Na⁺ fora), <b>maior permeabilidade ao K⁺</b> no repouso (o K⁺ vaza e deixa o interior negativo) e a ação contínua da bomba. Por isso o <b>potássio</b> é o principal determinante do potencial de repouso: hipocalemia e hipercalemia alteram a excitabilidade, sobretudo do coração (arritmias). <b>Nunca potássio em bolus rápido.</b></div>
+    <div class="grid2" style="grid-template-columns:1.2fr 1fr">
+      <div class="diagram" style="height:62mm"><div class="ill" data-scene="b_pa"></div></div>
+      <div class="kc p"><b class="lbl">Potencial de ação (Unidade 4)</b><b>Repouso</b> −70 mV → <b>limiar</b> ~−55 mV → <b>despolarização</b>: entra Na⁺, interior chega a ~+30 mV → <b>repolarização</b>: sai K⁺ → breve <b>hiperpolarização</b> → bomba restaura. <b>Tudo ou nada</b>: estímulo mais forte não faz potencial maior, faz mais frequente. <b>Período refratário</b>: sentido único e limite de frequência. <b>Mielina</b>: condução saltatória entre os nós de Ranvier. <b>Sinapse química</b>: entra Ca²⁺ no terminal, libera neurotransmissor.</div>
+    </div>
+    <div class="grid2">
+      <div class="kc b"><b class="lbl">Aplicação: ECG, marca-passo e desfibrilador</b>O coração depende de potenciais de ação coordenados. O <b>ECG</b> registra a atividade elétrica; o <b>marca-passo</b> fornece estímulos quando a geração natural falha; o <b>desfibrilador</b> aplica um choque para reorganizar a atividade elétrica em arritmias graves. É a física elétrica das células aplicada ao cuidado.</div>
+      <div class="tip red" style="align-self:stretch"><div class="ic" data-icon="warn"></div><div><b>Pegadinhas:</b> difusão facilitada usa proteína mas é <b>passiva</b>; o que define o ativo é o <b>gasto de ATP</b>. Despolarização = <b>Na⁺ entra</b>; repolarização = <b>K⁺ sai</b>. Pico ~+30 mV. Mielina = saltatória, mais rápida.</div></div>
+    </div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 5</div>
+</section>
+
+<!-- ================= PÁGINA 6 — UNIDADE 5 ================= -->
+<section class="page u5">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">5</div><div><div class="hq-title">Biofísica da circulação</div><div class="sub">O raio elevado à quarta potência manda em tudo</div></div></div>
+    <div class="grid2">
+      <div class="kc r"><b class="lbl">Fluxo, pressão e resistência</b><div class="formula">Q = ΔP / R</div>O sangue vai do maior para o menor pressão; o coração gera a pressão. <b>Lei de Poiseuille:</b> R ∝ (viscosidade × comprimento) ÷ <b>raio⁴</b>. Reduzir o raio pela metade multiplica a resistência por <b>16</b>. Vasoconstrição e vasodilatação são o controle mais poderoso da pressão.</div>
+      <div class="kc y"><b class="lbl">Pressão arterial</b><b>Sistólica</b> ~120 mmHg (máxima, na sístole) e <b>diastólica</b> ~80 mmHg (mínima, na diástole). <b>Pressão de pulso</b> = sistólica − diastólica. <b>PAM</b> ≈ diastólica + ⅓ da pressão de pulso (perfusão dos tecidos). A PA depende do <b>débito cardíaco</b> e da <b>resistência vascular periférica</b>.</div>
+    </div>
+    <div class="grid2">
+      <div class="kc"><b class="lbl">Viscosidade, velocidade e Laplace</b>A viscosidade do sangue depende do <b>hematócrito</b>. O fluxo total é constante, mas a <b>velocidade cai nos capilares</b> porque a área de secção total é enorme: tempo para as trocas. <b>Lei de Laplace:</b> tensão da parede ∝ pressão × raio. Explica por que aneurismas crescem e por que o coração dilatado sofre sobrecarga.</div>
+      <div class="kc b"><b class="lbl">Medida da PA: sons de Korotkoff</b>O manguito oclui a artéria; ao desinsuflar devagar, o <b>primeiro som</b> (jato turbulento) marca a <b>sistólica</b>; o <b>desaparecimento</b> dos sons (fluxo laminar de novo) marca a <b>diastólica</b>. Manguito adequado, braço na altura do coração e desinsuflação lenta são a física por trás da técnica.</div>
+    </div>
+    <div class="case">
+      <div class="art"><div class="ill" data-scene="b_sinais"></div></div>
+      <div class="txt"><h3>Aplicação clínica: a física por trás da medida da pressão arterial</h3>
+        <p>Um manguito pequeno demais superestima a PA; o braço abaixo do coração também. Leituras erradas levam a diagnósticos e condutas equivocados em um dos procedimentos mais rotineiros da enfermagem.</p>
+        <p><b>Exercício da apostila:</b> explique, com Q = ΔP/R e Poiseuille, o que acontece com a resistência e a PA na vasoconstrição; depois descreva a técnica de aferição e relacione os sons de Korotkoff às pressões.</p>
+        <span class="say">Vasoconstrição → raio menor → R muito maior (raio⁴) → para manter o fluxo, a pressão sobe.</span></div>
+    </div>
+    <div class="fill"></div>
+    <div class="tip red"><div class="ic" data-icon="warn"></div><div><b>Pegadinhas:</b> não confunda <b>velocidade</b> com <b>fluxo</b>. Metade do raio = 16× a resistência (2⁴). Primeiro som de Korotkoff = sistólica. PAM = diastólica + ⅓ da pressão de pulso, não a média simples.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 6</div>
+</section>
+
+<!-- ================= PÁGINA 7 — UNIDADE 6 ================= -->
+<section class="page u6">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">6</div><div><div class="hq-title">Biofísica da respiração e trocas gasosas</div><div class="sub">Boyle para ventilar, Dalton para medir, Fick para trocar</div></div></div>
+    <div class="grid2" style="grid-template-columns:1.2fr 1fr">
+      <div class="diagram" style="height:64mm"><div class="ill" data-scene="b_alveolo"></div></div>
+      <div class="kc b"><b class="lbl">Lei de Boyle: a ventilação</b><div class="formula">P × V = constante</div>Na <b>inspiração</b>, diafragma e intercostais aumentam o volume torácico, a pressão intrapulmonar cai abaixo da atmosférica (<b>~760 mmHg</b> ao nível do mar) e o ar entra. Na expiração, o inverso. A pressão <b>intrapleural é negativa</b> e mantém os pulmões distendidos. <b>Complacência</b>: facilidade de expansão.</div>
+    </div>
+    <div class="grid2">
+      <div class="kc y"><b class="lbl">Dalton e Fick</b><b>Lei de Dalton:</b> a pressão total é a soma das pressões parciais; o O₂ é ~21% do ar, PO₂ atmosférica ~160 mmHg. No alvéolo, <b>PO₂ ~100 e PCO₂ ~40</b>; no sangue venoso, PO₂ ~40 e PCO₂ ~46. A diferença decide o sentido. <b>Lei de Fick:</b> grande área (milhões de alvéolos) e barreira finíssima. Edema <b>↑ espessura</b>; enfisema <b>↓ área</b>; altitude e hipoventilação <b>↓ gradiente</b>: hipoxemia.</div>
+      <div class="kc"><b class="lbl">Surfactante e hemoglobina</b><b>Laplace nos alvéolos:</b> quanto menor o raio, maior a tendência ao colapso. O <b>surfactante</b> (pneumócitos) reduz a tensão superficial; sua ausência no prematuro causa a síndrome do desconforto respiratório. A maior parte do O₂ viaja ligada à <b>hemoglobina</b>; a curva de saturação é <b>sigmoide</b>: satura nos pulmões (PO₂ alta) e libera nos tecidos (PO₂ baixa). Temperatura, pH e CO₂ deslocam a curva.</div>
+    </div>
+    <div class="case">
+      <div class="art"><div class="ill" data-scene="b_oximetro"></div></div>
+      <div class="txt"><h3>Aplicação clínica: oxigenoterapia e oximetria de pulso</h3>
+        <p>A oxigenoterapia aumenta a fração e a pressão parcial de O₂ inspirado, elevando o <b>gradiente</b> para a difusão (lei de Fick) e a oxigenação do sangue. A <b>oximetria de pulso</b> estima a saturação da hemoglobina de forma não invasiva, pela <b>absorção de luz</b> pela hemoglobina.</p>
+        <span class="say">Pressões parciais, Fick e curva da hemoglobina explicam por que e como a oxigenoterapia funciona, como interpretar a saturação, ajustar fluxos e reconhecer hipoxemia.</span></div>
+    </div>
+    <div class="fill"></div>
+    <div class="tip red"><div class="ic" data-icon="warn"></div><div><b>Pegadinhas:</b> o ar entra porque a pressão intrapulmonar <b>cai</b> (volume ↑), não porque o pulmão “puxa”. Alvéolo: PO₂ 100 / PCO₂ 40. Surfactante <b>reduz</b> a tensão superficial. O oxímetro mede <b>saturação</b>, não PO₂.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 7</div>
+</section>
+
+<!-- ================= PÁGINA 8 — UNIDADE 7 ================= -->
+<section class="page u7">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">7</div><div><div class="hq-title">Biofísica renal e equilíbrio hidroeletrolítico</div><div class="sub">Filtrar, reabsorver, secretar</div></div></div>
+    <div class="grid2" style="grid-template-columns:1.2fr 1fr">
+      <div class="diagram" style="height:62mm"><div class="ill" data-scene="b_nefron"></div></div>
+      <div class="kc y"><b class="lbl">Forças de Starling na filtração</b>No glomérulo, a <b>pressão hidrostática</b> do sangue empurra o líquido para fora (<b>favorece</b>); a <b>pressão oncótica</b> das proteínas retém o líquido no vaso (<b>opõe</b>). O saldo é a pressão de filtração. <b>TFG normal ~125 mL/min</b>: filtra-se um grande volume de plasma por dia, quase todo reabsorvido. Hipotensão grave derruba a pressão hidrostática e a filtração.</div>
+    </div>
+    <table class="t">
+      <tr><th>Processo</th><th>O que ocorre</th><th>Princípio biofísico</th></tr>
+      <tr><td class="k">Filtração glomerular</td><td>Formação do filtrado no glomérulo</td><td>Pressão (forças de Starling)</td></tr>
+      <tr><td class="k">Reabsorção tubular</td><td>Retorno de água, glicose, aminoácidos, Na⁺, HCO₃⁻ ao sangue</td><td>Osmose (a água segue o sódio) e transporte ativo/passivo</td></tr>
+      <tr><td class="k">Secreção tubular</td><td>Passagem de H⁺ e fármacos para a urina</td><td>Transporte ativo e difusão</td></tr>
+    </table>
+    <div class="grid2">
+      <div class="kc"><b class="lbl">Clearance e função renal</b>Volume de plasma “limpo” de uma substância por unidade de tempo. A <b>depuração da creatinina</b> estima a TFG; queda no clearance = queda da função renal. Os rins também fecham o ciclo da Unidade 2: ajustam a excreção de H⁺ e a reabsorção de bicarbonato.</div>
+      <div class="kc b"><b class="lbl">Equilíbrio hidroeletrolítico</b>Ao reabsorver sódio ativamente, o rim cria gradientes e a água o segue por osmose, concentrando ou diluindo a urina. Desidratação, hiper-hidratação e distúrbios de sódio e potássio afetam célula, coração e cérebro: por isso o balanço hídrico e a administração de eletrólitos exigem rigor.</div>
+    </div>
+    <div class="case">
+      <div class="art"><div class="ill" data-scene="b_dialise"></div></div>
+      <div class="txt"><h3>Aplicação clínica: a hemodiálise é biofísica pura</h3>
+        <p>O sangue passa pelo <b>dialisador</b>, separado do <b>dialisato</b> por uma membrana semipermeável. Por <b>difusão</b>, resíduos como a ureia passam do sangue (concentrado) para o dialisato; por <b>osmose e ultrafiltração</b> (diferença de pressão), o excesso de água é removido.</p>
+        <span class="say">Difusão e osmose da Unidade 1 aplicadas para substituir a função renal. O enfermeiro que entende isso acompanha o paciente em diálise com outra segurança.</span></div>
+    </div>
+    <div class="fill"></div>
+    <div class="tip red"><div class="ic" data-icon="warn"></div><div><b>Pegadinhas:</b> hidrostática <b>favorece</b>, oncótica <b>opõe</b>. TFG ~125 mL/min. A água é reabsorvida por <b>osmose</b> (não existe “transporte ativo de água”). Na diálise, a ureia sai por <b>difusão</b>.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 8</div>
+</section>
+
+<!-- ================= PÁGINA 9 — UNIDADE 8 ================= -->
+<section class="page u8">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">8</div><div><div class="hq-title">Termodinâmica e biofísica dos sentidos</div><div class="sub">Energia, calor, luz e som</div></div></div>
+    <div class="grid2" style="grid-template-columns:1.2fr 1fr">
+      <div class="diagram" style="height:60mm"><div class="ill" data-scene="b_termo"></div></div>
+      <div class="kc y"><b class="lbl">As leis da termodinâmica e a vida</b><b>1ª lei:</b> a energia não é criada nem destruída, apenas transformada: a energia química dos alimentos vira trabalho mecânico, transporte ativo, síntese e calor. <b>2ª lei:</b> toda transformação aumenta a entropia e parte da energia sempre se dissipa como calor; nenhum processo é 100% eficiente. Os seres vivos são <b>sistemas abertos</b>. O <b>ATP</b> é a moeda energética.</div>
+    </div>
+    <div class="grid2">
+      <div class="kc r"><b class="lbl">Metabolismo e termorregulação (~37 °C)</b>Quatro mecanismos físicos de troca de calor: <b>condução</b> (contato direto), <b>convecção</b> (ar ou líquido em movimento), <b>radiação</b> (infravermelho) e <b>evaporação</b> (o suor usa o alto calor de vaporização da água). <b>Febre:</b> compressas e ambiente fresco favorecem condução, convecção e evaporação. <b>Hipotermia:</b> aquecimento e redução de correntes de ar reduzem as perdas.</div>
+      <div class="kc b"><b class="lbl">Audição: o som é onda mecânica</b><b>Frequência</b> (hertz, Hz) é percebida como altura (grave/agudo); o ouvido humano capta cerca de <b>20 a 20 000 Hz</b>. <b>Intensidade</b> (amplitude) é medida em <b>decibéis (dB)</b>. Tímpano → ossículos (amplificam) → <b>cóclea</b> (converte o estímulo mecânico em sinal nervoso). Sons intensos por tempo prolongado lesam a cóclea: proteção auditiva e triagem.</div>
+    </div>
+    <table class="t">
+      <tr><th>Defeito de refração</th><th>Onde a imagem se forma</th><th>Correção usual</th></tr>
+      <tr><td class="k">Miopia</td><td>Antes da retina (dificuldade para longe)</td><td>Lente <b>divergente</b> (negativa)</td></tr>
+      <tr><td class="k">Hipermetropia</td><td>Depois da retina (dificuldade para perto)</td><td>Lente <b>convergente</b> (positiva)</td></tr>
+      <tr><td class="k">Astigmatismo</td><td>Foco irregular (curvatura desigual)</td><td>Lente cilíndrica</td></tr>
+      <tr><td class="k">Presbiopia</td><td>Perda da acomodação com a idade</td><td>Lente para perto</td></tr>
+    </table>
+    <div class="kc"><b class="lbl">Óptica da visão</b>A luz é <b>refratada</b> pela córnea e pelo cristalino e forma uma imagem invertida e reduzida na <b>retina</b>, onde vira sinal nervoso. A <b>acomodação</b> é a capacidade do cristalino de mudar de forma para focalizar a diferentes distâncias. Conhecer óptica e acústica ajuda a entender exames e a orientar pacientes sobre saúde visual e auditiva.</div>
+    <div class="fill"></div>
+    <div class="tip red"><div class="ic" data-icon="warn"></div><div><b>Pegadinhas:</b> miopia = imagem <b>antes</b> da retina, lente <b>divergente</b>; hipermetropia = <b>depois</b>, <b>convergente</b>. Altura do som = <b>frequência</b> (Hz); intensidade = <b>dB</b>. Suor resfria por <b>evaporação</b>.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 9</div>
+</section>
+
+<!-- ================= PÁGINA 10 — UNIDADE 9 ================= -->
+<section class="page u9">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">9</div><div><div class="hq-title">Radiações, biossegurança e equipamentos</div><div class="sub">Tempo, distância e blindagem</div></div></div>
+    <div class="grid2">
+      <div class="kc r"><b class="lbl">Ionizantes × não ionizantes</b>Radiação é propagação de energia. O espectro vai do rádio aos raios gama. <b>Ionizantes</b> (raios X, gama, partículas alfa e beta) arrancam elétrons e podem lesar o <b>DNA</b>: exigem radioproteção rigorosa. <b>Não ionizantes</b> (luz visível, infravermelho, micro-ondas, radiofrequência) não ionizam, mas podem aquecer tecidos. O risco depende do tipo, da energia e da dose.</div>
+      <div class="kc y"><b class="lbl">Dose e efeitos biológicos</b><b>Gray (Gy)</b>: dose absorvida. <b>Sievert (Sv)</b>: dose equivalente, pondera o tipo de radiação e o risco. Efeitos <b>determinísticos</b>: acima de um limiar, mais intensos com a dose (queimaduras). Efeitos <b>estocásticos</b>: probabilísticos, sem limiar definido (câncer), cuja probabilidade aumenta com a dose.</div>
+    </div>
+    <div class="case">
+      <div class="art"><div class="ill" data-scene="b_radio"></div></div>
+      <div class="txt"><h3>Radioproteção: os três pilares e o princípio ALARA</h3>
+        <p><b>Tempo:</b> menor exposição, menor dose. <b>Distância:</b> a intensidade cai rapidamente ao se afastar da fonte. <b>Blindagem:</b> material absorvedor (chumbo) entre a fonte e a pessoa. <b>ALARA</b> (As Low As Reasonably Achievable): dose tão baixa quanto razoavelmente exequível.</p>
+        <span class="say">Na enfermagem: avental plumbífero, dosímetro individual, sinalização, barreiras físicas e afastar-se durante a radiografia à beira do leito e na hemodinâmica.</span></div>
+    </div>
+    <table class="t">
+      <tr><th style="width:32%">Equipamento</th><th>Princípio físico</th><th style="width:22%">Unidade</th></tr>
+      <tr><td class="k">Bomba de infusão</td><td>Controle preciso de fluxo e volume (pressão e mecânica)</td><td>5</td></tr>
+      <tr><td class="k">Esfigmomanômetro</td><td>Pressão e fluxo (sons de Korotkoff)</td><td>5</td></tr>
+      <tr><td class="k">Oxímetro de pulso</td><td>Absorção de luz pela hemoglobina (óptica)</td><td>6</td></tr>
+      <tr><td class="k">Monitor / ECG</td><td>Registro da bioeletricidade cardíaca</td><td>4</td></tr>
+      <tr><td class="k">Desfibrilador</td><td>Descarga elétrica controlada (bioeletricidade)</td><td>4</td></tr>
+      <tr><td class="k">Bisturi elétrico</td><td>Efeito térmico da corrente elétrica</td><td>8</td></tr>
+      <tr><td class="k">Hemodiálise</td><td>Difusão e ultrafiltração por membrana semipermeável</td><td>1 e 7</td></tr>
+      <tr><td class="k">Aparelhos de imagem (raio X)</td><td>Radiação ionizante e sua absorção pelos tecidos</td><td>9</td></tr>
+    </table>
+    <div class="fill"></div>
+    <div class="tip red"><div class="ic" data-icon="warn"></div><div><b>Pegadinhas:</b> luz visível e infravermelho são <b>não</b> ionizantes. Gray = absorvida; sievert = equivalente. Estocástico = probabilístico, sem limiar. Os pilares são tempo, distância e blindagem, sempre sob ALARA.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 10</div>
+</section>
+
+<!-- ================= PÁGINA 11 — NÚMEROS E GLOSSÁRIO ================= -->
+<section class="page info">
+  <div class="stripes"></div>
+  <div class="content"><div class="dashed-box">
+    <span class="hq-title white">Os números que caem na prova</span>
+    <div class="nums">
+      <b>Água corporal:</b> ~60% do peso<br>
+      <b>Osmolaridade do plasma:</b> ~290 mOsm/L<br>
+      <b>1 mol de NaCl:</b> ~2 osmóis<br>
+      <b>pH do sangue arterial:</b> 7,35–7,45<br>
+      <b>1 unidade de pH:</b> 10× na [H⁺]<br>
+      <b>Bomba Na⁺/K⁺:</b> 3 Na⁺ fora, 2 K⁺ dentro, 1 ATP<br>
+      <b>Potencial de repouso:</b> ~−70 mV<br>
+      <b>Limiar:</b> ~−55 mV · <b>Pico:</b> ~+30 mV<br>
+      <b>PA de referência:</b> 120/80 mmHg<br>
+      <b>PAM:</b> diastólica + ⅓ pressão de pulso<br>
+      <b>Raio pela metade:</b> R × 16<br>
+      <b>Pressão atmosférica:</b> ~760 mmHg<br>
+      <b>O₂ no ar:</b> ~21% · PO₂ ~160 mmHg<br>
+      <b>Alvéolo:</b> PO₂ ~100 · PCO₂ ~40<br>
+      <b>Sangue venoso:</b> PO₂ ~40 · PCO₂ ~46<br>
+      <b>TFG:</b> ~125 mL/min<br>
+      <b>Temperatura:</b> ~37 °C<br>
+      <b>Audição:</b> 20 a 20 000 Hz · dB<br>
+      <b>Dose:</b> gray (absorvida) · sievert (equivalente)
+    </div>
+    <h4>Pegadinhas que mais aparecem</h4>
+    <div class="peg">
+      <div><b>Difusão</b> move soluto; <b>osmose</b> move água, para onde há <b>mais</b> soluto. Molaridade ≠ osmolaridade.</div>
+      <div><b>Hipotônica</b> → entra água → hemólise. <b>Hipertônica</b> → sai água → crenação. SF 0,9% = isotônica.</div>
+      <div><b>CO₂ é ácido:</b> hiperventilar → alcalose; hipoventilar → acidose. Diarreia perde HCO₃⁻ (acidose metabólica); vômito perde ácido (alcalose metabólica).</div>
+      <div><b>Difusão facilitada é passiva.</b> Ativo = ATP contra o gradiente. O K⁺ manda no repouso; o Na⁺ despolariza; o K⁺ repolariza; o Ca²⁺ libera neurotransmissor.</div>
+      <div><b>Q = ΔP/R</b>; R ∝ 1/raio⁴. Velocidade ≠ fluxo. 1º som de Korotkoff = sistólica. Laplace: tensão ∝ P × raio.</div>
+      <div><b>Boyle</b> (P×V), <b>Dalton</b> (pressões parciais), <b>Fick</b> (área, gradiente, espessura). Edema ↑ espessura; enfisema ↓ área. Surfactante ↓ tensão superficial.</div>
+      <div><b>Hidrostática favorece</b>, oncótica opõe. Água reabsorvida por osmose. Clearance da creatinina estima a TFG. Diálise: difusão + ultrafiltração.</div>
+      <div><b>Miopia</b> = antes da retina, divergente. <b>Hipermetropia</b> = depois, convergente. Altura = frequência; intensidade = dB. Raios X e gama ionizam; luz e IV não.</div>
+    </div>
+    <h4>Glossário rápido</h4>
+    <div class="nums" style="columns:2;font-size:9pt">
+      <b>Aquaporina:</b> canal proteico para água.<br>
+      <b>Clearance:</b> volume de plasma depurado por tempo.<br>
+      <b>Complacência:</b> facilidade de expansão dos pulmões.<br>
+      <b>Condução saltatória:</b> entre nós de Ranvier, em fibras mielinizadas.<br>
+      <b>Dosímetro:</b> mede a dose de radiação recebida.<br>
+      <b>Gasometria arterial:</b> pH, PCO₂ e bicarbonato.<br>
+      <b>Henderson-Hasselbalch:</b> pH = pKa + log([HCO₃⁻]/[CO₂]).<br>
+      <b>Pressão oncótica:</b> parcela osmótica das proteínas plasmáticas.<br>
+      <b>Osmolaridade:</b> partículas osmoticamente ativas por litro.<br>
+      <b>Período refratário:</b> intervalo sem resposta a novo estímulo.<br>
+      <b>Surfactante:</b> reduz a tensão superficial alveolar.<br>
+      <b>Tonicidade:</b> comparação de osmolaridade com o meio celular.
+    </div>
+    <div class="fill"></div>
+    <p style="margin:0;font-size:8.8pt;color:#fff;font-weight:700;text-shadow:1px 1px 0 var(--ink)">Referências básicas: DURÁN, J. E. R. <i>Biofísica: fundamentos e aplicações</i> (Pearson, 2011); HENEINE, I. F. <i>Biofísica Básica</i> (Atheneu, 2010); OKUNO, E.; CALDAS, I. L.; CHOW, C. <i>Física para Ciências Biológicas e Biomédicas</i> (Harbra, 1986). Complementares: GARCIA, E. A. C. <i>Biofísica</i> (Sarvier, 2002); MOURÃO JÚNIOR, C. A.; ABRAMOV, D. M. <i>Biofísica essencial</i> (Guanabara Koogan, 2012).</p>
+  </div></div>
+  <div class="pagenum" style="color:#fff"><span class="credit" style="color:#eee">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 11</div>
+</section>
+
+<!-- ================= PÁGINA 12 — MINI-SIMULADO ================= -->
+<section class="page">
+  <div class="pad" style="display:flex;flex-direction:column;gap:3mm">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end"><div><span class="hq-title" style="font-size:24pt;color:#7DE2C9">Mini-simulado</span><div style="font-family:var(--title);font-weight:600;font-size:11pt">Doze questões selecionadas das questões de fixação da apostila (uma ou duas por unidade). Marque e confira o gabarito.</div></div><span class="label">AV1 · AV2</span></div>
+    <div class="quiz">
+      <div class="q"><b>1.</b> Uma hemácia colocada em solução hipotônica tende a:<span>a) manter o volume. b) murchar (crenação). c) inchar e sofrer hemólise. d) perder hemoglobina sem mudar de volume. e) dissolver-se por difusão.</span></div>
+      <div class="q"><b>2.</b> Segundo a lei de Fick, a difusão é FAVORECIDA por:<span>a) menor área e maior espessura. b) maior área, maior gradiente e menor espessura. c) menor gradiente. d) gasto de ATP. e) temperatura mais baixa.</span></div>
+      <div class="q"><b>3.</b> A faixa normal de pH do sangue arterial é:<span>a) 6,8 a 7,0. b) 7,0 a 7,2. c) 7,35 a 7,45. d) 7,6 a 7,8. e) 8,0 a 8,4.</span></div>
+      <div class="q"><b>4.</b> A hiperventilação, ao eliminar CO₂ em excesso, tende a causar:<span>a) acidose respiratória. b) alcalose respiratória. c) acidose metabólica. d) alcalose metabólica. e) nenhuma alteração.</span></div>
+      <div class="q"><b>5.</b> A bomba de sódio-potássio, a cada ciclo, transporta:<span>a) 2 Na⁺ para fora e 3 K⁺ para dentro. b) 3 Na⁺ para fora e 2 K⁺ para dentro. c) 3 Na⁺ para dentro e 2 K⁺ para fora. d) 1 Na⁺ e 1 K⁺ no mesmo sentido. e) apenas água.</span></div>
+      <div class="q"><b>6.</b> A despolarização do potencial de ação deve-se, principalmente, à:<span>a) saída de K⁺. b) entrada rápida de Na⁺. c) entrada de Cl⁻. d) ação da bomba Na⁺/K⁺. e) saída de Ca²⁺.</span></div>
+      <div class="q"><b>7.</b> Reduzir o raio de um vaso pela metade aumenta a resistência em aproximadamente:<span>a) 2 vezes. b) 4 vezes. c) 8 vezes. d) 16 vezes. e) 32 vezes.</span></div>
+      <div class="q"><b>8.</b> Na medida da PA, o primeiro som de Korotkoff corresponde à pressão:<span>a) diastólica. b) sistólica. c) média. d) de pulso. e) venosa.</span></div>
+      <div class="q"><b>9.</b> No alvéolo, os valores aproximados de PO₂ e PCO₂ são, respectivamente:<span>a) 40 e 46 mmHg. b) 100 e 40 mmHg. c) 160 e 0 mmHg. d) 760 e 100 mmHg. e) 21 e 79 mmHg.</span></div>
+      <div class="q"><b>10.</b> A força que se OPÕE à filtração glomerular é a:<span>a) pressão hidrostática capilar. b) pressão oncótica das proteínas plasmáticas. c) pressão de pulso. d) pressão arterial média. e) pressão de vapor.</span></div>
+      <div class="q"><b>11.</b> A perda de calor pela vaporização do suor é um exemplo de:<span>a) condução. b) convecção. c) radiação. d) evaporação. e) metabolismo basal.</span></div>
+      <div class="q"><b>12.</b> Os três pilares da radioproteção são:<span>a) tempo, distância e blindagem. b) dose, taxa e energia. c) gray, sievert e becquerel. d) raio X, gama e beta. e) avental, luva e máscara.</span></div>
+    </div>
+    <div class="gab"><b>Gabarito:</b> 1-c · 2-b · 3-c · 4-b · 5-b · 6-b · 7-d · 8-b · 9-b · 10-b · 11-d · 12-a. Errou? Volte à unidade correspondente e releia o conceito-chave. Os simulados 1, 2 e 3 da apostila têm 25 questões cada, com gabarito comentado.</div>
+    <div class="grid2">
+      <div class="tool" style="background:#FFF6B0"><h3>Discursivas para treinar (AV1)</h3>
+        <div>• Explique a diferença entre difusão e osmose e relacione tonicidade à escolha segura de soluções para hidratação venosa.</div>
+        <div>• Explique como o tampão bicarbonato mantém o pH e como pulmões e rins participam da regulação ácido-base.</div>
+        <div>• Descreva as fases do potencial de ação e os íons envolvidos; explique o “tudo ou nada” e o período refratário.</div>
+        <div>• Com base em Q = ΔP/R e na lei de Poiseuille, explique como vasoconstrição e vasodilatação afetam resistência e PA, e relacione à técnica de medida.</div>
+        <div>• Explique a ventilação pela lei de Boyle e as trocas gasosas pela lei de Fick, relacionando à oxigenoterapia.</div></div>
+      <div class="tool" style="background:#D5F5E3"><h3>Roteiro de estudo (da apostila)</h3>
+        <div><b>Antes da aula:</b> leia a introdução e os objetivos da unidade.</div>
+        <div><b>Durante a leitura:</b> grife os conceitos-chave e as fórmulas; faça os desenhos pedidos (hemácias, bomba, potencial de ação).</div>
+        <div><b>Depois da aula:</b> refaça as questões de fixação e confira o gabarito comentado.</div>
+        <div><b>Na revisão:</b> releia as sínteses, os glossários e faça os três simulados; use a Bancada Virtual de Biofísica (simuladores das Unidades 1 e 2).</div>
+        <div style="margin-top:2mm" class="row"><div class="ill" data-scene="studentsWave" style="width:26mm;height:30mm;flex:0 0 26mm"></div><div style="font-family:var(--comic);font-weight:700;font-size:9.6pt">“Dominar esses princípios torna o cuidado mais seguro e consciente.”</div></div></div>
+    </div>
+    <div class="small center" style="margin-top:auto">Cartilha educativa da disciplina Biofísica · Faculdade de Tecnologia do Amapá · Autoria: Prof. Dr. Patrício da Silva Almeida · Pode ser reproduzida para fins educativos.</div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 12</div>
+</section>
+
+<script src="../shared/ill.js"></script>
+</body>
+</html>
