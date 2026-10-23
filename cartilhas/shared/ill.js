@@ -898,6 +898,105 @@
   SCENES.v5 = () => nc(`${plainWall(240, 130, '#E8F8F5')}${floor(240, 130, 40, '#F2E394')}${sparkles(200, 36)}${put(NURSE({ armR: 'show', holdR: 'sticker', expr: 'bigsmile' }), 70, 166, 0.5)}${put(KID({ armL: 'up', armR: 'hold', holdR: 'teddy', expr: 'bigsmile', headphones: true }), 180, 166, 0.46, true)}`);
   SCENES.v6 = () => nc(`${plainWall(240, 130, '#E8F8F5')}${floor(240, 130, 40, '#F2E394')}${door(170, 20, 56, 112)}${put(NURSE({ armL: 'wave', expr: 'bigsmile' }), 60, 166, 0.5)}${put(MOM({ expr: 'happy' }), 130, 166, 0.46)}${put(KID({ armL: 'wave', armR: 'hold', holdR: 'teddy', expr: 'bigsmile', headphones: true }), 112, 166, 0.4, true)}${bubble({ x: 6, y: 6, w: 100, h: 34, text: 'Tchau! Até a próxima.', tail: [60, 60], size: 10 })}`);
 
+
+  // ======= HOSPITAL: EMERGÊNCIA E INTERNAÇÃO =======
+  const DOC = (o = {}) => person(Object.assign({ skin: '#F7D6B9', hair: '#8D6E63', hairStyle: 'side', shirt: '#2E86C1', pants: '#2E86C1', coat: '#FFFFFF', sleeve: 'long', shoes: '#FFFFFF' }, o));
+  ITEMS.oximeter = () => `<g><rect x="-14" y="-10" width="28" height="20" rx="5" fill="#2C3E50" ${S}/><rect x="-9" y="-6" width="18" height="8" rx="2" fill="#58D68D"/><circle cx="0" cy="6" r="2" fill="#E74C3C"/></g>`;
+  ITEMS.scale = () => `<g><rect x="-30" y="-20" width="60" height="40" rx="6" fill="#FFFFFF" ${S}/><circle cx="-18" cy="-6" r="6" fill="#58D68D" ${S} stroke-width="2"/><circle cx="0" cy="-6" r="6" fill="#F7C21B" ${S} stroke-width="2"/><circle cx="18" cy="-6" r="6" fill="#E74C3C" ${S} stroke-width="2"/><path d="M-21 -5 q3 3 6 0 M-3 -6 h6 M15 -3 q3 -3 6 0" fill="none" ${S} stroke-width="2"/><rect x="-22" y="6" width="44" height="6" rx="3" fill="#BDC3C7"/></g>`;
+  function hospBed(x, y, w = 220, color = '#AED6F1') {
+    return `<g transform="translate(${x} ${y})">
+      <rect x="0" y="-70" width="${w}" height="26" rx="6" fill="${color}" ${S}/><rect x="-10" y="-120" width="14" height="76" rx="4" fill="#5DADE2" ${S}/><rect x="${w - 4}" y="-104" width="14" height="60" rx="4" fill="#5DADE2" ${S}/>
+      <rect x="12" y="-86" width="56" height="20" rx="8" fill="#FFFFFF" ${S}/>
+      <rect x="0" y="-44" width="${w}" height="12" fill="#95A5A6" ${S}/>
+      <rect x="30" y="-104" width="${w - 60}" height="8" rx="4" fill="#95A5A6" ${S}/><line x1="60" y1="-96" x2="60" y2="-72" ${S} stroke-width="4"/><line x1="${w - 60}" y1="-96" x2="${w - 60}" y2="-72" ${S} stroke-width="4"/>
+      <rect x="16" y="-32" width="10" height="36" fill="#7F8C8D" ${S}/><rect x="${w - 26}" y="-32" width="10" height="36" fill="#7F8C8D" ${S}/><circle cx="21" cy="6" r="7" fill="#2C3E50" ${S}/><circle cx="${w - 21}" cy="6" r="7" fill="#2C3E50" ${S}/></g>`;
+  }
+  function ivPole(x, y) {
+    return `<g transform="translate(${x} ${y})"><rect x="-3" y="-190" width="6" height="190" fill="#95A5A6" ${S}/><path d="M-26 0 L26 0 M-18 -8 L18 -8" fill="none" ${S} stroke-width="5"/><path d="M-30 -196 L30 -196" ${S} stroke-width="5"/><rect x="-36" y="-192" width="20" height="40" rx="5" fill="#D6EAF8" ${S}/><rect x="-32" y="-166" width="12" height="12" fill="#AED6F1"/><path d="M-26 -152 q0 60 20 90" fill="none" stroke="#5DADE2" stroke-width="3"/></g>`;
+  }
+  function monitor(x, y) {
+    return `<g transform="translate(${x} ${y})"><rect x="-4" y="-80" width="8" height="80" fill="#95A5A6" ${S}/><rect x="-44" y="-140" width="88" height="64" rx="6" fill="#ECF0F1" ${S}/><rect x="-38" y="-134" width="76" height="46" rx="3" fill="#1C2833"/>
+      <path d="M-34 -108 h12 l4 -10 l6 20 l6 -24 l6 14 h22" fill="none" stroke="#58D68D" stroke-width="2.5"/><path d="M-34 -96 h14 l4 -6 l4 8 l4 -6 h30" fill="none" stroke="#5DADE2" stroke-width="2"/>${htmlText(-38, -134, 76, 14, '98  ♥ 88', 8, 800, '#58D68D')}
+      <circle cx="-20" cy="-72" r="0" /></g>`;
+  }
+  function oxygen(x, y) { return `<g transform="translate(${x} ${y})"><rect x="-14" y="-110" width="28" height="110" rx="10" fill="#58D68D" ${S}/><rect x="-6" y="-124" width="12" height="16" rx="3" fill="#7F8C8D" ${S}/><rect x="-8" y="-70" width="16" height="30" rx="3" fill="#FFFFFF" opacity=".8"/></g>`; }
+  function hospWindowNight(x, y, w, h) { return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="4" fill="#1F3A5F" ${S}/><line x1="${x + w / 2}" y1="${y}" x2="${x + w / 2}" y2="${y + h}" ${S}/><line x1="${x}" y1="${y + h / 2}" x2="${x + w}" y2="${y + h / 2}" ${S}/><circle cx="${x + w * 0.7}" cy="${y + h * 0.3}" r="${h * 0.12}" fill="#FFF6B0"/>${star(x + w * 0.25, y + h * 0.3, 4, '#FFF6B0')}${star(x + w * 0.4, y + h * 0.7, 3, '#FFF6B0')}`; }
+  const HOSP = (extra = '', wall = '#EAF2F8') => `${plainWall(420, 232, wall)}${floor(420, 232, 68, '#D5DBDB')}<rect x="0" y="150" width="420" height="10" fill="#5DADE2" ${S}/>${extra}`;
+
+  SCENES.h_cover = () => scene(420, 470, `
+    ${plainWall(420, 332, '#EAF2F8')}${floor(420, 332, 138, '#D5DBDB')}<rect x="0" y="230" width="420" height="12" fill="#5DADE2" ${S}/>
+    ${window_(296, 40, 96, 72)}
+    ${wallSign(30, 150, 'Hospital', 110, 36)}
+    ${hospBed(30, 330, 200)}${ivPole(250, 330)}${monitor(360, 330)}
+    ${put(NURSE({ armL: 'wave', armR: 'hold', holdR: 'clipboard', expr: 'bigsmile' }), 310, 440, 1.0)}
+    ${put(KID({ headphones: true, armL: 'hold', holdL: 'teddy', expr: 'happy' }), 140, 436, 0.82, true)}
+  `, '', 'xMidYMax slice');
+  SCENES.h_triagem = () => scene(420, 300, HOSP(`
+    ${put(NURSE({ armR: 'show', holdR: 'scale', expr: 'happy' }), 110, 296, 0.8)}
+    ${wallSign(8, 196, 'Classificação de risco', 150, 26)}
+    ${put(MOM({ armL: 'hold', holdL: 'card', expr: 'worried' }), 290, 296, 0.78)}
+    ${put(KID({ armR: 'hold', holdR: 'teddy', headphones: true, armL: 'chin', expr: 'worried' }), 372, 296, 0.64)}
+    ${bubble({ x: 150, y: 10, w: 220, h: 60, text: 'Ele tem TEA? Vou marcar na ficha e já levo vocês para a sala calma. Me mostra na carinha: dói pouco, médio ou muito?', tail: [112, 110], size: 10.5 })}
+  `));
+  SCENES.h_box = () => scene(420, 300, HOSP(`
+    ${monitor(60, 232)}${oxygen(130, 232)}
+    ${hospBed(160, 232, 190, '#D6EAF8')}
+    ${put(KID({ sit: true, headphones: true, sunglasses: true, armL: 'hold', holdL: 'teddy', armR: 'front', expr: 'neutral' }), 270, 236, 0.58)}
+    ${put(DOC({ armR: 'show', holdR: 'oximeter', expr: 'happy' }), 110, 296, 0.8, false)}
+    ${put(MOM({ expr: 'happy', armL: 'down' }), 392, 296, 0.56, true)}
+    ${bubble({ x: 10, y: 10, w: 210, h: 56, text: 'Este é o dedinho de luz. Só aperta de leve. Primeiro na mamãe, depois em você.', tail: [110, 118], size: 11 })}
+  `, '#FDFEFE'));
+  SCENES.h_quarto = () => scene(420, 300, HOSP(`
+    ${window_(300, 30, 100, 70)}
+    ${hospBed(30, 232, 210)}${ivPole(262, 232)}
+    ${put(KID({ sit: true, headphones: true, armL: 'hold', holdL: 'teddy', expr: 'happy' }), 150, 236, 0.58)}
+    <rect x="330" y="110" width="80" height="100" rx="6" fill="#FFFFFF" ${S}/>${at(ICON.clock(), 338, 116, 0.4)}${at(ICON.tooth(), 366, 116, 0.4)}${at(ICON.toy(), 338, 144, 0.4)}${at(ICON.calendar(), 366, 144, 0.4)}${at(ICON.pause(), 338, 172, 0.4)}${at(ICON.home(), 366, 172, 0.4)}
+    ${put(NURSE({ armR: 'point', expr: 'happy' }), 300, 296, 0.64)}
+    ${bubble({ x: 120, y: 6, w: 170, h: 56, text: 'Este é o seu quadro do dia: remédio, lanche, brincar, visita, dormir.', tail: [300, 108], size: 10.5 })}
+  `));
+  SCENES.h_noite = () => scene(420, 300, `
+    ${plainWall(420, 232, '#2C3E50')}${floor(420, 232, 68, '#34495E')}<rect x="0" y="150" width="420" height="10" fill="#1F3A5F" ${S}/>
+    ${hospWindowNight(300, 30, 100, 70)}
+    ${hospBed(30, 232, 210, '#5D6D7E')}
+    ${put(KID({ sit: true, armL: 'hold', holdL: 'teddy', expr: 'happyclosed' }), 150, 236, 0.58)}
+    ${zzz(190, 100)}
+    ${waitingChairs(320, 232, 1, '#7D3C98')}${put(MOM({ sit: true, expr: 'happyclosed', armL: 'lap' }), 352, 238, 0.6)}
+    <rect x="30" y="40" width="60" height="30" rx="6" fill="#F7C21B" opacity=".25"/><circle cx="60" cy="55" r="6" fill="#FFF6B0"/>
+    ${at(ICON.mute(), 110, 36, 0.7)}${at(ICON.lampdim(), 160, 36, 0.7)}
+  `);
+  SCENES.h_cirurgia = () => scene(420, 300, HOSP(`
+    ${wallSign(20, 24, 'Centro cirúrgico', 140, 28)}
+    ${put(NURSE({ maskUp: true, gloves: true, armR: 'show', holdR: 'mask', expr: 'happy' }), 120, 296, 0.8)}
+    ${put(KID({ armL: 'hold', holdL: 'teddy', armR: 'hold', holdR: 'card', headphones: true, expr: 'happy' }), 290, 296, 0.7)}
+    ${put(MOM({ expr: 'happy' }), 380, 296, 0.6, true)}
+    ${bubble({ x: 180, y: 10, w: 220, h: 56, text: 'Esta é a máscara do “ar com cheirinho”. Você escolhe o cheiro e segura o ursinho até dormir.', tail: [120, 110], size: 10.5 })}
+  `, '#E8F8F5'));
+  ITEMS.mask = () => `<g><path d="M-22 -8 Q0 -16 22 -8 L18 14 Q0 22 -18 14 Z" fill="#A8D8EA" ${S}/><path d="M-22 -6 q-10 -2 -12 8 M22 -6 q10 -2 12 8" fill="none" ${S}/></g>`;
+  SCENES.h_alta = () => scene(420, 300, HOSP(`
+    ${door(20, 70, 70, 162)}${wallSign(100, 30, 'Alta', 60, 28)}
+    ${sparkles(330, 70)}
+    ${put(NURSE({ armL: 'wave', armR: 'hold', holdR: 'clipboard', expr: 'bigsmile' }), 150, 296, 0.8)}
+    ${put(MOM({ armR: 'hold', holdR: 'card', expr: 'bigsmile' }), 300, 296, 0.8, true)}
+    ${put(KID({ armL: 'wave', armR: 'hold', holdR: 'gift', headphones: true, expr: 'bigsmile' }), 380, 296, 0.64, true)}
+    ${bubble({ x: 160, y: 10, w: 240, h: 56, text: 'Aqui estão as orientações com figuras. Vocês foram incríveis. Tchau!', tail: [150, 112], size: 11 })}
+  `));
+  SCENES.h_crise = () => scene(420, 240, `
+    ${plainWall(420, 180, '#FADBD8')}${floor(420, 180, 60, '#D5DBDB')}
+    ${monitor(50, 180)}${htmlText(90, 20, 90, 30, 'BIP BIP!', 20, 800, '#C0392B')}${htmlText(290, 30, 110, 30, 'VRRR!', 20, 800, '#C0392B')}
+    ${put(KID({ armL: 'ears', armR: 'ears', expr: 'scared' }), 210, 236, 0.74)}
+    ${noteMusic(320, 90)}${noteMusic(130, 110)}
+  `);
+  SCENES.docWave = () => scene(200, 310, put(DOC({ armL: 'wave', expr: 'bigsmile' }), 100, 305, 1));
+  // história social "Eu no hospital" (6 quadros)
+  const hc = (inner) => scene(240, 170, inner);
+  const HW = (x = '') => `${plainWall(240, 130, '#EAF2F8')}${floor(240, 130, 40, '#D5DBDB')}${x}`;
+  SCENES.e1 = () => hc(HW(`${door(150, 20, 56, 112)}${wallSign(150, 4, 'Hospital', 60, 18)}${put(MOM({ expr: 'happy' }), 60, 166, 0.5)}${put(KID({ armR: 'hold', holdR: 'teddy', headphones: true, expr: 'neutral' }), 108, 166, 0.42)}`));
+  SCENES.e2 = () => hc(HW(`${put(NURSE({ armR: 'show', holdR: 'scale', expr: 'happy' }), 70, 166, 0.5)}${put(KID({ expr: 'neutral', headphones: true, armR: 'hold', holdR: 'teddy' }), 180, 166, 0.46, true)}${bubble({ x: 6, y: 6, w: 110, h: 34, text: 'Dói pouco, médio ou muito?', tail: [70, 60], size: 9.5 })}`));
+  SCENES.e3 = () => hc(HW(`${at(`<g transform="scale(.5)">${hospBed(0, 0, 220, '#D6EAF8')}</g>`, 90, 130, 1)}${put(KID({ sit: true, headphones: true, armL: 'hold', holdL: 'teddy', expr: 'happy' }), 150, 136, 0.36)}${put(DOC({ armR: 'show', holdR: 'oximeter', expr: 'happy' }), 50, 166, 0.48)}`));
+  SCENES.e4 = () => hc(HW(`${at(`<g transform="scale(.5)">${hospBed(0, 0, 220)}</g>`, 70, 130, 1)}${at(`<g transform="scale(.5)">${ivPole(0, 0)}</g>`, 190, 130, 1)}${put(KID({ sit: true, headphones: true, armL: 'hold', holdL: 'teddy', expr: 'happy' }), 130, 136, 0.36)}<rect x="200" y="20" width="34" height="46" rx="4" fill="#fff" ${S} stroke-width="2"/>${at(ICON.clock(), 204, 24, 0.2)}${at(ICON.toy(), 218, 24, 0.2)}${at(ICON.calendar(), 204, 40, 0.2)}${at(ICON.pause(), 218, 40, 0.2)}`));
+  SCENES.e5 = () => hc(`${plainWall(240, 130, '#2C3E50')}${floor(240, 130, 40, '#34495E')}${hospWindowNight(170, 16, 56, 40)}${at(`<g transform="scale(.5)">${hospBed(0, 0, 220, '#5D6D7E')}</g>`, 40, 130, 1)}${put(KID({ sit: true, armL: 'hold', holdL: 'teddy', expr: 'happyclosed' }), 100, 136, 0.36)}${zzz(120, 50)}${put(MOM({ sit: true, expr: 'happyclosed', armL: 'lap' }), 200, 136, 0.38)}`);
+  SCENES.e6 = () => hc(HW(`${door(170, 20, 56, 112)}${sparkles(40, 30)}${put(NURSE({ armL: 'wave', expr: 'bigsmile' }), 60, 166, 0.5)}${put(MOM({ expr: 'happy' }), 130, 166, 0.46)}${put(KID({ armL: 'wave', armR: 'hold', holdR: 'gift', expr: 'bigsmile', headphones: true }), 112, 166, 0.4, true)}${bubble({ x: 6, y: 6, w: 100, h: 34, text: 'Vou para casa!', tail: [112, 60], size: 10 })}`));
+
   // --- sinais do card ---
   SCENES.sig_stop = () => scene(120, 120, `<circle cx="60" cy="60" r="54" fill="#E74C3C" ${S}/>${at(ICON.stop(), 28, 24, 1.1)}`);
   SCENES.sig_ok = () => scene(120, 120, `<circle cx="60" cy="60" r="54" fill="#58D68D" ${S}/>${at(ICON.thumbs(), 26, 26, 1.1)}`);

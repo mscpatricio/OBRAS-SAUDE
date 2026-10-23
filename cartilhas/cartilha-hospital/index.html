@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Cartilha — Pessoa com TEA na Emergência e na Internação Hospitalar</title>
+<link rel="stylesheet" href="../shared/style.css">
+<style>
+  .cover { background: #5DADE2; }
+  .cover .tiles { position: absolute; inset: 0; background-image: linear-gradient(#fff 0 3px, transparent 3px), linear-gradient(90deg, #fff 0 3px, transparent 3px); background-size: 24mm 24mm; opacity: .5; }
+  .cover .titlebox { position: absolute; left: 14mm; right: 14mm; top: 16mm; background: #fff; border: 3px solid var(--ink); border-radius: 10px; padding: 7mm 8mm 6mm; box-shadow: 5px 5px 0 var(--ink); text-align: center; }
+  .cover .titlebox .hq-title { font-size: 32pt; }
+  .cover .titlebox .sub { margin-top: 3mm; font-family: var(--title); font-weight: 600; font-size: 14pt; line-height: 1.15; }
+  .cover .art { position: absolute; left: 0; right: 0; top: 76mm; bottom: 0; }
+  .cover .art .ill { width: 100%; height: 100%; }
+  .cover .badge { position: absolute; left: 14mm; top: 70mm; transform: rotate(-5deg); }
+  .cover .foot { position: absolute; left: 14mm; right: 14mm; bottom: 12mm; display: flex; justify-content: space-between; align-items: flex-end; }
+  .cover .foot .who { font-family: var(--title); font-weight: 800; font-size: 11pt; background: #fff; border: 3px solid var(--ink); border-radius: 999px; padding: 2mm 6mm; box-shadow: 3px 3px 0 var(--ink); }
+  .cover .foot .org { font-size: 9pt; font-weight: 700; text-align: right; background: rgba(255,255,255,.92); border: 2.5px solid var(--ink); border-radius: 8px; padding: 1.5mm 4mm; }
+
+  .section-head { display: flex; align-items: center; gap: 5mm; margin-bottom: 4mm; }
+  .section-head .num { width: 16mm; height: 16mm; border-radius: 50%; border: 3px solid var(--ink); display: flex; align-items: center; justify-content: center; font-family: var(--title); font-weight: 800; font-size: 22pt; box-shadow: 3px 3px 0 var(--ink); }
+  .section-head .hq-title { font-size: 25pt; }
+  .section-head .sub { font-family: var(--title); font-weight: 600; font-size: 12pt; color: #444; }
+  .m-em .num { background: var(--red); } .m-em2 .num { background: #F39C12; } .m-int .num { background: var(--blue); } .m-int2 .num { background: #BB8FCE; }
+  .m-em .hq-title { color: #F5B7B1; } .m-em2 .hq-title { color: #FAD7A0; } .m-int .hq-title { color: #7FD1F5; } .m-int2 .hq-title { color: #D7BDE2; }
+  .strip { position: absolute; left: 0; top: 0; bottom: 0; width: 7mm; }
+  .m-em .strip { background: var(--red); } .m-em2 .strip { background: #F39C12; } .m-int .strip { background: var(--blue); } .m-int2 .strip { background: #BB8FCE; }
+  .content { position: absolute; left: 16mm; right: 12mm; top: 12mm; bottom: 12mm; display: flex; flex-direction: column; }
+  .panels { display: grid; gap: 4mm; } .panels.two { grid-template-columns: 1fr 1fr; }
+  .panel-wrap { display: flex; flex-direction: column; gap: 2mm; } .panel-wrap .caption { padding: 0 1mm; }
+  .fill { flex: 1; }
+  .box.compact li { margin-bottom: 2mm; font-size: 10pt; line-height: 1.3; } .box.compact h3 { font-size: 14pt; }
+  .tip { background: var(--blue-pale); border: 3px dashed var(--blue); border-radius: 10px; padding: 3mm 4mm; font-size: 10pt; display: flex; gap: 3mm; align-items: center; }
+  .tip .ic { width: 11mm; height: 11mm; flex: 0 0 11mm; } .tip b { font-family: var(--title); font-weight: 800; }
+  .tip.red { background: #FDE2E0; border-color: var(--red); }
+
+  .intro h2 { font-family: var(--title); font-weight: 800; font-size: 20pt; margin: 0 0 2mm; }
+  .intro p { margin: 0 0 3mm; font-size: 11pt; }
+  .moments { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+  .moment { border: 3px solid var(--ink); border-radius: 10px; padding: 3mm 4mm; font-size: 10pt; }
+  .moment b { display: block; font-family: var(--title); font-weight: 800; font-size: 13pt; }
+  .moment.em { background: #FDE2E0; } .moment.int { background: #D6EAF8; }
+  .kit { border: 3px solid var(--ink); border-radius: 12px; padding: 4mm; display: flex; gap: 4mm; align-items: center; box-shadow: 4px 4px 0 var(--ink); background: #EAF2F8; }
+  .kit .ill { width: 28mm; height: 36mm; flex: 0 0 28mm; }
+  .kit h4 { margin: 0 0 1.5mm; font-family: var(--title); font-weight: 800; font-size: 13pt; }
+  .kit p { margin: 0; font-size: 10pt; }
+
+  .ministeps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; }
+  .ministep { border: 3px solid var(--ink); border-radius: 10px; overflow: hidden; background: #fff; }
+  .ministep .art { height: 34mm; border-bottom: 3px solid var(--ink); }
+  .ministep .art .ill { height: 100%; }
+  .ministep .txt { padding: 1.6mm 2.2mm; font-family: var(--comic); font-weight: 700; font-size: 9.4pt; line-height: 1.2; display: flex; gap: 2mm; align-items: flex-start; }
+  .ministep .n { flex: 0 0 7mm; width: 7mm; height: 7mm; border-radius: 50%; border: 2.5px solid var(--ink); background: var(--yellow-strong); font-family: var(--title); font-weight: 800; font-size: 10pt; display: flex; align-items: center; justify-content: center; }
+
+  .info { background: #5DADE2; }
+  .info .stripes { position: absolute; inset: 0; opacity: .35; background: repeating-linear-gradient(135deg, #7FD1F5 0 10px, #9ADCF8 10px 20px); }
+  .info .content { left: 12mm; }
+  .info .dashed-box { height: 100%; display: flex; flex-direction: column; }
+  .info .hq-title { font-size: 30pt; text-align: center; display: block; margin-bottom: 3mm; }
+  .info p, .info li { font-family: var(--comic); font-weight: 700; font-size: 10pt; line-height: 1.3; color: #0B2A3A; }
+  .info p { margin: 0 0 2.4mm; }
+  .info h4 { font-family: var(--title); font-weight: 800; font-size: 12.5pt; margin: 2mm 0 1.5mm; color: #0B2A3A; }
+  .info table { width: 100%; border-collapse: collapse; background: rgba(255,255,255,.88); border: 2.5px solid var(--ink); }
+  .info th, .info td { border: 2px solid var(--ink); padding: 1.4mm 2.4mm; font-family: var(--comic); font-weight: 700; font-size: 9.2pt; vertical-align: top; text-align: left; }
+  .info th { font-family: var(--title); font-weight: 800; font-size: 10.5pt; background: #FFF6B0; }
+  .info td.no { background: #FDE2E0; } .info td.yes { background: #E3F7D9; }
+  .painscale { display: flex; gap: 2mm; align-items: center; justify-content: space-between; background: rgba(255,255,255,.9); border: 2.5px solid var(--ink); border-radius: 8px; padding: 2mm 3mm; }
+  .painscale .face { text-align: center; font-family: var(--comic); font-weight: 700; font-size: 8.5pt; line-height: 1.1; }
+  .painscale .face .f { width: 11mm; height: 11mm; border-radius: 50%; border: 2.5px solid var(--ink); margin: 0 auto 1mm; display: flex; align-items: center; justify-content: center; font-size: 16pt; }
+</style>
+</head>
+<body>
+
+<!-- ================= CAPA ================= -->
+<section class="page cover">
+  <div class="tiles"></div>
+  <div class="art"><div class="ill" data-scene="h_cover"></div></div>
+  <div class="titlebox">
+    <div class="hq-title">A Pessoa com TEA na<br>Emergência e na Internação</div>
+    <div class="sub">Cartilha de orientação para a equipe hospitalar:<br>pronto-socorro, enfermaria, exames e cirurgia</div>
+  </div>
+  <div class="badge"><span class="label">Classificação de risco · Dor · Procedimentos · Rotina · Alta</span></div>
+  <div class="foot">
+    <div class="who">Para enfermagem, equipe médica e multiprofissional</div>
+    <div class="org">Material educativo · Autoria: Dr. Patrício Almeida<br>Série “Atendimento à Pessoa com TEA”</div>
+  </div>
+</section>
+
+<!-- ================= PÁGINA 2 — APRESENTAÇÃO ================= -->
+<section class="page">
+  <div class="pad intro" style="display:flex;flex-direction:column;gap:4mm">
+    <div>
+      <h2>Por que esta cartilha</h2>
+      <p>O hospital reúne tudo o que mais sobrecarrega a pessoa com Transtorno do Espectro Autista (TEA): <b>barulho de alarmes, luzes fortes, espera imprevisível, muitas pessoas desconhecidas, toques e procedimentos invasivos</b> e a quebra total da rotina. Na emergência, a crise de sobrecarga pode ser confundida com agitação ou “falta de limite”; na internação, dias de rotina quebrada aumentam o sofrimento e dificultam o tratamento.</p>
+      <p>Esta cartilha traz o manejo <b>por momento</b>: a chegada e a classificação de risco, a avaliação e os procedimentos na emergência, a admissão e a rotina na enfermaria, os exames, a cirurgia e a alta. Vale para crianças e adultos, com ou sem fala.</p>
+    </div>
+    <div class="kit">
+      <div class="ill" data-scene="docWave"></div>
+      <div><h4>Quem usa</h4><p>Enfermagem (triagem, pronto-socorro, enfermaria, UTI, centro cirúrgico), equipe médica, fisioterapia, nutrição, psicologia, serviço social e recepção. A página 7 (“Eu no hospital”) pode ser impressa e entregue à família na admissão.</p></div>
+    </div>
+    <div class="moments">
+      <div class="moment em"><b>EMERGÊNCIA</b>Identificar o TEA na classificação de risco, sala calma, avaliar a dor de outro jeito, um procedimento por vez, diferenciar crise de sobrecarga de agitação, nunca conter de primeira.</div>
+      <div class="moment int"><b>INTERNAÇÃO</b>Acompanhante 24 h, mesma equipe, rotina visual do dia, quarto com menos estímulos, objetos de casa, alimentação adaptada, preparo para exames e cirurgia, alta com orientações visuais.</div>
+    </div>
+    <div class="box" style="padding:4mm 6mm;box-shadow:none;background:#FAFAFA">
+      <h3 style="font-size:13pt;margin-bottom:2mm">O que você encontra aqui</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1mm 8mm;font-size:10pt">
+        <div><b>3</b> · Emergência: chegada, classificação de risco e espera</div>
+        <div><b>6</b> · Internação: exames, cirurgia e alta</div>
+        <div><b>4</b> · Emergência: avaliação da dor, procedimentos e crise</div>
+        <div><b>7</b> · História social “Eu no hospital” (para a família)</div>
+        <div><b>5</b> · Internação: admissão, quarto e rotina do dia</div>
+        <div><b>8</b> · Informativo, escala de dor e ficha do perfil sensorial</div>
+      </div>
+    </div>
+    <div class="tip"><div class="ic" data-icon="heart"></div><div><b>Regra de ouro:</b> previsibilidade, uma coisa de cada vez e nunca forçar. No hospital, o acompanhante é parte da equipe: ele conhece os sinais, as palavras e o que acalma.</div></div>
+    <div class="small">A pessoa com TEA tem direito a atendimento prioritário e a acompanhante em tempo integral (Lei 12.764/2012; Lei 13.146/2015; ECA e Estatuto do Idoso quando aplicáveis; Lei 13.977/2020, da Carteira de Identificação). Esta cartilha é educativa e não substitui os protocolos institucionais nem a avaliação clínica individual.</div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Dr. Patrício Almeida</span> · 2</div>
+</section>
+
+<!-- ================= PÁGINA 3 — EMERGÊNCIA: CHEGADA ================= -->
+<section class="page m-em">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">1</div><div><div class="hq-title">EMERGÊNCIA: a chegada</div><div class="sub">Classificação de risco, espera e primeiro contato</div></div></div>
+    <div class="panels two">
+      <div class="panel-wrap"><div class="panel" style="height:72mm"><div class="ill" data-scene="h_triagem"></div></div><div class="caption">1. Na classificação de risco, a enfermeira pergunta sobre o TEA, registra o alerta e usa a escala de faces para a dor. A família vai para a sala calma.</div></div>
+      <div class="panel-wrap"><div class="panel" style="height:72mm"><div class="ill" data-scene="h_crise"></div></div><div class="caption">2. O que leva à crise: alarmes, luz forte, gente demais, toques sem aviso e espera sem fim. Reduzir estímulos é parte do tratamento.</div></div>
+    </div>
+    <div style="height:4mm"></div>
+    <div class="box compact">
+      <h3>Checklist da chegada</h3>
+      <ul>
+        <li><div class="ic" data-icon="warn"></div><div><b>Pergunte e registre:</b> “Tem TEA ou outra condição que mude o jeito de atender?” Marque o alerta na ficha e na pulseira; comunique a equipe antes de cada contato. A Carteira de Identificação (CIPTEA) ajuda, mas não é obrigatória.</div></li>
+        <li><div class="ic" data-icon="steps"></div><div><b>Classificação de risco com atenção redobrada:</b> a pessoa com TEA pode <b>não demonstrar dor</b> da forma esperada ou reagir muito a um estímulo pequeno. Use a escala de faces, observe mudanças de comportamento e <b>ouça o acompanhante</b> (“ele nunca ficou assim”).</div></li>
+        <li><div class="ic" data-icon="lampdim"></div><div><b>Espera em sala calma</b> ou canto quieto: menos pessoas, luz suave, sem TV alta. Reduza o tempo de espera sempre que o quadro clínico permitir (prioridade legal).</div></li>
+        <li><div class="ic" data-icon="family"></div><div><b>Acompanhante o tempo todo</b>, inclusive em procedimentos, exames e sala de emergência, sempre que for seguro. Pergunte a ele: como comunica? o que acalma? o que piora? já fez acesso venoso?</div></li>
+        <li><div class="ic" data-icon="talk"></div><div><b>Uma pessoa de referência</b> fala com a pessoa; os demais falam com o acompanhante. Apresente-se pelo nome, diga o que vai fazer, na altura dos olhos, sem exigir contato visual.</div></li>
+        <li><div class="ic" data-icon="headphones"></div><div><b>Ofereça o kit sensorial:</b> fones ou abafadores, óculos escuros, objeto de conforto, brinquedo ou tablet. Permita que fique com o próprio celular e os fones.</div></li>
+        <li><div class="ic" data-icon="stop"></div><div><b>Combine os sinais:</b> mão levantada = PARE (quando não for emergência vital), polegar = tudo bem. Combine também o tempo: “conto até dez e solto”.</div></li>
+      </ul>
+    </div>
+    <div class="fill"></div>
+    <div class="tip"><div class="ic" data-icon="notes"></div><div><b>Peça a história em uma folha:</b> muitas famílias já têm um “passaporte” do TEA com o que funciona e o que não funciona. Fixe no prontuário e passe ao próximo plantão.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Dr. Patrício Almeida</span> · 3</div>
+</section>
+
+<!-- ================= PÁGINA 4 — EMERGÊNCIA: AVALIAÇÃO E PROCEDIMENTOS ================= -->
+<section class="page m-em2">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">2</div><div><div class="hq-title">EMERGÊNCIA: avaliação e procedimentos</div><div class="sub">Dor, exame físico, acesso venoso, medicação e crise</div></div></div>
+    <div class="panels two">
+      <div class="panel-wrap"><div class="panel" style="height:66mm"><div class="ill" data-scene="h_box"></div></div><div class="caption">3. No box, Falar–Mostrar–Fazer: oxímetro, estetoscópio, braçadeira e eletrodos primeiro no acompanhante ou no ursinho, depois na pessoa.</div></div>
+      <div class="panel-wrap"><div class="panel" style="height:66mm"><div class="ill" data-scene="stopSign"></div></div><div class="caption">4. Mão levantada é PARE. Quando a situação não é de risco de vida, parar, respirar e retomar evita a crise e a contenção.</div></div>
+    </div>
+    <div style="height:3mm"></div>
+    <div class="box compact">
+      <h3>Como proceder</h3>
+      <ul>
+        <li><div class="ic" data-icon="mirror"></div><div><b>Exame físico em etapas e com aviso:</b> “vou ouvir seu peito, vai ficar frio”. Comece pelo que incomoda menos; mãos e pés antes do rosto e da boca. Deixe a pessoa segurar o instrumento.</div></li>
+        <li><div class="ic" data-icon="steps"></div><div><b>Agrupe os procedimentos</b> (coleta, acesso, medicação) em um só momento, com o profissional mais experiente, para <b>uma punção só</b>. Anestésico tópico quando houver tempo. Garrote mostrado e testado antes.</div></li>
+        <li><div class="ic" data-icon="timer"></div><div><b>Diga o que vai sentir e por quanto tempo:</b> “aperta um pouco, conto até dez”. Evite “não vai doer” e “é rapidinho”. Distração ativa: vídeo, bolha, contagem.</div></li>
+        <li><div class="ic" data-icon="mute"></div><div><b>Reduza estímulos no box:</b> silencie alarmes não essenciais, luz direta desligada quando possível, uma voz de cada vez, sem equipe entrando e saindo.</div></li>
+        <li><div class="ic" data-icon="pause"></div><div><b>Crise de sobrecarga (meltdown) não é agitação psicomotora:</b> tapar ouvidos, gritar, balançar, bater em si, tentar fugir. Ação: retire estímulos, dê espaço e tempo, acompanhante perto, fale pouco. Não negocie nem toque sem aviso.</div></li>
+        <li><div class="ic" data-icon="warn"></div><div><b>Contenção física e sedação são o último recurso</b>, só com indicação clínica, decisão médica, consentimento do responsável e protocolo da instituição, pelo menor tempo possível, com registro. Se o procedimento pode esperar: pare, reagende, planeje.</div></li>
+        <li><div class="ic" data-icon="thumbs"></div><div><b>Encerre cada etapa com reforço:</b> “você deixou medir a pressão, muito bem”. Adesivo ou carimbo também vale para adultos que gostem.</div></li>
+      </ul>
+    </div>
+    <div class="fill"></div>
+    <div class="tip red"><div class="ic" data-icon="warn"></div><div><b>Atenção clínica:</b> dor abdominal, fratura, otite, constipação e refluxo muitas vezes aparecem só como mudança de comportamento, autoagressão ou recusa alimentar. Investigue causa orgânica antes de atribuir a “comportamento do autismo”.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Dr. Patrício Almeida</span> · 4</div>
+</section>
+
+<!-- ================= PÁGINA 5 — INTERNAÇÃO: ADMISSÃO E ROTINA ================= -->
+<section class="page m-int">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">3</div><div><div class="hq-title">INTERNAÇÃO: admissão e rotina</div><div class="sub">O quarto, o dia a dia e a noite</div></div></div>
+    <div class="panels two">
+      <div class="panel-wrap"><div class="panel" style="height:66mm"><div class="ill" data-scene="h_quarto"></div></div><div class="caption">5. Na admissão, a enfermeira monta com a família o quadro visual do dia: remédio, lanche, brincar, visita, banho, dormir. Objetos de casa ficam à vista.</div></div>
+      <div class="panel-wrap"><div class="panel" style="height:66mm"><div class="ill" data-scene="h_noite"></div></div><div class="caption">6. À noite: luz baixa, alarmes no mínimo, acompanhante ao lado, aferições agrupadas para não acordar a cada hora.</div></div>
+    </div>
+    <div style="height:3mm"></div>
+    <div class="box compact">
+      <h3>Checklist da internação</h3>
+      <ul>
+        <li><div class="ic" data-icon="family"></div><div><b>Acompanhante em tempo integral</b>, com cadeira ou poltrona e refeição. Revezamento combinado para não trocar de pessoa de surpresa. Ele participa dos cuidados (banho, alimentação, medicação oral).</div></li>
+        <li><div class="ic" data-icon="door"></div><div><b>Quarto:</b> preferir individual ou canto mais quieto, longe do posto e de equipamentos barulhentos; luz regulável; porta fechada quando possível. Evite trocar de leito.</div></li>
+        <li><div class="ic" data-icon="calendar"></div><div><b>Rotina visual do dia</b> fixada na parede (figuras ou fotos): horários de medicação, refeições, banho, visitas, fisioterapia, sono. Avise mudanças com antecedência e atualize o quadro.</div></li>
+        <li><div class="ic" data-icon="talk"></div><div><b>Mesma equipe, mesma sequência:</b> escala fixa de técnicos sempre que possível; passagem de plantão inclui “como ele se comunica, o que acalma, o que funcionou”. Apresente cada pessoa nova pelo nome.</div></li>
+        <li><div class="ic" data-icon="clock"></div><div><b>Agrupe sinais vitais e medicações</b> nos mesmos horários, com aviso prévio; aferição no colo ou sentado; use o quadro para mostrar “agora é remédio, depois é brincar”.</div></li>
+        <li><div class="ic" data-icon="toothbrush"></div><div><b>Alimentação e higiene:</b> seletividade alimentar é comum. Pergunte o que ele aceita (textura, cor, marca, talher) e peça à nutrição a adaptação; permita alimentos de casa quando liberado. Mantenha a rotina de escovação e banho do jeito dele.</div></li>
+        <li><div class="ic" data-icon="toy"></div><div><b>Objetos e atividades:</b> travesseiro, cobertor, brinquedo, tablet, fones; brinquedoteca, terapia ocupacional, psicologia. Tempo de tela pode ser o regulador que evita a crise.</div></li>
+      </ul>
+    </div>
+    <div class="fill"></div>
+    <div class="tip"><div class="ic" data-icon="check"></div><div><b>Prescrição sensorial:</b> registre no prontuário as medidas combinadas (luz baixa, aferições às 8/14/20 h, acompanhante nos procedimentos). O que está prescrito a equipe cumpre, em todos os plantões.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Dr. Patrício Almeida</span> · 5</div>
+</section>
+
+<!-- ================= PÁGINA 6 — INTERNAÇÃO: EXAMES, CIRURGIA E ALTA ================= -->
+<section class="page m-int2">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">4</div><div><div class="hq-title">INTERNAÇÃO: exames, cirurgia e alta</div><div class="sub">Preparar cada passo e sair bem</div></div></div>
+    <div class="panels two">
+      <div class="panel-wrap"><div class="panel" style="height:66mm"><div class="ill" data-scene="h_cirurgia"></div></div><div class="caption">7. Antes da cirurgia: visita ao centro cirúrgico, máscara de anestesia para brincar em casa, escolha do “cheirinho”, ursinho até dormir e acompanhante na indução.</div></div>
+      <div class="panel-wrap"><div class="panel" style="height:66mm"><div class="ill" data-scene="h_alta"></div></div><div class="caption">8. Na alta, orientações com figuras, receita explicada ao acompanhante e retorno marcado antes de sair. Encerrar bem é prevenir a próxima crise.</div></div>
+    </div>
+    <div style="height:3mm"></div>
+    <div class="box compact">
+      <h3>Como proceder</h3>
+      <ul>
+        <li><div class="ic" data-icon="photo"></div><div><b>Exames de imagem e laboratório:</b> explique com fotos do aparelho; agende o primeiro horário; leve fones e óculos; acompanhante na sala quando a proteção radiológica permitir. Raio-X e ultrassom sentados ou no colo. Ressonância: simular o barulho antes; avaliar sedação com a anestesia só se necessário.</div></li>
+        <li><div class="ic" data-icon="notes"></div><div><b>Pré-operatório:</b> consulta com a anestesia conhecendo o perfil sensorial; história social da cirurgia; visita ao centro cirúrgico; jejum com horário claro no quadro; medicação pré-anestésica quando indicada; <b>acompanhante na indução e na sala de recuperação</b> sempre que o serviço permitir.</div></li>
+        <li><div class="ic" data-icon="pause"></div><div><b>Pós-operatório e dor:</b> avalie a dor por comportamento (escala de faces, FLACC, relato do acompanhante) e trate de forma preventiva, em horário fixo. Curativos e drenos com Falar–Mostrar–Fazer; proteja acessos e sondas de forma discreta, sem contenção.</div></li>
+        <li><div class="ic" data-icon="warn"></div><div><b>UTI e isolamento:</b> mantenha o acompanhante, o objeto de conforto e o quadro visual; reduza alarmes sonoros; visitas programadas das mesmas pessoas; sedação e contenção só por indicação clínica e com reavaliação diária.</div></li>
+        <li><div class="ic" data-icon="home"></div><div><b>Alta:</b> orientações por escrito e com figuras (medicação, curativo, sinais de alerta); receita explicada ao acompanhante; contrarreferência para a UBS e para a equipe que acompanha o TEA; retorno marcado antes da saída.</div></li>
+        <li><div class="ic" data-icon="gift"></div><div><b>Encerre bem:</b> elogio específico, adesivo ou certificado de “alta com coragem”; registre no prontuário o que funcionou, para a próxima internação.</div></li>
+      </ul>
+    </div>
+    <div class="fill"></div>
+    <div class="tip"><div class="ic" data-icon="calendar"></div><div><b>Internação eletiva?</b> Agende uma visita de ambientação dias antes: conhecer o quarto, a equipe e a rotina. Entregue a história social da página 7 com antecedência.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Dr. Patrício Almeida</span> · 6</div>
+</section>
+
+<!-- ================= PÁGINA 7 — HISTÓRIA SOCIAL ================= -->
+<section class="page">
+  <div class="pad" style="display:flex;flex-direction:column;gap:4mm">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end"><div><span class="hq-title" style="font-size:26pt">Eu no hospital</span><div style="font-family:var(--comic);font-weight:700;font-size:11pt">Para a família ler com a pessoa, na admissão e todos os dias da internação.</div></div><span class="label">Recorte e entregue</span></div>
+    <div class="ministeps">
+      <div class="ministep"><div class="art"><div class="ill" data-scene="e1"></div></div><div class="txt"><div class="n">1</div><div>Hoje eu vou ao hospital. Chego com quem cuida de mim e levo meu brinquedo e meus fones.</div></div></div>
+      <div class="ministep"><div class="art"><div class="ill" data-scene="e2"></div></div><div class="txt"><div class="n">2</div><div>Uma enfermeira pergunta meu nome e mostra as carinhas: eu aponto se dói pouco, médio ou muito. Depois espero em um lugar calmo.</div></div></div>
+      <div class="ministep"><div class="art"><div class="ill" data-scene="e3"></div></div><div class="txt"><div class="n">3</div><div>O médico me examina: o dedinho de luz, o “ouvidor” frio no peito, a braçadeira que aperta como um abraço. Ele avisa antes de cada coisa.</div></div></div>
+      <div class="ministep"><div class="art"><div class="ill" data-scene="e4"></div></div><div class="txt"><div class="n">4</div><div>Eu fico em um quarto com uma cama que sobe e desce. Na parede tem o meu quadro do dia: remédio, lanche, brincar, visita, dormir.</div></div></div>
+      <div class="ministep"><div class="art"><div class="ill" data-scene="e5"></div></div><div class="txt"><div class="n">5</div><div>Às vezes um aparelho faz “bip”. Posso usar os fones. À noite a luz fica baixinha e quem cuida de mim dorme do meu lado.</div></div></div>
+      <div class="ministep"><div class="art"><div class="ill" data-scene="e6"></div></div><div class="txt"><div class="n">6</div><div>Quando eu melhoro, ganho alta. Recebo um adesivo, digo tchau e vou para casa. Se eu precisar parar, levanto a mão.</div></div></div>
+    </div>
+    <div class="grid3" style="gap:4mm">
+      <div class="box" style="padding:3mm 4mm;box-shadow:none;text-align:center"><div class="ill" data-scene="sig_stop" style="width:14mm;height:14mm;margin:0 auto 1mm"></div><b style="font-family:var(--title)">Mão levantada</b><br><span style="font-family:var(--comic);font-weight:700;font-size:9.5pt">PARE. A equipe para e explica.</span></div>
+      <div class="box" style="padding:3mm 4mm;box-shadow:none;text-align:center"><div class="ill" data-scene="sig_pause" style="width:14mm;height:14mm;margin:0 auto 1mm"></div><b style="font-family:var(--title)">Pausa</b><br><span style="font-family:var(--comic);font-weight:700;font-size:9.5pt">Quero descansar um pouco.</span></div>
+      <div class="box" style="padding:3mm 4mm;box-shadow:none;text-align:center"><div class="ill" data-scene="sig_ok" style="width:14mm;height:14mm;margin:0 auto 1mm"></div><b style="font-family:var(--title)">Polegar</b><br><span style="font-family:var(--comic);font-weight:700;font-size:9.5pt">Tudo bem, pode continuar.</span></div>
+    </div>
+    <div class="box" style="padding:4mm 5mm;background:#EAF2F8">
+      <h3 style="font-size:13pt;margin-bottom:2mm">Para quem acompanha</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5mm 6mm;font-size:9.8pt">
+        <div>• Entregue à equipe o “passaporte” do TEA: como ele se comunica, o que acalma, o que piora, o que já funcionou.</div>
+        <div>• Monte com a enfermagem o quadro do dia e avise-o de cada mudança antes que aconteça.</div>
+        <div>• Traga de casa: objeto de conforto, travesseiro, fones, tablet, alimentos que ele aceita (se liberados).</div>
+        <div>• Nos procedimentos, fique de frente para ele, com voz calma. Uma voz só de cada vez.</div>
+        <div>• Peça para estar junto nos exames, na indução anestésica e na recuperação, sempre que for permitido.</div>
+        <div>• Comemore cada passo e peça as orientações de alta por escrito e com figuras.</div>
+      </div>
+      <div class="field" style="margin:3mm 0 0;font-family:var(--comic)">Hospital: <span class="line"></span> Quarto/leito: <span class="line" style="flex:0 0 24mm"></span> Enfermeira(o) de referência: <span class="line" style="flex:0 0 44mm"></span></div>
+    </div>
+    <div class="small center" style="margin-top:auto">História social ilustrada · Autoria: Dr. Patrício Almeida · Pode ser reproduzida gratuitamente para fins educativos.</div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Dr. Patrício Almeida</span> · 7</div>
+</section>
+
+<!-- ================= PÁGINA 8 — INFORMATIVO + FICHA ================= -->
+<section class="page info">
+  <div class="stripes"></div>
+  <div class="content">
+    <div class="dashed-box">
+      <span class="hq-title white">Informativo e ficha</span>
+      <h4>O TEA no hospital, em poucas palavras</h4>
+      <p>O autismo é um espectro: cada pessoa é única. <b>Sensorial</b> (alarmes, luz, cheiros e toques sentidos de forma intensa), <b>comunicação</b> (entendimento literal; pode não falar, mas entende; a dor pode aparecer só como mudança de comportamento), <b>previsibilidade</b> (a quebra da rotina é o maior gatilho; mesma equipe, mesma sequência, quadro visual) e <b>interesses intensos</b> (aliados para explicar e recompensar). Direito a prioridade e a acompanhante em tempo integral.</p>
+      <h4>Avaliar a dor: escala de faces (apontar) e observação</h4>
+      <div class="painscale">
+        <div class="face"><div class="f" style="background:#E3F7D9">😀</div>0<br>sem dor</div>
+        <div class="face"><div class="f" style="background:#F1F8E9">🙂</div>2<br>dói pouco</div>
+        <div class="face"><div class="f" style="background:#FFF6B0">😐</div>4<br>um pouco mais</div>
+        <div class="face"><div class="f" style="background:#FDEBD0">🙁</div>6<br>dói bastante</div>
+        <div class="face"><div class="f" style="background:#F5CBA7">😣</div>8<br>dói muito</div>
+        <div class="face"><div class="f" style="background:#F5B7B1">😭</div>10<br>a pior dor</div>
+        <div style="font-family:var(--comic);font-weight:700;font-size:8.8pt;line-height:1.2;max-width:46mm">Sem fala: observe rosto, pernas, atividade, choro e consolabilidade (FLACC) e pergunte ao acompanhante o que é diferente do habitual.</div>
+      </div>
+      <h4>O que dizer e o que evitar</h4>
+      <table>
+        <tr><th style="width:50%">Evite</th><th>Prefira</th></tr>
+        <tr><td class="no">“Não vai doer nada, é rapidinho.”</td><td class="yes">“Vai apertar e depois arder um pouco. Conto até dez.”</td></tr>
+        <tr><td class="no">Vários profissionais ao redor, falando ao mesmo tempo.</td><td class="yes">Uma pessoa de referência fala com ele; os outros falam com o acompanhante.</td></tr>
+        <tr><td class="no">Segurar à força ou sedar “para acabar logo”.</td><td class="yes">Reduzir estímulos, acompanhante, distração, pausa; contenção/sedação só por indicação e protocolo.</td></tr>
+        <tr><td class="no">Trocar de leito, de equipe ou de horário sem avisar.</td><td class="yes">Avisar antes, atualizar o quadro do dia, apresentar quem chega pelo nome.</td></tr>
+        <tr><td class="no">“Ele está agitado por causa do autismo.”</td><td class="yes">Investigar dor, infecção, constipação, medo; perguntar “o que é diferente do habitual?”.</td></tr>
+      </table>
+      <h4>Ficha rápida do perfil sensorial (anexar ao prontuário e passar no plantão)</h4>
+      <div style="background:rgba(255,255,255,.9);border:2.5px solid var(--ink);border-radius:8px;padding:2mm 4mm;font-family:var(--comic);font-weight:700;font-size:9pt;line-height:1.8">
+        Nome: __________________________ Idade: _____ Acompanhante: _________________ Tel.: ____________<br>
+        Comunicação: <span class="checkbox"></span>Fala <span class="checkbox"></span>Figuras <span class="checkbox"></span>Gestos &nbsp; Como diz “sim/não/dor”: _________________________<br>
+        Incomoda: <span class="checkbox"></span>Alarmes <span class="checkbox"></span>Luz <span class="checkbox"></span>Cheiros <span class="checkbox"></span>Toque <span class="checkbox"></span>Garrote <span class="checkbox"></span>Deitar <span class="checkbox"></span>Pessoas novas<br>
+        Acalma: __________________________ Alimentos aceitos: ____________________ Sono: __________<br>
+        Funcionou: <span class="checkbox"></span>Fones <span class="checkbox"></span>Óculos <span class="checkbox"></span>Colo <span class="checkbox"></span>Contagem <span class="checkbox"></span>Quadro do dia <span class="checkbox"></span>Tablet &nbsp; PARE: _______<br>
+        Medidas prescritas (luz, horários, acompanhante): _________________________________________
+      </div>
+      <div class="fill"></div>
+      <p style="margin:0;font-size:8.2pt;line-height:1.25"><b>Base das recomendações:</b> Falar–Mostrar–Fazer, dessensibilização, histórias sociais, apoio visual e reforço positivo; escalas de dor (faces, FLACC); Linha de Cuidado para a Atenção às Pessoas com TEA (Ministério da Saúde); Política Nacional de Humanização. <b>Autoria: Dr. Patrício Almeida.</b> Material educativo; não substitui protocolos institucionais nem a avaliação clínica individual.</p>
+    </div>
+  </div>
+  <div class="pagenum" style="color:#0B2A3A"><span class="credit">Autoria: Dr. Patrício Almeida</span> · 8</div>
+</section>
+
+<script src="../shared/ill.js"></script>
+</body>
+</html>
