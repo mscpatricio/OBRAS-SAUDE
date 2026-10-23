@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Cartilha — Didática Aplicada à Enfermagem</title>
+<link rel="stylesheet" href="../shared/style.css">
+<style>
+  :root { --ind: #5B4FCF; --ind-light: #E4E1FA; --org: #F5B041; }
+  .cover { background: var(--ind); }
+  .cover .tiles { position: absolute; inset: 0; background-image: linear-gradient(#fff 0 3px, transparent 3px), linear-gradient(90deg, #fff 0 3px, transparent 3px); background-size: 24mm 24mm; opacity: .35; }
+  .cover .titlebox { position: absolute; left: 14mm; right: 14mm; top: 14mm; background: #fff; border: 3px solid var(--ink); border-radius: 10px; padding: 7mm 8mm 6mm; box-shadow: 5px 5px 0 var(--ink); text-align: center; }
+  .cover .titlebox .hq-title { font-size: 34pt; color: #A99BFF; }
+  .cover .titlebox .sub { margin-top: 3mm; font-family: var(--title); font-weight: 600; font-size: 13.5pt; line-height: 1.15; }
+  .cover .art { position: absolute; left: 0; right: 0; top: 78mm; bottom: 0; }
+  .cover .art .ill { width: 100%; height: 100%; }
+  .cover .badge { position: absolute; left: 14mm; top: 72mm; transform: rotate(-5deg); }
+  .cover .foot { position: absolute; left: 14mm; right: 14mm; bottom: 12mm; display: flex; justify-content: space-between; align-items: flex-end; }
+  .cover .foot .who { font-family: var(--title); font-weight: 800; font-size: 11pt; background: #fff; border: 3px solid var(--ink); border-radius: 999px; padding: 2mm 6mm; box-shadow: 3px 3px 0 var(--ink); }
+  .cover .foot .org { font-size: 9pt; font-weight: 700; text-align: right; background: rgba(255,255,255,.92); border: 2.5px solid var(--ink); border-radius: 8px; padding: 1.5mm 4mm; }
+
+  .section-head { display: flex; align-items: center; gap: 5mm; margin-bottom: .5mm; }
+  .section-head .num { width: 16mm; height: 16mm; border-radius: 50%; border: 3px solid var(--ink); display: flex; align-items: center; justify-content: center; font-family: var(--title); font-weight: 800; font-size: 20pt; box-shadow: 3px 3px 0 var(--ink); background: var(--org); }
+  .section-head .hq-title { font-size: 21pt; color: #FFD27F; }
+  .section-head .sub { font-family: var(--title); font-weight: 600; font-size: 11.5pt; color: #444; }
+  .strip { position: absolute; left: 0; top: 0; bottom: 0; width: 7mm; background: var(--ind); }
+  .u1 .num, .u1 .strip { background: #5DADE2; } .u1 .hq-title { color: #7FD1F5; }
+  .u2 .num, .u2 .strip { background: #BB8FCE; } .u2 .hq-title { color: #D7BDE2; }
+  .u3 .num, .u3 .strip { background: #58D68D; } .u3 .hq-title { color: #8FE26E; }
+  .u4 .num, .u4 .strip { background: var(--org); } .u4 .hq-title { color: #FFD27F; }
+  .u5 .num, .u5 .strip { background: #E74C3C; } .u5 .hq-title { color: #F5B7B1; }
+  .u6 .num, .u6 .strip { background: #2E9E8F; } .u6 .hq-title { color: #8FE2D6; }
+  .content { position: absolute; left: 15mm; right: 11mm; top: 10mm; bottom: 10mm; display: flex; flex-direction: column; gap: 2.6mm; }
+  .panels { display: grid; gap: 4mm; grid-template-columns: 1fr 1fr; }
+  .panel-wrap { display: flex; flex-direction: column; gap: 1.2mm; } .panel-wrap .caption { padding: 0 1mm; font-size: 9.2pt; }
+  .fill { flex: 1; }
+  .box.compact { padding: 4mm 5mm; } .box.compact li { margin-bottom: 1.6mm; font-size: 9.6pt; line-height: 1.3; } .box.compact h3 { font-size: 13pt; margin-bottom: 2mm; }
+  .box.compact li .ic { flex: 0 0 8mm; width: 8mm; height: 8mm; }
+  .tip { background: var(--blue-pale); border: 3px dashed var(--blue); border-radius: 10px; padding: 2mm 3.5mm; font-size: 9.1pt; display: flex; gap: 3mm; align-items: center; }
+  .tip .ic { width: 10mm; height: 10mm; flex: 0 0 10mm; } .tip b { font-family: var(--title); font-weight: 800; }
+  .tip.red { background: #FDE2E0; border-color: var(--red); } .tip.yellow { background: #FFF6B0; border-color: var(--yellow-strong); }
+  .kc { border: 3px solid var(--ink); border-radius: 10px; padding: 2.2mm 3.5mm; background: var(--ind-light); font-size: 9.2pt; line-height: 1.3; }
+  .kc b.lbl { font-family: var(--title); font-weight: 800; font-size: 9pt; text-transform: uppercase; letter-spacing: .6px; color: var(--ind); display: block; margin-bottom: 1mm; }
+  table.t { width: 100%; border-collapse: collapse; background: #fff; border: 2.5px solid var(--ink); font-size: 9pt; }
+  table.t th, table.t td { border: 2px solid var(--ink); padding: .9mm 1.8mm; vertical-align: top; text-align: left; line-height: 1.2; }
+  table.t th { font-family: var(--title); font-weight: 800; background: #FFF6B0; font-size: 9.4pt; }
+  table.t td.k { font-family: var(--title); font-weight: 800; background: #FAFAFA; }
+  .case { border: 3px solid var(--ink); border-radius: 12px; overflow: hidden; display: grid; grid-template-columns: 52mm 1fr; background: #fff; box-shadow: 4px 4px 0 var(--ink); }
+  .case .art { border-right: 3px solid var(--ink); } .case .art .ill { height: 100%; }
+  .case .txt { padding: 2.2mm 3.5mm; font-size: 9pt; line-height: 1.27; }
+  .case h3 { margin: 0 0 1mm; font-family: var(--title); font-weight: 800; font-size: 11.5pt; }
+  .case p { margin: 0 0 1.2mm; }
+  .case .say { font-family: var(--comic); font-weight: 700; background: #FFF6B0; border-radius: 6px; padding: 1.5mm 2.5mm; margin-top: 1.5mm; display: inline-block; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+
+  /* página 2 */
+  .intro h2 { font-family: var(--title); font-weight: 800; font-size: 19pt; margin: 0 0 2mm; }
+  .intro p { margin: 0 0 2.5mm; font-size: 10.6pt; }
+  .q4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; }
+  .q4 div { border: 3px solid var(--ink); border-radius: 10px; padding: 2.5mm 3mm; text-align: center; font-size: 9.4pt; }
+  .q4 b { display: block; font-family: var(--title); font-weight: 800; font-size: 13pt; }
+  .units { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; }
+  .unit { border: 3px solid var(--ink); border-radius: 10px; padding: 2.5mm 3mm; font-size: 9.2pt; line-height: 1.25; }
+  .unit b { display: block; font-family: var(--title); font-weight: 800; font-size: 11pt; }
+  .unit small { display: block; color: #555; font-weight: 700; }
+
+  /* bloom */
+  .bloom { display: flex; flex-direction: column; align-items: center; gap: 1mm; }
+  .bloom div { border: 2.5px solid var(--ink); border-radius: 6px; text-align: center; font-family: var(--title); font-weight: 800; font-size: 9.6pt; padding: 1mm 2mm; line-height: 1.1; }
+  .bloom div small { display: block; font-family: var(--body); font-weight: 700; font-size: 7.8pt; }
+  .dom { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5mm; }
+  .dom div { border: 2.5px solid var(--ink); border-radius: 8px; padding: 2mm 2.5mm; font-size: 9pt; line-height: 1.25; }
+  .dom b { font-family: var(--title); font-weight: 800; display: block; font-size: 10.5pt; }
+
+  /* arco */
+  .arco { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2mm; align-items: end; }
+  .arco div { border: 2.5px solid var(--ink); border-radius: 8px; padding: 2mm; text-align: center; font-size: 8.6pt; line-height: 1.2; background: #fff; }
+  .arco b { display: block; font-family: var(--title); font-weight: 800; font-size: 12pt; }
+  .arco div:nth-child(1), .arco div:nth-child(5) { background: #E3F7D9; } .arco div:nth-child(3) { background: #FFF6B0; margin-bottom: 4mm; } .arco div:nth-child(2), .arco div:nth-child(4) { margin-bottom: 2mm; }
+
+  /* tools */
+  .tool { border: 3px solid var(--ink); border-radius: 10px; padding: 2.2mm 3.5mm; background: #fff; font-size: 8.6pt; line-height: 1.26; }
+  .tool h3 { margin: 0 0 .8mm; font-family: var(--title); font-weight: 800; font-size: 10.5pt; }
+  .tool .line { display: inline-block; border-bottom: 2px solid var(--ink); height: 3.4mm; }
+  .verbs span { display: inline-block; background: #FFF6B0; border: 2px solid var(--ink); border-radius: 999px; padding: 0 1.5mm; font-size: 7.6pt; font-weight: 700; margin: .2mm .3mm .2mm 0; }
+
+  /* simulado */
+  .quiz { columns: 2; column-gap: 6mm; font-size: 8.9pt; line-height: 1.25; }
+  .quiz .q { break-inside: avoid; margin-bottom: 2.2mm; }
+  .quiz .q b { font-family: var(--title); font-weight: 800; }
+  .quiz .q span { display: block; padding-left: 4mm; }
+  .gab { font-family: var(--comic); font-weight: 700; font-size: 9pt; background: #E3F7D9; border: 2.5px solid var(--ink); border-radius: 8px; padding: 2mm 3mm; }
+  .info { background: var(--ind); }
+  .info .stripes { position: absolute; inset: 0; opacity: .3; background: repeating-linear-gradient(135deg, #8F85E8 0 10px, transparent 10px 20px); }
+  .info .content { left: 12mm; gap: 2mm; }
+  .info .dashed-box { height: 100%; display: flex; flex-direction: column; gap: 2mm; padding: 6mm; }
+  .info .hq-title { font-size: 28pt; text-align: center; display: block; margin-bottom: 1mm; }
+  .info h4 { font-family: var(--title); font-weight: 800; font-size: 12.5pt; margin: 1.5mm 0 1mm; color: #fff; text-shadow: 1px 1px 0 var(--ink); }
+  .peg { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm; }
+  .peg div { background: rgba(255,255,255,.92); border: 2.5px solid var(--ink); border-radius: 8px; padding: 2mm 3mm; font-family: var(--comic); font-weight: 700; font-size: 9.2pt; line-height: 1.25; }
+  .peg div b { font-family: var(--title); color: var(--red); }
+  .glos { background: rgba(255,255,255,.92); border: 2.5px solid var(--ink); border-radius: 8px; padding: 2mm 3mm; font-size: 8.8pt; line-height: 1.3; columns: 2; column-gap: 5mm; }
+  .glos b { font-family: var(--title); font-weight: 800; }
+</style>
+</head>
+<body>
+
+<!-- ================= CAPA ================= -->
+<section class="page cover">
+  <div class="tiles"></div>
+  <div class="art"><div class="ill" data-scene="d_cover"></div></div>
+  <div class="titlebox">
+    <div class="hq-title">Didática Aplicada<br>à Enfermagem</div>
+    <div class="sub">Cartilha do enfermeiro educador: fundamentos, planejamento,<br>metodologias ativas, avaliação e educação em saúde</div>
+  </div>
+  <div class="badge"><span class="label">Bacharelado em Enfermagem · 6º semestre · 80 h/a</span></div>
+  <div class="foot">
+    <div class="who">Para estudantes, enfermeiros e técnicos que ensinam</div>
+    <div class="org">Autoria: Prof. Dr. Patrício da Silva Almeida<br>Síntese ilustrada do Material Didático do Discente (FTA Meta, 2026.2)</div>
+  </div>
+</section>
+
+<!-- ================= PÁGINA 2 — APRESENTAÇÃO ================= -->
+<section class="page">
+  <div class="pad intro" style="display:flex;flex-direction:column;gap:3.5mm">
+    <div>
+      <h2>O enfermeiro é, por natureza, um educador</h2>
+      <p>Ele ensina o paciente a cuidar de si, orienta a família, capacita a equipe e educa a comunidade. Cada orientação de alta, cada demonstração de técnica, cada roda de conversa é um <b>ato de ensino</b>, e ensinar bem exige método, intencionalidade e sensibilidade. A função educativa não é um adereço: está nas Diretrizes Curriculares do curso e na Lei do Exercício Profissional (Lei nº 7.498/1986).</p>
+    </div>
+    <div class="panel" style="height:52mm"><div class="ill" data-scene="d_tres"></div></div>
+    <div class="caption" style="font-size:9.8pt">Três cenas, um mesmo ato: orientar a aplicação de insulina, capacitar a equipe sobre um protocolo e coordenar uma roda de conversa. Em todas, o enfermeiro ensina.</div>
+    <div class="kc"><b class="lbl">Conceito-chave</b><b>Didática</b> é o ramo da Pedagogia que investiga e orienta o processo de ensino-aprendizagem (Libâneo: unidade entre ensino, aprendizagem e conteúdos, em contexto). Ela responde, de modo articulado, a quatro perguntas, que são o fio condutor de todo o curso e de qualquer plano de aula:</div>
+    <div class="q4">
+      <div><b>Para quê?</b>os objetivos</div>
+      <div><b>O quê?</b>os conteúdos</div>
+      <div><b>Como?</b>métodos e estratégias</div>
+      <div><b>Como avaliar?</b>a avaliação</div>
+    </div>
+    <div class="units">
+      <div class="unit"><b>1 · Fundamentos</b><small>12 h/a</small>Conceito, objeto, história e a Didática na enfermagem.</div>
+      <div class="unit"><b>2 · Tendências e teorias</b><small>12 h/a</small>Tendências pedagógicas, teorias da aprendizagem, andragogia.</div>
+      <div class="unit"><b>3 · Planejamento</b><small>16 h/a</small>Níveis, objetivos, Bloom, plano de ensino e de aula.</div>
+      <div class="unit"><b>4 · Métodos e metodologias ativas</b><small>16 h/a</small>Técnicas, ABP, sala invertida, simulação, TDIC.</div>
+      <div class="unit"><b>5 · Avaliação</b><small>12 h/a</small>Funções, instrumentos, itens, rubricas e feedback.</div>
+      <div class="unit"><b>6 · Educação em saúde</b><small>12 h/a</small>Modelos, educação permanente, enfermeiro educador, ação educativa.</div>
+    </div>
+    <div class="tip yellow"><div class="ic" data-icon="notes"></div><div><b>Como a disciplina avalia:</b> AV1 (5,0 de atividades em sala/AVA + 5,0 de prova analítico-discursiva), AV2 (5,0 de atividades + 5,0 de prova objetiva) e AV3 (maior nota entre AV1/AV2 + maior nota entre AT1/AT2). Média final = [(AV1+AV2)/2 + AV3]/2; aprovação com 7,0. A ação educativa da Jornada Acadêmica (AV3/PROJETI) integra tudo o que está nesta cartilha.</div></div>
+    <div class="small">Esta cartilha resume o Material Didático do Discente e o Plano de Disciplina de Didática Aplicada à Enfermagem (Faculdade de Tecnologia do Amapá, 2026.2). Não substitui as aulas, as leituras indicadas nem as atividades do AVA.</div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 2</div>
+</section>
+
+<!-- ================= PÁGINA 3 — UNIDADE 1 ================= -->
+<section class="page u1">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">1</div><div><div class="hq-title">Fundamentos da Didática</div><div class="sub">Conceito, distinções, três dimensões e um pouco de história</div></div></div>
+    <div class="grid2">
+      <div class="kc"><b class="lbl">Não confunda</b><b>Pedagogia</b> (ciência da educação, a mais ampla) ⊃ <b>Didática</b> (o processo de ensino) ⊃ <b>Metodologia</b> (só o “como”: métodos e técnicas). <b>Currículo</b> é o conjunto de experiências do curso (PPC); <b>plano de ensino</b> detalha uma disciplina. Erro clássico de prova: tratar Didática e metodologia como sinônimos.</div>
+      <div class="kc" style="background:#FFF6B0"><b class="lbl">As três dimensões (Candau)</b><b>Técnica:</b> planejar, formular objetivos, escolher métodos, avaliar (o saber fazer). <b>Humana:</b> comunicação, acolhimento, vínculo, escuta. <b>Político-social:</b> ensinar nunca é neutro; a serviço de que projeto de saúde e de sociedade? Ignorar qualquer uma empobrece o ensino.</div>
+    </div>
+    <table class="t">
+      <tr><th style="width:34%">Marco / autor</th><th style="width:18%">Período</th><th>Contribuição central</th></tr>
+      <tr><td class="k">Sócrates (maiêutica)</td><td>Antiguidade</td><td>Ensinar pelo diálogo e pela pergunta.</td></tr>
+      <tr><td class="k">Comênio, <i>Didática Magna</i> (1632)</td><td>Séc. XVII</td><td>“Ensinar tudo a todos” (pansofia); método universal, gradual, do simples ao complexo. Pai da Didática moderna.</td></tr>
+      <tr><td class="k">Herbart</td><td>Séc. XIX</td><td>Passos formais (preparação, apresentação, associação, generalização, aplicação); base da pedagogia tradicional.</td></tr>
+      <tr><td class="k">Dewey / Escola Nova</td><td>Início séc. XX</td><td>Aluno no centro; “aprender fazendo”. No Brasil, Manifesto dos Pioneiros (1932).</td></tr>
+      <tr><td class="k">Tecnicismo</td><td>Meados séc. XX</td><td>Eficiência, objetivos operacionais, tecnologia educacional; influência behaviorista.</td></tr>
+      <tr><td class="k">Didática crítica (Freire, Saviani, Libâneo, Candau)</td><td>A partir de 1980</td><td>Ensino como prática social e política; forma sujeitos críticos. Freire: contra a “educação bancária”, por uma educação dialógica e problematizadora.</td></tr>
+    </table>
+    <div class="case">
+      <div class="art"><div class="ill" data-scene="d_joao"></div></div>
+      <div class="txt"><h3>Estudo de caso: a orientação de alta que não funcionou</h3>
+        <p><b>Situação:</b> Sr. João, 68 anos, alta após evento cardíaco, em uso de anticoagulante oral. A enfermeira entregou um folheto, falou rapidamente e perguntou “entendeu?”. Ele disse que sim. Duas semanas depois voltou ao pronto-socorro com sangramento: tomou dose dobrada no dia em que “esqueceu” a anterior.</p>
+        <p><b>Análise didática:</b> faltou intencionalidade. Não houve objetivo observável (“o Sr. João demonstrará como proceder ao esquecer uma dose”), a estratégia era inadequada ao letramento em saúde (só fala e folheto) e a avaliação foi frágil: “entendeu?” não verifica compreensão.</p>
+        <span class="say">Como fazer diferente: objetivo observável, demonstração com linguagem acessível e avaliação por teach-back. Isso é Didática salvando vidas.</span></div>
+    </div>
+    <div class="fill"></div>
+    <div class="tip"><div class="ic" data-icon="family"></div><div><b>Quatro frentes da função educativa</b> (retomadas na Unidade 6): paciente (autocuidado, adesão, alta), família e cuidador (cuidado domiciliar), equipe (protocolos, integração, educação permanente) e comunidade (promoção da saúde e prevenção).</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 3</div>
+</section>
+
+<!-- ================= PÁGINA 4 — UNIDADE 2 ================= -->
+<section class="page u2">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">2</div><div><div class="hq-title">Tendências pedagógicas e teorias da aprendizagem</div><div class="sub">Toda prática esconde uma teoria</div></div></div>
+    <div class="panels">
+      <div class="panel-wrap"><div class="panel" style="height:34mm"><div class="ill" data-scene="d_tradicional"></div></div><div class="caption">Tradicional: professor no centro, transmissão e memorização; avaliação por prova que reproduz o conteúdo.</div></div>
+      <div class="panel-wrap"><div class="panel" style="height:34mm"><div class="ill" data-scene="d_ativa"></div></div><div class="caption">Progressistas e metodologias ativas: o aluno como sujeito, a partir de problemas reais; o professor media.</div></div>
+    </div>
+    <table class="t">
+      <tr><th>Tendência (Libâneo / Saviani)</th><th>Professor</th><th>Aluno</th><th>Avaliação</th></tr>
+      <tr><td class="k">Liberal tradicional</td><td>Transmite; autoridade central</td><td>Recebe e memoriza</td><td>Provas; reprodução</td></tr>
+      <tr><td class="k">Liberal renovada (Escola Nova: Dewey; não diretiva: Rogers)</td><td>Facilita a experiência</td><td>Ativo; aprende fazendo</td><td>Processual</td></tr>
+      <tr><td class="k">Liberal tecnicista</td><td>Executa o planejamento</td><td>Responde a estímulos; treino</td><td>Objetiva; mede comportamentos</td></tr>
+      <tr><td class="k">Progressista libertadora (Freire)</td><td>Media o diálogo; aprende junto</td><td>Sujeito; parte da própria realidade</td><td>Autoavaliação; práxis</td></tr>
+      <tr><td class="k">Progressista libertária</td><td>Orienta a autogestão</td><td>Decide coletivamente</td><td>Coletiva e negociada</td></tr>
+      <tr><td class="k">Crítico-social dos conteúdos (Saviani, Libâneo)</td><td>Media a apropriação do saber</td><td>Ativo e crítico</td><td>A serviço da aprendizagem significativa</td></tr>
+    </table>
+    <div class="grid2">
+      <div class="kc"><b class="lbl">Teorias da aprendizagem</b>
+        <b>Behaviorismo (Skinner):</b> estímulo, resposta e reforço; ótimo para treino psicomotor e feedback imediato, limitado para o complexo.<br>
+        <b>Construtivismo (Piaget):</b> assimilação e acomodação; aprender é reconstruir a partir do que se sabe, com desafios na medida certa.<br>
+        <b>Sociointeracionismo (Vygotsky):</b> Zona de Desenvolvimento Proximal; o mediador oferece “andaimes” (scaffolding) e os retira aos poucos.<br>
+        <b>Aprendizagem significativa (Ausubel):</b> o novo se ancora em subsunçores. “O fator isolado mais importante é aquilo que o aluno já sabe.”</div>
+      <div class="kc" style="background:#FFF6B0"><b class="lbl">Andragogia (Knowles): como o adulto aprende</b>
+        <b>Autoconceito:</b> quer autonomia, não ser tratado como criança. <b>Experiência:</b> é recurso, não obstáculo. <b>Prontidão:</b> aprende o que percebe como necessário. <b>Orientação:</b> centrada em problemas, não em conteúdos abstratos. <b>Motivação:</b> sobretudo interna. Vale para pacientes, familiares e colegas de equipe.</div>
+    </div>
+    <div class="case">
+      <div class="art"><div class="ill" data-scene="d_bomba"></div></div>
+      <div class="txt"><h3>Estudo de caso: capacitação sobre a nova bomba de infusão</h3>
+        <p><b>Situação:</b> palestra unidirecional de uma hora para técnicos experientes gerou desatenção e resistência (“sempre fizemos de outro jeito”).</p>
+        <p><b>Análise:</b> ignorou-se a experiência dos profissionais e a orientação a problemas; o formato passivo contrariou o autoconceito de autonomia do adulto.</p>
+        <span class="say">Reformulação: partir de um quase-erro real do serviço, reconhecer a experiência da equipe, prática supervisionada com a bomba (behaviorismo) e discussão em grupo (Vygotsky).</span></div>
+    </div>
+    <div class="fill"></div>
+    <div class="tip red"><div class="ic" data-icon="warn"></div><div><b>Pegadinha:</b> ancore-se nos centros: tradicional → professor; renovada e progressistas → aluno/sujeito; tecnicista → objetivos e técnica. E não confunda a renovada não diretiva (Rogers, crescimento pessoal) com a libertadora (Freire, conscientização crítica).</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 4</div>
+</section>
+
+<!-- ================= PÁGINA 5 — UNIDADE 3 ================= -->
+<section class="page u3">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">3</div><div><div class="hq-title">O planejamento do ensino</div><div class="sub">Planejar é decidir com intencionalidade (como na SAE)</div></div></div>
+    <div class="grid2" style="grid-template-columns:1fr 1.25fr">
+      <div class="kc"><b class="lbl">Níveis de planejamento (do mais amplo ao mais concreto)</b>
+        <b>1. Educacional</b> (políticas, Diretrizes Curriculares) → <b>2. Curricular</b> (PPC, matriz) → <b>3. De ensino / disciplina</b> (plano de ensino do semestre) → <b>4. Plano de aula</b> (um encontro).<br><br>
+        <b class="lbl">Objetivos de aprendizagem</b>Descrevem o que o aluno será capaz de <b>fazer</b>. Claros, observáveis, mensuráveis, iniciados por verbo de ação. Evite “saber”, “compreender bem”, “ter noção”. Em vez de “o aluno saberá sobre feridas”: “o aluno <b>classificará</b> as lesões por pressão segundo os estágios”.</div>
+      <div>
+        <div class="bloom">
+          <div style="width:34%;background:#F5B7B1">Criar<small>elaborar, planejar, propor, formular</small></div>
+          <div style="width:46%;background:#FAD7A0">Avaliar<small>avaliar, justificar, criticar, priorizar</small></div>
+          <div style="width:58%;background:#FFF6B0">Analisar<small>diferenciar, comparar, relacionar, examinar</small></div>
+          <div style="width:70%;background:#E3F7D9">Aplicar<small>aplicar, executar, demonstrar, calcular</small></div>
+          <div style="width:82%;background:#D6EAF8">Entender<small>descrever, explicar, resumir, exemplificar</small></div>
+          <div style="width:94%;background:#E4E1FA">Lembrar<small>listar, definir, nomear, identificar</small></div>
+        </div>
+        <div class="caption" style="text-align:center;font-size:9pt;margin-top:1mm">Taxonomia de Bloom revisada (Anderson e Krathwohl, 2001): domínio cognitivo, do mais simples ao mais complexo.</div>
+      </div>
+    </div>
+    <div class="dom">
+      <div><b>Cognitivo</b>Saber e saber pensar (6 níveis acima). Ex.: “explicará as indicações e complicações da punção venosa”.</div>
+      <div><b>Afetivo (Krathwohl)</b>Receber → responder → valorizar → organizar → caracterizar. Ex.: “valorizará a comunicação e o conforto do paciente”.</div>
+      <div><b>Psicomotor</b>Da percepção e imitação à precisão e naturalização. Ex.: “executará a punção com técnica asséptica, conforme checklist”.</div>
+    </div>
+    <div class="grid2">
+      <div class="kc"><b class="lbl">Plano de ensino (disciplina)</b>Identificação · <b>Ementa</b> (síntese oficial e fixa) · Objetivos geral e específicos · Conteúdo programático (varia a cada oferta) · Procedimentos metodológicos · Recursos · Sistemática de avaliação (AV1, AV2, AV3) · Referências (ABNT).</div>
+      <div class="kc" style="background:#E3F7D9"><b class="lbl">Plano de aula (um encontro)</b>Tema e público · Objetivos (verbos de Bloom) · Conteúdo · <b>Desenvolvimento em três momentos</b>: introdução (problematização, conhecimentos prévios), desenvolvimento (exposição, atividade, prática) e fechamento (síntese) · Recursos · Tempo · Avaliação · Referências.</div>
+    </div>
+    <div class="case">
+      <div class="art"><div class="ill" data-scene="d_maos"></div></div>
+      <div class="txt"><h3>Plano de aula comentado (30 min): higienização das mãos para acompanhantes</h3>
+        <p><b>Objetivo:</b> o acompanhante demonstrará corretamente os cinco momentos da higienização das mãos (aplicar / psicomotor).</p>
+        <p><b>Introdução (5 min):</b> “Em quais momentos você acha que precisa lavar as mãos aqui no hospital?” (ativa conhecimentos prévios, Ausubel). <b>Desenvolvimento (18 min):</b> exposição dialogada dos cinco momentos da OMS, demonstração e prática supervisionada com feedback (behaviorismo). <b>Fechamento (4 min):</b> síntese e ligação com a segurança do paciente.</p>
+        <span class="say">Avaliação (3 min): cada acompanhante executa a técnica; o enfermeiro observa por checklist (teach-back prático).</span></div>
+    </div>
+    <div class="fill"></div>
+    <div class="tip"><div class="ic" data-icon="steps"></div><div><b>Selecionar conteúdos:</b> validade (leva ao objetivo?), relevância (é essencial?), significância (conecta ao que já sabe?) e adequação ao tempo e ao nível. Mais vale o essencial aprofundado do que “ensinar tudo”.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 5</div>
+</section>
+
+<!-- ================= PÁGINA 6 — UNIDADE 4 ================= -->
+<section class="page u4">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">4</div><div><div class="hq-title">Métodos, técnicas e metodologias ativas</div><div class="sub">O método a serviço do objetivo, nunca o contrário</div></div></div>
+    <div class="kc"><b class="lbl">Conceito-chave</b><b>Método</b> = caminho/estratégia geral (expositivo, problematização, projetos). <b>Técnica</b> = procedimento que realiza o método (estudo de caso, dramatização, tempestade de ideias). <b>Recurso</b> = meio material ou digital de apoio (cartaz, manequim, vídeo, AVA). Um método admite várias técnicas; uma técnica, vários recursos.</div>
+    <table class="t">
+      <tr><th style="width:28%">Técnica</th><th>Para que serve</th><th style="width:34%">Cuidados / limites</th></tr>
+      <tr><td class="k">Aula expositiva dialogada</td><td>Apresentar conteúdo com participação</td><td>Evitar monólogo; provocar interação</td></tr>
+      <tr><td class="k">Estudo de caso</td><td>Aproximar teoria e prática; raciocínio clínico</td><td>Casos realistas, alinhados ao objetivo</td></tr>
+      <tr><td class="k">Dramatização (role-play)</td><td>Treinar comunicação e atitudes</td><td>Debriefing para extrair aprendizados</td></tr>
+      <tr><td class="k">Demonstração</td><td>Ensinar procedimentos (psicomotor)</td><td>Seguir de prática supervisionada</td></tr>
+      <tr><td class="k">Roda de conversa · seminário · estudo dirigido · mapa conceitual</td><td>Troca de saberes; pesquisa e comunicação; estudo autônomo; organizar conceitos</td><td>Mediar a participação; critérios claros; boas questões; ensinar a construir o mapa</td></tr>
+    </table>
+    <div class="panels">
+      <div class="panel-wrap"><div class="panel" style="height:36mm"><div class="ill" data-scene="d_simulacao"></div></div><div class="caption"><b>Simulação clínica:</b> briefing → cenário → debriefing. Fidelidade baixa, média ou alta. O aprendizado não está no manequim, está no debriefing.</div></div>
+      <div class="panel-wrap"><div class="panel" style="height:36mm"><div class="ill" data-scene="d_debrief"></div></div><div class="caption"><b>Debriefing:</b> reflexão estruturada após o cenário: o que fizemos, por quê, o que sentimos, como melhorar. Simulação sem debriefing perde quase todo o valor.</div></div>
+    </div>
+    <div class="grid2">
+      <div class="kc" style="background:#FFF6B0"><b class="lbl">Metodologias ativas</b><b>ABP/PBL:</b> pequenos grupos partem de um problema (caso), definem o que precisam aprender, estudam e voltam para resolver, com tutor. <b>Sala de aula invertida:</b> primeiro contato antes da aula (vídeo, leitura, AVA); o tempo em sala é para aplicar, discutir e tirar dúvidas. <b>TBL, gamificação, TDIC:</b> a escolha é sempre pela adequação ao objetivo, ao público e ao contexto; um cartaz pode superar um aplicativo para um idoso com baixo letramento digital.</div>
+      <div><div class="arco">
+        <div><b>1</b>Observação da realidade</div><div><b>2</b>Pontos-chave</div><div><b>3</b>Teorização</div><div><b>4</b>Hipóteses de solução</div><div><b>5</b>Aplicação à realidade</div>
+      </div><div class="caption" style="text-align:center;font-size:9pt;margin-top:1mm"><b>Arco de Maguerez</b> (difundido por Bordenave): a problematização parte da realidade e retorna a ela.</div></div>
+    </div>
+    <div class="case">
+      <div class="art"><div class="ill" data-scene="d_ativa"></div></div>
+      <div class="txt"><h3>Estudo de caso: redesenhando a aula de parada cardiorrespiratória</h3>
+        <p><b>Situação:</b> aula expositiva de duas horas sobre PCR e RCP; os alunos “sabiam a teoria”, mas travavam no estágio. <b>Diagnóstico:</b> o objetivo era aplicar, mas o método só mobilizava lembrar e entender. Faltou coerência método-objetivo.</p>
+        <span class="say">Redesenho: (1) sala invertida com vídeo e diretrizes; (2) estudo de caso rápido para decisão; (3) simulação de PCR em manequim, em equipe; (4) debriefing estruturado.</span></div>
+    </div>
+    <div class="fill"></div>
+    <div class="tip"><div class="ic" data-icon="check"></div><div><b>Para habilidade psicomotora</b> (ex.: curativo) a sequência é: demonstração → prática supervisionada com feedback → avaliação por checklist. Não confunda simulação (cenário completo com decisão) com demonstração de técnica isolada.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 6</div>
+</section>
+
+<!-- ================= PÁGINA 7 — UNIDADE 5 ================= -->
+<section class="page u5">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">5</div><div><div class="hq-title">Avaliação da aprendizagem</div><div class="sub">Avaliar para aprender, não só para classificar</div></div></div>
+    <div class="grid2">
+      <div class="kc"><b class="lbl">Avaliar ≠ medir</b><b>Medir</b> é atribuir uma nota. <b>Avaliar</b> é coletar informações, julgá-las por critérios e <b>decidir</b>: sobre o aluno (recuperar, avançar) e sobre o próprio ensino (rever a estratégia). Luckesi: o <b>exame</b> é pontual, classificatório e seletivo; a <b>avaliação</b> é processual, diagnóstica e inclusiva.</div>
+      <div class="kc" style="background:#FFF6B0"><b class="lbl">Três funções (guarde as âncoras temporais)</b><b>Diagnóstica = antes:</b> “de onde partimos?” <b>Formativa = durante:</b> “como estamos indo?”, regula pelo feedback, é a que mais impacta a aprendizagem. <b>Somativa = ao final:</b> “o que foi alcançado?”, gera nota e certificação. Um mesmo instrumento pode servir a funções diferentes.</div>
+    </div>
+    <table class="t">
+      <tr><th style="width:30%">Instrumento</th><th>Avalia bem</th><th style="width:34%">Cuidados</th></tr>
+      <tr><td class="k">Prova objetiva (múltipla escolha)</td><td>Amplitude de conteúdo; vários níveis cognitivos</td><td>Bons itens; sem ambiguidade e pegadinhas</td></tr>
+      <tr><td class="k">Questão dissertativa</td><td>Argumentação, análise, síntese</td><td>Critérios definidos; rubrica</td></tr>
+      <tr><td class="k">OSCE / checklist de habilidades</td><td>Desempenho psicomotor e clínico</td><td>Estações padronizadas; critérios observáveis</td></tr>
+      <tr><td class="k">Estudo de caso / situação-problema</td><td>Raciocínio clínico e decisão</td><td>Casos realistas e bem estruturados</td></tr>
+      <tr><td class="k">Seminário · portfólio · autoavaliação</td><td>Pesquisa e comunicação; processo e reflexão; metacognição</td><td>Critérios claros e coavaliação; feedback contínuo; combinar com outros</td></tr>
+    </table>
+    <div class="grid2">
+      <div class="kc" style="background:#E3F7D9"><b class="lbl">Qualidade do instrumento</b><b>Validade:</b> mede o que se propõe (uma prova de punção avalia punção, não caligrafia). <b>Fidedignidade:</b> consistência; a correção não varia com o humor do avaliador. Rubricas e critérios explícitos aumentam a fidedignidade; o alinhamento aos objetivos aumenta a validade. <b>Praticabilidade:</b> viável no tempo disponível.</div>
+      <div class="kc"><b class="lbl">Bons itens de múltipla escolha</b>Enunciado claro, de preferência a partir de um caso clínico; <b>uma única</b> resposta correta; <b>distratores plausíveis</b> (erros que um aluno mal preparado cometeria); alternativas homogêneas; sem “todas/nenhuma das anteriores” nem absolutos (“sempre”, “nunca”); cada item alinhado a um objetivo e a um nível de Bloom.</div>
+    </div>
+    <div class="case">
+      <div class="art"><div class="ill" data-scene="d_prova"></div></div>
+      <div class="txt"><h3>Estudo de caso: a prova que não avaliava o objetivo</h3>
+        <p><b>Situação:</b> o objetivo da aula era executar a técnica de curativo (psicomotor); a prova só pedia definições (“o que é técnica asséptica?”). <b>Problema de validade:</b> mediu lembrar e entender, não aplicar. Dava para acertar a prova sem saber fazer o curativo, e vice-versa.</p>
+        <p><b>Correção:</b> checklist de observação (OSCE) durante a execução supervisionada, com rubrica.</p>
+        <span class="say">Feedback em três tempos: reconhecer o que foi bem, apontar o ponto a melhorar, sugerir como melhorar. Específico, oportuno, orientado ao futuro e respeitoso.</span></div>
+    </div>
+    <div class="fill"></div>
+    <div class="tip red"><div class="ic" data-icon="warn"></div><div><b>Pegadinha:</b> diagnóstica = antes; formativa = durante; somativa = ao final. Validade é “medir o que se propõe”; fidedignidade é “resultados consistentes”. Distrator é a alternativa incorreta, porém plausível.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 7</div>
+</section>
+
+<!-- ================= PÁGINA 8 — UNIDADE 6 ================= -->
+<section class="page u6">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">6</div><div><div class="hq-title">Educação em saúde e o enfermeiro educador</div><div class="sub">A síntese de tudo: empoderamento e autonomia</div></div></div>
+    <div class="grid2">
+      <div class="kc" style="background:#FDE2E0"><b class="lbl">Modelo tradicional (preventivo / prescritivo)</b>Vertical e unidirecional: o profissional “detém o saber” e prescreve; a população recebe. Culpabiliza o indivíduo (“não se cuida”) e ignora determinantes sociais. É a educação bancária no campo da saúde. Limitado para mudanças duradouras.</div>
+      <div class="kc" style="background:#E3F7D9"><b class="lbl">Modelo dialógico (Freire)</b>Horizontal e participativo: parte dos saberes e da realidade das pessoas, reconhece-as como sujeitos, problematiza e corresponsabiliza. Recomendado pela Política Nacional de Promoção da Saúde e pela Política Nacional de Educação Popular em Saúde.</div>
+    </div>
+    <table class="t">
+      <tr><th style="width:24%">Aspecto</th><th>Educação continuada</th><th>Educação Permanente em Saúde (EPS)</th></tr>
+      <tr><td class="k">Ponto de partida</td><td>Temas e atualizações pré-definidos</td><td>Problemas reais do processo de trabalho</td></tr>
+      <tr><td class="k">Periodicidade e foco</td><td>Pontual, episódica (cursos); individual</td><td>Contínua, no cotidiano; coletiva (equipe e serviço)</td></tr>
+      <tr><td class="k">Concepção e objetivo</td><td>Transmissão; atualizar conhecimentos</td><td>Problematização e reflexão sobre a prática; transformar as práticas e o serviço</td></tr>
+    </table>
+    <div class="grid2">
+      <div class="kc"><b class="lbl">Saiba mais</b><b>PNEPS:</b> Portaria GM/MS nº 198/2004, reformulada pela Portaria nº 1.996/2007. <b>Quadrilátero da formação:</b> ensino, gestão, atenção e controle social. <b>Letramento em saúde:</b> capacidade de obter, compreender e usar informações de saúde; baixo letramento associa-se a pior adesão. Use frases curtas, imagens, sem jargão, e confirme com <b>teach-back</b>.</div>
+      <div class="kc" style="background:#FFF6B0"><b class="lbl">Roteiro da ação educativa (Apêndice C)</b><b>1</b> Diagnóstico da situação (Freire, Ausubel) · <b>2</b> Objetivos (verbos de Bloom) · <b>3</b> Conteúdo essencial · <b>4</b> Estratégia e metodologia · <b>5</b> Recursos e linguagem (letramento) · <b>6</b> Execução dialógica (andragogia) · <b>7</b> Avaliação (teach-back e indicadores) · <b>8</b> Registro, para a continuidade e a educação permanente.</div>
+    </div>
+    <div class="case">
+      <div class="art"><div class="ill" data-scene="d_roda"></div></div>
+      <div class="txt"><h3>Estudo de caso: grupo de hipertensos na Atenção Primária</h3>
+        <p><b>Diagnóstico:</b> muitos usuários abandonam a medicação por não sentirem sintomas e por crenças (“pressão alta é do nervoso e passa”). <b>Objetivo:</b> ao final, os participantes explicarão por que manter o tratamento mesmo sem sintomas e identificarão sinais de alerta.</p>
+        <p><b>Estratégia:</b> roda de conversa dialógica partindo das experiências do grupo, com cartaz ilustrado adequado ao letramento. <b>Execução:</b> valorização das falas; desmistificação a partir do que trazem.</p>
+        <span class="say">Avaliação: teach-back ao final e acompanhamento da adesão e da pressão arterial nas consultas seguintes.</span></div>
+    </div>
+    <div class="fill"></div>
+    <div class="tip"><div class="ic" data-icon="heart"></div><div><b>Os quatro âmbitos do enfermeiro educador:</b> paciente (autocuidado, adesão, alta, dispositivos, sinais de alerta), família e cuidador (cuidado domiciliar, condições crônicas, paliativos), equipe (integração, protocolos, EPS, segurança do paciente) e comunidade (promoção, prevenção, grupos, campanhas, ações intersetoriais).</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 8</div>
+</section>
+
+<!-- ================= PÁGINA 9 — CAIXA DE FERRAMENTAS ================= -->
+<section class="page">
+  <div class="pad" style="display:flex;flex-direction:column;gap:2.2mm">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end"><div><span class="hq-title" style="font-size:22pt">Caixa de ferramentas</span><div class="sub" style="font-family:var(--title);font-weight:600;font-size:11pt">Modelos dos apêndices, prontos para usar na prova, no estágio e na ação educativa</div></div><span class="label">Recorte e use</span></div>
+    <div class="grid2">
+      <div class="tool"><h3>Plano de aula (Apêndice B)</h3>
+        <div>Tema: <span class="line" style="width:60mm"></span></div>
+        <div>Público-alvo: <span class="line" style="width:40mm"></span> Duração: <span class="line" style="width:18mm"></span></div>
+        <div>Objetivos (verbo de Bloom + desempenho observável):<br><span class="line" style="width:100%"></span></div>
+        <div>Conteúdo essencial: <span class="line" style="width:55mm"></span></div>
+        <div><b>Introdução</b> (___ min): pergunta disparadora / conhecimentos prévios<br><span class="line" style="width:100%"></span></div>
+        <div><b>Desenvolvimento</b> (___ min): exposição dialogada, demonstração, prática, discussão<br><span class="line" style="width:100%"></span></div>
+        <div><b>Fechamento</b> (___ min): síntese e amarração <span class="line" style="width:46mm"></span></div>
+        <div>Recursos: <span class="line" style="width:64mm"></span></div>
+        <div>Avaliação (como verificar o objetivo): <span class="line" style="width:40mm"></span></div>
+      </div>
+      <div class="tool"><h3>Verbos para objetivos (Apêndice E)</h3>
+        <div class="verbs"><b>Lembrar:</b> <span>listar</span><span>definir</span><span>nomear</span><span>identificar</span><span>reconhecer</span></div>
+        <div class="verbs"><b>Entender:</b> <span>descrever</span><span>explicar</span><span>resumir</span><span>exemplificar</span><span>interpretar</span><span>classificar</span></div>
+        <div class="verbs"><b>Aplicar:</b> <span>aplicar</span><span>executar</span><span>demonstrar</span><span>calcular</span><span>implementar</span><span>resolver</span></div>
+        <div class="verbs"><b>Analisar:</b> <span>diferenciar</span><span>comparar</span><span>relacionar</span><span>examinar</span><span>organizar</span><span>distinguir</span></div>
+        <div class="verbs"><b>Avaliar:</b> <span>avaliar</span><span>justificar</span><span>criticar</span><span>defender</span><span>priorizar</span><span>recomendar</span></div>
+        <div class="verbs"><b>Criar:</b> <span>elaborar</span><span>planejar</span><span>propor</span><span>formular</span><span>construir</span><span>projetar</span></div>
+        <div class="verbs"><b>Afetivo:</b> <span>aceitar</span><span>participar</span><span>valorizar</span><span>respeitar</span><span>cooperar</span><span>comprometer-se</span></div>
+        <div class="verbs"><b>Psicomotor:</b> <span>executar</span><span>manusear</span><span>posicionar</span><span>montar</span><span>ajustar</span><span>realizar (procedimento)</span></div>
+        <div class="tip yellow" style="margin-top:2mm;padding:2mm 3mm"><div class="ic" data-icon="warn"></div><div><b>Evite:</b> saber, compreender bem, entender, conhecer, ter noção. Não são observáveis nem mensuráveis.</div></div>
+      </div>
+    </div>
+    <div class="tool"><h3>Rubrica de avaliação (Apêndice D): seminário ou ação educativa</h3>
+      <table class="t" style="font-size:8.2pt">
+        <tr><th style="width:22%">Critério</th><th>Insuficiente (0–4)</th><th>Adequado (5–7)</th><th>Excelente (8–10)</th></tr>
+        <tr><td class="k">Domínio do conteúdo</td><td>Erros conceituais graves</td><td>Conteúdo correto, com lacunas</td><td>Correto, aprofundado e atualizado</td></tr>
+        <tr><td class="k">Organização</td><td>Sem estrutura clara</td><td>Estrutura razoável</td><td>Introdução, desenvolvimento e fechamento claros</td></tr>
+        <tr><td class="k">Adequação ao público</td><td>Linguagem inadequada</td><td>Parcialmente adequada</td><td>Linguagem e recursos plenamente adequados</td></tr>
+        <tr><td class="k">Interação / participação</td><td>Não promove participação</td><td>Promove alguma participação</td><td>Promove diálogo e participação efetiva</td></tr>
+        <tr><td class="k">Uso do tempo e recursos</td><td>Descontrolado</td><td>Aceitável</td><td>Uso eficiente do tempo e dos recursos</td></tr>
+      </table>
+    </div>
+    <div class="tool" style="background:#E3F7D9"><h3>Roteiro da ação de educação em saúde (Apêndice C): checklist</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:.4mm 6mm;font-size:8.4pt">
+        <div><span class="checkbox"></span>1. Diagnóstico: quem é o público, o que sabe e acredita, barreiras e letramento</div>
+        <div><span class="checkbox"></span>5. Recursos e linguagem simples, imagens, culturalmente pertinentes</div>
+        <div><span class="checkbox"></span>2. Objetivos com verbos observáveis</div>
+        <div><span class="checkbox"></span>6. Execução dialógica: partir da realidade, valorizar as falas, problematizar</div>
+        <div><span class="checkbox"></span>3. Conteúdo essencial (o mínimo indispensável)</div>
+        <div><span class="checkbox"></span>7. Avaliação: teach-back e indicadores (adesão, retorno, parâmetros)</div>
+        <div><span class="checkbox"></span>4. Estratégia adequada ao objetivo e ao público</div>
+        <div><span class="checkbox"></span>8. Registro: participantes, temas, encaminhamentos</div>
+      </div>
+    </div>
+    <div class="small center" style="margin-top:auto">Modelos adaptados dos Apêndices B, C, D e E do Material Didático do Discente · Autoria: Prof. Dr. Patrício da Silva Almeida</div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 9</div>
+</section>
+
+<!-- ================= PÁGINA 10 — PEGADINHAS + GLOSSÁRIO ================= -->
+<section class="page info">
+  <div class="stripes"></div>
+  <div class="content"><div class="dashed-box">
+    <span class="hq-title white">Pegadinhas de prova e glossário</span>
+    <h4>O que as bancas mais cobram</h4>
+    <div class="peg">
+      <div><b>Didática ≠ metodologia.</b> A metodologia é só o “como”; a Didática também abrange objetivos, conteúdos e avaliação. Pedagogia ⊃ Didática ⊃ metodologia.</div>
+      <div><b>Comênio</b> é o pai da Didática moderna (<i>Didática Magna</i>, 1632). <b>Herbart</b>: passos formais e pedagogia tradicional. <b>Dewey</b>: Escola Nova, aprender fazendo. <b>Freire</b>: contra a educação bancária.</div>
+      <div><b>Piaget</b>: assimilação e acomodação. <b>Vygotsky</b>: ZDP e scaffolding. <b>Ausubel</b>: subsunçores e aprendizagem significativa. <b>Skinner</b>: reforço. <b>Knowles</b>: andragogia.</div>
+      <div><b>Níveis de planejamento</b>, do mais amplo ao mais específico: educacional → curricular → de ensino → de aula. Ementa é fixa e sintética; o conteúdo programático varia.</div>
+      <div><b>Bloom revisado</b>: lembrar, entender, aplicar, analisar, avaliar, <b>criar</b> (o mais complexo). Três domínios: cognitivo, afetivo e psicomotor. “Demonstrar a técnica” é psicomotor.</div>
+      <div><b>Método</b> é o caminho; <b>técnica</b> é o procedimento; <b>recurso</b> é o meio. O princípio que orienta a escolha: adequação ao objetivo, ao público e ao contexto.</div>
+      <div><b>Simulação</b>: briefing → cenário → <b>debriefing</b> (o momento central). <b>Sala invertida</b>: contato prévio antes; sala para aplicar. <b>ABP</b>: parte de problemas, com tutoria. <b>Arco de Maguerez</b>: 5 etapas, parte e retorna à realidade.</div>
+      <div><b>Avaliação</b>: diagnóstica (antes), formativa (durante, feedback), somativa (ao final). Validade = mede o que se propõe; fidedignidade = consistência. Luckesi: avaliação ≠ exame.</div>
+      <div><b>Educação continuada</b> é pontual e temática; <b>EPS</b> parte dos problemas reais do trabalho e transforma as práticas (PNEPS, Portaria 198/2004 e 1.996/2007; quadrilátero: ensino, gestão, atenção, controle social).</div>
+      <div><b>Teach-back</b>: pedir que a pessoa repita ou execute com as próprias palavras. <b>Letramento em saúde</b>: obter, compreender e usar informações de saúde. Primeira etapa da ação educativa: <b>diagnóstico da situação</b>.</div>
+    </div>
+    <h4>Glossário rápido</h4>
+    <div class="glos">
+      <b>Andragogia:</b> especificidades da aprendizagem do adulto (Knowles).<br>
+      <b>Currículo:</b> conjunto organizado de experiências de aprendizagem de um curso.<br>
+      <b>Debriefing:</b> reflexão estruturada após a simulação.<br>
+      <b>Distrator:</b> alternativa incorreta, porém plausível, de um item.<br>
+      <b>Educação bancária:</b> crítica de Freire ao ensino que “deposita” conteúdos.<br>
+      <b>Ementa:</b> síntese oficial do conteúdo de uma disciplina.<br>
+      <b>Empoderamento:</b> ampliação da autonomia e do poder de decisão sobre a saúde.<br>
+      <b>Feedback:</b> devolutiva que orienta a melhoria da aprendizagem.<br>
+      <b>Maiêutica:</b> método socrático de ensinar por perguntas.<br>
+      <b>Organizador prévio:</b> ponte entre o que o aluno sabe e o novo (Ausubel).<br>
+      <b>Pansofia:</b> ideal comeniano de “ensinar tudo a todos”.<br>
+      <b>Rubrica:</b> matriz de critérios e níveis de desempenho.<br>
+      <b>Scaffolding:</b> apoios temporários (“andaimes”) do mediador.<br>
+      <b>Subsunçor:</b> conhecimento prévio que ancora o novo (Ausubel).<br>
+      <b>TDIC:</b> Tecnologias Digitais de Informação e Comunicação.<br>
+      <b>ZDP:</b> distância entre o que se faz sozinho e com ajuda (Vygotsky).
+    </div>
+    <div class="fill"></div>
+    <p style="margin:0;font-size:8.8pt;color:#fff;font-weight:700;text-shadow:1px 1px 0 var(--ink)">Referências básicas da disciplina: LIBÂNEO, J. C. <i>Didática</i> (Cortez, 2013); MASETTO, M. T. <i>Competência pedagógica do professor universitário</i> (Summus, 2015); BORDENAVE, J. E. D.; PEREIRA, A. M. <i>Estratégias de ensino-aprendizagem</i> (Vozes, 2015). Complementares: FREIRE, P. <i>Pedagogia da autonomia</i> (Paz e Terra, 2011); ANASTASIOU, L. G. C.; ALVES, L. P. <i>Processos de ensinagem na universidade</i> (Univille, 2004); REIBNITZ, K. S.; PRADO, M. L. <i>Inovação e educação em enfermagem</i> (Cidade Futura, 2006).</p>
+  </div></div>
+  <div class="pagenum" style="color:#fff"><span class="credit" style="color:#eee">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 10</div>
+</section>
+
+<!-- ================= PÁGINA 11 — MINI-SIMULADO ================= -->
+<section class="page">
+  <div class="pad" style="display:flex;flex-direction:column;gap:3mm">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end"><div><span class="hq-title" style="font-size:24pt">Mini-simulado</span><div style="font-family:var(--title);font-weight:600;font-size:11pt">Doze questões selecionadas das questões de fixação da apostila. Marque, depois confira o gabarito.</div></div><span class="label">AV1 · AV2</span></div>
+    <div class="quiz">
+      <div class="q"><b>1.</b> O objeto de estudo da Didática é:<span>a) a administração financeira das instituições de ensino. b) o processo de ensino, na unidade entre ensino, aprendizagem e conteúdos, em seu contexto. c) exclusivamente a elaboração de provas. d) a gestão hospitalar. e) a história geral da humanidade.</span></div>
+      <div class="q"><b>2.</b> A dimensão do processo didático referente à relação interpessoal, comunicação e acolhimento é a:<span>a) técnica. b) humana. c) político-social. d) burocrática. e) financeira.</span></div>
+      <div class="q"><b>3.</b> A crítica à “educação bancária” e a defesa de uma educação dialógica são atribuídas a:<span>a) Comênio. b) Herbart. c) Skinner. d) Paulo Freire. e) Quintiliano.</span></div>
+      <div class="q"><b>4.</b> O conceito de Zona de Desenvolvimento Proximal está associado a:<span>a) Skinner e o reforço. b) Vygotsky e a mediação social. c) Ausubel e os subsunçores. d) Piaget e a acomodação. e) Knowles e a andragogia.</span></div>
+      <div class="q"><b>5.</b> Princípio da andragogia (Knowles):<span>a) o adulto aprende melhor quando tratado como criança. b) a experiência prévia é irrelevante. c) o adulto aprende melhor de forma centrada em problemas reais. d) a motivação é exclusivamente externa. e) prefere conteúdos abstratos.</span></div>
+      <div class="q"><b>6.</b> Na Taxonomia de Bloom revisada (domínio cognitivo), o nível mais complexo é:<span>a) lembrar. b) entender. c) aplicar. d) analisar. e) criar.</span></div>
+      <div class="q"><b>7.</b> Objetivo bem formulado (observável e mensurável):<span>a) “o aluno compreenderá bem as feridas”. b) “o aluno terá noção de curativos”. c) “o aluno classificará as lesões por pressão segundo os estágios”. d) “o aluno saberá sobre feridas”. e) “o aluno conhecerá a técnica”.</span></div>
+      <div class="q"><b>8.</b> A sequência correta dos níveis de planejamento, do mais amplo ao mais específico:<span>a) aula → ensino → curricular → educacional. b) educacional → curricular → de ensino → de aula. c) curricular → educacional → de aula → de ensino. d) de ensino → de aula → curricular → educacional. e) de aula → curricular → educacional → de ensino.</span></div>
+      <div class="q"><b>9.</b> Na simulação clínica, o momento reflexivo após o cenário denomina-se:<span>a) briefing. b) cenário. c) debriefing. d) checklist. e) fidelidade.</span></div>
+      <div class="q"><b>10.</b> A avaliação realizada durante o processo, cuja finalidade principal é fornecer feedback e regular a aprendizagem, é a:<span>a) diagnóstica. b) somativa. c) formativa. d) classificatória. e) seletiva.</span></div>
+      <div class="q"><b>11.</b> Um instrumento é considerado válido quando:<span>a) é fácil de corrigir. b) mede aquilo que se propõe a medir. c) produz resultados consistentes em aplicações repetidas. d) usa apenas múltipla escolha. e) é longo e detalhado.</span></div>
+      <div class="q"><b>12.</b> A diferença essencial entre educação continuada e educação permanente é que a EPS:<span>a) é pontual e episódica. b) parte de temas pré-definidos. c) parte dos problemas reais do trabalho e busca transformar as práticas. d) tem foco individual. e) limita-se a cursos de atualização.</span></div>
+    </div>
+    <div class="gab"><b>Gabarito:</b> 1-b · 2-b · 3-d · 4-b · 5-c · 6-e · 7-c · 8-b · 9-c · 10-c · 11-b · 12-c. Errou alguma? Volte à unidade correspondente e releia o conceito-chave: é assim que a avaliação vira aprendizagem (função formativa).</div>
+    <div class="grid2">
+      <div class="tool" style="background:#FFF6B0"><h3>Discursivas para treinar (AV1)</h3>
+        <div>• Explique, com um exemplo da prática de enfermagem, por que “o cuidado de enfermagem é também um ato educativo”.</div>
+        <div>• Elabore um plano de aula resumido (tema, objetivos com verbos de Bloom, três momentos e avaliação) para a orientação de alta de um paciente em uso de anticoagulante.</div>
+        <div>• Explique por que o debriefing é o momento central da simulação e descreva como o conduziria após um cenário de PCR.</div>
+        <div>• Compare os modelos tradicional e dialógico de educação em saúde e explique por que o dialógico tende a ser mais eficaz.</div></div>
+      <div class="tool" style="background:#E4E1FA"><h3>Roteiro de estudo (da apostila)</h3>
+        <div><b>Antes da aula:</b> leia a introdução e os objetivos da unidade.</div>
+        <div><b>Durante a leitura:</b> grife os conceitos-chave e registre dúvidas.</div>
+        <div><b>Depois da aula:</b> refaça os estudos de caso e as questões de fixação; confira o gabarito comentado.</div>
+        <div><b>Na revisão:</b> releia as sínteses, o glossário e o banco de questões (Apêndice G) e os simulados.</div>
+        <div style="margin-top:2mm" class="row"><div class="ill" data-scene="studentsWave" style="width:26mm;height:30mm;flex:0 0 26mm"></div><div style="font-family:var(--comic);font-weight:700;font-size:9.6pt">“A competência didática, como toda competência clínica, se constrói com estudo e prática.”</div></div></div>
+    </div>
+    <div class="small center" style="margin-top:auto">Cartilha educativa da disciplina Didática Aplicada à Enfermagem · Faculdade de Tecnologia do Amapá · Autoria: Prof. Dr. Patrício da Silva Almeida · Pode ser reproduzida para fins educativos.</div>
+  </div>
+  <div class="pagenum"><span class="credit">Autoria: Prof. Dr. Patrício da Silva Almeida</span> · 11</div>
+</section>
+
+<script src="../shared/ill.js"></script>
+</body>
+</html>

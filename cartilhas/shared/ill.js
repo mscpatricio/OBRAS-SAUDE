@@ -1078,6 +1078,124 @@
     ${bubble({ x: 10, y: 10, w: 210, h: 56, text: 'O “ouvidor” escuta o coração. É frio no começo e depois esquenta.', tail: [140, 118], size: 11 })}
   `));
 
+
+  // ======= DIDÁTICA APLICADA À ENFERMAGEM =======
+  const PROF = (o = {}) => person(Object.assign({ skin: '#C58C5A', hair: '#1C1C1C', hairStyle: 'cap', shirt: '#FFFFFF', pants: '#2C3E50', coat: '#5DADE2', sleeve: 'long', shoes: '#2C3E50', glasses: true }, o));
+  const STU1 = (o = {}) => person(Object.assign({ skin: '#F7D6B9', hair: '#E67E22', hairStyle: 'side', shirt: '#FFFFFF', pants: '#5B5F97', coat: null, sleeve: 'short' }, o));
+  const STU2 = (o = {}) => person(Object.assign({ skin: '#8D5B3A', hair: '#1C1C1C', hairStyle: 'bun', shirt: '#FFFFFF', pants: '#2C3E50', sleeve: 'short' }, o));
+  const STU3 = (o = {}) => person(Object.assign({ skin: '#F2C9A6', hair: '#7A3F1E', hairStyle: 'long', shirt: '#FFFFFF', pants: '#6B6B6B', sleeve: 'short' }, o));
+  const ELDER = (o = {}) => person(Object.assign({ skin: '#F2C9A6', hair: '#BDC3C7', hairStyle: 'bald', shirt: '#9B59B6', pants: '#6B6B6B', glasses: true }, o));
+  ITEMS.insulin = () => `<g transform="rotate(-30)"><rect x="-5" y="-36" width="10" height="56" rx="4" fill="#5DADE2" ${S}/><rect x="-6" y="-44" width="12" height="10" rx="2" fill="#2C3E50" ${S}/><rect x="-3" y="-10" width="6" height="22" fill="#ECF0F1"/><line x1="0" y1="20" x2="0" y2="30" ${S} stroke-width="2"/></g>`;
+  ITEMS.folder = () => `<g transform="rotate(-8)"><rect x="-24" y="-18" width="48" height="36" rx="3" fill="#F7C21B" ${S}/><rect x="-18" y="-12" width="36" height="4" rx="2" fill="#FFFFFF"/><rect x="-18" y="-4" width="28" height="4" rx="2" fill="#FFFFFF"/><rect x="-18" y="4" width="32" height="4" rx="2" fill="#FFFFFF"/></g>`;
+  ITEMS.marker = () => `<g transform="rotate(-35)"><rect x="-4" y="-34" width="8" height="40" rx="3" fill="#E74C3C" ${S}/><rect x="-3" y="-42" width="6" height="8" fill="#2C3E50"/></g>`;
+  function whiteboard(x, y, w, h, inner = '') {
+    return `<g transform="translate(${x} ${y})"><rect x="-6" y="-6" width="${w + 12}" height="${h + 12}" rx="6" fill="#95A5A6" ${S}/><rect x="0" y="0" width="${w}" height="${h}" fill="#FFFFFF" ${S}/>${inner}</g>`;
+  }
+  function deskRow(x, y, n = 3, gap = 110) {
+    let o = '';
+    for (let i = 0; i < n; i++) { const dx = x + i * gap; o += `<rect x="${dx}" y="${y - 40}" width="80" height="12" rx="3" fill="#D7A86E" ${S}/><rect x="${dx + 6}" y="${y - 28}" width="8" height="30" fill="#A0522D" ${S}/><rect x="${dx + 66}" y="${y - 28}" width="8" height="30" fill="#A0522D" ${S}/>`; }
+    return o;
+  }
+  function infusionPump(x, y) {
+    return `<g transform="translate(${x} ${y})"><rect x="-4" y="-150" width="8" height="150" fill="#95A5A6" ${S}/><path d="M-26 0 L26 0" ${S} stroke-width="6"/><rect x="-36" y="-130" width="72" height="54" rx="6" fill="#ECF0F1" ${S}/><rect x="-28" y="-122" width="56" height="22" rx="2" fill="#2C3E50"/>${htmlText(-28, -122, 56, 22, '50 mL/h', 9, 800, '#58D68D')}<circle cx="-16" cy="-88" r="4" fill="#58D68D" ${S} stroke-width="2"/><circle cx="0" cy="-88" r="4" fill="#F7C21B" ${S} stroke-width="2"/><circle cx="16" cy="-88" r="4" fill="#E74C3C" ${S} stroke-width="2"/><rect x="-14" y="-186" width="16" height="34" rx="4" fill="#D6EAF8" ${S}/></g>`;
+  }
+  function manikin(x, y) {
+    return `<g transform="translate(${x} ${y})">${hospBed(0, 0, 200, '#D6EAF8')}<ellipse cx="50" cy="-82" rx="18" ry="16" fill="#E8D5C4" ${S}/><rect x="66" y="-92" width="100" height="26" rx="10" fill="#E8D5C4" ${S}/><rect x="70" y="-90" width="60" height="22" rx="6" fill="#5DADE2" ${S} stroke-width="2"/></g>`;
+  }
+  const CLASS = (extra = '') => `${plainWall(420, 232, '#FDF2E9')}${floor(420, 232, 68, '#D7A86E')}<rect x="0" y="150" width="420" height="8" fill="#F5B041" ${S}/>${extra}`;
+
+  SCENES.d_cover = () => scene(420, 470, `
+    ${plainWall(420, 332, '#FDF2E9')}${floor(420, 332, 138, '#D7A86E')}<rect x="0" y="230" width="420" height="10" fill="#F5B041" ${S}/>
+    ${whiteboard(40, 40, 230, 130, `${htmlText(6, 6, 218, 40, 'Para quê? O quê? Como? Como avaliar?', 13, 800, '#2E86C1', 'center', 'Baloo 2')}<rect x="20" y="60" width="190" height="8" rx="4" fill="#BDC3C7"/><rect x="20" y="78" width="150" height="8" rx="4" fill="#BDC3C7"/><rect x="20" y="96" width="170" height="8" rx="4" fill="#BDC3C7"/>`)}
+    ${window_(300, 40, 96, 72)}
+    ${put(PROF({ armL: 'point', armR: 'hold', holdR: 'marker', expr: 'bigsmile' }), 310, 440, 1.0)}
+    ${deskRow(30, 330, 2, 120)}
+    ${put(STU1({ sit: true, expr: 'happy', armL: 'lap' }), 70, 338, 0.62)}
+    ${put(STU2({ sit: true, expr: 'happy', armR: 'hold', holdR: 'pen' }), 190, 338, 0.62)}
+  `, '', 'xMidYMax slice');
+  SCENES.d_tres = () => scene(420, 300, `
+    ${plainWall(140, 232, '#E8F8F5')}<rect x="140" y="0" width="140" height="232" fill="#EAF2F8"/><rect x="280" y="0" width="140" height="232" fill="#FDF2E9"/>${floor(420, 232, 68, '#F2E394')}
+    <line x1="140" y1="0" x2="140" y2="300" ${S} stroke-dasharray="8 6"/><line x1="280" y1="0" x2="280" y2="300" ${S} stroke-dasharray="8 6"/>
+    ${put(NURSE({ armR: 'show', holdR: 'insulin', expr: 'happy' }), 46, 296, 0.56)}${put(ELDER({ sit: true, expr: 'happy', armL: 'lap' }), 104, 250, 0.46)}
+    ${put(NURSE({ armR: 'point', expr: 'happy' }), 178, 296, 0.56)}${put(ASSIST({ expr: 'happy' }), 246, 296, 0.5)}${at(`<g transform="scale(.5)">${infusionPump(0, 0)}</g>`, 222, 232, 1)}
+    ${put(NURSE({ armL: 'wave', expr: 'bigsmile' }), 312, 296, 0.56)}${put(MOM({ sit: true, expr: 'happy', armL: 'lap' }), 362, 250, 0.42)}${put(STU3({ sit: true, expr: 'happy' }), 400, 250, 0.42)}
+    ${htmlText(4, 8, 132, 30, 'Paciente', 12, 800, OUT, 'center', 'Baloo 2')}${htmlText(144, 8, 132, 30, 'Equipe', 12, 800, OUT, 'center', 'Baloo 2')}${htmlText(284, 8, 132, 30, 'Comunidade', 12, 800, OUT, 'center', 'Baloo 2')}
+  `);
+  SCENES.d_joao = () => scene(420, 300, HOSP(`
+    ${put(NURSE({ armR: 'show', holdR: 'folder', expr: 'happy' }), 110, 296, 0.8)}
+    ${put(ELDER({ armL: 'down', expr: 'neutral' }), 300, 296, 0.8)}
+    ${bubble({ x: 10, y: 10, w: 150, h: 46, text: 'Entendeu?', tail: [110, 118], size: 13 })}
+    ${bubble({ x: 230, y: 10, w: 120, h: 46, text: 'Sim…', tail: [300, 118], size: 13 })}
+    ${bubble({ x: 250, y: 70, w: 160, h: 60, text: 'Duas semanas depois: dose dobrada e sangramento.', kind: 'thought', size: 10 })}
+  `));
+  SCENES.d_teachback = () => scene(420, 300, HOSP(`
+    ${put(NURSE({ armR: 'point', expr: 'happy' }), 110, 296, 0.8)}
+    ${put(ELDER({ armR: 'show', holdR: 'folder', expr: 'happy' }), 300, 296, 0.8)}
+    ${bubble({ x: 10, y: 10, w: 200, h: 60, text: 'Me explique com as suas palavras: o que o senhor faz se esquecer uma dose?', tail: [110, 118], size: 10.5 })}
+    ${bubble({ x: 230, y: 10, w: 180, h: 60, text: 'Não tomo em dobro. Tomo a próxima no horário e anoto aqui.', tail: [300, 118], size: 10.5 })}
+  `));
+  SCENES.d_bomba = () => scene(420, 300, HOSP(`
+    ${infusionPump(330, 232)}
+    ${put(NURSE({ armR: 'point', expr: 'happy' }), 110, 296, 0.8)}
+    ${put(ASSIST({ armL: 'hold', expr: 'happy' }), 230, 296, 0.74)}
+    ${put(STU2({ expr: 'happy', shirt: '#5DADE2', coat: '#DDF3FF', sleeve: 'long' }), 300, 296, 0.66)}
+    ${bubble({ x: 10, y: 10, w: 220, h: 60, text: 'Semana passada tivemos um quase-erro de dose. Como vocês resolveriam? Depois, cada um programa a bomba.', tail: [110, 118], size: 10 })}
+  `));
+  SCENES.d_roda = () => scene(420, 300, UBS(`
+    ${waitingChairs(20, 232, 5, '#58D68D')}
+    ${put(NURSE({ sit: true, expr: 'happy', armR: 'point' }), 52, 238, 0.56)}
+    ${put(MOM({ sit: true, expr: 'happy', armL: 'lap' }), 130, 238, 0.56)}
+    ${put(ELDER({ sit: true, expr: 'happy' }), 208, 238, 0.56)}
+    ${put(STU3({ sit: true, expr: 'happy', shirt: '#E74C3C' }), 286, 238, 0.56)}
+    ${put(STU2({ sit: true, expr: 'happy', shirt: '#F7C21B' }), 364, 238, 0.56)}
+    ${bubble({ x: 10, y: 10, w: 200, h: 56, text: 'O que vocês fazem quando a pressão “não dá sintoma”?', tail: [52, 120], size: 11 })}
+    ${bubble({ x: 230, y: 10, w: 180, h: 56, text: 'Eu paro o remédio. Pressão é do nervoso, passa.', tail: [208, 120], size: 10.5 })}
+  `));
+  SCENES.d_simulacao = () => scene(420, 300, HOSP(`
+    ${manikin(30, 232)}${monitor(260, 232)}
+    ${put(STU1({ armR: 'front', expr: 'worried', coat: '#DDF3FF', sleeve: 'long' }), 150, 296, 0.7)}
+    ${put(STU2({ armL: 'hold', holdL: 'clipboard', expr: 'neutral', coat: '#DDF3FF', sleeve: 'long' }), 240, 296, 0.66)}
+    ${put(PROF({ armL: 'hold', holdL: 'clipboard', expr: 'happy' }), 360, 296, 0.76)}
+    ${wallSign(20, 24, 'Briefing → Cenário → Debriefing', 210, 28)}
+  `, '#FDFEFE'));
+  SCENES.d_debrief = () => scene(420, 300, CLASS(`
+    ${waitingChairs(40, 232, 4, '#5DADE2')}
+    ${put(PROF({ sit: true, expr: 'happy', armR: 'point' }), 72, 238, 0.56)}
+    ${put(STU1({ sit: true, expr: 'happy' }), 150, 238, 0.56)}
+    ${put(STU2({ sit: true, expr: 'happy' }), 228, 238, 0.56)}
+    ${put(STU3({ sit: true, expr: 'happy' }), 306, 238, 0.56)}
+    ${bubble({ x: 10, y: 10, w: 230, h: 60, text: 'O que vocês fizeram? Por quê? O que sentiram? O que fariam diferente?', tail: [72, 120], size: 11 })}
+    ${wallSign(280, 30, 'Debriefing', 110, 28)}
+  `));
+  SCENES.d_maos = () => scene(420, 300, HOSP(`
+    <rect x="290" y="150" width="110" height="82" rx="6" fill="#49B9A9" ${S}/><ellipse cx="345" cy="150" rx="46" ry="12" fill="#A9DFD8" ${S}/><rect x="340" y="104" width="10" height="42" fill="#95A5A6" ${S}/>
+    ${wallSign(20, 24, '5 momentos', 100, 28)}
+    ${put(NURSE({ armL: 'show', armR: 'show', expr: 'happy' }), 120, 296, 0.8)}
+    ${put(MOM({ armL: 'show', armR: 'show', expr: 'happy' }), 250, 296, 0.78)}
+    ${bubble({ x: 140, y: 10, w: 240, h: 56, text: 'Agora a senhora faz, e eu vou marcando no checklist.', tail: [120, 118], size: 11 })}
+  `));
+  SCENES.d_prova = () => scene(420, 300, CLASS(`
+    ${deskRow(60, 232, 2, 150)}
+    ${put(STU1({ sit: true, expr: 'neutral', armR: 'hold', holdR: 'pen' }), 100, 238, 0.62)}
+    ${put(STU3({ sit: true, expr: 'happy', armR: 'hold', holdR: 'pen' }), 250, 238, 0.62)}
+    ${put(PROF({ armR: 'hold', holdR: 'clipboard', expr: 'happy' }), 360, 296, 0.76)}
+    ${bubble({ x: 150, y: 10, w: 250, h: 60, text: 'Você acertou a técnica. Faltou o tempo de secagem. Na próxima, conte até 20 em voz alta.', tail: [360, 118], size: 10.5 })}
+  `));
+  SCENES.d_tradicional = () => scene(420, 240, CLASS(`
+    ${whiteboard(30, 20, 150, 90, `<rect x="12" y="14" width="120" height="6" rx="3" fill="#BDC3C7"/><rect x="12" y="30" width="100" height="6" rx="3" fill="#BDC3C7"/><rect x="12" y="46" width="124" height="6" rx="3" fill="#BDC3C7"/><rect x="12" y="62" width="90" height="6" rx="3" fill="#BDC3C7"/>`)}
+    ${put(PROF({ armL: 'point', expr: 'neutral' }), 230, 236, 0.64)}
+    ${deskRow(270, 180, 1, 0)}${put(STU1({ sit: true, expr: 'happyclosed' }), 310, 184, 0.5)}${zzz(330, 80)}
+    ${htmlText(290, 20, 120, 24, 'Tradicional', 12, 800, OUT, 'center', 'Baloo 2')}
+  `).replace('floor(420, 232', 'floor(420, 180'));
+  SCENES.d_ativa = () => scene(420, 240, `
+    ${plainWall(420, 180, '#E8F8F5')}${floor(420, 180, 60, '#F2E394')}
+    <circle cx="210" cy="150" r="60" fill="#FFF6B0" ${S}/>${htmlText(160, 130, 100, 40, 'PROBLEMA', 12, 800, OUT, 'center', 'Baloo 2')}
+    ${put(STU1({ expr: 'happy', armR: 'point' }), 110, 236, 0.56)}${put(STU2({ expr: 'happy', armL: 'point' }), 310, 236, 0.56)}${put(PROF({ expr: 'happy' }), 210, 110, 0.4)}
+    ${htmlText(290, 10, 120, 24, 'Metodologia ativa', 12, 800, OUT, 'center', 'Baloo 2')}
+  `);
+  SCENES.profWave = () => scene(200, 310, put(PROF({ armL: 'wave', armR: 'hold', holdR: 'marker', expr: 'bigsmile' }), 100, 305, 1));
+  SCENES.studentsWave = () => scene(260, 310, put(STU1({ armL: 'wave', expr: 'bigsmile' }), 80, 305, 0.9) + put(STU2({ armR: 'wave', expr: 'bigsmile', armL: 'hold', holdL: 'clipboard' }), 190, 305, 0.9));
+
   // --- sinais do card ---
   SCENES.sig_stop = () => scene(120, 120, `<circle cx="60" cy="60" r="54" fill="#E74C3C" ${S}/>${at(ICON.stop(), 28, 24, 1.1)}`);
   SCENES.sig_ok = () => scene(120, 120, `<circle cx="60" cy="60" r="54" fill="#58D68D" ${S}/>${at(ICON.thumbs(), 26, 26, 1.1)}`);

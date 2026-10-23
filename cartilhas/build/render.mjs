@@ -28,6 +28,7 @@ const DOCS = {
   'pais-dentista': { file: 'pais-dentista/index.html', out: 'Cartilha-Pais-Dentista-TEA.pdf', format: 'A4' },
   'pais-ubs': { file: 'pais-ubs/index.html', out: 'Cartilha-Pais-UBS-TEA.pdf', format: 'A4' },
   'pais-hospital': { file: 'pais-hospital/index.html', out: 'Cartilha-Pais-Hospital-TEA.pdf', format: 'A4' },
+  'cartilha-didatica': { file: 'cartilha-didatica/index.html', out: 'Cartilha-Didatica-Aplicada-Enfermagem.pdf', format: 'A4' },
   'cartilha-paciente': { file: 'cartilha-paciente/index.html', out: 'Cartilha-Minha-Visita-ao-Dentista.pdf', format: 'A4' },
   'preview-cenas': { file: 'build/preview-cenas.html', out: 'preview-cenas.pdf', format: 'A4', pngOnly: true },
 };
