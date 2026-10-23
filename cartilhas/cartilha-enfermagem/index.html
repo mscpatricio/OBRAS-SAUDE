@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Cartilha — Atendimento de Enfermagem à Pessoa com TEA na UBS</title>
+<link rel="stylesheet" href="../shared/style.css">
+<style>
+  .cover { background: #58D68D; }
+  .cover .tiles { position: absolute; inset: 0; background-image: linear-gradient(#fff 0 3px, transparent 3px), linear-gradient(90deg, #fff 0 3px, transparent 3px); background-size: 24mm 24mm; opacity: .5; }
+  .cover .titlebox { position: absolute; left: 14mm; right: 14mm; top: 16mm; background: #fff; border: 3px solid var(--ink); border-radius: 10px; padding: 7mm 8mm 6mm; box-shadow: 5px 5px 0 var(--ink); text-align: center; }
+  .cover .titlebox .hq-title { font-size: 34pt; color: #8FE26E; }
+  .cover .titlebox .sub { margin-top: 3mm; font-family: var(--title); font-weight: 600; font-size: 14pt; line-height: 1.15; }
+  .cover .art { position: absolute; left: 0; right: 0; top: 76mm; bottom: 0; }
+  .cover .art .ill { width: 100%; height: 100%; }
+  .cover .badge { position: absolute; left: 14mm; top: 70mm; transform: rotate(-5deg); }
+  .cover .foot { position: absolute; left: 14mm; right: 14mm; bottom: 12mm; display: flex; justify-content: space-between; align-items: flex-end; }
+  .cover .foot .who { font-family: var(--title); font-weight: 800; font-size: 11pt; background: #fff; border: 3px solid var(--ink); border-radius: 999px; padding: 2mm 6mm; box-shadow: 3px 3px 0 var(--ink); }
+  .cover .foot .org { font-size: 9pt; font-weight: 700; text-align: right; background: rgba(255,255,255,.92); border: 2.5px solid var(--ink); border-radius: 8px; padding: 1.5mm 4mm; }
+
+  .section-head { display: flex; align-items: center; gap: 5mm; margin-bottom: 4mm; }
+  .section-head .num { width: 16mm; height: 16mm; border-radius: 50%; border: 3px solid var(--ink); display: flex; align-items: center; justify-content: center; font-family: var(--title); font-weight: 800; font-size: 22pt; box-shadow: 3px 3px 0 var(--ink); }
+  .section-head .hq-title { font-size: 26pt; }
+  .section-head .sub { font-family: var(--title); font-weight: 600; font-size: 12pt; color: #444; }
+  .m-antes .num { background: var(--blue); } .m-durante .num { background: #58D68D; } .m-depois .num { background: var(--yellow-strong); } .m-proc .num { background: #BB8FCE; }
+  .m-antes .hq-title { color: #7FD1F5; } .m-durante .hq-title { color: #8FE26E; } .m-depois .hq-title { color: #FFD54F; } .m-proc .hq-title { color: #D7BDE2; }
+  .strip { position: absolute; left: 0; top: 0; bottom: 0; width: 7mm; }
+  .m-antes .strip { background: var(--blue); } .m-durante .strip { background: #58D68D; } .m-depois .strip { background: var(--yellow-strong); } .m-proc .strip { background: #BB8FCE; }
+  .content { position: absolute; left: 16mm; right: 12mm; top: 12mm; bottom: 12mm; display: flex; flex-direction: column; }
+  .panels { display: grid; gap: 4mm; } .panels.two { grid-template-columns: 1fr 1fr; }
+  .panel-wrap { display: flex; flex-direction: column; gap: 2mm; } .panel-wrap .caption { padding: 0 1mm; }
+  .fill { flex: 1; }
+  .box.compact li { margin-bottom: 2.1mm; font-size: 10.1pt; line-height: 1.3; } .box.compact h3 { font-size: 14pt; }
+  .tip { background: var(--blue-pale); border: 3px dashed var(--blue); border-radius: 10px; padding: 3mm 4mm; font-size: 10pt; display: flex; gap: 3mm; align-items: center; }
+  .tip .ic { width: 11mm; height: 11mm; flex: 0 0 11mm; } .tip b { font-family: var(--title); font-weight: 800; }
+
+  .intro h2 { font-family: var(--title); font-weight: 800; font-size: 20pt; margin: 0 0 2mm; }
+  .intro p { margin: 0 0 3mm; font-size: 11pt; }
+  .moments { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4mm; }
+  .moment { border: 3px solid var(--ink); border-radius: 10px; padding: 3mm 4mm; font-size: 10pt; }
+  .moment b { display: block; font-family: var(--title); font-weight: 800; font-size: 13pt; }
+  .moment.antes { background: #D6EAF8; } .moment.durante { background: #DFF5D3; } .moment.depois { background: #FFF0B3; }
+  .kit { border: 3px solid var(--ink); border-radius: 12px; padding: 4mm; display: flex; gap: 4mm; align-items: center; box-shadow: 4px 4px 0 var(--ink); background: #E8F8F5; }
+  .kit .ill { width: 28mm; height: 36mm; flex: 0 0 28mm; }
+  .kit h4 { margin: 0 0 1.5mm; font-family: var(--title); font-weight: 800; font-size: 13pt; }
+  .kit p { margin: 0; font-size: 10pt; }
+
+  /* procedimentos */
+  .proc { border: 3px solid var(--ink); border-radius: 12px; overflow: hidden; display: grid; grid-template-columns: 62mm 1fr; background: #fff; box-shadow: 4px 4px 0 var(--ink); }
+  .proc .art { border-right: 3px solid var(--ink); }
+  .proc .art .ill { height: 100%; }
+  .proc .txt { padding: 3mm 4mm; }
+  .proc h3 { margin: 0 0 1.5mm; font-family: var(--title); font-weight: 800; font-size: 14pt; }
+  .proc ul { margin: 0; padding-left: 4.5mm; font-size: 9.6pt; line-height: 1.3; }
+  .proc li { margin-bottom: 1mm; }
+  .proc .say { font-family: var(--comic); font-weight: 700; font-size: 9.6pt; background: #FFF6B0; border-radius: 6px; padding: 1.5mm 2.5mm; margin-top: 1.5mm; }
+
+  /* história da vacina */
+  .ministeps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; }
+  .ministep { border: 3px solid var(--ink); border-radius: 10px; overflow: hidden; background: #fff; }
+  .ministep .art { height: 34mm; border-bottom: 3px solid var(--ink); }
+  .ministep .art .ill { height: 100%; }
+  .ministep .txt { padding: 1.6mm 2.2mm; font-family: var(--comic); font-weight: 700; font-size: 9.4pt; line-height: 1.2; display: flex; gap: 2mm; align-items: flex-start; }
+  .ministep .n { flex: 0 0 7mm; width: 7mm; height: 7mm; border-radius: 50%; border: 2.5px solid var(--ink); background: var(--yellow-strong); font-family: var(--title); font-weight: 800; font-size: 10pt; display: flex; align-items: center; justify-content: center; }
+
+  .info { background: #58D68D; }
+  .info .stripes { position: absolute; inset: 0; opacity: .35; background: repeating-linear-gradient(135deg, #8FE26E 0 10px, #A9EC8F 10px 20px); }
+  .info .content { left: 12mm; }
+  .info .dashed-box { height: 100%; display: flex; flex-direction: column; }
+  .info .hq-title { font-size: 30pt; text-align: center; display: block; margin-bottom: 3mm; }
+  .info p, .info li { font-family: var(--comic); font-weight: 700; font-size: 10.8pt; line-height: 1.35; color: #0B3A1F; }
+  .info p { margin: 0 0 2.4mm; }
+  .info h4 { font-family: var(--title); font-weight: 800; font-size: 13.5pt; margin: 3mm 0 2mm; color: #0B3A1F; }
+  .info table { width: 100%; border-collapse: collapse; background: rgba(255,255,255,.88); border: 2.5px solid var(--ink); }
+  .info th, .info td { border: 2px solid var(--ink); padding: 2mm 2.6mm; font-family: var(--comic); font-weight: 700; font-size: 10pt; vertical-align: top; text-align: left; }
+  .info th { font-family: var(--title); font-weight: 800; font-size: 10.5pt; background: #FFF6B0; }
+  .info td.no { background: #FDE2E0; } .info td.yes { background: #E3F7D9; }
+
+  .ficha h2 { font-family: var(--title); font-weight: 800; font-size: 20pt; margin: 0 0 1mm; }
+  .ficha .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+  .ficha h4 { font-family: var(--title); font-weight: 800; font-size: 12pt; margin: 3mm 0 1.5mm; border-bottom: 2.5px solid var(--ink); }
+  .ficha .opts { font-size: 9.6pt; line-height: 2.1; }
+  .ficha .opts .line { display: inline-block; border-bottom: 2px solid var(--ink); height: 4mm; vertical-align: baseline; }
+  .credits { border: 3px solid var(--ink); border-radius: 10px; padding: 4mm; background: #F3F8E8; font-size: 9pt; margin-top: auto; }
+  .credits b { font-family: var(--title); font-weight: 800; }
+</style>
+</head>
+<body>
+
+<!-- ================= CAPA ================= -->
+<section class="page cover">
+  <div class="tiles"></div>
+  <div class="art"><div class="ill" data-scene="n_cover"></div></div>
+  <div class="titlebox">
+    <div class="hq-title">Atendimento de Enfermagem<br>à Pessoa com TEA</div>
+    <div class="sub">Cartilha de orientação para a equipe de enfermagem<br>da Unidade Básica de Saúde: antes, durante e depois</div>
+  </div>
+  <div class="badge"><span class="label">Acolhimento · Triagem · Vacina · Procedimentos</span></div>
+  <div class="foot">
+    <div class="who">Para enfermeiros, técnicos, ACS e recepção</div>
+    <div class="org">Material educativo · Coautoria: Dr. Patrício Almeida<br>Mesma série da cartilha odontológica</div>
+  </div>
+</section>
+
+<!-- ================= PÁGINA 2 — APRESENTAÇÃO ================= -->
+<section class="page">
+  <div class="pad intro" style="display:flex;flex-direction:column;gap:4mm">
+    <div>
+      <h2>Por que esta cartilha</h2>
+      <p>A Unidade Básica de Saúde (UBS) é a porta de entrada do SUS, e a <b>equipe de enfermagem</b> é quem mais tem contato com a pessoa com Transtorno do Espectro Autista (TEA): no acolhimento, na triagem, na sala de vacina, nos curativos, na coleta de exames, na puericultura e na visita domiciliar. Barulho, espera, toque sem aviso e mudanças de rotina podem gerar sobrecarga, recusa ou crise. <b>Não é birra: é um pedido de previsibilidade.</b></p>
+      <p>Com preparo simples e sempre o mesmo jeito de atender, o cuidado acontece com menos sofrimento para todos. Esta cartilha segue a mesma lógica da cartilha odontológica da série: <b>antes, durante e depois</b>, mais um guia por procedimento e uma história social para a criança.</p>
+    </div>
+    <div class="kit">
+      <div class="ill" data-scene="nurseWave"></div>
+      <div><h4>Quem usa</h4><p>Enfermeiros e técnicos de enfermagem, agentes comunitários de saúde (ACS) e recepção da UBS. Pode ficar na sala de triagem, na sala de vacina e no acolhimento. A página 7 (história da vacina) pode ser impressa e entregue à família.</p></div>
+    </div>
+    <div class="moments">
+      <div class="moment antes"><b>ANTES</b>Identificar no cadastro, conhecer o perfil sensorial, preparar o ambiente e combinar os sinais.</div>
+      <div class="moment durante"><b>DURANTE</b>Acolher com calma, Falar–Mostrar–Fazer, um procedimento de cada vez, respeitar o PARE.</div>
+      <div class="moment depois"><b>DEPOIS</b>Elogiar, recompensar, registrar o que funcionou e planejar o próximo atendimento.</div>
+    </div>
+    <div class="box" style="padding:4mm 6mm;box-shadow:none;background:#FAFAFA">
+      <h3 style="font-size:13pt;margin-bottom:2mm">O que você encontra aqui</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1mm 8mm;font-size:10pt">
+        <div><b>3</b> · Antes: cadastro, perfil sensorial, agenda e ambiente</div>
+        <div><b>6</b> · Depois: recompensa, registro, retorno e visita domiciliar</div>
+        <div><b>4</b> · Durante: acolhimento, triagem e comunicação</div>
+        <div><b>7</b> · História social “Minha vacina na UBS” (para a família)</div>
+        <div><b>5</b> · Procedimentos: vacina, curativo, coleta, medicação</div>
+        <div><b>8</b> · Informativo e ficha do perfil sensorial</div>
+      </div>
+    </div>
+    <div class="tip"><div class="ic" data-icon="heart"></div><div><b>Regra de ouro:</b> previsibilidade, uma coisa de cada vez e nunca forçar. Um atendimento em que a pessoa só conheceu a sala e saiu tranquila <b>deu certo</b>: o próximo será mais fácil.</div></div>
+    <div class="small">Pessoas com TEA têm direito a atendimento prioritário e a acompanhante (Lei 12.764/2012, Lei 13.146/2015 e Lei 13.977/2020, da Carteira de Identificação da Pessoa com TEA). Esta cartilha é educativa e não substitui protocolos da unidade nem a avaliação clínica individual.</div>
+  </div>
+  <div class="pagenum"><span class="credit">Coautoria: Dr. Patrício Almeida</span> · 2</div>
+</section>
+
+<!-- ================= PÁGINA 3 — ANTES ================= -->
+<section class="page m-antes">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">1</div><div><div class="hq-title">ANTES do atendimento</div><div class="sub">Conhecer a pessoa e preparar a unidade</div></div></div>
+    <div class="panels two">
+      <div class="panel-wrap"><div class="panel" style="height:72mm"><div class="ill" data-scene="n_domicilio"></div></div><div class="caption">1. O ACS e a enfermagem conhecem a família na visita domiciliar: como a pessoa se comunica, o que a acalma, o que a incomoda.</div></div>
+      <div class="panel-wrap"><div class="panel" style="height:72mm"><div class="ill" data-scene="before_card"></div></div><div class="caption">2. A família recebe a história social e fotos da UBS para ler em casa antes do dia. Chegar sabendo o que vai acontecer muda tudo.</div></div>
+    </div>
+    <div style="height:4mm"></div>
+    <div class="box compact">
+      <h3>Checklist do ANTES</h3>
+      <ul>
+        <li><div class="ic" data-icon="notes"></div><div><b>Sinalize no cadastro</b> (e-SUS/prontuário) que a pessoa tem TEA e anote o perfil sensorial (ficha da página 8). Toda a equipe deve ver o alerta antes de chamar.</div></li>
+        <li><div class="ic" data-icon="phone"></div><div><b>Entrevista com a família ou cuidador</b> (na visita do ACS, por telefone ou na recepção): comunicação, sensibilidades, gatilhos, o que acalma, experiências anteriores com injeção e sangue, medicações.</div></li>
+        <li><div class="ic" data-icon="calendar"></div><div><b>Agende horário de menor movimento</b> (primeiro do turno) e garanta a <b>prioridade</b> no atendimento: espera curta, sem fila.</div></li>
+        <li><div class="ic" data-icon="video"></div><div><b>Envie fotos ou vídeo curto</b> da UBS, da sala de vacina e da equipe (sem máscara) e entregue a história social da página 7.</div></li>
+        <li><div class="ic" data-icon="lampdim"></div><div><b>Prepare um espaço calmo</b> para a espera: sem TV alta, luz suave, poucas pessoas. Separe fones ou abafadores, brinquedo de distração, adesivos de recompensa.</div></li>
+        <li><div class="ic" data-icon="steps"></div><div><b>Agrupe procedimentos</b> e combine a ordem com a família: o mais difícil (vacina, coleta) primeiro ou por último? Em geral, <b>primeiro e rápido</b>, para não aumentar a ansiedade.</div></li>
+        <li><div class="ic" data-icon="stop"></div><div><b>Combine os sinais:</b> mão levantada = PARE; polegar = tudo bem. Combine também o “tempo combinado”: “conto até dez e acabou”.</div></li>
+      </ul>
+    </div>
+    <div class="fill"></div>
+    <div class="tip"><div class="ic" data-icon="family"></div><div><b>Mesma pessoa, mesma sala:</b> sempre que possível, a mesma profissional atende nas próximas visitas. A repetição transforma a UBS em um lugar seguro.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Coautoria: Dr. Patrício Almeida</span> · 3</div>
+</section>
+
+<!-- ================= PÁGINA 4 — DURANTE ================= -->
+<section class="page m-durante">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">2</div><div><div class="hq-title">DURANTE: acolhimento e triagem</div><div class="sub">Acolher, apresentar e medir sem susto</div></div></div>
+    <div class="panels two">
+      <div class="panel-wrap"><div class="panel" style="height:72mm"><div class="ill" data-scene="n_acolhimento"></div></div><div class="caption">3. A recepção já sabe: chama pelo nome, sem gritar, e leva a família para o espaço calmo. Nada de esperar na fila.</div></div>
+      <div class="panel-wrap"><div class="panel" style="height:72mm"><div class="ill" data-scene="n_triagem"></div></div><div class="caption">4. Na triagem, Falar–Mostrar–Fazer: a enfermeira mostra a braçadeira, deixa tocar, aperta primeiro no ursinho e só então no braço.</div></div>
+    </div>
+    <div style="height:4mm"></div>
+    <div class="box compact">
+      <h3>Como proceder</h3>
+      <ul>
+        <li><div class="ic" data-icon="talk"></div><div><b>Chame pelo nome, com voz calma</b>, na altura dos olhos. Não exija contato visual nem “dá um oi”. Avise antes de tocar: “vou tocar no seu braço”.</div></li>
+        <li><div class="ic" data-icon="family"></div><div><b>Acompanhante sempre junto</b>, onde a pessoa possa vê-lo. Pergunte a ele como ela diz “sim”, “não” e “dor”. Uma voz de cada vez na sala.</div></li>
+        <li><div class="ic" data-icon="mirror"></div><div><b>Falar–Mostrar–Fazer em tudo:</b> termômetro, braçadeira, oxímetro, balança, estetoscópio. Mostre, deixe tocar, use no brinquedo ou no acompanhante, depois na pessoa.</div></li>
+        <li><div class="ic" data-icon="steps"></div><div><b>Linguagem literal e curta:</b> “vai apertar como um abraço”, “vai ficar gelado”, em vez de “não vai doer” ou “é rapidinho”. Uma instrução por vez, na mesma ordem.</div></li>
+        <li><div class="ic" data-icon="timer"></div><div><b>Dê previsibilidade:</b> conte em voz alta (“até dez e solta”), mostre a sequência visual ou a história social, avise cada etapa antes e quando terminar.</div></li>
+        <li><div class="ic" data-icon="headphones"></div><div><b>Reduza estímulos:</b> fones ou abafadores, luz suave, sem conversas paralelas, sem aparelhos ligados de surpresa. Balança e aferição podem ser feitas sentada, no colo ou em pé.</div></li>
+        <li><div class="ic" data-icon="pause"></div><div><b>Sinais de sobrecarga</b> (tapar ouvidos, balançar, gritar, morder, tentar sair, “desligar”): pare, reduza estímulos, ofereça o objeto de conforto e dê tempo. Se não der, remarque sem culpa.</div></li>
+      </ul>
+    </div>
+    <div class="fill"></div>
+    <div class="tip"><div class="ic" data-icon="check"></div><div><b>Medidas flexíveis:</b> se a pessoa não tolera a braçadeira hoje, registre, oriente a família e tente na próxima visita. Pressão, peso e temperatura podem ser aferidos em etapas.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Coautoria: Dr. Patrício Almeida</span> · 4</div>
+</section>
+
+<!-- ================= PÁGINA 5 — PROCEDIMENTOS ================= -->
+<section class="page m-proc">
+  <div class="strip"></div>
+  <div class="content" style="gap:4mm">
+    <div class="section-head" style="margin-bottom:0"><div class="num">3</div><div><div class="hq-title">DURANTE: procedimentos</div><div class="sub">Vacina, curativo, coleta de sangue e medicação</div></div></div>
+    <div class="proc">
+      <div class="art"><div class="ill" data-scene="n_vacina"></div></div>
+      <div class="txt"><h3>Vacinação</h3>
+        <ul><li><b>Prepare tudo antes</b> de chamar: seringa pronta, fora do campo de visão até a hora.</li><li>Posição de conforto: <b>no colo ou abraçado</b> pelo acompanhante, de frente para ele. Nunca segurar à força.</li><li><b>Distração ativa:</b> brinquedo, vídeo curto, bolha de sabão, contar junto. Óculos escuros e fones ajudam.</li><li>Se forem várias doses, <b>combine a ordem</b> e faça sem pausas longas, ou divida em dois dias se a família preferir.</li><li>Adesivo ou carimbo no fim, sempre.</li></ul>
+        <div class="say">Diga: “Vai ser uma picadinha rápida, como um beliscão. Olha para o ursinho. Um, dois, três… pronto!”</div></div>
+    </div>
+    <div class="proc">
+      <div class="art"><div class="ill" data-scene="n_curativo"></div></div>
+      <div class="txt"><h3>Curativos e pequenos procedimentos</h3>
+        <ul><li>Mostre o material; deixe <b>tocar na gaze e no esparadrapo</b> antes.</li><li>Avise cada sensação: “vai ficar gelado”, “vai puxar um pouquinho”.</li><li><b>Deixe escolher</b> o que for possível: a cor do curativo, o braço, sentado ou deitado.</li><li>Retirada de pontos e troca de curativo: mesma sequência, mesma profissional.</li></ul>
+        <div class="say">Diga: “Primeiro eu limpo, fica gelado. Depois coloco o curativo. Você escolhe a cor.”</div></div>
+    </div>
+    <div class="proc">
+      <div class="art"><div class="ill" data-scene="n_coleta"></div></div>
+      <div class="txt"><h3>Coleta de sangue e medicação injetável</h3>
+        <ul><li>Agende como <b>primeira coleta do dia</b>; jejum longo piora a tolerância.</li><li>Garrote: <b>mostre e aperte primeiro no acompanhante</b>; conte o tempo em voz alta.</li><li>Profissional mais experiente para <b>uma punção só</b>. Se a veia não vier, pare e remarque.</li><li>Medicação oral: pergunte sabor e textura que a pessoa aceita; use seringa dosadora ou copinho conhecido.</li></ul>
+        <div class="say">Diga: “Vou amarrar esta fitinha no braço. Aperta um pouco. Até dez e acabou.”</div></div>
+    </div>
+    <div class="tip"><div class="ic" data-icon="warn"></div><div><b>Nunca forçar nem segurar.</b> Contenção só com indicação, consentimento da família e protocolo da unidade. Em caso de recusa: encerrar de forma positiva, registrar e reagendar.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Coautoria: Dr. Patrício Almeida</span> · 5</div>
+</section>
+
+<!-- ================= PÁGINA 6 — DEPOIS ================= -->
+<section class="page m-depois">
+  <div class="strip"></div>
+  <div class="content">
+    <div class="section-head"><div class="num">4</div><div><div class="hq-title">DEPOIS do atendimento</div><div class="sub">Recompensar, registrar e dar continuidade</div></div></div>
+    <div class="panels two">
+      <div class="panel-wrap"><div class="panel" style="height:72mm"><div class="ill" data-scene="n_recompensa"></div></div><div class="caption">5. Terminou? Elogio específico e adesivo, mesmo que só tenha medido a temperatura. O atendimento sempre acaba bem.</div></div>
+      <div class="panel-wrap"><div class="panel" style="height:72mm"><div class="ill" data-scene="n_registro"></div></div><div class="caption">6. A enfermeira registra o que funcionou. Na próxima vez, a equipe repete a sequência e tenta mais um passo.</div></div>
+    </div>
+    <div style="height:4mm"></div>
+    <div class="box compact">
+      <h3>Como proceder depois</h3>
+      <ul>
+        <li><div class="ic" data-icon="gift"></div><div><b>Encerre de forma positiva:</b> diga o que a pessoa fez de bom, entregue o adesivo e avise o que acontece na próxima vez.</div></li>
+        <li><div class="ic" data-icon="notes"></div><div><b>Registre no prontuário</b> o que funcionou e o que não funcionou (fones? colo? contagem? sala calma?) e o degrau alcançado. Compartilhe com toda a equipe da UBS.</div></li>
+        <li><div class="ic" data-icon="calendar"></div><div><b>Marque o retorno antes de a família sair</b>, no mesmo horário e com a mesma profissional. Vacinas atrasadas: monte um plano de recuperação em poucas visitas.</div></li>
+        <li><div class="ic" data-icon="talk"></div><div><b>Oriente a família</b> sobre o que praticar em casa: brincar de “medir a pressão” e de “vacina” com o brinquedo, ler a história social, treinar o sinal de PARE.</div></li>
+        <li><div class="ic" data-icon="home"></div><div><b>Visita domiciliar e rede:</b> o ACS acompanha; articule com o NASF/eMulti, CAPS infantil, APAE, escola e odontologia da unidade. Verifique a Carteira de Identificação da Pessoa com TEA e os direitos da família.</div></li>
+        <li><div class="ic" data-icon="toothbrush"></div><div><b>Promoção de saúde:</b> rotina visual de higiene, sono e alimentação; encaminhe para a cartilha odontológica da série e para a consulta de enfermagem programada.</div></li>
+      </ul>
+    </div>
+    <div class="fill"></div>
+    <div class="tip"><div class="ic" data-icon="check"></div><div><b>Consulta de enfermagem programada:</b> uma visita só para conhecer a sala, sentar na maca e ganhar o adesivo, sem procedimento, é o melhor investimento para as próximas.</div></div>
+  </div>
+  <div class="pagenum"><span class="credit">Coautoria: Dr. Patrício Almeida</span> · 6</div>
+</section>
+
+<!-- ================= PÁGINA 7 — HISTÓRIA SOCIAL ================= -->
+<section class="page">
+  <div class="pad" style="display:flex;flex-direction:column;gap:4mm">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end"><div><span class="hq-title green" style="font-size:26pt">Minha vacina na UBS</span><div class="sub" style="font-family:var(--comic);font-weight:700;font-size:11pt">Para a família ler em casa com a criança, todos os dias, antes da consulta.</div></div><span class="label">Recorte e entregue</span></div>
+    <div class="ministeps">
+      <div class="ministep"><div class="art"><div class="ill" data-scene="v1"></div></div><div class="txt"><div class="n">1</div><div>Hoje eu vou ao posto de saúde. Chego com quem cuida de mim e levo meu brinquedo e meus fones.</div></div></div>
+      <div class="ministep"><div class="art"><div class="ill" data-scene="v2"></div></div><div class="txt"><div class="n">2</div><div>Espero um pouquinho em um lugar calmo. Posso ficar com meus fones.</div></div></div>
+      <div class="ministep"><div class="art"><div class="ill" data-scene="v3"></div></div><div class="txt"><div class="n">3</div><div>Chamam o meu nome. A enfermeira diz “oi” e me mostra a sala e as coisas dela. Posso tocar.</div></div></div>
+      <div class="ministep"><div class="art"><div class="ill" data-scene="n_triagem"></div></div><div class="txt"><div class="n">4</div><div>Ela mede minha temperatura e aperta meu braço com a braçadeira, como um abraço. Conta até dez e solta.</div></div></div>
+      <div class="ministep"><div class="art"><div class="ill" data-scene="v4"></div></div><div class="txt"><div class="n">5</div><div>Sento no colo. Olho para o ursinho. A vacina é uma picadinha rápida: 1, 2, 3… pronto! Se eu quiser parar, levanto a mão.</div></div></div>
+      <div class="ministep"><div class="art"><div class="ill" data-scene="v5"></div></div><div class="txt"><div class="n">6</div><div>Deu tudo certo! Ganho um adesivo e digo tchau. Volto outro dia e já sei como é.</div></div></div>
+    </div>
+    <div class="grid3" style="gap:4mm">
+      <div class="box" style="padding:3mm 4mm;box-shadow:none;text-align:center"><div class="ill" data-scene="sig_stop" style="width:14mm;height:14mm;margin:0 auto 1mm"></div><b style="font-family:var(--title)">Mão levantada</b><br><span style="font-family:var(--comic);font-weight:700;font-size:9.5pt">PARE. A enfermeira para na hora.</span></div>
+      <div class="box" style="padding:3mm 4mm;box-shadow:none;text-align:center"><div class="ill" data-scene="sig_pause" style="width:14mm;height:14mm;margin:0 auto 1mm"></div><b style="font-family:var(--title)">Pausa</b><br><span style="font-family:var(--comic);font-weight:700;font-size:9.5pt">Quero descansar um pouco.</span></div>
+      <div class="box" style="padding:3mm 4mm;box-shadow:none;text-align:center"><div class="ill" data-scene="sig_ok" style="width:14mm;height:14mm;margin:0 auto 1mm"></div><b style="font-family:var(--title)">Polegar</b><br><span style="font-family:var(--comic);font-weight:700;font-size:9.5pt">Tudo bem, pode continuar.</span></div>
+    </div>
+    <div class="box" style="padding:4mm 5mm;background:#E8F8F5">
+      <h3 style="font-size:13pt;margin-bottom:2mm">Para quem cuida</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5mm 6mm;font-size:9.8pt">
+        <div>• Leia esta história todos os dias na semana da consulta, apontando cada quadro.</div>
+        <div>• Brinque de “vacina” e de “medir a pressão” com o brinquedo dele.</div>
+        <div>• Leve brinquedo, fones ou abafadores e óculos escuros, se ele usa.</div>
+        <div>• Pratique o sinal de PARE e o polegar de “tudo bem”.</div>
+        <div>• No dia, fique de frente para ele, com voz calma. Deixe a enfermeira conduzir.</div>
+        <div>• Comemore o que ele conseguiu, por menor que pareça, e marque a próxima visita.</div>
+      </div>
+      <div class="field" style="margin:3mm 0 0;font-family:var(--comic)">Minha consulta: dia <span class="line" style="flex:0 0 24mm"></span> às <span class="line" style="flex:0 0 16mm"></span> na UBS <span class="line"></span> com <span class="line" style="flex:0 0 40mm"></span></div>
+    </div>
+    <div class="small center" style="margin-top:auto">História social ilustrada · Coautoria: Dr. Patrício Almeida · Pode ser reproduzida gratuitamente para fins educativos.</div>
+  </div>
+  <div class="pagenum"><span class="credit">Coautoria: Dr. Patrício Almeida</span> · 7</div>
+</section>
+
+<!-- ================= PÁGINA 8 — INFORMATIVO + FICHA ================= -->
+<section class="page info">
+  <div class="stripes"></div>
+  <div class="content">
+    <div class="dashed-box">
+      <span class="hq-title white">Informativo e ficha</span>
+      <h4>O TEA na UBS, em poucas palavras</h4>
+      <p>O autismo é um espectro: cada pessoa é única. Quatro pontos mudam o atendimento: <b>sensorial</b> (sons, luzes, cheiros e toques sentidos de forma intensa), <b>comunicação</b> (entendimento literal; pode não falar, mas entende), <b>previsibilidade</b> (mudanças geram ansiedade; mesma equipe, mesma sala, mesma sequência) e <b>interesses intensos</b> (use o tema favorito para explicar e recompensar). A pessoa com TEA tem direito a <b>prioridade e acompanhante</b> em todo o SUS.</p>
+      <h4>O que dizer e o que evitar</h4>
+      <table>
+        <tr><th style="width:50%">Evite</th><th>Prefira</th></tr>
+        <tr><td class="no">“Não vai doer nada, é rapidinho.”</td><td class="yes">“Vai ser uma picadinha, como um beliscão. Conto até três.”</td></tr>
+        <tr><td class="no">Chamar gritando pelo corredor; fila na porta.</td><td class="yes">Chamar pelo nome, perto, com voz calma; espera em lugar quieto.</td></tr>
+        <tr><td class="no">Segurar à força “para acabar logo”.</td><td class="yes">Colo do acompanhante, distração, contagem; se não der, remarcar.</td></tr>
+        <tr><td class="no">Ligar aparelhos ou tocar de surpresa.</td><td class="yes">“Vou tocar no seu braço agora. Primeiro no ursinho, depois em você.”</td></tr>
+        <tr><td class="no">Vários profissionais falando ao mesmo tempo.</td><td class="yes">Uma voz só, sempre a mesma pessoa.</td></tr>
+      </table>
+      <h4>Ficha rápida do perfil sensorial (anexar ao prontuário)</h4>
+      <div style="background:rgba(255,255,255,.9);border:2.5px solid var(--ink);border-radius:8px;padding:3mm 4mm;font-family:var(--comic);font-weight:700;font-size:9.8pt;line-height:2">
+        Nome: ______________________________ Idade: _____ Responsável: _____________________ Tel.: _______________<br>
+        Comunicação: <span class="checkbox"></span>Fala <span class="checkbox"></span>Figuras <span class="checkbox"></span>Gestos &nbsp; Como diz “sim/não/dor”: __________________________<br>
+        Incomoda: <span class="checkbox"></span>Sons <span class="checkbox"></span>Luz <span class="checkbox"></span>Cheiros <span class="checkbox"></span>Toque <span class="checkbox"></span>Garrote/braçadeira <span class="checkbox"></span>Deitar &nbsp; Outros: ______________<br>
+        Acalma: ___________________________________ &nbsp; Brinde que funciona: ______________________<br>
+        Já funcionou: <span class="checkbox"></span>Fones <span class="checkbox"></span>Óculos <span class="checkbox"></span>Colo <span class="checkbox"></span>Contagem <span class="checkbox"></span>História lida <span class="checkbox"></span>Sala calma &nbsp; Sinal de PARE: ____________<br>
+        Última visita (data / o que foi feito / próximo passo): ___________________________________________________
+      </div>
+      <div class="fill"></div>
+      <p style="margin:0;font-size:9pt"><b>Base das recomendações:</b> Falar–Mostrar–Fazer, dessensibilização sistemática, histórias sociais, apoio visual e reforço positivo; Linha de Cuidado para a Atenção às Pessoas com TEA (Ministério da Saúde) e Política Nacional de Atenção Básica. <b>Coautoria: Dr. Patrício Almeida.</b> Material educativo; não substitui os protocolos da unidade nem a avaliação clínica individual.</p>
+    </div>
+  </div>
+  <div class="pagenum" style="color:#0B3A1F"><span class="credit">Coautoria: Dr. Patrício Almeida</span> · 8</div>
+</section>
+
+<script src="../shared/ill.js"></script>
+</body>
+</html>

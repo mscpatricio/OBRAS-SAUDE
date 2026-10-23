@@ -9,6 +9,7 @@ composto por duas peças que trabalham juntas:
 |---|---|---|---|
 | **Cartilha do cirurgião-dentista** (8 páginas A4): manejo antes, durante e depois da consulta, informativo sobre o TEA e ficha do perfil do paciente | Dentista e equipe do consultório | `cartilha-dentista/index.html` | `dist/Cartilha-Cirurgiao-Dentista-TEA.pdf` |
 | **Cartilha "Minha visita ao dentista"** (15 páginas A4): história social detalhada em 20 passos, cada um com ilustração grande, "o que eu posso sentir" (som, luz, gosto, toque, cheiro) e "o que eu posso fazer"; páginas "Quem eu vou encontrar", "O que tem na sala do dentista", "Meus sinais", checklist "Eu consegui!" com espaço para carimbos e guia para quem cuida | Paciente e cuidadores (entregue pelo dentista) | `cartilha-paciente/index.html` | `dist/Cartilha-Minha-Visita-ao-Dentista.pdf` |
+| **Cartilha de Enfermagem na UBS** (8 páginas A4): atendimento de enfermagem à pessoa com TEA na Unidade Básica de Saúde: antes, durante (acolhimento, triagem, vacina, curativo, coleta), depois, história social “Minha vacina na UBS”, informativo e ficha | Enfermeiros, técnicos, ACS e recepção da UBS | `cartilha-enfermagem/index.html` | `dist/Cartilha-Enfermagem-UBS-TEA.pdf` |
 | **App para iOS e Android** (PWA + Capacitor): perfis **Dentista** (modo consulta, checklists, pacientes, informativo) e **Criança** (história em 20 passos com voz, sinais PARE, Eu consegui!). Veja `app/README.md` | Dentista, paciente e cuidadores | `app/www/` | `dist/App-Minha-Visita-ao-Dentista.html` (arquivo único, abre no celular) |
 | **Card resumido "Minha visita ao dentista"** (frente e verso A4): versão curta em 10 passos, sinais combinados, checklist e mini-card recortável | Paciente e cuidadores (acesso rápido) | `card-paciente/index.html` | `dist/Card-Minha-Visita-ao-Dentista.pdf` |
 
@@ -24,6 +25,7 @@ cartilhas/
 │   ├── style.css     # estilo de impressão compartilhado (A4, fontes, caixas)
 │   └── fonts/        # Baloo 2, Comic Neue e Nunito (Google Fonts, licença OFL)
 ├── cartilha-dentista/index.html
+├── cartilha-enfermagem/index.html
 ├── cartilha-paciente/index.html   # os 20 passos ficam em um array no fim do arquivo
 ├── card-paciente/index.html
 ├── app/                           # aplicativo (ver app/README.md)
