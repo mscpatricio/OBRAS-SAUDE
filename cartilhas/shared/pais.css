@@ -1,0 +1,56 @@
+/* Estilos das cartilhas para pais e cuidadores (geradas por pais.js) */
+.cover .tiles { position: absolute; inset: 0; background-image: linear-gradient(#fff 0 3px, transparent 3px), linear-gradient(90deg, #fff 0 3px, transparent 3px); background-size: 24mm 24mm; opacity: .5; }
+.cover .titlebox { position: absolute; left: 14mm; right: 14mm; top: 16mm; background: #fff; border: 3px solid var(--ink); border-radius: 10px; padding: 7mm 8mm 6mm; box-shadow: 5px 5px 0 var(--ink); text-align: center; }
+.cover .titlebox .hq-title { font-size: 32pt; }
+.cover .titlebox .sub { margin-top: 3mm; font-family: var(--title); font-weight: 600; font-size: 14pt; line-height: 1.15; }
+.cover .art { position: absolute; left: 0; right: 0; top: 76mm; bottom: 0; }
+.cover .art .ill { width: 100%; height: 100%; }
+.cover .badge { position: absolute; left: 14mm; top: 70mm; transform: rotate(-5deg); }
+.cover .foot { position: absolute; left: 14mm; right: 14mm; bottom: 12mm; display: flex; justify-content: space-between; align-items: flex-end; }
+.cover .foot .who { font-family: var(--title); font-weight: 800; font-size: 11pt; background: #fff; border: 3px solid var(--ink); border-radius: 999px; padding: 2mm 6mm; box-shadow: 3px 3px 0 var(--ink); }
+.cover .foot .org { font-size: 9pt; font-weight: 700; text-align: right; background: rgba(255,255,255,.92); border: 2.5px solid var(--ink); border-radius: 8px; padding: 1.5mm 4mm; }
+
+.section-head { display: flex; align-items: center; gap: 5mm; margin-bottom: 4mm; }
+.section-head .num { width: 16mm; height: 16mm; border-radius: 50%; border: 3px solid var(--ink); display: flex; align-items: center; justify-content: center; font-family: var(--title); font-weight: 800; font-size: 22pt; box-shadow: 3px 3px 0 var(--ink); }
+.section-head .hq-title { font-size: 26pt; }
+.section-head .sub { font-family: var(--title); font-weight: 600; font-size: 12pt; color: #444; }
+.m-antes .num { background: var(--blue); } .m-durante .num { background: #58D68D; } .m-depois .num { background: var(--yellow-strong); } .m-crise .num { background: var(--red); }
+.m-antes .hq-title { color: #7FD1F5; } .m-durante .hq-title { color: #8FE26E; } .m-depois .hq-title { color: #FFD54F; } .m-crise .hq-title { color: #F5B7B1; }
+.strip { position: absolute; left: 0; top: 0; bottom: 0; width: 7mm; }
+.m-antes .strip { background: var(--blue); } .m-durante .strip { background: #58D68D; } .m-depois .strip { background: var(--yellow-strong); } .m-crise .strip { background: var(--red); }
+.content { position: absolute; left: 16mm; right: 12mm; top: 12mm; bottom: 12mm; display: flex; flex-direction: column; }
+.panels { display: grid; gap: 4mm; } .panels.two { grid-template-columns: 1fr 1fr; }
+.panel-wrap { display: flex; flex-direction: column; gap: 2mm; } .panel-wrap .caption { padding: 0 1mm; }
+.fill { flex: 1; }
+.box.compact li { margin-bottom: 2.6mm; font-size: 10.8pt; line-height: 1.35; } .box.compact h3 { font-size: 15pt; }
+.tip { background: var(--blue-pale); border: 3px dashed var(--blue); border-radius: 10px; padding: 3.5mm 4mm; font-size: 10.8pt; display: flex; gap: 3mm; align-items: center; }
+.tip .ic { width: 11mm; height: 11mm; flex: 0 0 11mm; } .tip b { font-family: var(--title); font-weight: 800; }
+.tip.red { background: #FDE2E0; border-color: var(--red); }
+
+.intro h2 { font-family: var(--title); font-weight: 800; font-size: 20pt; margin: 0 0 2mm; }
+.intro p { margin: 0 0 3mm; font-size: 11pt; }
+.moments { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4mm; }
+.moment { border: 3px solid var(--ink); border-radius: 10px; padding: 3mm 4mm; font-size: 10pt; }
+.moment b { display: block; font-family: var(--title); font-weight: 800; font-size: 13pt; }
+.moment.antes { background: #D6EAF8; } .moment.durante { background: #DFF5D3; } .moment.depois { background: #FFF0B3; }
+.kit { border: 3px solid var(--ink); border-radius: 12px; padding: 4mm; display: flex; gap: 4mm; align-items: center; box-shadow: 4px 4px 0 var(--ink); background: #FFF8DC; }
+.kit .ill { width: 28mm; height: 36mm; flex: 0 0 28mm; }
+.kit h4 { margin: 0 0 1.5mm; font-family: var(--title); font-weight: 800; font-size: 13pt; }
+.kit p { margin: 0; font-size: 10pt; }
+
+.info .stripes { position: absolute; inset: 0; opacity: .45; }
+.info .content { left: 12mm; }
+.info .dashed-box { height: 100%; display: flex; flex-direction: column; }
+.info .hq-title { font-size: 30pt; text-align: center; display: block; margin-bottom: 3mm; }
+.info p, .info li { font-family: var(--comic); font-weight: 700; font-size: 11.4pt; line-height: 1.4; color: #0B2A3A; }
+.info p { margin: 0 0 2.6mm; }
+.info h4 { font-family: var(--title); font-weight: 800; font-size: 14.5pt; margin: 4mm 0 2.5mm; color: #0B2A3A; }
+
+.ficha h2 { font-family: var(--title); font-weight: 800; font-size: 20pt; margin: 0; }
+.ficha .opts { font-size: 10.4pt; line-height: 2.1; }
+.ficha .opts div { display: flex; align-items: center; }
+.passport { border: 3px solid var(--ink); border-radius: 12px; padding: 4mm 5mm; background: #FFF6B0; box-shadow: 4px 4px 0 var(--ink); }
+.passport h3 { margin: 0 0 2mm; font-family: var(--title); font-weight: 800; font-size: 14pt; }
+.passport .pgrid { display: flex; flex-direction: column; gap: 1.6mm; font-size: 10pt; line-height: 2.1; }
+.passport .line { display: inline-block; border-bottom: 2px solid var(--ink); height: 4mm; vertical-align: baseline; }
+.passport b { font-family: var(--title); font-weight: 800; }

@@ -23,6 +23,11 @@ const DOCS = {
   'card-paciente': { file: 'card-paciente/index.html', out: 'Card-Minha-Visita-ao-Dentista.pdf', format: 'A4' },
   'cartilha-enfermagem': { file: 'cartilha-enfermagem/index.html', out: 'Cartilha-Enfermagem-UBS-TEA.pdf', format: 'A4' },
   'cartilha-hospital': { file: 'cartilha-hospital/index.html', out: 'Cartilha-Hospital-Emergencia-Internacao-TEA.pdf', format: 'A4' },
+  'crianca-ubs': { file: 'crianca-ubs/index.html', out: 'Cartilha-Crianca-UBS-Minha-Ida-ao-Posto.pdf', format: 'A4' },
+  'crianca-hospital': { file: 'crianca-hospital/index.html', out: 'Cartilha-Crianca-Hospital-Eu-no-Hospital.pdf', format: 'A4' },
+  'pais-dentista': { file: 'pais-dentista/index.html', out: 'Cartilha-Pais-Dentista-TEA.pdf', format: 'A4' },
+  'pais-ubs': { file: 'pais-ubs/index.html', out: 'Cartilha-Pais-UBS-TEA.pdf', format: 'A4' },
+  'pais-hospital': { file: 'pais-hospital/index.html', out: 'Cartilha-Pais-Hospital-TEA.pdf', format: 'A4' },
   'cartilha-paciente': { file: 'cartilha-paciente/index.html', out: 'Cartilha-Minha-Visita-ao-Dentista.pdf', format: 'A4' },
   'preview-cenas': { file: 'build/preview-cenas.html', out: 'preview-cenas.pdf', format: 'A4', pngOnly: true },
 };
