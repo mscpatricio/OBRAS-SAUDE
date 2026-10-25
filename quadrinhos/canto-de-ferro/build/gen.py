@@ -36,7 +36,9 @@ table.glos{width:100%;border-collapse:collapse;font-size:8.4pt}
 table.glos td{padding:2mm 2.5mm;border-bottom:1px solid #e3ded2;vertical-align:top;line-height:1.35}
 table.glos td:first-child{font-family:'Oswald';font-weight:600;text-transform:uppercase;letter-spacing:.04em;width:34mm;color:#141518;font-size:7.8pt}
 /* capa */
-.cover svg{position:absolute;inset:0;width:100%;height:100%}
+.cover img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.cover .shade{position:absolute;left:0;right:0;bottom:0;height:40mm;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(10,6,4,.85) 100%)}
+.cover .shadetop{position:absolute;left:0;right:0;top:0;height:48mm;background:linear-gradient(180deg,rgba(10,6,4,.55) 0%,rgba(0,0,0,0) 100%)}
 .cover .logo{position:absolute;top:14mm;left:0;right:0;text-align:center}
 .cover .logo .t{font-family:'Bebas Neue';font-size:72pt;line-height:.9;color:#f1ebdd;letter-spacing:.02em;text-shadow:3px 0 0 #c8501e,-3px 0 0 #7a2a10,0 6px 18px rgba(0,0,0,.6)}
 .cover .logo .s{font-family:'Oswald';font-size:9pt;letter-spacing:.35em;text-transform:uppercase;color:#f1ebdd;opacity:.9;margin-top:1mm}
@@ -55,7 +57,9 @@ table.glos td:first-child{font-family:'Oswald';font-weight:600;text-transform:up
 /* personagens */
 .char{display:grid;grid-template-columns:52mm 1fr;gap:6mm;align-items:start}
 .char .emb{background:#f6f2e8;border-radius:3mm;padding:3mm;display:flex;flex-direction:column;align-items:center}
-.char .emb svg{width:46mm;height:46mm}
+.char .emb img{width:46mm;height:61.3mm;object-fit:cover;border-radius:2mm;display:block}
+.char.solo{grid-template-columns:72mm 1fr}
+.char.solo .emb img{width:66mm;height:88mm}
 .char .emb .nm{font-family:'Bebas Neue';font-size:26pt;line-height:1;margin-top:2mm;color:#141518}
 .char .emb .fac{font-family:'Oswald';font-size:6.5pt;letter-spacing:.2em;text-transform:uppercase;color:#c8501e}
 .char .emb.cad .fac{color:#9a7a2a}
@@ -70,11 +74,13 @@ table.glos td:first-child{font-family:'Oswald';font-weight:600;text-transform:up
 .stats div span{font-family:'Oswald';font-size:5.5pt;letter-spacing:.12em;text-transform:uppercase;opacity:.8}
 .char2{display:grid;grid-template-rows:1fr 1fr;height:100%;gap:4mm}
 .char2 .char{align-items:start}
-.char2 .char .emb svg{width:40mm;height:40mm}
+.char2 .char .emb img{width:40mm;height:53.3mm}
 .char2 .char .emb .nm{font-size:22pt}
 .char2 dl{font-size:8pt}
 .humans{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
 .hum{border:1.5px solid #141518;border-radius:3mm;padding:4mm}
+.hum.pic{display:grid;grid-template-columns:30mm 1fr;gap:3.5mm;align-items:start}
+.hum.pic img{width:30mm;height:40mm;object-fit:cover;border-radius:1.5mm}
 .hum .nm{font-family:'Bebas Neue';font-size:20pt;line-height:1}
 .hum .age{font-family:'Oswald';font-size:7pt;letter-spacing:.2em;color:#c8501e;text-transform:uppercase;margin-bottom:2mm}
 .hum p{font-size:8.3pt}
@@ -94,6 +100,18 @@ table.glos td:first-child{font-family:'Oswald';font-weight:600;text-transform:up
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:3mm;height:100%}
 .panel{border:2px solid #141518;background:#fff radial-gradient(circle at 100% 100%, transparent 0 9mm, rgba(200,80,30,.10) 9mm 9.5mm, transparent 9.5mm 15mm, rgba(200,80,30,.08) 15mm 15.5mm, transparent 15.5mm 21mm, rgba(200,80,30,.06) 21mm 21.5mm, transparent 21.5mm 27mm, rgba(200,80,30,.04) 27mm 27.5mm, transparent 27.5mm) no-repeat;position:relative;padding:5mm 3mm 3mm 3mm;overflow:hidden;display:flex;flex-direction:column;gap:1.6mm;border-radius:1mm}
 .panel.wide{grid-column:1/3}
+.panel.art{padding:5mm 3mm 3mm 3mm;background-size:cover;background-position:center;background-repeat:no-repeat}
+.panel.art .desc{display:none}
+.panel.art .say{box-shadow:0 1px 3px rgba(0,0,0,.35)}
+.panel.art .cap{box-shadow:0 1px 3px rgba(0,0,0,.35)}
+.panel.art .sfx{color:#ffd9a0;text-shadow:2px 2px 0 #141518,-1px -1px 0 #141518,1px -1px 0 #141518,-1px 1px 0 #141518}
+.panel.art .sfx{font-size:16pt;margin-top:auto;align-self:flex-end;margin-right:2mm}
+.panel.art .sfx.huge{font-size:20pt}
+.panel.art .say{max-width:72%}
+.panel.art .cap{max-width:80%}
+.panel.art .note{background:rgba(20,21,24,.75);color:#f1ebdd;border-radius:0 0 0 1.5mm}
+.panel.art .final{background:rgba(20,21,24,.92)}
+.panel.art .note-type{background:rgba(250,247,239,.95)}
 .panel .pn{position:absolute;top:0;left:0;background:#141518;color:#f1ebdd;font-family:'Bebas Neue';font-size:9pt;line-height:1;padding:1mm 2mm .6mm;border-radius:0 0 1.5mm 0}
 .panel .note{position:absolute;top:0;right:0;font-family:'Oswald';font-size:5.5pt;letter-spacing:.15em;text-transform:uppercase;color:#c8501e;padding:1.2mm 2mm}
 .panel .desc{font-size:8pt;line-height:1.4;color:#555;font-style:italic}
@@ -129,6 +147,11 @@ table.arc td.t{font-family:'Barlow Condensed';font-weight:700;font-size:11pt;wid
 .sheet{border:2px solid #141518;padding:4mm;border-radius:2mm}
 .sheet .tt{font-family:'Oswald';font-size:7pt;letter-spacing:.2em;text-transform:uppercase;color:#c8501e}
 .sheet .nm{font-family:'Bebas Neue';font-size:28pt;line-height:1}
+.sheet img{width:100%;height:60mm;object-fit:cover;object-position:center 20%;border-radius:1.5mm}
+.dobra2{display:grid;grid-template-columns:1fr 1fr;gap:4mm;margin:2mm 0 2mm}
+.dobra2 div{position:relative;height:58mm;border-radius:2mm;overflow:hidden;background-size:cover;background-position:center}
+.dobra2 span{position:absolute;left:0;bottom:0;background:rgba(20,21,24,.85);color:#f1ebdd;font-family:'Bebas Neue';font-size:16pt;padding:1.5mm 4mm;letter-spacing:.05em}
+.dobra2 small{display:block;font-family:'Oswald';font-size:6.5pt;letter-spacing:.15em;color:#c9a24a}
 .sheet table{width:100%;font-size:8pt;border-collapse:collapse;margin-top:2mm}
 .sheet td{padding:1.2mm 0;border-bottom:1px solid #ddd}
 .sheet td:first-child{font-family:'Oswald';text-transform:uppercase;font-size:6.5pt;letter-spacing:.12em;color:#555;width:26mm}
@@ -150,7 +173,7 @@ def page(inner, cls="", left="", n=None):
     out.append(f'<section class="page {cls}">{inner}{f}</section>')
 
 # ---------- CAPA ----------
-page(f'''<div class="cover" style="position:absolute;inset:0">{cover_svg()}
+page(f'''<div class="cover" style="position:absolute;inset:0"><img class="bg" src="art/capa.jpg"><div class="shadetop"></div><div class="shade"></div>
 <div class="num">Nº 1<small>Outubro 2026</small></div>
 <div class="logo"><div class="t">CANTO<br>DE FERRO</div><div class="s">Primeira Têmpera</div></div>
 <div class="tag">Todo metal lembra.<br><b>O nosso lembra você.</b></div>
@@ -227,7 +250,7 @@ page(f'''<div class="pad">
 <h1 class="sec">Ofício, Figura<br>e a Dobra</h1>
 <div class="rule"></div>
 <p class="lead">Todo Forjado tem exatamente duas formas, e a passagem entre elas se chama <b>Dobra</b>.</p>
-{dobra_svg()}
+<div class="dobra2"><div style="background-image:url(art/panel_08.jpg)"><span>Ofício<small>o caminhão, 1958</small></span></div><div style="background-image:url(art/port_vigilia.jpg);background-position:center 20%"><span>Figura<small>4,2 m · a memória de 36 anos de bombeiros</small></span></div></div>
 <div class="cols2" style="margin-top:4mm">
 <p><b>Ofício</b> é a forma para a qual a máquina foi fabricada: o caminhão, o sino, a locomotiva, o tear. É a forma de descanso e de disfarce, mas também a de maior força bruta.</p>
 <p><b>Figura</b> é um corpo erguido, articulado, construído pelo próprio metal a partir da <b>memória dos corpos humanos que o usaram</b>. Por isso nenhuma Figura é igual: Vigília tem ombros largos e postura de quem carrega gente; Fuso tem dedos finos e muitos; Dobre não tem pernas, porque um sino nunca viu as pernas de quem o tocava, só as mãos e o rosto virado para cima.</p>
@@ -308,11 +331,11 @@ CH={
 "estilhaco":dict(nm="Estilhaço",fac="O Cadinho",cls="cad",oficio="Canhão La Hitte de 1866, da Guerra do Paraguai, fundido em Ipanema com o lote mais pesado de ferro-canto confiscado.",figura="3 m, sobre rodas raiadas. O braço direito é o próprio cano. Cabeça sem rosto: só um escudo liso. Nunca viu o rosto de ninguém, apenas as costas dos artilheiros e o inimigo ao longe.",desp="Desconhecido. Exposto por um século no pátio de um quartel.",pers="Só conheceu a guerra, então acha que tudo é guerra. Fala em ordens e distâncias. Nunca hesita.",acorde="Um estampido seco e o chiado da recarga.",frase="Alcance: oitocentos. Vento: nenhum. Motivo: dispensável.",stats=[("3 m","altura"),("1866","fundição"),("800 m","alcance")]),
 "grimpa":dict(nm="Grimpa",fac="O Cadinho",cls="cad",oficio="Galo de catavento de ferro, 1890, do telhado da estação ferroviária de Sabará.",figura="90 cm. Articulada, esguia, pescoço longo; gira a cabeça 360 graus. Sobe em qualquer coisa. A espiã do Cadinho: viu a cidade por 130 anos de cima e viu Dobre todos os dias da torre vizinha.",desp="Desconhecido. Provavelmente a segunda Forjada a despertar em Sabará.",pers="Ciumenta, fofoqueira, devota de Dobre. Mente com facilidade; é a razão de a Guarda valorizar tanto as Lascas.",acorde="Um rangido de eixo e um estalo.",frase="O vento muda. Eu não. Eu só mostro para onde ele foi.",stats=[("90 cm","altura"),("1890","fabricação"),("360°","visão")]),
 }
-def char_block(k, small=False):
+def char_block(k, solo=False):
     c=CH[k]
     stats="".join(f'<div><b>{a}</b><span>{b}</span></div>' for a,b in c["stats"])
-    return f'''<div class="char {c['cls']}">
-<div class="emb {c['cls']}">{emblem(k)}<div class="nm">{c['nm']}</div><div class="fac">{c['fac']}</div><div class="stats">{stats}</div></div>
+    return f'''<div class="char {c['cls']}{" solo" if solo else ""}">
+<div class="emb {c['cls']}"><img src="art/port_{k}.jpg"><div class="nm">{c['nm']}</div><div class="fac">{c['fac']}</div><div class="stats">{stats}</div></div>
 <div><dl>
 <dt>Ofício</dt><dd>{c['oficio']}</dd>
 <dt>Figura</dt><dd>{c['figura']}</dd>
@@ -323,26 +346,26 @@ def char_block(k, small=False):
 
 n=9
 for k in ("vigilia","dobre"):
-    page(f'<div class="pad"><div class="kicker">Personagens · {CH[k]["fac"]}</div><h1 class="sec">{CH[k]["nm"]}</h1><div class="rule"></div>{char_block(k)}</div>', left="Personagens", n=n); n+=1
+    page(f'<div class="pad"><div class="kicker">Personagens · {CH[k]["fac"]}</div><h1 class="sec">{CH[k]["nm"]}</h1><div class="rule"></div>{char_block(k, solo=True)}</div>', left="Personagens", n=n); n+=1
 for a,b in (("mare","fuso"),("cerrado","calamo"),("lastro","estilhaco")):
     page(f'<div class="pad"><div class="kicker">Personagens</div><div class="char2">{char_block(a)}{char_block(b)}</div></div>', left="Personagens", n=n); n+=1
 HUM=[("Teo (Teodoro Nascimento)","16 anos","Estagiário do Museu dos Bombeiros de Belo Horizonte, aluno do curso técnico de mecânica. Mora com a avó na Lagoinha. Cresceu ouvindo histórias do avô bombeiro, que morreu antes de ele nascer. Gosta de consertar coisas porque coisas consertadas ficam. É o primeiro humano a quem Vigília se afina em 40 anos. Cabe onde Forjados não cabem e pergunta \"para quem\" toda vez que alguém diz \"é para o bem de todos\"."),
 ("Dra. Inácia Varela","44 anos","Engenheira metalurgista da Fundição Sabará Ltda., contratada para avaliar o sino antes da \"restauração\". É a primeira pessoa em dois séculos a analisar o ferro-canto em laboratório, e percebe que o espectrograma do metal muda quando alguém fala perto dele. Cética, metódica, dura. A única com quem Dobre faz questão de conversar."),
 ("Dona Zélia","71 anos","Avó de Teo, viúva de bombeiro. Guarda uma caixa com as coisas do marido. Numa delas há uma foto: ele, jovem, sentado no para-choque de um caminhão vermelho com escada Magirus. Ela sabe mais do que diz desde a primeira cena."),
 ("Prefeito Odair Custódio","Antagonista menor","Vendeu o sino para fundição e prometeu uma réplica à igreja. Não é mau, é pequeno. Serve para lembrar que o desastre começa com uma decisão administrativa.")]
-page(f'''<div class="pad"><div class="kicker">Personagens · O Cadinho</div><h1 class="sec">Grimpa</h1><div class="rule"></div>{char_block("grimpa")}
+page(f'''<div class="pad"><div class="kicker">Personagens · O Cadinho</div><h1 class="sec">Grimpa</h1><div class="rule"></div>{char_block("grimpa", solo=True)}
 <div class="quote" style="margin-top:12mm">"Mente com facilidade. É a razão de a Guarda da Bigorna valorizar tanto as Lascas: diante de uma Lasca, nenhum Forjado consegue mentir."<small>Sobre Grimpa, a espiã do Cadinho</small></div></div>''', left="Personagens", n=n); n+=1
 page(f'''<div class="pad"><div class="kicker">Personagens</div><h1 class="sec">Os humanos</h1><div class="rule"></div>
 <p class="lead">Humanos não são plateia. Eles cabem onde os Forjados não cabem, mentem quando precisam e sabem onde os adultos guardam as chaves.</p>
-<div class="humans" style="margin-top:4mm">{"".join(f'<div class="hum"><div class="nm">{a}</div><div class="age">{b}</div><p>{c}</p></div>' for a,b,c in HUM)}</div></div>''', left="Personagens", n=n); n+=1
+<div class="humans" style="margin-top:4mm;grid-template-columns:1fr">{"".join((f'<div class="hum pic"><img src="art/port_{k}.jpg"><div><div class="nm">{a}</div><div class="age">{b}</div><p>{c}</p></div></div>' if k else f'<div class="hum"><div class="nm">{a}</div><div class="age">{b}</div><p>{c}</p></div>') for (a,b,c),k in zip(HUM,["teo","inacia",None,None]))}</div></div>''', left="Personagens", n=n); n+=1
 
 # ---------- ABERTURA DO ROTEIRO ----------
 page(f'''<div class="pad" style="display:flex;flex-direction:column;justify-content:center">
 <div class="kicker bronze">Roteiro ilustrado · 24 páginas</div>
 <h1 class="sec bone" style="font-size:66pt">Primeira<br>Têmpera</h1>
 <div class="rule" style="background:#c9a24a"></div>
-<p style="color:#cfc8b8;font-family:'Barlow Condensed';font-size:12pt;line-height:1.35">Cada página a seguir reproduz a diagramação proposta da edição: a grade de quadros, as indicações de cena para o desenhista, as legendas, os balões e os efeitos sonoros, no lugar em que vão aparecer. É o storyboard tipográfico da revista, pronto para a mesa de desenho.</p>
-<p style="color:#cfc8b8;font-family:'Barlow Condensed';font-size:12pt;line-height:1.35"><b style="color:#f1ebdd">Como ler.</b> Texto em itálico cinza é indicação de cena. Caixas creme são legendas de narração. Balões com nome em vermelho são da Guarda da Bigorna; em bronze, do Cadinho; tracejados, falas que humanos não afinados não ouvem.</p>
+<p style="color:#cfc8b8;font-family:'Barlow Condensed';font-size:12pt;line-height:1.35">Cada página a seguir reproduz a diagramação proposta da edição: a grade de quadros, as indicações de cena para o desenhista, as legendas, os balões e os efeitos sonoros, no lugar em que vão aparecer. O quadro principal de cada página está ilustrado; os demais trazem a indicação de cena para o desenhista.</p>
+<p style="color:#cfc8b8;font-family:'Barlow Condensed';font-size:12pt;line-height:1.35"><b style="color:#f1ebdd">Como ler.</b> Nos quadros ainda sem arte, o texto em itálico cinza é a indicação de cena. Caixas creme são legendas de narração. Balões com nome em vermelho são da Guarda da Bigorna; em bronze, do Cadinho; tracejados, falas que humanos não afinados não ouvem.</p>
 <div style="margin-top:12mm;color:#c9a24a;font-family:'Oswald';font-size:8pt;letter-spacing:.3em;text-transform:uppercase">Sabará, Minas Gerais · 14 de agosto de 1811</div>
 </div>''', cls="dark", left="Roteiro", n=n); n+=1
 
@@ -373,6 +396,7 @@ def render_item(it, splash=False):
         return f'<div class="{" ".join(cls)}"><span class="who">{html.escape(who)}{qq}</span>{it["text"]}</div>'
     return ''
 
+ART={1:1,2:1,3:1,4:3,5:1,6:1,7:4,8:3,9:5,10:4,11:5,12:1,13:3,14:1,15:1,16:3,17:1,18:1,19:1,20:2,21:1,22:2,23:5,24:5}
 def is_wide(p):
     nt=p['note'].lower()
     return any(w in nt for w in ('faixa','página inteira','quadro grande','splash'))
@@ -391,7 +415,9 @@ for pg in PAGES:
     for p,w in zip(panels,wide):
         note=f'<span class="note">{html.escape(p["note"])}</span>' if p['note'] else ''
         inner="".join(render_item(it, splash) for it in p['items'])
-        cells.append(f'<div class="panel{" wide" if w else ""}{" splash" if splash else ""}"><span class="pn">{p["num"]}</span>{note}{inner}</div>')
+        art = ART.get(pg["num"])==p["num"]
+        style = f' style="background-image:url(art/panel_{pg["num"]:02d}.jpg)"' if art else ''
+        cells.append(f'<div class="panel{" wide" if w else ""}{" splash" if splash else ""}{" art" if art else ""}"{style}><span class="pn">{p["num"]}</span>{note}{inner}</div>')
     grid=f'<div class="grid" style="grid-template-rows:repeat({rows},1fr)">{"".join(cells)}</div>'
     page(f'<div class="sb"><div class="pg"><span class="l">Página</span><span class="n">{pg["num"]:02d}</span><span class="tot">/ 24</span></div>{grid}</div>', left="Primeira Têmpera · roteiro", n=n); n+=1
 
@@ -403,7 +429,7 @@ Toda criança que já teve um carrinho de ferro sabe que ele não é só um carr
 Não viriam do espaço. Viriam da fundição, da ferrovia, da fazenda, da fábrica. Teriam o nosso sotaque. E, como nós, teriam que decidir o que fazer com o que lembram.<br><br>
 Boa leitura. E, se o seu carro fizer um barulho estranho esta noite, não desligue o rádio.</div>
 <div class="sheet"><div class="tt">Ficha do Forjado · nº 1</div><div class="nm">Vigília</div>
-<div style="display:flex;justify-content:center;margin:2mm 0">{emblem("vigilia",150)}</div>
+<img src="art/port_vigilia.jpg" style="margin:2mm 0">
 <table>
 <tr><td>Ofício</td><td>Caminhão de bombeiros, escada Magirus, 1958</td></tr>
 <tr><td>Massa</td><td>11.400 kg</td></tr>
@@ -438,7 +464,7 @@ bars="".join(f'<i style="height:{random.choice([60,80,100])}%;width:{random.choi
 page(f'''<div class="back">
 <div><div class="kicker bronze">Na próxima edição</div><div class="big">Canto de Ferro nº 2<br><span class="bronze">Os que Dormem</span></div>
 <p style="margin-top:6mm">Trezentos e doze máquinas abriram os olhos sem saber quem são. Em um pátio ferroviário abandonado em Lafaiete, a Guarda da Bigorna se reúne pela primeira vez em cinquenta anos. E um tear que passou dezenove anos em silêncio tem muito a dizer.</p></div>
-<div style="display:flex;justify-content:center">{emblem("dobre",220)}</div>
+<div style="display:flex;justify-content:center"><img src="art/port_dobre.jpg" style="width:84mm;height:112mm;object-fit:cover;border-radius:2mm"></div>
 <div><p style="font-size:9pt;color:#8a8578">Canto de Ferro é uma obra de ficção original. Personagens, nomes, facções e mitologia são inéditos. Sabará, a Real Fábrica de Ferro de Ipanema e a Estrada de Ferro Central do Brasil são lugares reais usados como cenário ficcional.</p>
 <div style="display:flex;justify-content:space-between;align-items:flex-end"><div class="barcode">{bars}</div><div class="bebas" style="font-size:22pt;color:#f1ebdd">Nº 1</div></div></div>
 </div>''', cls="dark")

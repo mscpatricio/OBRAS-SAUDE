@@ -45,3 +45,12 @@ node render.js        # requer playwright com Chromium; gera canto-de-ferro-01.p
 ```
 
 Fontes (Bebas Neue, Oswald, Barlow Condensed, Bangers) estão em `build/fonts/`, licença SIL OFL.
+
+## Arte
+
+As ilustrações (capa, 11 retratos de personagens e 24 painéis, um por página do roteiro) estão em
+`build/art/`. Foram geradas por IA (modelo NanoBanana 2.1 via Moda) a partir de prompts escritos
+sobre as fichas e o roteiro, em estilo de graphic novel pintada com arte-final a nanquim, e
+diagramadas pelo gerador: o quadro principal de cada página recebe a arte e os balões, legendas e
+efeitos sonoros são sobrepostos por cima. Os quadros restantes mantêm a indicação de cena para o
+desenhista.
