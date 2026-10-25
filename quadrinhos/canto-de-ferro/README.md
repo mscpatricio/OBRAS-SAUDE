@@ -16,6 +16,7 @@ tanto ser usado, aprendeu a lembrar.
 
 | Arquivo | O que é |
 |---|---|
+| [`Canto-de-Ferro-01-Primeira-Tempera.pdf`](Canto-de-Ferro-01-Primeira-Tempera.pdf) | **A revista diagramada em PDF** (43 páginas, 17 × 26 cm): capa, bíblia, personagens, roteiro ilustrado e extras |
 | [`01-biblia-do-universo.md`](01-biblia-do-universo.md) | Origem, regras do mundo, facções, glossário e tom da série |
 | [`02-personagens.md`](02-personagens.md) | Fichas dos Forjados e dos humanos, com Ofício, Figura e voz |
 | [`03-edicao-01-roteiro.md`](03-edicao-01-roteiro.md) | Roteiro completo da edição nº 1, *"Primeira Têmpera"*, página a página |
@@ -30,3 +31,17 @@ tanto ser usado, aprendeu a lembrar.
 - **Logline:** Quando o sino mais antigo de Minas é retirado da torre para ser derretido, ele desperta
   todas as máquinas que nasceram do mesmo metal e decide que a humanidade só se salva sendo refundida.
   Um caminhão de bombeiros aposentado e um estagiário de 16 anos são os únicos que o ouvem a tempo.
+
+## Gerar o PDF
+
+A revista é diagramada em HTML/CSS com ilustrações vetoriais (SVG) e renderizada pelo Chromium.
+Os roteiros em Markdown são a fonte: o gerador lê `03-edicao-01-roteiro.md`, monta a grade de
+quadros de cada página e produz o PDF.
+
+```bash
+cd quadrinhos/canto-de-ferro/build
+python3 gen.py        # gera canto-de-ferro-01.html
+node render.js        # requer playwright com Chromium; gera canto-de-ferro-01.pdf
+```
+
+Fontes (Bebas Neue, Oswald, Barlow Condensed, Bangers) estão em `build/fonts/`, licença SIL OFL.
