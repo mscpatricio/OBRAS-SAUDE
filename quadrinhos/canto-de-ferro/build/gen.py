@@ -4,6 +4,10 @@ from svgs import *
 from parse_script import parse
 
 ROOT="/home/user/OBRAS-SAUDE/quadrinhos/canto-de-ferro"
+import os
+def A(name):
+    return f"art_real/{name}" if os.path.exists(f"art_real/{name}") else f"art/{name}"
+AUTHOR="Patrício Almeida"
 script_md=open(f"{ROOT}/03-edicao-01-roteiro.md").read()
 PAGES=parse(script_md)
 
@@ -173,9 +177,9 @@ def page(inner, cls="", left="", n=None):
     out.append(f'<section class="page {cls}">{inner}{f}</section>')
 
 # ---------- CAPA ----------
-page(f'''<div class="cover" style="position:absolute;inset:0"><img class="bg" src="art/capa.jpg"><div class="shadetop"></div><div class="shade"></div>
+page(f'''<div class="cover" style="position:absolute;inset:0"><img class="bg" src="{A('capa.jpg')}"><div class="shadetop"></div><div class="shade"></div>
 <div class="num">Nº 1<small>Outubro 2026</small></div>
-<div class="logo"><div class="t">CANTO<br>DE FERRO</div><div class="s">Primeira Têmpera</div></div>
+<div class="logo"><div class="t">CANTO<br>DE FERRO</div><div class="s">Primeira Têmpera</div><div class="s" style="margin-top:3mm;letter-spacing:.2em;opacity:.85">por {AUTHOR}</div></div>
 <div class="tag">Todo metal lembra.<br><b>O nosso lembra você.</b></div>
 <div class="pub">Uma revista em quadrinhos original · Minas Gerais, 1811–2026</div>
 </div>''', cls="dark")
@@ -187,6 +191,8 @@ page(f'''<div class="rivets"></div><div class="pad">
 <div class="rule"></div>
 <p class="lead">Quando o sino mais antigo de Minas é retirado da torre para ser derretido, ele desperta todas as máquinas que nasceram do mesmo metal e decide que a humanidade só se salva sendo refundida. Um caminhão de bombeiros aposentado e um estagiário de 16 anos são os únicos que o ouvem a tempo.</p>
 <dl class="credits" style="margin-top:8mm">
+<div><dt>Criação e roteiro</dt><dd>{AUTHOR}</dd></div>
+<div><dt>Arte</dt><dd>Ilustrações geradas por IA sob direção do autor</dd></div>
 <div><dt>Formato</dt><dd>24 páginas de história + extras</dd></div>
 <div><dt>Gênero</dt><dd>Ficção científica · Aventura · Época</dd></div>
 <div><dt>Faixa etária</dt><dd>A partir de 10 anos</dd></div>
@@ -250,7 +256,7 @@ page(f'''<div class="pad">
 <h1 class="sec">Ofício, Figura<br>e a Dobra</h1>
 <div class="rule"></div>
 <p class="lead">Todo Forjado tem exatamente duas formas, e a passagem entre elas se chama <b>Dobra</b>.</p>
-<div class="dobra2"><div style="background-image:url(art/panel_08.jpg)"><span>Ofício<small>o caminhão, 1958</small></span></div><div style="background-image:url(art/port_vigilia.jpg);background-position:center 20%"><span>Figura<small>4,2 m · a memória de 36 anos de bombeiros</small></span></div></div>
+<div class="dobra2"><div style="background-image:url({A('panel_08.jpg')})"><span>Ofício<small>o caminhão, 1958</small></span></div><div style="background-image:url({A('port_vigilia.jpg')});background-position:center 20%"><span>Figura<small>4,2 m · a memória de 36 anos de bombeiros</small></span></div></div>
 <div class="cols2" style="margin-top:4mm">
 <p><b>Ofício</b> é a forma para a qual a máquina foi fabricada: o caminhão, o sino, a locomotiva, o tear. É a forma de descanso e de disfarce, mas também a de maior força bruta.</p>
 <p><b>Figura</b> é um corpo erguido, articulado, construído pelo próprio metal a partir da <b>memória dos corpos humanos que o usaram</b>. Por isso nenhuma Figura é igual: Vigília tem ombros largos e postura de quem carrega gente; Fuso tem dedos finos e muitos; Dobre não tem pernas, porque um sino nunca viu as pernas de quem o tocava, só as mãos e o rosto virado para cima.</p>
@@ -335,7 +341,7 @@ def char_block(k, solo=False):
     c=CH[k]
     stats="".join(f'<div><b>{a}</b><span>{b}</span></div>' for a,b in c["stats"])
     return f'''<div class="char {c['cls']}{" solo" if solo else ""}">
-<div class="emb {c['cls']}"><img src="art/port_{k}.jpg"><div class="nm">{c['nm']}</div><div class="fac">{c['fac']}</div><div class="stats">{stats}</div></div>
+<div class="emb {c['cls']}"><img src="{A(f'port_{k}.jpg')}"><div class="nm">{c['nm']}</div><div class="fac">{c['fac']}</div><div class="stats">{stats}</div></div>
 <div><dl>
 <dt>Ofício</dt><dd>{c['oficio']}</dd>
 <dt>Figura</dt><dd>{c['figura']}</dd>
@@ -357,7 +363,7 @@ page(f'''<div class="pad"><div class="kicker">Personagens · O Cadinho</div><h1 
 <div class="quote" style="margin-top:12mm">"Mente com facilidade. É a razão de a Guarda da Bigorna valorizar tanto as Lascas: diante de uma Lasca, nenhum Forjado consegue mentir."<small>Sobre Grimpa, a espiã do Cadinho</small></div></div>''', left="Personagens", n=n); n+=1
 page(f'''<div class="pad"><div class="kicker">Personagens</div><h1 class="sec">Os humanos</h1><div class="rule"></div>
 <p class="lead">Humanos não são plateia. Eles cabem onde os Forjados não cabem, mentem quando precisam e sabem onde os adultos guardam as chaves.</p>
-<div class="humans" style="margin-top:4mm;grid-template-columns:1fr">{"".join((f'<div class="hum pic"><img src="art/port_{k}.jpg"><div><div class="nm">{a}</div><div class="age">{b}</div><p>{c}</p></div></div>' if k else f'<div class="hum"><div class="nm">{a}</div><div class="age">{b}</div><p>{c}</p></div>') for (a,b,c),k in zip(HUM,["teo","inacia",None,None]))}</div></div>''', left="Personagens", n=n); n+=1
+<div class="humans" style="margin-top:4mm;grid-template-columns:1fr">{"".join((f'<div class="hum pic"><img src="{A(f'port_{k}.jpg')}"><div><div class="nm">{a}</div><div class="age">{b}</div><p>{c}</p></div></div>' if k else f'<div class="hum"><div class="nm">{a}</div><div class="age">{b}</div><p>{c}</p></div>') for (a,b,c),k in zip(HUM,["teo","inacia",None,None]))}</div></div>''', left="Personagens", n=n); n+=1
 
 # ---------- ABERTURA DO ROTEIRO ----------
 page(f'''<div class="pad" style="display:flex;flex-direction:column;justify-content:center">
@@ -416,7 +422,8 @@ for pg in PAGES:
         note=f'<span class="note">{html.escape(p["note"])}</span>' if p['note'] else ''
         inner="".join(render_item(it, splash) for it in p['items'])
         art = ART.get(pg["num"])==p["num"]
-        style = f' style="background-image:url(art/panel_{pg["num"]:02d}.jpg)"' if art else ''
+        pfile = "panel_%02d.jpg" % pg["num"]
+        style = f' style="background-image:url({A(pfile)})"' if art else ''
         cells.append(f'<div class="panel{" wide" if w else ""}{" splash" if splash else ""}{" art" if art else ""}"{style}><span class="pn">{p["num"]}</span>{note}{inner}</div>')
     grid=f'<div class="grid" style="grid-template-rows:repeat({rows},1fr)">{"".join(cells)}</div>'
     page(f'<div class="sb"><div class="pg"><span class="l">Página</span><span class="n">{pg["num"]:02d}</span><span class="tot">/ 24</span></div>{grid}</div>', left="Primeira Têmpera · roteiro", n=n); n+=1
@@ -429,7 +436,7 @@ Toda criança que já teve um carrinho de ferro sabe que ele não é só um carr
 Não viriam do espaço. Viriam da fundição, da ferrovia, da fazenda, da fábrica. Teriam o nosso sotaque. E, como nós, teriam que decidir o que fazer com o que lembram.<br><br>
 Boa leitura. E, se o seu carro fizer um barulho estranho esta noite, não desligue o rádio.</div>
 <div class="sheet"><div class="tt">Ficha do Forjado · nº 1</div><div class="nm">Vigília</div>
-<img src="art/port_vigilia.jpg" style="margin:2mm 0">
+<img src="{A('port_vigilia.jpg')}" style="margin:2mm 0">
 <table>
 <tr><td>Ofício</td><td>Caminhão de bombeiros, escada Magirus, 1958</td></tr>
 <tr><td>Massa</td><td>11.400 kg</td></tr>
@@ -464,8 +471,8 @@ bars="".join(f'<i style="height:{random.choice([60,80,100])}%;width:{random.choi
 page(f'''<div class="back">
 <div><div class="kicker bronze">Na próxima edição</div><div class="big">Canto de Ferro nº 2<br><span class="bronze">Os que Dormem</span></div>
 <p style="margin-top:6mm">Trezentos e doze máquinas abriram os olhos sem saber quem são. Em um pátio ferroviário abandonado em Lafaiete, a Guarda da Bigorna se reúne pela primeira vez em cinquenta anos. E um tear que passou dezenove anos em silêncio tem muito a dizer.</p></div>
-<div style="display:flex;justify-content:center"><img src="art/port_dobre.jpg" style="width:84mm;height:112mm;object-fit:cover;border-radius:2mm"></div>
-<div><p style="font-size:9pt;color:#8a8578">Canto de Ferro é uma obra de ficção original. Personagens, nomes, facções e mitologia são inéditos. Sabará, a Real Fábrica de Ferro de Ipanema e a Estrada de Ferro Central do Brasil são lugares reais usados como cenário ficcional.</p>
+<div style="display:flex;justify-content:center"><img src="{A('port_dobre.jpg')}" style="width:84mm;height:112mm;object-fit:cover;border-radius:2mm"></div>
+<div><p style="font-size:9pt;color:#8a8578">© {AUTHOR}. Canto de Ferro é uma obra de ficção original. Personagens, nomes, facções e mitologia são inéditos. Sabará, a Real Fábrica de Ferro de Ipanema e a Estrada de Ferro Central do Brasil são lugares reais usados como cenário ficcional.</p>
 <div style="display:flex;justify-content:space-between;align-items:flex-end"><div class="barcode">{bars}</div><div class="bebas" style="font-size:22pt;color:#f1ebdd">Nº 1</div></div></div>
 </div>''', cls="dark")
 

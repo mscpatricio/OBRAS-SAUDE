@@ -1,5 +1,7 @@
 # CANTO DE FERRO
 
+**Criação e roteiro: Patrício Almeida.**
+
 > *"Todo metal lembra o que foi. O nosso, além disso, lembra quem o usou."*
 
 **Canto de Ferro** é uma revista em quadrinhos original de ficção científica e aventura,
@@ -47,6 +49,19 @@ node render.js        # requer playwright com Chromium; gera canto-de-ferro-01.p
 Fontes (Bebas Neue, Oswald, Barlow Condensed, Bangers) estão em `build/fonts/`, licença SIL OFL.
 
 ## Arte
+
+Duas gerações de arte convivem no gerador. `build/art_real/` tem precedência sobre `build/art/`:
+quando um arquivo existe nas duas pastas, o PDF usa a versão realista.
+
+- `build/art_real/`: **versão fotorrealista** (estilo de fotograma de filme live-action): capa
+  (FLUX.2 Pro), Vigília e Dobre (Seedream 5), Maré, Fuso, Teo e Inácia (NanoBanana 2.1) e o
+  splash da página 15 (NanoBanana 2.1 em 2K). Gerada via Moda; os créditos da conta esgotaram
+  antes de cobrir os demais retratos (Cerrado, Cálamo, Lastro, Estilhaço, Grimpa) e os outros
+  23 painéis, que seguem na versão pintada até que haja créditos ou uma chave de API de imagem
+  (Replicate, Together ou fal são alcançáveis deste ambiente).
+- `build/art/`: versão em graphic novel pintada com arte-final a nanquim (NanoBanana 2.1).
+
+## Arte (versão pintada)
 
 As ilustrações (capa, 11 retratos de personagens e 24 painéis, um por página do roteiro) estão em
 `build/art/`. Foram geradas por IA (modelo NanoBanana 2.1 via Moda) a partir de prompts escritos
