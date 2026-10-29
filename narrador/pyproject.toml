@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "narrador"
+version = "0.1.0"
+description = "Bot que narra slides com a sua voz clonada e gera video MP4"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "click>=8.1",
+    "rich>=13",
+    "pyyaml>=6",
+    "numpy>=1.24",
+    "soundfile>=0.12",
+    "python-pptx>=0.6.23",
+    "pymupdf>=1.24",
+    "num2words>=0.5.13",
+    "watchdog>=4",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+# Motores de voz (instale apenas o que for usar; veja README)
+chatterbox = ["chatterbox-tts>=0.1.7", "huggingface_hub>=0.24"]
+qwen3 = ["qwen-tts>=0.1.1"]
+f5 = ["f5-tts>=1.1", "huggingface_hub>=0.24"]
+xtts = ["coqui-tts>=0.27"]
+edge = ["edge-tts>=7"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+narrador = "narrador.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["narrador*"]

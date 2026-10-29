@@ -1,0 +1,35 @@
+# Copie para narrador.yaml e ajuste. Qualquer opcao pode ser sobrescrita na linha de comando.
+
+# ---- voz ----------------------------------------------------------------
+motor: chatterbox-ptbr          # chatterbox | chatterbox-ptbr | qwen3 | f5-ptbr | xtts | elevenlabs | edge
+voz: voz/minha_voz.wav          # referencia de 8-15 s, limpa (gere com: narrador voz preparar gravacao.m4a)
+transcricao: voz/minha_voz.txt  # texto exato dito na referencia (opcional; ajuda Qwen3 e F5)
+idioma: pt
+dispositivo: auto               # auto | cpu | cuda | mps
+opcoes_motor:
+  exaggeration: 0.45            # Chatterbox: expressividade (0.3 sobrio ... 0.7 animado)
+  cfg_weight: 0.5               # Chatterbox: 0.3 mais expressivo / 0.6 mais fiel ao ritmo da referencia
+  temperature: 0.75
+
+# ---- texto e audio ------------------------------------------------------
+max_chars_trecho: 220           # frases maiores sao quebradas (evita alucinacao do modelo)
+pausa_frase: 0.35               # segundos entre frases
+pausa_paragrafo: 0.7            # segundos entre paragrafos do roteiro
+pausa_inicio: 0.4               # silencio no inicio de cada slide
+pausa_fim: 0.8                  # silencio no fim de cada slide
+reduzir_ruido: true
+loudness: -16                   # LUFS (padrao YouTube/podcast)
+duracao_slide_mudo: 4.0         # slides sem texto ficam este tempo na tela
+usar_texto_slide: true          # sem notas/roteiro, narra o texto visivel do slide
+
+# ---- video --------------------------------------------------------------
+largura: 1920
+altura: 1080
+fps: 30
+transicao: 0.4                  # fade entre slides (0 = corte seco)
+movimento: false                # leve zoom (Ken Burns) nos slides
+legendas_embutidas: false       # o .srt e sempre gerado ao lado do .mp4
+musica: null                    # ex.: musica/fundo.mp3 (com ducking automatico sob a voz)
+volume_musica: 0.10
+crf: 18                         # qualidade H.264 (menor = melhor/maior)
+preset: medium

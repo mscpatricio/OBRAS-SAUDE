@@ -1,0 +1,11 @@
+saida/
+caixa_entrada/
+voz/*.wav
+voz/*.mp3
+voz/*.m4a
+narrador.yaml
+__pycache__/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
