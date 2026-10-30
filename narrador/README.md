@@ -13,15 +13,39 @@ PPTX/PDF ──► imagens dos slides + notas do orador (roteiro)
          ──► saida/<nome>/<nome>.mp4  (+ .srt, roteiro usado, áudio por slide)
 ```
 
+## Clonagem ONLINE e gratuita (sem GPU no seu computador)
+
+Três caminhos, do mais simples ao mais flexível. Todos usam a **sua** voz e são gratuitos:
+
+| caminho | como funciona | custo | qualidade | limites |
+|---|---|---|---|---|
+| **`--motor chatterbox-online`** | o Narrador envia a sua amostra + cada frase para o Space oficial da Resemble AI no Hugging Face (GPU gratuita) e recebe o áudio clonado | grátis | igual ao Chatterbox pt-BR local | cota de GPU por usuário (crie conta grátis e defina `HF_TOKEN` para mais cota); mais lento que local |
+| **Google Colab** (`exemplos/narrador_colab.ipynb`) | abre o notebook, envia a voz e o PPTX, roda tudo na GPU T4 gratuita do Colab e baixa o MP4 | grátis | a melhor (modelo completo, sem fila) | sessões limitadas (~algumas horas/dia), precisa reinstalar a cada sessão |
+| **Fish Audio** (`--motor fish`) | você clona a voz no site fish.audio (15-30 s) e o Narrador usa a API | plano grátis (~8 mil créditos/mês, só uso pessoal) | muito boa | poucos minutos de áudio por mês no plano grátis |
+
+Sites "clone sua voz grátis" (ElevenLabs, PlayHT, Resemble, CapCut etc.) em geral **não** incluem
+clonagem no plano gratuito ou só liberam alguns minutos; ElevenLabs, por exemplo, exige o plano
+Starter (US$ 6/mês) para clonagem instantânea. Por isso o caminho recomendado é o Hugging Face
+Space (ou o Colab), que roda o mesmo modelo aberto sem custo.
+
+```bash
+pip install -e '.[online]'
+narrador voz preparar gravacao.m4a --duracao 12
+narrador voz testar --motor chatterbox-online --voz voz/minha_voz.wav
+narrador gerar apresentacao.pptx --motor chatterbox-online --voz voz/minha_voz.wav --legendas
+```
+
 ## Qual motor de voz usar? (pesquisa de outubro/2026)
 
 | motor | licença / custo | clonagem | pt-BR | hardware | observações |
 |---|---|---|---|---|---|
-| **chatterbox-ptbr** (padrão recomendado) | MIT, grátis | sim, 6-15 s de áudio | pacote dedicado pt-BR | CPU (lento) ou GPU | Resemble AI Chatterbox Multilingual V3 + fine-tune pt-BR. Melhor relação qualidade/facilidade. |
+| **chatterbox-online** | MIT, grátis | sim, 6-15 s | pacote pt-BR | **nenhum** (Hugging Face Space) | mesmo modelo abaixo, rodando na nuvem gratuita; precisa de internet |
+| **chatterbox-ptbr** (padrão local) | MIT, grátis | sim, 6-15 s de áudio | pacote dedicado pt-BR | CPU (lento) ou GPU | Resemble AI Chatterbox Multilingual V3 + fine-tune pt-BR. Melhor relação qualidade/facilidade. |
 | chatterbox | MIT, grátis | sim | sim (23 idiomas) | CPU/GPU | mesmo modelo, checkpoint multilíngue genérico |
 | qwen3 | Apache 2.0, grátis | sim, 3 s | sim | GPU ~8 GB | Qwen3-TTS 1.7B Base. Qualidade de ponta, mais pesado. |
 | f5-ptbr | CC-BY-NC (não comercial) | sim | fine-tune pt-BR | GPU recomendada | F5-TTS pt-BR. Muito natural com transcrição da referência. |
 | xtts | CPML (não comercial) | sim | sim | CPU/GPU | Coqui XTTS v2, clássico |
+| fish | freemium | no site fish.audio | sim | nuvem | plano grátis limitado e não comercial |
 | elevenlabs | freemium/pago | no painel deles | sim | nuvem | máxima qualidade; plano grátis não permite uso comercial |
 | piper | MIT, grátis | **não** | 4 vozes neurais pt-BR | CPU, offline | voz real em segundos, sem GPU; bom para rascunhos e para quem não quer clonar |
 | edge | grátis | **não** | vozes neurais pt-BR | nuvem | só para testar roteiro e vídeo rapidamente |
@@ -172,7 +196,8 @@ narrador/
     audio.py      junção com pausas, masterização (ffmpeg), preparo da referência
     video.py      segmentos por slide, xfade/acrossfade, SRT, música com ducking, legendas embutidas
     bot.py        pasta vigiada
-    tts/          motores: chatterbox, qwen3, f5, xtts, elevenlabs, piper, edge, silencio
+    tts/          motores: chatterbox (local e online/HF Space), qwen3, f5, xtts, fish, elevenlabs, piper, edge, silencio
+  exemplos/narrador_colab.ipynb  notebook para rodar tudo na GPU gratuita do Google Colab
   exemplos/       roteiro de exemplo e gerador de PPTX de teste
   narrador.exemplo.yaml
 ```
