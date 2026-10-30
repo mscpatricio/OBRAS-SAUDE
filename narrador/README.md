@@ -23,6 +23,7 @@ PPTX/PDF ──► imagens dos slides + notas do orador (roteiro)
 | f5-ptbr | CC-BY-NC (não comercial) | sim | fine-tune pt-BR | GPU recomendada | F5-TTS pt-BR. Muito natural com transcrição da referência. |
 | xtts | CPML (não comercial) | sim | sim | CPU/GPU | Coqui XTTS v2, clássico |
 | elevenlabs | freemium/pago | no painel deles | sim | nuvem | máxima qualidade; plano grátis não permite uso comercial |
+| piper | MIT, grátis | **não** | 4 vozes neurais pt-BR | CPU, offline | voz real em segundos, sem GPU; bom para rascunhos e para quem não quer clonar |
 | edge | grátis | **não** | vozes neurais pt-BR | nuvem | só para testar roteiro e vídeo rapidamente |
 
 Resumo: para uso livre (inclusive institucional/comercial) com a sua voz, use **chatterbox-ptbr**.
@@ -41,6 +42,7 @@ cd narrador
 python3 -m venv .venv && source .venv/bin/activate
 pip install -e .                      # núcleo (sem motor de IA)
 pip install -e '.[chatterbox]'        # motor recomendado (baixa ~2 GB de modelos na 1ª execução)
+pip install -e '.[piper]'             # voz real pt-BR offline, sem clonagem (leve, CPU)
 # outros: '.[qwen3]'  '.[f5]'  '.[xtts]'  '.[edge]'
 ```
 
@@ -149,9 +151,14 @@ pausas, loudness, transição, resolução etc. Qualquer opção da linha de com
 
 ```bash
 python exemplos/criar_pptx_exemplo.py saida/exemplo.pptx
-narrador gerar saida/exemplo.pptx --motor edge        # vozes neurais pt-BR da Microsoft (sem clonagem)
-narrador gerar saida/exemplo.pptx --motor silencio    # só valida slides/vídeo/legendas
+narrador gerar saida/exemplo.pptx --motor piper       # voz real pt-BR offline (baixa ~60 MB na 1ª vez)
+narrador gerar saida/exemplo.pptx --motor edge        # vozes neurais pt-BR da Microsoft (precisa de internet)
+narrador gerar saida/exemplo.pptx --motor silencio    # SEM áudio: só valida slides/vídeo/legendas
 ```
+
+> O motor `silencio` gera o vídeo **mudo** de propósito. Se o seu MP4 saiu sem som, confira o
+> campo `motor` em `saida/<nome>/resumo.json` e gere de novo com `--motor piper` ou
+> `--motor chatterbox-ptbr`.
 
 ## Estrutura
 
@@ -165,7 +172,7 @@ narrador/
     audio.py      junção com pausas, masterização (ffmpeg), preparo da referência
     video.py      segmentos por slide, xfade/acrossfade, SRT, música com ducking, legendas embutidas
     bot.py        pasta vigiada
-    tts/          motores: chatterbox, qwen3, f5, xtts, elevenlabs, edge, silencio
+    tts/          motores: chatterbox, qwen3, f5, xtts, elevenlabs, piper, edge, silencio
   exemplos/       roteiro de exemplo e gerador de PPTX de teste
   narrador.exemplo.yaml
 ```

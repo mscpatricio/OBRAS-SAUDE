@@ -108,6 +108,11 @@ def gerar(origem: Path, saida_dir: Path, cfg: Config, roteiro: Path | None = Non
     if cfg.voz:
         voz = VozReferencia.de_arquivo(Path(cfg.voz), cfg.transcricao)
     motor = criar_motor(cfg.motor, voz, dispositivo=cfg.dispositivo, idioma=cfg.idioma, **(cfg.opcoes_motor or {}))
+    if motor.nome == "silencio":
+        console.print("[bold yellow]ATENCAO:[/] motor 'silencio' gera o video SEM narracao (so para testar a montagem). "
+                      "Para voz real use --motor piper (offline) ou --motor chatterbox-ptbr (voz clonada).")
+    elif not motor.precisa_clonagem:
+        console.print(f"[yellow]Aviso:[/] motor '{motor.nome}' usa uma voz generica, nao a sua voz clonada.")
 
     dir_audio = garantir_dir(trabalho / "audio")
     cenas: list[video.Cena] = []

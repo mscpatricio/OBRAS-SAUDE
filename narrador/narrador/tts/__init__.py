@@ -15,6 +15,8 @@ Motores disponiveis (todos gratuitos exceto ElevenLabs):
   f5-ptbr         F5-TTS ajustado para pt-BR (firstpixel/F5-TTS-pt-br, CC-BY-NC: nao comercial).
   xtts            Coqui XTTS v2 (licenca CPML, nao comercial). Classico, bom em pt.
   elevenlabs      API paga/freemium (voz clonada no painel da ElevenLabs). Maxima qualidade.
+  piper           Piper TTS: vozes neurais pt-BR offline e leves (SEM clonagem). Otimo para
+                  gerar o video com voz real em CPU, sem internet.
   edge            Microsoft Edge TTS (vozes neurais pt-BR, SEM clonagem). Para testes rapidos.
   silencio        Gera silencio proporcional ao texto. Para testar a montagem do video.
 """
@@ -30,6 +32,7 @@ MOTORES: dict[str, str] = {
     "f5-ptbr": "F5-TTS pt-BR (gratis, clonagem, uso nao comercial)",
     "xtts": "Coqui XTTS v2 (gratis, clonagem, uso nao comercial)",
     "elevenlabs": "ElevenLabs API (pago/freemium, clonagem no painel)",
+    "piper": "Piper TTS pt-BR offline (gratis, SEM clonagem; voz real sem GPU)",
     "edge": "Edge TTS pt-BR (gratis, SEM clonagem; apenas testes)",
     "silencio": "Silencio (teste de montagem do video)",
 }
@@ -41,6 +44,7 @@ INSTALACAO: dict[str, str] = {
     "f5-ptbr": "pip install 'narrador[f5]'   (ou: pip install f5-tts)",
     "xtts": "pip install 'narrador[xtts]'   (ou: pip install coqui-tts)  + export COQUI_TOS_AGREED=1",
     "elevenlabs": "export ELEVENLABS_API_KEY=...  e  export ELEVENLABS_VOICE_ID=...",
+    "piper": "pip install 'narrador[piper]'   (ou: pip install piper-tts)",
     "edge": "pip install 'narrador[edge]'   (ou: pip install edge-tts)",
     "silencio": "(nada a instalar)",
 }
@@ -66,6 +70,9 @@ def criar_motor(nome: str, voz: VozReferencia | None, **opcoes) -> MotorTTS:
     if nome == "elevenlabs":
         from .elevenlabs import MotorElevenLabs
         return MotorElevenLabs(voz, **opcoes)
+    if nome == "piper":
+        from .piper import MotorPiper
+        return MotorPiper(voz, **opcoes)
     if nome == "edge":
         from .edge import MotorEdge
         return MotorEdge(voz, **opcoes)

@@ -49,7 +49,8 @@ opt_config = click.option("--config", "-c", type=click.Path(path_type=Path), def
                           show_default=True, help="Arquivo YAML com as opcoes padrao.")
 opt_voz = click.option("--voz", type=click.Path(path_type=Path), help="WAV de referencia da sua voz (6-15 s).")
 opt_transcricao = click.option("--transcricao", help="Texto dito no audio de referencia (ou caminho .txt).")
-opt_motor = click.option("--motor", "-m", type=str, help="chatterbox | chatterbox-ptbr | qwen3 | f5-ptbr | xtts | elevenlabs | edge | silencio")
+opt_motor = click.option("--motor", "-m", type=str, help="chatterbox | chatterbox-ptbr | qwen3 | f5-ptbr | xtts | elevenlabs | piper | edge | silencio")
+SEM_CLONAGEM = {"piper", "edge", "silencio", "elevenlabs"}
 opt_dispositivo = click.option("--dispositivo", type=str, help="auto | cpu | cuda | mps")
 opt_opcao = click.option("--opcao", "-o", multiple=True, help="Opcao do motor, ex.: -o exaggeration=0.4 -o cfg_weight=0.4")
 
@@ -93,7 +94,7 @@ def gerar(origem, roteiro, saida, nome, config, voz, transcricao, motor, disposi
         cfg.largura, cfg.altura = {"1080p": (1920, 1080), "720p": (1280, 720), "4k": (3840, 2160)}[resolucao]
     if opcao:
         cfg.opcoes_motor = {**(cfg.opcoes_motor or {}), **_parse_opcoes(opcao)}
-    if cfg.motor not in {"edge", "silencio", "elevenlabs"} and not cfg.voz:
+    if cfg.motor not in SEM_CLONAGEM and not cfg.voz:
         raise ErroNarrador("Informe --voz com o WAV da sua voz (ou use --motor edge para um teste sem clonagem).")
     pipeline.gerar(origem, saida, cfg, roteiro=roteiro, nome_saida=nome)
 
@@ -186,7 +187,7 @@ def bot(entrada, saida, config, voz, transcricao, motor, dispositivo, opcao, uma
     cfg.atualizar(voz=str(voz) if voz else None, transcricao=transcricao, motor=motor, dispositivo=dispositivo)
     if opcao:
         cfg.opcoes_motor = {**(cfg.opcoes_motor or {}), **_parse_opcoes(opcao)}
-    if cfg.motor not in {"edge", "silencio", "elevenlabs"} and not cfg.voz:
+    if cfg.motor not in SEM_CLONAGEM and not cfg.voz:
         raise ErroNarrador("Informe --voz com o WAV da sua voz (ou configure 'voz:' no narrador.yaml).")
     vigiar(entrada, saida, cfg, uma_vez=uma_vez)
 
