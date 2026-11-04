@@ -223,6 +223,7 @@ def main() -> None:
             if d.exists():
                 shutil.rmtree(d)
 
+    s2_dir = str(exp_dir)
     if a.epocas_sovits <= 0:
         etapa("6/7 SoVITS: pulado (--epocas-sovits 0); o timbre vem do modelo base + referencia")
     else:
