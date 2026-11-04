@@ -96,6 +96,12 @@ def gerar(origem, roteiro, saida, nome, config, voz, transcricao, motor, disposi
         cfg.opcoes_motor = {**(cfg.opcoes_motor or {}), **_parse_opcoes(opcao)}
     if cfg.motor not in SEM_CLONAGEM and not cfg.voz:
         raise ErroNarrador("Informe --voz com o WAV da sua voz (ou use --motor edge para um teste sem clonagem).")
+    if roteiro is None and origem.is_file():
+        # usa automaticamente <nome>.roteiro.md se existir ao lado do arquivo
+        candidato = origem.with_suffix(".roteiro.md")
+        if candidato.exists():
+            console.print(f"[cyan]Usando o roteiro {candidato.name}[/]")
+            roteiro = candidato
     pipeline.gerar(origem, saida, cfg, roteiro=roteiro, nome_saida=nome)
 
 
