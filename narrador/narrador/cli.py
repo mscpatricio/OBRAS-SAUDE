@@ -102,15 +102,23 @@ def gerar(origem, roteiro, saida, nome, config, voz, transcricao, motor, disposi
 @main.command()
 @click.argument("origem", type=click.Path(exists=True, path_type=Path))
 @click.option("--saida", "-s", type=click.Path(path_type=Path), help="Arquivo .md de destino (padrao: <nome>.roteiro.md).")
+@click.option("--notas-pptx", is_flag=True, help="Para .pptx, usar o leitor proprio de notas do orador em vez do MarkItDown.")
 @_tratar
-def roteiro(origem, saida):
-    """Extrai as notas do orador/texto dos slides para um roteiro editavel (.md)."""
-    import tempfile
-
-    trabalho = Path(tempfile.mkdtemp(prefix="narrador_roteiro_"))
-    apr = slides.carregar(origem, trabalho, largura=640)
+def roteiro(origem, saida, notas_pptx):
+    """Extrai texto limpo (PDF, PPTX, DOCX, XLSX...) para um roteiro editavel (.md) via MarkItDown."""
     destino = saida or origem.with_suffix(".roteiro.md")
-    slides.escrever_roteiro_md(apr, destino)
+    if notas_pptx or origem.is_dir():
+        import tempfile
+
+        trabalho = Path(tempfile.mkdtemp(prefix="narrador_roteiro_"))
+        apr = slides.carregar(origem, trabalho, largura=640)
+        slides.escrever_roteiro_md(apr, destino)
+    else:
+        from . import extrair
+
+        doc = extrair.extrair(origem)
+        extrair.escrever_roteiro(doc, destino)
+        console.print(f"[green]{len(doc.secoes)} blocos extraidos[/] de {origem.name} (MarkItDown).")
     console.print(f"[green]Roteiro salvo em[/] {destino}. Edite e use com: narrador gerar {origem.name} -r {destino.name}")
 
 

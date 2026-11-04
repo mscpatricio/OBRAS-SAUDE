@@ -79,6 +79,12 @@ if ($ComGptSovits) {
         if ($extraido) { Rename-Item $extraido.FullName $gsvDir }
         Remove-Item $sete -Force
     }
+    Passo "GPT-SoVITS: aplicando o suporte a portugues do Brasil"
+    Copy-Item (Join-Path $narr "narrador\gptsovits_ptbr\*.py") $gsvDir -Force
+    Push-Location $gsvDir
+    & "$gsvDir\runtime\python.exe" aplicar_patch.py .
+    & "$gsvDir\runtime\python.exe" -m pip install -q torchcodec resampy faster-whisper
+    Pop-Location
     $bat = @"
 @echo off
 title GPT-SoVITS api_v2 (porta 9880)
@@ -94,6 +100,17 @@ cd /d "$gsvDir"
 call go-webui.bat
 "@
     Set-Content -Path (Join-Path $Destino "treinar_voz_gpt_sovits.bat") -Value $batUi -Encoding ASCII
+    $batTreino = @"
+@echo off
+rem Treina a sua voz em pt-BR no GPT-SoVITS. Arraste a PASTA com 5-20 min de gravacoes para este arquivo.
+title GPT-SoVITS - treino da voz em pt-BR
+cd /d "$gsvDir"
+if "%~1"=="" ( echo Uso: arraste a pasta com as gravacoes da sua voz para este arquivo & pause & exit /b 1 )
+set /p NOME=Nome da voz (sem espacos, ex. minha_voz): 
+runtime\python.exe treinar_ptbr.py --audio "%~1" --nome %NOME% --whisper large-v3-turbo
+pause
+"@
+    Set-Content -Path (Join-Path $Destino "treinar_voz_ptbr.bat") -Value $batTreino -Encoding ASCII
 }
 
 Passo "Atalhos"
@@ -142,7 +159,7 @@ opcoes_motor:
   cfg_weight: 0.5
   # Para o GPT-SoVITS (motor: gpt-sovits), descomente:
   # url: http://127.0.0.1:9880
-  # text_lang: en          # zh | en | ja | ko | yue (sem portugues no GPT-SoVITS oficial)
+  # text_lang: pt          # portugues do Brasil (patch do Narrador); tambem zh | en | ja | ko | yue
   # gpt_weights: $Destino\GPT-SoVITS\GPT_weights_v2Pro\minha_voz-e15.ckpt
   # sovits_weights: $Destino\GPT-SoVITS\SoVITS_weights_v2Pro\minha_voz_e8_s200.pth
 legendas_embutidas: true
@@ -156,4 +173,4 @@ Write-Host "Pasta: $Destino"
 Write-Host "  1. Salve seu token do Hugging Face em $Destino\hf_token.txt (para o motor online)"
 Write-Host "  2. Arraste a gravacao da sua voz para preparar_voz.bat"
 Write-Host "  3. Arraste a apresentacao .pptx para narrar.bat   (ou abra abrir_web.bat)"
-if ($ComGptSovits) { Write-Host "  4. GPT-SoVITS: iniciar_gpt_sovits.bat (servidor) e treinar_voz_gpt_sovits.bat (WebUI de treino)" }
+if ($ComGptSovits) { Write-Host "  4. GPT-SoVITS: treinar_voz_ptbr.bat (treina sua voz em pt-BR), iniciar_gpt_sovits.bat (servidor), treinar_voz_gpt_sovits.bat (WebUI)" }

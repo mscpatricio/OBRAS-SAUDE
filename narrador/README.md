@@ -45,26 +45,42 @@ narrador gerar apresentacao.pptx --motor chatterbox-online --voz voz/minha_voz.w
   `abrir_web.bat`. Sem LibreOffice, o Narrador usa o PowerPoint instalado para converter os slides.
   Detalhes em `windows/README.md`.
 
-## GPT-SoVITS
+## GPT-SoVITS em português do Brasil
 
-O motor `gpt-sovits` conversa com o servidor `api_v2` do [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)
-(MIT), local ou remoto, e aceita pesos ajustados para a sua voz (`gpt_weights`, `sovits_weights`), que é o
-caminho para a voz mais fiel: fine-tune com 1 a 5 minutos de áudio pela WebUI oficial.
+O GPT-SoVITS oficial não tem português. O Narrador traz em `narrador/gptsovits_ptbr/` as adaptações
+que fazem ele falar pt-BR:
+
+- **`portuguese.py`**: frontend de texto. Normaliza números, moeda, datas e siglas; converte o texto em
+  fonemas com o espeak-ng (voz `pt-br`, embutido via `espeakng-loader`, funciona no Windows sem instalar
+  nada) e mapeia os fonemas para os símbolos ARPAbet que **já existem** na tabela do GPT-SoVITS, com marcas
+  de tonicidade. Nenhuma linha nova de embedding: os modelos pré-treinados continuam válidos.
+- **`aplicar_patch.py`**: registra o idioma `pt` no cleaner, no `TTS.py` (api_v2), no pré-processador de
+  texto, no script de treino (`1-get-text.py`) e na WebUI (opção "Português (pt-BR)"). Idempotente, faz
+  backup `.orig`.
+- **`treinar_ptbr.py`**: treina a sua voz em pt-BR sem a WebUI: fatia o áudio, transcreve com Whisper em
+  português, prepara o dataset e treina SoVITS e GPT. Saída pronta para o motor `gpt-sovits`.
 
 | onde | como |
 |---|---|
-| Windows | `windows\instalar.ps1 -ComGptSovits` baixa o pacote integrado (~8 GB); `iniciar_gpt_sovits.bat` sobe o servidor; `treinar_voz_gpt_sovits.bat` abre a WebUI de treino |
-| Online (Colab) | `exemplos/narrador_gptsovits_colab.ipynb`: instala GPT-SoVITS + Narrador na GPU grátis e abre a interface web com link público |
-| Linux/macOS | `bash install.sh --device CU128 --source HF` no repositório do GPT-SoVITS, depois `python api_v2.py -a 127.0.0.1 -p 9880` |
+| Google Colab (sem GPU própria) | `exemplos/narrador_gptsovits_ptbr_treino.ipynb`: instala, aplica o patch, treina a sua voz com 5-20 min de áudio e abre a interface web para gerar o MP4 |
+| Windows | `windows\instalar.ps1 -ComGptSovits` aplica o patch; `treinar_voz_ptbr.bat` treina; `iniciar_gpt_sovits.bat` sobe o servidor |
+| Linux/macOS | na pasta do GPT-SoVITS: `python aplicar_patch.py .` e `python treinar_ptbr.py --audio gravacoes/ --nome minha_voz` |
 
-Opções: `-o url=http://127.0.0.1:9880 -o text_lang=en -o gpt_weights=... -o sovits_weights=... -o speed_factor=1.0`.
-A referência de voz deve ter 3 a 10 s (o Narrador recorta automaticamente).
+Depois do treino: `narrador gerar apresentacao.pptx --motor gpt-sovits --voz voz/minha_voz.wav -o text_lang=pt -o gpt_weights=... -o sovits_weights=...`
 
-**Limite:** o GPT-SoVITS oficial fala **zh, en, ja, ko e yue; não há português**. Existe um
-[modelo pt-BR experimental](https://huggingface.co/MatheusMarquesEiras/gpt-sovits-ptbr-base) (CC BY 4.0), mas
-ele exige um frontend de texto pt-BR que o autor não publicou, então não pode ser usado. Para pt-BR use
-`chatterbox-online` ou `chatterbox-ptbr`; o motor `gpt-sovits` já aceita `text_lang: pt` para quando um
-frontend for publicado.
+**Qualidade medida.** Sem treino (zero-shot com o modelo v2Pro) o português sai com sotaque forte: em teste
+com reconhecimento de voz (Whisper) a taxa de erro de palavras ficou entre 56% e 72%. O treino com a sua voz
+em português é o que corrige pronúncia e ritmo; o pipeline de preparação e os comandos de treino foram
+validados neste repositório, mas o resultado final depende da GPU e da quantidade de áudio (5-20 min).
+
+## Texto limpo com MarkItDown
+
+`narrador roteiro arquivo` usa o [MarkItDown](https://github.com/microsoft/markitdown) (Microsoft, MIT) para
+extrair texto limpo de **PDF, PowerPoint, Word, Excel, HTML e CSV** e gerar um roteiro editável:
+slides (com notas do orador quando existem), páginas ou abas viram blocos `## Slide N`; tabelas viram frases
+("Obra: Hospital Regional, Município: Cascavel, Valor: ..."); listas e links viram sentenças. Use o roteiro
+com `narrador gerar apresentacao.pptx -r apresentacao.roteiro.md`. Para o leitor antigo de notas do PPTX,
+`--notas-pptx`.
 
 ## Qual motor de voz usar? (pesquisa de outubro/2026)
 
@@ -76,7 +92,7 @@ frontend for publicado.
 | qwen3 | Apache 2.0, grátis | sim, 3 s | sim | GPU ~8 GB | Qwen3-TTS 1.7B Base. Qualidade de ponta, mais pesado. |
 | f5-ptbr | CC-BY-NC (não comercial) | sim | fine-tune pt-BR | GPU recomendada | F5-TTS pt-BR. Muito natural com transcrição da referência. |
 | xtts | CPML (não comercial) | sim | sim | CPU/GPU | Coqui XTTS v2, clássico |
-| gpt-sovits | MIT, grátis | sim (3-10 s) + fine-tune 1 min | **não** (zh/en/ja/ko/yue) | GPU ou CPU, local/Colab | via servidor api_v2; voz mais fiel com fine-tune |
+| gpt-sovits | MIT, grátis | sim (3-10 s) + treino 5-20 min | **sim, com o patch pt-BR** (treino recomendado) | GPU (treino), CPU ou GPU (uso) | via servidor api_v2; voz mais fiel após treinar |
 | fish | freemium | no site fish.audio | sim | nuvem | plano grátis limitado e não comercial |
 | elevenlabs | freemium/pago | no painel deles | sim | nuvem | máxima qualidade; plano grátis não permite uso comercial |
 | piper | MIT, grátis | **não** | 4 vozes neurais pt-BR | CPU, offline | voz real em segundos, sem GPU; bom para rascunhos e para quem não quer clonar |
@@ -230,8 +246,11 @@ narrador/
     bot.py        pasta vigiada
     tts/          motores: chatterbox (local e online/HF Space), gpt-sovits, qwen3, f5, xtts, fish, elevenlabs, piper, edge, silencio
     webapp.py     interface web (Gradio): narrador web
+    extrair.py    MarkItDown: PDF/PPTX/DOCX/XLSX -> roteiro limpo
+    gptsovits_ptbr/  frontend pt-BR, patch e treino para o GPT-SoVITS
   windows/        instalador PowerShell e atalhos .bat
-  exemplos/narrador_gptsovits_colab.ipynb  GPT-SoVITS + Narrador + interface web no Colab
+  exemplos/narrador_gptsovits_colab.ipynb        GPT-SoVITS (zero-shot) + Narrador + interface web no Colab
+  exemplos/narrador_gptsovits_ptbr_treino.ipynb  treino da sua voz em pt-BR no Colab
   exemplos/narrador_colab.ipynb  notebook para rodar tudo na GPU gratuita do Google Colab
   exemplos/       roteiro de exemplo e gerador de PPTX de teste
   narrador.exemplo.yaml

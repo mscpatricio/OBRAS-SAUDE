@@ -27,15 +27,19 @@ Tudo fica em `C:\narrador`.
 
 Se o LibreOffice nao for instalado, o Narrador usa o PowerPoint instalado para converter os slides.
 
-## GPT-SoVITS no Windows
+## GPT-SoVITS em português do Brasil (Windows)
 
-1. `iniciar_gpt_sovits.bat` sobe o servidor `api_v2` em http://127.0.0.1:9880 (deixe a janela aberta).
-2. Em `narrador.yaml`, defina `motor: gpt-sovits` e `text_lang` (en, zh, ja, ko ou yue).
-3. Para a voz identica (fine-tune com 1 minuto de audio): `treinar_voz_gpt_sovits.bat` abre a WebUI
-   oficial; siga as abas 0 (fatiar audio, ASR), 1A (formatar dataset), 1B (treinar SoVITS e GPT).
-   Depois aponte `gpt_weights` e `sovits_weights` no `narrador.yaml` para os arquivos gerados em
-   `GPT_weights_v2Pro\` e `SoVITS_weights_v2Pro\`.
+O instalador (`-ComGptSovits`) baixa o pacote integrado e aplica o **patch pt-BR** do Narrador
+(`narrador/gptsovits_ptbr/`), que ensina o GPT-SoVITS a ler português.
 
-**Limite importante:** o GPT-SoVITS oficial **nao tem portugues**. Para narrar em pt-BR use
-`motor: chatterbox-online` (sem GPU) ou `motor: chatterbox-ptbr` (GPU NVIDIA). O motor `gpt-sovits`
-fica pronto para o dia em que um frontend pt-BR for publicado (basta `text_lang: pt`).
+1. **Treine a sua voz** (obrigatório para boa qualidade): grave 5 a 20 minutos lendo textos em português,
+   coloque os arquivos numa pasta e arraste a pasta para `treinar_voz_ptbr.bat`. Leva 20-60 min numa GPU
+   NVIDIA de 6 GB ou mais. Ao final ele imprime os caminhos dos pesos (`SoVITS_weights_v2Pro\...pth` e
+   `GPT_weights_v2Pro\...ckpt`).
+2. Em `C:\narrador\narrador.yaml`, defina `motor: gpt-sovits`, `text_lang: pt`, `gpt_weights` e `sovits_weights`
+   com esses caminhos.
+3. `iniciar_gpt_sovits.bat` sobe o servidor (deixe a janela aberta) e `narrar.bat` / `abrir_web.bat` geram o vídeo.
+
+Sem treinar (zero-shot) o português sai com sotaque forte e palavras trocadas: serve só para testar o fluxo.
+Para quem não tem GPU, o caminho é o notebook `exemplos/narrador_gptsovits_ptbr_treino.ipynb` no Google Colab
+ou os motores `chatterbox-online` / `chatterbox-ptbr`.
