@@ -58,11 +58,44 @@ def _ordenar_natural(caminhos: list[Path]) -> list[Path]:
     return sorted(caminhos, key=chave)
 
 
+def _pptx_para_pdf_powerpoint(pptx: Path, destino_dir: Path) -> Path | None:
+    """Windows: usa o PowerPoint instalado (COM) quando nao ha LibreOffice."""
+    if os.name != "nt":
+        return None
+    garantir_dir(destino_dir)
+    pdf = destino_dir / (pptx.stem + ".pdf")
+    script = f"""
+$pp = New-Object -ComObject PowerPoint.Application
+$pres = $pp.Presentations.Open('{str(pptx.resolve())}', $true, $false, $false)
+$pres.SaveAs('{str(pdf.resolve())}', 32)
+$pres.Close()
+$pp.Quit()
+"""
+    try:
+        proc = subprocess.run(["powershell", "-NoProfile", "-NonInteractive", "-Command", script],
+                              stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=600)
+    except (OSError, subprocess.TimeoutExpired):
+        return None
+    if proc.returncode == 0 and pdf.exists():
+        console.print("[dim]PPTX convertido com o PowerPoint (COM).[/]")
+        return pdf
+    return None
+
+
 def pptx_para_pdf(pptx: Path, destino_dir: Path) -> Path:
     soffice = shutil.which("soffice") or shutil.which("libreoffice")
+    if not soffice and os.name == "nt":
+        for base in (r"C:\Program Files\LibreOffice\program", r"C:\Program Files (x86)\LibreOffice\program"):
+            if (Path(base) / "soffice.exe").exists():
+                soffice = str(Path(base) / "soffice.exe")
+                break
     if not soffice:
+        pdf = _pptx_para_pdf_powerpoint(pptx, destino_dir)
+        if pdf:
+            return pdf
         raise ErroNarrador(
-            "LibreOffice nao encontrado. Instale (sudo apt install libreoffice-impress) "
+            "LibreOffice nao encontrado (nem PowerPoint, no Windows). Instale o LibreOffice "
+            "(Linux: sudo apt install libreoffice-impress; Windows: winget install TheDocumentFoundation.LibreOffice) "
             "ou exporte a apresentacao para PDF e passe o .pdf junto com um roteiro."
         )
     garantir_dir(destino_dir)

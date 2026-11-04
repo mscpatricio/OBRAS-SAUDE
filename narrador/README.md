@@ -35,6 +35,37 @@ narrador voz testar --motor chatterbox-online --voz voz/minha_voz.wav
 narrador gerar apresentacao.pptx --motor chatterbox-online --voz voz/minha_voz.wav --legendas
 ```
 
+## Interface web e Windows
+
+- **Interface web** (navegador): `pip install -e '.[web]'` e `narrador web`. Abre http://127.0.0.1:7860 com
+  três abas: preparar a voz, testar, gerar o vídeo (com download do MP4 e .srt). `--compartilhar` cria um
+  link público temporário (útil no Colab); `--host 0.0.0.0` libera para outras máquinas da rede.
+- **Windows**: instalador em `windows/instalar.ps1` (PowerShell como administrador). Instala Python, ffmpeg,
+  LibreOffice e o Narrador em `C:\narrador`, com atalhos `preparar_voz.bat`, `narrar.bat` (arraste o PPTX) e
+  `abrir_web.bat`. Sem LibreOffice, o Narrador usa o PowerPoint instalado para converter os slides.
+  Detalhes em `windows/README.md`.
+
+## GPT-SoVITS
+
+O motor `gpt-sovits` conversa com o servidor `api_v2` do [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)
+(MIT), local ou remoto, e aceita pesos ajustados para a sua voz (`gpt_weights`, `sovits_weights`), que é o
+caminho para a voz mais fiel: fine-tune com 1 a 5 minutos de áudio pela WebUI oficial.
+
+| onde | como |
+|---|---|
+| Windows | `windows\instalar.ps1 -ComGptSovits` baixa o pacote integrado (~8 GB); `iniciar_gpt_sovits.bat` sobe o servidor; `treinar_voz_gpt_sovits.bat` abre a WebUI de treino |
+| Online (Colab) | `exemplos/narrador_gptsovits_colab.ipynb`: instala GPT-SoVITS + Narrador na GPU grátis e abre a interface web com link público |
+| Linux/macOS | `bash install.sh --device CU128 --source HF` no repositório do GPT-SoVITS, depois `python api_v2.py -a 127.0.0.1 -p 9880` |
+
+Opções: `-o url=http://127.0.0.1:9880 -o text_lang=en -o gpt_weights=... -o sovits_weights=... -o speed_factor=1.0`.
+A referência de voz deve ter 3 a 10 s (o Narrador recorta automaticamente).
+
+**Limite:** o GPT-SoVITS oficial fala **zh, en, ja, ko e yue; não há português**. Existe um
+[modelo pt-BR experimental](https://huggingface.co/MatheusMarquesEiras/gpt-sovits-ptbr-base) (CC BY 4.0), mas
+ele exige um frontend de texto pt-BR que o autor não publicou, então não pode ser usado. Para pt-BR use
+`chatterbox-online` ou `chatterbox-ptbr`; o motor `gpt-sovits` já aceita `text_lang: pt` para quando um
+frontend for publicado.
+
 ## Qual motor de voz usar? (pesquisa de outubro/2026)
 
 | motor | licença / custo | clonagem | pt-BR | hardware | observações |
@@ -45,6 +76,7 @@ narrador gerar apresentacao.pptx --motor chatterbox-online --voz voz/minha_voz.w
 | qwen3 | Apache 2.0, grátis | sim, 3 s | sim | GPU ~8 GB | Qwen3-TTS 1.7B Base. Qualidade de ponta, mais pesado. |
 | f5-ptbr | CC-BY-NC (não comercial) | sim | fine-tune pt-BR | GPU recomendada | F5-TTS pt-BR. Muito natural com transcrição da referência. |
 | xtts | CPML (não comercial) | sim | sim | CPU/GPU | Coqui XTTS v2, clássico |
+| gpt-sovits | MIT, grátis | sim (3-10 s) + fine-tune 1 min | **não** (zh/en/ja/ko/yue) | GPU ou CPU, local/Colab | via servidor api_v2; voz mais fiel com fine-tune |
 | fish | freemium | no site fish.audio | sim | nuvem | plano grátis limitado e não comercial |
 | elevenlabs | freemium/pago | no painel deles | sim | nuvem | máxima qualidade; plano grátis não permite uso comercial |
 | piper | MIT, grátis | **não** | 4 vozes neurais pt-BR | CPU, offline | voz real em segundos, sem GPU; bom para rascunhos e para quem não quer clonar |
@@ -196,7 +228,10 @@ narrador/
     audio.py      junção com pausas, masterização (ffmpeg), preparo da referência
     video.py      segmentos por slide, xfade/acrossfade, SRT, música com ducking, legendas embutidas
     bot.py        pasta vigiada
-    tts/          motores: chatterbox (local e online/HF Space), qwen3, f5, xtts, fish, elevenlabs, piper, edge, silencio
+    tts/          motores: chatterbox (local e online/HF Space), gpt-sovits, qwen3, f5, xtts, fish, elevenlabs, piper, edge, silencio
+    webapp.py     interface web (Gradio): narrador web
+  windows/        instalador PowerShell e atalhos .bat
+  exemplos/narrador_gptsovits_colab.ipynb  GPT-SoVITS + Narrador + interface web no Colab
   exemplos/narrador_colab.ipynb  notebook para rodar tudo na GPU gratuita do Google Colab
   exemplos/       roteiro de exemplo e gerador de PPTX de teste
   narrador.exemplo.yaml

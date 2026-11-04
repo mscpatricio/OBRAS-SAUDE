@@ -49,7 +49,7 @@ opt_config = click.option("--config", "-c", type=click.Path(path_type=Path), def
                           show_default=True, help="Arquivo YAML com as opcoes padrao.")
 opt_voz = click.option("--voz", type=click.Path(path_type=Path), help="WAV de referencia da sua voz (6-15 s).")
 opt_transcricao = click.option("--transcricao", help="Texto dito no audio de referencia (ou caminho .txt).")
-opt_motor = click.option("--motor", "-m", type=str, help="chatterbox-online | chatterbox | chatterbox-ptbr | qwen3 | f5-ptbr | xtts | fish | elevenlabs | piper | edge | silencio")
+opt_motor = click.option("--motor", "-m", type=str, help="chatterbox-online | chatterbox | chatterbox-ptbr | gpt-sovits | qwen3 | f5-ptbr | xtts | fish | elevenlabs | piper | edge | silencio")
 SEM_CLONAGEM = {"piper", "edge", "silencio", "elevenlabs", "fish"}
 opt_dispositivo = click.option("--dispositivo", type=str, help="auto | cpu | cuda | mps")
 opt_opcao = click.option("--opcao", "-o", multiple=True, help="Opcao do motor, ex.: -o exaggeration=0.4 -o cfg_weight=0.4")
@@ -190,6 +190,28 @@ def bot(entrada, saida, config, voz, transcricao, motor, dispositivo, opcao, uma
     if cfg.motor not in SEM_CLONAGEM and not cfg.voz:
         raise ErroNarrador("Informe --voz com o WAV da sua voz (ou configure 'voz:' no narrador.yaml).")
     vigiar(entrada, saida, cfg, uma_vez=uma_vez)
+
+
+@main.command()
+@opt_config
+@opt_voz
+@opt_motor
+@opt_dispositivo
+@opt_opcao
+@click.option("--saida", "-s", type=click.Path(path_type=Path), default=Path("saida"), show_default=True)
+@click.option("--porta", type=int, default=7860, show_default=True)
+@click.option("--host", default="127.0.0.1", show_default=True, help="Use 0.0.0.0 para aceitar outras maquinas da rede.")
+@click.option("--compartilhar", is_flag=True, help="Cria um link publico temporario (gradio.live); util no Colab.")
+@_tratar
+def web(config, voz, motor, dispositivo, opcao, saida, porta, host, compartilhar):
+    """Abre a interface web (navegador) para preparar a voz, testar e gerar o video."""
+    from .webapp import iniciar
+
+    cfg = pipeline.Config.de_arquivo(config)
+    cfg.atualizar(voz=str(voz) if voz else None, motor=motor, dispositivo=dispositivo)
+    if opcao:
+        cfg.opcoes_motor = {**(cfg.opcoes_motor or {}), **_parse_opcoes(opcao)}
+    iniciar(cfg, saida, porta=porta, compartilhar=compartilhar, host=host)
 
 
 @main.command()
