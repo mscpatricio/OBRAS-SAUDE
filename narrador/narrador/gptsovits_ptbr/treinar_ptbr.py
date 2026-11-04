@@ -68,6 +68,8 @@ def main() -> None:
     ap.add_argument("--so-preparar", action="store_true", help="para antes do treino (gera o dataset)")
     ap.add_argument("--so-treinar", action="store_true", help="pula a preparacao (dataset ja pronto)")
     ap.add_argument("--continuar", action="store_true", help="retoma um treino anterior em vez de comecar do zero")
+    ap.add_argument("--base-gpt", help="checkpoint GPT (.ckpt) de partida, ex.: um modelo-base pt-BR treinado antes")
+    ap.add_argument("--base-sovits", help="pesos SoVITS (.pth) de partida (padrao: pre-treinado oficial)")
     a = ap.parse_args()
 
     if not (RAIZ / "GPT_SoVITS" / "text" / "portuguese.py").exists():
@@ -83,6 +85,11 @@ def main() -> None:
            "v2ProPlus": f"{pm}/v2Pro/s2Gv2ProPlus.pth"}[a.versao]
     s2D = s2G.replace("s2G", "s2D")
     s1 = f"{pm}/gsv-v2final-pretrained/s1bert25hz-5kh-longer-epoch=12-step=369668.ckpt" if a.versao == "v2" else f"{pm}/s1v3.ckpt"
+    if a.base_gpt:
+        s1 = str(Path(a.base_gpt).resolve())
+    if a.base_sovits:
+        s2G = str(Path(a.base_sovits).resolve())
+        s2D = s2D if Path(s2D).exists() else s2D
     for p in (s2G, s1, f"{pm}/chinese-hubert-base", f"{pm}/chinese-roberta-wwm-ext-large"):
         if not (RAIZ / p).exists():
             sys.exit(f"Modelo pre-treinado ausente: {p}. Baixe os modelos (install.sh / pacote integrado).")
