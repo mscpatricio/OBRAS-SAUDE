@@ -1,0 +1,20 @@
+# Configuracao da "melhor combinacao em portugues" com a sua voz (GPT-SoVITS):
+#   - GPT: modelo-base de portugues (pronuncia)        -> ptbr_base-e6.ckpt
+#   - SoVITS: treinado com a sua voz (timbre)           -> minha_voz_e4_sNNN.pth
+#   - referencia: 6-9 s da sua voz + transcricao exata
+#   - candidatos: 3 versoes por frase, escolhe a melhor pelo Whisper (pip install faster-whisper)
+# Copie para narrador.yaml e ajuste os caminhos. Depois: narrador web   (ou abrir_web.bat no Windows)
+motor: gpt-sovits
+voz: voz/ref.wav
+transcricao: voz/ref.txt
+idioma: pt
+opcoes_motor:
+  url: http://127.0.0.1:9880
+  text_lang: pt
+  candidatos: 3
+  temperature: 0.7
+  top_k: 10
+  gpt_weights: GPT-SoVITS/GPT_weights_v2Pro/ptbr_base-e6.ckpt
+  sovits_weights: GPT-SoVITS/SoVITS_weights_v2Pro/minha_voz_e4.pth
+legendas_embutidas: true
+transicao: 0.4
