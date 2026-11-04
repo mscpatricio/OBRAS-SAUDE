@@ -17,6 +17,7 @@ Opcoes (-o chave=valor ou opcoes_motor no YAML):
   gpt_weights     caminho .ckpt do GPT ajustado para a sua voz (no servidor)
   sovits_weights  caminho .pth do SoVITS ajustado (no servidor)
   ref_remoto      caminho do audio de referencia NO SERVIDOR (se for remoto)
+  candidatos      1     (ex.: 3 = gera 3 versoes por frase e escolhe a melhor pelo Whisper; precisa de faster-whisper)
   speed_factor    1.0   top_k 15   top_p 1.0   temperature 1.0
   text_split_method cut5   repetition_penalty 1.35   sample_steps 32
 """
@@ -58,6 +59,9 @@ class MotorGPTSoVITS(MotorTTS):
         self.repetition_penalty = float(o.get("repetition_penalty", 1.35))
         self.sample_steps = int(float(o.get("sample_steps", 32)))
         self.timeout = int(float(o.get("timeout", 600)))
+        # best-of-N guiado por ASR: gera N versoes de cada trecho e escolhe a que o Whisper entende melhor
+        self.candidatos = int(float(o.get("candidatos", 1)))
+        self._asr = None
         self.taxa_amostragem = 32000
         self._ref_path: str | None = None
 
@@ -112,6 +116,51 @@ class MotorGPTSoVITS(MotorTTS):
 
     def sintetizar(self, texto: str, destino: Path) -> Path:
         self.garantir_carregado()
+        if self.candidatos <= 1:
+            return self._sintetizar_uma(texto, destino)
+        melhor = None
+        for i in range(self.candidatos):
+            cand = destino.with_name(f"{destino.stem}_cand{i}.wav")
+            self._sintetizar_uma(texto, cand, seed=1000 + i * 7919)
+            erro = self._wer_asr(texto, cand)
+            dur = self._duracao_bytes(cand.read_bytes())
+            console.print(f"      [dim]candidato {i + 1}/{self.candidatos}: erro ASR {erro:.0%}, {dur:.1f}s[/]")
+            if melhor is None or (erro, dur) < (melhor[0], melhor[1]):
+                melhor = (erro, dur, cand)
+            if erro == 0.0:
+                break
+        destino.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy(melhor[2], destino)
+        for i in range(self.candidatos):
+            destino.with_name(f"{destino.stem}_cand{i}.wav").unlink(missing_ok=True)
+        return destino
+
+    def _wer_asr(self, texto: str, wav: Path) -> float:
+        """Taxa de erro de palavras entre o texto pedido e o que o Whisper ouve (0 = perfeito)."""
+        try:
+            if self._asr is None:
+                from faster_whisper import WhisperModel
+
+                self._asr = WhisperModel(str(self.opcoes.get("asr_modelo", "small")), device="cpu", compute_type="int8")
+            import re
+            import subprocess
+            import tempfile
+
+            import soundfile as sf
+
+            tmp = Path(tempfile.gettempdir()) / f"narrador_asr_{wav.stem}.wav"
+            subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", str(wav), "-ac", "1", "-ar", "16000", str(tmp)], check=True)
+            audio, _ = sf.read(str(tmp), dtype="float32")
+            segs, _ = self._asr.transcribe(audio, language=self.text_lang if self.text_lang in {"pt", "en"} else None, beam_size=3)
+            ouvido = " ".join(s.text for s in segs)
+            tmp.unlink(missing_ok=True)
+            norm = lambda t: re.sub(r"[^\w\s]", "", t.lower()).split()
+            return _wer(norm(texto), norm(ouvido))
+        except Exception as e:  # noqa: BLE001
+            console.print(f"[yellow]ASR indisponivel para escolher candidatos ({e}); usando o primeiro.[/]")
+            return 0.0
+
+    def _sintetizar_uma(self, texto: str, destino: Path, seed: int | None = None) -> Path:
         corpo = {
             "text": texto,
             "text_lang": self.text_lang,
@@ -130,6 +179,8 @@ class MotorGPTSoVITS(MotorTTS):
             "streaming_mode": False,
             "parallel_infer": True,
         }
+        if seed is not None:
+            corpo["seed"] = seed
         erro = None
         # duracao plausivel: ~13 caracteres por segundo em pt-BR; acima de 2,5x disso o modelo "travou" repetindo
         esperado = max(1.5, len(texto) / 13.0)
@@ -192,3 +243,17 @@ class MotorGPTSoVITS(MotorTTS):
     def identidade(self) -> str:
         return (super().identidade() + f"|{self.url}|{self.text_lang}|{self.gpt_weights}|{self.sovits_weights}"
                 f"|{self.speed_factor}|{self.top_k}|{self.top_p}|{self.temperature}")
+
+
+def _wer(ref: list[str], hyp: list[str]) -> float:
+    """Taxa de erro de palavras por distancia de edicao (sem dependencias externas)."""
+    if not ref:
+        return 0.0 if not hyp else 1.0
+    d = list(range(len(hyp) + 1))
+    for i in range(1, len(ref) + 1):
+        prev, d[0] = d[0], i
+        for j in range(1, len(hyp) + 1):
+            cur = d[j]
+            d[j] = min(d[j] + 1, d[j - 1] + 1, prev + (ref[i - 1] != hyp[j - 1]))
+            prev = cur
+    return d[len(hyp)] / len(ref)
