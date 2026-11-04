@@ -216,24 +216,27 @@ def main() -> None:
             if d.exists():
                 shutil.rmtree(d)
 
-    etapa(f"6/7 treinando SoVITS ({a.epocas_sovits} epocas)")
-    cfg_s2 = json.loads((RAIZ / f"GPT_SoVITS/configs/s2{a.versao if 'Pro' in a.versao else ''}.json").read_text())
-    s2_dir = str(exp_dir)
-    (exp_dir / f"logs_s2_{a.versao}").mkdir(exist_ok=True)
-    if cpu:
-        cfg_s2["train"]["fp16_run"] = False
-    cfg_s2["train"].update({"batch_size": batch, "epochs": a.epocas_sovits, "text_low_lr_rate": a.lr_texto,
-                            "pretrained_s2G": s2G, "pretrained_s2D": s2D, "if_save_latest": True,
-                            "if_save_every_weights": True, "save_every_epoch": max(1, a.epocas_sovits // 2),
-                            "gpu_numbers": gpu, "grad_ckpt": False, "lora_rank": 32})
-    cfg_s2["model"]["version"] = a.versao
-    cfg_s2["data"]["exp_dir"] = cfg_s2["s2_ckpt_dir"] = s2_dir
-    cfg_s2["save_weight_dir"] = f"SoVITS_weights_{a.versao}"
-    cfg_s2["name"] = exp
-    cfg_s2["version"] = a.versao
-    (tmp / "tmp_s2.json").write_text(json.dumps(cfg_s2))
-    run([PY, "-s", "GPT_SoVITS/s2_train.py", "--config", tmp / "tmp_s2.json"],
-        {"_CUDA_VISIBLE_DEVICES": gpu, **({"CUDA_VISIBLE_DEVICES": ""} if cpu else {})})
+    if a.epocas_sovits <= 0:
+        etapa("6/7 SoVITS: pulado (--epocas-sovits 0); o timbre vem do modelo base + referencia")
+    else:
+        etapa(f"6/7 treinando SoVITS ({a.epocas_sovits} epocas)")
+        cfg_s2 = json.loads((RAIZ / f"GPT_SoVITS/configs/s2{a.versao if 'Pro' in a.versao else ''}.json").read_text())
+        s2_dir = str(exp_dir)
+        (exp_dir / f"logs_s2_{a.versao}").mkdir(exist_ok=True)
+        if cpu:
+            cfg_s2["train"]["fp16_run"] = False
+        cfg_s2["train"].update({"batch_size": batch, "epochs": a.epocas_sovits, "text_low_lr_rate": a.lr_texto,
+                                "pretrained_s2G": s2G, "pretrained_s2D": s2D, "if_save_latest": True,
+                                "if_save_every_weights": True, "save_every_epoch": max(1, a.epocas_sovits // 2),
+                                "gpu_numbers": gpu, "grad_ckpt": False, "lora_rank": 32})
+        cfg_s2["model"]["version"] = a.versao
+        cfg_s2["data"]["exp_dir"] = cfg_s2["s2_ckpt_dir"] = s2_dir
+        cfg_s2["save_weight_dir"] = f"SoVITS_weights_{a.versao}"
+        cfg_s2["name"] = exp
+        cfg_s2["version"] = a.versao
+        (tmp / "tmp_s2.json").write_text(json.dumps(cfg_s2))
+        run([PY, "-s", "GPT_SoVITS/s2_train.py", "--config", tmp / "tmp_s2.json"],
+            {"_CUDA_VISIBLE_DEVICES": gpu, **({"CUDA_VISIBLE_DEVICES": ""} if cpu else {})})
 
     etapa(f"7/7 treinando GPT ({a.epocas_gpt} epocas)")
     cfg_s1 = yaml.safe_load((RAIZ / "GPT_SoVITS/configs/s1longer-v2.yaml").read_text())
@@ -251,7 +254,7 @@ def main() -> None:
     run([PY, "-s", "GPT_SoVITS/s1_train.py", "--config_file", tmp / "tmp_s1.yaml"],
         {"_CUDA_VISIBLE_DEVICES": gpu, "hz": "25hz", **({"CUDA_VISIBLE_DEVICES": ""} if cpu else {})})
 
-    sov = sorted((RAIZ / f"SoVITS_weights_{a.versao}").glob(f"{exp}_e*.pth"), key=os.path.getmtime)
+    sov = sorted((RAIZ / f"SoVITS_weights_{a.versao}").glob(f"{exp}_e*.pth"), key=os.path.getmtime) if a.epocas_sovits > 0 else [Path(s2G)]
     gpt = sorted((RAIZ / f"GPT_weights_{a.versao}").glob(f"{exp}-e*.ckpt"), key=os.path.getmtime)
     print("\nPRONTO. Pesos da sua voz:")
     print("  SoVITS:", sov[-1] if sov else "(nao encontrado)")

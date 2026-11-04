@@ -131,7 +131,10 @@ class MotorGPTSoVITS(MotorTTS):
             "parallel_infer": True,
         }
         erro = None
-        for tentativa in range(3):
+        # duracao plausivel: ~13 caracteres por segundo em pt-BR; acima de 2,5x disso o modelo "travou" repetindo
+        esperado = max(1.5, len(texto) / 13.0)
+        melhor: tuple[float, bytes] | None = None
+        for tentativa in range(4):
             try:
                 r = requests.post(f"{self.url}/tts", json=corpo, timeout=self.timeout)
             except requests.RequestException as e:
@@ -139,8 +142,23 @@ class MotorGPTSoVITS(MotorTTS):
                 time.sleep(3 * (tentativa + 1))
                 continue
             if r.status_code == 200 and r.headers.get("content-type", "").startswith("audio"):
+                dur = self._duracao_bytes(r.content)
+                if dur <= 2.5 * esperado + 2.0 or tentativa == 3:
+                    if melhor is None or dur < melhor[0]:
+                        melhor = (dur, r.content)
+                    if dur <= 2.5 * esperado + 2.0:
+                        break
+                else:
+                    if melhor is None or dur < melhor[0]:
+                        melhor = (dur, r.content)
+                    console.print(f"[yellow]trecho saiu longo demais ({dur:.1f}s para ~{esperado:.1f}s); repetindo com mais penalidade[/]")
+                    corpo["repetition_penalty"] = round(corpo["repetition_penalty"] + 0.3, 2)
+                    corpo["temperature"] = max(0.3, round(corpo["temperature"] - 0.1, 2))
+                    corpo["top_k"] = max(3, int(corpo["top_k"] * 0.6))
+                    corpo["seed"] = int(time.time() * 1000) % 100000
+                    continue
                 destino.parent.mkdir(parents=True, exist_ok=True)
-                destino.write_bytes(r.content)
+                destino.write_bytes(melhor[1])
                 return destino
             detalhe = r.text[:400]
             if "text_lang" in detalhe or "language" in detalhe.lower():
@@ -154,7 +172,22 @@ class MotorGPTSoVITS(MotorTTS):
                                    "Se o servidor for remoto, envie o wav para la e informe -o ref_remoto=/caminho/no/servidor.wav")
             erro = RuntimeError(f"HTTP {r.status_code}: {detalhe}")
             time.sleep(2)
+        if melhor is not None:
+            destino.parent.mkdir(parents=True, exist_ok=True)
+            destino.write_bytes(melhor[1])
+            return destino
         raise ErroNarrador(f"GPT-SoVITS falhou ao sintetizar: {erro}")
+
+    @staticmethod
+    def _duracao_bytes(dados: bytes) -> float:
+        import io
+        import soundfile as sf
+
+        try:
+            with sf.SoundFile(io.BytesIO(dados)) as f:
+                return len(f) / f.samplerate
+        except Exception:
+            return 0.0
 
     def identidade(self) -> str:
         return (super().identidade() + f"|{self.url}|{self.text_lang}|{self.gpt_weights}|{self.sovits_weights}"
