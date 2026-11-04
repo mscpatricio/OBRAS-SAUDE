@@ -103,15 +103,47 @@ def criar_app(cfg_base: pipeline.Config, saida_dir: Path):
         rot = mp4.parent / "roteiro_usado.md"
         return str(mp4), str(mp4), str(srt), str(rot)
 
+    # voz pre-configurada (narrador.yaml): copia para a pasta de trabalho e ja deixa pronta
+    voz_pronta = False
+    if cfg_base.voz and Path(cfg_base.voz).exists():
+        shutil.copy(cfg_base.voz, voz_dir / "minha_voz.wav")
+        if cfg_base.transcricao and Path(str(cfg_base.transcricao)).exists():
+            shutil.copy(cfg_base.transcricao, voz_dir / "minha_voz.txt")
+        elif cfg_base.transcricao:
+            (voz_dir / "minha_voz.txt").write_text(str(cfg_base.transcricao), encoding="utf-8")
+        voz_pronta = True
+    opcoes_iniciais = "\n".join(f"{k}={v}" for k, v in (cfg_base.opcoes_motor or {}).items()) or "exaggeration=0.45\ncfg_weight=0.5"
+
     with gr.Blocks(title="Narrador") as app:
-        gr.Markdown("# Narrador\nSlides narrados com a sua voz clonada. 1) prepare a voz, 2) teste, 3) gere o video.")
-        with gr.Row():
-            motor = gr.Dropdown(MOTORES_WEB, value=cfg_base.motor if cfg_base.motor in MOTORES_WEB else "chatterbox-online",
-                                label="Motor de voz", info="; ".join(f"{k}: {v}" for k, v in MOTORES.items() if k in MOTORES_WEB[:4]))
-            hf_token = gr.Textbox(label="HF_TOKEN (motor online)", type="password", value=os.getenv("HF_TOKEN", ""))
-            opcoes = gr.Textbox(label="Opcoes do motor (chave=valor por linha)", lines=2,
-                                value="exaggeration=0.45\ncfg_weight=0.5")
-        with gr.Tab("1. Voz"):
+        if voz_pronta:
+            gr.Markdown(f"# Narrador\n**Sua voz ja esta configurada** (motor `{cfg_base.motor}`). "
+                        "Envie os slides na aba **Video** e clique em Gerar. As outras abas sao opcionais.")
+        else:
+            gr.Markdown("# Narrador\nSlides narrados com a sua voz clonada. 1) prepare a voz, 2) teste, 3) gere o video.")
+        with gr.Accordion("Configuracao avancada", open=not voz_pronta):
+            with gr.Row():
+                motor = gr.Dropdown(MOTORES_WEB, value=cfg_base.motor if cfg_base.motor in MOTORES_WEB else "chatterbox-online",
+                                    label="Motor de voz", info="; ".join(f"{k}: {v}" for k, v in MOTORES.items() if k in MOTORES_WEB[:4]))
+                hf_token = gr.Textbox(label="HF_TOKEN (motor online)", type="password", value=os.getenv("HF_TOKEN", ""))
+                opcoes = gr.Textbox(label="Opcoes do motor (chave=valor por linha)", lines=3, value=opcoes_iniciais)
+        with gr.Tab("Video" if voz_pronta else "3. Video"):
+            with gr.Row():
+                apres = gr.File(label="Apresentacao (.pptx, .pdf, .docx ou .xlsx)", file_types=[".pptx", ".pdf", ".docx", ".xlsx"], type="filepath")
+                rot = gr.File(label="Roteiro .md (opcional)", file_types=[".md", ".txt", ".json", ".yaml"], type="filepath")
+                mus = gr.File(label="Musica de fundo (opcional)", file_types=[".mp3", ".wav", ".m4a"], type="filepath")
+            with gr.Row():
+                leg = gr.Checkbox(label="Legendas embutidas", value=True)
+                mov = gr.Checkbox(label="Zoom suave", value=False)
+                tr = gr.Slider(0, 1.5, value=0.4, step=0.1, label="Transicao (s)")
+                res = gr.Radio(["1080p", "720p"], value="1080p", label="Resolucao")
+            btn_g = gr.Button("Gerar video narrado", variant="primary")
+            video = gr.Video(label="Resultado")
+            with gr.Row():
+                dl_mp4 = gr.File(label="MP4")
+                dl_srt = gr.File(label="Legendas .srt")
+                dl_rot = gr.File(label="Roteiro usado")
+            btn_g.click(gerar, [apres, rot, mus, motor, opcoes, leg, mov, tr, res, hf_token], [video, dl_mp4, dl_srt, dl_rot])
+        with gr.Tab("Voz (trocar)" if voz_pronta else "1. Voz"):
             grav = gr.Audio(label="Gravacao da sua voz (8-15 s, limpa)", type="filepath")
             with gr.Row():
                 inicio = gr.Number(label="Inicio (s)", value=0)
@@ -122,28 +154,11 @@ def criar_app(cfg_base: pipeline.Config, saida_dir: Path):
             voz_msg = gr.Markdown()
             btn_voz.click(lambda a, t, i, d: preparar_voz(a, t, i or None, d or None),
                           [grav, transc, inicio, duracao], [voz_out, voz_msg])
-        with gr.Tab("2. Teste"):
+        with gr.Tab("Testar uma frase" if voz_pronta else "2. Teste"):
             txt = gr.Textbox(label="Frase de teste", value="Ola! Esta e uma amostra da minha voz clonada narrando esta apresentacao.")
             btn_t = gr.Button("Gerar amostra", variant="primary")
             amostra = gr.Audio(label="Amostra")
             btn_t.click(testar, [motor, txt, opcoes, hf_token], amostra)
-        with gr.Tab("3. Video"):
-            with gr.Row():
-                apres = gr.File(label="Apresentacao (.pptx ou .pdf)", file_types=[".pptx", ".pdf"], type="filepath")
-                rot = gr.File(label="Roteiro .md (opcional)", file_types=[".md", ".txt", ".json", ".yaml"], type="filepath")
-                mus = gr.File(label="Musica de fundo (opcional)", file_types=[".mp3", ".wav", ".m4a"], type="filepath")
-            with gr.Row():
-                leg = gr.Checkbox(label="Legendas embutidas", value=True)
-                mov = gr.Checkbox(label="Zoom suave", value=False)
-                tr = gr.Slider(0, 1.5, value=0.4, step=0.1, label="Transicao (s)")
-                res = gr.Radio(["1080p", "720p"], value="1080p", label="Resolucao")
-            btn_g = gr.Button("Gerar video", variant="primary")
-            video = gr.Video(label="Resultado")
-            with gr.Row():
-                dl_mp4 = gr.File(label="MP4")
-                dl_srt = gr.File(label="Legendas .srt")
-                dl_rot = gr.File(label="Roteiro usado")
-            btn_g.click(gerar, [apres, rot, mus, motor, opcoes, leg, mov, tr, res, hf_token], [video, dl_mp4, dl_srt, dl_rot])
     return app
 
 
