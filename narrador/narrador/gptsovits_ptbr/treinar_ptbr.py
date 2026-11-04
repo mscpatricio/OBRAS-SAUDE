@@ -95,12 +95,27 @@ def main() -> None:
         if a.sem_fatiar:
             fatias.mkdir(exist_ok=True)
             for f in ([audio] if audio.is_file() else sorted(audio.iterdir())):
-                if f.suffix.lower() in {".wav", ".mp3", ".m4a", ".flac", ".ogg"}:
+                if f.suffix.lower() in {".wav", ".mp3", ".m4a", ".flac", ".ogg", ".oga", ".opus", ".aac", ".wma", ".mp4"}:
                     shutil.copy(f, fatias / f.name)
         else:
             if fatias.exists():
                 shutil.rmtree(fatias)
-            run([PY, "tools/slice_audio.py", audio, fatias, "-34", "4000", "300", "10", "500", "0.9", "0.25", "0", "1"])
+            # normaliza a entrada: qualquer formato (inclusive .opus do WhatsApp) -> wav 32 kHz mono
+            entrada_wav = exp_dir / "entrada_wav"
+            if entrada_wav.exists():
+                shutil.rmtree(entrada_wav)
+            entrada_wav.mkdir()
+            arquivos = [audio] if audio.is_file() else sorted(audio.iterdir())
+            n_conv = 0
+            for f in arquivos:
+                if f.suffix.lower() in {".wav", ".mp3", ".m4a", ".flac", ".ogg", ".oga", ".opus", ".aac", ".wma", ".mp4", ".amr", ".3gp"}:
+                    subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", str(f), "-ac", "1",
+                                    "-ar", "32000", "-af", "highpass=f=70,loudnorm=I=-20:TP=-2", str(entrada_wav / (f.stem + ".wav"))],
+                                   check=True)
+                    n_conv += 1
+            if n_conv == 0:
+                sys.exit("Nenhum arquivo de audio reconhecido na entrada.")
+            run([PY, "tools/slice_audio.py", entrada_wav, fatias, "-34", "4000", "300", "10", "500", "0.9", "0.25", "0", "1"])
         n = len(list(fatias.iterdir()))
         if n == 0:
             sys.exit("Nenhum trecho gerado. O audio tem fala? Tente --sem-fatiar com arquivos curtos.")

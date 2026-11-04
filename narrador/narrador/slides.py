@@ -58,31 +58,57 @@ def _ordenar_natural(caminhos: list[Path]) -> list[Path]:
     return sorted(caminhos, key=chave)
 
 
-def _pptx_para_pdf_powerpoint(pptx: Path, destino_dir: Path) -> Path | None:
-    """Windows: usa o PowerPoint instalado (COM) quando nao ha LibreOffice."""
-    if os.name != "nt":
+_COM_SCRIPTS = {
+    ".pptx": """
+$app = New-Object -ComObject PowerPoint.Application
+$doc = $app.Presentations.Open('{src}', $true, $false, $false)
+$doc.SaveAs('{dst}', 32)
+$doc.Close(); $app.Quit()
+""",
+    ".docx": """
+$app = New-Object -ComObject Word.Application
+$app.Visible = $false
+$doc = $app.Documents.Open('{src}', $false, $true)
+$doc.SaveAs2('{dst}', 17)
+$doc.Close(); $app.Quit()
+""",
+    ".xlsx": """
+$app = New-Object -ComObject Excel.Application
+$app.Visible = $false
+$doc = $app.Workbooks.Open('{src}', 0, $true)
+$doc.ExportAsFixedFormat(0, '{dst}')
+$doc.Close($false); $app.Quit()
+""",
+}
+_COM_SCRIPTS[".ppt"] = _COM_SCRIPTS[".pptx"]
+_COM_SCRIPTS[".doc"] = _COM_SCRIPTS[".docx"]
+_COM_SCRIPTS[".xls"] = _COM_SCRIPTS[".xlsx"]
+
+
+def _office_para_pdf_com(arquivo: Path, destino_dir: Path) -> Path | None:
+    """Windows: usa o PowerPoint/Word/Excel instalado (COM) quando nao ha LibreOffice."""
+    if os.name != "nt" or arquivo.suffix.lower() not in _COM_SCRIPTS:
         return None
     garantir_dir(destino_dir)
-    pdf = destino_dir / (pptx.stem + ".pdf")
-    script = f"""
-$pp = New-Object -ComObject PowerPoint.Application
-$pres = $pp.Presentations.Open('{str(pptx.resolve())}', $true, $false, $false)
-$pres.SaveAs('{str(pdf.resolve())}', 32)
-$pres.Close()
-$pp.Quit()
-"""
+    pdf = destino_dir / (arquivo.stem + ".pdf")
+    script = _COM_SCRIPTS[arquivo.suffix.lower()].format(src=str(arquivo.resolve()), dst=str(pdf.resolve()))
     try:
         proc = subprocess.run(["powershell", "-NoProfile", "-NonInteractive", "-Command", script],
                               stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=600)
     except (OSError, subprocess.TimeoutExpired):
         return None
     if proc.returncode == 0 and pdf.exists():
-        console.print("[dim]PPTX convertido com o PowerPoint (COM).[/]")
+        console.print(f"[dim]{arquivo.suffix} convertido em PDF com o Microsoft Office (COM).[/]")
         return pdf
     return None
 
 
-def pptx_para_pdf(pptx: Path, destino_dir: Path) -> Path:
+def office_para_pdf(arquivo: Path, destino_dir: Path) -> Path:
+    """PPTX/DOCX/XLSX -> PDF. Windows: Office via COM primeiro; senao LibreOffice."""
+    if os.name == "nt":
+        pdf = _office_para_pdf_com(arquivo, destino_dir)
+        if pdf:
+            return pdf
     soffice = shutil.which("soffice") or shutil.which("libreoffice")
     if not soffice and os.name == "nt":
         for base in (r"C:\Program Files\LibreOffice\program", r"C:\Program Files (x86)\LibreOffice\program"):
@@ -90,33 +116,26 @@ def pptx_para_pdf(pptx: Path, destino_dir: Path) -> Path:
                 soffice = str(Path(base) / "soffice.exe")
                 break
     if not soffice:
-        pdf = _pptx_para_pdf_powerpoint(pptx, destino_dir)
-        if pdf:
-            return pdf
         raise ErroNarrador(
-            "LibreOffice nao encontrado (nem PowerPoint, no Windows). Instale o LibreOffice "
-            "(Linux: sudo apt install libreoffice-impress; Windows: winget install TheDocumentFoundation.LibreOffice) "
-            "ou exporte a apresentacao para PDF e passe o .pdf junto com um roteiro."
+            "Nao encontrei o Microsoft Office (Windows) nem o LibreOffice para converter o arquivo em PDF. "
+            "Instale o LibreOffice (winget install TheDocumentFoundation.LibreOffice) ou exporte o arquivo "
+            "como PDF e passe o .pdf."
         )
     garantir_dir(destino_dir)
     perfil = tempfile.mkdtemp(prefix="lo_profile_")
     env = dict(os.environ, HOME=perfil)
-    cmd = [
-        soffice,
-        f"-env:UserInstallation=file://{perfil}",
-        "--headless",
-        "--convert-to",
-        "pdf",
-        "--outdir",
-        str(destino_dir),
-        str(pptx),
-    ]
+    cmd = [soffice, f"-env:UserInstallation=file://{perfil}", "--headless", "--convert-to", "pdf",
+           "--outdir", str(destino_dir), str(arquivo)]
     proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, env=env, timeout=600)
-    pdf = destino_dir / (pptx.stem + ".pdf")
+    pdf = destino_dir / (arquivo.stem + ".pdf")
     if proc.returncode != 0 or not pdf.exists():
-        raise ErroNarrador(f"Falha ao converter PPTX em PDF com LibreOffice:\n{proc.stderr[-2000:]}")
+        raise ErroNarrador(f"Falha ao converter {arquivo.name} em PDF com LibreOffice:\n{proc.stderr[-2000:]}")
     shutil.rmtree(perfil, ignore_errors=True)
     return pdf
+
+
+def pptx_para_pdf(pptx: Path, destino_dir: Path) -> Path:
+    return office_para_pdf(pptx, destino_dir)
 
 
 def pdf_para_imagens(pdf: Path, destino_dir: Path, largura: int = 1920) -> list[Path]:
@@ -168,6 +187,36 @@ def notas_pptx(pptx: Path) -> list[tuple[str, str, str]]:
                     textos.append(t)
         resultado.append((titulo, notas, "\n".join(textos)))
     return resultado
+
+
+def _texto_markitdown(origem: Path, pdf: Path, n_paginas: int) -> dict[int, str]:
+    """Texto falado por slide/pagina via MarkItDown. PPTX: por slide. Demais: por pagina do PDF."""
+    try:
+        from . import extrair
+    except Exception:
+        return {}
+    try:
+        if origem.suffix.lower() == ".pptx":
+            doc = extrair.extrair(origem)
+            return {i: s.texto for i, s in enumerate(doc.secoes, start=1) if s.texto.strip()}
+        # Word/Excel: o MarkItDown le melhor o arquivo original (tabelas viram frases)
+        doc = extrair.extrair(origem if origem.suffix.lower() != ".pdf" else pdf)
+        if len(doc.secoes) == n_paginas:
+            return {i: s.texto for i, s in enumerate(doc.secoes, start=1) if s.texto.strip()}
+        if n_paginas == 1:
+            return {1: "\n\n".join(s.texto for s in doc.secoes if s.texto.strip())}
+        # paginacao divergente (ex.: Excel exportado): le pagina a pagina do PDF
+        import pymupdf
+        saida = {}
+        with pymupdf.open(pdf) as d:
+            for i, pg in enumerate(d, start=1):
+                t = extrair.markdown_para_fala(pg.get_text())
+                if t.strip():
+                    saida[i] = t
+        return saida
+    except ErroNarrador as e:
+        console.print(f"[yellow]MarkItDown indisponivel ({e}); usando o leitor interno.[/]")
+        return {}
 
 
 # --------------------------------------------------------------------------- #
@@ -238,25 +287,32 @@ def carregar(origem: Path, trabalho: Path, roteiro: Path | None = None,
     apr = Apresentacao(nome=nome)
 
     metadados: list[tuple[str, str, str]] = []
+    textos_doc: dict[int, str] = {}
+    suf = origem.suffix.lower() if origem.is_file() else ""
+    OFFICE = {".pptx", ".ppt", ".docx", ".doc", ".xlsx", ".xls"}
     if origem.is_dir():
         imagens = imagens_da_pasta(origem)
-    elif origem.suffix.lower() == ".pptx":
-        console.print("[cyan]Convertendo PPTX em imagens com LibreOffice...[/]")
-        pdf = pptx_para_pdf(origem, trabalho)
+    elif suf in OFFICE or suf == ".pdf":
+        if suf in OFFICE:
+            console.print(f"[cyan]Convertendo {suf} em PDF...[/]")
+            pdf = office_para_pdf(origem, trabalho)
+        else:
+            pdf = origem
         imagens = pdf_para_imagens(pdf, dir_slides, largura)
-        metadados = notas_pptx(origem)
-    elif origem.suffix.lower() == ".pdf":
-        imagens = pdf_para_imagens(origem, dir_slides, largura)
-    elif origem.suffix.lower() in IMAGENS:
+        if suf == ".pptx":
+            metadados = notas_pptx(origem)
+        # texto limpo com MarkItDown (notas do orador no PPTX; paginas no PDF; abas/secoes no Word/Excel)
+        textos_doc = _texto_markitdown(origem, pdf, len(imagens))
+    elif suf in IMAGENS:
         imagens = [origem]
     else:
-        raise ErroNarrador(f"Formato nao suportado: {origem.suffix}. Use .pptx, .pdf ou pasta de imagens.")
+        raise ErroNarrador(f"Formato nao suportado: {origem.suffix}. Use .pptx, .pdf, .docx, .xlsx ou pasta de imagens.")
 
     textos_roteiro = ler_roteiro(roteiro) if roteiro else {}
 
     for i, img in enumerate(imagens, start=1):
         titulo, notas, visivel = metadados[i - 1] if i - 1 < len(metadados) else ("", "", "")
-        texto = textos_roteiro.get(i) or notas or (visivel if usar_texto_slide else "")
+        texto = textos_roteiro.get(i) or notas or textos_doc.get(i, "") or (visivel if usar_texto_slide else "")
         apr.slides.append(Slide(numero=i, imagem=img, texto=texto.strip(), titulo=titulo))
 
     if metadados and len(metadados) != len(imagens):
