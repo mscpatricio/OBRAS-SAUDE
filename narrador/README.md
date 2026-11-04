@@ -57,7 +57,8 @@ que fazem ele falar pt-BR:
 - **`aplicar_patch.py`**: registra o idioma `pt` no cleaner, no `TTS.py` (api_v2), no pré-processador de
   texto, no script de treino (`1-get-text.py`) e na WebUI (opção "Português (pt-BR)"). Idempotente, faz
   backup `.orig`.
-- **`treinar_ptbr.py`**: treina a sua voz em pt-BR sem a WebUI: fatia o áudio, transcreve com Whisper em
+- **`baixar_corpus_pt.py`**: baixa um recorte transcrito do corpus público MLS em português.
+- **`treinar_ptbr.py`**: treina a sua voz em pt-BR sem a WebUI (`--lista` para datasets transcritos, `--base-gpt` para partir do modelo-base): fatia o áudio, transcreve com Whisper em
   português, prepara o dataset e treina SoVITS e GPT. Saída pronta para o motor `gpt-sovits`.
 
 | onde | como |
@@ -68,7 +69,22 @@ que fazem ele falar pt-BR:
 
 Depois do treino: `narrador gerar apresentacao.pptx --motor gpt-sovits --voz voz/minha_voz.wav -o text_lang=pt -o gpt_weights=... -o sovits_weights=...`
 
-**Qualidade medida.** Sem treino (zero-shot com o modelo v2Pro) o português sai com sotaque forte: em teste
+**Receita em duas etapas (recomendada).** Poucos minutos da sua voz não bastam para o modelo aprender
+português; a solução é treinar primeiro um **modelo-base de pronúncia** com uma hora de leituras públicas em
+pt-BR (corpus MLS, CC BY 4.0) e só então a sua voz sobre ele:
+
+```bash
+python baixar_corpus_pt.py --minutos 60 --saida corpus_pt                     # 1 h de áudio transcrito
+python treinar_ptbr.py --lista corpus_pt/corpus_pt.list --nome ptbr_base --epocas-sovits 0 --epocas-gpt 6
+python treinar_ptbr.py --audio minhas_gravacoes/ --nome minha_voz --epocas-sovits 4 --epocas-gpt 6 \
+       --base-gpt GPT_weights_v2Pro/ptbr_base-e6.ckpt
+```
+
+Medido com 6,7 min de voz do usuário (frase de teste fora do treino, erro de palavras pelo Whisper):
+sem treino 78%; só a voz do usuário 58%; modelo-base + SoVITS do usuário **28%**. Na GPU do Colab as duas
+etapas levam cerca de 30 min; em CPU, algumas horas.
+
+**Qualidade medida (zero-shot).** Sem treino (zero-shot com o modelo v2Pro) o português sai com sotaque forte: em teste
 com reconhecimento de voz (Whisper) a taxa de erro de palavras ficou entre 56% e 72%. O treino com a sua voz
 em português é o que corrige pronúncia e ritmo; o pipeline de preparação e os comandos de treino foram
 validados neste repositório, mas o resultado final depende da GPU e da quantidade de áudio (5-20 min).

@@ -40,6 +40,11 @@ O instalador (`-ComGptSovits`) baixa o pacote integrado e aplica o **patch pt-BR
    com esses caminhos.
 3. `iniciar_gpt_sovits.bat` sobe o servidor (deixe a janela aberta) e `narrar.bat` / `abrir_web.bat` geram o vídeo.
 
+Para pronúncia melhor com pouco áudio seu, treine antes o modelo-base de português (uma hora de leituras
+públicas) e parta dele: na pasta `C:\narrador\GPT-SoVITS`, `runtime\python.exe baixar_corpus_pt.py --minutos 60 --saida corpus_pt`,
+`runtime\python.exe treinar_ptbr.py --lista corpus_pt\corpus_pt.list --nome ptbr_base --epocas-sovits 0 --epocas-gpt 6` e então
+`runtime\python.exe treinar_ptbr.py --audio C:\voz --nome minha_voz --base-gpt GPT_weights_v2Pro\ptbr_base-e6.ckpt`.
+
 Sem treinar (zero-shot) o português sai com sotaque forte e palavras trocadas: serve só para testar o fluxo.
 Para quem não tem GPU, o caminho é o notebook `exemplos/narrador_gptsovits_ptbr_treino.ipynb` no Google Colab
 ou os motores `chatterbox-online` / `chatterbox-ptbr`.
