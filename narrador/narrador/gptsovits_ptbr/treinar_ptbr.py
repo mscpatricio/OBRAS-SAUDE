@@ -53,7 +53,8 @@ def etapa(n: str) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--audio", required=True, help="arquivo ou pasta com a sua voz (pt-BR)")
+    ap.add_argument("--audio", help="arquivo ou pasta com a sua voz (pt-BR)")
+    ap.add_argument("--lista", help="dataset ja transcrito: arquivo .list com linhas 'caminho.wav|locutor|PT|texto' (pula fatiar e ASR)")
     ap.add_argument("--nome", required=True, help="nome do experimento/voz (sem espacos)")
     ap.add_argument("--versao", default="v2Pro", choices=["v2", "v2Pro", "v2ProPlus"])
     ap.add_argument("--gpu", default="0", help="indice da GPU (ex.: 0). Use 'cpu' so para testar a preparacao.")
@@ -86,7 +87,32 @@ def main() -> None:
         if not (RAIZ / p).exists():
             sys.exit(f"Modelo pre-treinado ausente: {p}. Baixe os modelos (install.sh / pacote integrado).")
 
-    if not a.so_treinar:
+    if not a.so_treinar and a.lista:
+        # dataset pronto (ex.: corpus publico com transcricoes): normaliza os textos e segue para a etapa 3
+        etapa("1-2/7 usando a lista pronta (sem fatiar/ASR)")
+        sys.path.insert(0, str(RAIZ / "GPT_SoVITS"))
+        from text import portuguese  # type: ignore
+
+        fatias = exp_dir / "fatias"
+        fatias.mkdir(exist_ok=True)
+        asr_dir = exp_dir / "asr"
+        asr_dir.mkdir(exist_ok=True)
+        lista = asr_dir / "fatias.list"
+        corrigidas = []
+        for l in Path(a.lista).read_text(encoding="utf-8").splitlines():
+            partes = l.split("|")
+            if len(partes) < 4 or not Path(partes[0]).exists():
+                continue
+            destino_wav = fatias / Path(partes[0]).name
+            if not destino_wav.exists():
+                shutil.copy(partes[0], destino_wav)
+            corrigidas.append("|".join([str(destino_wav), exp, "PT", portuguese.text_normalize("|".join(partes[3:]).strip())]))
+        lista.write_text("\n".join(corrigidas) + "\n", encoding="utf-8")
+        print(f"{len(corrigidas)} trechos na lista")
+        a.audio = a.audio or str(fatias)
+    if not a.so_treinar and not a.lista:
+        if not a.audio:
+            sys.exit("Informe --audio (gravacoes) ou --lista (dataset transcrito).")
         audio = Path(a.audio).expanduser().resolve()
         if not audio.exists():
             sys.exit(f"Audio nao encontrado: {audio}")
@@ -143,6 +169,9 @@ def main() -> None:
         lista.write_text("\n".join(corrigidas) + "\n", encoding="utf-8")
         print(f"{len(corrigidas)} trechos transcritos. Revise se quiser: {lista}")
 
+    if not a.so_treinar:
+        fatias = exp_dir / "fatias"
+        lista = exp_dir / "asr" / "fatias.list"
         base_env = {"inp_text": str(lista), "inp_wav_dir": str(fatias), "exp_name": exp, "opt_dir": str(exp_dir),
                     "i_part": "0", "all_parts": "1", "_CUDA_VISIBLE_DEVICES": gpu, "is_half": is_half,
                     "bert_pretrained_dir": f"{pm}/chinese-roberta-wwm-ext-large",
