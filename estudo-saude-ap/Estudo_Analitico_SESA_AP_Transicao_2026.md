@@ -1,15 +1,30 @@
----
-title: "Saúde no Estado do Amapá: levantamento da produção hospitalar e ambulatorial e estudo analítico para a transição de governo 2026/2027"
-subtitle: "Secretaria de Estado da Saúde do Amapá (SESA/AP) — série histórica 2022–2026, dados públicos tabulados (DATASUS, SIOPS, IBGE)"
-date: "Macapá, 6 de novembro de 2026"
-lang: pt-BR
----
+# 1. Introdução
 
-# Sumário executivo
+## 1.1 Objetivo e contexto
 
 Este estudo consolida, a partir exclusivamente de bases públicas (DATASUS/TABNET: SIH, SIA, CNES, SIM e SINASC; SIOPS/MS; IBGE/SIDRA; edital do concurso SESA 001/2026; legislação orçamentária divulgada pela Alap e pela imprensa), o retrato da produção assistencial, da rede física, da força de trabalho, do financiamento e dos indicadores vitais da saúde no Amapá na série histórica **2022–2026**: 2022 é o ano-base (último exercício da gestão anterior), 2023 a 2025 são os anos completos da gestão que se encerra e 2026 é o ano parcial (competências de janeiro a agosto no SIH/SIA, setembro no CNES e 4º bimestre no SIOPS). Há comparativos entre as unidades da federação para 2024–2025. Todas as tabelas de apoio estão na planilha `Tabelas_Saude_Amapa_Transicao_2026.xlsx` (129 abas), e os dados brutos e scripts de extração acompanham este documento para auditoria e reprocessamento.
 
-**Dez achados centrais**
+O estudo destina-se à equipe de transição de governo do Estado do Amapá (posse em 6 de janeiro de 2027) e à futura direção da Secretaria de Estado da Saúde (SESA/AP), como instrumento de diagnóstico inicial e de priorização de ações. Não substitui as informações internas da Secretaria (contratos, filas de regulação, execução financeira), que devem ser solicitadas conforme a lista apresentada na seção 10.
+
+## 1.2 Objeto
+
+Produção hospitalar (SIH/SUS), produção ambulatorial (SIA/SUS), morbidade hospitalar, rede física e equipamentos (CNES), força de trabalho (CNES), mortalidade (SIM), nascimentos (SINASC), financiamento (SIOPS, LOA) e demografia (IBGE) do Estado do Amapá, com recortes por ano, mês, estabelecimento, município, região de saúde, procedimento, complexidade, gestão e esfera do prestador.
+
+## 1.3 Período
+
+Série histórica de 2022 a 2026: 2022 como ano-base, 2023–2025 como anos completos e 2026 parcial (competências de janeiro a agosto no SIH/SIA; setembro no CNES; 4º bimestre no SIOPS). Comparativos entre UFs para 2024 e 2025.
+
+## 1.4 Fontes e extração
+
+Todas as tabelas foram extraídas em 6/11/2026 diretamente do TABNET/DATASUS (arquivos `.def` por UF e nacionais), do SIOPS (consulta de indicadores de estados, despesa empenhada, 6º bimestre) e da API SIDRA do IBGE (tabela 6579). O edital do concurso foi lido do PDF oficial. Os scripts e os CSV brutos estão em `dados/` e `scripts/`.
+
+## 1.5 Limitações
+
+(a) O SIA estadual não permite tabulação por estabelecimento; (b) os repasses do Fundo Nacional de Saúde (ConsultaFNS), os portais estaduais (transparência, SESA) e os painéis de atenção primária (e-Gestor/SISAB) e vacinação (SI-PNI) não estavam acessíveis a partir do ambiente de extração, e seus dados devem ser requisitados à SESA na transição; (c) valores em reais correntes, sem deflação; (d) dados de 2025 do SIM/SINASC são preliminares; (e) a série populacional do IBGE tem quebra entre o Censo 2022 e as estimativas pós-Censo (2024: 802.837; 2025: 806.517; 2026: 809.953), por isso taxas per capita são calculadas apenas para 2024–2026; (f) o CNES conta indivíduos, que podem ter mais de um vínculo.
+
+# 2. Síntese dos achados
+
+Os dez achados centrais do levantamento são apresentados a seguir e detalhados nas seções 3 a 8.
 
 1. **A produção SUS cresceu fortemente, mas o valor médio por internação é o menor do país.** As internações passaram de 41.312 AIH (2022) para 57.873 (2025), alta de 40,1%, e o valor hospitalar de R$ 35,9 milhões para R$ 54,5 milhões (+51,7%). Mesmo assim, o valor médio da AIH no Amapá (R$ 942) é o mais baixo das 27 UFs (Brasil: R$ 1.760), e o gasto hospitalar SUS por habitante (R$ 67,6) é o 26º. Apenas 2,3% das internações são de alta complexidade: o estado interna muito, mas interna procedimentos de baixa densidade tecnológica, e a alta complexidade continua sendo buscada fora do estado.
 2. **A produção ambulatorial quase dobrou em valor em três anos.** O SIA/SUS saltou de R$ 77,0 milhões (2022) para R$ 148,7 milhões (2025), +93,3%, e de 7,5 milhões para 16,5 milhões de procedimentos (+119,8%). Em 2026 (jan–ago) já soma R$ 115,5 milhões, ritmo anualizado de cerca de R$ 173 milhões. O gasto ambulatorial SUS por habitante (R$ 154 em 2024) está acima da média nacional (R$ 149) e é o 7º do país.
@@ -22,21 +37,13 @@ Este estudo consolida, a partir exclusivamente de bases públicas (DATASUS/TABNE
 9. **A transição epidemiológica pressiona a rede.** As doenças do aparelho circulatório já são a primeira causa de morte (944 óbitos em 2024), seguidas de causas externas (701, com 257 agressões e 106 "intervenções legais") e neoplasias (594). As internações por doenças respiratórias (5.576 em 2025, 343 óbitos; 4.041 AIH de pneumonia/influenza com 232 óbitos) levaram ao decreto de emergência em saúde pública de junho de 2026. A oncologia ganhou radioterapia própria em dezembro de 2025; a nefrologia faz cerca de 54 mil sessões de hemodiálise/ano (equivalente a ~350 pacientes em programa).
 10. **Dependência do prestador filantrópico e do HU.** O Hospital São Camilo e São Luís respondeu por 4.411 AIH e R$ 11,9 milhões em 2025 (21,8% do valor hospitalar, com o maior valor médio por AIH do estado e 74% das AIH de alta complexidade), e protagonizou em 2025 uma tentativa de rescisão unilateral dos contratos, suspensa judicialmente. O HU-UNIFAP (Ebserh) saiu de 23 AIH em 2022 para 2.371 em 2025, com 90 dos 212 leitos planejados abertos. A continuidade contratual com esses dois prestadores é item crítico dos primeiros 100 dias.
 
-# 1. Escopo, fontes e método
+# 3. Demografia e perfil epidemiológico
 
-**Objeto.** Produção hospitalar (SIH/SUS), produção ambulatorial (SIA/SUS), morbidade hospitalar, rede física e equipamentos (CNES), força de trabalho (CNES), mortalidade (SIM), nascimentos (SINASC), financiamento (SIOPS, LOA) e demografia (IBGE) do Estado do Amapá, com recortes por ano, mês, estabelecimento, município, região de saúde, procedimento, complexidade, gestão e esfera do prestador.
-
-**Período.** Série histórica de 2022 a 2026: 2022 como ano-base, 2023–2025 como anos completos e 2026 parcial (competências de janeiro a agosto no SIH/SIA; setembro no CNES; 4º bimestre no SIOPS). Comparativos entre UFs para 2024 e 2025.
-
-**Fontes e extração.** Todas as tabelas foram extraídas em 6/11/2026 diretamente do TABNET/DATASUS (arquivos `.def` por UF e nacionais), do SIOPS (consulta de indicadores de estados, despesa empenhada, 6º bimestre) e da API SIDRA do IBGE (tabela 6579). O edital do concurso foi lido do PDF oficial. Os scripts e os CSV brutos estão em `dados/` e `scripts/`.
-
-**Limitações.** (a) O SIA estadual não permite tabulação por estabelecimento; (b) os repasses do Fundo Nacional de Saúde (ConsultaFNS), os portais estaduais (transparência, SESA) e os painéis de atenção primária (e-Gestor/SISAB) e vacinação (SI-PNI) não estavam acessíveis a partir do ambiente de extração, e seus dados devem ser requisitados à SESA na transição; (c) valores em reais correntes, sem deflação; (d) dados de 2025 do SIM/SINASC são preliminares; (e) a série populacional do IBGE tem quebra entre o Censo 2022 e as estimativas pós-Censo (2024: 802.837; 2025: 806.517; 2026: 809.953), por isso taxas per capita são calculadas apenas para 2024–2026; (f) o CNES conta indivíduos, que podem ter mais de um vínculo.
-
-# 2. Demografia e perfil epidemiológico
-
-## 2.1 População
+## 3.1 População
 
 O Amapá tem 806.517 habitantes (IBGE 2025), dos quais 489.676 (60,7%) em Macapá e 118.803 (14,7%) em Santana. Os dois municípios concentram três quartos da população, o que explica, mas não justifica integralmente, a concentração de leitos, médicos e produção na capital. Os 14 demais municípios têm entre 4 mil (Pracuúba, Cutias) e 38 mil (Laranjal do Jari) habitantes, com populações ribeirinhas, indígenas e de fronteira (Oiapoque) que elevam o custo logístico do cuidado.
+
+Tabela: População residente estimada por município, Amapá, 2025
 
 | Município | Pop. 2025 | % |
 |---|---:|---:|
@@ -60,15 +67,25 @@ O Amapá tem 806.517 habitantes (IBGE 2025), dos quais 489.676 (60,7%) em Macap�
 
 Fonte: IBGE/SIDRA, tabela 6579 (aba `POP_Municipios`).
 
-## 2.2 Nascimentos e saúde materno-infantil
+## 3.2 Nascimentos e saúde materno-infantil
 
 Os nascidos vivos de mães residentes caíram de 13.615 (2022) para 12.612 (2025), queda de 7,4%, consistente com a transição demográfica. A qualidade do pré-natal avançou: 60,3% dos nascidos vivos de 2025 tiveram 7 ou mais consultas (49,6% em 2022), e a proporção de mães de 10 a 19 anos caiu de 18,6% para 17,7%. Em contrapartida, a cesariana passou de 38,8% para 46,9% dos partos; pela classificação de Robson (2024), o grupo 5 (cesárea anterior) já responde por 2.217 nascimentos, 1.737 deles por nova cesárea, e o grupo 2 (nulíparas com indução ou cesárea antes do trabalho de parto) tem 77% de cesáreas.
 
+Figura: Nascidos vivos por tipo de parto, Amapá, 2022–2025
+
 ![](graficos/g09_nv_parto.png)
+
+Fonte: elaboração própria a partir de SINASC/DATASUS (BRASIL, 2026).
 
 A mortalidade infantil é o indicador mais sensível e mais preocupante: 17,8 óbitos por mil nascidos vivos em 2024 (220 óbitos), 3ª maior taxa entre as UFs (Brasil: 12,6), depois do pico de 20,9 em 2023 (271 óbitos), e 17,3 em 2025 (218 óbitos, dado preliminar). Do total de 2024, 144 óbitos (65%) foram classificados como evitáveis, dos quais 63 reduzíveis por adequada atenção à mulher na gestação, 18 por atenção ao parto e 26 por atenção ao recém-nascido. O componente neonatal precoce (0 a 6 dias) concentra cerca de metade dos óbitos infantis.
 
+Figura: Taxa de mortalidade infantil, Amapá e Brasil, 2022–2025
+
 ![](graficos/g08_tmi.png)
+
+Fonte: elaboração própria a partir de SIM e SINASC/DATASUS (BRASIL, 2026).
+
+Tabela: Indicadores materno-infantis selecionados, Amapá, 2022–2025
 
 | Ano | Nascidos vivos | Óbitos < 1 ano | TMI (por mil) | % cesáreas | % 7+ consultas pré-natal | % mães 10–19 anos |
 |---|---:|---:|---:|---:|---:|---:|
@@ -79,13 +96,15 @@ A mortalidade infantil é o indicador mais sensível e mais preocupante: 17,8 ó
 
 \* preliminar. Fonte: SINASC/SIM (aba `VITAL_00_Indicadores`).
 
-## 2.3 Mortalidade geral e causas
+## 3.3 Mortalidade geral e causas
 
 Foram 3.846 óbitos de residentes em 2022, 3.926 em 2023, 3.903 em 2024 e 3.988 em 2025 (preliminar). O perfil de causas (2024) é o de um estado em transição epidemiológica acelerada: doenças do aparelho circulatório 944 (infarto 276, AVC 281), causas externas 701 (agressões 257, contra 385 em 2023; intervenções legais 106; acidentes de transporte 99), neoplasias 594, doenças respiratórias 468 (pneumonia 266), infecciosas 226 e diabetes 177. As causas mal definidas representam 5,4% dos óbitos (Brasil: 5,1%), aceitável, mas com margem de melhoria na investigação. Em 2025 os óbitos por doenças respiratórias (521) e circulatórias (953) seguem em alta.
 
-# 3. Produção hospitalar (SIH/SUS)
+# 4. Produção hospitalar (SIH/SUS)
 
-## 3.1 Série histórica
+## 4.1 Série histórica
+
+Tabela: Internações SUS no Amapá por ano de processamento, 2022–2026
 
 | Ano | AIH aprovadas | Valor total (R$) | Valor médio AIH (R$) | Média perm. (dias) | Óbitos | Tx. mortalidade (%) |
 |---|---:|---:|---:|---:|---:|---:|
@@ -98,15 +117,25 @@ Foram 3.846 óbitos de residentes em 2022, 3.926 em 2023, 3.903 em 2024 e 3.988 
 
 Fonte: SIH/SUS, AIH por ano de processamento, local de internação (aba `SIH_01_Ano`).
 
+Figura: Internações SUS (AIH aprovadas), Amapá, 2022–2026
+
 ![](graficos/g01_sih_aih_ano.png)
+
+Fonte: elaboração própria a partir de SIH/SUS/DATASUS (BRASIL, 2026).
 
 Três movimentos marcam a série: (i) o degrau de 2023, quando as internações sobem 38% em um ano (de 41,3 mil para 56,9 mil), explicado quase integralmente pelo HCAL (de 3.737 para 15.446 AIH) e por procedimentos eletivos (de 8.743 para 20.205), e não por urgências; (ii) a estabilidade de 2024–2025 em torno de 57 mil internações, com o valor crescendo pela mudança de perfil (mais cirurgias, mais FAEC); (iii) a aceleração do valor em 2026: nos oito primeiros meses o faturamento (R$ 54,4 milhões) já iguala o ano inteiro de 2025, com valor médio da AIH subindo para R$ 1.234, puxado pelo HCAL (R$ 17,5 milhões em oito meses, contra R$ 9,5 milhões em todo o 2025) e por FAEC (R$ 21,7 milhões em jan–ago/2026 contra R$ 13,0 milhões em 2025 e R$ 0,9 milhão em 2022), o que indica a entrada dos programas federais de cirurgias eletivas.
 
 Os eletivos passaram de 21,2% das AIH em 2022 (8.743) para 32,8% em 2025 (18.982). As urgências somam 38.889 AIH (67,2%).
 
+Figura: Valor aprovado da produção hospitalar e ambulatorial, Amapá, 2022–2026
+
 ![](graficos/g02_valor_sih_sia.png)
 
-## 3.2 Produção por estabelecimento
+Fonte: elaboração própria a partir de SIH/SUS e SIA/SUS/DATASUS (BRASIL, 2026).
+
+## 4.2 Produção por estabelecimento
+
+Tabela: Produção hospitalar por estabelecimento, Amapá, 2022, 2025 e 2026
 
 | Estabelecimento | AIH 2022 | AIH 2025 | Var. 22–25 | Valor 2025 (R$) | Média perm. 2025 | Óbitos 2025 | Tx. mort. 2025 (%) | AIH jan–ago/2026 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -130,11 +159,15 @@ Os eletivos passaram de 21,2% das AIH em 2022 (8.743) para 32,8% em 2025 (18.982
 
 Fonte: SIH/SUS (abas `SIH_estab_2025`, `SIH_estab_2026`, `SIH_estab_ano_aih`, `SIH_estab_ano_valor`).
 
+Figura: Internações (AIH) por estabelecimento, Amapá, 2025
+
 ![](graficos/g03_sih_estab_2025.png)
+
+Fonte: elaboração própria a partir de SIH/SUS/DATASUS (BRASIL, 2026).
 
 Leituras relevantes para a transição:
 
-- **HCAL** virou o maior produtor de AIH do estado (10.469 em 2025; 9.559 em jan–ago/2026) com 100% de internações eletivas e permanência de 2,8 dias; 7.624 das suas AIH de 2025 são do capítulo de doenças circulatórias (ver seção 8.1). É também o hospital com maior crescimento de faturamento em 2026 (anualizado em R$ 26 milhões, contra R$ 4,4 milhões em 2022).
+- **HCAL** virou o maior produtor de AIH do estado (10.469 em 2025; 9.559 em jan–ago/2026) com 100% de internações eletivas e permanência de 2,8 dias; 7.624 das suas AIH de 2025 são do capítulo de doenças circulatórias (ver seção 9.1). É também o hospital com maior crescimento de faturamento em 2026 (anualizado em R$ 26 milhões, contra R$ 4,4 milhões em 2022).
 - **HE** mais que dobrou as internações desde 2022 e tem a maior permanência média entre os grandes (7,2 dias) e 276 óbitos/ano; é o principal nó da rede de urgência, com o novo HE em obras (anexo de 30 leitos entregue em junho/2026).
 - **Mãe Luzia** perdeu 28% das internações desde 2022 (consolidação da Maternidade Zona Norte, que quase quadruplicou, e queda dos nascimentos), mas ainda é o maior faturamento público (R$ 10,5 milhões), com 1.327 internações de afecções perinatais.
 - **São Camilo** concentra alta complexidade (992 das 1.341 AIH de alta complexidade do estado, 74%) e tem valor médio de R$ 2.698 por AIH, quase o triplo da média estadual: é o prestador que mais pesa por internação. A relação contratual sofreu ruptura em 2025 (notificação de rescisão unilateral, suspensa por decisão judicial), as AIH caíram 11% desde 2022 e em jan–ago/2026 somam apenas 2.532 (ritmo anual de 3,8 mil).
@@ -142,7 +175,9 @@ Leituras relevantes para a transição:
 - **Unidade Estadual de Internação** (criada em 2025) e **Hospital Marco Zero** apresentam mortalidade de 14,5% e 28,4%, compatíveis com perfis de cuidados prolongados/paliativos ou de retaguarda clínica de pacientes graves. Vale revisar o perfil assistencial, a habilitação e o registro.
 - **UPAs e unidades mistas** reduziram as internações registradas de 2.657 (2022) para 1.117 (2025): a UPA Zona Sul deixou de registrar AIH (1.463 em 2022, 1.682 em 2023, 35 em 2025, zero em 2026) e as unidades mistas do interior internam pouco (61 a 348 AIH/ano cada), o que mostra uma rede do interior de baixa resolutividade e que drena pacientes para Macapá: 71,2% das internações e 87,8% do valor ambulatorial do estado ocorrem na capital.
 
-## 3.3 Perfil de morbidade
+## 4.3 Perfil de morbidade
+
+Tabela: Internações por capítulo da CID-10, Amapá, 2022 e 2025
 
 | Capítulo CID-10 | Intern. 2022 | Intern. 2025 | Valor 2025 (R$) | Média perm. 2025 | Óbitos 2025 | Tx. mort. 2025 (%) |
 |---|---:|---:|---:|---:|---:|---:|
@@ -161,11 +196,17 @@ Leituras relevantes para a transição:
 
 Fonte: SIH/SUS, morbidade hospitalar (abas `MORB_cap_ano`, `MORB_cap_2025`).
 
+Figura: Internações por capítulo da CID-10, Amapá, 2025
+
 ![](graficos/g12_cid_2025.png)
+
+Fonte: elaboração própria a partir de SIH/SUS/DATASUS (BRASIL, 2026).
 
 A obstetrícia responde por 27% das internações (parto normal 6.835; cesariana 5.374), o que explica a baixa mortalidade hospitalar agregada do Amapá (2,49%, a menor do país; Brasil 4,34%). Descontado o capítulo XV, a taxa sobe para 3,4%. As doenças respiratórias têm a maior carga de óbitos (343; 232 só em pneumonia/influenza) e permanência longa (7,9 dias); em jan–ago/2026 já são 4.319 internações e 296 óbitos, ritmo acima de 2025, coerente com o decreto estadual de emergência por síndromes respiratórias de junho de 2026. As internações de menores de 1 ano (3.725) e de 1 a 4 anos (2.429) somam 10,6% do total, com forte predomínio respiratório (1.040 e 1.282 AIH, respectivamente): a pediatria é o gargalo sazonal da rede (HCA com 192 leitos após ampliação em 2026). As internações por causas externas quase dobraram (2.442 para 4.503) e as do aparelho digestivo cresceram 44%, refletindo a expansão de cirurgia geral (colecistectomia, hernioplastia, apendicectomia).
 
-## 3.4 Fluxo de pacientes: residência versus local de internação
+## 4.4 Fluxo de pacientes: residência versus local de internação
+
+Tabela: Internações de residentes do Amapá e internações realizadas no Amapá, 2022–2025
 
 | Ano | AIH de residentes do AP (qualquer UF) | AIH realizadas no AP | Saldo (AIH) | Valor residentes (R$) | Valor realizado no AP (R$) | Saldo (R$) |
 |---|---:|---:|---:|---:|---:|---:|
@@ -176,9 +217,11 @@ A obstetrícia responde por 27% das internações (parto normal 6.835; cesariana
 
 Fonte: SIH/SUS por UF de residência e por UF de internação (aba `SIH_Residencia_x_Local`).
 
-O Amapá recebe mais internações do que seus residentes consomem (saldo de +2.318 AIH em 2025, essencialmente pacientes paraenses do Marajó e do baixo Amazonas atendidos em Macapá e Santana), mas o saldo financeiro é negativo em R$ 1,6 milhão: as internações de amapaenses fora do estado são de alta complexidade e custo (cardiologia intervencionista, neurocirurgia, oncologia cirúrgica, transplantes). Esse fluxo, somado ao TFD (R$ 10,0 milhões/ano em passagens aéreas e ajuda de custo, seção 4.3), é a medida objetiva do vazio assistencial de alta complexidade. A gestão estadual plena concentra 100% das AIH desde 2024 (o Pacto de Gestão municipal de Porto Grande deixou de registrar AIH).
+O Amapá recebe mais internações do que seus residentes consomem (saldo de +2.318 AIH em 2025, essencialmente pacientes paraenses do Marajó e do baixo Amazonas atendidos em Macapá e Santana), mas o saldo financeiro é negativo em R$ 1,6 milhão: as internações de amapaenses fora do estado são de alta complexidade e custo (cardiologia intervencionista, neurocirurgia, oncologia cirúrgica, transplantes). Esse fluxo, somado ao TFD (R$ 10,0 milhões/ano em passagens aéreas e ajuda de custo, seção 5.3), é a medida objetiva do vazio assistencial de alta complexidade. A gestão estadual plena concentra 100% das AIH desde 2024 (o Pacto de Gestão municipal de Porto Grande deixou de registrar AIH).
 
-## 3.5 Comparativo entre UFs
+## 4.5 Comparativo entre UFs
+
+Tabela: Indicadores de produção hospitalar e ambulatorial: Amapá, Brasil e posição entre as UFs, 2024–2025
 
 | Indicador (2025) | Amapá | Brasil | Posição do AP (27 UFs) |
 |---|---:|---:|---:|
@@ -192,13 +235,19 @@ O Amapá recebe mais internações do que seus residentes consomem (saldo de +2.
 
 Fonte: SIH/SIA por UF e IBGE (aba `BENCH_UF`).
 
+Figura: Internações SUS por 100 habitantes, por UF de internação, 2025
+
 ![](graficos/g13_bench_aih.png)
+
+Fonte: elaboração própria a partir de SIH/SUS/DATASUS e IBGE (BRASIL, 2026).
 
 A combinação "muitas internações, valor médio mínimo, pouca alta complexidade" é a assinatura de uma rede que resolve o básico e o obstétrico, mas depende de Belém, Brasília e São Paulo para o restante. Entre os estados da Região Norte, o Amapá tem valor médio de AIH abaixo de Acre (R$ 1.038), Rondônia (R$ 1.152), Amazonas (R$ 1.215), Pará (R$ 1.279), Tocantins (R$ 1.291) e Roraima (R$ 1.311).
 
-# 4. Produção ambulatorial (SIA/SUS)
+# 5. Produção ambulatorial (SIA/SUS)
 
-## 4.1 Série histórica
+## 5.1 Série histórica
+
+Tabela: Produção ambulatorial SUS no Amapá por ano de processamento, 2022–2026
 
 | Ano | Procedimentos aprovados | Valor aprovado (R$) | Valor apresentado (R$) |
 |---|---:|---:|---:|
@@ -213,7 +262,9 @@ Fonte: SIA/SUS por ano de processamento, local de atendimento (aba `SIA_01_Ano`)
 
 O valor ambulatorial quase dobrou entre 2022 e 2025 e a quantidade mais que dobrou, com crescimento em todos os anos da série. A gestão estadual plena responde por R$ 120,9 milhões (81%) em 2025, contra R$ 68,5 milhões em 2022, e o Pacto de Gestão municipal (Macapá, Santana e demais) por R$ 27,9 milhões (R$ 8,4 milhões em 2022). Por fonte: MAC R$ 102,5 milhões, FAEC R$ 43,5 milhões (R$ 18,2 milhões em 2022) e assistência farmacêutica (componente especializado) R$ 2,7 milhões. Por instrumento de registro: BPA-C R$ 53,8 milhões, BPA-I R$ 64,2 milhões e APAC R$ 30,7 milhões.
 
-## 4.2 Composição por subgrupo e procedimento
+## 5.2 Composição por subgrupo e procedimento
+
+Tabela: Valor aprovado da produção ambulatorial por subgrupo de procedimento, Amapá, 2022 e 2025
 
 | Subgrupo | Valor 2022 (R$) | Valor 2025 (R$) | Var. 22–25 | % do valor 2025 | Quantidade 2025 |
 |---|---:|---:|---:|---:|---:|
@@ -241,25 +292,27 @@ Os dez procedimentos de maior valor em 2025 mostram onde está o dinheiro ambula
 
 Por CBO do executante, "médico em cirurgia vascular" lidera com R$ 29,9 milhões (20,1% de todo o SIA), seguido por médico clínico (R$ 27,3 milhões), radiologista (R$ 16,9 milhões), biomédico (R$ 16,5 milhões), nefrologista (R$ 13,6 milhões) e oftalmologista (R$ 12,1 milhões).
 
-## 4.3 Linhas de cuidado de alto custo
+## 5.3 Linhas de cuidado de alto custo
 
 - **Nefrologia.** R$ 13,4 milhões e cerca de 54 mil sessões de hemodiálise em 2025 (51.777 convencionais e 2.247 em sorologia positiva), o equivalente a aproximadamente 350 pacientes em programa regular. A linha cresceu 29% desde 2022 (R$ 10,4 milhões), com 115 a 132 equipamentos de diálise cadastrados no CNES a partir de 2025.
 - **Oncologia.** R$ 5,0 milhões em quimioterapia (SIA) em 2025, contra R$ 1,8 milhão em 2022 (+173%), mais R$ 0,3 milhão em internações clínicas oncológicas (493 AIH com 24% de mortalidade) e cirurgia oncológica (77 AIH). O Centro de Radioterapia do Amapá iniciou em dezembro de 2025 e, até agosto de 2026, registrava 305 primeiras consultas e 235 simulações, com braquiterapia a partir de junho de 2026; sua produção ainda aparece pouco no SIA (subgrupo "atenção em oncologia", R$ 309 mil em jan–ago/2026) e deve ser acompanhada.
 - **Oftalmologia.** R$ 11,1 milhões em 2022 (mutirões de catarata), queda para R$ 1,8 milhão em 2024, retomada para R$ 4,9 milhões em 2025 mais R$ 1,2 milhão nas novas "ofertas de cuidado integrado" (OCI) oftalmológicas, e R$ 6,6 milhões mais R$ 4,0 milhões de OCI em jan–ago/2026, indicando nova rodada de mutirão em 2026 (programa "Zera Fila").
 - **Tratamento Fora de Domicílio.** R$ 10,0 milhões em 2025 em deslocamento aéreo de paciente (R$ 4,5 milhões) e acompanhante (R$ 4,0 milhões) e ajudas de custo (R$ 1,4 milhão), contra R$ 9,3 milhões em 2022. O TFD é, junto com o saldo negativo de internações fora do estado, o custo visível da ausência de alta complexidade.
-- **Imagem.** Tomografia R$ 10,0 milhões (86 mil exames), cinco vezes o valor de 2022, e ressonância R$ 3,2 milhões (11,8 mil exames); o estado possui 27 tomógrafos e 15 ressonâncias em uso, mas apenas 4 tomógrafos e 1 ressonância na esfera estadual (seção 5.3), o que explica a dependência de prestadores privados contratados.
+- **Imagem.** Tomografia R$ 10,0 milhões (86 mil exames), cinco vezes o valor de 2022, e ressonância R$ 3,2 milhões (11,8 mil exames); o estado possui 27 tomógrafos e 15 ressonâncias em uso, mas apenas 4 tomógrafos e 1 ressonância na esfera estadual (seção 6.3), o que explica a dependência de prestadores privados contratados.
 
-## 4.4 Distribuição territorial
+## 5.4 Distribuição territorial
 
 Macapá concentra 87,8% do valor ambulatorial (R$ 130,5 milhões em 2025, contra R$ 66,4 milhões em 2022) e Santana 5,3% (R$ 7,8 milhões). A Região de Saúde Norte (Oiapoque, Calçoene, Amapá, Pracuúba, Tartarugalzinho) produz apenas R$ 2,9 milhões (1,9%) e a Sudoeste R$ 11,7 milhões (7,9%). Porto Grande saltou de R$ 250 mil (2024) para R$ 2,7 milhões (2025), e o Hospital Maria Lúcia Guimarães da Silva passou de 85 para 2.876 AIH no mesmo período, indicando a implantação de um polo regional; vale verificar se o salto é produção real ou mudança de registro.
 
-# 5. Rede física e equipamentos (CNES)
+# 6. Rede física e equipamentos (CNES)
 
-## 5.1 Estabelecimentos
+## 6.1 Estabelecimentos
 
 Em setembro de 2026 o CNES registra 1.196 estabelecimentos no Amapá (867 em dezembro de 2022): 20 hospitais gerais (15 da administração estadual, 1 empresa pública federal — HU-UNIFAP/Ebserh —, 3 empresariais e 1 filantrópico), 3 hospitais especializados (todos estaduais), 5 pronto-atendimentos (3 estaduais), 153 centros de saúde/UBS e 65 postos de saúde (municipais), 34 policlínicas, 156 clínicas de especialidade, 84 SADT isolados, 12 CAPS (2 estaduais), 1 hemocentro, 2 centrais de regulação do acesso estaduais, 20 unidades de saúde indígena (federais) e 432 consultórios isolados privados. Sob gestão estadual estão 68 estabelecimentos; os demais 1.128 estão sob gestão municipal. O crescimento do cadastro entre 2022 e 2026 vem sobretudo de consultórios isolados (306 para 432), clínicas de especialidade (93 para 156), policlínicas (11 para 34) e farmácias (21 para 81).
 
-## 5.2 Leitos
+## 6.2 Leitos
+
+Tabela: Leitos de internação SUS por especialidade, Amapá, dez./2022 a set./2026
 
 | Especialidade | Leitos SUS dez/2022 | dez/2023 | dez/2024 | dez/2025 | set/2026 | Existentes set/2026 |
 |---|---:|---:|---:|---:|---:|---:|
@@ -272,9 +325,15 @@ Em setembro de 2026 o CNES registra 1.196 estabelecimentos no Amapá (867 em dez
 
 Fonte: CNES (abas `CNES_leitos_esp_ano`, `CNES_leitos_esp_ano_sus`).
 
+Figura: Leitos de internação SUS por especialidade, Amapá, 2022–2026
+
 ![](graficos/g04_leitos_sus.png)
 
+Fonte: elaboração própria a partir de CNES/DATASUS (BRASIL, 2026).
+
 Os leitos SUS cresceram 14,8% entre dezembro de 2022 e setembro de 2026 (1,81 leitos SUS por mil habitantes), com expansão concentrada em leitos cirúrgicos (+37%) e pediátricos (+22%), oscilação dos clínicos (pico de 688 em 2024, queda em 2025, recuperação em 2026) e estabilidade dos obstétricos. A capital tem 1.013 leitos SUS (69%), Santana 194 (13%), Laranjal do Jari 74, Oiapoque 51 e os demais municípios entre 10 e 21 cada. Pela esfera jurídica, 1.163 leitos SUS estão em unidades da administração estadual, 90 no HU, 161 em prestadores empresariais e 55 no filantrópico (que tem 207 leitos existentes, apenas 55 SUS).
+
+Tabela: Leitos complementares existentes e SUS, Amapá, dez./2022 e set./2026
 
 | Leitos complementares | Existentes dez/2022 | Existentes set/2026 | SUS set/2026 |
 |---|---:|---:|---:|
@@ -288,11 +347,17 @@ Os leitos SUS cresceram 14,8% entre dezembro de 2022 e setembro de 2026 (1,81 le
 
 Fonte: CNES (abas `CNES_uti_tipo_ano`, `CNES_uti_tipo_ano_sus`). Em dez/2022 ainda havia 6 leitos de unidade intermediária neonatal, extintos depois.
 
+Figura: Leitos de UTI existentes, Amapá, 2022–2026
+
 ![](graficos/g05_uti.png)
+
+Fonte: elaboração própria a partir de CNES/DATASUS (BRASIL, 2026).
 
 As UTIs adulto dobraram (68 leitos em dez/2022 para 139 em set/2026, com salto em 2024–2025), e as pediátricas passaram de 20 para 31. Porém o CNES mostra apenas 19 leitos de UTI adulto cadastrados como SUS (53 existentes em hospitais estaduais, 10 no HU, 50 em empresariais e 20 no filantrópico). Essa divergência, de 120 leitos, tende a ser um problema de cadastro (campo "leitos SUS" não preenchido) ou de habilitação: em ambos os casos compromete o custeio federal de UTI (diárias habilitadas), a regulação e a transparência. Em leitos complementares SUS por 100 mil habitantes o Amapá (20,5) iguala a média nacional (20,7), mas a composição interna está distorcida pela subnotificação da UTI adulto; a recomendação é um censo de leitos e conciliação CNES x habilitações nos primeiros 60 dias.
 
-## 5.3 Equipamentos
+## 6.3 Equipamentos
+
+Tabela: Equipamentos selecionados cadastrados no CNES, Amapá, set./2026
 
 | Equipamento (set/2026) | Existentes | Em uso | Estabelecimentos com equipamento SUS | Em uso na esfera estadual |
 |---|---:|---:|---:|---:|
@@ -307,7 +372,9 @@ Fonte: CNES (abas `CNES_equip_sel_latest`, `CNES_equip_sel_esfjur_latest`).
 
 O parque de imagem de alta densidade está majoritariamente no setor privado (18 dos 27 tomógrafos, 11 das 15 ressonâncias, 15 dos 26 mamógrafos), o que torna o Estado comprador de exames e sustenta os R$ 13,2 milhões anuais de tomografia e ressonância no SIA. O total de equipamentos em uso cadastrados subiu de 6.226 (dez/2022) para 10.382 (set/2026), com destaque para equipamentos de manutenção da vida (1.323 para 2.650) e o novo grupo de diálise (132).
 
-# 6. Força de trabalho
+# 7. Força de trabalho
+
+Tabela: Profissionais de saúde cadastrados no CNES por ocupação, Amapá, dez./2022 a set./2026
 
 | Profissionais (indivíduos, CNES) | dez/2022 | dez/2023 | dez/2024 | dez/2025 | set/2026 | Var. 22–26 |
 |---|---:|---:|---:|---:|---:|---:|
@@ -322,15 +389,21 @@ O parque de imagem de alta densidade está majoritariamente no setor privado (18
 
 Fonte: CNES (abas `CNES_prof_medicos_ano`, `CNES_prof_sup_ano`, `CNES_prof_geral_ano`, `CNES_prof_tec_latest`).
 
+Figura: Médicos e enfermeiros cadastrados no CNES, Amapá, 2022–2026
+
 ![](graficos/g10_rh.png)
+
+Fonte: elaboração própria a partir de CNES/DATASUS (BRASIL, 2026).
 
 O número de médicos cresceu 54% desde 2022, mas a densidade (2,02 por mil habitantes) segue abaixo da média nacional (2,91) e é a 22ª entre as UFs; 1.332 médicos (81%) atuam em Macapá, 82 em Santana, 60 em Laranjal do Jari, 39 em Porto Grande, 37 em Oiapoque e entre 3 e 15 nos demais municípios. Entre as especialidades, destacam-se 560 clínicos, 205 médicos de família, 114 pediatras, 71 obstetras, 53 radiologistas, 51 cirurgiões gerais, 45 cardiologistas, 44 anestesistas, 22 cirurgiões vasculares e 13 psiquiatras. Dos 8.019 profissionais de nível superior, 3.560 (44%) estão vinculados à administração estadual, 2.812 à municipal, 279 ao HU e cerca de 1.300 ao setor privado/filantrópico.
 
 **Concurso público SESA 001/2026.** Publicado em 11/9/2026 (Instituto AOCP), com 4.210 vagas de cadastro de reserva para o Grupo Saúde sob regime estatutário (Lei 0066/1993, PCCS Lei 1.059/2006 reestruturado pelas Leis 3.512/2026 e 3.527/2026), distribuídas por Região de Saúde: Central 2.552, Norte 637 e Sudoeste 1.021, com lotação mínima de três anos no município. Os maiores quantitativos são técnico em enfermagem (904 só na Região Central) e enfermeiro (786), além de cerca de 150 vagas médicas em 46 especialidades na Região Central. Vencimentos básicos: R$ 11.116,42 (médicos), R$ 5.520,64 (demais nível superior) e R$ 3.363,43 (nível médio/técnico). Inscrições encerradas em 13/10/2026; prova objetiva em 20/12/2026. A nova gestão herdará a homologação, o dimensionamento de nomeações (o edital é só cadastro de reserva) e a estratégia de substituição de contratos temporários, com impacto direto no indicador de despesa com pessoal (44,3% em 2025).
 
-# 7. Financiamento
+# 8. Financiamento
 
-## 7.1 SIOPS: indicadores do Estado
+## 8.1 SIOPS: indicadores do Estado
+
+Tabela: Indicadores SIOPS do Estado do Amapá, 2022–2026
 
 | Indicador SIOPS (Estado do Amapá) | 2022 | 2023 | 2024 | 2025 | 2026 (4º bim.) |
 |---|---:|---:|---:|---:|---:|
@@ -345,51 +418,63 @@ O número de médicos cresceu 54% desde 2022, mas a densidade (2,02 por mil habi
 
 Fonte: SIOPS/MS, despesa empenhada (abas `SIOPS_AP_Serie`, `SIOPS_UF_2024`, `SIOPS_UF_2025`).
 
+Figura: Percentual da receita própria aplicada em ASPS, Estado do Amapá, 2022–2025
+
 ![](graficos/g06_siops_32.png)
+
+Fonte: elaboração própria a partir de SIOPS/Ministério da Saúde (BRASIL, 2026).
+
+Figura: Despesa do Estado com saúde por habitante, Amapá, 2022–2025
 
 ![](graficos/g07_siops_21.png)
 
+Fonte: elaboração própria a partir de SIOPS/Ministério da Saúde (BRASIL, 2026).
+
 Quatro pontos: (i) o Estado cumpre o mínimo constitucional com folga em toda a série e está entre os cinco que mais aplicam receita própria (3º em 2024, 5º em 2025; a mediana das UFs é 15,4%); (ii) a despesa por habitante cresceu 84,5% em três anos e é a maior do país em 2024 e 2025 (a segunda, Acre, gasta R$ 2.760; a mediana é R$ 1.009), o que combina pequena população, custo amazônico e rede estadualizada (o Estado gere todos os hospitais, enquanto em outras UFs há forte presença municipal e filantrópica); (iii) a queda da participação de pessoal de 49,8% para 44,3%, simultânea ao salto das transferências federais na despesa (de 15,5% para 36% em 2025 e 41,8% em 2026) e à alta do peso do SUS no total transferido ao Estado (de 3,7% para 11,1%), mostra que o crescimento recente do gasto foi financiado sobretudo por recursos federais (emendas, FAEC, programas de eletivas e de UTI) e por contratos de serviços, e não por expansão do quadro próprio; (iv) o indicador de medicamentos zerado desde 2023 é incompatível com a operação de uma rede hospitalar e indica classificação contábil inadequada da despesa com medicamentos (possivelmente dentro de "material de consumo" ou de contratos), ponto a corrigir na prestação de contas.
 
-## 7.2 Orçamento estadual e recursos federais
+## 8.2 Orçamento estadual e recursos federais
 
 - **LOA 2026:** R$ 12,425 bilhões para o Estado; Fundo Estadual de Saúde com R$ 1,72 bilhão (13,8% da LOA). **PLOA 2027** (em tramitação na Alap): R$ 13,47 bilhões, com FES em R$ 1,98 bilhão (+15,3%). Valores de fonte secundária (Alap e imprensa), a confirmar na lei publicada.
 - **Produção remunerada pelo SUS (MAC/FAEC):** o valor aprovado da produção hospitalar e ambulatorial somou R$ 203,2 milhões em 2025 (R$ 54,5 milhões SIH e R$ 148,7 milhões SIA), contra R$ 112,9 milhões em 2022 (+80%). O FAEC passou de R$ 19,2 milhões (2022) para R$ 56,5 milhões (2025: R$ 13,0 milhões SIH e R$ 43,5 milhões SIA) e já soma R$ 65,4 milhões em jan–ago/2026. Como o teto MAC é transferido fundo a fundo independentemente da produção, esse valor é uma referência do "faturamento" e não do repasse; a diferença entre teto e produção deve ser obtida na SESA/FNS.
-- **Lacuna de informação:** os repasses do FNS por bloco (manutenção e estruturação) e por esfera, os restos a pagar, as despesas por unidade hospitalar e os contratos de gestão e de prestação de serviços não estão em bases públicas acessíveis e devem compor a lista de documentos da transição (seção 9).
+- **Lacuna de informação:** os repasses do FNS por bloco (manutenção e estruturação) e por esfera, os restos a pagar, as despesas por unidade hospitalar e os contratos de gestão e de prestação de serviços não estão em bases públicas acessíveis e devem compor a lista de documentos da transição (seção 10).
 
-# 8. Pontos de atenção para a transição
+# 9. Pontos de atenção para a transição
 
-## 8.1 Procedimentos vasculares: crescimento atípico de faturamento (prioridade máxima)
+## 9.1 Procedimentos vasculares: crescimento atípico de faturamento (prioridade máxima)
+
+Figura: Procedimentos vasculares: valor ambulatorial e internações circulatórias, Amapá, 2022–2026
 
 ![](graficos/g11_vascular.png)
 
+Fonte: elaboração própria a partir de SIA/SUS e SIH/SUS/DATASUS (BRASIL, 2026).
+
 Resumo da evidência: (a) SIA, subgrupo 0309 "terapias especializadas": R$ 15 mil (2022), R$ 10,9 milhões (2023), R$ 21,8 milhões (2024), R$ 25,6 milhões (2025), R$ 18,6 milhões (jan–ago/2026), quase integralmente no procedimento 03.09.07.001-5 (esclerose não estética de varizes, 84.885 registros em 2025); (b) SIH, capítulo IX: 1.899 internações (2022) para 15.455 (2023), 11.226 (2024), 11.024 (2025) e 8.973 (jan–ago/2026), das quais 7.624 no HCAL em 2025 e 7.375 AIH de "trombectomia do sistema venoso" com permanência média 0,0 dia; (c) CBO cirurgia vascular com R$ 29,9 milhões (20,1% do SIA) executados por 22 cirurgiões vasculares cadastrados; (d) o HCAL, com 100% de internações eletivas, tornou-se o maior produtor de AIH do estado e dobrou o faturamento em 2026. Cada um desses elementos pode ter explicação assistencial (programa estadual de varizes com demanda represada), mas a magnitude (R$ 39 milhões em 2025 somando SIA e SIH, mais do que toda a produção hospitalar de 2022) e as características de registro (AIH de permanência zero, volumes diários implausíveis para 22 profissionais) justificam auditoria técnica e operativa imediata, com verificação de prontuários, agendas, listas de regulação, contratos e vínculos dos executantes, e comunicação ao DENASUS e ao TCE-AP. Enquanto a auditoria não concluir, recomenda-se não usar esse faturamento como base para contratualização ou metas.
 
-## 8.2 Cadastro de leitos e habilitações
+## 9.2 Cadastro de leitos e habilitações
 
 A diferença entre leitos existentes e leitos SUS em UTI (139 contra 19 em adulto) e a presença de 207 leitos existentes com apenas 55 SUS no prestador filantrópico exigem conciliação entre CNES, portarias de habilitação e contratos. Leitos de UTI habilitados geram custeio federal por diária; leitos não habilitados ou mal cadastrados são receita perdida e regulação cega.
 
-## 8.3 Relações com prestadores estratégicos
+## 9.3 Relações com prestadores estratégicos
 
 São Camilo e São Luís (filantrópico; 74% da alta complexidade hospitalar do estado; conflito contratual judicializado em 2025; produção em queda em 2026) e HU-UNIFAP/Ebserh (90 de 212 leitos abertos; 2.371 AIH em 2025; contratualização com a SESA a verificar) são os dois prestadores cujas condições contratuais, débitos e metas precisam ser mapeados antes da posse. O mesmo vale para os contratos de imagem (tomografia e ressonância) e de nefrologia, majoritariamente privados.
 
-## 8.4 Rede de urgência, sazonalidade respiratória e pediatria
+## 9.4 Rede de urgência, sazonalidade respiratória e pediatria
 
 A emergência em saúde pública por síndromes respiratórias (decreto de junho de 2026, 180 dias, com contratações diretas) vence no início da nova gestão e deve ser avaliada quanto à continuidade dos contratos emergenciais. O HE é o principal ponto de pressão (7.182 internações, 7,2 dias de permanência, 276 óbitos) e tem obra em curso (novo HE). A pediatria (HCA, 192 leitos) e as UTIs pediátricas (31 existentes, 20 SUS) são o gargalo sazonal. As UPAs deixaram de registrar internações e as unidades mistas do interior têm produção residual: a regionalização prevista no edital do concurso (lotação por Região de Saúde) é uma oportunidade de fixar equipes fora de Macapá.
 
-## 8.5 Mortalidade infantil e atenção materna
+## 9.5 Mortalidade infantil e atenção materna
 
 Com TMI de 17,8 por mil (2024) e 65% dos óbitos infantis evitáveis, o estado precisa de um plano de redução com metas por maternidade (Mãe Luzia, Maternidade Zona Norte, Santana, Laranjal do Jari, Oiapoque), investigação de 100% dos óbitos infantis e fetais, vigilância da cesariana (46,9%) e integração com a atenção primária municipal (pré-natal e puericultura).
 
-## 8.6 Alta complexidade e TFD
+## 9.6 Alta complexidade e TFD
 
 O menor valor médio de AIH do país, 2,3% de alta complexidade, saldo negativo de R$ 1,6 milhão em internações fora do estado e R$ 10 milhões anuais de TFD mostram o custo de não ter cardiologia intervencionista plena, neurocirurgia e oncologia cirúrgica suficientes. A radioterapia (dez/2025) é o primeiro passo; a agenda inclui habilitação de serviços de alta complexidade (cardiovascular, neurocirurgia, oncologia cirúrgica, transplante renal) com o Ministério da Saúde e avaliação de consórcio ou contrato interestadual com Belém.
 
-## 8.7 Pessoal
+## 9.7 Pessoal
 
 Decidir o volume de nomeações do concurso 001/2026, a substituição de temporários, o impacto na folha (indicador 2.2 em 44%) e a fixação regional. O crescimento do quadro desde 2022 (médicos +54%, enfermeiros +61%) não reduziu a concentração em Macapá.
 
-# 9. Recomendações e agenda dos primeiros 100 dias
+# 10. Recomendações e agenda dos primeiros 100 dias
 
 **Documentos a requisitar imediatamente à SESA (equipe de transição):**
 
@@ -416,17 +501,10 @@ Decidir o volume de nomeações do concurso 001/2026, a substituição de tempor
 8. Recompor a resolutividade do interior (unidades mistas, UPAs) com protocolos, telessaúde e transporte sanitário, usando a regionalização do concurso.
 9. Instituir painel mensal de produção, fila, leitos e gasto por unidade, publicado no portal da transparência, como instrumento de governança da nova gestão.
 
-# Anexos
+# 11. Considerações finais
 
-## A. Conteúdo da planilha `Tabelas_Saude_Amapa_Transicao_2026.xlsx`
+O período 2022–2026 foi de forte expansão quantitativa da produção SUS no Amapá: mais internações, mais procedimentos ambulatoriais, mais leitos, mais profissionais e mais gasto por habitante. A expansão, porém, não alterou a assinatura estrutural da rede, que continua a resolver o básico e o obstétrico e a depender de outros estados para a alta complexidade, e veio acompanhada de sinais que exigem verificação imediata: o faturamento atípico de procedimentos vasculares, a subnotificação de leitos de UTI no CNES, a fragilidade das relações com os prestadores filantrópico e universitário e a persistência da mortalidade infantil entre as mais altas do país. A equipe de transição dispõe, com este estudo e com a planilha que o acompanha, de uma linha de base auditável para pactuar metas, redirecionar contratos e priorizar as decisões dos primeiros cem dias.
+
+# APÊNDICE A – Conteúdo da planilha de tabelas
 
 A aba `Indice` lista as 129 abas com hiperlinks; todas as séries estão recortadas para 2022–2026. Grupos: `00_Indicadores_Chave` (painel-resumo); `POP_*` (IBGE); `SIH_*` (33 abas: séries, estabelecimentos, municípios, regiões, caráter, complexidade, gestão, esfera, procedimentos, financiamento, residência x local); `MORB_*` (morbidade por CID, faixa etária, sexo, estabelecimento); `SIA_*` (23 abas: séries, subgrupos, procedimentos, CBO, municípios, regiões, gestão, financiamento, instrumento de registro); `CNES_*` (27 abas: leitos, UTI, estabelecimentos, equipamentos, profissionais); `VITAL_*` (SIM e SINASC, 20 abas, com indicadores sintéticos); `BENCH_*` (comparativos entre UFs); `SIOPS_*` (série do Estado e ranking das UFs em 2024 e 2025); `RH_Concurso_2026`; `Fontes_Notas`.
-
-## B. Fontes
-
-- DATASUS/TABNET: SIH/SUS (qiap, qrap, niap, qiuf, qruf), SIA/SUS (qaap, qauf), CNES (leiintap, leiutiap, estabap, equipoap, prid02ap, leiutibr, prid02br), SIM (obt10ap, inf10ap, obt10uf, inf10uf), SINASC (nvap, nvuf). Extração em 6/11/2026.
-- SIOPS/Ministério da Saúde: consulta de indicadores de estados, 6º bimestre de 2022 a 2025 e 4º bimestre de 2026.
-- IBGE/SIDRA: tabela 6579 (estimativas de população) para UFs e municípios.
-- SEAD/SESA-AP: Edital de Concurso Público nº 001/2026 (Instituto AOCP).
-- Alap e imprensa local (Diário do Amapá, De Bubuia, Agência Amapá, Correio da Manhã): LOA 2026, PLOA 2027, emergência em saúde pública (jun/2026), obra do novo HE, HCA, Centro de Radioterapia, conflito contratual com o Hospital São Camilo; HU-UNIFAP: Carta de Serviços abril/2026 (Ebserh).
-- TSE: resultado da eleição para governador de 2026 (posse em 6/1/2027).
