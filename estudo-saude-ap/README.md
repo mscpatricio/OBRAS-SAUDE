@@ -1,13 +1,13 @@
 # Saúde no Amapá — levantamento de produção e estudo analítico para a transição 2026/2027
 
-Levantamento completo da produção hospitalar (SIH/SUS), ambulatorial (SIA/SUS), rede física e força de trabalho (CNES), indicadores vitais (SIM/SINASC), financiamento (SIOPS, LOA) e demografia (IBGE) do Estado do Amapá, com estudo analítico voltado à transição da Secretaria de Estado da Saúde (SESA/AP). Extração realizada em 06/11/2026 a partir de fontes públicas.
+Levantamento completo da produção hospitalar (SIH/SUS), ambulatorial (SIA/SUS), rede física e força de trabalho (CNES), indicadores vitais (SIM/SINASC), financiamento (SIOPS, LOA) e demografia (IBGE) do Estado do Amapá, com estudo analítico voltado à transição da Secretaria de Estado da Saúde (SESA/AP). Série histórica 2022–2026 (2022 como ano-base; 2026 parcial). Extração realizada em 06/11/2026 a partir de fontes públicas.
 
 ## Arquivos
 
 | Arquivo | Conteúdo |
 |---|---|
 | `Estudo_Analitico_SESA_AP_Transicao_2026.md` / `.docx` | Estudo analítico completo (sumário executivo, 9 seções, recomendações e agenda dos 100 primeiros dias) |
-| `Tabelas_Saude_Amapa_Transicao_2026.xlsx` | 129 abas tabuladas, com índice, painel de indicadores-chave, comparativos entre UFs e fontes |
+| `Tabelas_Saude_Amapa_Transicao_2026.xlsx` | 129 abas tabuladas (séries 2022–2026), com índice, painel de indicadores-chave, comparativos entre UFs e fontes |
 | `graficos/` | 13 gráficos em PNG usados no estudo |
 | `dados/tabnet/` | 127 tabelas brutas extraídas do TABNET/DATASUS (CSV, separador `;`, decimal `,`) e log de extração |
 | `dados/siops/` | Indicadores SIOPS do Estado do Amapá (2015–2026) e de todas as UFs (2024–2025) |

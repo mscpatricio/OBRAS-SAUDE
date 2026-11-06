@@ -88,7 +88,7 @@ cx=load('sih_complex_ano_aih'); KPI['sih_alta_2025']=cx.loc['Alta complexidade',
 resuf=load('bench_sihres_uf_ano_aih'); intuf=load('bench_sih_uf_ano_aih')
 resv=load('bench_sihres_uf_ano_valor'); intv=load('bench_sih_uf_ano_valor')
 ev=pd.DataFrame({'AIH de residentes do AP (onde quer que internados)':resuf.loc['16 Amapá'],'AIH realizadas em hospitais do AP':intuf.loc['16 Amapá'],'Valor AIH residentes AP (R$)':resv.loc['16 Amapá'],'Valor AIH realizadas no AP (R$)':intv.loc['16 Amapá']})
-ev['Saldo AIH (realizadas no AP - residentes)']=ev.iloc[:,1]-ev.iloc[:,0]; ev['Saldo valor (R$)']=ev.iloc[:,3]-ev.iloc[:,2]
+ev.index.name='Ano'; ev['Saldo AIH (realizadas no AP - residentes)']=ev.iloc[:,1]-ev.iloc[:,0]; ev['Saldo valor (R$)']=ev.iloc[:,3]-ev.iloc[:,2]
 sheets['SIH_Residencia_x_Local']=(ev.drop('Total',errors='ignore'),'Internações de residentes do Amapá vs internações realizadas no Amapá (SIH/SUS)','Saldo negativo de valor indica que residentes do AP consomem internações fora do estado (TFD interestadual) de maior valor médio.')
 KPI['ev_saldo_aih_2025']=ev.loc['2025','Saldo AIH (realizadas no AP - residentes)']; KPI['ev_saldo_valor_2025']=ev.loc['2025','Saldo valor (R$)']
 KPI['ev_res_2025']=ev.iloc[:,0]['2025']; KPI['ev_int_2025']=ev.iloc[:,1]['2025']; KPI['ev_resval_2025']=ev.iloc[:,2]['2025']; KPI['ev_intval_2025']=ev.iloc[:,3]['2025']
@@ -226,7 +226,7 @@ srows=list(csv.DictReader(open(RAW+'/siops/siops_indicadores.csv',encoding='utf-
 labels={'ind_1.1':'1.1 Part. receita de impostos na receita total (%)','ind_1.2':'1.2 Part. transferências intergov. na receita total (%)','ind_1.3':'1.3 Part. transf. SUS no total transferido ao Estado (%)','ind_1.4':'1.4 Part. transf. União p/ saúde no total transf. p/ saúde (%)','ind_1.5':'1.5 Part. transf. União SUS no total transf. União (%)','ind_1.6':'1.6 Part. impostos+transf. constitucionais na receita total (%)','ind_2.1':'2.1 Despesa total com saúde por habitante (R$)','ind_2.2':'2.2 Part. despesa com pessoal na despesa total c/ saúde (%)','ind_2.3':'2.3 Part. despesa com medicamentos (%)','ind_2.4':'2.4 Part. serviços de terceiros - pessoa jurídica (%)','ind_2.5':'2.5 Part. investimentos (%)','ind_2.6':'2.6 Despesas c/ instituições privadas sem fins lucrativos (%)','ind_3.1':'3.1 Part. transferências p/ saúde na despesa total c/ saúde (%)','ind_3.2':'3.2 % receita própria aplicada em ASPS (LC 141/2012; mín. 12%)'}
 ap=[r for r in srows if r['uf']=='Amapá']
 si=pd.DataFrame({f"{r['ano']} ({r['bimestre']}º bim.)":{labels[k]:float(r[k]) for k in labels if r.get(k)} for r in ap})
-si=si.reindex([labels[k] for k in labels])
+si=si.reindex([labels[k] for k in labels]); si.index.name='Indicador'
 sheets['SIOPS_AP_Serie']=(si,'SIOPS - Indicadores do Estado do Amapá, 2015-2026 (6º bimestre = anual; 2026 = 4º bimestre, parcial)','Fonte: SIOPS/MS, consulta de indicadores de estados. Despesa empenhada. Ind. 3.2 = aplicação mínima constitucional (12%).')
 for r in ap: 
     KPI[f"siops_32_{r['ano']}"]=float(r['ind_3.2']); KPI[f"siops_21_{r['ano']}"]=float(r['ind_2.1']); KPI[f"siops_22_{r['ano']}"]=float(r['ind_2.2']); KPI[f"siops_24_{r['ano']}"]=float(r['ind_2.4']); KPI[f"siops_25_{r['ano']}"]=float(r['ind_2.5']); KPI[f"siops_31_{r['ano']}"]=float(r['ind_3.1']); KPI[f"siops_13_{r['ano']}"]=float(r['ind_1.3']) if r.get('ind_1.3') else None
@@ -280,13 +280,25 @@ resumo=[
 res=pd.DataFrame(resumo,columns=['Dimensão','Indicador','Valor','Unidade']).set_index(['Dimensão','Indicador'])
 sheets={'00_Indicadores_Chave':(res,'Painel-resumo de indicadores-chave da saúde no Amapá (ver fontes em cada aba)','Valores de 2025/2026 sujeitos a atualização nas bases DATASUS.'),**sheets}
 
+# ---------- Recorte temporal 2022-2026 ----------
+import re as _re
+YMIN=2022
+def _yr(label):
+    m=_re.match(r'^\s*(?:\.\.)?\s*(?:[A-Za-zç]+/)?(\d{4})(?:/[A-Za-z]{3})?(?:\s*\(.*\))?\s*$',str(label))
+    return int(m.group(1)) if m else None
+def recorte(df):
+    cols=[c for c in df.columns if (_yr(c) is None or _yr(c)>=YMIN)]
+    df=df[cols]
+    idx=[i for i in df.index if (_yr(i) is None or _yr(i)>=YMIN)]
+    return df.loc[idx]
+sheets={k:(recorte(df),t,n) for k,(df,t,n) in sheets.items()}
 # ---------- Workbook ----------
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 wb=Workbook(); ws0=wb.active; ws0.title='Indice'
 ws0['A1']='Levantamento da produção hospitalar, ambulatorial e indicadores de saúde - Estado do Amapá (SESA/AP)'; ws0['A1'].font=Font(bold=True,size=14)
-ws0['A2']='Estudo analítico para transição de governo 2026/2027. Dados públicos: DATASUS/TABNET (SIH, SIA, CNES, SIM, SINASC), SIOPS/MS, IBGE/SIDRA, Edital SESA 001/2026. Extração em 06/11/2026.'
+ws0['A2']='Estudo analítico para transição de governo 2026/2027. Série histórica 2022-2026 (2026 parcial). Dados públicos: DATASUS/TABNET (SIH, SIA, CNES, SIM, SINASC), SIOPS/MS, IBGE/SIDRA, Edital SESA 001/2026. Extração em 06/11/2026.'
 ws0['A4']='Aba'; ws0['B4']='Conteúdo'; ws0['C4']='Observações'
 for c in ('A4','B4','C4'): ws0[c].font=Font(bold=True)
 rown=5
@@ -345,20 +357,20 @@ def save(fig,name): fig.tight_layout(); fig.savefig(f'{GR}/{name}.png',dpi=160);
 def style(ax,ylabel=''):
     ax.grid(axis='y',color=GRID,linewidth=0.8); ax.set_axisbelow(True); ax.set_ylabel(ylabel,color=INK2)
 def brl(x,pos): return f'{x/1e6:,.0f}'.replace(',','.')
-years=[str(y) for y in range(2015,2026)]
+years=[str(y) for y in range(2022,2027)]
 # G1: AIH e valor SIH
 fig,ax=plt.subplots(figsize=(9,4.2))
 ax.bar(years,[sih.loc[y,'AIH aprovadas'] for y in years],color=C[0],width=0.7)
-style(ax,'Internações (AIH aprovadas)'); ax.set_title('Internações SUS no Amapá, 2015-2025 (SIH/SUS)',loc='left',color=INK,fontweight='bold')
-for y in ('2019','2023','2025'): ax.annotate(fmt_int(sih.loc[y,'AIH aprovadas']),(y,sih.loc[y,'AIH aprovadas']),ha='center',va='bottom',fontsize=9,color=INK2,xytext=(0,3),textcoords='offset points')
+style(ax,'Internações (AIH aprovadas)'); ax.set_title('Internações SUS no Amapá, 2022-2026* (SIH/SUS; *jan-ago)',loc='left',color=INK,fontweight='bold')
+for y in years: ax.annotate(fmt_int(sih.loc[y,'AIH aprovadas']),(y,sih.loc[y,'AIH aprovadas']),ha='center',va='bottom',fontsize=9,color=INK2,xytext=(0,3),textcoords='offset points')
 ax.yaxis.set_major_formatter(FuncFormatter(lambda x,p: fmt_int(x)))
 save(fig,'g01_sih_aih_ano')
 fig,ax=plt.subplots(figsize=(9,4.2))
 ax.plot(years,[sih.loc[y,'Valor total']/1e6 for y in years],color=C[0],lw=2,marker='o',ms=5,label='Hospitalar (SIH)')
 ax.plot(years,[sia.loc[y,'Valor aprovado']/1e6 for y in years],color=C[1],lw=2,marker='o',ms=5,label='Ambulatorial (SIA)')
-style(ax,'R$ milhões (valores correntes)'); ax.set_title('Valor aprovado da produção SUS no Amapá, 2015-2025',loc='left',color=INK,fontweight='bold'); ax.legend(frameon=False)
-ax.annotate(f"R$ {mi(sia.loc['2025','Valor aprovado'])} mi",('2025',sia.loc['2025','Valor aprovado']/1e6),xytext=(-70,5),textcoords='offset points',fontsize=9,color=INK2)
-ax.annotate(f"R$ {mi(sih.loc['2025','Valor total'])} mi",('2025',sih.loc['2025','Valor total']/1e6),xytext=(-70,5),textcoords='offset points',fontsize=9,color=INK2)
+style(ax,'R$ milhões (valores correntes)'); ax.set_title('Valor aprovado da produção SUS no Amapá, 2022-2026* (*jan-ago)',loc='left',color=INK,fontweight='bold'); ax.legend(frameon=False)
+ax.annotate(f"R$ {mi(sia.loc['2025','Valor aprovado'])} mi",('2025',sia.loc['2025','Valor aprovado']/1e6),xytext=(-40,8),textcoords='offset points',fontsize=9,color=INK2)
+ax.annotate(f"R$ {mi(sih.loc['2025','Valor total'])} mi",('2025',sih.loc['2025','Valor total']/1e6),xytext=(-40,8),textcoords='offset points',fontsize=9,color=INK2)
 save(fig,'g02_valor_sih_sia')
 # G3: estabelecimentos 2025
 top=KPI['sih_estab_top'].copy(); top.index=[re.sub(r'^\d+ ','',i).replace('SES AP ','').replace('SESA AP ','').replace('SES ','').title() for i in top.index]
@@ -370,11 +382,11 @@ ax.grid(axis='x',color=GRID); ax.set_axisbelow(True); ax.set_title('Internaçõe
 ax.xaxis.set_major_formatter(FuncFormatter(lambda x,p: fmt_int(x))); ax.set_xlim(0,top['AIH aprovadas'].max()*1.15)
 save(fig,'g03_sih_estab_2025')
 # G4: leitos SUS por especialidade
-cols=[c for c in ls.columns if c!='Total']
+cols=[c for c in ls.columns if c!='Total' and _yr(c)>=YMIN]
 fig,ax=plt.subplots(figsize=(9,4.4))
 lab={'Clínicos':C[0],'Cirúrgicos':C[1],'Obstétrico':C[2],'Pediátrico':C[3],'Outras Especialidades':C[4]}
 for k,col in lab.items(): ax.plot([c.replace('/Dez','').replace('/Set','*') for c in cols],[ls.loc[k,c] for c in cols],lw=2,marker='o',ms=4,color=col,label=k)
-style(ax,'Leitos SUS'); ax.set_title('Leitos de internação SUS por especialidade, Amapá (CNES, dez. de cada ano; *set/2026)',loc='left',color=INK,fontweight='bold',fontsize=10); ax.legend(frameon=False,ncol=3,fontsize=9)
+style(ax,'Leitos SUS'); ax.set_title('Leitos de internação SUS por especialidade, Amapá, 2022-2026 (CNES, dez. de cada ano; *set/2026)',loc='left',color=INK,fontweight='bold',fontsize=10); ax.legend(frameon=False,ncol=3,fontsize=9)
 save(fig,'g04_leitos_sus')
 # G5: UTI
 fig,ax=plt.subplots(figsize=(9,4.2))
@@ -383,43 +395,45 @@ for (k,v),col in zip(series.items(),C[:3]): ax.plot([c.replace('/Dez','').replac
 style(ax,'Leitos existentes'); ax.set_title('Leitos de UTI existentes no Amapá (CNES; exclui leitos COVID temporários; *set/2026)',loc='left',color=INK,fontweight='bold',fontsize=10); ax.legend(frameon=False)
 save(fig,'g05_uti')
 # G6: SIOPS
-yrs=[r['ano'] for r in ap if r['bimestre']=='6']
+yrs=[r['ano'] for r in ap if r['bimestre']=='6' and int(r['ano'])>=YMIN]
 fig,ax=plt.subplots(figsize=(9,4.2))
-ax.bar(yrs,[float(r['ind_3.2']) for r in ap if r['bimestre']=='6'],color=C[0],width=0.7)
+ax.bar(yrs,[float(r['ind_3.2']) for r in ap if r['bimestre']=='6' and int(r['ano'])>=YMIN],color=C[0],width=0.7)
 ax.axhline(12,color=C[7],lw=1.5,ls='--'); ax.text(yrs[-1],11.0,'mínimo constitucional: 12%',color=C[7],fontsize=9,ha='right',va='top')
 for r in ap:
-    if r['bimestre']=='6': ax.text(r['ano'],float(r['ind_3.2'])+0.2,fmt_br(float(r['ind_3.2']),1)+'%',ha='center',fontsize=8.5,color=INK2)
-style(ax,'% da receita própria (LC 141/2012)'); ax.set_title('Aplicação de receita própria em ASPS - Estado do Amapá, 2015-2025 (SIOPS)',loc='left',color=INK,fontweight='bold',fontsize=10); ax.set_ylim(0,24)
+    if r['bimestre']=='6' and int(r['ano'])>=YMIN: ax.text(r['ano'],float(r['ind_3.2'])+0.2,fmt_br(float(r['ind_3.2']),1)+'%',ha='center',fontsize=8.5,color=INK2)
+style(ax,'% da receita própria (LC 141/2012)'); ax.set_title('Aplicação de receita própria em ASPS - Estado do Amapá, 2022-2025 (SIOPS)',loc='left',color=INK,fontweight='bold',fontsize=10); ax.set_ylim(0,24)
 save(fig,'g06_siops_32')
 fig,ax=plt.subplots(figsize=(9,4.2))
-ax.plot(yrs,[float(r['ind_2.1']) for r in ap if r['bimestre']=='6'],color=C[0],lw=2,marker='o')
+ax.plot(yrs,[float(r['ind_2.1']) for r in ap if r['bimestre']=='6' and int(r['ano'])>=YMIN],color=C[0],lw=2,marker='o')
 for r in ap:
-    if r['bimestre']=='6' and r['ano'] in ('2015','2019','2021','2023','2025'): ax.annotate('R$ '+fmt_br(float(r['ind_2.1']),0),(r['ano'],float(r['ind_2.1'])),xytext=(0,6),textcoords='offset points',ha='center',fontsize=8.5,color=INK2)
-style(ax,'R$ por habitante (empenhado)'); ax.set_title('Despesa do Estado com saúde por habitante - Amapá, 2015-2025 (SIOPS ind. 2.1)',loc='left',color=INK,fontweight='bold',fontsize=10)
+    if r['bimestre']=='6' and int(r['ano'])>=YMIN: ax.annotate('R$ '+fmt_br(float(r['ind_2.1']),0),(r['ano'],float(r['ind_2.1'])),xytext=(0,6),textcoords='offset points',ha='center',fontsize=8.5,color=INK2)
+style(ax,'R$ por habitante (empenhado)'); ax.set_title('Despesa do Estado com saúde por habitante - Amapá, 2022-2025 (SIOPS ind. 2.1)',loc='left',color=INK,fontweight='bold',fontsize=10)
 save(fig,'g07_siops_21')
 # G8: TMI AP vs Brasil
 fig,ax=plt.subplots(figsize=(9,4.2))
-ax.plot(years,[tmi[int(y)] for y in years],color=C[0],lw=2,marker='o',label='Amapá')
+yv=[y for y in years if int(y) in tmi]
+ax.plot(yv,[tmi[int(y)] for y in yv],color=C[0],lw=2,marker='o',label='Amapá')
 if binf is not None and bnv is not None:
-    ax.plot([y for y in years if y in binf.columns],[binf.loc['Total',y]/bnv.loc['Total',y]*1000 for y in years if y in binf.columns],color=C[1],lw=2,marker='o',label='Brasil')
-style(ax,'Óbitos < 1 ano por mil nascidos vivos'); ax.set_title('Taxa de mortalidade infantil, 2015-2025 (SIM/SINASC; 2025 preliminar)',loc='left',color=INK,fontweight='bold',fontsize=10); ax.legend(frameon=False); ax.set_ylim(0,25)
+    ax.plot(yv,[binf.loc['Total',y]/bnv.loc['Total',y]*1000 for y in yv],color=C[1],lw=2,marker='o',label='Brasil')
+style(ax,'Óbitos < 1 ano por mil nascidos vivos'); ax.set_title('Taxa de mortalidade infantil, 2022-2025 (SIM/SINASC; 2025 preliminar)',loc='left',color=INK,fontweight='bold',fontsize=10); ax.legend(frameon=False); ax.set_ylim(0,25)
 save(fig,'g08_tmi')
 # G9: nascidos vivos e cesárea
 fig,ax=plt.subplots(figsize=(9,4.2))
-ax.bar(years,[par.loc['Vaginal',y] for y in years],color=C[0],width=0.7,label='Parto vaginal')
-ax.bar(years,[par.loc['Cesário',y] for y in years],bottom=[par.loc['Vaginal',y] for y in years],color=C[1],width=0.7,label='Cesárea')
-for y in years: ax.text(y,par.loc['Total',y]+150,fmt_br(par.loc['Cesário',y]/par.loc['Total',y]*100,0)+'% ces.',ha='center',fontsize=8,color=INK2)
-style(ax,'Nascidos vivos (residência da mãe)'); ax.set_title('Nascidos vivos por tipo de parto, Amapá, 2015-2025 (SINASC)',loc='left',color=INK,fontweight='bold'); ax.legend(frameon=False,loc='lower left'); ax.yaxis.set_major_formatter(FuncFormatter(lambda x,p: fmt_int(x)))
+yv=[y for y in years if int(y)<=2025]
+ax.bar(yv,[par.loc['Vaginal',y] for y in yv],color=C[0],width=0.7,label='Parto vaginal')
+ax.bar(yv,[par.loc['Cesário',y] for y in yv],bottom=[par.loc['Vaginal',y] for y in yv],color=C[1],width=0.7,label='Cesárea')
+for y in yv: ax.text(y,par.loc['Total',y]+150,fmt_br(par.loc['Cesário',y]/par.loc['Total',y]*100,0)+'% ces.',ha='center',fontsize=8,color=INK2)
+style(ax,'Nascidos vivos (residência da mãe)'); ax.set_title('Nascidos vivos por tipo de parto, Amapá, 2022-2025 (SINASC; 2025 preliminar)',loc='left',color=INK,fontweight='bold'); ax.legend(frameon=False,loc='lower left'); ax.yaxis.set_major_formatter(FuncFormatter(lambda x,p: fmt_int(x)))
 save(fig,'g09_nv_parto')
 # G10: médicos e enfermeiros
 fig,ax=plt.subplots(figsize=(9,4.2))
 xs=[c.replace('/Dez','').replace('/Set','*') for c in cols]
 ax.plot(xs,[med.loc['Total',c] for c in cols],color=C[0],lw=2,marker='o',label='Médicos')
 ax.plot(xs,[ps.loc['Enfermeiro',c] for c in cols],color=C[1],lw=2,marker='o',label='Enfermeiros')
-style(ax,'Indivíduos cadastrados (CNES)'); ax.set_title('Médicos e enfermeiros cadastrados no CNES, Amapá (dez. de cada ano; *set/2026)',loc='left',color=INK,fontweight='bold',fontsize=10); ax.legend(frameon=False)
+style(ax,'Indivíduos cadastrados (CNES)'); ax.set_title('Médicos e enfermeiros cadastrados no CNES, Amapá, 2022-2026 (dez. de cada ano; *set/2026)',loc='left',color=INK,fontweight='bold',fontsize=10); ax.legend(frameon=False)
 save(fig,'g10_rh')
 # G11: anomalia vascular (dois painéis, mesma escala temporal)
-yrs2=[str(y) for y in range(2019,2027)]
+yrs2=[str(y) for y in range(2022,2027)]
 fig,(a1,a2)=plt.subplots(1,2,figsize=(10,4))
 a1.bar(yrs2,[sub.loc['0309 Terapias especializadas',y]/1e6 for y in yrs2],color=C[1],width=0.7)
 style(a1,'R$ milhões'); a1.set_title('SIA: terapias especializadas (angiologia /\nesclerose de varizes), valor aprovado',loc='left',fontsize=9.5,color=INK,fontweight='bold')
@@ -427,7 +441,7 @@ a2.bar(yrs2,[cap.loc['IX.  Doenças do aparelho circulatório',y] for y in yrs2]
 style(a2,'Internações (AIH)'); a2.set_title('SIH: internações por doenças do aparelho\ncirculatório (cap. IX CID-10)',loc='left',fontsize=9.5,color=INK,fontweight='bold')
 a2.yaxis.set_major_formatter(FuncFormatter(lambda x,p: fmt_int(x)))
 for a in (a1,a2): a.tick_params(axis='x',labelsize=9)
-fig.suptitle('Salto de procedimentos vasculares no Amapá a partir de 2023 (2026 = jan-ago)',x=0.01,ha='left',fontsize=10,color=INK2)
+fig.suptitle('Salto de procedimentos vasculares no Amapá a partir de 2023 (2022-2026; 2026 = jan-ago)',x=0.01,ha='left',fontsize=10,color=INK2)
 save(fig,'g11_vascular')
 # G12: capítulos CID 2025
 c25=load('nih_cap_2025').drop('Total').sort_values('Internações',ascending=False).head(10).iloc[::-1]
