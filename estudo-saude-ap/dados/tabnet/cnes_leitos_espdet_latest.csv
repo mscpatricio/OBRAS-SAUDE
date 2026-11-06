@@ -1,0 +1,30 @@
+Especialidade detalhada;Qtd existente;Qtd SUS
+CIRÚRGICOS;350;310
+..Buco maxilo facial;2;2
+..Cirurgia geral;275;235
+..Ginecologia;6;6
+..Neurocirurgia;10;10
+..Ortopedia/traumatologia;54;54
+..Queimado Adulto;3;3
+CLÍNICOS;748;642
+..AIDS;8;8
+..Cardiologia;9;9
+..Clínica geral;662;564
+..Hematologia;6;6
+..Nefro/urologia;10;10
+..Neonatologia;30;22
+..Oncologia;16;16
+..Pneumologia;4;4
+..Queimado Adulto;2;2
+..Queimado Pediátrico;1;1
+OBSTÉTRICOS;249;240
+..Obstetrícia Cirúrgica;71;66
+..Obstetrícia Clínica;178;174
+PEDIÁTRICOS;276;237
+..Pediatria Clínica;257;218
+..Pediatria Cirúrgica;19;19
+OUTRAS ESPECIALIDADES;40;40
+..Crônicos;16;16
+..Psiquiatria;19;19
+..Acolhimento Noturno;5;5
+Total;1663;1469

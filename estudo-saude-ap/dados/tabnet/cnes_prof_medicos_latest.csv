@@ -1,0 +1,62 @@
+Médicos;Sim;Não;Total
+ANESTESISTA;44;-;44
+Médico Anestesiologista;44;-;44
+CIRURGIÃO GERAL;51;-;51
+Médico Cirurgião Geral;51;-;51
+CLÍNICO GERAL;534;26;560
+Médico Clínico;513;26;539
+Médico Generalista Alopata;21;-;21
+GINECO OBSTETRA;65;6;71
+Médico Ginecologista Obstetra;65;6;71
+MÉDICO DE FAMÍLIA;205;-;205
+Médico da estratégia de Saúde da Família;203;-;203
+Médico de família e comunidade;2;-;2
+PEDIATRA;112;2;114
+Médico Pediatra;112;2;114
+PSIQUIATRA;13;-;13
+Médico psiquiatra;13;-;13
+RADIOLOGISTA;43;10;53
+Médico em radiologia e diagnóstico por imagem;43;10;53
+OUTRAS ESPECIALIDADES MÉDICAS;475;50;525
+Médico acupunturista;-;3;3
+Médico alergista e imunologista;2;3;5
+Médico anatomopatologista;4;-;4
+Médico angiologista;4;1;5
+Médico Cardiologista Intervencionista;2;-;2
+Médico cancerologista cirúrgico;1;-;1
+Médico cardiologista;41;4;45
+Médico cirurgião cardiovascular;3;-;3
+Médico cirurgião de cabeça e pescoço;1;-;1
+Médico cirurgião do aparelho digestivo;2;-;2
+Médico cirurgião pediátrico;3;-;3
+Médico cirurgião plástico;6;-;6
+Médico cirurgião torácico;2;-;2
+Médico coloproctologista;-;1;1
+Médico dermatologista;13;1;14
+Médico do trabalho;3;5;8
+Médico em cirurgia vascular;22;-;22
+Médico em endoscopia;7;-;7
+Médico em medicina intensiva;6;-;6
+Médico em medicina nuclear;2;-;2
+Médico endocrinologista e metabologista;9;1;10
+Médico fisiatra;-;1;1
+Médico gastroenterologista;10;3;13
+Médico geriatra;1;1;2
+Médico hematologista;6;2;8
+Médico infectologista;9;-;9
+Médico mastologista;1;2;3
+Médico nefrologista;17;-;17
+Médico neurocirurgião;5;-;5
+Médico neurologista;18;2;20
+Médico nutrologista;1;-;1
+Médico oftalmologista;99;10;109
+Médico oncologista clínico;5;3;8
+Médico ortopedista e traumatologista;65;1;66
+Médico otorrinolaringologista;14;1;15
+Médico patologista;2;-;2
+Médico pneumologista;4;-;4
+Médico radioterapeuta;3;1;4
+Médico residente;69;-;69
+Médico reumatologista;1;4;5
+Médico urologista;12;-;12
+Total;1542;94;1636

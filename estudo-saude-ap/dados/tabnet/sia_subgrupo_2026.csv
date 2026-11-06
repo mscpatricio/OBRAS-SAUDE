@@ -1,0 +1,50 @@
+Subgrupo proced.;Qtd.aprovada;Valor aprovado
+0101 Acoes coletivas/individuais em saude;108300;84077,16
+0102 Vigilancia em saude;14522;-
+0201 Coleta de material;117740;72958,54
+0202 Diagnostico em laboratorio clinico;3165505;11535567,95
+0203 Diagnostico por anatomia patologica e citopatologia;17029;705438,60
+0204 Diagnostico por radiologia;382471;2974188,15
+0205 Diagnostico por ultrasonografia;44115;1663438,12
+0206 Diagnostico por tomografia;55210;7776350,75
+0207 Diagnostico por ressonancia magnetica;9480;2516878,75
+0208 Diagnostico por medicina nuclear in vivo;296;59460,23
+0209 Diagnostico por endoscopia;4262;219842,30
+0210 Diagnostico por radiologia intervencionista;92;16504,96
+0211 Metodos diagnosticos em especialidades;367203;5314432,82
+0212 Diagnostico e procedimentos especiais em hemoterapia;67611;1617307,77
+0213 Diagnostico em vigilancia epidemiologica e ambiental;5703;-
+0214 Diagnostico por teste rapido;118348;15254,00
+0301 Consultas / Atendimentos / Acompanhamentos;5055809;18880771,82
+0302 Fisioterapia;61061;304478,23
+0303 Tratamentos clinicos (outras especialidades);7289;466136,19
+0304 Tratamento em oncologia;4789;5551841,62
+0305 Tratamento em nefrologia;43380;11292764,39
+0306 Hemoterapia;25583;381045,80
+0307 Tratamentos odontologicos;37589;27583,86
+0309 Terapias especializadas;79482;18627172,43
+0310 Parto e nascimento;6;-
+0401 Pequenas cirurgias e cirurgias de pele, tecido subcutaneo e mucosa;125283;3856658,85
+0403 Cirurgia do sistema nervoso central e periferico;86;1621,10
+0404 Cirurgia das vias aereas superiores, da face, da cabeca e do pescoco;89;1781,95
+0405 Cirurgia do aparelho da visao;9295;6589889,63
+0406 Cirurgia do aparelho circulatorio;86;1776,47
+0407 Cirurgia do aparelho digestivo, orgaos anexos e parede abdominal;13;192,01
+0408 Cirurgia do sistema osteomuscular;30;868,84
+0409 Cirurgia do aparelho geniturinario;170;14163,97
+0410 Cirurgia de mama;4;82,96
+0412 Cirurgia toracica;4;219,88
+0414 Bucomaxilofacial;4749;65444,07
+0415 Outras cirurgias;765;22842,90
+0417 Anestesiologia;2791;43152,29
+0418 Cirurgia em nefrologia;464;168331,72
+0501 Coleta e exames para fins de doacao de orgaos, tecidos e celulas e de transplante;558;15345,00
+0604 Componente Especializado da Assitencia Farmaceutica;893470;1736647,28
+0701 Orteses, proteses e materiais especiais nao relacionados ao ato cirurgico;12443;947980,66
+0702 Orteses, proteses e materiais especiais relacionados ao ato cirurgico;568;96394,80
+0803 Autorizacao / Regulacao;89656;7409233,65
+0901 Atenção em Oncologia;1045;308992,11
+0902 Atenção em Cardiologia;182;37100,00
+0903 Atenção em Ortopedia;227;60570,00
+0905 Atenção em Oftalmologia;25000;4029510,00
+Total;10959853;115512294,58

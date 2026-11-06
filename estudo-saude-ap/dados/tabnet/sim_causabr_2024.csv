@@ -1,0 +1,120 @@
+Causa - CID-BR-10;Óbitos p/Residênc
+001-031 ALGUMAS DOENÇAS INFECCIOSAS E PARASITÁRIAS;226
+. 001 Doenças infecciosas intestinais;9
+... 003 Diarréia e gastroenterite orig infec pres;6
+... 004 Outras doenças infecciosas intestinais;3
+. 005-006 Tuberculose;20
+... 005 Tuberculose respiratória;17
+... 006 Outras tuberculoses;3
+. 007-015 Outras doenças bacterianas;86
+... 014 Septicemia;78
+... 015 Infecções com transmissão predom sexual;2
+. 016-023 Doenças virais;87
+... 018 Dengue;11
+... 020 Out febres p/arbovírus e febr hemor virais;20
+... 022 Hepatite viral;6
+... 023 Doen p/vírus da imunodefic humana (HIV);48
+. 024-027 Doenças transmitidas por protozoários;11
+... 024 Malária;4
+... 026 Doença de Chagas;6
+... 027 Toxoplasmose;1
+. 031 Restante algumas doenç infec e parasitárias;13
+032-052 NEOPLASIAS;594
+. 032 Neopl malig do lábio, cav oral e faringe;21
+. 033 Neoplasia maligna do esôfago;21
+. 034 Neoplasia maligna do estômago;60
+. 035 Neoplasia maligna do cólon,reto e ânus;25
+. 036 Neopl malig do fígado e vias bil intrahepát;30
+. 037 Neoplasia maligna do pâncreas;30
+. 038 Neoplasia maligna da laringe;11
+. 039 Neopl malig da traquéia,brônquios e pulmões;61
+. 040 Neoplasia maligna da pele;4
+. 041 Neoplasia maligna da mama;30
+. 042 Neoplasia maligna do colo do útero;31
+. 043 Neopl malig de corpo e partes n/esp útero;18
+. 044 Neoplasia maligna do ovário;5
+. 045 Neoplasia maligna da próstata;39
+. 046 Neoplasia maligna da bexiga;7
+. 047 Neopl malig mening,encéf e out partes SNC;29
+. 048 Linfoma não-Hodgkin;13
+. 049 Mieloma mult e neopl malig de plasmócitos;10
+. 050 Leucemia;28
+. 051 Neoplasias in situ, benig, comport incert;11
+. 052 Restante de neoplasias malignas;110
+053-054 D SANGUE E ORG HEMAT E ALGUNS TRANS IMUNIT;18
+. 053 Anemias;6
+. 054 Rest d sangue, org hemat e alg transt imunit;12
+055-057 D ENDÓCRINAS, NUTRICIONAIS E METABÓLICAS;220
+. 055 Diabetes mellitus;177
+. 056 Desnutrição;13
+. 057 Rest doenças endócr, nutricion e metabólicas;30
+058-059 TRANSTORNOS MENTAIS E COMPORTAMENTAIS;22
+. 058 Transt ment e comport uso subst psicoativas;15
+... 058.1 Trans ment e comport devid uso álcool;9
+. 059 Rest transtornos mentais e comportamentais;7
+060-063 DOENÇAS DO SISTEMA NERVOSO;64
+. 060 Meningite;6
+. 061 Doença de Alzheimer;19
+. 062 Epilepsia;4
+. 063 Restante das doenças do sistema nervoso;35
+066-072 DOENÇAS DO APARELHO CIRCULATÓRIO;944
+. 066 Febre reumát aguda e doen reum crôn coração;6
+. 067 Doenças hipertensivas;107
+. 068 Doenças isquêmicas do coração;321
+... 068.1 Infarto agudo do miocárdio;276
+. 069 Outras doenças cardíacas;193
+. 070 Doenças cerebrovasculares;281
+. 072 Rest doenças do aparelho circulatório;36
+073-077 DOENÇAS DO APARELHO RESPIRATÓRIO;468
+. 073 Influenza (gripe);2
+. 074 Pneumonia;266
+. 075 Out infec agudas das vias aéreas inferiores;1
+... 075.1 Bronquiolite;1
+. 076 Doenças crônicas das vias aéreas inferiores;101
+... 076.1 Asma;1
+. 077 Restante  doenças do aparelho respiratório;98
+078-082 DOENÇAS DO APARELHO DIGESTIVO;141
+. 078 Úlcera gástrica, duodenal e péptica;2
+. 079 Peritonite;4
+. 080 Doenças do fígado;58
+... 080.1 Doença alcoólica do fígado;17
+... 080.2 Fibrose e cirrose do fígado;29
+... 080.3 Outras doenças do fígado;12
+. 081 Colecistite;2
+. 082 Rest doenças do aparelho digestivo;75
+083 DOENÇAS DA PELE E TECIDO SUBCUTÂNEO;17
+084 DOENÇAS SIST OSTEOMUSC E TECIDO CONJUNTIVO;21
+085-087 DOENÇAS DO APARELHO GENITURINÁRIO;129
+. 085 D glomerulares e d renais túbulo-interstic;21
+. 086 Insuficiência renal;73
+. 087 Rest doenças do aparelho geniturinário;35
+088-092 GRAVIDEZ, PARTO E PUERPÉRIO;11
+. 088 Gravidez que termina em aborto;1
+. 089 Outras causas obstétricas diretas;5
+. 090 Causas obstétricas indiretas;3
+. 092 Causas maternas tardias e sequelas;2
+093-097 ALG AFECÇÕES ORIGIN NO PERÍODO PERINATAL;109
+. 093 Feto e recemnasc afet fat mat e compl grav;51
+. 094 Transt relac duração gestação e cresc fetal;11
+. 096 Trans resp e cardiovas espec per perinatal;26
+. 097 Rest afec originadas no período perinatal;21
+098-100 MALF CONGÊN, DEFORM E ANOMAL CROMOSSÔMICAS;60
+. 098 Malformações congênitas do sistema nervoso;10
+. 099 Malf congênitas do aparelho circulatório;27
+. 100 Rest de malf cong, deform e anomal Cromoss;23
+101-103 SINT, SIN E ACH ANORM CLÍN E LAB, NCOP;158
+. 101 Senilidade;7
+. 102 Morte sem assistência médica;6
+. 103 Rest sint, sin e ach anorm clín e laborat;145
+104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE;701
+. 104 Acidentes de transporte;99
+. 105 Quedas;47
+. 106 Afogamento e submersões acidentais;49
+. 107 Exposição à fumaça, ao fogo e às chamas;3
+. 108 Envenen, intoxic por ou expos a subst nociv;9
+. 109 Lesões autoprovocadas voluntariamente;65
+. 110 Agressões;257
+. 111 Eventos(fatos) cuja intenção é indeterminada;26
+. 112 Intervenções legais e operações de guerra;106
+. 113 Todas as outras causas externas;40
+Total;3903

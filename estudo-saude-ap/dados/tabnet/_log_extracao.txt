@@ -1,0 +1,141 @@
+sih_ano: 14 rows, 140 files
+sih_anomes: 63 rows, 56 files
+sih_estab_ano_aih: 28 rows, 92 files
+sih_estab_ano_valor: 28 rows, 92 files
+sih_estab_2025: 24 rows, 12 files
+sih_estab_2026: 23 rows, 8 files
+sih_mun_ano_aih: 14 rows, 92 files
+sih_mun_ano_valor: 14 rows, 92 files
+sih_carater_ano: 6 rows, 92 files
+sih_gestao_ano_aih: 4 rows, 92 files
+sih_gestao_ano_valor: 4 rows, 92 files
+sih_esfera_ano_aih: 9 rows, 92 files
+sih_esfera_ano_valor: 9 rows, 92 files
+sih_complex_ano_aih: 4 rows, 92 files
+sih_complex_ano_valor: 4 rows, 92 files
+sih_grupo_ano_aih: 6 rows, 92 files
+sih_grupo_ano_valor: 6 rows, 92 files
+sih_subgrupo_2025: 27 rows, 12 files
+sih_financ_ano_valor: 4 rows, 92 files
+sih_proc_2025: 713 rows, 12 files
+sih_estab_carater_2025: 24 rows, 12 files
+sih_estab_complex_2025: 24 rows, 12 files
+sihres_mun_ano_aih: 18 rows, 92 files
+nih_cap_ano: 22 rows, 92 files
+nih_cap_2025: 22 rows, 12 files
+nih_lista_2025: 298 rows, 12 files
+nih_fxet_ano: 14 rows, 92 files
+nih_sexo_ano: 4 rows, 92 files
+nih_estab_cap_2025: 24 rows, 12 files
+nih_cap_fxet_2025: 22 rows, 12 files
+sia_ano: 14 rows, 140 files
+sia_anomes: 63 rows, 56 files
+sia_grupo_ano_qtd: 11 rows, 92 files
+sia_grupo_ano_valor: 11 rows, 92 files
+sia_subgrupo_2025: 47 rows, 12 files
+sia_subgrupo_ano_valor: 48 rows, 92 files
+sia_complex_ano_qtd: 6 rows, 92 files
+sia_complex_ano_valor: 5 rows, 92 files
+sia_gestao_ano_qtd: 4 rows, 92 files
+sia_gestao_ano_valor: 4 rows, 92 files
+sia_esfadm_ano_qtd: 3 rows, 92 files
+sia_esfadm_ano_valor: 3 rows, 92 files
+sia_prestador_ano_valor: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3:  Produ&ccedil;&atilde;o Ambulatorial do SUS - Amap&aacute; - por local'
+sia_mun_ano_qtd: 18 rows, 92 files
+sia_mun_ano_valor: 16 rows, 92 files
+sia_financ_ano_valor: 5 rows, 92 files
+sia_forma_2025: 187 rows, 12 files
+sia_proc_2025: 1206 rows, 12 files
+sia_cbo_2025: 99 rows, 12 files
+sia_carater_ano_qtd: 9 rows, 92 files
+sia_doc_ano_valor: 7 rows, 92 files
+cnes_leitos_esp_ano: 7 rows, 12 files
+cnes_leitos_esp_ano_sus: 7 rows, 12 files
+cnes_leitos_mun_latest: 15 rows, 1 files
+cnes_leitos_esfera_latest: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: CNES - Recursos F&iacute;sicos - Hospitalar - Leitos de interna&ccedil'
+cnes_leitos_tipoestab_latest: 6 rows, 1 files
+cnes_leitos_natureza_esp_latest: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: CNES - Recursos F&iacute;sicos - Hospitalar - Leitos de interna&ccedil'
+cnes_leitos_espdet_latest: 30 rows, 1 files
+cnes_leitos_gestao_latest: 3 rows, 1 files
+cnes_uti_tipo_ano: 16 rows, 12 files
+cnes_uti_tipo_ano_sus: 11 rows, 12 files
+cnes_uti_mun_latest: 6 rows, 1 files
+cnes_uti_esfera_latest: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: CNES - Recursos F&iacute;sicos - Hospitalar - Leitos Complementares - '
+cnes_estab_tipo_esfera_latest: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: CNES - Estabelecimentos por Tipo - Amap&aacute;</TITLE>\r\n<LINK REL="st'
+cnes_estab_mun_latest: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: CNES - Estabelecimentos por Tipo - Amap&aacute;</TITLE>\r\n<LINK REL="st'
+cnes_estab_tipo_ano: 35 rows, 12 files
+cnes_estab_gestao_latest: 32 rows, 1 files
+cnes_equip_sel_latest: 8 rows, 1 files
+cnes_equip_sel_esfera_latest: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: CNES - Recursos F&iacute;sicos - Equipamentos - Amap&aacute;</TITLE>\r\n'
+cnes_equip_sel_mun_latest: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: CNES - Recursos F&iacute;sicos - Equipamentos - Amap&aacute;</TITLE>\r\n'
+cnes_equip_grupo_ano: 12 rows, 12 files
+cnes_prof_sup_latest: 107 rows, 1 files
+cnes_prof_medicos_latest: 62 rows, 1 files
+cnes_prof_medicos_mun_latest: EMPTY "Exception EAccessViolation in module tabcgi.exe at 00001C22.\nAccess violation at address 00011C22 in module 'tabcgi.exe'. Write of address 01010101.\r\n"
+cnes_prof_geral_ano: 294 rows, 12 files
+cnes_prof_sup_esfera_latest: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: CNES - Recursos Humanos - Profissionais - Indiv&iacute;duos - segundo '
+cnes_prof_tec_latest: 37 rows, 1 files
+sim_cap_ano: 20 rows, 12 files
+sim_fxet_ano: 15 rows, 12 files
+sim_mun_ano: 18 rows, 12 files
+sim_causabr_2024: 120 rows, 1 files
+sim_causabr_2023: 117 rows, 1 files
+sim_local_ano: 8 rows, 12 files
+sim_maldef_ano: 6 rows, 12 files
+siminf_fxet_ano: 5 rows, 12 files
+siminf_mun_ano: 18 rows, 12 files
+siminf_evit_ano: 69 rows, 12 files
+sinasc_ano: 14 rows, 12 files
+sinasc_mun_ano: 19 rows, 12 files
+sinasc_parto_ano: 5 rows, 12 files
+sinasc_prenatal_ano: 7 rows, 12 files
+sinasc_peso_ano: 10 rows, 12 files
+sinasc_idademae_ano: 13 rows, 12 files
+sinasc_gest_ano: 9 rows, 12 files
+sinasc_local_ano: 8 rows, 12 files
+sinasc_robson_2024: 13 rows, 1 files
+pop_mun_ano: 18 rows, 9 files
+bench_sih_uf_ano_aih: 29 rows, 92 files
+bench_sih_uf_ano_valor: 29 rows, 92 files
+bench_sih_uf_2025: 29 rows, 12 files
+bench_sihres_uf_ano_aih: 29 rows, 92 files
+bench_sihres_uf_ano_valor: 29 rows, 92 files
+cnes_leitos_esfjur_latest: 8 rows, 1 files
+cnes_leitos_esp_esfjur_latest: 7 rows, 1 files
+cnes_leitos_mun_esp_latest: 15 rows, 1 files
+cnes_uti_esfjur_latest: 10 rows, 1 files
+cnes_estab_tipo_esfjur_latest: 32 rows, 1 files
+cnes_estab_mun_esfjur_latest: 18 rows, 1 files
+cnes_estab_mun_tipo_latest: 18 rows, 1 files
+bench_sia_uf_ano_qtd: 29 rows, 79 files
+cnes_equip_sel_esfjur_latest: 8 rows, 1 files
+cnes_equip_sel_mun_latest: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: CNES - Recursos F&iacute;sicos - Equipamentos - Amap&aacute;</TITLE>\r\n'
+cnes_prof_sup_esfjur_latest: 107 rows, 1 files
+cnes_prof_medicos_mun_latest: 18 rows, 1 files
+cnes_prof_medicos_ano: 64 rows, 12 files
+cnes_prof_sup_ano: 124 rows, 12 files
+sia_cir_mun_2025: 15 rows, 12 files
+sih_cir_mun_2025: 12 rows, 12 files
+sihres_cir_mun_2025: 15 rows, 12 files
+bench_sia_uf_ano_valor: 29 rows, 79 files
+bench_cnes_leitos_uf_latest: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: CNES - Recursos F&iacute;sicos - Hospitalar - Leitos de interna&ccedil'
+bench_cnes_uti_uf_latest: 29 rows, 1 files
+bench_cnes_medicos_uf_latest: EMPTY "Exception EAccessViolation in module tabcgi.exe at 00001C22.\nAccess violation at address 00011C22 in module 'tabcgi.exe'. Write of address 01010101.\r\n"
+bench_siminf_uf_ano: 29 rows, 12 files
+bench_sinasc_uf_ano: 29 rows, 12 files
+bench_sim_uf_ano: 29 rows, 12 files
+bench_sim_uf_maldef: 29 rows, 1 files
+sih_regime_ano_aih: 3 rows, 92 files
+sih_natureza_ano_valor: 3 rows, 92 files
+sih_estab_ano_obitos: 25 rows, 92 files
+sih_mun_estab_2025: 24 rows, 12 files
+nih_cap_mun_2025: 14 rows, 12 files
+nih_cap_ano_obitos: 21 rows, 92 files
+nih_cap_2026: 22 rows, 8 files
+sia_subgrupo_2026: 50 rows, 8 files
+sia_grupo_mun_2025_valor: 16 rows, 12 files
+sia_cir_ano_valor: 5 rows, 92 files
+sia_esfadm_subgrupo_2025_valor: 44 rows, 12 files
+bench_cnes_leitos_uf_latest: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: CNES - Recursos F&iacute;sicos - Hospitalar - Leitos de interna&ccedil'
+bench_cnes_leitos_uf_set26: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: CNES - Recursos F&iacute;sicos - Hospitalar - Leitos de interna&ccedil'
+bench_cnes_medicos_uf_latest: 75 rows, 1 files

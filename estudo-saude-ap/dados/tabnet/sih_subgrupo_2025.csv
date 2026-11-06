@@ -1,0 +1,27 @@
+Subgrupo proced.;AIH aprovadas;Valor total;Dias permanência;Média permanência;Óbitos;Taxa mortalidade
+0201 Coleta de material;8;2200,41;75;9,4;-;-
+0209 Diagnostico por endoscopia;4;1434,76;4;1,0;-;-
+0301 Consultas / Atendimentos / Acompanhamentos;133;7975,71;359;2,7;1;0,75
+0303 Tratamentos clinicos (outras especialidades);20943;19868451,74;161969;7,7;1092;5,21
+0304 Tratamento em oncologia;493;298404,28;6242;12,7;119;24,14
+0305 Tratamento em nefrologia;1164;780053,45;9226;7,9;57;4,90
+0308 Tratamento de lesoes, envenenamentos e outros, decorrentes de causas externas;1371;683506,71;8735;6,4;28;2,04
+0310 Parto e nascimento;6835;3652142,11;15362;2,2;-;-
+0401 Pequenas cirurgias e cirurgias de pele, tecido subcutaneo e mucosa;410;120366,32;679;1,7;-;-
+0402 Cirurgia de glandulas endocrinas;95;63190,00;206;2,2;-;-
+0403 Cirurgia do sistema nervoso central e periferico;156;297596,62;1374;8,8;26;16,67
+0404 Cirurgia das vias aereas superiores, da face, da cabeca e do pescoco;179;262796,40;1022;5,7;10;5,59
+0405 Cirurgia do aparelho da visao;96;399215,85;10;0,1;-;-
+0406 Cirurgia do aparelho circulatorio;8301;13631048,98;2636;0,3;26;0,31
+0407 Cirurgia do aparelho digestivo, orgaos anexos e parede abdominal;4175;4525924,67;13264;3,2;53;1,27
+0408 Cirurgia do sistema osteomuscular;3031;2242992,56;13201;4,4;11;0,36
+0409 Cirurgia do aparelho geniturinario;3314;2208136,10;8686;2,6;3;0,09
+0410 Cirurgia de mama;87;37181,46;276;3,2;-;-
+0411 Cirurgia obstetrica;6157;4053119,50;20149;3,3;4;0,06
+0412 Cirurgia toracica;165;259821,83;1215;7,4;2;1,21
+0413 Cirurgia reparadora;89;171154,31;1004;11,3;1;1,12
+0414 Bucomaxilofacial;5;1821,54;4;0,8;-;-
+0415 Outras cirurgias;584;708430,38;3760;6,4;7;1,20
+0416 Cirurgia em oncologia;77;230923,93;450;5,8;3;3,90
+0506 Acompanhamento e intercorrencias no pre e pos-transplante;1;135,00;-;-;-;-
+Total;57873;54508024,62;269908;4,7;1443;2,49

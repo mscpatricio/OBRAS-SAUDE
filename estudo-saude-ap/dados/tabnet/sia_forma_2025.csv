@@ -1,0 +1,187 @@
+Forma organização;Qtd.aprovada;Valor aprovado
+010101 Educacao em saude;38617;101865,60
+010102 Saude bucal;13582;-
+010103 Visita domiciliar;134;-
+010104 Alimentacao e nutricao;49970;3357,32
+010105 Praticas Integrativas/Complementares;16262;-
+010201 Vigilancia sanitaria;42608;-
+010202 Vigilancia em Saude do Trabalhador;2369;-
+020101 Coleta de material por meio de puncao/biopsia;1895;81750,21
+020102 Outras formas de coleta de material;296842;-
+020201 Exames bioquimicos;2487944;6800667,10
+020202 Exames hematologicos e hemostasia;543021;2146353,25
+020203 Exames sorologicos e imunologicos;411309;3706224,38
+020204 Exames coprologicos;51571;86390,75
+020205 Exames de uroanalise;118919;441279,07
+020206 Exames hormonais;182367;1805643,99
+020207 Exames toxicologicos ou de monitorizacao terapeutica;678;13454,69
+020208 Exames microbiologicos;52068;339542,97
+020209 Exames em outros liquidos biologicos;953;2227,47
+020210 Exames de genetica;101;16280,00
+020211 Exames para triagem neonatal;44848;411541,58
+020212 Exames imunohematologicos;34420;80185,82
+020301 Exames citopatologicos;12365;179181,45
+020302 Exames anatomopatologicos;19289;883923,16
+020401 Exames radiologicos da cabeca e pescoco;19133;71192,52
+020402 Exames radiologicos da coluna vertebral;18049;187869,82
+020403 Exames radiologicos do torax e mediastino;121291;1466869,63
+020404 Exames radiologicos da cintura escapular e dos membros superiores;44934;307679,98
+020405 Exames radiologicos do abdomen e pelve;6534;60686,44
+020406 Exames radiologicos da cintura pelvica e dos membros inferiores;54697;500030,85
+020501 Ultra-sonografias do sistema circulatorio (qualquer regiao anatomica);17818;1043973,90
+020502 Ultra-sonografias dos demais sistemas;54804;1565107,22
+020601 Tomografia da cabeca, pescoco e coluna vertebral;38831;3705880,38
+020602 Tomografia do torax e membros superiores;14587;1889847,09
+020603 Tomografia do abdomen, pelve e membros inferiores;32911;4417810,49
+020701 RM da cabeca, pescoco e coluna vertebral;5685;1527843,75
+020702 RM do torax e membros superiores;779;209541,25
+020703 RM do abdomen, pelve e membros inferiores;5298;1423837,50
+020803 Aparelho endocrino;1;77,28
+020804 Aparelho geniturinario;22;3280,97
+020805 Aparelho esqueletico;46;8785,54
+020901 Aparelho digestivo;2352;167163,36
+020902 Aparelho urinario;3;54,00
+020904 Aparelho respiratorio;20;720,40
+021001 Exames radiologicos de vasos sanguineos e linfaticos;143;25760,17
+021102 Diagnostico em cardiologia;52047;1503435,85
+021103 Diagnostico cinetico funcional;3094;29917,42
+021104 Diagnostico em ginecologia-obstetricia;3850;10087,42
+021105 Diagnostico em neurologia;1541;29499,86
+021106 Diagnostico em oftalmologia;285347;4956994,89
+021107 Diagnostico em otorrinolaringologia/fonoaudiologia;9090;141313,15
+021108 Diagnostico em pneumologia;97;577,54
+021110 Diagnostico em psicologia-psiquiatria;1081;2961,94
+021201 Exames do doador/receptor;59846;1847837,36
+021202 Procedimentos especiais em hemoterapica;44496;493102,55
+021301 Exames relacionados a doencas e agravos de notificacao compulsoria;6544;-
+021401 Teste realizado fora da estrutura de laboratorio;418338;35972,00
+030101 Consultas medicas/outros profissionais  de nivel superior;1820192;12642077,60
+030102 Atendimento/Acompanhamento em saude do trabalhador;255;1851,30
+030103 Atendimento pre-hospitalar de urgencia;95647;162798,58
+030104 Outros atendimentos realizados por profissionais de niveis superior;41864;71112,09
+030105 Atencao domiciliar;417;1262,01
+030106 Consulta/Atendimento as urgencias (em geral);2479628;16627505,58
+030107 Atendimento/acompanhamento em reabilitacao fisica, mental, visual e multiplas deficiencias;30817;363738,60
+030108 Atendimento/Acompanhamento psicossocial;33509;78107,44
+030110 Atendimentos de enfermagem (em geral);4008268;1918627,83
+030201 Assistencia fisioterapeutica em alteracoes obstetricas, neonatais e uroginecologicas;348;2110,68
+030202 Assistencia fisioterapeutica em alteracoes oncologicas;3382;16959,86
+030203 Assistencia fisioterapeutica em oftalmologia;112;711,20
+030204 Assistencia fisioterapeutica cardiovasculares e pneumo-funcionais;7685;36334,15
+030205 Assistencia fisioterapeutica nas disfuncoes musculo esqueleticas (todas as origens);79478;390982,90
+030206 Assistencia fisioterapeutica nas alteracoes em neurologia;11896;64691,84
+030305 Tratamento de doencas do aparelho da visao;1084;600098,24
+030308 Tratamento de doencas da pele e do tecido  subcutaneo;238;352,24
+030309 Tratamento de doencas do sistema osteomuscular e do tecido conjuntivo;3615;145419,00
+030314 Tratamento de doencas do ouvido/apofise mastoide e vias aereas;7322;10543,68
+030401 Radioterapia;3;5187,00
+030402 Quimioterapia paliativa - adulto;2220;2055631,75
+030403 Quimioterapia para controle temporario de doenca - adulto;399;289417,45
+030404 Quimioterapia previa (neoadjuvante/citorredutora)- adulto;325;638964,00
+030405 Quimioterapia adjuvante (profilatica) - adulto;2254;1826969,50
+030406 Quimioterapia curativa - adulto;148;191065,32
+030501 Tratamento dialitico;54700;13371816,26
+030601 Procedimentos destinados a obtencao do sangue para fins de assistencia hemoterapica;33067;520918,00
+030602 Medicina transfusional;848;5130,72
+030701 Dentistica;11221;421,98
+030702 Endodontia;113734;20351,36
+030703 Periodontia clinica;48194;13894,20
+030704 Moldagem/Manutencao;8948;30467,29
+030903 Terapias do aparelho geniturinario;8;31,64
+030905 Praticas integrativas e complementares;28271;25957,55
+030907 Angiologia;84885;25531710,30
+031001 Parto e nascimento;11;-
+040101 Pequenas cirurgias;163231;4955318,22
+040102 Cirurgias de pele, tecido subcutaneo e mucosa;52;-
+040305 Tratamento neurocirurgico da dor funcional;162;3053,70
+040401 Cirurgia das vias aereas superiores e do pescoco;16;211,36
+040402 Cirurgia da face e do sistema estomatognatico;195;6090,22
+040501 Palpebras e vias lacrimais;725;70976,42
+040502 Musculos oculomotores;34;56499,84
+040503 Corpo vitreo, retina, coroide e esclera;203;24306,06
+040504 Cavidade orbitaria e globo ocular;119;59897,92
+040505 Conjuntiva, cornea, camara anterior, iris, corpo ciliar e cristalino;11297;4669389,31
+040602 Cirurgia vascular;99;2098,86
+040806 Gerais;1;28,42
+040901 Rim, ureter e bexiga;3;89,52
+040902 Uretra;1;34,10
+040904 Bolsa escrotal, testiculos e cordao espermatico;13;5705,31
+040905 Penis;1;219,12
+040906 Utero e anexos;206;9319,44
+040907 Vagina, vulva e perineo;3;40,05
+041401 Buco-maxilo-facial;25;757,45
+041402 Cirurgia oral;11722;159091,36
+041504 Procedimentos cirurgicos gerais;857;25560,16
+041701 Anestesias;5578;90188,46
+041801 Acessos para dialise;606;242053,59
+041802 Intervencoess cirurgicas em acessos para dialise;54;21600,00
+050101 Coleta e exames para identificacao de doador de celulas-tronco hematopoeticas (busca nacional);647;17792,50
+060401 Acido Aminosalicilico e Similares;33256;-
+060402 Agentes Quelantes de Ferro;1480;-
+060403 Agonistas da Dopamina/inibidor da prolactina;70928;-
+060404 Agonistas seletivos dos receptores beta 2 adrenergicos;154068;-
+060405 Alcaloides naturais do opio;2280;-
+060408 Aminoquinolinas;42840;-
+060410 Vasopressina e Analogos;161;-
+060411 Analogos do hormonio liberador de gonadotrofina;255;330384,06
+060413 Anticolinesterases;5624;-
+060418 Derivados da benzodiazepina;24892;-
+060419 Derivados de acidos graxos;9710;-
+060420 Derivados do adamantano;23280;9544,80
+060423 Diazepinas, oxazepinas e tiazepinas;123700;-
+060424 Enzimas;1608;-
+060425 Fatores de estimulacao de colonias;10926;2160514,74
+060426 Ferro trivalente, preparacoes parenterais;1999;10074,96
+060429 Somatostatina e Analogos;2;-
+060431 Imunoglobulinas, humana normal;1818;-
+060432 Imunossupressores seletivos;223430;-
+060433 Inibidores da agregacao plaquetaria, excl. heparina;300;-
+060434 Inibidores da calcineurina;97260;-
+060435 Inibidores da fosfodiesterase;1350;-
+060436 Inibidores da HMG-CoA redutase;360;-
+060437 Inibidores da monoamino oxidase tipo b;1770;-
+060438 Inibidores do fator de necrose tumoral alfa (TNF-a);9780;-
+060439 Interferonas;240;-
+060440 Medicamentos para tratamento da hipercalemia e hiperfosfatemia;95850;-
+060447 Outras preparacoes antianemicas;23694;-
+060448 Outros agentes citotoxicos;57754;69304,80
+060449 Outros agentes dopaminergicos;1660;-
+060450 Outros antiepilepticos;135786;-
+060451 Outros antipsicoticos;7107;1541,97
+060453 Outros imunossupressores;75896;-
+060454 Outros medicamentos do sistema nervoso;13598;-
+060455 Outros relaxantes musculares de acao periferica;208;-
+060459 Retinoides para tratamento da acne;22620;-
+060461 Somatropina e agonistas da somatropina;8059;-
+060462 Vitamina D e analogos, incluido combinacao dos dois;13842;-
+060463 Produtos diversos para o trato alimentar ou metabolismo;7862;31023,10
+060465 Analogos das Prostaglandinas;123;-
+060466 Inibidores da Anidrase Carbonica;26;-
+060467 Simpatomimeticos na Terapia de Glaucoma;1;-
+060468 Anticorpos Monoclonais;220;-
+060469 Inibidores de Interleucinas;5534;-
+060470 Outros Antipsoriaticos de Uso Topico;28;-
+060471 Corticoesteroides de Potencia Muito Alta (Grupo IV);52;-
+060474 Agentes Beta Bloqueadores;106;-
+060477 Outros Agentes Antiparatireoide;15084;-
+060478 Insulinas Analogas de Acao Rapida de Uso Injetavel;690;-
+060479 Outras Drogas para Desordem do Sistema Musculo Esqueletico;4;-
+060480 Agentes antitromboticos;3690;-
+060482 Inibidores do co-transportador 2 de sodio-glicose(SGLT2);7712;-
+060483 Agentes que atuam no sistema renina-angiotensina;11720;40551,20
+060487 Outros medicamentos afetando a estrutura e a mineralizacao ossea;16;-
+070101 OPM auxiliares da locomocao;941;605943,37
+070102 OPM ortopedicas;509;313480,17
+070103 OPM auditivas;312;213475,00
+070105 OPM em gastroenterologia;14150;216540,00
+070106 OPM em urologia;16679;289631,80
+070107 OPM em odontologia;1288;259082,56
+070109 Substituicao/Troca em orteses/proteses;16;5140,50
+070202 OPM em cirurgia buco-maxilo-facial;1;23,54
+070210 OPM em nefrologia;800;105725,33
+080301 Deslocamento/Ajuda de custo;109715;10038442,85
+090101 Ofertas de Cuidados Integrados em Oncologia;6;1628,00
+090201 Ofertas de Cuidados Integrados em Cardiologia;45;8160,00
+090301 Ofertas de Cuidados Integrados em Ortopedia;2;280,00
+090501 Ofertas de Cuidados Integrados em Oftalmologia;7441;1193640,00
+Total;16460448;148723254,61
