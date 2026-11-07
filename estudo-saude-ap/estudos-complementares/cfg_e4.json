@@ -1,0 +1,103 @@
+{
+ "titulo": "ONCOLOGIA, RASTREAMENTO E DOENÇAS CRÔNICAS NÃO TRANSMISSÍVEIS NO ESTADO DO AMAPÁ, 2022–2026",
+ "subtitulo": "Estudo complementar para a transição de governo 2026/2027 (SIM, SIA, SIH, CNES/DATASUS)",
+ "palavras_chave": "Oncologia; rastreamento do câncer; doenças crônicas não transmissíveis; nefrologia; mortalidade; Amapá.",
+ "siglas": [
+  [
+   "AIH",
+   "Autorização de Internação Hospitalar"
+  ],
+  [
+   "APAC",
+   "Autorização de Procedimentos de Alta Complexidade"
+  ],
+  [
+   "APS",
+   "Atenção Primária à Saúde"
+  ],
+  [
+   "CACON",
+   "Centro de Assistência de Alta Complexidade em Oncologia"
+  ],
+  [
+   "CID-10",
+   "Classificação Estatística Internacional de Doenças, 10ª revisão"
+  ],
+  [
+   "CNES",
+   "Cadastro Nacional de Estabelecimentos de Saúde"
+  ],
+  [
+   "DATASUS",
+   "Departamento de Informática do SUS"
+  ],
+  [
+   "DCNT",
+   "Doenças Crônicas Não Transmissíveis"
+  ],
+  [
+   "DRC",
+   "Doença Renal Crônica"
+  ],
+  [
+   "IBGE",
+   "Instituto Brasileiro de Geografia e Estatística"
+  ],
+  [
+   "OCI",
+   "Oferta de Cuidados Integrados"
+  ],
+  [
+   "SESA/AP",
+   "Secretaria de Estado da Saúde do Amapá"
+  ],
+  [
+   "SIA/SUS",
+   "Sistema de Informações Ambulatoriais do SUS"
+  ],
+  [
+   "SIH/SUS",
+   "Sistema de Informações Hospitalares do SUS"
+  ],
+  [
+   "SIM",
+   "Sistema de Informações sobre Mortalidade"
+  ],
+  [
+   "SINAN",
+   "Sistema de Informação de Agravos de Notificação"
+  ],
+  [
+   "SINASC",
+   "Sistema de Informações sobre Nascidos Vivos"
+  ],
+  [
+   "SUS",
+   "Sistema Único de Saúde"
+  ],
+  [
+   "TRS",
+   "Terapia Renal Substitutiva"
+  ],
+  [
+   "UF",
+   "Unidade da Federação"
+  ],
+  [
+   "UNACON",
+   "Unidade de Assistência de Alta Complexidade em Oncologia"
+  ]
+ ],
+ "referencias": [
+  "ALMEIDA, Patrício. **Saúde no Estado do Amapá**: levantamento da produção hospitalar e ambulatorial e estudo analítico para a transição de governo 2026/2027. Macapá, 2026.",
+  "BRASIL. Instituto Brasileiro de Geografia e Estatística. **Censo Demográfico 2022**: população residente por sexo e idade (tabela 9514) e estimativas populacionais (tabela 6579). Rio de Janeiro: IBGE, 2026. Disponível em: https://apisidra.ibge.gov.br. Acesso em: 7 nov. 2026.",
+  "BRASIL. Ministério da Saúde. DATASUS. **Cadastro Nacional de Estabelecimentos de Saúde (CNES)**: habilitações em oncologia e nefrologia – Amapá. Brasília, DF: Ministério da Saúde, 2026. Disponível em: http://tabnet.datasus.gov.br/cgi/deftohtm.exe?cnes/cnv/habap.def. Acesso em: 7 nov. 2026.",
+  "BRASIL. Ministério da Saúde. DATASUS. **Sistema de Informações Ambulatoriais do SUS (SIA/SUS)**: produção ambulatorial por faixa etária e sexo: oncologia, nefrologia, mamografia e citopatologia – Amapá. Brasília, DF: Ministério da Saúde, 2026. Disponível em: http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sia/cnv/qbap.def. Acesso em: 7 nov. 2026.",
+  "BRASIL. Ministério da Saúde. DATASUS. **Sistema de Informações Hospitalares do SUS (SIH/SUS)**: morbidade hospitalar por neoplasias e doenças crônicas – Amapá. Brasília, DF: Ministério da Saúde, 2026. Disponível em: http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sih/cnv/niap.def. Acesso em: 7 nov. 2026.",
+  "BRASIL. Ministério da Saúde. DATASUS. **Sistema de Informações sobre Mortalidade (SIM)**: óbitos por neoplasias e doenças crônicas segundo grupos e categorias da CID-10 – Amapá e Brasil por UF. Brasília, DF: Ministério da Saúde, 2026. Disponível em: http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sim/cnv/obt10ap.def. Acesso em: 7 nov. 2026.",
+  "BRASIL. Ministério da Saúde. Portaria GM/MS nº 874, de 16 de maio de 2013. Institui a Política Nacional para a Prevenção e Controle do Câncer. **Diário Oficial da União**, Brasília, DF, 17 maio 2013.",
+  "INSTITUTO NACIONAL DE CÂNCER. **Estimativa 2023**: incidência de câncer no Brasil. Rio de Janeiro: INCA, 2022."
+ ],
+ "resumo": "Este estudo complementa o levantamento geral da saúde no Amapá para a transição de governo 2026/2027 com o diagnóstico da oncologia, do rastreamento do câncer e das doenças crônicas não transmissíveis na série 2022–2026, a partir do SIM, SIA, SIH e CNES (DATASUS) e do IBGE. As doenças do aparelho circulatório (944 óbitos em 2024) e as neoplasias (594) são a primeira e a terceira causas de morte, com 44% e 56% de mortes prematuras (30 a 69 anos). Os cânceres de estômago, pulmão, próstata, colo do útero e mama lideram a mortalidade, e o câncer cervical mata tanto quanto o de mama, sinal de rastreamento insuficiente: as mamografias de rastreamento em mulheres de 50 a 69 anos caíram de 5.424 para 3.929 (razão 0,15) e os citopatológicos em mulheres de 25 a 64 anos de 18.393 para 10.702 (razão 0,18) entre 2022 e 2025. A produção oncológica dobrou (3.155 para 6.495 procedimentos; R$ 7,8 milhões em 2025) e a radioterapia foi retomada com o Centro de Radioterapia do Amapá, mas a cirurgia oncológica registrada é residual e a assistência depende de um único UNACON, do Hospital São Camilo e do HU-UNIFAP. As internações por acidente vascular cerebral mais que dobraram (464 para 1.147), as por infarto cresceram 84% e cerca de 357 pacientes estão em hemodiálise em três serviços de Macapá. O estudo propõe pacto de rastreamento, regulação única de oncologia com monitoramento do prazo legal, linhas de cuidado do AVC e do infarto, expansão da diálise peritoneal e auditoria de codificações anômalas.",
+ "natureza": "Estudo complementar elaborado como subsídio técnico à equipe de transição de governo do Estado do Amapá, área da saúde (Secretaria de Estado da Saúde – SESA/AP), com base em dados públicos do SIM, SIA, SIH, CNES e IBGE extraídos em 7 de novembro de 2026."
+}

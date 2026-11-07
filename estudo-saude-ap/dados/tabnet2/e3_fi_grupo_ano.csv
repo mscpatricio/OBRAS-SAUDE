@@ -1,0 +1,38 @@
+Grupo de Causas;2019;2020;2021;2022;2023;2024;2025;2026;Total
+V01-V99 Acidentes de transporte;766;659;620;652;742;1283;1030;842;6594
+V01-V09 Pedestre traumatizado acid transporte;168;128;9;35;39;32;35;35;481
+V10-V19 Ciclista traumatizado acid transporte;97;50;17;28;40;104;83;71;490
+V20-V29 Motociclista traumatizado acid transp;258;281;266;349;397;918;744;546;3759
+V30-V39 Ocup triciclo motor traumatiz acid transp;-;-;1;-;1;-;2;-;4
+V40-V49 Ocup automóvel traumatiz acid transporte;14;10;26;22;37;35;37;23;204
+V60-V69 Ocup veíc transp pesado traumat acid trans;2;-;-;-;-;-;-;-;2
+V70-V79 Ocup ônibus traumatizado acid transporte;2;-;-;-;-;-;-;-;2
+V80-V89 Outros acid transporte terrestre;33;79;174;106;80;124;87;113;796
+V90-V94 Acidentes de transporte por água;6;6;6;5;16;7;13;18;77
+V98-V99 Outros acid transporte e os não especific;186;105;121;107;132;63;29;36;779
+W00-X59 Outras causas externas de lesões acident;1201;945;1043;1349;2047;2360;2817;2010;13772
+W00-W19 Quedas;611;550;722;781;1169;1651;1756;1140;8380
+W20-W49 Exposição a forças mecânicas inanimadas;106;63;43;63;94;117;147;91;724
+W50-W64 Exposição a forças mecânicas animadas;11;5;6;10;13;53;82;17;197
+W65-W74 Afogamento e submersão acidentais;1;1;1;3;1;1;1;-;9
+W75-W84 Outros riscos acidentais à respiração;1;-;1;1;3;1;2;5;14
+W85-W99 Expos cor.elétr,rad.,temper pressão extrem;4;6;3;5;284;190;418;409;1319
+X00-X09 Exposição à fumaça, ao fogo e às chamas;27;10;2;10;18;15;13;16;111
+X10-X19 Contato fonte de calor e subst quentes;29;35;31;47;32;27;45;23;269
+X20-X29 Contato animais e plantas venenosos;294;229;205;255;274;240;269;194;1960
+X30-X39 Exposição às forças da natureza;1;-;2;-;-;-;2;-;5
+X40-X49 Enven/intox acid exposição a subst nocivas;2;-;2;6;3;1;5;2;21
+X50-X57 Excesso de esforços viagens e privações;-;-;1;2;2;-;1;-;6
+X58-X59 Expos acid a outr fatores e não especific;114;46;24;166;154;64;76;113;757
+X60-X84 Lesões autoprovocadas voluntariamente;14;6;11;23;12;12;17;11;106
+X85-Y09 Agressões;223;214;229;218;256;290;212;202;1844
+Y10-Y34 Eventos cuja intenção é indeterminada;17;10;7;6;19;31;39;21;150
+Y40-Y84 Complic assistência médica e cirúrgica;83;83;76;93;131;185;219;278;1148
+Y40-Y59 Ef adv drogas medic subst biológ fin terap;5;2;4;2;2;3;6;7;31
+Y60-Y69 Acid ocorr durante prest serv médic cirurg;21;13;17;29;62;58;51;71;322
+Y70-Y82 Incid advers diagn/terapia assoc disp méd;18;15;7;2;3;9;3;1;58
+Y83-Y84 Reaç anorm ou compl tard ou outros proced;39;53;48;60;64;115;159;199;737
+Y85-Y89 Seqüelas de causas externas;137;98;48;82;115;199;129;33;841
+Y90-Y98 Fatores suplement relac outras causas;2;1;1;-;-;3;4;4;15
+S-T Causas externas não classificadas;14;11;13;19;14;26;36;33;166
+Total;2457;2027;2048;2442;3336;4389;4503;3434;24636

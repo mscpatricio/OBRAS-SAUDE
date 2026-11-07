@@ -1,0 +1,126 @@
+Categoria CID10;2022;2023;2024;2025;2026;Total
+V02   Pedestre traum colis veic motor 2 3 rodas;-;2;3;1;1;7
+V03   Pedestre traum colis automov pickup caminhon;6;10;5;2;1;24
+V04   Pedestre traum colis veic transp pesado onib;2;-;-;1;-;3
+V09   Pedestre traum outr acid transp e NE;2;1;3;2;2;10
+V11   Ciclista traum colis outr veic a pedal;-;1;-;-;-;1
+V12   Ciclista traum colis veic motor 2 3 rodas;1;-;1;-;-;2
+V13   Ciclista traum colis automov pickup caminhon;5;7;1;-;2;15
+V14   Ciclis traum colis veic transp pesado onibus;3;1;2;-;-;6
+V17   Ciclista traum colis objeto fixo ou parado;-;-;-;-;1;1
+V18   Ciclista traum acid transp s/colis;-;3;1;-;-;4
+V19   Ciclista traum acid transp e NE;1;1;1;-;-;3
+V20   Motociclista traum colis pedestre animal;1;-;-;-;-;1
+V22   Motocicl traum colis veic motor 2 3 rodas;3;3;4;3;1;14
+V23   Motocicl traum colis automov pickup caminhon;12;9;17;8;10;56
+V24   Motocicl traum colis veic transp pesado onib;3;1;1;5;2;12
+V27   Motocicl traum colis objeto fixo parado;6;5;1;3;1;16
+V28   Motociclista traum acid transp s/colis;1;2;1;4;3;11
+V29   Motociclista traum outr acid transp e NE;5;1;3;3;4;16
+V42   Ocup autotraum colis outr veic mot 2 3 rodas;-;1;-;-;-;1
+V43   Ocup automov traum col auto pickup caminhon;3;1;1;2;-;7
+V44   Ocup autom traum colis veic trans pesad onib;3;-;1;-;-;4
+V47   Ocup automovel traum colis obj fixo parado;2;3;1;2;-;8
+V48   Ocup automovel traum acid transp s/colis;1;4;1;2;1;9
+V49   Ocup automovel traum outr acid transp e NE;2;-;3;-;-;5
+V64   Ocup v tr pes tr col outr veic tr pes onib;-;-;-;-;1;1
+V82   Ocup de um bonde traum acid transp;-;-;-;2;-;2
+V84   Ocup veic esp mot uso agric traum acid trans;1;-;-;-;-;1
+V87   Acid trans tipo espec desconh mod transp vit;1;2;2;3;1;9
+V89   Acid veic mot n-mot tipos de veic NE;39;29;45;45;25;183
+V90   Acid embarcacao caus afogamento submersao;-;-;-;2;2;4
+V91   Acid embarcacao causando outr tipo de traum;-;1;1;-;-;2
+V93   Acid bord emb s/ac bem n caus afog submers;-;2;-;-;-;2
+V94   Outr acid transp p/agua e os NE;-;-;-;1;-;1
+V99   Acid transp NE;-;2;-;-;-;2
+W01   Queda mesmo nivel escorr tropec passo falso;-;5;2;3;1;11
+W05   Queda envolv uma cadeira de rodas;1;-;-;-;-;1
+W06   Queda de um leito;-;-;-;1;-;1
+W07   Queda de uma cadeira;-;1;1;-;-;2
+W08   Queda de outr tipo de mobilia;-;-;1;-;-;1
+W10   Queda em ou de escadas ou degraus;1;2;1;2;-;6
+W11   Queda em ou de escadas de mao;-;-;2;-;-;2
+W12   Queda em ou de um andaime;1;-;-;-;-;1
+W13   Queda de ou p/fora edificios outr estruturas;5;5;6;-;3;19
+W14   Queda de arvore;7;2;3;3;2;17
+W17   Outr quedas de um nivel a outr;-;3;4;4;-;11
+W18   Outr quedas no mesmo nivel;9;5;1;3;4;22
+W19   Queda s/especificacao;17;15;26;19;9;86
+W20   Impacto caus objeto lanc projetado em queda;1;3;3;2;-;9
+W29   Contat out utens manuais ap domest equip mot;1;-;-;-;-;1
+W32   Projetil de revolver;-;-;-;1;-;1
+W34   Projeteis de outr armas de fogo e das NE;2;1;-;-;-;3
+W40   Explosao de outr materiais;-;-;-;-;1;1
+W54   Mordedura ou golpe provocado p/cao;1;-;-;-;1;2
+W67   Afogamento e submersao em piscina;-;1;1;4;2;8
+W68   Afogamento submersao conseq queda piscina;-;1;-;1;4;6
+W69   Afogamento e submersao em aguas naturais;31;29;23;27;21;131
+W70   Afogamento submersao conseq queda aguas nat;2;6;9;5;3;25
+W73   Outr afogamentos e submersao espec;-;-;2;2;3;7
+W74   Afogamento e submersao NE;17;13;14;8;2;54
+W75   Sufocacao e estrangulamento acid na cama;-;-;1;-;1;2
+W76   Outr enforcamento e estrangulamento acid;1;1;-;1;-;3
+W78   Inalacao do conteudo gastrico;2;-;1;1;-;4
+W79   Inalacao ingest aliment caus obstr trat resp;6;3;5;4;-;18
+W80   Inalac ingest outr obj caus obstr trat resp;-;-;-;1;1;2
+W83   Outr riscos espec a respiracao;-;-;-;-;1;1
+W85   Exposicao linhas transm de corrente eletrica;1;-;1;2;1;5
+W86   Exposicao a outr corrente eletrica espec;-;3;-;1;1;5
+W87   Exposicao a corrente eletrica NE;4;5;6;4;6;25
+X00   Expos fogo n-contr edificio outr tipo constr;-;-;-;-;1;1
+X08   Exposicao outr tipo espec fumaca fogo chamas;-;-;-;1;-;1
+X09   Exposicao a tipo NE de fumaca fogo chamas;-;-;3;2;2;7
+X20   Contato c/serpentes e lagartos venenosos;1;-;2;1;-;4
+X23   Contato c/abelhas vespas e vespoes;-;-;1;1;-;2
+X26   Contato animais e plantas marinhos venenosos;-;-;-;-;1;1
+X27   Contato c/outr animais venenosos espec;-;1;-;-;-;1
+X37   Vitima de tempestade cataclismica;-;-;1;-;-;1
+X43   Envenen acid outr subst farm sist nerv auton;1;-;-;-;-;1
+X44   Envenen acid outr drog medic subst biolog NE;-;2;4;-;-;6
+X49   Envenen acid outr subst quim nocivas e as NE;1;3;5;3;5;17
+X61   Auto-int int a-conv sed hip a-park psic NCOP;2;-;-;-;-;2
+X62   Auto-intox intenc narcot psicodislept NCOP;1;1;-;-;-;2
+X63   Auto-int int outr subst farm sist nerv auton;-;-;-;-;1;1
+X64   Auto-int intenc out drog med subst biolog NE;6;1;-;5;-;12
+X65   Auto-intox voluntaria p/alcool;2;-;-;-;-;2
+X68   Auto-intox intenc a pesticidas;2;2;2;1;1;8
+X69   Auto-int intenc outr prod quim subst noc NE;-;-;3;1;-;4
+X70   Lesao autoprov intenc enforc estrang sufoc;65;65;58;64;36;288
+X72   Lesao autoprov intenc disp arma fogo de mao;1;2;-;1;-;4
+X74   Lesao autopr intenc disp outr arma fogo e NE;1;1;-;1;2;5
+X76   Lesao autoprov intenc fumaca fogo e chamas;-;1;-;-;-;1
+X78   Lesao autoprov intenc obj cortante  penetr;-;-;1;-;-;1
+X79   Lesao autoprov intenc p/objeto contundente;-;-;1;-;-;1
+X80   Lesao autoprov intenc precip lugar elevado;1;-;-;-;-;1
+X82   Lesao autoprov intenc impacto veic a motor;-;-;-;1;1;2
+X90   Agressao prod quimicos e subst nocivas NE;-;-;-;1;-;1
+X91   Agressao enforc estrangulamento sufocacao;2;4;6;4;1;17
+X92   Agressao p/meio de afogamento e submersao;1;-;2;1;-;4
+X93   Agressao disparo de arma de fogo de mao;22;13;13;23;5;76
+X94   Agressao disparo arma fogo de maior calibre;2;-;-;1;-;3
+X95   Agressao disparo outr arma de fogo ou NE;216;293;185;151;74;919
+X97   Agressao p/meio de fumaca fogo e chamas;1;-;-;-;-;1
+X99   Agressao objeto cortante ou penetrante;47;58;39;42;30;216
+Y00   Agressao p/meio de um objeto contundente;14;11;12;8;2;47
+Y04   Agressao p/meio de forca corporal;1;4;-;1;1;7
+Y07   Outr sindr de maus tratos;-;1;-;-;-;1
+Y08   Agressao p/outr meios espec;-;1;-;-;-;1
+Y15   Envenen alcool intencao nao determinada;-;-;1;1;-;2
+Y19   Env out prod quim subst noc e NE int n det;-;1;-;-;-;1
+Y20   Enforc estrang sufoc intenc nao determinada;3;1;-;1;4;9
+Y21   Afogamento submersao intenc nao determinada;2;2;2;2;-;8
+Y24   Disparo outr arma fogo e NE intenc nao det;2;2;-;1;2;7
+Y26   Exposicao fumaca fogo chamas intenc n det;-;-;1;-;1;2
+Y27   Exposic vapor agua gas obj quente int n det;-;-;1;-;-;1
+Y28   Contato obj cortante penetrante intenc n det;-;1;2;3;1;7
+Y29   Contato obj contundente intenc n det;2;-;3;1;1;7
+Y31   Queda perman corrida obj mov intenc n det;-;-;-;1;-;1
+Y33   Outr fatos ou eventos espec intenc n det;-;-;-;-;1;1
+Y34   Fatos ou eventos NE e intenc nao determinada;12;13;16;15;17;73
+Y35   Intervencao legal;52;131;106;110;57;456
+Y40   Antibioticos sistemicos;-;1;-;-;-;1
+Y83   Reac anorm compl tard interv cirurg s/acid;13;18;15;10;15;71
+Y84   Reac anorm compl tard out proc med s/acid;1;2;4;3;4;14
+Y85   Sequelas de acid transp;1;-;-;1;-;2
+Y86   Sequelas de outr acid;-;1;-;-;-;1
+Total;691;833;701;653;391;3269

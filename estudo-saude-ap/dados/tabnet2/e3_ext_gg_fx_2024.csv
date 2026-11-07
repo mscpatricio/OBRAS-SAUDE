@@ -1,0 +1,9 @@
+Grande Grupo CID10;Menor 1 ano;1 a 4 anos;5 a 9 anos;10 a 14 anos;15 a 19 anos;20 a 29 anos;30 a 39 anos;40 a 49 anos;50 a 59 anos;60 a 69 anos;70 a 79 anos;80 anos e mais;Total
+V01-V99 Acidentes de transporte;1;3;1;1;3;23;19;16;15;10;3;4;99
+W00-X59 Outras causas externas de lesões acident;6;8;3;-;2;19;19;13;18;10;13;18;129
+X60-X84 Lesões autoprovocadas voluntariamente;-;-;-;3;7;25;20;5;1;1;1;2;65
+X85-Y09 Agressões;1;-;-;2;41;107;58;32;8;4;3;1;257
+Y10-Y34 Eventos cuja intenção é indeterminada;-;2;-;1;1;5;1;3;2;6;1;4;26
+Y35-Y36 Intervenções legais e operações de guerra;-;-;-;-;26;60;15;3;1;1;-;-;106
+Y40-Y84 Complic assistência médica e cirúrgica;1;-;-;-;-;1;1;2;1;7;2;4;19
+Total;9;13;4;7;80;240;133;74;46;39;23;33;701

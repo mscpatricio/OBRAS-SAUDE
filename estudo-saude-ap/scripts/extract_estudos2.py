@@ -1,0 +1,194 @@
+import sys, os, re
+sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
+exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'_common.py')).read())
+OUT='/tmp/claude-0/-home-user-OBRAS-SAUDE/c712070a-2954-5409-93ab-21cafbd2988b/scratchpad/raw/tab2'
+os.makedirs(OUT,exist_ok=True); log=open(os.path.join(OUT,'_log.txt'),'a')
+def yy(a,b):  # arquivos anuais tipo xxxxYY.dbf
+    return lambda sel:[v for v,t in sel['Arquivos'] if re.match(r'[a-z_]+(\d\d)\.dbf',v,re.I) and a<=2000+int(re.match(r'[a-z_]+(\d\d)\.dbf',v,re.I).group(1))<=b]
+Y=list(range(2022,2026))
+# ===================== ESTUDO 1: VIGILÂNCIA =====================
+TB='sinannet/cnv/tubercap.def'
+run('e1_tb_mun_ano',TB,'Município_de_residência','Ano_Diagnóstico',['Casos_confirmados'],yy(2019,2026))
+run('e1_tb_fx_ano',TB,'Fx_Etária','Ano_Diagnóstico',['Casos_confirmados'],yy(2022,2026))
+run('e1_tb_entrada_ano',TB,'Tipo_de_entrada__','Ano_Diagnóstico',['Casos_confirmados'],yy(2022,2026))
+run('e1_tb_forma_ano',TB,'Forma','Ano_Diagnóstico',['Casos_confirmados'],yy(2022,2026))
+run('e1_tb_hiv_ano',TB,'HIV','Ano_Diagnóstico',['Casos_confirmados'],yy(2022,2026))
+run('e1_tb_encerr_ano',TB,'Situação_Encerra.','Ano_Diagnóstico',['Casos_confirmados'],yy(2022,2026))
+run('e1_tb_tdo_ano',TB,'TDO_realizado','Ano_Diagnóstico',['Casos_confirmados'],yy(2022,2026))
+run('e1_tb_sexo_ano',TB,'Sexo','Ano_Diagnóstico',['Casos_confirmados'],yy(2022,2026))
+run('e1_tb_ppl_ano',TB,'PPL','Ano_Diagnóstico',['Casos_confirmados'],yy(2022,2026))
+run('e1_bench_tb_uf_ano','sinannet/cnv/tubercbr.def','UF_de_notificação','Ano_Diagnóstico',['Casos_confirmados'],yy(2022,2026))
+H='sinannet/cnv/hanswap.def'
+run('e1_hans_mun_ano',H,'Município_de_residência','Ano_Diagnóstico',['Casos'],yy(2019,2026))
+run('e1_hans_classe_ano',H,'Classe_Operac._Diag.','Ano_Diagnóstico',['Casos'],yy(2022,2026))
+run('e1_hans_incap_ano',H,'Aval_Incap_Notif','Ano_Diagnóstico',['Casos'],yy(2022,2026))
+run('e1_hans_fx_ano',H,'Faixa_Etária_Hans','Ano_Diagnóstico',['Casos'],yy(2022,2026))
+run('e1_hans_deteccao_ano',H,'Modo_Detecção','Ano_Diagnóstico',['Casos'],yy(2022,2026))
+run('e1_hans_saida_ano',H,'Tipo_de_Saída','Ano_Diagnóstico',['Casos'],yy(2022,2026))
+run('e1_bench_hans_uf_ano','sinannet/cnv/hanswuf.def','UF_de_notificação','Ano_Diagnóstico',['Casos'],yy(2022,2026))
+SC='sinannet/cnv/sifilisap.def'
+run('e1_sifc_mun_ano',SC,'Município_de_residência','Ano_Diagnóstico',['Casos_confirmados'],yy(2019,2026))
+run('e1_sifc_prenatal_ano',SC,'Realizou_Pré-Natal','Ano_Diagnóstico',['Casos_confirmados'],yy(2022,2026))
+run('e1_sifc_classif_ano',SC,'Classif._Final','Ano_Diagnóstico',['Casos_confirmados'],yy(2022,2026))
+run('e1_sifc_fxmae_ano',SC,'Fx_Etaria_Mãe','Ano_Diagnóstico',['Casos_confirmados'],yy(2022,2026))
+run('e1_sifc_parceiro_ano',SC,'Trat_parceiro','Ano_Diagnóstico',['Casos_confirmados'],yy(2022,2026))
+run('e1_bench_sifc_uf_ano','sinannet/cnv/sifilisbr.def','UF_de_notificação','Ano_Diagnóstico',['Casos_confirmados'],yy(2022,2026))
+SG='sinannet/cnv/sifilisgestanteap.def'
+run('e1_sifg_mun_ano',SG,'Município_de_residência','Ano_de_Diagnóstico',['Casos_confirmados'],yy(2019,2026))
+run('e1_sifg_fx_ano',SG,'Faixa_Etária','Ano_de_Diagnóstico',['Casos_confirmados'],yy(2022,2026))
+run('e1_sifg_classif_ano',SG,'Classificacao_clínica','Ano_de_Diagnóstico',['Casos_confirmados'],yy(2022,2026))
+HP='sinannet/cnv/hepaap.def'
+run('e1_hep_etio_ano',HP,'Class._Etiológica','Ano_Diag/sintomas',['Casos_confirmados'],yy(2019,2026))
+run('e1_hep_mun_ano',HP,'Município_de_residência','Ano_Diag/sintomas',['Casos_confirmados'],yy(2019,2026))
+D='sinannet/cnv/denguebap.def'
+run('e1_deng_mun_ano',D,'Município_de_residência','Ano_1º_Sintoma(s)',['Casos_Prováveis'],yy(2019,2026))
+run('e1_deng_class_ano',D,'Class._Final','Ano_1º_Sintoma(s)',['Casos_Prováveis'],yy(2019,2026))
+run('e1_deng_evol_ano',D,'Evolução','Ano_1º_Sintoma(s)',['Casos_Prováveis'],yy(2019,2026))
+run('e1_deng_hosp_ano',D,'Ocorreu_hospitalização_______','Ano_1º_Sintoma(s)',['Casos_Prováveis'],yy(2019,2026))
+run('e1_deng_fx_ano',D,'Faixa_Etária','Ano_1º_Sintoma(s)',['Casos_Prováveis'],yy(2022,2026))
+run('e1_bench_deng_uf_ano','sinannet/cnv/denguebr.def','UF_de_notificação','Ano_1º_Sintoma(s)',['Casos_Prováveis'],yy(2022,2026))
+for nm,d in (('chik','sinannet/cnv/chikunap.def'),('zika','sinannet/cnv/zikaap.def')):
+    run(f'e1_{nm}_mun_ano',d,'Município_de_residência','Ano_1º_Sintoma(s)',['Casos_Prováveis'],yy(2019,2026))
+    run(f'e1_{nm}_ano',d,'Ano_1º_Sintoma(s)','--Não-Ativa--',['Casos_Prováveis'],yy(2019,2026))
+M='sinannet/cnv/malaap.def'
+run('e1_mal_mun_ano',M,'Município_de_residência','Ano_notificação',['Casos_confirmados'],yy(2019,2026))
+run('e1_mal_result_ano',M,'result.parasitológico','Ano_notificação',['Casos_confirmados'],yy(2019,2026))
+run('e1_mal_inf_ano',M,'Mun_Infecção_','Ano_notificação',['Casos_confirmados'],yy(2022,2026))
+run('e1_mal_fx_ano',M,'Faixa_Etária','Ano_notificação',['Casos_confirmados'],yy(2022,2026))
+LV='sinannet/cnv/leishvap.def'; LT='sinannet/cnv/ltaap.def'
+run('e1_lv_mun_ano',LV,'Município_de_residência','Ano_Notificação',['Casos_confirmados'],yy(2019,2026))
+run('e1_lta_mun_ano',LT,'Município_de_residência','Ano_Notificação',['Casos_confirmados'],yy(2019,2026))
+run('e1_lta_forma_ano',LT,'Forma_Clínica','Ano_Notificação',['Casos_confirmados'],yy(2022,2026))
+MN='sinannet/cnv/meninap.def'
+run('e1_men_etio_ano',MN,'Etiologia','Ano_1º_Sintoma(s)',['Casos_confirmados'],yy(2019,2026))
+run('e1_men_evol_ano',MN,'Evolução','Ano_1º_Sintoma(s)',['Casos_confirmados'],yy(2019,2026))
+AN='sinannet/cnv/animaisap.def'
+run('e1_anim_mun_ano',AN,'Município_de_residência','Ano_acidente_',['Notificações'],yy(2019,2026))
+run('e1_anim_tipo_ano',AN,'Tipo_de_acidente','Ano_acidente_',['Notificações'],yy(2019,2026))
+run('e1_anim_fx_ano',AN,'Faixa_Etária','Ano_acidente_',['Notificações'],yy(2022,2026))
+run('e1_anim_evol_ano',AN,'Evolução','Ano_acidente_',['Notificações'],yy(2019,2026))
+run('e1_anim_tempo_ano',AN,'Tempo_picada/atend','Ano_acidente_',['Notificações'],yy(2022,2026))
+IX='sinannet/cnv/intoxap.def'
+run('e1_intox_agente_ano',IX,'Grupo_do_Agente_Tóxico','Ano_1º_Sintoma(s)',['Notificações'],yy(2019,2026))
+run('e1_intox_circ_ano',IX,'Circunstância','Ano_1º_Sintoma(s)',['Notificações'],yy(2019,2026))
+run('e1_intox_evol_ano',IX,'Evolução','Ano_1º_Sintoma(s)',['Notificações'],yy(2019,2026))
+run('e1_intox_fx_ano',IX,'Faixa_Etária','Ano_1º_Sintoma(s)',['Notificações'],yy(2022,2026))
+run('e1_intox_mun_ano',IX,'Município_de_residência','Ano_1º_Sintoma(s)',['Notificações'],yy(2022,2026))
+run('e1_intox_circ_fx_2025',IX,'Circunstância','Faixa_Etária',['Notificações'],yy(2025,2025))
+# SIM infecciosas
+S='sim/cnv/obt10ap.def'
+run('e1_sim_grupo_ano',S,'Grupo_CID-10','Ano_do_Óbito',['Óbitos_p/Residênc'],yy(2019,2026))
+run('e1_sim_cat_ano',S,'Categoria_CID-10','Ano_do_Óbito',['Óbitos_p/Residênc'],yy(2022,2026))
+# ===================== ESTUDO 2: APS e materno-infantil =====================
+EQ='cnes/cnv/equipeap.def'
+run('e2_equipe_tipo_ano',EQ,'Tipo_da_Equipe','Ano/mês_compet.',['Quantidade'],dec_files('epap',list(range(2019,2026)),['epap2609.dbf']))
+run('e2_equipe_mun_tipo_latest',EQ,'Município','Tipo_da_Equipe',['Quantidade'],latest('epap'))
+run('e2_equipe_mun_ano_esf',EQ,'Município','Ano/mês_compet.',['Quantidade'],dec_files('epap',list(range(2019,2026)),['epap2609.dbf']),{'STipo_da_Equipe':['1','2','3','12','13','14']})
+run('e2_equipe_mun_ano_all',EQ,'Município','Ano/mês_compet.',['Quantidade'],dec_files('epap',list(range(2019,2026)),['epap2609.dbf']))
+HB='cnes/cnv/habap.def'
+run('e2_hab_latest',HB,'Habilitação','--Não-Ativa--',['Qtde_Estabelec._Habilitados','Número_de_leitos'],latest('hbap'))
+run('e2_hab_ano_leitos',HB,'Habilitação','Ano/mês_compet.',['Número_de_leitos'],dec_files('hbap',list(range(2019,2026)),['hbap2609.dbf']))
+run('e2_hab_ano_estab',HB,'Habilitação','Ano/mês_compet.',['Qtde_Estabelec._Habilitados'],dec_files('hbap',list(range(2019,2026)),['hbap2609.dbf']))
+run('e2_hab_mun_latest',HB,'Município','Habilitação',['Qtde_Estabelec._Habilitados'],latest('hbap'))
+A='sia/cnv/qaap.def'
+run('e2_sia_ab_mun_ano_qtd',A,'Município','Ano_processamento',['Qtd.aprovada'],yrs('qaap',2019,2026),{'SComplexidade':['1']})
+run('e2_sia_ab_forma_ano_qtd',A,'Forma_organização','Ano_processamento',['Qtd.aprovada'],yrs('qaap',2019,2026),{'SComplexidade':['1']})
+run('e2_sia_forma_ano_valor',A,'Forma_organização','Ano_processamento',['Valor_aprovado'],yrs('qaap',2019,2026))
+run('e2_sia_forma_ano_qtd',A,'Forma_organização','Ano_processamento',['Qtd.aprovada'],yrs('qaap',2019,2026))
+NR='sih/cnv/nrap.def'
+run('e2_nr_lista_ano',NR,'Lista_Morb__CID-10','Ano_processamento',['Internações'],yrs('nrap',2019,2026))
+run('e2_nr_cap_ano',NR,'Capítulo_CID-10','Ano_processamento',['Internações'],yrs('nrap',2019,2026))
+run('e2_nr_lista_fx_2025',NR,'Lista_Morb__CID-10','Faixa_Etária_1',['Internações'],yrs('nrap',2025,2025))
+run('e2_nr_mun_ano','sih/cnv/qrap.def','Município','Ano_processamento',['AIH_aprovadas'],yrs('qrap',2019,2026))
+B='sinasc/cnv/nvap.def'
+for nm,dim in (('prenatal','Consult_pré-natal'),('parto','Tipo_de_parto'),('peso','Peso_ao_nascer'),('idademae','Idade_da_mãe'),('gest','Duração_gestação'),('local','Local_ocorrência'),('robson','Grupos_de_Robson')):
+    run(f'e2_nv_mun_{nm}_2025',B,'Município',dim,['Nascim_p/resid.mãe'],yy(2025,2025))
+    run(f'e2_nv_mun_{nm}_2022',B,'Município',dim,['Nascim_p/resid.mãe'],yy(2022,2022))
+run('e2_nv_ocor_mun_ano',B,'Município','Ano_do_nascimento',['Nascim_p/ocorrênc'],yy(2019,2026))
+MT='sim/cnv/mat10ap.def'
+run('e2_mat_ano',MT,'Ano_do_Óbito','--Não-Ativa--',['Óbitos_mulheres_idade_fértil','Óbitos_maternos','Óbitos_maternos_tardios'],yy(2015,2026))
+run('e2_mat_mun_ano',MT,'Município','Ano_do_Óbito',['Óbitos_maternos'],yy(2015,2026))
+run('e2_mat_tipo_ano',MT,'Tipo_causa_obstétr','Ano_do_Óbito',['Óbitos_maternos'],yy(2015,2026))
+run('e2_mat_grupo_ano',MT,'Grupo_CID-10','Ano_do_Óbito',['Óbitos_maternos'],yy(2015,2026))
+run('e2_mat_fx_ano',MT,'Faixa_Etária','Ano_do_Óbito',['Óbitos_maternos'],yy(2015,2026))
+run('e2_mat_invest_ano',MT,'Óbito_investigado','Ano_do_Óbito',['Óbitos_maternos'],yy(2015,2026))
+run('e2_bench_mat_uf_ano','sim/cnv/mat10uf.def','Unidade_da_Federação','Ano_do_Óbito',['Óbitos_maternos'],yy(2019,2026))
+FT='sim/cnv/fet10ap.def'
+run('e2_fet_ano',FT,'Ano_do_Óbito','--Não-Ativa--',['Óbitos_p/Residênc'],yy(2015,2026))
+run('e2_fet_mun_ano',FT,'Município','Ano_do_Óbito',['Óbitos_p/Residênc'],yy(2019,2026))
+run('e2_fet_invest_ano',FT,'Óbito_investigado','Ano_do_Óbito',['Óbitos_p/Residênc'],yy(2019,2026))
+run('e2_fet_gest_ano',FT,'Duração_gestação','Ano_do_Óbito',['Óbitos_p/Residênc'],yy(2022,2026))
+I='sim/cnv/inf10ap.def'
+run('e2_inf_mun_fx_2024',I,'Município','Faixa_etária_1',['Óbitos_p/Residênc'],yy(2024,2024))
+run('e2_inf_invest_ano',I,'Óbito_investigado','Ano_do_Óbito',['Óbitos_p/Residênc'],yy(2019,2026))
+run('e2_inf_cap_ano',I,'Capítulo_CID-10','Ano_do_Óbito',['Óbitos_p/Residênc'],yy(2019,2026))
+run('e2_bench_inf_uf_ano','sim/cnv/inf10uf.def','Unidade_da_Federação','Ano_do_Óbito',['Óbitos_p/Residênc'],yy(2019,2026))
+run('e2_bench_nv_uf_ano','sinasc/cnv/nvuf.def','Unidade_da_Federação','Ano_do_nascimento',['Nascim_p/resid.mãe'],yy(2019,2026))
+run('e2_bench_nv_uf_parto_2024','sinasc/cnv/nvuf.def','Unidade_da_Federação','Tipo_de_parto',['Nascim_p/resid.mãe'],yy(2024,2024))
+run('e2_bench_nv_uf_prenatal_2024','sinasc/cnv/nvuf.def','Unidade_da_Federação','Consult_pré-natal',['Nascim_p/resid.mãe'],yy(2024,2024))
+run('e2_bench_equipe_uf_latest','cnes/cnv/equipebr.def','Unidade_da_Federação','--Não-Ativa--',['Quantidade'],latest('epbr'),{'STipo_da_Equipe':['1','2','3','12','13','14']})
+# ===================== ESTUDO 3: violências, causas externas, saúde mental =====================
+EX='sim/cnv/ext10ap.def'
+run('e3_ext_gg_ano',EX,'Grande_Grupo_CID10','Ano_do_Óbito',['Óbitos_p/Residênc'],yy(2015,2026))
+run('e3_ext_grupo_ano',EX,'Grupo_CID10','Ano_do_Óbito',['Óbitos_p/Residênc'],yy(2019,2026))
+run('e3_ext_cat_ano',EX,'Categoria_CID10','Ano_do_Óbito',['Óbitos_p/Residênc'],yy(2022,2026))
+run('e3_ext_mun_ano',EX,'Município','Ano_do_Óbito',['Óbitos_p/Residênc'],yy(2019,2026))
+run('e3_ext_sexo_ano',EX,'Sexo','Ano_do_Óbito',['Óbitos_p/Residênc'],yy(2019,2026))
+run('e3_ext_fx_ano',EX,'Faixa_Etária','Ano_do_Óbito',['Óbitos_p/Residênc'],yy(2019,2026))
+run('e3_ext_gg_fx_2024',EX,'Grande_Grupo_CID10','Faixa_Etária',['Óbitos_p/Residênc'],yy(2024,2024))
+run('e3_ext_gg_sexo_2024',EX,'Grande_Grupo_CID10','Sexo',['Óbitos_p/Residênc'],yy(2024,2024))
+run('e3_ext_gg_mun_2024',EX,'Município','Grande_Grupo_CID10',['Óbitos_p/Residênc'],yy(2024,2024))
+run('e3_ext_raca_ano',EX,'Cor/raça','Ano_do_Óbito',['Óbitos_p/Residênc'],yy(2022,2026))
+run('e3_ext_gg_raca_2024',EX,'Grande_Grupo_CID10','Cor/raça',['Óbitos_p/Residênc'],yy(2024,2024))
+run('e3_bench_ext_uf_gg_2024','sim/cnv/ext10uf.def','Unidade_da_Federação','Grande_Grupo_CID10',['Óbitos_p/Residênc'],yy(2024,2024))
+run('e3_bench_ext_uf_gg_2023','sim/cnv/ext10uf.def','Unidade_da_Federação','Grande_Grupo_CID10',['Óbitos_p/Residênc'],yy(2023,2023))
+FI='sih/cnv/fiap.def'
+run('e3_fi_gg_ano',FI,'Grande_Grup_Causas','Ano_processamento',['Internações'],yrs('fiap',2019,2026))
+run('e3_fi_grupo_ano',FI,'Grupo_de_Causas','Ano_processamento',['Internações'],yrs('fiap',2019,2026))
+run('e3_fi_gg_2025',FI,'Grande_Grup_Causas','--Não-Ativa--',['Internações','Valor_total','Média_permanência','Óbitos','Taxa_mortalidade'],yrs('fiap',2025,2025))
+run('e3_fi_fx_ano',FI,'Faixa_Etária_1','Ano_processamento',['Internações'],yrs('fiap',2019,2026))
+run('e3_fi_sexo_ano',FI,'Sexo','Ano_processamento',['Internações'],yrs('fiap',2019,2026))
+run('e3_fi_estab_gg_2025',FI,'Estabelecimento','Grande_Grup_Causas',['Internações'],yrs('fiap',2025,2025))
+V='sinannet/cnv/violeap.def'
+run('e3_viol_mun_ano',V,'Município_de_residência','Ano_da_Notific',['Freqüência'],yy(2019,2026))
+run('e3_viol_fx_ano',V,'Faixa_Etária','Ano_da_Notific',['Freqüência'],yy(2019,2026))
+run('e3_viol_sexo_ano',V,'Sexo','Ano_da_Notific',['Freqüência'],yy(2019,2026))
+for nm,dim in (('fisica','Viol_Física'),('sexual','Viol_Sexual'),('psico','Viol_Psico/moral'),('negl','Viol_Negli/Aband'),('autoprov','Lesão_Autoprov'),('local','Local_ocorrência'),('repet','Viol_repetição'),('raca','Raça'),('armafogo','Arma_de_fogo'),('estupro','Estupro')):
+    run(f'e3_viol_{nm}_ano',V,dim,'Ano_da_Notific',['Freqüência'],yy(2019,2026))
+run('e3_viol_fx_sexo_2025',V,'Faixa_Etária','Sexo',['Freqüência'],yy(2025,2025))
+run('e3_viol_sexual_fx_2025',V,'Faixa_Etária','Viol_Sexual',['Freqüência'],yy(2025,2025))
+run('e3_viol_autoprov_fx_2025',V,'Faixa_Etária','Lesão_Autoprov',['Freqüência'],yy(2025,2025))
+run('e3_bench_viol_uf_ano','sinannet/cnv/violebr.def','UF_de_notificação','Ano_da_Notific',['Freqüência'],yy(2022,2026))
+# saúde mental
+N='sih/cnv/niap.def'
+run('e3_nih_lista_capV_ano',N,'Lista_Morb__CID-10','Ano_processamento',['Internações'],yrs('niap',2019,2026),{'SCapítulo_CID-10':['5']})
+run('e3_nih_capV_fx_2025',N,'Faixa_Etária_1','Sexo',['Internações'],yrs('niap',2025,2025),{'SCapítulo_CID-10':['5']})
+run('e3_nih_capV_estab_ano',N,'Estabelecimento','Ano_processamento',['Internações'],yrs('niap',2019,2026),{'SCapítulo_CID-10':['5']})
+# ===================== ESTUDO 4: oncologia e crônicas =====================
+run('e4_sim_grupo_ano',S,'Grupo_CID-10','Ano_do_Óbito',['Óbitos_p/Residênc'],yy(2015,2026))
+run('e4_sim_cat_sexo_2024',S,'Categoria_CID-10','Sexo',['Óbitos_p/Residênc'],yy(2024,2024))
+run('e4_sim_cat_sexo_2025',S,'Categoria_CID-10','Sexo',['Óbitos_p/Residênc'],yy(2025,2025))
+run('e4_sim_cap_fx_2024',S,'Capítulo_CID-10','Faixa_Etária',['Óbitos_p/Residênc'],yy(2024,2024))
+run('e4_sim_cap_mun_2024',S,'Município','Capítulo_CID-10',['Óbitos_p/Residênc'],yy(2024,2024))
+run('e4_bench_sim_uf_cap_2024','sim/cnv/obt10uf.def','Unidade_da_Federação','Capítulo_CID-10',['Óbitos_p/Residênc'],yy(2024,2024))
+QB='sia/cnv/qbap.def'
+run('e4_mamo_rastr_fx_ano',QB,'Faixa_etária','Ano_processamento',['Qtd.aprovada'],yrs('qbap',2019,2026),{'SProcedimento':['844']})
+run('e4_mamo_diag_fx_ano',QB,'Faixa_etária','Ano_processamento',['Qtd.aprovada'],yrs('qbap',2019,2026),{'SProcedimento':['829']})
+run('e4_cito_fx_ano',QB,'Faixa_etária','Ano_processamento',['Qtd.aprovada'],yrs('qbap',2019,2026),{'SProcedimento':['783','776']})
+run('e4_onco_fx_ano',QB,'Faixa_etária','Ano_processamento',['Qtd.aprovada'],yrs('qbap',2019,2026),{'SSubgrupo_proced.':['20']})
+run('e4_onco_sexo_ano_valor',QB,'Sexo','Ano_processamento',['Valor_aprovado'],yrs('qbap',2019,2026),{'SSubgrupo_proced.':['20']})
+run('e4_onco_forma_ano_qtd',QB,'Forma_organização','Ano_processamento',['Qtd.aprovada'],yrs('qbap',2019,2026),{'SSubgrupo_proced.':['20']})
+run('e4_onco_forma_ano_valor',QB,'Forma_organização','Ano_processamento',['Valor_aprovado'],yrs('qbap',2019,2026),{'SSubgrupo_proced.':['20']})
+run('e4_onco_proc_2025',QB,'Procedimento','--Não-Ativa--',['Qtd.aprovada','Valor_aprovado'],yrs('qbap',2025,2025),{'SSubgrupo_proced.':['20']})
+run('e4_onco_mun_ano_qtd',QB,'Município','Ano_processamento',['Qtd.aprovada'],yrs('qbap',2019,2026),{'SSubgrupo_proced.':['20']})
+run('e4_nefro_fx_ano',QB,'Faixa_etária','Ano_processamento',['Qtd.aprovada'],yrs('qbap',2019,2026),{'SSubgrupo_proced.':['21']})
+run('e4_nefro_proc_ano_qtd',QB,'Procedimento','Ano_processamento',['Qtd.aprovada'],yrs('qbap',2019,2026),{'SSubgrupo_proced.':['21']})
+run('e4_sih_subgrupo_ano_aih','sih/cnv/qiap.def','Subgrupo_proced.','Ano_processamento',['AIH_aprovadas'],yrs('qiap',2019,2026))
+run('e4_sih_subgrupo_ano_valor','sih/cnv/qiap.def','Subgrupo_proced.','Ano_processamento',['Valor_total'],yrs('qiap',2019,2026))
+run('e4_nih_lista_capII_ano',N,'Lista_Morb__CID-10','Ano_processamento',['Internações'],yrs('niap',2019,2026),{'SCapítulo_CID-10':['2']})
+run('e4_nih_lista_capII_2025',N,'Lista_Morb__CID-10','--Não-Ativa--',['Internações','Valor_total','Média_permanência','Óbitos','Taxa_mortalidade'],yrs('niap',2025,2025),{'SCapítulo_CID-10':['2']})
+run('e4_nih_capII_estab_ano',N,'Estabelecimento','Ano_processamento',['Internações'],yrs('niap',2019,2026),{'SCapítulo_CID-10':['2']})
+run('e4_nih_lista_capIX_ano',N,'Lista_Morb__CID-10','Ano_processamento',['Internações'],yrs('niap',2019,2026),{'SCapítulo_CID-10':['9']})
+run('e4_nih_lista_capIV_ano',N,'Lista_Morb__CID-10','Ano_processamento',['Internações'],yrs('niap',2019,2026),{'SCapítulo_CID-10':['4']})
+run('e4_hab_onco_latest',HB,'Habilitação','Município',['Qtde_Estabelec._Habilitados'],latest('hbap'))
+print('DONE_E')

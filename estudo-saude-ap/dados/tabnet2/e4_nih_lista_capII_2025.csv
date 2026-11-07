@@ -1,0 +1,42 @@
+Lista Morb  CID-10;Internações;Valor total;Média permanência;Óbitos;Taxa mortalidade
+02 Neoplasias (tumores);1823;1809399,35;6,0;130;7,13
+.. Neoplasia maligna do lábio cavid oral e faringe;28;42492,06;11,7;4;14,29
+.. Neoplasia maligna do esôfago;9;7479,02;5,1;3;33,33
+.. Neoplasia maligna do estômago;51;45473,46;10,4;16;31,37
+.. Neoplasia maligna do cólon;14;10807,22;14,1;2;14,29
+.. Neopl malig junção retoss reto ânus canal anal;21;30963,70;9,9;3;14,29
+.. Neopl malig fígado e vias biliares intra-hepát;16;10083,94;11,9;4;25,00
+.. Neoplasia maligna do pâncreas;10;7649,88;10,5;3;30,00
+.. Outras neoplasias malignas de órgãos digestivos;14;9238,55;13,0;3;21,43
+.. Neoplasias malignas de laringe;12;18235,01;11,0;-;-
+.. Neoplasia maligna de traquéia brônquios e pulm;28;19704,41;11,9;6;21,43
+.. Outras neopl malig órg respirat e intratorác;14;13876,23;9,8;1;7,14
+.. Neoplasia maligna do osso e cartilagem articul;7;5347,22;20,1;2;28,57
+.. Neoplasia maligna da pele;4;1424,75;2,0;-;-
+.. Outras neoplasias malignas da pele;48;21760,01;2,0;-;-
+.. Neopl malig do tecido mesotelial e tec moles;19;26559,38;9,4;3;15,79
+.. Neoplasia maligna da mama;54;64623,68;6,4;12;22,22
+.. Neoplasia maligna do colo do útero;57;46610,84;13,0;12;21,05
+.. Neopl malig outr porções e porç não espec útero;17;24086,03;11,4;4;23,53
+.. Outras neopl malignas órgãos genitais femininos;19;35748,62;7,8;6;31,58
+.. Neoplasia maligna da próstata;70;59892,02;10,3;14;20,00
+.. Outras neopl malignas órgãos genit masculinos;10;5120,55;19,2;2;20,00
+.. Neoplasia maligna da bexiga;11;14097,69;7,0;1;9,09
+.. Outras neoplasias malignas do trato urinário;24;27461,66;7,8;1;4,17
+.. Neoplasia maligna dos olhos e anexos;3;4823,13;19,3;1;33,33
+.. Neoplasia maligna do encéfalo;28;34087,13;18,0;5;17,86
+.. Neopl malig outras partes sistema nerv central;2;2949,99;15,0;-;-
+.. Neopl malig outr local mal def secun e não esp;36;38285,49;10,6;6;16,67
+.. Doença de Hodgkin;15;9407,73;8,9;-;-
+.. Linfoma não-Hodgkin;10;7071,30;6,1;2;20,00
+.. Leucemia;24;13363,38;16,4;5;20,83
+.. Outras neopl malig tecidos linfóid hemat e rel;6;2397,20;9,7;-;-
+.. Carcinoma in situ de colo do útero;10;7537,89;2,2;-;-
+.. Neoplasia benigna da pele;7;3633,64;0,6;-;-
+.. Neoplasia benigna da mama;25;11062,72;1,1;-;-
+.. Leiomioma do útero;777;867173,58;3,0;-;-
+.. Neoplasia benigna do ovário;7;4495,11;5,6;-;-
+.. Neoplasia benigna dos órgãos urinários;1;565,69;10,0;-;-
+.. Neopl benig encéfalo e outr part sist nerv cent;6;10986,84;21,3;-;-
+.. Outr neopl in situ benigs e comport incert desc;309;242822,60;4,4;9;2,91
+Total;1823;1809399,35;6,0;130;7,13

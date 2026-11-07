@@ -1,0 +1,37 @@
+Grupo CID10;2019;2020;2021;2022;2023;2024;2025;2026;Total
+Acidentes;191;216;227;216;202;228;198;134;1612
+. Acidentes de transporte;86;79;98;103;92;99;91;58;706
+... Pedestre traumatizado em um acidente de transp;15;8;15;10;13;11;6;4;82
+... Ciclista traumatizado em um acidente de transp;10;5;7;10;13;6;-;3;54
+... Motociclista traumat em um acidente de transpo;21;42;27;31;21;27;26;21;216
+... Ocupante triciclo motorizado traumat acid tran;1;-;1;-;-;-;-;-;2
+... Ocupante automóvel traumat acidente transporte;11;5;20;11;9;7;6;1;70
+... Ocupante caminhonete traumat acidente transpor;3;-;-;-;-;-;-;-;3
+... Ocupante veíc transp pesado traumat acid trans;-;2;-;-;-;-;-;1;3
+... Ocupante ônibus traumat acidente de transporte;-;1;-;-;-;-;-;-;1
+... Outros acidentes de transporte terrestre;23;9;28;41;31;47;50;26;255
+... Acidentes de transporte por água;1;7;-;-;3;1;3;2;17
+... Acidentes de transporte aéreo e espacial;1;-;-;-;-;-;-;-;1
+... Outros acidentes de transporte e os não especi;-;-;-;-;2;-;-;-;2
+. Outras causas externas de traumatismos acidentai;105;137;129;113;110;129;107;76;906
+... Quedas;29;35;39;41;38;47;35;19;283
+... Exposição a forças mecânicas inanimadas;7;2;11;4;4;3;3;1;35
+... Exposição a forças mecânicas animadas;-;-;-;1;-;-;-;1;2
+... Afogamento e submersão acidentais;47;73;56;50;50;49;47;35;407
+... Outros riscos acidentais à respiração;3;8;6;9;4;7;7;3;47
+... Expos corr elétr, radiação e temp press extrem;15;8;5;5;8;7;7;8;63
+... Exposição à fumaça, ao fogo e às chamas;1;2;3;-;-;3;3;3;15
+... Contato com fonte de calor ou substâncias quen;-;1;-;-;-;-;-;-;1
+... Contato com animais e plantas venenosos;1;5;5;1;1;3;2;1;19
+... Exposição às forças da natureza;1;1;-;-;-;1;-;-;3
+... Envenenamento acidental e exposição subst noci;1;2;3;2;5;9;3;5;30
+... Exposição acidental a outr fatores e aos não e;-;-;1;-;-;-;-;-;1
+Lesões autoprovocadas intencionalmente;61;51;63;81;73;65;74;41;509
+Agressões;330;318;404;306;385;257;232;113;2345
+Eventos (fatos) cuja intenção é indeterminada;18;19;21;21;20;26;25;27;177
+Intervenções legais e operações de guerra;31;69;58;52;131;106;110;57;614
+Complicações de assistência médica e cirúrgica;-;3;10;14;21;19;13;19;99
+. Ef advers drog, medic e subst biológ finalid ter;-;-;1;-;1;-;-;-;2
+. Reaç anorm compl tard proc cirúrg méd s/menç aci;-;3;9;14;20;19;13;19;97
+Seqüelas causas externas de morbidade e mortalidad;-;1;1;1;1;-;1;-;5
+Total;631;677;784;691;833;701;653;391;5361

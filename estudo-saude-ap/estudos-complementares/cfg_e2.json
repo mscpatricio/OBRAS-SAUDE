@@ -1,0 +1,116 @@
+{
+ "titulo": "ATENÇÃO PRIMÁRIA, REGIONALIZAÇÃO E SAÚDE MATERNO-INFANTIL NO ESTADO DO AMAPÁ, 2022–2026",
+ "subtitulo": "Estudo complementar para a transição de governo 2026/2027 (CNES, SIA, SIH, SINASC, SIM/DATASUS)",
+ "palavras_chave": "Atenção primária à saúde; Estratégia Saúde da Família; internações sensíveis à atenção primária; mortalidade materna; mortalidade infantil; Amapá.",
+ "siglas": [
+  [
+   "AIH",
+   "Autorização de Internação Hospitalar"
+  ],
+  [
+   "APS",
+   "Atenção Primária à Saúde"
+  ],
+  [
+   "CID-10",
+   "Classificação Estatística Internacional de Doenças, 10ª revisão"
+  ],
+  [
+   "CNES",
+   "Cadastro Nacional de Estabelecimentos de Saúde"
+  ],
+  [
+   "DATASUS",
+   "Departamento de Informática do SUS"
+  ],
+  [
+   "ESF",
+   "Estratégia Saúde da Família / Equipe de Saúde da Família"
+  ],
+  [
+   "IBGE",
+   "Instituto Brasileiro de Geografia e Estatística"
+  ],
+  [
+   "ICSAP",
+   "Internações por Condições Sensíveis à Atenção Primária"
+  ],
+  [
+   "NASF",
+   "Núcleo de Apoio à Saúde da Família"
+  ],
+  [
+   "RMM",
+   "Razão de Mortalidade Materna"
+  ],
+  [
+   "SESA/AP",
+   "Secretaria de Estado da Saúde do Amapá"
+  ],
+  [
+   "SIA/SUS",
+   "Sistema de Informações Ambulatoriais do SUS"
+  ],
+  [
+   "SIH/SUS",
+   "Sistema de Informações Hospitalares do SUS"
+  ],
+  [
+   "SIM",
+   "Sistema de Informações sobre Mortalidade"
+  ],
+  [
+   "SINAN",
+   "Sistema de Informação de Agravos de Notificação"
+  ],
+  [
+   "SINASC",
+   "Sistema de Informações sobre Nascidos Vivos"
+  ],
+  [
+   "SUS",
+   "Sistema Único de Saúde"
+  ],
+  [
+   "TMI",
+   "Taxa de Mortalidade Infantil"
+  ],
+  [
+   "UBS",
+   "Unidade Básica de Saúde"
+  ],
+  [
+   "UF",
+   "Unidade da Federação"
+  ],
+  [
+   "UTI",
+   "Unidade de Terapia Intensiva"
+  ],
+  [
+   "eAP",
+   "Equipe de Atenção Primária"
+  ],
+  [
+   "eMulti",
+   "Equipe Multiprofissional"
+  ],
+  [
+   "eSB",
+   "Equipe de Saúde Bucal"
+  ]
+ ],
+ "referencias": [
+  "ALMEIDA, Patrício. **Saúde no Estado do Amapá**: levantamento da produção hospitalar e ambulatorial e estudo analítico para a transição de governo 2026/2027. Macapá, 2026.",
+  "BRASIL. Instituto Brasileiro de Geografia e Estatística. **Censo Demográfico 2022**: população residente por sexo e idade (tabela 9514) e estimativas populacionais (tabela 6579). Rio de Janeiro: IBGE, 2026. Disponível em: https://apisidra.ibge.gov.br. Acesso em: 7 nov. 2026.",
+  "BRASIL. Ministério da Saúde. DATASUS. **Cadastro Nacional de Estabelecimentos de Saúde (CNES)**: equipes de saúde e habilitações – Amapá e Brasil por UF. Brasília, DF: Ministério da Saúde, 2026. Disponível em: http://tabnet.datasus.gov.br/cgi/deftohtm.exe?cnes/cnv/equipeap.def. Acesso em: 7 nov. 2026.",
+  "BRASIL. Ministério da Saúde. DATASUS. **Sistema de Informações Ambulatoriais do SUS (SIA/SUS)**: produção da atenção básica por município – Amapá. Brasília, DF: Ministério da Saúde, 2026. Disponível em: http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sia/cnv/qaap.def. Acesso em: 7 nov. 2026.",
+  "BRASIL. Ministério da Saúde. DATASUS. **Sistema de Informações Hospitalares do SUS (SIH/SUS)**: morbidade hospitalar por local de residência – Amapá. Brasília, DF: Ministério da Saúde, 2026. Disponível em: http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sih/cnv/nrap.def. Acesso em: 7 nov. 2026.",
+  "BRASIL. Ministério da Saúde. DATASUS. **Sistema de Informações sobre Mortalidade (SIM)**: óbitos maternos, fetais e infantis – Amapá e Brasil por UF. Brasília, DF: Ministério da Saúde, 2026. Disponível em: http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sim/cnv/mat10ap.def. Acesso em: 7 nov. 2026.",
+  "BRASIL. Ministério da Saúde. DATASUS. **Sistema de Informações sobre Nascidos Vivos (SINASC)**: nascidos vivos por município de residência da mãe – Amapá e Brasil por UF. Brasília, DF: Ministério da Saúde, 2026. Disponível em: http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinasc/cnv/nvap.def. Acesso em: 7 nov. 2026.",
+  "BRASIL. Ministério da Saúde. Portaria GM/MS nº 2.436, de 21 de setembro de 2017. Aprova a Política Nacional de Atenção Básica. **Diário Oficial da União**, Brasília, DF, 22 set. 2017.",
+  "BRASIL. Ministério da Saúde. Portaria SAS nº 221, de 17 de abril de 2008. Lista Brasileira de Internações por Condições Sensíveis à Atenção Primária. **Diário Oficial da União**, Brasília, DF, 18 abr. 2008."
+ ],
+ "resumo": "Este estudo complementa o levantamento geral da saúde no Amapá para a transição de governo 2026/2027 com o diagnóstico da atenção primária à saúde, da regionalização da rede e da saúde materno-infantil na série 2022–2026, a partir do CNES, SIH, SIA, SINASC e SIM (DATASUS) e do IBGE. As equipes de Saúde da Família cresceram 41% (199 em 2022, 280 em 2026) e a cobertura potencial alcançou 100% em 15 dos 16 municípios, com 2.880 habitantes por equipe, mas a cobertura efetiva não acompanhou: apenas 60,3% dos nascidos vivos de 2025 tiveram sete ou mais consultas de pré-natal (26ª posição entre as UFs) e as internações por condições sensíveis à atenção primária subiram 27%, de 7.544 para 9.593, puxadas por pneumonias, doenças cerebrovasculares, infecções urinárias, diabetes e insuficiência cardíaca. O Estado mantém 139 leitos de UTI adulto com apenas 19 habilitados pelo Ministério da Saúde, o que implica perda de custeio federal. A razão de mortalidade materna do triênio 2022–2024 (82,3 por 100 mil nascidos vivos) é a segunda maior do país e a mortalidade infantil (17,8 por mil em 2024) a terceira, com predomínio de causas evitáveis e investigação incompleta dos óbitos. A assistência ao parto concentra-se em Macapá (72%), com retração em Santana e novo polo em Porto Grande. O estudo propõe a habilitação dos leitos aptos, um plano de redução da mortalidade materna e infantil, metas pactuadas de pré-natal e de ICSAP por município e a revisão da regionalização das maternidades.",
+ "natureza": "Estudo complementar elaborado como subsídio técnico à equipe de transição de governo do Estado do Amapá, área da saúde (Secretaria de Estado da Saúde – SESA/AP), com base em dados públicos do CNES, SIH, SIA, SINASC, SIM e IBGE extraídos em 7 de novembro de 2026."
+}

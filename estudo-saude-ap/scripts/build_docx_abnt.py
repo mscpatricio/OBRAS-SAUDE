@@ -13,17 +13,18 @@ from docx.oxml import OxmlElement
 
 MD=sys.argv[1]; OUT=sys.argv[2]
 START=int(sys.argv[3]) if len(sys.argv)>3 else 1
-PAGES=json.load(open(sys.argv[4])) if len(sys.argv)>4 and os.path.exists(sys.argv[4]) else {}
+PAGES=json.load(open(sys.argv[4])) if len(sys.argv)>4 and sys.argv[4] and os.path.exists(sys.argv[4]) else {}
 # numeração ABNT: conta a partir da folha de rosto (capa excluída); o passo 1 devolve páginas relativas ao 1º texto
 if PAGES:
     _off=PAGES.get('_first_textual_page',1)-2
     PAGES={k:(v+_off if isinstance(v,int) and not k.startswith('_') else v) for k,v in PAGES.items()}
     START=PAGES['_first_textual_page']-1
 BASE=os.path.dirname(os.path.abspath(MD))
-AUTOR='Patrício Almeida'
-TITULO='SAÚDE NO ESTADO DO AMAPÁ: LEVANTAMENTO DA PRODUÇÃO HOSPITALAR E AMBULATORIAL E ESTUDO ANALÍTICO PARA A TRANSIÇÃO DE GOVERNO 2026/2027'
-SUBTITULO='Série histórica 2022–2026 com base em dados públicos (DATASUS, SIOPS, IBGE)'
-LOCAL='Macapá'; ANO='2026'
+CFG=json.load(open(sys.argv[5],encoding='utf-8')) if len(sys.argv)>5 and sys.argv[5] else {}
+AUTOR=CFG.get('autor','Patrício Almeida')
+TITULO=CFG.get('titulo','SAÚDE NO ESTADO DO AMAPÁ: LEVANTAMENTO DA PRODUÇÃO HOSPITALAR E AMBULATORIAL E ESTUDO ANALÍTICO PARA A TRANSIÇÃO DE GOVERNO 2026/2027')
+SUBTITULO=CFG.get('subtitulo','Série histórica 2022–2026 com base em dados públicos (DATASUS, SIOPS, IBGE)')
+LOCAL=CFG.get('local','Macapá'); ANO=CFG.get('ano','2026')
 FONT='Arial'
 
 doc=Document()
@@ -103,7 +104,7 @@ def add_table(rows,aligns):
     fac=size*0.021
     lens=[max(len(re.sub(r'\*','',r[j]).strip()) for r in rows[1:]) for j in range(ncol)]
     hdrw=[max(len(w) for w in rows[0][j].split()) for j in range(ncol)]
-    others=[max(min(lens[j],12)*fac+0.45, hdrw[j]*fac+0.7) for j in range(1,ncol)]
+    others=[max(min(lens[j],12)*fac+0.55, hdrw[j]*fac+0.7, 1.25) for j in range(1,ncol)]
     first=16-sum(others)
     if first<3.4:
         k=(16-3.4)/sum(others); others=[o*k for o in others]; first=3.4
@@ -206,17 +207,17 @@ for _ in range(7): para('',indent_first=False)
 para(TITULO,align=WD_ALIGN_PARAGRAPH.CENTER,bold=True,indent_first=False)
 para(SUBTITULO,align=WD_ALIGN_PARAGRAPH.CENTER,indent_first=False,before=12)
 for _ in range(4): para('',indent_first=False)
-nat=para('Estudo analítico elaborado como subsídio técnico à equipe de transição de governo do Estado do Amapá, área da saúde (Secretaria de Estado da Saúde – SESA/AP), com base em dados públicos extraídos em 6 de novembro de 2026.',align=WD_ALIGN_PARAGRAPH.JUSTIFY,indent_first=False,spacing=1.0,left=8)
+nat=para(CFG.get('natureza','Estudo analítico elaborado como subsídio técnico à equipe de transição de governo do Estado do Amapá, área da saúde (Secretaria de Estado da Saúde – SESA/AP), com base em dados públicos extraídos em 6 de novembro de 2026.'),align=WD_ALIGN_PARAGRAPH.JUSTIFY,indent_first=False,spacing=1.0,left=8)
 for _ in range(9): para('',indent_first=False)
 para(LOCAL.upper(),align=WD_ALIGN_PARAGRAPH.CENTER,bold=True,indent_first=False)
 para(ANO,align=WD_ALIGN_PARAGRAPH.CENTER,bold=True,indent_first=False)
 page_break()
 # RESUMO
 pretext_title('RESUMO')
-resumo=('Este estudo apresenta o levantamento da produção hospitalar e ambulatorial, da rede física, da força de trabalho, do financiamento e dos indicadores vitais da saúde no Estado do Amapá na série histórica 2022–2026, com a finalidade de subsidiar a transição de governo 2026/2027 na Secretaria de Estado da Saúde (SESA/AP). Os dados foram extraídos de bases públicas (DATASUS/TABNET: SIH, SIA, CNES, SIM e SINASC; SIOPS; IBGE/SIDRA; edital do concurso SESA 001/2026) e tabulados em planilha com 129 tabelas. Entre 2022 e 2025, as internações SUS cresceram 40,1% (41.312 para 57.873 AIH) e o valor ambulatorial 93,3% (R$ 77,0 milhões para R$ 148,7 milhões); os leitos SUS aumentaram 14,8% e o número de médicos cadastrados 54%; a despesa estadual com saúde por habitante subiu 84,5% e é a maior do país. Permanecem, contudo, o menor valor médio de internação entre as unidades da federação, apenas 2,3% de internações de alta complexidade, mortalidade infantil de 17,8 por mil nascidos vivos (3ª maior do Brasil em 2024) e dependência de prestadores externos. Identificou-se crescimento atípico do faturamento de procedimentos vasculares (de R$ 15 mil em 2022 para R$ 25,6 milhões em 2025 no SIA, com 7.375 internações de trombectomia venosa de permanência zero em 2025) e divergência entre leitos de UTI existentes (139) e cadastrados como SUS (19). O estudo conclui com pontos de atenção, lista de documentos a requisitar e agenda de prioridades para os primeiros cem dias da nova gestão.')
+resumo=CFG.get('resumo') or ('Este estudo apresenta o levantamento da produção hospitalar e ambulatorial, da rede física, da força de trabalho, do financiamento e dos indicadores vitais da saúde no Estado do Amapá na série histórica 2022–2026, com a finalidade de subsidiar a transição de governo 2026/2027 na Secretaria de Estado da Saúde (SESA/AP). Os dados foram extraídos de bases públicas (DATASUS/TABNET: SIH, SIA, CNES, SIM e SINASC; SIOPS; IBGE/SIDRA; edital do concurso SESA 001/2026) e tabulados em planilha com 129 tabelas. Entre 2022 e 2025, as internações SUS cresceram 40,1% (41.312 para 57.873 AIH) e o valor ambulatorial 93,3% (R$ 77,0 milhões para R$ 148,7 milhões); os leitos SUS aumentaram 14,8% e o número de médicos cadastrados 54%; a despesa estadual com saúde por habitante subiu 84,5% e é a maior do país. Permanecem, contudo, o menor valor médio de internação entre as unidades da federação, apenas 2,3% de internações de alta complexidade, mortalidade infantil de 17,8 por mil nascidos vivos (3ª maior do Brasil em 2024) e dependência de prestadores externos. Identificou-se crescimento atípico do faturamento de procedimentos vasculares (de R$ 15 mil em 2022 para R$ 25,6 milhões em 2025 no SIA, com 7.375 internações de trombectomia venosa de permanência zero em 2025) e divergência entre leitos de UTI existentes (139) e cadastrados como SUS (19). O estudo conclui com pontos de atenção, lista de documentos a requisitar e agenda de prioridades para os primeiros cem dias da nova gestão.')
 para(resumo,indent_first=False,spacing=1.0)
 para('',indent_first=False)
-para('**Palavras-chave:** Sistema Único de Saúde; Amapá; produção hospitalar; produção ambulatorial; financiamento da saúde; transição de governo.',indent_first=False,spacing=1.0)
+para('**Palavras-chave:** '+CFG.get('palavras_chave','Sistema Único de Saúde; Amapá; produção hospitalar; produção ambulatorial; financiamento da saúde; transição de governo.'),indent_first=False,spacing=1.0)
 page_break()
 # LISTA DE FIGURAS
 def dotline(label,page,bold=False):
@@ -232,7 +233,7 @@ pretext_title('LISTA DE TABELAS')
 for n,t in tabs: dotline(f'Tabela {n} – {t}',PAGES.get(f'tab{n}','000'))
 page_break()
 pretext_title('LISTA DE ABREVIATURAS E SIGLAS')
-siglas=[('AIH','Autorização de Internação Hospitalar'),('Alap','Assembleia Legislativa do Estado do Amapá'),('APAC','Autorização de Procedimentos de Alta Complexidade'),('ASPS','Ações e Serviços Públicos de Saúde'),('BPA','Boletim de Produção Ambulatorial'),('CBO','Classificação Brasileira de Ocupações'),('CID-10','Classificação Estatística Internacional de Doenças, 10ª revisão'),('CNES','Cadastro Nacional de Estabelecimentos de Saúde'),('DATASUS','Departamento de Informática do SUS'),('DENASUS','Departamento Nacional de Auditoria do SUS'),('Ebserh','Empresa Brasileira de Serviços Hospitalares'),('FAEC','Fundo de Ações Estratégicas e Compensação'),('FES','Fundo Estadual de Saúde'),('FNS','Fundo Nacional de Saúde'),('HCA','Hospital da Criança e do Adolescente'),('HCAL','Hospital de Clínicas Dr. Alberto Lima'),('HE','Hospital de Emergência'),('HU-UNIFAP','Hospital Universitário da Universidade Federal do Amapá'),('IBGE','Instituto Brasileiro de Geografia e Estatística'),('LOA','Lei Orçamentária Anual'),('MAC','Média e Alta Complexidade'),('OCI','Oferta de Cuidados Integrados'),('PCCS','Plano de Cargos, Carreiras e Salários'),('PLOA','Projeto de Lei Orçamentária Anual'),('SESA/AP','Secretaria de Estado da Saúde do Amapá'),('SIA/SUS','Sistema de Informações Ambulatoriais do SUS'),('SIH/SUS','Sistema de Informações Hospitalares do SUS'),('SIM','Sistema de Informações sobre Mortalidade'),('SINASC','Sistema de Informações sobre Nascidos Vivos'),('SIOPS','Sistema de Informações sobre Orçamentos Públicos em Saúde'),('SUS','Sistema Único de Saúde'),('TCE-AP','Tribunal de Contas do Estado do Amapá'),('TFD','Tratamento Fora de Domicílio'),('TMI','Taxa de mortalidade infantil'),('UCI','Unidade de Cuidados Intermediários'),('UF','Unidade da Federação'),('UPA','Unidade de Pronto Atendimento'),('UTI','Unidade de Terapia Intensiva')]
+siglas=CFG.get('siglas') or [('AIH','Autorização de Internação Hospitalar'),('Alap','Assembleia Legislativa do Estado do Amapá'),('APAC','Autorização de Procedimentos de Alta Complexidade'),('ASPS','Ações e Serviços Públicos de Saúde'),('BPA','Boletim de Produção Ambulatorial'),('CBO','Classificação Brasileira de Ocupações'),('CID-10','Classificação Estatística Internacional de Doenças, 10ª revisão'),('CNES','Cadastro Nacional de Estabelecimentos de Saúde'),('DATASUS','Departamento de Informática do SUS'),('DENASUS','Departamento Nacional de Auditoria do SUS'),('Ebserh','Empresa Brasileira de Serviços Hospitalares'),('FAEC','Fundo de Ações Estratégicas e Compensação'),('FES','Fundo Estadual de Saúde'),('FNS','Fundo Nacional de Saúde'),('HCA','Hospital da Criança e do Adolescente'),('HCAL','Hospital de Clínicas Dr. Alberto Lima'),('HE','Hospital de Emergência'),('HU-UNIFAP','Hospital Universitário da Universidade Federal do Amapá'),('IBGE','Instituto Brasileiro de Geografia e Estatística'),('LOA','Lei Orçamentária Anual'),('MAC','Média e Alta Complexidade'),('OCI','Oferta de Cuidados Integrados'),('PCCS','Plano de Cargos, Carreiras e Salários'),('PLOA','Projeto de Lei Orçamentária Anual'),('SESA/AP','Secretaria de Estado da Saúde do Amapá'),('SIA/SUS','Sistema de Informações Ambulatoriais do SUS'),('SIH/SUS','Sistema de Informações Hospitalares do SUS'),('SIM','Sistema de Informações sobre Mortalidade'),('SINASC','Sistema de Informações sobre Nascidos Vivos'),('SIOPS','Sistema de Informações sobre Orçamentos Públicos em Saúde'),('SUS','Sistema Único de Saúde'),('TCE-AP','Tribunal de Contas do Estado do Amapá'),('TFD','Tratamento Fora de Domicílio'),('TMI','Taxa de mortalidade infantil'),('UCI','Unidade de Cuidados Intermediários'),('UF','Unidade da Federação'),('UPA','Unidade de Pronto Atendimento'),('UTI','Unidade de Terapia Intensiva')]
 for s,d in siglas:
     p=para('',indent_first=False,spacing=1.5,left=0,hanging=3); r=p.add_run(s); set_font(r,12,True); r2=p.add_run('\t'+d); set_font(r2,12)
     p.paragraph_format.tab_stops.add_tab_stop(Cm(3))
@@ -276,7 +277,7 @@ for b in blocks:
 # ---------------- REFERÊNCIAS (NBR 6023) ----------------
 page_break()
 pretext_title('REFERÊNCIAS')
-refs=[
+refs=CFG.get('referencias') or [
  'AMAPÁ. Assembleia Legislativa. **Alap aprova Lei Orçamentária Anual para o exercício financeiro de 2026**. Macapá: Alap, 27 dez. 2025. Disponível em: https://www.diariodoamapa.com.br/cadernos/politica/alap-aprova-lei-orcamentaria-anual-para-o-exercicio-financeiro-de-2026/. Acesso em: 6 nov. 2026.',
  'AMAPÁ. Secretaria de Estado da Administração; Secretaria de Estado da Saúde. **Edital de Concurso Público nº 001/2026**: abertura de inscrições para cargos do Quadro de Pessoal da Saúde Estadual. Macapá: SEAD; SESA; Instituto AOCP, 11 set. 2026.',
  'BRASIL. Instituto Brasileiro de Geografia e Estatística. **Estimativas da população residente para os municípios e para as unidades da federação**: tabela 6579. Rio de Janeiro: IBGE, 2026. Disponível em: https://apisidra.ibge.gov.br/values/t/6579. Acesso em: 6 nov. 2026.',

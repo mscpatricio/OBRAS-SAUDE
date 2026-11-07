@@ -1,0 +1,9 @@
+Grande Grupo CID10;Branca;Preta;Amarela;Parda;Indígena;Ignorado;Total
+V01-V99 Acidentes de transporte;2;2;-;94;-;1;99
+W00-X59 Outras causas externas de lesões acident;16;12;3;94;1;3;129
+X60-X84 Lesões autoprovocadas voluntariamente;2;4;-;55;2;2;65
+X85-Y09 Agressões;3;7;-;244;-;3;257
+Y10-Y34 Eventos cuja intenção é indeterminada;2;-;-;20;2;2;26
+Y35-Y36 Intervenções legais e operações de guerra;2;2;1;98;-;3;106
+Y40-Y84 Complic assistência médica e cirúrgica;6;1;-;11;-;1;19
+Total;33;28;4;616;5;15;701

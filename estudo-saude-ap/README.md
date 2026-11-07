@@ -23,3 +23,18 @@ Os scripts usam diretórios de trabalho definidos nas variáveis `OUT`/`RAW` no 
 ## Limitações conhecidas
 
 Não foi possível acessar, a partir do ambiente de extração, o ConsultaFNS (repasses fundo a fundo), os portais do Governo do Amapá (transparência, SESA), o e-Gestor AB/SISAB (cobertura da atenção primária) e o SI-PNI (vacinação). Esses dados devem ser solicitados diretamente à SESA na transição (lista na seção 9 do estudo). Valores em reais correntes; 2025 do SIM/SINASC é preliminar; 2026 é parcial (jan–ago no SIH/SIA; set no CNES; 4º bimestre no SIOPS).
+
+## Estudos complementares (pasta `estudos-complementares/`)
+
+Quatro estudos temáticos no mesmo padrão (extração pública, planilha, gráficos e documento ABNT com autoria de Patrício Almeida), série 2022–2026, extração em 07/11/2026:
+
+| Pasta | Estudo | Principais fontes |
+|---|---|---|
+| `e1_vigilancia/` | Vigilância em saúde: doenças transmissíveis e agravos de notificação (tuberculose, hanseníase, sífilis, arboviroses, leishmanioses, meningites, animais peçonhentos, intoxicações) | SINAN, SIM, SINASC, IBGE |
+| `e2_atencao_primaria/` | Atenção primária, regionalização e saúde materno-infantil (equipes e cobertura, habilitações e UTI, ICSAP, pré-natal, parto, mortalidade materna, fetal e infantil) | CNES, SIH, SIA, SINASC, SIM, IBGE |
+| `e3_violencias_saude_mental/` | Violências, causas externas e saúde mental (homicídios e intervenções legais, suicídio, trânsito, afogamentos, internações por causas externas, notificações de violência, RAPS) | SIM, SIH, SINAN, CNES, SIA |
+| `e4_oncologia_cronicas/` | Oncologia, rastreamento e doenças crônicas (mortalidade por câncer e DCNT, quimioterapia e radioterapia, mamografia e citopatológico, AVC, infarto, diabetes, diálise) | SIM, SIA, SIH, CNES, IBGE |
+
+Cada pasta contém `Estudo_*.md` (texto-fonte), `Estudo_*.docx` e `Estudo_*.pdf` (ABNT), `Tabelas_*.xlsx` (planilha com índice, painel-resumo, tabelas e fontes) e `graficos/`. Os arquivos `cfg_e*.json` guardam título, resumo, siglas e referências de cada estudo. Os dados brutos estão em `dados/tabnet2/` e os scripts em `scripts/` (`extract_estudos2*.py`, `build_e1.py` a `build_e4.py`, `lib_estudo.py`).
+
+Temas pertinentes que não puderam ser desenvolvidos com dados públicos acessíveis e devem ser levantados internamente na transição: assistência farmacêutica e judicialização (SISMEDEX/Hórus, estoques, demandas judiciais), regulação e filas (SISREG e sistema estadual), recursos humanos por vínculo e folha, contratos e execução financeira por unidade (FES, FNS, restos a pagar), imunização (SI-PNI) e indicadores da APS por cadastro (SISAB/e-Gestor).

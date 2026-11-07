@@ -1,0 +1,11 @@
+Grande Grup Causas;Internações;Valor total;Média permanência;Óbitos;Taxa mortalidade
+V01-V99 Acidentes de transporte;1030;789033,20;5,8;10;0,97
+W00-X59 Outras causas externas de lesões acident;2817;1819106,77;4,5;22;0,78
+X60-X84 Lesões autoprovocadas voluntariamente;17;7398,92;6,7;1;5,88
+X85-Y09 Agressões;212;207817,80;6,8;6;2,83
+Y10-Y34 Eventos cuja intenção é indeterminada;39;29741,59;3,9;-;-
+Y40-Y84 Complic assistência médica e cirúrgica;219;313638,37;7,7;8;3,65
+Y85-Y89 Seqüelas de causas externas;129;203836,30;10,8;12;9,30
+Y90-Y98 Fatores suplement relac outras causas;4;968,41;2,3;-;-
+S-T Causas externas não classificadas;36;31385,37;3,8;-;-
+Total;4503;3402926,73;5,2;59;1,31

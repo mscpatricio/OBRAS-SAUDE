@@ -1,0 +1,108 @@
+{
+ "titulo": "VIGILÂNCIA EM SAÚDE NO ESTADO DO AMAPÁ: DOENÇAS TRANSMISSÍVEIS E AGRAVOS DE NOTIFICAÇÃO, 2022–2026",
+ "subtitulo": "Estudo complementar para a transição de governo 2026/2027 (SINAN, SIM/DATASUS)",
+ "palavras_chave": "Vigilância epidemiológica; doenças transmissíveis; tuberculose; sífilis congênita; malária; Amapá.",
+ "siglas": [
+  [
+   "AIDS",
+   "Síndrome da Imunodeficiência Adquirida"
+  ],
+  [
+   "APS",
+   "Atenção Primária à Saúde"
+  ],
+  [
+   "CID-10",
+   "Classificação Estatística Internacional de Doenças, 10ª revisão"
+  ],
+  [
+   "CNES",
+   "Cadastro Nacional de Estabelecimentos de Saúde"
+  ],
+  [
+   "DATASUS",
+   "Departamento de Informática do SUS"
+  ],
+  [
+   "HIV",
+   "Vírus da Imunodeficiência Humana"
+  ],
+  [
+   "IBGE",
+   "Instituto Brasileiro de Geografia e Estatística"
+  ],
+  [
+   "LTA",
+   "Leishmaniose Tegumentar Americana"
+  ],
+  [
+   "LV",
+   "Leishmaniose Visceral"
+  ],
+  [
+   "MB",
+   "Multibacilar"
+  ],
+  [
+   "PB",
+   "Paucibacilar"
+  ],
+  [
+   "PPL",
+   "População Privada de Liberdade"
+  ],
+  [
+   "SESA/AP",
+   "Secretaria de Estado da Saúde do Amapá"
+  ],
+  [
+   "SIA/SUS",
+   "Sistema de Informações Ambulatoriais do SUS"
+  ],
+  [
+   "SIH/SUS",
+   "Sistema de Informações Hospitalares do SUS"
+  ],
+  [
+   "SIM",
+   "Sistema de Informações sobre Mortalidade"
+  ],
+  [
+   "SINAN",
+   "Sistema de Informação de Agravos de Notificação"
+  ],
+  [
+   "SINASC",
+   "Sistema de Informações sobre Nascidos Vivos"
+  ],
+  [
+   "SIVEP-Malária",
+   "Sistema de Informação de Vigilância Epidemiológica da Malária"
+  ],
+  [
+   "SUS",
+   "Sistema Único de Saúde"
+  ],
+  [
+   "TB",
+   "Tuberculose"
+  ],
+  [
+   "TDO",
+   "Tratamento Diretamente Observado"
+  ],
+  [
+   "UF",
+   "Unidade da Federação"
+  ]
+ ],
+ "referencias": [
+  "ALMEIDA, Patrício. **Saúde no Estado do Amapá**: levantamento da produção hospitalar e ambulatorial e estudo analítico para a transição de governo 2026/2027. Macapá, 2026.",
+  "BRASIL. Instituto Brasileiro de Geografia e Estatística. **Censo Demográfico 2022**: população residente por sexo e idade (tabela 9514) e estimativas populacionais (tabela 6579). Rio de Janeiro: IBGE, 2026. Disponível em: https://apisidra.ibge.gov.br. Acesso em: 7 nov. 2026.",
+  "BRASIL. Ministério da Saúde. **Guia de Vigilância em Saúde**. 6. ed. Brasília, DF: Ministério da Saúde, 2024.",
+  "BRASIL. Ministério da Saúde. DATASUS. **Sistema de Informação de Agravos de Notificação (SINAN)**: tuberculose, hanseníase, sífilis congênita, sífilis em gestante, hepatites virais, dengue, chikungunya, zika, malária, leishmanioses, meningites, acidentes por animais peçonhentos e intoxicações exógenas – Amapá e Brasil por UF. Brasília, DF: Ministério da Saúde, 2026. Disponível em: http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinannet/cnv/tubercap.def. Acesso em: 7 nov. 2026.",
+  "BRASIL. Ministério da Saúde. DATASUS. **Sistema de Informações sobre Mortalidade (SIM)**: óbitos por residência segundo grupos e categorias da CID-10 – Amapá. Brasília, DF: Ministério da Saúde, 2026. Disponível em: http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sim/cnv/obt10ap.def. Acesso em: 7 nov. 2026."
+ ],
+ "resumo": "Este estudo complementa o levantamento geral da saúde no Amapá para a transição de governo 2026/2027 com o diagnóstico da vigilância epidemiológica das doenças transmissíveis e dos agravos de notificação compulsória na série 2022–2026, a partir do SINAN, do SIM e do SINASC (DATASUS) e das estimativas populacionais do IBGE. A tuberculose cresceu 22% (509 casos em 2022, 622 em 2025) e o Amapá tem a terceira maior incidência do país (77,1 por 100 mil habitantes), com cura de 71,4% e abandono de 16,9% em 2024 e coinfecção com HIV em 20% dos casos de 2025. A hanseníase saltou para 109 casos novos em 2025 (detecção de 13,5 por 100 mil), 88% multibacilares e 14% com grau II de incapacidade no diagnóstico. A sífilis congênita atingiu 192 casos em 2024 (15,6 por mil nascidos vivos, quarta maior incidência nacional), com pré-natal realizado em 72% dos casos e parceiro tratado em apenas 5,7%. A epidemia de dengue de 2024 somou 10.693 casos prováveis, 762 hospitalizações e 15 óbitos confirmados (31 no SIM). A leishmaniose tegumentar (658 casos em 2024), os acidentes por animais peçonhentos (1.070 em 2025, 12 óbitos em 2022–2025) e um agrupamento de intoxicações por metal em Oiapoque caracterizam os agravos do interior. O estudo identifica falhas de encerramento e registro que comprometem o monitoramento e propõe prioridades para os primeiros cem dias da nova gestão.",
+ "natureza": "Estudo complementar elaborado como subsídio técnico à equipe de transição de governo do Estado do Amapá, área da saúde (Secretaria de Estado da Saúde – SESA/AP), com base em dados públicos do SINAN, SIM, SINASC e IBGE extraídos em 7 de novembro de 2026."
+}

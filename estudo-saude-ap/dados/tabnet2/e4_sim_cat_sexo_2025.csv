@@ -1,0 +1,401 @@
+Categoria CID-10;Masc;Fem;Total
+@A09 Outras gastroenterites e colites de origem infecciosa e as não especificadas;4;5;9
+A15 Tuberculose respiratória, com confirmação bacteriológica e histológica;4;1;5
+A16 Tuberculose das vias respiratórias, sem confirmação bacteriológica ou histológica;11;3;14
+A18 Tuberculose de outros órgãos;-;1;1
+A27 Leptospirose;2;-;2
+@A41 Outras sepses;40;42;82
+A46 Erisipela;1;2;3
+A50 Sífilis congênita;1;-;1
+A52 Sífilis tardia;1;-;1
+A87 Meningite viral;-;1;1
+A94 Febre viral transmitida por artrópodes, não especificada;1;-;1
+A95 Febre amarela;1;-;1
+&A97 Dengue;-;6;6
+B16 Hepatite aguda B;1;-;1
+B18 Hepatite viral crônica;-;2;2
+B20 Doença pelo vírus da imunodeficiência humana [HIV], resultando em doenças infecciosas e parasitá;35;19;54
+B22 Doença pelo vírus da imunodeficiência humana [HIV] resultando em outras doenças especificadas;1;1;2
+B23 Doença pelo vírus da imunodeficiência humana [HIV] resultando em outras doenças;2;1;3
+B24 Doença pelo vírus da imunodeficiência humana [HIV] não especificada;3;-;3
+B25 Doença por citomegalovírus;-;1;1
+B34 Doenças por vírus, de localização não especificada;3;3;6
+B51 Malária por Plasmodium vivax;-;1;1
+B57 Doença de Chagas;1;1;2
+B88 Outras infestações;-;1;1
+B90 Seqüelas de tuberculose;2;-;2
+B94 Seqüelas de outras doenças infecciosas e parasitárias e das não especificadas;-;1;1
+C05 Neoplasia maligna do palato;1;1;2
+C06 Neoplasia maligna de outras partes e de partes não especificadas da boca;-;1;1
+C07 Neoplasia maligna da glândula parótida;1;1;2
+C10 Neoplasia maligna da orofaringe;1;1;2
+C11 Neoplasia maligna da nasofaringe;2;1;3
+C13 Neoplasia maligna da hipofaringe;2;-;2
+C14 Neoplasia maligna de outras localizações e de localizações mal definida, do lábio, cavidade oral;4;-;4
+C15 Neoplasia maligna do esôfago;8;5;13
+C16 Neoplasia maligna do estômago;46;23;69
+C17 Neoplasia maligna do intestino delgado;1;2;3
+C18 Neoplasia maligna do cólon;4;7;11
+C19 Neoplasia maligna da junção retossigmóide;3;2;5
+C20 Neoplasia maligna do reto;3;6;9
+C21 Neoplasia maligna do ânus e do canal anal;-;2;2
+C22 Neoplasia maligna do fígado e das vias biliares intra-hepáticas;15;8;23
+C23 Neoplasia maligna da vesícula biliar;2;5;7
+C24 Neoplasia maligna de outras partes, e de partes não especificadas das vias biliares;3;1;4
+C25 Neoplasia maligna do pâncreas;16;11;27
+C26 Neoplasia maligna de outros órgãos digestivos e de localizações mal definidas no aparelho digest;5;3;8
+C31 Neoplasia maligna dos seios da face;1;-;1
+C32 Neoplasia maligna da laringe;12;-;12
+C34 Neoplasia maligna dos brônquios e dos pulmões;34;19;53
+C38 Neoplasia maligna do coração, mediastino e pleura;1;3;4
+C41 Neoplasia maligna dos ossos e das cartilagens articulares de outras localizações e de localizaçõ;1;4;5
+C43 Melanoma maligno da pele;-;2;2
+C44 Outras neoplasias malignas da pele;4;2;6
+C48 Neoplasia maligna dos tecidos moles do retroperitônio e do peritônio;5;9;14
+C49 Neoplasia maligna do tecido conjuntivo e de outros tecidos moles;5;6;11
+C50 Neoplasia maligna da mama;1;37;38
+C53 Neoplasia maligna do colo do útero;-;34;34
+C54 Neoplasia maligna do corpo do útero;-;5;5
+C55 Neoplasia maligna do útero, porção não especificada;-;12;12
+C56 Neoplasia maligna do ovário;-;14;14
+C57 Neoplasia maligna de outros órgãos genitais femininos e dos não especificados;-;3;3
+C60 Neoplasia maligna do pênis;3;-;3
+C61 Neoplasia maligna da próstata;43;-;43
+C62 Neoplasia maligna dos testículos;1;-;1
+C64 Neoplasia maligna do rim, exceto pelve renal;8;2;10
+C65 Neoplasia maligna da pelve renal;-;1;1
+C67 Neoplasia maligna da bexiga;3;-;3
+C68 Neoplasia maligna de outros órgãos urinários e dos não especificados;1;-;1
+C69 Neoplasia maligna do olho e anexos;-;1;1
+C70 Neoplasia maligna das meninges;-;1;1
+C71 Neoplasia maligna do encéfalo;4;14;18
+C73 Neoplasia maligna da glândula tireóide;-;1;1
+C74 Neoplasia maligna da glândula supra-renal [Glândula adrenal];1;-;1
+C75 Neoplasia maligna de outras glândulas endócrinas e de estruturas relacionadas;1;-;1
+C76 Neoplasia maligna de outras localizações e de localizações mal definidas;4;4;8
+C78 Neoplasia maligna secundária dos órgãos respiratórios e digestivos;8;-;8
+C79 Neoplasia maligna secundária de outras localizações;4;1;5
+C80 Neoplasia maligna, sem especificação de localização;3;-;3
+@C81 Linfoma de Hodgkin;5;-;5
+@C83 Linfoma não folicular não Hodgkin;2;-;2
+@C84 Linfomas de celulas T/NK maduras;1;-;1
+@C85 Outros tipos e não especificados de linfoma não - Hodgkin;4;6;10
+@C90 Mieloma múltiplo e neoplasias malignas de células plasmáticas;7;3;10
+C91 Leucemia linfóide;4;1;5
+C92 Leucemia mielóide;10;3;13
+C93 Leucemia monocítica;-;1;1
+C95 Leucemia de tipo celular não especificado;4;2;6
+C96 Outras neoplasias malignas e as não especificadas dos tecidos linfático, hematopoético e tecidos;1;4;5
+D32 Neoplasia benigna das meninges;-;1;1
+D33 Neoplasia benigna do encéfalo e de outras partes do sistema nervoso central;1;-;1
+D35 Neoplasia benigna de outras glândulas endócrinas e das não especificadas;-;1;1
+D37 Neoplasia de comportamento incerto ou desconhecido da cavidade oral e dos órgãos digestivos;1;1;2
+D43 Neoplasia de comportamento incerto ou desconhecido do encéfalo e do sistema nervoso central;1;-;1
+D46 Síndromes mielodisplásicas;2;-;2
+D47 Outras neoplasias de comportamento incerto ou desconhecido dos tecidos linfático, hematopoético;2;-;2
+D48 Neoplasia de comportamento incerto ou desconhecido de outras localizações e de localizações não;1;-;1
+D50 Anemia por deficiência de ferro;-;1;1
+D59 Anemia hemolítica adquirida;-;1;1
+D61 Outras anemias aplásticas;2;-;2
+D64 Outras anemias;-;1;1
+D65 Coagulação intravascular disseminada [síndrome de desfibrinação];-;1;1
+D69 Púrpura e outras afecções hemorrágicas;1;3;4
+D70 Agranulocitose;-;1;1
+D72 Outros transtornos dos glóbulos brancos;1;-;1
+D75 Outras doenças do sangue e dos órgãos hematopoéticos;-;1;1
+E03 Outros hipotireoidismos;1;-;1
+E05 Tireotoxicose [hipertireoidismo];-;2;2
+@E10 Diabetes melito tipo 1;9;5;14
+@E11 Diabetes melito tipo 2;29;31;60
+E12 Diabetes mellitus relacionado com a desnutrição;2;1;3
+E14 Diabetes mellitus não especificado;47;42;89
+E16 Outros transtornos da secreção pancreática interna;2;-;2
+E23 Hipofunção e outros transtornos da hipófise;1;-;1
+E27 Outros transtornos da glândula supra-renal;-;1;1
+E43 Desnutrição protéico-calórica grave não especificada;4;3;7
+E44 Desnutrição protéico-calórica de graus moderado e leve;1;-;1
+E66 Obesidade;3;2;5
+E78 Distúrbios do metabolismo de lipoproteínas e outras lipidemias;3;3;6
+E83 Distúrbios do metabolismo de minerais;2;-;2
+E84 Fibrose cística;2;1;3
+E85 Amiloidose;1;-;1
+E86 Depleção de volume;1;-;1
+E87 Outros transtornos do equilíbrio hidroeletrolítico e ácido-básico;7;10;17
+F03 Demência não especificada;4;2;6
+F10 Transtornos mentais e comportamentais devidos ao uso de álcool;9;-;9
+F12 Transtornos mentais e comportamentais devidos ao uso de canabinóides;1;-;1
+F17 Transtornos mentais e comportamentais devidos ao uso de fumo;3;1;4
+F20 Esquizofrenia;3;2;5
+G00 Meningite bacteriana não classificada em outra parte;-;1;1
+G04 Encefalite, mielite e encefalomielite;1;1;2
+G06 Abscesso e granuloma intracranianos e intra-raquidianos;3;1;4
+G10 Doença de Huntington;-;1;1
+G12 Atrofia muscular espinal e síndromes correlatas;6;4;10
+G20 Doença de Parkinson;6;2;8
+G30 Doença de Alzheimer;10;13;23
+G31 Outras doenças degenerativas do sistema nervoso não classificadas em outra parte;2;-;2
+G40 Epilepsia;4;4;8
+G41 Estado de mal epiléptico;-;1;1
+G60 Neuropatia hereditária e idiopática;-;1;1
+G62 Outras polineuropatias;2;-;2
+G71 Transtornos primários dos músculos;1;3;4
+G80 Paralisia cerebral;5;3;8
+G90 Transtornos do sistema nervoso autônomo;1;-;1
+G91 Hidrocefalia;4;-;4
+G93 Outros transtornos do encéfalo;3;2;5
+G95 Outras doenças da medula espinal;1;-;1
+I01 Febre reumática com comprometimento do coração;-;1;1
+I05 Doenças reumáticas da valva mitral;1;1;2
+I10 Hipertensão essencial (primária);36;41;77
+I11 Doença cardíaca hipertensiva;15;15;30
+I12 Doença renal hipertensiva;4;6;10
+I13 Doença cardíaca e renal hipertensiva;4;1;5
+I20 Angina pectoris;2;1;3
+I21 Infarto agudo do miocárdio;158;88;246
+I24 Outras doenças isquêmicas agudas do coração;20;17;37
+I25 Doença isquêmica crônica do coração;12;9;21
+I26 Embolia pulmonar;2;3;5
+I27 Outras formas de doença cardíaca pulmonar;-;3;3
+I31 Outras doenças do pericárdio;1;-;1
+I33 Endocardite aguda e subaguda;3;-;3
+@I34 Distúrbios não reumáticos da valva mitral;5;2;7
+@I35 Distúrbios não reumáticos da valva aórtica;7;2;9
+I38 Endocardite de valva não especificada;1;2;3
+I42 Cardiomiopatias;11;11;22
+I44 Bloqueio atrioventricular e do ramo esquerdo;3;3;6
+I46 Parada cardíaca;3;5;8
+I47 Taquicardia paroxística;2;-;2
+I48 Flutter e fibrilação atrial;2;-;2
+I49 Outras arritmias cardíacas;4;3;7
+I50 Insuficiência cardíaca;57;31;88
+I51 Complicações de cardiopatias e doenças cardíacas mal definidas;9;3;12
+I60 Hemorragia subaracnóide;5;13;18
+I61 Hemorragia intracerebral;21;21;42
+I62 Outras hemorragias intracranianas não-traumáticas;3;3;6
+I63 Infarto cerebral;1;2;3
+I64 Acidente vascular cerebral, não especificado como hemorrágico ou isquêmico;84;56;140
+I67 Outras doenças cerebrovasculares;36;21;57
+I69 Seqüelas de doenças cerebrovasculares;29;20;49
+I71 Aneurisma e dissecção da aorta;13;2;15
+@I72 Outros aneurismas e dissecções;-;2;2
+I73 Outras doenças vasculares periféricas;-;2;2
+I74 Embolia e trombose arteriais;-;2;2
+I80 Flebite e tromboflebite;1;-;1
+I82 Outra embolia e trombose venosas;1;1;2
+@I85 Varizes esofágicas;1;-;1
+I87 Outros transtornos das veias;-;2;2
+I89 Outros transtornos não-infecciosos dos vasos linfáticos e dos gânglios linfáticos;-;1;1
+J03 Amigdalite aguda;-;1;1
+@J09 Influenza devido a vírus da influenza  zoonótico ou pandêmico  identificado;1;-;1
+J11 Influenza [gripe] devida a vírus não identificado;1;2;3
+J12 Pneumonia viral não classificada em outra parte;-;1;1
+J15 Pneumonia bacteriana não classificada em outra parte;24;10;34
+J18 Pneumonia por microorganismo não especificada;122;111;233
+J21 Bronquiolite aguda;7;1;8
+J22 Infecções agudas não especificada das vias aéreas inferiores;1;-;1
+J38 Doenças das cordas vocais e da laringe não classificadas em outra parte;-;1;1
+J39 Outras doenças das vias aéreas superiores;1;-;1
+J43 Enfisema;12;1;13
+J44 Outras doenças pulmonares obstrutivas crônicas;64;47;111
+J45 Asma;3;6;9
+J46 Estado de mal asmático;-;1;1
+J62 Pneumoconiose devida a poeira que contenham sílica;1;-;1
+J69 Pneumonite devida a sólidos e líquidos;14;12;26
+J81 Edema pulmonar, não especificado de outra forma;5;4;9
+J84 Outras doenças pulmonares intersticiais;12;6;18
+J85 Abscesso do pulmão e do mediastino;2;2;4
+J86 Piotórax;1;1;2
+J90 Derrame pleural não classificado em outra parte;5;4;9
+J93 Pneumotórax;1;-;1
+J96 Insuficiência respiratória não classificada de outra parte;20;12;32
+J98 Outros transtornos respiratórios;-;1;1
+K12 Estomatite e lesões correlatas;1;-;1
+K21 Doença de refluxo gastroesofágico;1;-;1
+K22 Outras doenças do esôfago;-;1;1
+K25 Úlcera gástrica;2;-;2
+K31 Outras doenças do estômago e do duodeno;1;-;1
+K35 Apendicite aguda;-;2;2
+K37 Apendicite, sem outras especificações;2;1;3
+K40 Hérnia inguinal;3;1;4
+K41 Hérnia femoral;-;1;1
+K46 Hérnia abdominal não especificada;1;1;2
+K51 Colite ulcerativa;2;-;2
+K52 Outras gastroenterites e colites não-infecciosas;1;5;6
+K55 Transtornos vasculares do intestino;1;2;3
+K56 Íleo paralítico e obstrução intestinal sem hérnia;5;4;9
+K57 Doença diverticular do intestino;1;1;2
+K63 Outras doenças do intestino;1;1;2
+K65 Peritonite;4;2;6
+K70 Doença alcoólica do fígado;11;1;12
+K72 Insuficiência hepática não classificada em outra parte;5;2;7
+K73 Hepatite crônica não classificada em outra parte;1;-;1
+K74 Fibrose e cirrose hepáticas;20;6;26
+K75 Outras doenças inflamatórias do fígado;4;-;4
+K76 Outras doenças do fígado;7;4;11
+K80 Colelitíase;3;7;10
+K81 Colecistite;1;5;6
+K83 Outras doenças das vias biliares;4;5;9
+K85 Pancreatite aguda;9;7;16
+K86 Outras doenças do pâncreas;1;-;1
+K92 Outras doenças do aparelho digestivo;12;9;21
+L01 Impetigo;-;1;1
+L02 Abscesso cutâneo, furúnculo e antraz;1;-;1
+L03 Celulite (Flegmão);-;1;1
+L08 Outras infecções localizadas da pele e do tecido subcutâneo;2;1;3
+L10 Pênfigo;1;1;2
+L51 Eritema polimorfo (eritema multiforme);-;1;1
+L88 Piodermite gangrenosa;1;-;1
+L98 Outras afecções da pele e do tecido subcutâneo não classificadas em outra parte;-;1;1
+M06 Outras artrites reumatóides;1;-;1
+M19 Outras artroses;-;1;1
+M31 Outras vasculopatias necrotizantes;1;-;1
+M32 Lúpus eritematoso disseminado [sistêmico];1;9;10
+M33 Dermatopoliomiosite;-;1;1
+M62 Outros transtornos musculares;2;1;3
+N03 Síndrome nefrítica crônica;1;-;1
+N11 Nefrite túbulo-intersticial crônica;1;-;1
+N12 Nefrite túbulo-intersticial não especificada se aguda ou crônica;9;9;18
+N13 Uropatia obstrutiva e por refluxo;2;2;4
+N15 Outras doenças renais túbulo-intersticiais;-;1;1
+N17 Insuficiência renal aguda;20;23;43
+@N18 Doença renal crônica;17;11;28
+N19 Insuficiência renal não especificada;5;-;5
+N20 Calculose do rim e do ureter;-;2;2
+N28 Outros transtornos do rim e do ureter não classificado em outra parte;1;-;1
+N32 Outros transtornos da bexiga;1;-;1
+N39 Outros transtornos do trato urinário;11;10;21
+N40 Hiperplasia da próstata;5;-;5
+N49 Transtornos inflamatórios de órgãos genitais masculinos, não classificados em outra parte;2;-;2
+O02 Outros produtos anormais da concepção;-;1;1
+O03 Aborto espontâneo;-;1;1
+O15 Eclâmpsia;-;1;1
+O75 Outras complicações do trabalho de parto e do parto não classificadas em outra parte;-;1;1
+O85 Infecção puerperal;-;1;1
+O90 Complicações do puerpério não classificadas em outra parte;-;1;1
+O95 Morte obstétrica de causa não especificada;-;1;1
+O96 Morte, por qualquer causa obstétrica, que ocorre mais de 42 dias, mas menos de 1 ano, após o par;-;2;2
+P00 Feto e recém-nascido afetados por afecções maternas, não obrigatoriamente relacionadas com a gra;12;16;28
+P01 Feto e recém-nascido afetados por complicações maternas da gravidez;3;5;8
+P02 Feto e recém-nascido afetados por complicações da placenta, do cordão umbilical e das membranas;6;4;10
+P04 Feto e recém-nascido afetados por influências nocivas transmitidas ao feto via placenta ou leite;1;-;1
+P05 Crescimento fetal retardado e desnutrição fetal;-;1;1
+P07 Transtornos relacionados com a gestação de curta duração e peso baixo ao nascer não classificado;8;4;12
+P21 Asfixia ao nascer;6;4;10
+P22 Desconforto (angústia) respiratório(a) do recém-nascido;9;3;12
+P24 Síndrome de aspiração neonatal;2;1;3
+P26 Hemorragia pulmonar originada no período perinatal;1;-;1
+P28 Outras afecções respiratórias originadas no período perinatal;3;-;3
+P29 Transtornos cardiovasculares originados no período perinatal;-;2;2
+P36 Septicemia bacteriana do recém-nascido;11;10;21
+P39 Outras infecções específicas do período perinatal;-;1;1
+P53 Doença hemorrágica do feto e do recém-nascido;-;1;1
+P59 Icterícia neonatal devida a outras causas e às não especificadas;-;1;1
+P70 Transtornos transitórios do metabolismo dos carboidratos específicos do feto e do recém-nascido;1;-;1
+P77 Enterocolite necrotizante do feto e do recém-nascido;2;1;3
+P83 Outras afecções comprometendo o tegumento específicas do feto e do recém-nascido;1;-;1
+P96 Outras afecções originadas no período perinatal;-;1;1
+Q00 Anencefalia e malformações similares;1;1;2
+Q01 Encefalocele;-;1;1
+Q02 Microcefalia;1;1;2
+Q03 Hidrocefalia congênita;1;3;4
+Q04 Outras malformações congênitas do cérebro;2;-;2
+Q20 Malformações congênitas das câmaras e das comunicações cardíacas;1;1;2
+Q21 Malformações congênitas dos septos cardíacos;2;7;9
+Q22 Malformações congênitas das valvas pulmonar e tricúspide;1;-;1
+Q23 Malformações congênitas das valvas aórtica e mitral;-;1;1
+Q24 Outras malformações congênitas do coração;5;4;9
+Q25 Malformações congênitas das grandes artérias;2;-;2
+Q33 Malformações congênitas do pulmão;2;-;2
+Q41 Ausência, atresia e estenose congênita do intestino delgado;1;1;2
+Q43 Outras malformações congênitas do intestino;1;-;1
+Q76 Malformações congênitas da coluna vertebral e dos ossos do tórax;1;-;1
+Q79 Malformações congênitas do sistema osteomuscular não classificadas em outra parte;-;2;2
+Q87 Outras síndromes com malformações congênitas que acometem múltiplos sistemas;-;1;1
+Q89 Outras malformações congênitas não classificadas em outra parte;2;3;5
+Q90 Síndrome de Down;2;1;3
+R09 Outros sintomas e sinais relativos aos aparelhos circulatório e respiratório;20;13;33
+R10 Dor abdominal e pélvica;-;4;4
+R54 Senilidade;1;5;6
+R56 Convulsões, não classificadas em outra parte;1;-;1
+R57 Choque não classificado em outra parte;6;3;9
+R64 Caquexia;1;1;2
+R68 Outros sintomas e sinais gerais;1;1;2
+R91 Achados anormais, de exames para diagnóstico por imagem, do pulmão;-;1;1
+R95 Síndrome da morte súbita na infância;-;1;1
+R96 Outras mortes súbitas de causa desconhecida;28;17;45
+R98 Morte sem assistência;6;3;9
+R99 Outras causas mal definidas e as não especificadas de mortalidade;77;21;98
+V02 Pedestre traumatizado em colisão com um veículo a motor de duas ou três rodas;1;-;1
+V03 Pedestre traumatizado em colisão com um automóvel [carro], ´pick up´ ou caminhonete;1;1;2
+V04 Pedestre traumatizado em colisão com um veículo de transporte pesado ou com um ônibus;-;1;1
+V09 Pedestre traumatizado em outros acidentes de transporte e em acidentes de transporte não especif;2;-;2
+V22 Motociclista traumatizado em colisão com um veículo a motor de duas ou três rodas;1;2;3
+V23 Motociclista traumatizado em colisão com um automóvel [carro], ´pick up´ ou caminhonete;8;-;8
+V24 Motociclista traumatizado em colisão com um veículo de transporte pesado ou um ônibus;4;1;5
+V27 Motociclista traumatizado em colisão com um objeto fixo ou parado;3;-;3
+V28 Motociclista traumatizado em um acidente de transporte sem colisão;2;2;4
+V29 Motociclista traumatizado em outros acidentes de transporte e em acidentes de transporte não esp;3;-;3
+V43 Ocupante de um automóvel [carro] traumatizado em colisão com um automóvel [carro], ´pick up´ ou;2;-;2
+V47 Ocupante de um automóvel [carro] traumatizado em colisão com um objeto fixo ou parado;1;1;2
+V48 Ocupante de um automóvel [carro] traumatizado em um acidente de transporte sem colisão;-;2;2
+V82 Ocupante de um bonde [carro elétrico] traumatizado em um acidente de transporte;2;-;2
+V87 Acidente de trânsito de tipo especificado, mas sendo desconhecido o modo de transporte da vítima;3;-;3
+V89 Acidente com um veículo a motor ou não-motorizado, tipo(s) de veículo(s) não especificado(s);38;7;45
+V90 Acidente com embarcação causando afogamento e submersão;1;1;2
+V94 Outros acidentes de transporte por água e os não especificados;1;-;1
+W01 Queda no mesmo nível por escorregão, tropeção ou passos em falsos [traspés];3;-;3
+W06 Queda de um leito;-;1;1
+W10 Queda em ou de escadas ou degraus;1;1;2
+W14 Queda de árvore;2;1;3
+W17 Outras quedas de um nível a outro;3;1;4
+W18 Outras quedas no mesmo nível;2;1;3
+W19 Queda sem especificação;11;8;19
+@W20 Impacto causado por objeto(s) lançado(s), projetado(s) ou em queda;2;-;2
+W32 Projétil de revólver;1;-;1
+W67 Afogamento e submersão em piscina;4;-;4
+W68 Afogamento e submersão conseqüente a queda dentro de uma piscina;1;-;1
+W69 Afogamento e submersão em águas naturais;22;5;27
+W70 Afogamento e submersão conseqüentes a queda dentro de águas naturais;4;1;5
+W73 Outros afogamentos e submersão especificados;1;1;2
+W74 Afogamento e submersão não especificados;6;2;8
+W76 Outro enforcamento e estrangulamento acidental;1;-;1
+W78 Inalação do conteúdo gástrico;1;-;1
+W79 Inalação e ingestão de alimentos causando obstrução do trato respiratório;3;1;4
+W80 Inalação e ingestão de outros objetos causando obstrução do trato respiratório;1;-;1
+W85 Exposição a linhas de transmissão de corrente elétrica;2;-;2
+W86 Exposição a outra corrente elétrica especificada;1;-;1
+W87 Exposição a corrente elétrica não especificada;4;-;4
+X08 Exposição a outro tipo especificado de fumaça, fogo ou chamas;-;1;1
+X09 Exposição a tipo não especificado de fumaça, fogo ou chamas;1;1;2
+X20 Contato com serpentes e lagartos venenosos;1;-;1
+X23 Contato com abelhas, vespas e vespões;-;1;1
+X49 Envenenamento [intoxicação] acidental por e exposição a outras substâncias químicas nocivas e às;2;1;3
+X64 Auto-intoxicação por e exposição, intencional, a outras drogas, medicamentos e substâncias bioló;4;1;5
+X68 Auto-intoxicação por e exposição, intencional, a pesticidas;1;-;1
+X69 Auto-intoxicação por e exposição, intencional, a outros produtos químicos e substâncias nocivas;-;1;1
+X70 Lesão autoprovocada intencionalmente por enforcamento, estrangulamento e sufocação;47;17;64
+X72 Lesão autoprovocada intencionalmente por disparo de arma de fogo de mão;1;-;1
+X74 Lesão autoprovocada intencionalmente por disparo de outra arma de fogo e de arma de fogo não esp;1;-;1
+X82 Lesão autoprovocada intencionalmente por impacto de um veículo a motor;1;-;1
+X90 Agressão por meio de produtos químicos e substâncias nocivas não especificados;1;-;1
+X91 Agressão por meio de enforcamento, estrangulamento e sufocação;2;2;4
+X92 Agressão por meio de afogamento e submersão;1;-;1
+X93 Agressão por meio de disparo de arma de fogo de mão;21;2;23
+X94 Agressão por meio de disparo de espingarda, carabina ou arma de fogo de maior calibre;1;-;1
+X95 Agressão por meio de disparo de outra arma de fogo ou de arma não especificada;147;4;151
+X99 Agressão por meio de objeto cortante ou penetrante;34;8;42
+Y00 Agressão por meio de um objeto contundente;8;-;8
+Y04 Agressão por meio de força corporal;1;-;1
+Y15 Envenenamento [intoxicação] por e exposição ao álcool, intenção não determinada;1;-;1
+Y20 Enforcamento, estrangulamento e sufocação, intenção não determinada;-;1;1
+Y21 Afogamento e submersão, intenção não determinada;2;-;2
+Y24 Disparo de outra arma de fogo e de arma de fogo não especificada, intenção não determinada;1;-;1
+Y28 Contato com objeto cortante ou penetrante, intenção não determinada;2;1;3
+Y29 Contato com objeto contundente, intenção não determinada;-;1;1
+Y31 Queda, permanência ou corrida diante de um objeto em movimento, intenção não determinada;-;1;1
+Y34 Fatos ou eventos não especificados e intenção não determinada;10;5;15
+Y35 Intervenção legal;110;-;110
+Y83 Reação anormal em paciente ou complicação tardia, causadas por intervenção cirúrgica e por outro;4;6;10
+Y84 Reação anormal em paciente ou complicação tardia, causadas por outros procedimentos médicos, sem;2;1;3
+Y85 Seqüelas de acidentes de transporte;-;1;1
+Total;2444;1544;3988

@@ -1,0 +1,200 @@
+e1_tb_mun_ano: 18 rows, 7 files
+e1_tb_fx_ano: 13 rows, 4 files
+e1_tb_entrada_ano: 8 rows, 4 files
+e1_tb_forma_ano: 5 rows, 4 files
+e1_tb_hiv_ano: 6 rows, 4 files
+e1_tb_encerr_ano: 12 rows, 4 files
+e1_tb_tdo_ano: 3 rows, 4 files
+e1_tb_sexo_ano: 4 rows, 4 files
+e1_tb_ppl_ano: 5 rows, 4 files
+e1_bench_tb_uf_ano: 29 rows, 4 files
+e1_hans_mun_ano: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3:  Acompanhamento dos dados de Hansen&iacute;ase - Amap&aacute;</TITLE>\r'
+e1_hans_classe_ano: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3:  Acompanhamento dos dados de Hansen&iacute;ase - Amap&aacute;</TITLE>\r'
+e1_hans_incap_ano: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3:  Acompanhamento dos dados de Hansen&iacute;ase - Amap&aacute;</TITLE>\r'
+e1_hans_fx_ano: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3:  Acompanhamento dos dados de Hansen&iacute;ase - Amap&aacute;</TITLE>\r'
+e1_hans_deteccao_ano: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3:  Acompanhamento dos dados de Hansen&iacute;ase - Amap&aacute;</TITLE>\r'
+e1_hans_saida_ano: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3:  Acompanhamento dos dados de Hansen&iacute;ase - Amap&aacute;</TITLE>\r'
+e1_bench_hans_uf_ano: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3:  Acompanhamento da Hansen&iacute;ase - BRASIL</TITLE>\r\n<LINK REL="styl'
+e1_sifc_mun_ano: 17 rows, 7 files
+e1_sifc_prenatal_ano: 5 rows, 4 files
+e1_sifc_classif_ano: 5 rows, 4 files
+e1_sifc_fxmae_ano: 10 rows, 4 files
+e1_sifc_parceiro_ano: 5 rows, 4 files
+e1_bench_sifc_uf_ano: 29 rows, 4 files
+e1_sifg_mun_ano: 18 rows, 7 files
+e1_sifg_fx_ano: 6 rows, 4 files
+e1_sifg_classif_ano: 7 rows, 4 files
+e1_hep_etio_ano: 3 rows, 5 files
+e1_hep_mun_ano: 12 rows, 5 files
+e1_deng_mun_ano: 18 rows, 8 files
+e1_deng_class_ano: 7 rows, 8 files
+e1_deng_evol_ano: 6 rows, 8 files
+e1_deng_hosp_ano: 5 rows, 8 files
+e1_deng_fx_ano: 14 rows, 5 files
+e1_bench_deng_uf_ano: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: DENGUE - Notifica&ccedil;&otilde;es registradas no Sistema de Informa&'
+e1_chik_mun_ano: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: Febre de Chikungunya - Notifica&ccedil;&otilde;es registradas no Siste'
+e1_chik_ano: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: Febre de Chikungunya - Notifica&ccedil;&otilde;es registradas no Siste'
+e1_zika_mun_ano: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: Zika V&iacute;rus - Notifica&ccedil;&otilde;es registradas no Sistema '
+e1_zika_ano: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: Zika V&iacute;rus - Notifica&ccedil;&otilde;es registradas no Sistema '
+e1_mal_mun_ano: 7 rows, 8 files
+e1_mal_result_ano: 5 rows, 8 files
+e1_mal_inf_ano: 6 rows, 5 files
+e1_mal_fx_ano: 5 rows, 5 files
+e1_lv_mun_ano: 5 rows, 7 files
+e1_lta_mun_ano: 18 rows, 7 files
+e1_lta_forma_ano: 4 rows, 4 files
+e1_men_etio_ano: 11 rows, 8 files
+e1_men_evol_ano: 6 rows, 8 files
+e1_anim_mun_ano: 18 rows, 8 files
+e1_hans_mun_ano: 18 rows, 8 files
+e1_anim_tipo_ano: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: ACIDENTE POR ANIMAIS PE&Ccedil;ONHENTOS - Notifica&ccedil;&otilde;es r'
+e1_anim_fx_ano: 13 rows, 5 files
+e1_hans_classe_ano: 4 rows, 5 files
+e1_anim_evol_ano: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: ACIDENTE POR ANIMAIS PE&Ccedil;ONHENTOS - Notifica&ccedil;&otilde;es r'
+e1_hans_incap_ano: 7 rows, 5 files
+e1_anim_tempo_ano: 9 rows, 5 files
+e1_hans_fx_ano: 4 rows, 5 files
+e1_hans_deteccao_ano: 8 rows, 5 files
+e1_hans_saida_ano: 10 rows, 5 files
+e1_intox_agente_ano: 16 rows, 8 files
+e1_bench_hans_uf_ano: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3:  Acompanhamento da Hansen&iacute;ase - BRASIL</TITLE>\r\n<LINK REL="styl'
+e1_chik_mun_ano: 16 rows, 8 files
+e1_chik_ano: 10 rows, 8 files
+e1_intox_circ_ano: 14 rows, 8 files
+e1_chik_class_ano: 5 rows, 8 files
+e1_zika_mun_ano: 16 rows, 8 files
+e1_intox_evol_ano: 7 rows, 8 files
+e1_zika_ano: 11 rows, 8 files
+e1_intox_fx_ano: 12 rows, 5 files
+e1_zika_class_ano: 6 rows, 8 files
+e1_intox_mun_ano: 16 rows, 5 files
+e1_anim_tipo_ano: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: ACIDENTE POR ANIMAIS PE&Ccedil;ONHENTOS - Notifica&ccedil;&otilde;es r'
+e1_anim_tipo_ano: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: ACIDENTE POR ANIMAIS PE&Ccedil;ONHENTOS - Notifica&ccedil;&otilde;es r'
+e1_anim_tipo_ano: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: ACIDENTE POR ANIMAIS PE&Ccedil;ONHENTOS - Notifica&ccedil;&otilde;es r'
+e1_intox_circ_fx_2025: 11 rows, 1 files
+e1_sim_grupo_ano: 171 rows, 8 files
+e1_sim_cat_ano: 664 rows, 5 files
+e2_equipe_tipo_ano: 21 rows, 8 files
+e2_equipe_mun_tipo_latest: 18 rows, 1 files
+e2_equipe_mun_ano_esf: 18 rows, 8 files
+e2_equipe_mun_ano_all: 18 rows, 8 files
+e2_hab_latest: 37 rows, 1 files
+e2_hab_ano_leitos: 9 rows, 8 files
+e2_hab_ano_estab: 41 rows, 8 files
+e2_hab_mun_latest: 9 rows, 1 files
+e2_sia_ab_mun_ano_qtd: 18 rows, 92 files
+e2_sia_ab_forma_ano_qtd: 33 rows, 92 files
+e2_sia_forma_ano_valor: 156 rows, 92 files
+e2_sia_forma_ano_qtd: 217 rows, 92 files
+e2_nr_lista_ano: 334 rows, 92 files
+e1_anim_tipo_ano: 9 rows, 8 files
+e2_nr_cap_ano: 22 rows, 92 files
+e1_anim_evol_ano: 6 rows, 8 files
+e2_nr_lista_fx_2025: 302 rows, 12 files
+e1_anim_tipo_mun_2025: 18 rows, 1 files
+e2_nr_mun_ano: 18 rows, 92 files
+e2_nv_mun_prenatal_2025: 18 rows, 1 files
+e2_nv_mun_prenatal_2022: 18 rows, 1 files
+e2_nv_mun_parto_2025: 18 rows, 1 files
+e2_nv_mun_parto_2022: 18 rows, 1 files
+e2_nv_mun_peso_2025: 18 rows, 1 files
+e2_nv_mun_peso_2022: 18 rows, 1 files
+e2_nv_mun_idademae_2025: 18 rows, 1 files
+e2_nv_mun_idademae_2022: 18 rows, 1 files
+e2_nv_mun_gest_2025: 18 rows, 1 files
+e2_nv_mun_gest_2022: 18 rows, 1 files
+e2_nv_mun_local_2025: 18 rows, 1 files
+e2_nv_mun_local_2022: 18 rows, 1 files
+e2_nv_mun_robson_2025: 18 rows, 1 files
+e2_nv_mun_robson_2022: 18 rows, 1 files
+e2_nv_ocor_mun_ano: 18 rows, 8 files
+e2_mat_ano: 14 rows, 12 files
+e2_mat_mun_ano: 15 rows, 12 files
+e2_mat_tipo_ano: 5 rows, 12 files
+e2_mat_grupo_ano: 10 rows, 12 files
+e2_mat_fx_ano: 7 rows, 12 files
+e2_mat_invest_ano: 4 rows, 12 files
+e2_bench_mat_uf_ano: 29 rows, 8 files
+e2_fet_ano: 14 rows, 12 files
+e2_fet_mun_ano: 19 rows, 8 files
+e2_fet_invest_ano: 5 rows, 8 files
+e2_fet_gest_ano: 9 rows, 5 files
+e2_inf_mun_fx_2024: 17 rows, 1 files
+e2_inf_invest_ano: 5 rows, 8 files
+e2_inf_cap_ano: 18 rows, 8 files
+e2_bench_inf_uf_ano: 29 rows, 8 files
+e2_bench_nv_uf_ano: 29 rows, 8 files
+e2_bench_nv_uf_parto_2024: 29 rows, 1 files
+e2_bench_nv_uf_prenatal_2024: 29 rows, 1 files
+e2_bench_equipe_uf_latest: 16 rows, 1 files
+e3_ext_gg_ano: 10 rows, 12 files
+e3_ext_grupo_ano: 37 rows, 8 files
+e3_ext_cat_ano: 126 rows, 5 files
+e3_ext_mun_ano: 18 rows, 8 files
+e3_ext_sexo_ano: 4 rows, 8 files
+e3_ext_fx_ano: 14 rows, 8 files
+e3_ext_gg_fx_2024: 9 rows, 1 files
+e3_ext_gg_sexo_2024: 9 rows, 1 files
+e3_ext_gg_mun_2024: 18 rows, 1 files
+e3_ext_raca_ano: 8 rows, 5 files
+e3_ext_gg_raca_2024: 9 rows, 1 files
+e3_bench_ext_uf_gg_2024: 29 rows, 1 files
+e3_bench_ext_uf_gg_2023: 29 rows, 1 files
+e3_fi_gg_ano: 11 rows, 92 files
+e3_fi_grupo_ano: 38 rows, 92 files
+e3_fi_gg_2025: 11 rows, 12 files
+e3_fi_fx_ano: 14 rows, 92 files
+e3_fi_sexo_ano: 4 rows, 92 files
+e3_fi_estab_gg_2025: 20 rows, 12 files
+e3_viol_mun_ano: 18 rows, 7 files
+e3_viol_fx_ano: 13 rows, 7 files
+e3_viol_sexo_ano: 5 rows, 7 files
+e3_viol_fisica_ano: 6 rows, 7 files
+e3_viol_sexual_ano: 6 rows, 7 files
+e3_viol_psico_ano: 6 rows, 7 files
+e3_viol_negl_ano: 6 rows, 7 files
+e3_viol_autoprov_ano: 6 rows, 7 files
+e3_viol_local_ano: 13 rows, 7 files
+e3_viol_repet_ano: 6 rows, 7 files
+e3_viol_raca_ano: 8 rows, 7 files
+e3_viol_armafogo_ano: 6 rows, 7 files
+e3_viol_estupro_ano: 6 rows, 7 files
+e3_viol_fx_sexo_2025: 12 rows, 1 files
+e3_viol_sexual_fx_2025: 12 rows, 1 files
+e3_viol_autoprov_fx_2025: 12 rows, 1 files
+e3_bench_viol_uf_ano: 29 rows, 4 files
+e3_nih_lista_capV_ano: 11 rows, 92 files
+e3_nih_capV_fx_2025: 10 rows, 12 files
+e3_nih_capV_estab_ano: 14 rows, 92 files
+e4_sim_grupo_ano: 174 rows, 12 files
+e4_sim_cat_sexo_2024: 416 rows, 1 files
+e4_sim_cat_sexo_2025: 401 rows, 1 files
+e4_sim_cap_fx_2024: 19 rows, 1 files
+e4_sim_cap_mun_2024: 18 rows, 1 files
+e4_bench_sim_uf_cap_2024: 29 rows, 1 files
+e4_mamo_rastr_fx_ano: 12 rows, 92 files
+e4_mamo_diag_fx_ano: 16 rows, 92 files
+e4_cito_fx_ano: 17 rows, 92 files
+e4_onco_fx_ano: 20 rows, 92 files
+e4_onco_sexo_ano_valor: 4 rows, 92 files
+e4_onco_forma_ano_qtd: 11 rows, 92 files
+e4_onco_forma_ano_valor: 11 rows, 92 files
+e1_bench_deng_uf_2024: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: DENGUE - Notifica&ccedil;&otilde;es registradas no Sistema de Informa&'
+e4_onco_proc_2025: 100 rows, 12 files
+e1_bench_deng_uf_2025: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: DENGUE - Notifica&ccedil;&otilde;es registradas no Sistema de Informa&'
+e4_onco_mun_ano_qtd: 18 rows, 92 files
+e4_nefro_fx_ano: 19 rows, 92 files
+e4_nefro_proc_ano_qtd: 12 rows, 92 files
+e4_sih_subgrupo_ano_aih: 27 rows, 92 files
+e4_sih_subgrupo_ano_valor: 27 rows, 92 files
+e4_nih_lista_capII_ano: 42 rows, 92 files
+e4_nih_lista_capII_2025: 42 rows, 12 files
+e4_nih_capII_estab_ano: 22 rows, 92 files
+e4_nih_lista_capIX_ano: 25 rows, 92 files
+e4_nih_lista_capIV_ano: 13 rows, 92 files
+e4_hab_onco_latest: EMPTY '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r\n<html lang="pt-BR"><HEAD>\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">\r\n<TITLE>TabNet Win32 3.3: CNES - Estabelecimentos por Habilita&ccedil;&atilde;o - Amap&aacute;</'
+e2_equipe_mun_ano_esf: 18 rows, 8 files
+e2_equipe_mun_ano_eap: 9 rows, 8 files
+e2_equipe_mun_ano_esb: 18 rows, 8 files
+e2_bench_equipe_uf_latest: 29 rows, 1 files
+e2_bench_equipe_uf_eap_latest: 28 rows, 1 files

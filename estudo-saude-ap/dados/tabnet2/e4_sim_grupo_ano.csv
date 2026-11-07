@@ -1,0 +1,174 @@
+Grupo CID-10;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024;2025;2026;Total
+A00-A09 Doencas infecciosas intestinais;16;21;13;16;13;3;8;9;17;9;9;2;136
+A15-A19 Tuberculose;14;12;12;9;13;14;8;19;15;20;20;23;179
+A20-A28 Algumas doencas bacterianas zoonóticas;-;3;3;7;5;2;1;2;3;-;2;6;34
+A30-A49 Outras doencas bacterianas;77;58;69;80;92;83;76;94;65;84;85;67;930
+A50-A64 Infeccoes de tran predominantemente sexual;1;-;3;1;2;3;7;7;2;2;2;-;30
+A65-A69 Outras doencas por espiroquetas;-;-;-;-;-;-;1;-;-;-;-;-;1
+A80-A89 Infec virais do sistema nervoso central;4;1;1;2;-;3;1;-;2;2;1;1;18
+A90-A99 Febres arbovirus/febres hemorragicas virai;9;5;1;1;-;-;-;-;-;31;8;1;56
+B00-B09 Infec virais caract p/lesoes pele/mucosas;2;4;3;-;-;1;2;-;-;-;-;-;12
+B15-B19 Hepatite viral;4;6;5;1;2;4;3;2;-;6;3;1;37
+B20-B24 Doenca virus imunodeficiência humana [HIV];30;39;43;37;49;58;47;60;53;48;62;26;552
+B25-B34 Outras doencas por virus;-;-;1;-;1;1113;1071;148;8;10;7;1;2360
+B35-B49 Micoses;2;1;1;2;-;2;2;-;1;1;-;3;15
+B50-B64 Doencas devidas a protozoários;6;4;5;4;3;5;6;6;7;11;3;3;63
+B65-B83 Helmintiases;-;1;-;1;1;-;1;-;-;-;-;-;4
+B85-B89 Pediculose, acariase e outras infestacoes;-;-;-;-;1;-;-;-;-;-;1;-;2
+B90-B94 Seq doencas infecciosas e parasitarias;2;1;-;1;1;1;2;3;3;2;3;-;19
+B99-B99 Outras doencas infecciosas;-;-;-;-;1;-;-;-;-;-;-;-;1
+C00-C14 Neop malig do lábio, cavid oral e faringe;11;19;21;11;13;23;14;17;15;21;16;18;199
+C15-C26 Neoplasias malignas dos órgaos digestivos;113;129;138;127;148;160;155;153;181;190;181;110;1785
+C30-C39 Neopl malig ap respirat/orgaos intratorac;61;59;48;42;73;62;62;70;78;77;70;47;749
+C40-C41 Neopl malig ossos/cartilagens artic;8;8;8;2;9;9;6;5;3;4;5;3;70
+C43-C44 Melanoma/outras Neop malignas da pele;2;9;7;2;7;4;8;9;10;10;8;7;83
+C45-C49 Neopl malig do tecido mesotelial/moles;10;9;6;11;11;6;7;11;5;16;25;11;128
+C50-C50 Neoplasias malignas da mama;22;19;23;30;25;24;26;30;26;30;38;25;318
+C51-C58 Neop malignas órgaos genitais femininos;46;36;44;63;59;83;81;61;59;55;68;51;706
+C60-C63 Neop malignas órgaos genitais masculinos;41;37;35;49;34;44;34;40;54;42;47;32;489
+C64-C68 Neoplasias malignas do trato urinário;4;13;13;10;15;11;11;9;18;24;15;10;153
+C69-C72 Neopl malig olhos encEf outr part SNC;25;17;26;23;24;16;19;25;25;31;20;25;276
+C73-C75 Neopl malig tireo/out glandulas endocrinas;2;4;5;3;4;-;4;3;5;5;3;1;39
+C76-C80 Neopl malig local mal def, secund/local NE;18;21;17;29;28;29;34;28;28;25;24;18;299
+C81-C96 Neopl malig tec linfát hematop/correlatos;40;32;32;33;47;27;51;35;39;53;58;28;475
+D00-D09 Neoplasias [tumores] in situ;3;2;1;1;1;1;-;2;1;-;-;-;12
+D10-D36 Neoplasias [tumores] benignas(os);2;4;2;2;-;2;1;4;2;4;3;1;27
+D37-D48 Neopl de comportamento incerto ou desc;4;6;4;8;5;6;3;8;4;7;8;5;68
+D50-D53 Anemias nutricionais;-;-;-;1;-;1;1;1;2;-;1;-;7
+D55-D59 Anemias hemoliticas;1;1;3;3;2;4;1;5;3;1;1;1;26
+D60-D64 Anemias aplásticas e outras anemias;6;8;8;8;12;5;12;6;6;5;3;4;83
+D65-D69 Defeitos coagul,purpura,outr afecc hemor;6;7;3;5;7;2;8;7;5;11;5;2;68
+D70-D77 Out doencas sangue/órgaos hematopoeticos;-;1;-;1;2;1;2;3;6;1;3;3;23
+D80-D89 Alguns transt comprom  mecanismo imunitár;1;1;-;-;-;-;-;1;-;-;-;-;3
+E00-E07 Transtornos da glandula tireóide;2;-;-;1;1;5;3;4;1;-;3;-;20
+E10-E14 Diabetes mellitus;139;147;164;182;180;219;218;193;179;177;166;95;2059
+E15-E16 Outr transt regul glicose e secr pancr int;-;2;6;1;-;-;-;-;3;2;2;3;19
+E20-E35 Transtornos de outras glandulas endócrinas;-;-;1;-;-;-;1;1;1;3;2;2;11
+E40-E46 Desnutricao;13;13;17;9;11;4;20;5;5;13;8;7;125
+E50-E64 Outras deficiências nutricionais;-;-;-;-;2;-;1;-;-;-;-;-;3
+E65-E68 Obesida/outras formas de hiperalimentacao;3;2;2;2;6;7;13;3;3;7;5;5;58
+E70-E90 Disturbios metabólicos;11;7;12;20;13;7;12;14;10;18;30;8;162
+F00-F09 Transt mentais organicos, incl sintomático;1;2;1;-;1;2;-;-;1;3;6;4;21
+F10-F19 Transt ment/comport dev uso subs psicoativ;9;10;5;8;15;23;14;17;14;15;14;4;148
+F20-F29 Esquizofrenia, transt esquizot/delirantes;-;1;1;1;2;3;-;1;2;-;5;1;17
+F30-F39 Transtornos do humor [afetivos];-;1;-;1;-;3;1;2;2;3;-;1;14
+F40-F48 Transt neurót, rel stress e somatoformes;-;-;-;-;-;-;1;-;-;-;-;-;1
+F70-F79 Retardo mental;-;-;-;-;-;-;-;-;-;1;-;1;2
+F99-F99 Transtorno mental nao especificado;-;-;1;-;-;1;-;-;-;-;-;-;2
+G00-G09 Doencas Inflamatorias do SNC;6;7;5;6;8;8;4;8;5;6;7;4;74
+G10-G14 Atrofias sistêm q afetam princ o SNC;2;1;2;3;1;3;4;5;1;7;11;5;45
+G20-G26 Doencas extrapiramidais/transt movimentos;4;2;4;5;8;15;5;4;4;9;8;7;75
+G30-G32 Out doencas degenerativas sistema nervoso;8;15;15;14;20;20;29;22;28;19;25;24;239
+G35-G37 Doe desmielinizantes SNC;1;2;-;-;-;1;-;-;1;1;-;1;7
+G40-G47 Transtornos episódicos e paroxisticos;4;12;8;11;7;14;9;6;7;4;9;4;95
+G60-G64 Polineurop/outr transt sist nerv periferic;1;3;1;5;1;1;3;1;2;2;3;2;25
+G70-G73 Doencas da juncao mioneural e dos musculos;2;4;3;2;-;-;2;1;-;-;4;1;19
+G80-G83 Paralisia cerebral/Out sind paraliticas;6;4;6;1;9;3;4;8;6;4;8;10;69
+G90-G99 Outros transtornos do sistema nervoso;15;22;6;24;27;18;19;13;11;12;11;5;183
+H65-H75 Doencas do ouvido medio e da mastóide;1;-;2;1;1;-;-;-;2;-;-;1;8
+H90-H95 Outros transtornos do ouvido;-;-;-;-;-;-;-;-;1;-;-;-;1
+I00-I02 Febre reumática aguda;1;-;-;1;-;3;-;-;2;1;1;-;9
+I05-I09 Doencas reumáticas crônicas do coracao;3;2;2;3;9;2;4;3;3;5;2;4;42
+I10-I15 Doencas hipertensivas;62;83;96;104;96;139;136;124;112;107;122;84;1265
+I20-I25 Doencas isquêmicas do coracao;188;159;200;210;217;209;215;264;235;321;307;172;2697
+I26-I28 Doe cardiaca pulmonar/circulacao pulmonar;8;5;8;12;10;7;14;14;6;9;8;6;107
+I30-I52 Outras formas de doenca do coracao;95;91;88;89;129;103;83;131;148;184;170;89;1400
+I60-I69 Doencas cerebrovasculares;182;228;212;248;233;284;249;280;321;281;315;184;3017
+I70-I79 Doe das arterias, das arteriolas/capilares;24;15;7;16;12;11;17;9;11;26;21;12;181
+I80-I89 Doe veias, vasos/ganglios linfáticos, NCOP;9;2;6;7;4;7;6;1;3;9;7;10;71
+I95-I99 Out transt/NE aparelho circulatório;1;-;1;-;1;-;1;-;1;1;-;-;6
+J00-J06 Infec agudas das vias aereas superiores;-;1;1;2;-;1;1;1;2;3;1;1;14
+J09-J18 Influenza [gripe] e pneumonia;156;159;178;183;213;147;212;280;311;268;272;167;2546
+J20-J22 Out infec agudas vias aereas inferiores;2;4;3;4;-;4;-;2;2;1;9;5;36
+J30-J39 Outras doencas das vias aereas superiores;-;1;1;-;-;-;1;1;1;-;2;-;7
+J40-J47 Doe crônicas das vias aereas inferiores;65;81;100;97;131;81;81;93;114;101;134;86;1164
+J60-J70 Doe pulmonares devidas a agentes externos;1;4;4;4;12;10;17;16;22;24;27;23;164
+J80-J84 Out Doe respirat afetam princ intersticio;17;12;12;21;21;26;15;17;21;26;27;14;229
+J85-J86 Afec necróticas/supurat vias aereas infer;2;1;1;4;1;1;1;2;2;2;6;2;25
+J90-J94 Outras doencas da pleura;2;3;10;2;12;5;9;5;7;7;10;10;82
+J95-J99 Outras doencas do aparelho respiratório;9;10;11;19;19;54;19;43;43;36;33;13;309
+K00-K14 Doe cavidade oral,gland salivares/maxilar;-;-;2;-;-;-;-;-;-;-;1;1;4
+K20-K31 Doencas esôfago, estômago/duodeno;9;7;4;11;16;10;8;7;8;5;5;2;92
+K35-K38 Doencas do apêndice;2;3;3;6;7;6;1;5;2;6;5;-;46
+K40-K46 Hernias;4;5;5;4;4;3;6;9;6;4;7;8;65
+K50-K52 Enterites e colites nao-infecciosas;-;-;2;1;3;4;4;-;-;7;8;7;36
+K55-K64 Outras doencas dos intestinos;12;11;5;10;15;20;18;17;16;18;16;14;172
+K65-K67 Doencas do peritônio;4;4;9;4;1;4;3;4;6;4;6;7;56
+K70-K77 Doencas do figado;54;48;57;71;66;63;71;50;45;58;61;38;682
+K80-K87 Transt vesicula biliar, vias biliar/pancr;33;28;33;38;34;31;32;35;32;34;42;21;393
+K90-K93 Outras doencas do aparelho digestivo;12;11;10;19;14;19;16;15;15;5;21;10;167
+L00-L08 Infeccoes da pele e do tecido subcutaneo;2;7;6;4;6;2;5;7;10;15;6;3;73
+L10-L14 Afeccoes bolhosas;-;1;2;1;1;1;1;-;3;-;2;1;13
+L40-L45 Afeccoes pápulo-descamativas;-;-;-;-;-;-;1;1;-;2;-;-;4
+L50-L54 Urticária e eritema;-;-;-;-;-;-;-;1;1;-;1;-;3
+L80-L99 Out afeccoes pele/tecido subcutaneo;4;8;4;4;3;3;3;1;4;-;2;-;36
+M00-M25 Artropatias;1;3;2;2;-;3;2;-;2;2;2;1;20
+M30-M36 Doencas sistêmicas do tecido conjuntivo;8;9;10;7;8;6;6;11;5;15;12;7;104
+M40-M54 Dorsopatias;-;-;-;-;-;-;1;1;-;2;-;-;4
+M60-M79 Transtornos dos tecidos moles;-;-;-;1;2;-;-;1;5;2;3;2;16
+M80-M94 Osteopatias e condropatias;-;-;1;-;-;1;1;-;1;-;-;3;7
+N00-N08 Doencas glomerulares;-;-;3;3;2;3;3;10;6;2;1;5;38
+N10-N16 Doencas renais tubulo-intersticiais;12;6;6;15;12;9;8;10;5;19;24;18;144
+N17-N19 Insuficiência renal;44;36;40;46;59;45;56;63;46;73;76;49;633
+N20-N23 Calculose renal;2;-;1;-;2;-;1;1;2;1;2;2;14
+N25-N29 Outros transtornos do rim e do ureter;1;-;-;-;-;-;1;1;-;-;1;-;4
+N30-N39 Outras doencas do aparelho urinário;9;6;10;15;13;11;11;17;25;24;22;14;177
+N40-N51 Doencas dos órgaos genitais masculinos;4;2;2;4;8;7;3;2;5;5;7;2;51
+N60-N64 Doencas da mama;-;-;1;-;-;-;-;-;-;-;-;-;1
+N70-N77 Doe Inf órgaos pelvicos femininos;1;1;3;1;-;1;-;1;1;1;-;-;10
+N80-N98 Transt nao-Inf trato genital feminino;-;1;1;2;1;-;2;3;-;4;-;1;15
+O00-O08 Gravidez que termina em aborto;3;1;2;3;-;1;1;2;1;1;2;2;19
+O10-O16 Edem prot/transt hipert gravid parto puerp;2;7;1;4;2;2;2;2;3;2;1;2;30
+O20-O29 Out Transt maternos relac predom gravidez;1;2;-;1;-;1;-;2;-;1;-;-;8
+O30-O48 Assist mae mot feto cavid amniót/prob part;1;-;2;3;1;2;2;2;-;1;-;-;14
+O60-O75 Complicacoes trabalho parto/parto;2;4;1;-;-;2;1;1;4;2;1;1;19
+O85-O92 Complicacoes rel predom com o puerperio;3;2;-;1;2;2;-;-;2;1;2;1;16
+O94-O99 Outras afeccoes obstetricas NCOP;1;-;1;2;-;5;13;3;2;3;3;1;34
+P00-P04 Fet RN afet fat mat/compl grav, trab parto;33;24;48;69;59;58;80;48;41;51;47;19;577
+P05-P08 Transt relac c duracao gestacao/cresc fet;24;22;19;15;16;8;7;14;16;11;13;12;177
+P10-P15 Traumatismo de parto;-;-;-;1;1;1;-;-;-;-;-;-;3
+P20-P29 Transt respirat/cardiova especif perinatal;44;62;57;38;32;45;34;42;35;26;31;16;462
+P35-P39 Infeccoes especificas do periodo perinatal;48;54;43;34;25;32;25;21;16;16;22;12;348
+P50-P61 Transt hemorrág/hematológ feto/RN;5;8;7;5;6;3;8;4;3;1;2;-;52
+P70-P74 Transt endócr/metaból trans espec fet/RN;1;-;-;1;1;1;-;-;3;2;1;-;10
+P75-P78 Transt aparelho digestivo feto ou RN;1;3;2;2;3;2;2;2;4;1;3;3;28
+P80-P83 Afecc comprom tegument/reg term fet/RN;2;1;1;1;1;1;1;-;1;1;1;1;12
+P90-P96 Out Transt originados no periodo perinatal;8;3;3;3;6;6;7;-;3;-;1;1;41
+Q00-Q07 Malformacoes congênitas do sistema nervoso;12;11;10;13;17;15;11;13;12;10;11;6;141
+Q20-Q28 Malformacoes congênitas ap circulatorio;13;20;35;27;25;16;27;32;35;27;24;20;301
+Q30-Q34 Malformacoes congênitas ap respiratorio;1;2;2;6;6;6;2;-;4;4;2;2;37
+Q35-Q37 Fenda labial e fenda palatina;-;-;2;-;-;-;1;-;-;-;-;-;3
+Q38-Q45 Out malformacoes congênitas ap digestivo;4;11;4;8;3;8;5;1;5;4;3;2;58
+Q60-Q64 Malformacoes congênitas aparelho urinário;1;-;2;1;-;-;3;3;-;1;-;1;12
+Q65-Q79 Malform/deform congênit sist osteomuscular;3;3;7;8;5;8;7;6;11;5;3;3;69
+Q80-Q89 Outras malformacoes congênitas;9;10;4;10;11;5;6;2;10;5;6;2;80
+Q90-Q99 Anomalias cromossômicas NCOP;3;1;2;1;1;4;-;5;4;4;3;2;30
+R00-R09 Sint/sinais relat ap circulat/respirat;54;47;58;35;44;46;61;32;22;23;33;14;469
+R10-R19 Sintom/sinais relat ao ap digest/abdome;1;4;3;4;5;2;4;3;2;3;4;-;35
+R20-R23 Sintom/sinais relat pele/tecido subcutaneo;-;1;-;-;-;-;-;-;-;-;-;-;1
+R40-R46 Sint/sinais rel cogn percep est emoc/comp;-;-;-;1;-;-;-;-;-;-;-;-;1
+R50-R69 Sintomas e sinais gerais;30;14;18;15;23;55;21;11;25;17;20;14;263
+R80-R82 Achados anormais exames urina, sem diag;-;-;-;-;-;1;-;-;-;-;-;-;1
+R90-R94 Achad an exam diag imag estud fun, s/diag;-;-;-;-;-;-;-;-;-;-;1;-;1
+R95-R99 Causas mal definidas/desc mortalidade;216;165;161;163;178;87;151;154;171;115;153;101;1815
+V01-V99 Acidentes de transporte;95;98;96;67;86;79;98;103;92;99;91;58;1062
+W00-W19 Quedas;13;15;15;12;29;35;39;41;38;47;35;19;338
+W20-W49 Exposicao a forcas mecanicas inanimadas;1;1;5;5;7;2;11;4;4;3;3;1;47
+W50-W64 Exposicao a forcas mecanicas animadas;-;-;-;-;-;-;-;1;-;-;-;1;2
+W65-W74 Afogamento e submersao acidentais;44;47;57;46;47;73;56;50;50;49;47;35;601
+W75-W84 Outros riscos acidentais à respiracao;3;2;3;6;3;8;6;9;4;7;7;3;61
+W85-W99 Expos corr elet, radia/temp press extr amb;11;10;12;10;15;8;5;5;8;7;7;8;106
+X00-X09 Exposicao à fumaca, ao fogo e às chamas;1;1;8;4;1;2;3;-;-;3;3;3;29
+X10-X19 Cont  fonte calor ou substancias quentes;1;-;1;1;-;1;-;-;-;-;-;-;4
+X20-X29 Contato com animais e plantas venenosos;3;1;1;1;1;5;5;1;1;3;2;1;25
+X30-X39 Exposicao às forcas da natureza;-;2;2;1;1;1;-;-;-;1;-;-;8
+X40-X49 Envenen acidental/exposicao subst nocivas;1;-;-;-;1;2;3;2;5;9;3;5;31
+X58-X59 Exposicao acidental a outr fatores/NE;-;-;-;-;-;-;1;-;-;-;-;-;1
+X60-X84 Lesoes autoprovocadas intencionalmente;53;36;46;62;61;51;63;81;73;65;74;41;706
+X85-Y09 Agressoes;293;381;332;374;330;318;404;306;385;257;232;113;3725
+Y10-Y34 Eventos (fatos) cuja intencao e indet;34;6;5;10;18;19;21;21;20;26;25;27;232
+Y35-Y36 Intervencoes legais e operacoes de guerra;-;-;51;52;31;69;58;52;131;106;110;57;717
+Y40-Y59 Ef advers drog, medic/subst biol fin terap;-;-;-;-;-;-;1;-;1;-;-;-;2
+Y83-Y84 Reac an compl tard proc cir med s/men acid;-;-;-;-;-;3;9;14;20;19;13;19;97
+Y85-Y89 Seq causas externas morbidade/mortalidad;1;-;-;1;-;1;1;1;1;-;1;-;7
+Total;2946;2995;3158;3345;3524;4617;4750;3846;3926;3903;3988;2458;43456

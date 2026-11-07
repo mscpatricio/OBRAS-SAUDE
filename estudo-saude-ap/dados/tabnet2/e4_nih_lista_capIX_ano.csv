@@ -1,0 +1,25 @@
+Lista Morb  CID-10;2019;2020;2021;2022;2023;2024;2025;2026;Total
+09 Doenças do aparelho circulatório;1773;1289;1818;1899;15455;11226;11024;8973;53457
+.. Febre reumática aguda;9;2;6;2;2;5;8;5;39
+.. Doença reumática crônica do coração;30;24;15;13;27;27;36;16;188
+.. Hipertensão essencial (primária);56;40;49;28;26;34;37;31;301
+.. Outras doenças hipertensivas;74;61;282;144;188;114;191;133;1187
+.. Infarto agudo do miocárdio;148;100;191;206;347;358;380;363;2093
+.. Outras doenças isquêmicas do coração;454;366;405;534;683;796;854;643;4735
+.. Embolia pulmonar;1;2;1;4;9;10;6;7;40
+.. Transtornos de condução e arritmias cardíacas;64;60;61;85;155;176;244;200;1045
+.. Insuficiência cardíaca;264;204;258;228;360;410;393;293;2410
+.. Outras doenças do coração;70;37;63;66;77;82;89;85;569
+.. Hemorragia intracraniana;70;81;70;91;111;114;114;97;748
+.. Infarto cerebral;2;10;6;4;4;1;13;39;79
+.. Acid vascular cerebr não espec hemorrág ou isq;403;224;324;369;641;705;1020;839;4525
+.. Outras doenças cerebrovasculares;9;7;12;7;10;15;17;7;84
+.. Arteroesclerose;-;-;-;-;3;1;2;3;9
+.. Outras doenças vasculares periféricas;-;1;-;-;7;7;10;5;30
+.. Embolia e trombose arteriais;6;6;1;6;5;3;10;7;44
+.. Outras doenças das artérias arteríolas e capil;14;-;8;6;18;18;24;38;126
+.. Flebite tromboflebite embolia e trombose venosa;17;20;16;19;12711;8195;7410;5975;34363
+.. Veias varicosas das extremidades inferiores;8;10;16;12;10;13;12;23;104
+.. Hemorróidas;51;19;18;43;34;71;98;83;417
+.. Outras doenças do aparelho circulatório;23;15;16;32;27;71;56;81;321
+Total;1773;1289;1818;1899;15455;11226;11024;8973;53457
