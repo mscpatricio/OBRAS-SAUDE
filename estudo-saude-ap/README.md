@@ -26,7 +26,7 @@ Não foi possível acessar, a partir do ambiente de extração, o ConsultaFNS (r
 
 ## Estudos complementares (pasta `estudos-complementares/`)
 
-Quatro estudos temáticos no mesmo padrão (extração pública, planilha, gráficos e documento ABNT com autoria de Patrício Almeida), série 2022–2026, extração em 07/11/2026:
+Cinco estudos temáticos no mesmo padrão (extração pública, planilha, gráficos e documento ABNT com autoria de Patrício Almeida), série 2022–2026, extração em 07 e 08/11/2026:
 
 | Pasta | Estudo | Principais fontes |
 |---|---|---|
@@ -34,7 +34,8 @@ Quatro estudos temáticos no mesmo padrão (extração pública, planilha, gráf
 | `e2_atencao_primaria/` | Atenção primária, regionalização e saúde materno-infantil (equipes e cobertura, habilitações e UTI, ICSAP, pré-natal, parto, mortalidade materna, fetal e infantil) | CNES, SIH, SIA, SINASC, SIM, IBGE |
 | `e3_violencias_saude_mental/` | Violências, causas externas e saúde mental (homicídios e intervenções legais, suicídio, trânsito, afogamentos, internações por causas externas, notificações de violência, RAPS) | SIM, SIH, SINAN, CNES, SIA |
 | `e4_oncologia_cronicas/` | Oncologia, rastreamento e doenças crônicas (mortalidade por câncer e DCNT, quimioterapia e radioterapia, mamografia e citopatológico, AVC, infarto, diabetes, diálise) | SIM, SIA, SIH, CNES, IBGE |
+| `e5_financiamento/` | Financiamento, recursos e gastos em saúde (despesa da função Saúde e ASPS, mínimo constitucional, fontes e transferências da União, composição da despesa, investimentos e restos a pagar, emendas parlamentares, municípios e gasto consolidado, comparação entre estados) | SIOPS (RREO Anexo 12), SICONFI (RREO/DCA), CGU (emendas), SIH/SIA, IBGE |
 
-Cada pasta contém `Estudo_*.md` (texto-fonte), `Estudo_*.docx` e `Estudo_*.pdf` (ABNT), `Tabelas_*.xlsx` (planilha com índice, painel-resumo, tabelas e fontes) e `graficos/`. Os arquivos `cfg_e*.json` guardam título, resumo, siglas e referências de cada estudo. Os dados brutos estão em `dados/tabnet2/` e os scripts em `scripts/` (`extract_estudos2*.py`, `build_e1.py` a `build_e4.py`, `lib_estudo.py`).
+Cada pasta contém `Estudo_*.md` (texto-fonte), `Estudo_*.docx` e `Estudo_*.pdf` (ABNT), `Tabelas_*.xlsx` (planilha com índice, painel-resumo, tabelas e fontes) e `graficos/`. Os arquivos `cfg_e*.json` guardam título, resumo, siglas e referências de cada estudo. Os dados brutos estão em `dados/tabnet2/` (TABNET), `dados/siconfi/` (RREO e DCA em formato longo), `dados/siops/anexo12/` (Anexo 12 de estados e municípios, formato longo) e `dados/emendas/` (emendas da CGU filtradas para o Amapá); os scripts em `scripts/` (`extract_estudos2*.py`, `extract_siconfi.py`, `extract_siops_anexo12.py`, `build_e1.py` a `build_e5.py`, `lib_estudo.py`).
 
-Temas pertinentes que não puderam ser desenvolvidos com dados públicos acessíveis e devem ser levantados internamente na transição: assistência farmacêutica e judicialização (SISMEDEX/Hórus, estoques, demandas judiciais), regulação e filas (SISREG e sistema estadual), recursos humanos por vínculo e folha, contratos e execução financeira por unidade (FES, FNS, restos a pagar), imunização (SI-PNI) e indicadores da APS por cadastro (SISAB/e-Gestor).
+Temas pertinentes que não puderam ser desenvolvidos com dados públicos acessíveis e devem ser levantados internamente na transição: assistência farmacêutica e judicialização (SISMEDEX/Hórus, estoques, demandas judiciais), regulação e filas (SISREG e sistema estadual), recursos humanos por vínculo e folha, contratos e execução financeira por unidade e credor (balancete do FES, saldos de emendas, passivo com fornecedores; o estudo 5 cobre o que é público no SIOPS, SICONFI e CGU), imunização (SI-PNI) e indicadores da APS por cadastro (SISAB/e-Gestor).

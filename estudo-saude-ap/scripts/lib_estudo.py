@@ -110,9 +110,9 @@ def hbars(labels,values,path,xlabel='',highlight=None,figsize=(9,5.6),fmt=fmt_in
     for i,v in enumerate(values): ax.text(v+max(values)*0.01,i,fmt(v),va='center',fontsize=fs,color=INK2)
     ax.grid(axis='x',color=GRID); ax.set_axisbelow(True); ax.set_xlabel(xlabel,color=INK2); ax.set_xlim(0,max(values)*1.15); ax.tick_params(axis='y',labelsize=fs)
     save(fig,path)
-def stacked(x,parts,path,ylabel='',figsize=(9,4.2)):
+def stacked(x,parts,path,ylabel='',figsize=(9,4.2),loc='best',ncol=1):
     fig,ax=plt.subplots(figsize=figsize); bottom=[0]*len(x)
     for (k,v),col in zip(parts.items(),C):
         ax.bar(x,v,bottom=bottom,color=col,width=0.7,label=k); bottom=[b+vv for b,vv in zip(bottom,v)]
-    style(ax,ylabel); ax.legend(frameon=False,fontsize=9); ax.yaxis.set_major_formatter(FuncFormatter(lambda v,p: fmt_int(v)))
+    style(ax,ylabel); ax.legend(frameon=False,fontsize=9,loc=loc,ncol=ncol); ax.yaxis.set_major_formatter(FuncFormatter(lambda v,p: fmt_int(v)))
     save(fig,path)
