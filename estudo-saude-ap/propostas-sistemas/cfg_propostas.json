@@ -1,0 +1,21 @@
+{
+ "confidencial": "PROPOSTA COMERCIAL – PORTFÓLIO DE SOLUÇÕES",
+ "titulo": "Sistemas de Gestão com Inteligência Artificial para a SESA/AP",
+ "subtitulo": "Dez soluções para a gestão 2027–2030 da Secretaria de Estado da Saúde do Amapá, construídas a partir dos estudos de transição 2022–2026",
+ "destinatario": "Equipe de transição de governo do Estado do Amapá – área da saúde (SESA/AP)",
+ "proponente": "Patrício Almeida (razão social e CNPJ a completar)",
+ "data": "Macapá, novembro de 2026",
+ "rodape_capa": "Documento de caráter comercial. Valores indicativos, sujeitos a detalhamento após levantamento de requisitos. Dados de referência extraídos de fontes públicas (DATASUS, SIOPS, SICONFI, CGU, IBGE) em 7 e 8 de novembro de 2026.",
+ "cabecalho": "Sistemas de Gestão com IA para a SESA/AP – proposta comercial",
+ "rodape": "Patrício Almeida – Portfólio de soluções para a transição SESA/AP 2026/2027",
+ "sumario_executivo": [
+  "A Secretaria de Estado da Saúde do Amapá administra o maior orçamento do Estado, R$ 2,33 bilhões em 2025 e R$ 2.890 por habitante, o maior valor do país, mas decide com informação fragmentada e defasada. Os cinco estudos de transição elaborados com dados públicos mostraram que metade da despesa está classificada em Administração Geral, que os investimentos executam entre 18% e 32% da dotação, que a produção faturada no SUS é a 18ª do país, que há 139 leitos de UTI existentes e apenas 19 habilitados, que o rastreamento de câncer caiu pela metade e que a mortalidade materna é a segunda maior do Brasil.",
+  "Este portfólio propõe dez sistemas de gestão com inteligência artificial que atacam esses problemas de forma modular e mensurável, organizados em quatro eixos:",
+  "- **Base:** P0 Plataforma de Dados e Copiloto do Gestor, que integra os sistemas nacionais e estaduais e permite consultar a situação da rede em linguagem natural.",
+  "- **Governança e finanças:** P1 Governança Financeira do FES (reclassificação da despesa por IA, projeção do mínimo constitucional, painel de investimentos e emendas); P2 Gestão de Contratos e Organizações Sociais (apuração automática de metas); P3 Faturamento e Auditoria SUS (codificação assistida, recuperação de faturamento e detecção de atipicidades).",
+  "- **Acesso e assistência:** P4 Regulação Inteligente de Acesso e Leitos (fila única, censo em tempo real, previsão de demanda); P5 Linhas de Cuidado em Oncologia e Crônicas (busca ativa, prazo legal de 60 dias); P6 Rede Materno-Infantil e Apoio à APS dos 16 municípios (risco gestacional, vinculação ao parto).",
+  "- **Vigilância e inteligência:** P7 Vigilância Preditiva (alerta de epidemias com semanas de antecedência); P8 Assistência Farmacêutica e Judicialização (previsão de demanda, parecer técnico assistido); P9 Força de Trabalho e Escalas (dimensionamento e conciliação CNES/folha).",
+  "O investimento indicativo do portfólio completo é de R$ 5,8 a 8,9 milhões de implantação e R$ 0,7 a 1,1 milhão mensais de operação, cerca de 0,5% da despesa anual da SESA, com desconto de 15% a 20% para contratação integrada e remuneração parcialmente vinculada a resultados em faturamento, glosas contratuais e absenteísmo. Os retornos estimados em um único produto (R$ 35 milhões anuais de faturamento federal adicional em P3; R$ 18 milhões de economia contratual em P2; R$ 2,5 milhões por ponto de execução de investimento em P1) superam o custo de todo o portfólio.",
+  "Todas as soluções seguem cinco princípios: dados integrados antes de telas; IA com humano no circuito e explicabilidade; metas verificáveis a partir das linhas de base dos estudos; conformidade com a LGPD, a Lei 14.133/2021 e os padrões de interoperabilidade do SUS; e transferência de tecnologia ao Estado. O roteiro sugerido começa pela plataforma de dados, pela governança financeira e pelo censo de leitos nos primeiros cem dias de 2027."
+ ]
+}
