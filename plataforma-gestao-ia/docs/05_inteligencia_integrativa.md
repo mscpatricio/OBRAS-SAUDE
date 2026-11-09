@@ -44,6 +44,7 @@ orientações de ação ──assign──▶ módulo executor (tarefa no módul
 | P8 | `farmacia.stock.rupture_risk`, `farmacia.stock.expiring`, `farmacia.lawsuit.received`, `farmacia.opinion.drafted` | item, unidade, dias de cobertura, processo |
 | P9 | `pessoas.schedule.uncovered`, `pessoas.reconciliation.issue`, `pessoas.overtime.threshold_crossed`, `pessoas.absence.forecast_updated` | unidade, setor, turno, categoria |
 | P10 | `compras.contract.expiring`, `compras.contract.balance_low`, `compras.invoice.without_attest`, `compras.supplier.sanctioned`, `compras.price.overprice_detected`, `compras.emergency.opened` | contract_id, fornecedor_key, dias, valor |
+| P11 | `cidadao.resolution.overdue`, `cidadao.report.generated`, `cidadao.ombudsman.case_opened`, `cidadao.ombudsman.deadline_at_risk`, `cidadao.ombudsman.trend_detected`, `cidadao.audit.finding_issued`, `cidadao.audit.recommendation_overdue` | unidade, tema, gravidade, prazo (sem dados pessoais) |
 | P0 | `plataforma.alert.raised/acknowledged/escalated/closed`, `plataforma.action.assigned/completed/ignored`, `plataforma.report.generated` | alert_id, action_id, responsável, prazo, resultado |
 
 ## Motor de alertas (`plataforma.alert_engine`)

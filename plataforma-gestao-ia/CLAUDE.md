@@ -1,6 +1,6 @@
-# CLAUDE.md – Plataforma de Gestão com IA para a SESA/AP
+# CLAUDE.md – SINAPSE: Plataforma de Gestão com IA para a SESA/AP
 
-Este arquivo orienta o Claude Code (e qualquer pessoa desenvolvedora) no desenvolvimento das onze soluções descritas em `../estudo-saude-ap/propostas-sistemas/Propostas_Sistemas_Gestao_IA_SESA_AP.md`. Leia-o inteiro antes de qualquer tarefa. As especificações por produto estão em `docs/produtos/P0.md` a `P10.md`; a ordem de construção está em `docs/03_roteiro_sprints.md`.
+Este arquivo orienta o Claude Code (e qualquer pessoa desenvolvedora) no desenvolvimento das doze soluções (marca SINAPSE – Sistema Integrado de Análise, Previsão, Supervisão e Execução em Saúde) descritas em `../estudo-saude-ap/propostas-sistemas/Propostas_Sistemas_Gestao_IA_SESA_AP.md`. Leia-o inteiro antes de qualquer tarefa. As especificações por produto estão em `docs/produtos/P0.md` a `P11.md`; a ordem de construção está em `docs/03_roteiro_sprints.md`.
 
 ## 1. O que estamos construindo
 
@@ -19,6 +19,7 @@ Uma plataforma modular (monólito modular, um repositório) para a Secretaria de
 | P8 | Assistência farmacêutica e judicialização | `modules/farmacia` |
 | P9 | Força de trabalho e escalas | `modules/pessoas` |
 | P10 | Contratos administrativos, compras e fornecedores | `modules/compras_contratos` |
+| P11 | Controle social (CES/AP), Auditoria do SUS e Ouvidoria do SUS | `modules/cidadao` |
 
 Todos os módulos dependem de P0 (dados, identidade, auditoria, eventos, LLM gateway). Nenhum módulo acessa a base de outro diretamente: usa os serviços do núcleo (`packages/core`) ou os marts analíticos. **Nenhum módulo é uma ilha:** todo módulo publica seus eventos de domínio no barramento (`docs/05_inteligencia_integrativa.md`), expõe indicadores ao catálogo e executa as tarefas geradas pelas orientações de ação do núcleo. Uma história de módulo só está pronta quando seus eventos do catálogo são publicados e testados por contrato.
 

@@ -13,6 +13,7 @@
 | SI-PNI | P6, P7 | Acesso a cobertura por município | Vigilância/SESA | Indisponível |
 | Consulta FNS / Transferegov | P1 | API ou RPA autorizada | FES + Ministério da Saúde | SIOPS (receitas declaradas) e CGU (emendas) |
 | Sistema de compras e licitações do Estado; acesso ao PNCP como ente; NF-e (SEFAZ) | P10 | Layout de contratos e licitações vigentes; credenciais PNCP; acesso às NF-e destinadas ao Estado | SEPLAN/Compras + SEFAZ + PGE | API pública do PNCP e contratos sintéticos |
+| OuvidorSUS (integração), SISAUD/DenaSUS (exportação de auditorias), DigiSUS Gestor (RDQA/RAG) e secretaria executiva do CES/AP (fluxo de pautas e resoluções) | P11 | Credenciais e layouts de integração; regimento do CES; calendário de reuniões | Ouvidoria do SUS, Auditoria do SUS, CES/AP, Ministério da Saúde | Adaptadores fictícios; portal do conselheiro com dados sintéticos |
 | Provedor de mensagens (SMS/WhatsApp) | P4, P5, P6 | Contratação e templates aprovados | SESA/Comunicação | Simulador |
 | Nuvem governamental / hospedagem | Todos | Definição do ambiente de produção e políticas | PRODAP | Compose/K8s local |
 | Bases legais LGPD e encarregado | Todos | RIPD por módulo, portaria do encarregado, comitê de IA | Gabinete + Procuradoria | Documentos-modelo em docs/lgpd |

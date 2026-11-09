@@ -1,16 +1,20 @@
 # 1. Apresentação
 
-## 1.1 Propósito deste documento
+## 1.1 Nome e identidade da solução
 
-Este portfólio reúne onze propostas de sistemas de gestão com inteligência artificial (IA) para a Secretaria de Estado da Saúde do Amapá (SESA/AP), concebidas para a gestão que assume em janeiro de 2027. Cada proposta nasce de um problema medido nos cinco estudos de transição elaborados a partir de dados públicos (produção hospitalar e ambulatorial; vigilância em saúde; atenção primária e saúde materno-infantil; violências e saúde mental; oncologia e doenças crônicas; financiamento e gastos) e descreve a solução, o papel da IA, as integrações, os resultados esperados, o plano de implantação e o investimento indicativo.
+A solução integrada recebe o nome **SINAPSE** – Sistema INtegrado de Análise, Previsão, Supervisão e Execução em Saúde, com a assinatura **"o cérebro do SUS amapaense"**. A sinapse é o ponto em que os neurônios se comunicam: é exatamente o que a plataforma faz com os sistemas, as unidades e as equipes da SESA. O nome é curto, pronunciável, positivo, pertence ao vocabulário da saúde e sustenta a metáfora do cérebro em toda a comunicação, inclusive na nomeação dos módulos: SINAPSE Núcleo (P0), SINAPSE Finanças (P1), SINAPSE Contratos (P2), SINAPSE Faturamento (P3), SINAPSE Regulação (P4), SINAPSE Cuidado (P5), SINAPSE Materno-Infantil (P6), SINAPSE Vigilância (P7), SINAPSE Farmácia (P8), SINAPSE Pessoas (P9), SINAPSE Compras (P10) e SINAPSE Cidadão (P11). Em documentos oficiais pode ser usada a forma "SINAPSE Saúde AP". Recomenda-se o registro da marca no INPI (classes 9 e 42) e dos domínios correspondentes antes da apresentação pública. Alternativas avaliadas e preteridas: CÓRTEX Saúde (menos acessível ao público leigo) e ÍRIS SUS (já utilizada por outros produtos de saúde).
+
+## 1.2 Propósito deste documento
+
+Este portfólio reúne doze propostas de sistemas de gestão com inteligência artificial (IA) para a Secretaria de Estado da Saúde do Amapá (SESA/AP), concebidas para a gestão que assume em janeiro de 2027. Cada proposta nasce de um problema medido nos cinco estudos de transição elaborados a partir de dados públicos (produção hospitalar e ambulatorial; vigilância em saúde; atenção primária e saúde materno-infantil; violências e saúde mental; oncologia e doenças crônicas; financiamento e gastos) e descreve a solução, o papel da IA, as integrações, os resultados esperados, o plano de implantação e o investimento indicativo.
 
 O documento tem finalidade comercial: apresentar produtos que podem ser contratados de forma modular ou como plataforma integrada, com argumentos de valor dirigidos ao secretário de Estado, à equipe de transição e aos órgãos de controle.
 
-## 1.2 Por que agora
+## 1.3 Por que agora
 
 A SESA/AP gerencia o maior orçamento do Estado (R$ 2,33 bilhões em 2025, 20,4% da despesa estadual e R$ 2.890 por habitante, o maior valor entre os estados), mas opera com informação fragmentada: metade da despesa está classificada em Administração Geral, o faturamento SUS registrado (R$ 203 milhões) equivale a menos de um décimo do gasto público, 139 leitos de UTI existentes convivem com 19 habilitados, o rastreamento de câncer caiu pela metade e as transferências da União, em grande parte emendas de custeio temporário, já financiam um terço da despesa. A transição é o momento em que decisões de arquitetura de dados e de gestão são tomadas para quatro anos.
 
-## 1.3 Princípios comuns das soluções
+## 1.4 Princípios comuns das soluções
 
 1. **Dados antes de telas:** todas as soluções compartilham uma camada única de dados (produto P0), integrada aos sistemas nacionais (SIH, SIA, CNES, SINAN, SIM, SINASC, e-SUS APS, SISREG, SIOPS) e estaduais (sistema contábil, folha, regulação, almoxarifado).
 2. **IA com humano no circuito:** modelos preditivos, de classificação e de linguagem apoiam a decisão; a decisão clínica, regulatória ou financeira permanece com o profissional habilitado, com registro de quem decidiu e por quê.
@@ -36,6 +40,7 @@ Tabela: Portfólio de soluções propostas, problema de origem e eixo de gestão
 | P8 | Assistência Farmacêutica e Judicialização com IA | Medicamentos informados como zero no SIOPS; judicialização sem base pública | Vigilância e inteligência |
 | P9 | Força de Trabalho e Escalas com IA | Pessoal é 44% da despesa; folha por vínculo e absenteísmo desconhecidos | Vigilância e inteligência |
 | P10 | Gestão de Contratos Administrativos, Compras e Fornecedores | Cerca de R$ 900 milhões anuais em terceiros e entidades privadas; obras paradas; passivo com fornecedores desconhecido; contratos em disputa | Governança e finanças |
+| P11 | Controle Social, Auditoria e Ouvidoria do SUS (SINAPSE Cidadão) | Prestação de contas ao Conselho não institucionalizada; auditoria com equipe reduzida e sem sistema; ouvidoria centralizada e sem análise das manifestações | Participação e controle |
 
 Fonte: estudos de transição SESA/AP 2022–2026 (ALMEIDA, 2026).
 
@@ -54,11 +59,12 @@ Tabela: Síntese de prazos e investimento indicativo por solução
 | P8 | 4 a 6 | 450 a 700 | 55 a 85 | Licença SaaS + implantação |
 | P9 | 3 a 5 | 350 a 550 | 45 a 70 | Licença SaaS + implantação |
 | P10 | 4 a 6 | 500 a 800 | 60 a 90 | Licença SaaS + parcela por economia em compras |
-| Portfólio completo | 12 a 18 | 6.450 a 9.850 | 805 a 1.220 | Desconto de 15% a 20% para contratação integrada |
+| P11 | 4 a 5 | 400 a 650 | 50 a 80 | Licença SaaS + implantação |
+| Portfólio completo | 12 a 18 | 6.850 a 10.500 | 855 a 1.300 | Desconto de 15% a 20% para contratação integrada |
 
-Nota: valores indicativos em reais de 2026, estimados pelo proponente para fins de dimensionamento e sujeitos a detalhamento após levantamento de requisitos; não incluem infraestrutura de nuvem, que pode ser contratada pelo Estado em ata própria. O portfólio completo representa cerca de 0,5% a 0,6% da despesa anual da SESA.
+Nota: valores indicativos em reais de 2026, estimados pelo proponente para fins de dimensionamento e sujeitos a detalhamento após levantamento de requisitos; não incluem infraestrutura de nuvem, que pode ser contratada pelo Estado em ata própria. O portfólio completo representa cerca de 0,6% da despesa anual da SESA.
 
-# 3. P0 – O Cérebro da SESA: Inteligência Integrativa
+# 3. P0 – SINAPSE Núcleo: o Cérebro da SESA (Inteligência Integrativa)
 
 ## 3.1 Problema
 
@@ -66,7 +72,7 @@ A SESA não dispõe de uma visão integrada: produção (SIH, SIA), estrutura (C
 
 ## 3.2 Solução
 
-A Inteligência Integrativa é o núcleo que liga os dez módulos (P1 a P10) e os sistemas legados da SESA em três camadas:
+O SINAPSE Núcleo é a Inteligência Integrativa que liga os onze módulos (P1 a P11) e os sistemas legados da SESA em três camadas:
 
 1. **Plataforma de dados:** lake governado com conectores para os sistemas nacionais e estaduais, catálogo de indicadores oficiais (Pacto Interfederativo, cofinanciamento da APS, RREO Anexo 12, SIOPS) e identidade única de pacientes, profissionais, estabelecimentos, fornecedores e contratos, de modo que um mesmo paciente, hospital ou credor seja reconhecido em todos os módulos.
 2. **Barramento de eventos e motor de regras:** cada módulo publica eventos de negócio (leito ocupado, empenho classificado, meta contratual não atingida, caso oncológico fora do prazo, alerta epidêmico, nota fiscal sem atesto, escala descoberta) em um barramento comum; o motor correlaciona eventos de módulos diferentes, calcula impacto e gera alertas priorizados por gravidade, valor e prazo.
@@ -85,7 +91,7 @@ A metáfora é deliberada: o sistema integrado dos módulos opera como um céreb
 5. **Agir:** produção de relatórios, painéis e briefings; envio de alertas; abertura de tarefas nos módulos; e execução direta de ações operacionais conforme o nível de autonomia definido para cada playbook (seção 3.4).
 6. **Aprender:** o resultado de cada ação (feita, adiada, ignorada, efeito observado) realimenta regras, modelos e prioridades, de modo que o cérebro melhora a cada ciclo e se adapta ao estilo de gestão da Secretaria.
 
-Figura: O Cérebro da SESA: módulos integrados e ciclo cognitivo
+Figura: SINAPSE: módulos integrados em torno do núcleo e ciclo cognitivo
 
 ![](figuras/cerebro_sesa.png)
 
@@ -148,7 +154,7 @@ TABNET e arquivos de disseminação do DATASUS (SIH, SIA, CNES, SINAN, SIM, SINA
 |---|---|---|---|
 | Defasagem média entre o fato e o painel | 3 a 6 meses (TABNET) | 30 dias (bases locais em 24 h) | 7 dias |
 | Indicadores oficiais com cálculo automático e auditável | 0 | 60 | 120 |
-| Módulos integrados ao barramento de eventos | 0 | 5 | 10 |
+| Módulos integrados ao barramento de eventos | 0 | 5 | 11 |
 | Alertas com orientação de ação, responsável e prazo | 0 | 80% dos alertas críticos | 100% |
 | Playbooks com ações executadas pelo cérebro (níveis 2 e 3) | 0 | 20 | 60 |
 | Orientações de ação tratadas no prazo | não medido | 60% | 85% |
@@ -161,7 +167,7 @@ Quatro a seis meses em três ondas: (1) conectores DATASUS e finanças, identida
 
 ## 3.10 Argumento de venda
 
-É o cérebro do portfólio: sem ele, dez sistemas seriam dez novas ilhas. Com ele, o secretário recebe todas as manhãs um quadro único do que mudou, do que está em risco, do que fazer e do que o próprio sistema já fez, com responsável e prazo, e cada módulo contratado depois se encaixa automaticamente. A gestão passa a decidir com evidência diária em vez de tabulações anuais, e o copiloto reduz semanas de trabalho de assessoria técnica a minutos.
+É o cérebro do portfólio: sem ele, onze sistemas seriam onze novas ilhas. Com ele, o secretário recebe todas as manhãs um quadro único do que mudou, do que está em risco, do que fazer e do que o próprio sistema já fez, com responsável e prazo, e cada módulo contratado depois se encaixa automaticamente. A gestão passa a decidir com evidência diária em vez de tabulações anuais, e o copiloto reduz semanas de trabalho de assessoria técnica a minutos.
 
 # 4. P1 – Governança Financeira do FES com IA
 
@@ -555,27 +561,137 @@ Quatro a seis meses: cadastro da carteira de contratos vigentes e integração c
 
 Sobre R$ 900 milhões anuais contratados, 3% de economia são R$ 27 milhões por ano; a redução de prorrogações emergenciais e o controle de vencimentos eliminam a principal fonte de apontamentos dos tribunais de contas na saúde. O sistema entrega, na posse, a carteira completa de contratos com saldo, vigência e responsável, informação que a transição hoje não tem.
 
-# 14. Arquitetura, segurança e governança de IA
+# 14. P11 – Controle Social, Auditoria e Ouvidoria do SUS (SINAPSE Cidadão)
 
-## 14.1 Arquitetura de referência
+## 14.1 Problema
+
+O Plano Estadual de Saúde registra, desde 2016, que as práticas de prestação de contas da gestão ao Conselho Estadual de Saúde não estão institucionalizadas, que a Auditoria do SUS opera com equipe reduzida, por portaria e sem sistema próprio, e que a Ouvidoria, instalada em 2008, permaneceu centralizada na capital e não utiliza as manifestações para mudar serviços. O Conselho Estadual de Saúde do Amapá (CES/AP), com 28 conselheiros titulares (50% usuários, 25% trabalhadores, 25% gestores e prestadores), precisa apreciar o Plano Estadual, a Programação Anual, os Relatórios Detalhados do Quadrimestre Anterior e o Relatório Anual de Gestão, além de acompanhar a execução financeira, mas recebe documentos extensos, tardios e sem leitura comparada. A Auditoria do SUS (componente estadual do Sistema Nacional de Auditoria, criada pelo Decreto estadual nº 4.770/1997) e a Ouvidoria do SUS (em descentralização para as unidades desde 2022, integrada ao OuvidorSUS) estão entre as metas do PES 2024–2027 (objetivos 9 e 10: auditorias em fundos rotativos, fundos municipais e instrumentos de gestão; ouvidorias em 13 municípios e 6 unidades estaduais; 12 relatórios técnicos analíticos). O estudo de financiamento mostrou ainda R$ 1,8 bilhão em emendas e R$ 900 milhões anuais em contratos cuja fiscalização social e técnica não dispõe de instrumentos.
+
+## 14.2 Solução
+
+Módulo de participação e controle com três frentes integradas ao cérebro:
+
+1. **Controle social (CES/AP e conselhos municipais):** portal do conselheiro com pautas, documentos, atas, deliberações e resoluções; acompanhamento do cumprimento das resoluções pela gestão; geração automática dos instrumentos de prestação de contas (Relatório Detalhado do Quadrimestre Anterior, Relatório Anual de Gestão, audiência pública quadrimestral da LC 141/2012, art. 36) a partir dos indicadores e da execução financeira do SINAPSE, em linguagem acessível e com comparações; painéis públicos de transparência; trilhas de capacitação de conselheiros; apoio às conferências e aos conselhos municipais.
+2. **Auditoria do SUS:** plano anual de auditoria baseado em risco (alimentado pelas trilhas de P3, P2, P10 e P1), gestão de auditorias programadas e por demanda (Ministério Público, Tribunal de Contas, DenaSUS, Controladoria-Geral do Estado, Conselho), papéis de trabalho, achados, recomendações, prazos e acompanhamento de providências, relatórios padronizados compatíveis com o Sistema Nacional de Auditoria, e integração com o controle interno.
+3. **Ouvidoria do SUS:** recepção multicanal (OuvidorSUS, telefone, presencial nas unidades, aplicativo, mensagens), classificação e encaminhamento automáticos à unidade responsável, controle de prazos da Lei 13.460/2017, resposta assistida, pesquisa de satisfação, painéis de temas por unidade e território, e relatórios técnicos analíticos periódicos.
+
+## 14.3 Uso da IA
+
+- Classificação automática das manifestações por tema, unidade, gravidade e urgência, com detecção de denúncias sensíveis (violência, discriminação, risco à vida) para tratamento prioritário e sigiloso.
+- Análise de tendências e agrupamentos: aumento súbito de reclamações sobre falta de medicamento, demora em fila ou maus-tratos em uma unidade gera alerta no cérebro e aciona os módulos responsáveis (P8, P4, P9, P2).
+- Redação assistida de respostas ao cidadão em linguagem simples, com base em informações verificadas dos módulos, sempre revisada pelo ouvidor.
+- Tradução dos instrumentos de prestação de contas para linguagem acessível, com destaques do que mudou, o que foi cumprido e o que está em risco, e versão em áudio para acessibilidade.
+- Seleção de amostras e trilhas de auditoria por risco (procedimentos atípicos, contratos com divergência, fundos municipais com indicadores fora da curva) e assistente de redação de relatórios com citação das normas.
+- Verificação cruzada entre o que a gestão informa ao Conselho e o que os sistemas registram, com sinalização de inconsistências.
+
+## 14.4 Integrações e dados
+
+OuvidorSUS (Ministério da Saúde), Sistema de Auditoria do SNA (SISAUD/DenaSUS), DigiSUS Gestor (instrumentos de planejamento), Portal da Transparência do Estado, sistema de protocolo do Estado, Ouvidoria-Geral do Estado, Tribunal de Contas e Ministério Público (demandas), e todos os módulos do SINAPSE por eventos.
+
+## 14.5 Resultados esperados e indicadores
+
+| Indicador | Linha de base | Meta 12 meses | Meta 36 meses |
+|---|---|---|---|
+| Relatórios quadrimestrais e anual entregues ao CES no prazo legal, em versão analítica e acessível | não institucionalizado | 100% | 100% |
+| Resoluções do CES com acompanhamento de cumprimento registrado | 0 | 100% | 100% |
+| Manifestações de ouvidoria respondidas no prazo da Lei 13.460/2017 | não medido | 85% | 95% |
+| Unidades estaduais e municípios com ouvidoria integrada | 5 unidades e 3 municípios (PES) | 11 unidades e 13 municípios | toda a rede e 16 municípios |
+| Auditorias concluídas com recomendações acompanhadas até a providência | não medido | 100% das concluídas | 100% |
+| Alertas gerados a partir de manifestações e tratados pelos módulos | 0 | 80% dos alertas críticos | 100% |
+
+## 14.6 Implantação e investimento
+
+Quatro a cinco meses: portal do conselheiro e prestação de contas automática (meses 1 e 2), ouvidoria integrada e classificação por IA (meses 2 e 3), auditoria baseada em risco (meses 4 e 5). Implantação de R$ 400 mil a R$ 650 mil e operação de R$ 50 mil a R$ 80 mil mensais.
+
+## 14.7 Argumento de venda
+
+Transforma o controle social de formalidade em aliado: o Conselho passa a receber informação clara e no prazo, a Ouvidoria vira sensor do sistema (a reclamação do cidadão chega ao cérebro e aciona a unidade responsável) e a Auditoria ganha método e trilhas de risco. É o módulo que protege a gestão perante o Ministério Público, o Tribunal de Contas e a sociedade, e que cumpre metas já pactuadas no Plano Estadual de Saúde 2024–2027.
+
+# 15. Aderência ao organograma da SESA/AP e ao Plano Estadual de Saúde 2024–2027
+
+## 15.1 Estrutura organizacional de referência
+
+A estrutura considerada neste portfólio foi levantada em documentos públicos: Lei estadual nº 2.212/2017 (organização básica da SESA), Lei nº 2.209/2017 (criação da Superintendência de Vigilância em Saúde como autarquia), Portaria Normativa nº 0002/2023-SESA (reorganização interna após a criação da Fundação), Leis Complementares nº 148/2023, 156/2023 e 167/2024 e Decreto nº 531/2025 (Fundação de Saúde Amapaense), Decreto nº 4.770/1997 (Auditoria do SUS) e Plano Estadual de Saúde 2024–2027. Os portais oficiais do Estado não estavam acessíveis na data da consulta (8 e 9 de novembro de 2026); a denominação exata de algumas unidades (marcadas como "denominação provável") e a titularidade dos cargos devem ser confirmadas no regimento interno vigente e na posse da nova gestão.
+
+Tabela: Estrutura organizacional de referência da SESA/AP e entidades vinculadas
+
+| Nível | Unidades |
+|---|---|
+| Direção superior e colegiados | Conselho Estadual de Saúde (CES/AP); Comissão Intergestores Bipartite (CIB/AP); Comissões Intergestores Regionais (3 regiões de saúde) |
+| Direção singular | Secretário(a) de Estado da Saúde; Secretaria Adjunta de Atenção à Saúde (absorveu as atribuições da extinta Superintendência de Atenção à Saúde em 2023); Secretaria Adjunta de Gestão e Planejamento de Saúde; Secretaria Adjunta do Fundo Estadual de Saúde (FES) |
+| Assessoramento e controle | Auditoria do SUS (componente estadual do SNA); Ouvidoria do SUS; Controle Interno; Assessoria Jurídica (Procuradoria designada); Assessoria de Comunicação; Assessoria de Desenvolvimento Institucional (ADINS, denominação provável) |
+| Coordenadorias e áreas técnicas | Planejamento (COPLAN); Regulação, Controle e Avaliação (CRCA); Assistência Farmacêutica (COASF); Gestão do Trabalho e Educação na Saúde (CGETES) e Escola de Saúde Pública (ESP); Tecnologia da Informação (COTEC, denominação provável); Políticas de Atenção à Saúde (CPAS, denominação provável); Saúde Indígena (COESI/NESI); Apoio ao Diagnóstico; Administrativa; Engenharia e Arquitetura em Saúde (NEAS, denominação provável); Saúde Mental; Saúde Bucal; Ambulatório de especialidades |
+| Unidades assistenciais estaduais | Hospital de Clínicas Dr. Alberto Lima (HCAL, com UNACON e TRS); Hospital de Emergência Oswaldo Cruz (HE); Hospital da Mulher Mãe Luzia (HMML); Hospital da Criança e do Adolescente (HCA); Hospital Estadual de Laranjal do Jari; Hospital de Santana; Hospital de Oiapoque; Hospital Regional de Porto Grande; Hospital de Tartarugalzinho; Hospital Maria Odete Vilhena Parize; Hospital Regional Maria Lúcia Guimarães da Silva; UPAs; CREAP; CRDT; CEO; CERPIS; CAPS; Centro Pós-Covid; Centro de Radioterapia |
+| Entidades vinculadas | Superintendência de Vigilância em Saúde (SVS, autarquia: vigilâncias epidemiológica, sanitária, ambiental e do trabalhador, LACEN, CEREST, CIEVS); Instituto de Hematologia e Hemoterapia (HEMOAP, autarquia); Fundação de Saúde Amapaense (FUNDESA, gestão do Anexo do HE, Unidade Estadual de Internação, UPA Zona Sul e Hospital Regional de Porto Grande) |
+
+Fonte: documentos públicos citados; elaboração do proponente.
+
+## 15.2 Mapa de responsabilidades: quem usa cada módulo
+
+Tabela: Unidades responsáveis e usuárias de cada módulo do SINAPSE
+
+| Módulo | Unidade gestora (dona do módulo) | Principais usuárias |
+|---|---|---|
+| P0 SINAPSE Núcleo | Gabinete do Secretário, com COPLAN e Tecnologia da Informação | Secretarias adjuntas, todas as coordenadorias, hospitais, SVS, HEMOAP, FUNDESA, CES/AP (visão pública) |
+| P1 SINAPSE Finanças | Secretaria Adjunta do FES | COPLAN, Administrativa, Controle Interno, hospitais, Auditoria |
+| P2 SINAPSE Contratos | Secretaria Adjunta de Atenção à Saúde com CRCA | Comissões de acompanhamento de contratos, hospitais, FUNDESA, Controle Interno, Auditoria |
+| P3 SINAPSE Faturamento | CRCA (controle e avaliação) e hospitais | Faturistas, Auditoria do SUS, FES, FUNDESA |
+| P4 SINAPSE Regulação | CRCA (complexo regulador estadual, Central de Regulação das Urgências, TFD) | Hospitais, UPAs, SAMU, municípios, HEMOAP |
+| P5 SINAPSE Cuidado | Secretaria Adjunta de Atenção à Saúde (CPAS) e HCAL/UNACON | Ambulatório de especialidades, serviços de diálise, APS municipal, CRCA |
+| P6 SINAPSE Materno-Infantil | Secretaria Adjunta de Atenção à Saúde (CPAS) e HMML | 16 secretarias municipais, maternidades, comitês de mortalidade, SVS |
+| P7 SINAPSE Vigilância | Superintendência de Vigilância em Saúde (CIEVS, CVS, LACEN) | Vigilâncias municipais, CRDT, hospitais, Comunicação |
+| P8 SINAPSE Farmácia | COASF e Assessoria Jurídica (demandas judiciais) | Farmácias hospitalares, componente especializado, Procuradoria, FES |
+| P9 SINAPSE Pessoas | CGETES e Escola de Saúde Pública | Direções hospitalares, Administrativa, FUNDESA, Controle Interno |
+| P10 SINAPSE Compras | Secretaria Adjunta de Gestão e Planejamento (Administrativa e compras) | Fiscais e gestores de contrato, NEAS (obras), Assessoria Jurídica, FES, Controle Interno |
+| P11 SINAPSE Cidadão | Ouvidoria do SUS, Auditoria do SUS e Secretaria Executiva do CES/AP | Conselheiros estaduais e municipais, ouvidorias das unidades, Controle Interno, Tribunal de Contas e Ministério Público (consultas) |
+
+Fonte: elaboração do proponente a partir da estrutura de referência.
+
+## 15.3 Alinhamento ao Plano Estadual de Saúde 2024–2027
+
+O portfólio entrega metas já pactuadas pela própria SESA e aprovadas pelo Conselho Estadual de Saúde, o que facilita a justificativa técnica da contratação e o uso de dotações do PPA (ação 2364, Modernização da Gestão da Saúde):
+
+Tabela: Objetivos e metas do PES 2024–2027 atendidos pelo SINAPSE
+
+| Objetivo e meta do PES 2024–2027 | Módulo que entrega |
+|---|---|
+| Objetivo 19, meta 72: implantar e pactuar o Centro de Inteligência Estratégica para Gestão Estadual do SUS (CIEGES), com infraestrutura de TIC e base para inteligência de negócios | P0 SINAPSE Núcleo é a implementação do CIEGES amapaense |
+| Objetivo 19, meta 73: 100% das unidades de saúde com gestão informatizada até 2027 | P3, P4, P8, P9 nas unidades; P0 integra |
+| Objetivo 9: ampliar as atividades de Auditoria (fundos rotativos, fundos municipais, instrumentos de gestão, unidades próprias e complementares; demandas externas) | P11 (auditoria) com trilhas de P3, P2, P10 |
+| Objetivo 10: ampliar a Ouvidoria (13 municípios, 6 unidades estaduais, 12 relatórios técnicos analíticos) | P11 (ouvidoria) |
+| Objetivo 18: plano de comunicação interna e externa | P0 (briefings, relatórios) e P11 (transparência) |
+| Objetivo 20: modelo de gestão por Organizações Sociais de Saúde | P2 (metas e monitoramento) e P10 (contratos) |
+| Mapa estratégico: transparência dos gastos, modelo de gestão orçamentária do FES, ampliar fontes de financiamento, atualização bimestral do SIOPS | P1 |
+| Mapa estratégico: organizar e qualificar o acesso, Sistema de Transporte Sanitário | P4 |
+| Mapa estratégico: estruturar a assistência farmacêutica | P8 |
+| Mapa estratégico: reduzir a mortalidade materna por causas evitáveis; organizar as redes de atenção | P6, P5 |
+| Mapa estratégico: estruturar e organizar a vigilância em saúde | P7 |
+| Mapa estratégico: planejamento e organização da força de trabalho; ambiente de trabalho saudável | P9 |
+| Mapa estratégico: cultura de gestão por resultados | P0 (metas, alertas e orientações de ação) |
+
+Fonte: Plano Estadual de Saúde 2024–2027 (SESA/AP, 2023); elaboração do proponente.
+
+# 16. Arquitetura, segurança e governança de IA
+
+## 16.1 Arquitetura de referência
 
 Camada de integração (conectores, APIs, padrões HL7 FHIR, TISS e arquivos de disseminação do DATASUS), camada de dados (data lake com zonas bruta, tratada e analítica, catálogo e linhagem), camada de modelos (treinamento, versionamento, monitoramento de desempenho e deriva) e camada de aplicações (painéis, fluxos de trabalho, aplicativos e copiloto). Hospedagem em nuvem governamental ou em provedor contratado pelo Estado, com ambientes separados de produção, homologação e desenvolvimento.
 
-## 14.2 Proteção de dados
+## 16.2 Proteção de dados
 
 Dados de saúde são sensíveis (LGPD, art. 11): pseudonimização por padrão, segregação de perfis, registro de acesso, consentimento ou base legal documentada para cada uso, relatório de impacto à proteção de dados e encarregado designado. Modelos de linguagem operam sobre dados agregados ou pseudonimizados; o acesso a dados identificados exige perfil assistencial e justificativa registrada. Nenhum dado do Estado é usado para treinar modelos de terceiros.
 
-## 14.3 Governança de IA
+## 16.3 Governança de IA
 
 Comitê de IA da SESA com representantes assistenciais, jurídicos, de controle interno e do Conselho Estadual de Saúde; inventário de modelos com finalidade, dados de treinamento, métricas de desempenho por subgrupo (sexo, raça/cor, município) e revisão periódica de viés; explicabilidade das recomendações; humano no circuito em toda decisão com efeito sobre o paciente ou sobre pagamentos; canal de contestação para cidadãos e profissionais.
 
-## 14.4 Transferência de tecnologia e continuidade
+## 16.4 Transferência de tecnologia e continuidade
 
 Documentação completa, treinamento de equipe estadual, código das integrações e dos modelos específicos entregue ao Estado ao fim do contrato, exportação de dados em formatos abertos e período de transição assistida de seis meses.
 
-# 15. Modelo de contratação
+# 17. Modelo de contratação
 
-## 15.1 Caminhos previstos na legislação
+## 17.1 Caminhos previstos na legislação
 
 1. **Licitação pela Lei 14.133/2021**, preferencialmente pregão ou concorrência com critério de técnica e preço para soluções de tecnologia da informação, com estudo técnico preliminar, termo de referência por resultados e exigência de prova de conceito.
 2. **Contrato Público para Solução Inovadora (CPSI)**, previsto no Marco Legal das Startups (Lei Complementar 182/2021), para pilotos de até doze meses prorrogáveis, com posterior contrato de fornecimento sem nova licitação, adequado a P7, P5 e P8.
@@ -583,7 +699,7 @@ Documentação completa, treinamento de equipe estadual, código das integraçõ
 4. **Adesão a atas de registro de preços** de outros entes para componentes padronizados (infraestrutura de nuvem, licenças de análise de dados).
 5. **Parcerias com universidades e institutos** (UNIFAP, Fiocruz, Instituto Evandro Chagas) para validação científica dos modelos e formação de pessoal.
 
-## 15.2 Condições comerciais propostas
+## 17.2 Condições comerciais propostas
 
 - Contratação modular, com P0 (Inteligência Integrativa) como pré-requisito ou entregue junto com o primeiro produto contratado; cada novo módulo é integrado ao barramento de eventos, ao centro de comando e ao copiloto sem custo adicional de integração.
 - Desconto de 15% a 20% para contratação integrada do portfólio, com cronograma de 12 a 18 meses.
@@ -591,24 +707,24 @@ Documentação completa, treinamento de equipe estadual, código das integraçõ
 - Garantia de nível de serviço: disponibilidade de 99,5%, atendimento a incidentes críticos em quatro horas, atualização dos modelos ao menos trimestral.
 - Treinamento inicial de 200 profissionais e educação continuada mensal.
 
-## 15.3 Fontes de financiamento
+## 17.3 Fontes de financiamento
 
 Recursos próprios do tesouro estadual (as soluções são despesa de ASPS quando vinculadas à gestão do SUS), recursos de emendas parlamentares de estruturação e de saúde digital (R$ 7,1 milhões já empenhados em telessaúde e saúde digital em 2025), programa SUS Digital do Ministério da Saúde, financiamento do BNDES e do BID para transformação digital em saúde, e cofinanciamento municipal em P6.
 
-# 16. Roteiro de implantação
+# 18. Roteiro de implantação
 
 Tabela: Roteiro sugerido de implantação do portfólio, 2027–2028
 
 | Período | Entregas | Produtos |
 |---|---|---|
-| Primeiros 100 dias (jan–abr 2027) | Sala de situação da transição com dados 2022–2026 e briefing diário do secretário; painel do FES e do mínimo constitucional; censo eletrônico de leitos; carteira de contratos administrativos e assistenciais e de obras com saldo, vigência e responsável | P0 (onda 1), P1, P2 (início), P10 (carteira), P4 (censo) |
-| Meses 4 a 9 (mai–set 2027) | Regulação ambulatorial e de urgência; faturamento assistido nos três maiores hospitais; redação assistida, pesquisa de preços e fiscalização de contratos; vigilância preditiva de arboviroses e tuberculose; linhas de cuidado oncológicas em Macapá e Santana | P4, P3, P10, P7, P5 |
+| Primeiros 100 dias (jan–abr 2027) | Sala de situação da transição com dados 2022–2026 e briefing diário do secretário; primeiro Relatório Detalhado do Quadrimestre gerado pelo SINAPSE para o CES/AP; painel do FES e do mínimo constitucional; censo eletrônico de leitos; carteira de contratos administrativos e assistenciais e de obras com saldo, vigência e responsável | P0 (onda 1), P1, P2 (início), P10 (carteira), P4 (censo) |
+| Meses 4 a 9 (mai–set 2027) | Regulação ambulatorial e de urgência; faturamento assistido nos três maiores hospitais; redação assistida, pesquisa de preços e fiscalização de contratos; vigilância preditiva de arboviroses e tuberculose; linhas de cuidado oncológicas em Macapá e Santana; portal do conselheiro, prestação de contas automática e ouvidoria integrada | P4, P3, P10, P7, P5, P11 |
 | Meses 10 a 15 (out 2027–mar 2028) | Plataforma materno-infantil com os 16 municípios; assistência farmacêutica e judicialização; força de trabalho nos hospitais; copiloto do gestor em produção; todos os módulos no barramento de eventos com orientações de ação | P6, P8, P9, P0 (onda 3) |
 | Meses 16 a 24 (abr–dez 2028) | Expansão a toda a rede, parcela por resultado, auditoria externa dos modelos, transferência de tecnologia inicial | Todos |
 
 Fonte: proposta do proponente.
 
-# 17. Riscos e mitigações
+# 19. Riscos e mitigações
 
 | Risco | Mitigação |
 |---|---|
@@ -619,9 +735,9 @@ Fonte: proposta do proponente.
 | Descontinuidade orçamentária | Contratos plurianuais, uso de emendas e programas federais, modularidade que permite pausar produtos sem perder a plataforma |
 | Questionamento de órgãos de controle | Estudo técnico preliminar robusto, prova de conceito, termo de referência por resultado e relatórios de impacto |
 
-# 18. Encerramento
+# 20. Encerramento
 
-Os cinco estudos de transição mostraram um sistema de saúde que gasta muito, depende de recursos temporários, enxerga pouco e decide tarde. As onze soluções deste portfólio atacam exatamente essas quatro fragilidades: tornam o dinheiro legível, o acesso regulado, o cuidado contínuo e a vigilância antecipada, com inteligência artificial a serviço de gestores e profissionais e com resultados mensuráveis a cada bimestre. Todas conversam entre si por meio da Inteligência Integrativa, que funciona como o cérebro da Secretaria: analisa e integra, relaciona, avalia, gera relatórios e painéis, alerta, sugere e executa ações dentro dos níveis de autonomia aprovados, aprendendo com cada ciclo. A proposta é iniciar pela plataforma de dados e pela governança financeira nos primeiros cem dias, quando a transição ainda dispõe de margem política, e evoluir para a regulação e as linhas de cuidado ao longo de 2027.
+Os cinco estudos de transição mostraram um sistema de saúde que gasta muito, depende de recursos temporários, enxerga pouco e decide tarde. As doze soluções deste portfólio, reunidas sob a marca SINAPSE, atacam exatamente essas quatro fragilidades: tornam o dinheiro legível, o acesso regulado, o cuidado contínuo e a vigilância antecipada, com inteligência artificial a serviço de gestores e profissionais e com resultados mensuráveis a cada bimestre. Todas conversam entre si por meio da Inteligência Integrativa, que funciona como o cérebro da Secretaria: analisa e integra, relaciona, avalia, gera relatórios e painéis, alerta, sugere e executa ações dentro dos níveis de autonomia aprovados, aprendendo com cada ciclo. A proposta é iniciar pela plataforma de dados e pela governança financeira nos primeiros cem dias, quando a transição ainda dispõe de margem política, e evoluir para a regulação e as linhas de cuidado ao longo de 2027.
 
 # APÊNDICE A – Matriz de aderência aos achados dos estudos
 
@@ -639,4 +755,5 @@ Os cinco estudos de transição mostraram um sistema de saúde que gasta muito, 
 | Dengue 10.693 casos; tuberculose 77/100 mil | P7 | Antecedência do alerta; abandono de tratamento |
 | Pessoal 44% da despesa sem folha por vínculo | P9 | Conciliação CNES/folha/escala; horas extras |
 | R$ 900 milhões anuais em contratos; obras paradas; passivo com fornecedores; prorrogações emergenciais | P10 | Contratos monitorados; economia em compras; notas conciliadas antes do pagamento |
+| Prestação de contas ao Conselho não institucionalizada; auditoria e ouvidoria sem sistema (PES 2016–2027) | P11 | Relatórios ao CES no prazo; manifestações respondidas no prazo; auditorias acompanhadas |
 | Informação dispersa e defasada; decisões sem alertas nem orientação | P0 | Defasagem fato–painel; indicadores automatizados; alertas com orientação de ação tratados no prazo |
