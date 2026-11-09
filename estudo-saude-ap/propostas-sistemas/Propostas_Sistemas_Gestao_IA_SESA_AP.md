@@ -17,7 +17,7 @@ A SESA/AP gerencia o maior orçamento do Estado (R$ 2,33 bilhões em 2025, 20,4%
 3. **Resultado mensurável:** cada produto define indicadores de linha de base (extraídos dos estudos) e metas de 12 e 36 meses, com parcela da remuneração vinculada ao resultado quando couber.
 4. **Conformidade:** LGPD (dados de saúde como dados sensíveis, art. 11), Lei 14.133/2021, normas do Ministério da Saúde para interoperabilidade (RNDS, padrões HL7 FHIR e TISS) e trilhas de auditoria completas.
 5. **Soberania e continuidade:** código, dados e modelos hospedados em nuvem governamental ou em ambiente contratado pelo Estado, com cláusula de transferência de tecnologia e portabilidade.
-6. **Nenhum sistema é uma ilha:** todos os módulos publicam eventos e indicadores para a Inteligência Integrativa (P0), que correlaciona informações entre finanças, contratos, regulação, vigilância, linhas de cuidado e pessoas, e devolve ao gestor um quadro único com relatórios, painéis, alertas priorizados e orientações de ação.
+6. **Nenhum sistema é uma ilha; o conjunto funciona como um cérebro:** todos os módulos publicam eventos e indicadores para a Inteligência Integrativa (P0), que percebe, integra, relaciona e avalia as informações de finanças, contratos, regulação, vigilância, linhas de cuidado e pessoas, decide o que merece atenção, devolve ao gestor relatórios, painéis, alertas e sugestões, executa ações dentro dos níveis de autonomia aprovados e aprende com os resultados.
 
 # 2. Visão geral do portfólio
 
@@ -25,7 +25,7 @@ Tabela: Portfólio de soluções propostas, problema de origem e eixo de gestão
 
 | Código | Solução | Problema medido nos estudos | Eixo |
 |---|---|---|---|
-| P0 | Inteligência Integrativa da SESA (plataforma de dados, centro de comando e copiloto do gestor) | Informação dispersa em dez sistemas; ausência de sala de situação integrada; decisões sem alertas nem recomendações | Base |
+| P0 | O Cérebro da SESA: Inteligência Integrativa (plataforma de dados, ciclo cognitivo, centro de comando, executor de ações e copiloto) | Informação dispersa em dez sistemas; ausência de sala de situação integrada; decisões sem alertas nem recomendações | Base |
 | P1 | Governança Financeira do FES com IA | 48,5% da despesa em Administração Geral; investimentos com 22% de execução; R$ 110 milhões de RP de 2022 | Governança e finanças |
 | P2 | Gestão de Contratos, OS e Metas Assistenciais | Despesa com entidades privadas saltou de 4,9% para 18,3% em um ano; contratos sem monitoramento público | Governança e finanças |
 | P3 | Faturamento e Auditoria SUS Inteligente | Faturamento de R$ 216 por habitante (18º do país); R$ 25,6 milhões em procedimentos vasculares atípicos | Governança e finanças |
@@ -58,7 +58,7 @@ Tabela: Síntese de prazos e investimento indicativo por solução
 
 Nota: valores indicativos em reais de 2026, estimados pelo proponente para fins de dimensionamento e sujeitos a detalhamento após levantamento de requisitos; não incluem infraestrutura de nuvem, que pode ser contratada pelo Estado em ata própria. O portfólio completo representa cerca de 0,5% a 0,6% da despesa anual da SESA.
 
-# 3. P0 – Inteligência Integrativa da SESA
+# 3. P0 – O Cérebro da SESA: Inteligência Integrativa
 
 ## 3.1 Problema
 
@@ -74,16 +74,52 @@ A Inteligência Integrativa é o núcleo que liga os dez módulos (P1 a P10) e o
 
 Sobre essas camadas, um copiloto em linguagem natural permite ao gestor perguntar, em português, "quantas gestantes de alto risco sem vinculação ao parto há em Santana?", "qual o impacto no mínimo constitucional se antecipar o pagamento das OS?" ou "que contratos vencem em 90 dias nos hospitais com fila de UTI?" e receber resposta com a fonte, a data de atualização e o caminho para o dado.
 
-## 3.3 Uso da IA
+## 3.3 O ciclo cognitivo do Cérebro
+
+A metáfora é deliberada: o sistema integrado dos módulos opera como um cérebro que analisa e integra, relaciona, avalia, gera relatórios, apresenta em painéis, alerta, sugere e executa ações. O funcionamento segue um ciclo contínuo de seis etapas, aplicado a cada evento, indicador ou pergunta do gestor:
+
+1. **Perceber:** coleta contínua dos sistemas nacionais e estaduais e dos eventos publicados pelos dez módulos (leito ocupado, empenho classificado, nota sem atesto, caso fora do prazo, alerta epidêmico).
+2. **Integrar e relacionar:** identidade única de pacientes, profissionais, estabelecimentos, fornecedores e contratos; correlação entre finanças, assistência, vigilância, contratos e pessoas (o mesmo hospital visto pelo orçamento, pela ocupação, pelas escalas e pelos contratos).
+3. **Avaliar:** cálculo de indicadores e metas, detecção de anomalias, previsões (demanda, ocupação, epidemias, receitas) e simulação de impacto financeiro, assistencial e de prazo.
+4. **Decidir:** priorização de alertas por gravidade, impacto e urgência e seleção de sugestões de ação a partir de playbooks aprovados pela gestão, com justificativa, norma de referência e responsável.
+5. **Agir:** produção de relatórios, painéis e briefings; envio de alertas; abertura de tarefas nos módulos; e execução direta de ações operacionais conforme o nível de autonomia definido para cada playbook (seção 3.4).
+6. **Aprender:** o resultado de cada ação (feita, adiada, ignorada, efeito observado) realimenta regras, modelos e prioridades, de modo que o cérebro melhora a cada ciclo e se adapta ao estilo de gestão da Secretaria.
+
+Figura: O Cérebro da SESA: módulos integrados e ciclo cognitivo
+
+![](figuras/cerebro_sesa.png)
+
+Fonte: proposta do proponente.
+
+## 3.4 Níveis de autonomia: de informar a executar
+
+O cérebro não apenas recomenda: ele executa. Para conciliar agilidade com responsabilidade legal, cada playbook recebe um nível de autonomia definido pela gestão e revisado pelo comitê de governança, com registro completo de quem (pessoa ou sistema) fez o quê, quando e com base em quê.
+
+Tabela: Níveis de autonomia das ações do Cérebro da SESA
+
+| Nível | O que o cérebro faz | Exemplos de ações | Quem decide |
+|---|---|---|---|
+| 0 – Informa | Mede, relaciona e apresenta | Painéis, relatórios periódicos, briefing diário, respostas do copiloto | Ninguém; informação |
+| 1 – Alerta e sugere | Prioriza e propõe ações com justificativa, responsável e prazo | Alerta de risco do mínimo constitucional com três medidas sugeridas; alerta de contrato a vencer com minuta de ofício | Gestor humano decide e registra |
+| 2 – Prepara e executa com um clique | Deixa a ação pronta (documento, agenda, tarefa, remanejamento) e executa após aprovação do responsável | Minuta de notificação a prestador; proposta de escala; ordem de remanejamento de estoque; solicitação de habilitação de leitos | Responsável aprova; cérebro executa e acompanha |
+| 3 – Executa automaticamente | Executa ações operacionais, reversíveis e de baixo risco previstas em playbook aprovado, e informa | Abrir tarefa e notificar fiscal de contrato; agendar reunião de comissão; enviar lembrete a paciente; publicar boletim já revisado; bloquear pagamento sem atesto até revisão humana; reservar agenda de regulação para caso urgente | Playbook aprovado pelo comitê; auditoria posterior |
+| Fora de alcance | Nunca automático | Decisão clínica, pagamento, assinatura ou rescisão de contrato, punição a servidor, alteração de registro contábil | Sempre pessoa habilitada, com apoio do cérebro |
+
+Fonte: proposta do proponente.
+
+Os níveis começam conservadores (0 e 1) e sobem à medida que a gestão ganha confiança nos resultados medidos; qualquer ação de nível 3 pode ser revertida e tem registro de auditoria. Esse desenho atende à LGPD, à Lei 14.133/2021 e às exigências dos tribunais de contas, e é o que permite afirmar que o sistema não apenas informa, mas governa processos junto com as pessoas.
+
+## 3.5 Uso da IA
 
 - Copiloto conversacional sobre dados integrados (modelo de linguagem com geração de consultas validadas e citação de fonte; sem acesso a dados identificados sem perfil autorizado).
 - Correlação de eventos entre módulos e priorização de alertas por aprendizado com as decisões anteriores do gestor (quais alertas foram tratados, ignorados ou escalados).
-- Motor de orientações de ação: combina regras explícitas (protocolos clínicos, normas financeiras e contratuais) com recomendação por similaridade de situações passadas e simulação de impacto (financeiro, assistencial, de prazo), sempre apresentada como sugestão com justificativa.
+- Motor de decisão e ação: combina regras explícitas (protocolos clínicos, normas financeiras e contratuais) com recomendação por similaridade de situações passadas e simulação de impacto (financeiro, assistencial, de prazo); apresenta sugestões com justificativa e executa ações conforme o nível de autonomia do playbook (seção 3.4).
+- Aprendizado contínuo: o cérebro mede a adoção e o efeito de cada ação e ajusta prioridades, limiares e sugestões, sob supervisão do comitê de governança.
 - Detecção automática de anomalias em séries (produção, despesa, notificações, ocupação, estoque) com alertas explicados.
 - Harmonização de cadastros (pacientes, profissionais, estabelecimentos, fornecedores) por pareamento probabilístico.
 - Geração assistida de relatórios periódicos e de briefings executivos a partir dos indicadores oficiais e dos eventos da semana, com todos os números rastreáveis à fonte.
 
-## 3.4 Como os sistemas se comunicam
+## 3.6 Como os sistemas se comunicam
 
 Tabela: Exemplos de fluxos integrados entre módulos coordenados pela Inteligência Integrativa
 
@@ -102,11 +138,11 @@ Fonte: proposta do proponente.
 
 Cada fluxo é configurável pela gestão (regras, limiares, responsáveis e prazos) e auditável: o sistema registra quem recebeu a orientação, qual decisão foi tomada e qual o resultado, alimentando o aprendizado do motor de priorização.
 
-## 3.5 Integrações e dados
+## 3.7 Integrações e dados
 
 TABNET e arquivos de disseminação do DATASUS (SIH, SIA, CNES, SINAN, SIM, SINASC), e-SUS APS e SISAB, SISREG e regulação estadual, sistema contábil e de folha do Estado, sistema de compras e PNCP, SIOPS, SICONFI, RNDS (quando habilitada), prontuários hospitalares (via HL7 FHIR ou extração periódica) e os dez módulos do portfólio (por eventos e APIs). Sistemas legados que permaneçam em uso são integrados por conectores, sem substituição obrigatória.
 
-## 3.6 Resultados esperados e indicadores
+## 3.8 Resultados esperados e indicadores
 
 | Indicador | Linha de base (estudos) | Meta 12 meses | Meta 36 meses |
 |---|---|---|---|
@@ -114,17 +150,18 @@ TABNET e arquivos de disseminação do DATASUS (SIH, SIA, CNES, SINAN, SIM, SINA
 | Indicadores oficiais com cálculo automático e auditável | 0 | 60 | 120 |
 | Módulos integrados ao barramento de eventos | 0 | 5 | 10 |
 | Alertas com orientação de ação, responsável e prazo | 0 | 80% dos alertas críticos | 100% |
+| Playbooks com ações executadas pelo cérebro (níveis 2 e 3) | 0 | 20 | 60 |
 | Orientações de ação tratadas no prazo | não medido | 60% | 85% |
 | Relatórios periódicos gerados automaticamente (quadrimestral, Conselho, boletins) | 0 | 100% em rascunho automático | 100% |
 | Pedidos de informação respondidos com apoio do copiloto | 0 | 70% | 90% |
 
-## 3.7 Implantação e investimento
+## 3.9 Implantação e investimento
 
 Quatro a seis meses em três ondas: (1) conectores DATASUS e finanças, identidade única, sala de situação da transição e briefing diário; (2) barramento de eventos com P1, P4 e P10, motor de alertas e primeiras orientações de ação; (3) copiloto em produção, relatórios automáticos e integração dos demais módulos à medida que forem implantados. Implantação de R$ 1,1 milhão a R$ 1,6 milhão e operação de R$ 150 mil a R$ 220 mil mensais, incluindo sustentação, evolução, novos fluxos integrados e treinamento contínuo.
 
-## 3.8 Argumento de venda
+## 3.10 Argumento de venda
 
-É o cérebro do portfólio: sem ele, dez sistemas seriam dez novas ilhas. Com ele, o secretário recebe todas as manhãs um quadro único do que mudou, do que está em risco e do que fazer, com responsável e prazo, e cada módulo contratado depois se encaixa automaticamente. A gestão passa a decidir com evidência diária em vez de tabulações anuais, e o copiloto reduz semanas de trabalho de assessoria técnica a minutos.
+É o cérebro do portfólio: sem ele, dez sistemas seriam dez novas ilhas. Com ele, o secretário recebe todas as manhãs um quadro único do que mudou, do que está em risco, do que fazer e do que o próprio sistema já fez, com responsável e prazo, e cada módulo contratado depois se encaixa automaticamente. A gestão passa a decidir com evidência diária em vez de tabulações anuais, e o copiloto reduz semanas de trabalho de assessoria técnica a minutos.
 
 # 4. P1 – Governança Financeira do FES com IA
 
@@ -584,7 +621,7 @@ Fonte: proposta do proponente.
 
 # 18. Encerramento
 
-Os cinco estudos de transição mostraram um sistema de saúde que gasta muito, depende de recursos temporários, enxerga pouco e decide tarde. As onze soluções deste portfólio atacam exatamente essas quatro fragilidades: tornam o dinheiro legível, o acesso regulado, o cuidado contínuo e a vigilância antecipada, com inteligência artificial a serviço de gestores e profissionais e com resultados mensuráveis a cada bimestre. Todas conversam entre si por meio da Inteligência Integrativa, que entrega ao gestor da Secretaria um quadro único com relatórios, painéis, alertas e orientações de ação. A proposta é iniciar pela plataforma de dados e pela governança financeira nos primeiros cem dias, quando a transição ainda dispõe de margem política, e evoluir para a regulação e as linhas de cuidado ao longo de 2027.
+Os cinco estudos de transição mostraram um sistema de saúde que gasta muito, depende de recursos temporários, enxerga pouco e decide tarde. As onze soluções deste portfólio atacam exatamente essas quatro fragilidades: tornam o dinheiro legível, o acesso regulado, o cuidado contínuo e a vigilância antecipada, com inteligência artificial a serviço de gestores e profissionais e com resultados mensuráveis a cada bimestre. Todas conversam entre si por meio da Inteligência Integrativa, que funciona como o cérebro da Secretaria: analisa e integra, relaciona, avalia, gera relatórios e painéis, alerta, sugere e executa ações dentro dos níveis de autonomia aprovados, aprendendo com cada ciclo. A proposta é iniciar pela plataforma de dados e pela governança financeira nos primeiros cem dias, quando a transição ainda dispõe de margem política, e evoluir para a regulação e as linhas de cuidado ao longo de 2027.
 
 # APÊNDICE A – Matriz de aderência aos achados dos estudos
 

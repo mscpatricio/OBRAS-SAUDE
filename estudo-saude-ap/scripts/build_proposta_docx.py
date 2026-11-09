@@ -77,7 +77,7 @@ hdr = sec.header.paragraphs[0]; hdr.alignment = WD_ALIGN_PARAGRAPH.RIGHT; runs(h
 ftr = sec.footer.paragraphs[0]; ftr.alignment = WD_ALIGN_PARAGRAPH.CENTER; runs(ftr, CFG.get('rodape', ''), size=8, color=CINZA); ftr.add_run('   Página '); add_field(ftr.add_run(), 'PAGE')
 for r in ftr.runs: r.font.size = Pt(8); r.font.color.rgb = CINZA
 # ---------- corpo ----------
-lines = open(MD, encoding='utf-8').read().split('\n'); i = 0; caption = None; ntab = 0
+lines = open(MD, encoding='utf-8').read().split('\n'); i = 0; caption = None; ntab = 0; figcap = None; nfig = [0]
 def table(rows, caption):
     global ntab
     ntab += 1; hdr = rows[0]; body = rows[1:]
@@ -101,7 +101,7 @@ def table(rows, caption):
         col = [r[j] for r in body if j < len(r)]
         avg = (sum(min(len(v), 60) for v in col) / len(col)) if col else 0
         w.append(max(min(len(hdr[j]), 18), avg, 6))
-    sw = sum(w); widths = [max(1.8, total * x / sw) for x in w]; sc = total / sum(widths); widths = [x * sc for x in widths]
+    sw = sum(w); widths = [max(2.4 if n >= 4 else 1.8, total * x / sw) for x in w]; sc = total / sum(widths); widths = [x * sc for x in widths]
     for j, col in enumerate(t.columns): col.width = Cm(widths[j])
     for row in t.rows:
         for j, cell in enumerate(row.cells):
@@ -121,6 +121,14 @@ while i < len(lines):
         doc.add_heading(txt, level=lvl); i += 1; continue
     if ln.startswith('Tabela:') or ln.startswith('Quadro:'):
         caption = ln.split(':', 1)[1].strip(); i += 1; continue
+    if ln.startswith('Figura:'):
+        figcap = ln.split(':', 1)[1].strip(); i += 1; continue
+    m = re.match(r'^!\[[^\]]*\]\(([^)]+)\)$', ln)
+    if m:
+        import os
+        nfig[0] += 1; img = os.path.join(os.path.dirname(os.path.abspath(MD)), m.group(1))
+        c = doc.add_paragraph(); c.paragraph_format.keep_with_next = True; c.paragraph_format.space_before = Pt(8); runs(c, f'Figura {nfig[0]} – {figcap or ""}', size=10, color=AZUL, bold=True)
+        pic = doc.add_paragraph(); pic.alignment = WD_ALIGN_PARAGRAPH.CENTER; pic.add_run().add_picture(img, width=Cm(16.4)); figcap = None; i += 1; continue
     if ln.startswith('|'):
         rows = []
         while i < len(lines) and lines[i].startswith('|'):
@@ -134,6 +142,7 @@ while i < len(lines):
         q = doc.add_paragraph(style='List Bullet'); runs(q, ln[2:]); i += 1; continue
     m = re.match(r'^(\d+)\. (.*)$', ln)
     if m:
-        q = doc.add_paragraph(style='List Number'); runs(q, m.group(2)); i += 1; continue
+        q = doc.add_paragraph(); q.paragraph_format.left_indent = Cm(0.9); q.paragraph_format.first_line_indent = Cm(-0.6); q.paragraph_format.space_after = Pt(3); q.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+        runs(q, m.group(1) + '.\t'); q.paragraph_format.tab_stops.add_tab_stop(Cm(0.9)); runs(q, m.group(2)); i += 1; continue
     q = doc.add_paragraph(); q.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY; runs(q, ln); i += 1
 doc.save(OUT); print('OK', OUT)

@@ -1,6 +1,17 @@
-# 05 – Inteligência Integrativa: eventos, alertas e orientações de ação
+# 05 – Inteligência Integrativa (o Cérebro da SESA): eventos, alertas, ações e aprendizado
 
-Nenhum módulo é uma ilha. Todo módulo (P1 a P10) publica eventos de domínio e expõe indicadores para o núcleo (P0), que correlaciona informações entre módulos e devolve ao gestor painéis, relatórios, alertas priorizados e orientações de ação com responsável e prazo. Este documento define o contrato técnico dessa integração; a especificação funcional está em `docs/produtos/P0.md`.
+Nenhum módulo é uma ilha. Todo módulo (P1 a P10) publica eventos de domínio e expõe indicadores para o núcleo (P0), que funciona como um cérebro: percebe, integra e relaciona, avalia, decide, age e aprende. Devolve ao gestor painéis, relatórios, alertas priorizados, sugestões e ações executadas conforme níveis de autonomia aprovados. Este documento define o contrato técnico dessa integração; a especificação funcional está em `docs/produtos/P0.md`.
+
+## Ciclo cognitivo (implementação)
+
+| Etapa | Componente | Entrada | Saída |
+|---|---|---|---|
+| Perceber | conectores + `core.events` | fontes externas, eventos dos módulos | `raw/`, `event_log` |
+| Integrar e relacionar | `core.identity`, marts dbt, `entity_timeline` | eventos e fatos | entidades resolvidas, linha do tempo, marts |
+| Avaliar | `packages/ml`, indicadores, `series_anomaly`, simuladores | marts, eventos | indicadores, anomalias, previsões, impactos |
+| Decidir | `alert_engine` + `recommendation_engine` | regras, playbooks, avaliações | alertas priorizados, ações sugeridas com nível de autonomia |
+| Agir | `action_executor` + módulos executores + `report_drafter` | ações aprovadas ou automáticas | tarefas, notificações, documentos, relatórios, comandos nos módulos |
+| Aprender | `feedback_loop` (eventos `plataforma.action.*`, resultados observados) | decisões humanas e efeitos | ajuste de prioridades, limiares, métricas de playbooks, dados de retreino |
 
 ## Arquitetura da integração
 
@@ -49,6 +60,25 @@ orientações de ação ──assign──▶ módulo executor (tarefa no módul
 - Simulação de impacto quando houver modelo (ex.: efeito de antecipar liquidações no percentual aplicado; efeito de abrir leitos na ocupação prevista).
 - Cada orientação vira uma **tarefa** no módulo executor com prazo e responsável; o fechamento (feito, não aplicável, ignorado com justificativa) retorna como evento e alimenta a avaliação dos playbooks (taxa de adoção, tempo até ação, resultado observado).
 
+## Executor de ações e níveis de autonomia (`plataforma.action_executor`)
+
+Cada playbook declara `autonomy_level` (0 a 3) e cada ação referencia um item do **catálogo de ações** (`modules/plataforma/actions/catalog.yaml`), que define o módulo executor, o comando (`regulacao.open_beds`, `compras.start_renewal`, `financas.block_payment_pending_attest`, `pessoas.propose_schedule`, `plataforma.notify`, `plataforma.schedule_meeting`, `plataforma.publish_bulletin`), parâmetros, pré-condições, se é reversível (`reversible: true` com comando de reversão) e o nível máximo de autonomia permitido para aquele comando.
+
+| Nível | Comportamento do executor | Regras técnicas |
+|---|---|---|
+| 0 | Só registra e exibe | sem comando |
+| 1 | Cria `action` em `suggested`; aguarda decisão humana | `complete`/`ignore` com justificativa |
+| 2 | Cria `action` em `prepared` com artefato pronto (documento, escala, ordem); executa ao receber `approve` do responsável | aprovação registrada com usuário; execução idempotente |
+| 3 | Executa imediatamente (`executed`), notifica responsável e abre janela de reversão | só comandos marcados `auto_allowed: true` e `reversible: true`; limite de frequência; circuit breaker se taxa de reversão > 10% em 30 dias |
+
+Comandos proibidos de automação (lista fechada, validada no CI): qualquer decisão clínica individual, pagamento ou liquidação, assinatura/rescisão/aditivo de contrato, sanção a fornecedor, ato sobre servidor (punição, exoneração, cessão), alteração de registro contábil, publicação externa não revisada. O comitê de governança aprova mudanças de nível por playbook; o histórico de níveis é versionado.
+
+## Aprendizado (`plataforma.feedback_loop`)
+
+- Cada `action` registra decisão humana, tempo até ação e resultado observado (indicador antes/depois quando definido no playbook).
+- Métricas por playbook: taxa de adoção, taxa de reversão, tempo médio de resolução, efeito estimado; exibidas no inventário e revisadas pelo comitê.
+- O `alert_prioritizer` é retreinado trimestralmente com as decisões; mudanças de limiar são propostas, não aplicadas automaticamente.
+
 ## Centro de comando e relatórios
 
 - Painel executivo: estado dos indicadores-chave por eixo, alertas abertos por gravidade, ações em atraso, mudanças desde o último acesso; filtros por região, município e unidade.
@@ -58,17 +88,18 @@ orientações de ação ──assign──▶ módulo executor (tarefa no módul
 
 ## Modelo de dados (schema `plataforma`, complemento ao P0.md)
 
-`event_outbox` (core), `event_log`, `alert_rule` (yaml versionado + estado), `alert` (regra, gravidade, score, entidades, eventos de origem, status, responsável, prazo), `playbook`, `action` (alert_id, playbook_id, módulo executor, tarefa, responsável, prazo, status, resultado, justificativa), `briefing`, `report_template`, `report_run`, `entity_timeline`.
+`event_outbox` (core), `event_log`, `alert_rule` (yaml versionado + estado), `alert` (regra, gravidade, score, entidades, eventos de origem, status, responsável, prazo), `playbook` (autonomy_level, versão, aprovação), `action_catalog_item` (comando, módulo, reversível, auto_allowed), `action` (alert_id, playbook_id, comando, parâmetros, status: suggested/prepared/approved/executed/reverted/ignored, responsável, prazo, artefato, resultado, justificativa, executado_por), `playbook_metrics`, `briefing`, `report_template`, `report_run`, `entity_timeline`.
 
 ## APIs (prefixo `/api/v1/plataforma`)
 
-`GET /events?type=&subject=&since=`, `GET /alerts?severity=&status=&territory=`, `POST /alerts/{id}/acknowledge|escalate|silence`, `GET /alerts/{id}/actions`, `POST /actions/{id}/complete|ignore`, `GET /briefing/today`, `POST /reports/{template}/run`, `GET /timeline/{entity_type}/{key}`, `GET /rules`, `POST /rules` (versionado, com aprovação).
+`GET /events?type=&subject=&since=`, `GET /alerts?severity=&status=&territory=`, `POST /alerts/{id}/acknowledge|escalate|silence`, `GET /alerts/{id}/actions`, `POST /actions/{id}/approve|complete|ignore|revert`, `GET /actions/catalog`, `GET /playbooks/{id}/metrics`, `GET /briefing/today`, `POST /reports/{template}/run`, `GET /timeline/{entity_type}/{key}`, `GET /rules`, `POST /rules` (versionado, com aprovação).
 
 ## Critérios de aceite da integração
 
 - Todo módulo publica ao menos seus eventos do catálogo com schema validado (teste de contrato no CI).
 - Regra de correlação entre dois módulos dispara alerta em teste de integração com eventos sintéticos (ex.: dengue + ocupação).
 - Playbook gera orientação com responsável e prazo, abre tarefa no módulo executor e registra fechamento; relatório de adoção calculado.
+- Executor: ação de nível 2 só executa após `approve`; ação de nível 3 só executa comando `auto_allowed` e reversível, com reversão testada; comando proibido falha no CI e em tempo de execução (teste de política).
 - Briefing diário gerado em dev com dados de fixtures; todos os números com rastreabilidade a views.
 - Nenhum dado identificado em eventos, alertas, briefings ou relatórios (teste de redação).
 
