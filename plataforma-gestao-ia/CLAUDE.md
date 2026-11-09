@@ -1,10 +1,10 @@
 # CLAUDE.md – Plataforma de Gestão com IA para a SESA/AP
 
-Este arquivo orienta o Claude Code (e qualquer pessoa desenvolvedora) no desenvolvimento das dez soluções descritas em `../estudo-saude-ap/propostas-sistemas/Propostas_Sistemas_Gestao_IA_SESA_AP.md`. Leia-o inteiro antes de qualquer tarefa. As especificações por produto estão em `docs/produtos/P0.md` a `P9.md`; a ordem de construção está em `docs/03_roteiro_sprints.md`.
+Este arquivo orienta o Claude Code (e qualquer pessoa desenvolvedora) no desenvolvimento das onze soluções descritas em `../estudo-saude-ap/propostas-sistemas/Propostas_Sistemas_Gestao_IA_SESA_AP.md`. Leia-o inteiro antes de qualquer tarefa. As especificações por produto estão em `docs/produtos/P0.md` a `P10.md`; a ordem de construção está em `docs/03_roteiro_sprints.md`.
 
 ## 1. O que estamos construindo
 
-Uma plataforma modular (monólito modular, um repositório) para a Secretaria de Estado da Saúde do Amapá, composta por:
+Uma plataforma modular (monólito modular, um repositório) para a Secretaria de Estado da Saúde do Amapá, composta por (P2 cobre contratos assistenciais com metas de produção; P10 cobre todos os contratos administrativos, compras e fornecedores e fornece a P2 o cadastro contratual base):
 
 | Código | Módulo | Pasta |
 |---|---|---|
@@ -18,6 +18,7 @@ Uma plataforma modular (monólito modular, um repositório) para a Secretaria de
 | P7 | Vigilância preditiva | `modules/vigilancia` |
 | P8 | Assistência farmacêutica e judicialização | `modules/farmacia` |
 | P9 | Força de trabalho e escalas | `modules/pessoas` |
+| P10 | Contratos administrativos, compras e fornecedores | `modules/compras_contratos` |
 
 Todos os módulos dependem de P0 (dados, identidade, auditoria, LLM gateway). Nenhum módulo acessa a base de outro diretamente: usa os serviços do núcleo (`packages/core`) ou os marts analíticos.
 

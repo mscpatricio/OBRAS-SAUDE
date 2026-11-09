@@ -3,7 +3,7 @@
 ## Prompt mestre (primeira sessão do repositório)
 
 ```
-Você vai iniciar a construção da Plataforma de Gestão com IA da SESA/AP. Leia CLAUDE.md e todos os arquivos de docs/ (00 a 04 e docs/produtos/P0–P9). Depois:
+Você vai iniciar a construção da Plataforma de Gestão com IA da SESA/AP. Leia CLAUDE.md e todos os arquivos de docs/ (00 a 04 e docs/produtos/P0–P10). Depois:
 1. Crie a estrutura do monorepo descrita em CLAUDE.md (uv + pyproject com workspaces, pnpm + Vite, Makefile, docker compose com postgres/postgis, minio, keycloak, redis, prefect; CI no GitHub Actions com lint, testes e build).
 2. Implemente packages/core (modelos base, auditoria, barramento de eventos, serviço de identidade com person_key e redact()) com testes.
 3. Porte os conectores SICONFI, SIOPS Anexo 12, CGU e IBGE a partir de ../estudo-saude-ap/scripts (tipagem, idempotência, partições, testes com os CSVs de ../estudo-saude-ap/dados).

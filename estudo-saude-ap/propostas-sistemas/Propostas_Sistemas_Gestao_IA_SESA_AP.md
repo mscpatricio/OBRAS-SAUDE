@@ -2,7 +2,7 @@
 
 ## 1.1 Propósito deste documento
 
-Este portfólio reúne dez propostas de sistemas de gestão com inteligência artificial (IA) para a Secretaria de Estado da Saúde do Amapá (SESA/AP), concebidas para a gestão que assume em janeiro de 2027. Cada proposta nasce de um problema medido nos cinco estudos de transição elaborados a partir de dados públicos (produção hospitalar e ambulatorial; vigilância em saúde; atenção primária e saúde materno-infantil; violências e saúde mental; oncologia e doenças crônicas; financiamento e gastos) e descreve a solução, o papel da IA, as integrações, os resultados esperados, o plano de implantação e o investimento indicativo.
+Este portfólio reúne onze propostas de sistemas de gestão com inteligência artificial (IA) para a Secretaria de Estado da Saúde do Amapá (SESA/AP), concebidas para a gestão que assume em janeiro de 2027. Cada proposta nasce de um problema medido nos cinco estudos de transição elaborados a partir de dados públicos (produção hospitalar e ambulatorial; vigilância em saúde; atenção primária e saúde materno-infantil; violências e saúde mental; oncologia e doenças crônicas; financiamento e gastos) e descreve a solução, o papel da IA, as integrações, os resultados esperados, o plano de implantação e o investimento indicativo.
 
 O documento tem finalidade comercial: apresentar produtos que podem ser contratados de forma modular ou como plataforma integrada, com argumentos de valor dirigidos ao secretário de Estado, à equipe de transição e aos órgãos de controle.
 
@@ -34,6 +34,7 @@ Tabela: Portfólio de soluções propostas, problema de origem e eixo de gestão
 | P7 | Vigilância em Saúde Preditiva | Dengue 10.693 casos em 2024; tuberculose 77/100 mil (3ª); sífilis congênita 15,6 por mil (4ª) | Vigilância e inteligência |
 | P8 | Assistência Farmacêutica e Judicialização com IA | Medicamentos informados como zero no SIOPS; judicialização sem base pública | Vigilância e inteligência |
 | P9 | Força de Trabalho e Escalas com IA | Pessoal é 44% da despesa; folha por vínculo e absenteísmo desconhecidos | Vigilância e inteligência |
+| P10 | Gestão de Contratos Administrativos, Compras e Fornecedores | Cerca de R$ 900 milhões anuais em terceiros e entidades privadas; obras paradas; passivo com fornecedores desconhecido; contratos em disputa | Governança e finanças |
 
 Fonte: estudos de transição SESA/AP 2022–2026 (ALMEIDA, 2026).
 
@@ -51,9 +52,10 @@ Tabela: Síntese de prazos e investimento indicativo por solução
 | P7 | 3 a 5 | 400 a 650 | 50 a 80 | Licença SaaS + implantação |
 | P8 | 4 a 6 | 450 a 700 | 55 a 85 | Licença SaaS + implantação |
 | P9 | 3 a 5 | 350 a 550 | 45 a 70 | Licença SaaS + implantação |
-| Portfólio completo | 12 a 18 | 5.750 a 8.850 | 715 a 1.090 | Desconto de 15% a 20% para contratação integrada |
+| P10 | 4 a 6 | 500 a 800 | 60 a 90 | Licença SaaS + parcela por economia em compras |
+| Portfólio completo | 12 a 18 | 6.250 a 9.650 | 775 a 1.180 | Desconto de 15% a 20% para contratação integrada |
 
-Nota: valores indicativos em reais de 2026, estimados pelo proponente para fins de dimensionamento e sujeitos a detalhamento após levantamento de requisitos; não incluem infraestrutura de nuvem, que pode ser contratada pelo Estado em ata própria. O portfólio completo representa cerca de 0,5% da despesa anual da SESA.
+Nota: valores indicativos em reais de 2026, estimados pelo proponente para fins de dimensionamento e sujeitos a detalhamento após levantamento de requisitos; não incluem infraestrutura de nuvem, que pode ser contratada pelo Estado em ata própria. O portfólio completo representa cerca de 0,5% a 0,6% da despesa anual da SESA.
 
 # 3. P0 – Plataforma de Dados e Copiloto do Gestor
 
@@ -443,27 +445,69 @@ Três a cinco meses, iniciando pelos hospitais estaduais. Implantação de R$ 35
 
 Com R$ 1 bilhão em pessoal, cada ponto percentual de eficiência em horas extras e realocação vale R$ 10 milhões por ano; o sistema também encerra a dúvida recorrente dos órgãos de controle sobre profissionais pagos e não atuantes.
 
-# 13. Arquitetura, segurança e governança de IA
+# 13. P10 – Gestão de Contratos Administrativos, Compras e Fornecedores
 
-## 13.1 Arquitetura de referência
+## 13.1 Problema
+
+A SESA executa cerca de R$ 900 milhões por ano em contratos com terceiros (serviços de terceiros pessoa jurídica, 21% da despesa) e entidades privadas (18,3%), além de obras, equipamentos, medicamentos, insumos, alimentação, limpeza, vigilância, manutenção e locações. Os estudos encontraram obras e aquisições com execução de 18% a 32% da dotação, contratos hospitalares em disputa, passivo com fornecedores desconhecido (R$ 541 milhões empenhados e não liquidados em 2026) e nenhuma base pública que relacione contrato, fiscal, medição, nota fiscal e pagamento. A Lei 14.133/2021 passou a exigir planejamento anual de contratações, estudo técnico preliminar, gestão de riscos, fiscal e gestor designados e publicação no Portal Nacional de Contratações Públicas, obrigações que hoje são cumpridas de forma manual e dispersa.
+
+## 13.2 Solução
+
+Sistema de ciclo de vida das contratações administrativas da saúde, da demanda ao encerramento: plano anual de contratações; elaboração assistida de documentos de formalização da demanda, estudos técnicos preliminares, termos de referência e editais; pesquisa de preços; acompanhamento das licitações e integração com o PNCP e o sistema de compras do Estado; gestão do contrato (vigência, garantias, reajustes, aditivos, apostilamentos, ocorrências, sanções); fiscalização com medições, atestos e conformidade trabalhista de terceirizados; conciliação de notas fiscais e pagamentos com o módulo financeiro; cadastro e risco de fornecedores; e painel de vencimentos, saldos e execução por unidade.
+
+## 13.3 Uso da IA
+
+- Redação assistida de documentos de formalização da demanda, estudos técnicos preliminares, termos de referência, matrizes de risco e minutas de edital a partir de modelos da Advocacia-Geral da União e do Estado, com verificação de requisitos legais e apontamento de lacunas.
+- Pesquisa de preços automatizada no PNCP, no Painel de Preços e em contratos anteriores, com detecção de sobrepreço, jogo de planilha e itens fora da curva.
+- Leitura de notas fiscais, medições, relatórios de fiscalização e documentos trabalhistas de terceirizados (folha, guias, certidões), com extração estruturada e cruzamento com o contrato e a frequência (integração com P9).
+- Pontuação de risco de fornecedores e de contratos (sanções em CEIS, CNEP e CEPIM; capacidade econômica; histórico de atrasos e glosas; concentração; vínculos societários) para priorizar fiscalização e exigir garantias.
+- Alertas inteligentes de vencimento, exaurimento de saldo, reajuste devido, prazo de prorrogação, garantias a renovar e prazos de publicação no PNCP.
+- Assistente de legislação e jurisprudência (Lei 14.133/2021, decretos estaduais, acórdãos do TCU e do TCE/AP) para fiscais, gestores e pregoeiros, com citação das fontes.
+
+## 13.4 Integrações e dados
+
+Sistema de compras e licitações do Estado, PNCP e Compras.gov.br, Painel de Preços, SICAF, CEIS/CNEP/CEPIM (Portal da Transparência), Receita Federal (CNPJ), sistema contábil (P1), tribunais de contas, P2 (contratos assistenciais), P8 (medicamentos e insumos), P9 (frequência de terceirizados), P4 e unidades (medições de serviços).
+
+## 13.5 Resultados esperados e indicadores
+
+| Indicador | Linha de base | Meta 12 meses | Meta 36 meses |
+|---|---|---|---|
+| Contratos vigentes com fiscal, gestor, saldo e vigência cadastrados e monitorados | parcial | 100% | 100% |
+| Prazo médio de elaboração de termo de referência | desconhecido (semanas) | redução de 50% | redução de 70% |
+| Prorrogações e contratações emergenciais | não medido | medido; redução de 30% | redução de 60% |
+| Economia em compras por pesquisa de preços e negociação | não medida | 3% do valor licitado | 5% a 8% |
+| Notas fiscais conciliadas com medição e contrato antes do pagamento | não medido | 100% nas unidades-piloto | 100% da rede |
+| Fornecedores com risco avaliado antes da contratação | 0 | 100% | 100% |
+
+## 13.6 Implantação e investimento
+
+Quatro a seis meses: cadastro da carteira de contratos vigentes e integração com o PNCP (meses 1 e 2), redação assistida e pesquisa de preços (meses 3 e 4), fiscalização, conciliação e risco de fornecedores (meses 5 e 6). Implantação de R$ 500 mil a R$ 800 mil, operação de R$ 60 mil a R$ 90 mil mensais e parcela por resultado de 10% sobre a economia comprovada em compras nos primeiros 24 meses.
+
+## 13.7 Argumento de venda
+
+Sobre R$ 900 milhões anuais contratados, 3% de economia são R$ 27 milhões por ano; a redução de prorrogações emergenciais e o controle de vencimentos eliminam a principal fonte de apontamentos dos tribunais de contas na saúde. O sistema entrega, na posse, a carteira completa de contratos com saldo, vigência e responsável, informação que a transição hoje não tem.
+
+# 14. Arquitetura, segurança e governança de IA
+
+## 14.1 Arquitetura de referência
 
 Camada de integração (conectores, APIs, padrões HL7 FHIR, TISS e arquivos de disseminação do DATASUS), camada de dados (data lake com zonas bruta, tratada e analítica, catálogo e linhagem), camada de modelos (treinamento, versionamento, monitoramento de desempenho e deriva) e camada de aplicações (painéis, fluxos de trabalho, aplicativos e copiloto). Hospedagem em nuvem governamental ou em provedor contratado pelo Estado, com ambientes separados de produção, homologação e desenvolvimento.
 
-## 13.2 Proteção de dados
+## 14.2 Proteção de dados
 
 Dados de saúde são sensíveis (LGPD, art. 11): pseudonimização por padrão, segregação de perfis, registro de acesso, consentimento ou base legal documentada para cada uso, relatório de impacto à proteção de dados e encarregado designado. Modelos de linguagem operam sobre dados agregados ou pseudonimizados; o acesso a dados identificados exige perfil assistencial e justificativa registrada. Nenhum dado do Estado é usado para treinar modelos de terceiros.
 
-## 13.3 Governança de IA
+## 14.3 Governança de IA
 
 Comitê de IA da SESA com representantes assistenciais, jurídicos, de controle interno e do Conselho Estadual de Saúde; inventário de modelos com finalidade, dados de treinamento, métricas de desempenho por subgrupo (sexo, raça/cor, município) e revisão periódica de viés; explicabilidade das recomendações; humano no circuito em toda decisão com efeito sobre o paciente ou sobre pagamentos; canal de contestação para cidadãos e profissionais.
 
-## 13.4 Transferência de tecnologia e continuidade
+## 14.4 Transferência de tecnologia e continuidade
 
 Documentação completa, treinamento de equipe estadual, código das integrações e dos modelos específicos entregue ao Estado ao fim do contrato, exportação de dados em formatos abertos e período de transição assistida de seis meses.
 
-# 14. Modelo de contratação
+# 15. Modelo de contratação
 
-## 14.1 Caminhos previstos na legislação
+## 15.1 Caminhos previstos na legislação
 
 1. **Licitação pela Lei 14.133/2021**, preferencialmente pregão ou concorrência com critério de técnica e preço para soluções de tecnologia da informação, com estudo técnico preliminar, termo de referência por resultados e exigência de prova de conceito.
 2. **Contrato Público para Solução Inovadora (CPSI)**, previsto no Marco Legal das Startups (Lei Complementar 182/2021), para pilotos de até doze meses prorrogáveis, com posterior contrato de fornecimento sem nova licitação, adequado a P7, P5 e P8.
@@ -471,32 +515,32 @@ Documentação completa, treinamento de equipe estadual, código das integraçõ
 4. **Adesão a atas de registro de preços** de outros entes para componentes padronizados (infraestrutura de nuvem, licenças de análise de dados).
 5. **Parcerias com universidades e institutos** (UNIFAP, Fiocruz, Instituto Evandro Chagas) para validação científica dos modelos e formação de pessoal.
 
-## 14.2 Condições comerciais propostas
+## 15.2 Condições comerciais propostas
 
 - Contratação modular, com P0 como pré-requisito ou entregue junto com o primeiro produto contratado.
 - Desconto de 15% a 20% para contratação integrada do portfólio, com cronograma de 12 a 18 meses.
-- Parcela variável por resultado em P3 (faturamento adicional) e, opcionalmente, em P2 (economia por glosa fundamentada) e P4 (redução de absenteísmo).
+- Parcela variável por resultado em P3 (faturamento adicional) e P10 (economia em compras) e, opcionalmente, em P2 (economia por glosa fundamentada) e P4 (redução de absenteísmo).
 - Garantia de nível de serviço: disponibilidade de 99,5%, atendimento a incidentes críticos em quatro horas, atualização dos modelos ao menos trimestral.
 - Treinamento inicial de 200 profissionais e educação continuada mensal.
 
-## 14.3 Fontes de financiamento
+## 15.3 Fontes de financiamento
 
 Recursos próprios do tesouro estadual (as soluções são despesa de ASPS quando vinculadas à gestão do SUS), recursos de emendas parlamentares de estruturação e de saúde digital (R$ 7,1 milhões já empenhados em telessaúde e saúde digital em 2025), programa SUS Digital do Ministério da Saúde, financiamento do BNDES e do BID para transformação digital em saúde, e cofinanciamento municipal em P6.
 
-# 15. Roteiro de implantação
+# 16. Roteiro de implantação
 
 Tabela: Roteiro sugerido de implantação do portfólio, 2027–2028
 
 | Período | Entregas | Produtos |
 |---|---|---|
-| Primeiros 100 dias (jan–abr 2027) | Sala de situação da transição com dados 2022–2026; painel do FES e do mínimo constitucional; censo eletrônico de leitos; carteira de contratos e obras | P0 (onda 1), P1, P2 (início), P4 (censo) |
-| Meses 4 a 9 (mai–set 2027) | Regulação ambulatorial e de urgência; faturamento assistido nos três maiores hospitais; vigilância preditiva de arboviroses e tuberculose; linhas de cuidado oncológicas em Macapá e Santana | P4, P3, P7, P5 |
+| Primeiros 100 dias (jan–abr 2027) | Sala de situação da transição com dados 2022–2026; painel do FES e do mínimo constitucional; censo eletrônico de leitos; carteira de contratos administrativos e assistenciais e de obras com saldo, vigência e responsável | P0 (onda 1), P1, P2 (início), P10 (carteira), P4 (censo) |
+| Meses 4 a 9 (mai–set 2027) | Regulação ambulatorial e de urgência; faturamento assistido nos três maiores hospitais; redação assistida, pesquisa de preços e fiscalização de contratos; vigilância preditiva de arboviroses e tuberculose; linhas de cuidado oncológicas em Macapá e Santana | P4, P3, P10, P7, P5 |
 | Meses 10 a 15 (out 2027–mar 2028) | Plataforma materno-infantil com os 16 municípios; assistência farmacêutica e judicialização; força de trabalho nos hospitais; copiloto do gestor em produção | P6, P8, P9, P0 (onda 3) |
 | Meses 16 a 24 (abr–dez 2028) | Expansão a toda a rede, parcela por resultado, auditoria externa dos modelos, transferência de tecnologia inicial | Todos |
 
 Fonte: proposta do proponente.
 
-# 16. Riscos e mitigações
+# 17. Riscos e mitigações
 
 | Risco | Mitigação |
 |---|---|
@@ -507,9 +551,9 @@ Fonte: proposta do proponente.
 | Descontinuidade orçamentária | Contratos plurianuais, uso de emendas e programas federais, modularidade que permite pausar produtos sem perder a plataforma |
 | Questionamento de órgãos de controle | Estudo técnico preliminar robusto, prova de conceito, termo de referência por resultado e relatórios de impacto |
 
-# 17. Encerramento
+# 18. Encerramento
 
-Os cinco estudos de transição mostraram um sistema de saúde que gasta muito, depende de recursos temporários, enxerga pouco e decide tarde. As dez soluções deste portfólio atacam exatamente essas quatro fragilidades: tornam o dinheiro legível, o acesso regulado, o cuidado contínuo e a vigilância antecipada, com inteligência artificial a serviço de gestores e profissionais e com resultados mensuráveis a cada bimestre. A proposta é iniciar pela plataforma de dados e pela governança financeira nos primeiros cem dias, quando a transição ainda dispõe de margem política, e evoluir para a regulação e as linhas de cuidado ao longo de 2027.
+Os cinco estudos de transição mostraram um sistema de saúde que gasta muito, depende de recursos temporários, enxerga pouco e decide tarde. As onze soluções deste portfólio atacam exatamente essas quatro fragilidades: tornam o dinheiro legível, o acesso regulado, o cuidado contínuo e a vigilância antecipada, com inteligência artificial a serviço de gestores e profissionais e com resultados mensuráveis a cada bimestre. A proposta é iniciar pela plataforma de dados e pela governança financeira nos primeiros cem dias, quando a transição ainda dispõe de margem política, e evoluir para a regulação e as linhas de cuidado ao longo de 2027.
 
 # APÊNDICE A – Matriz de aderência aos achados dos estudos
 
@@ -526,4 +570,5 @@ Os cinco estudos de transição mostraram um sistema de saúde que gasta muito, 
 | Mortalidade materna 82,3; infantil 17,8; sífilis congênita 15,6 | P6, P7 | Vinculação ao parto; incidência de sífilis congênita |
 | Dengue 10.693 casos; tuberculose 77/100 mil | P7 | Antecedência do alerta; abandono de tratamento |
 | Pessoal 44% da despesa sem folha por vínculo | P9 | Conciliação CNES/folha/escala; horas extras |
+| R$ 900 milhões anuais em contratos; obras paradas; passivo com fornecedores; prorrogações emergenciais | P10 | Contratos monitorados; economia em compras; notas conciliadas antes do pagamento |
 | Informação dispersa e defasada | P0 | Defasagem fato–painel; indicadores automatizados |

@@ -22,7 +22,7 @@ Sprints de duas semanas. Marque o estado de cada história aqui (`[ ]` a fazer, 
 - [ ] P1 painel de investimentos e emendas (prazos, saldos, situação física).
 - [ ] P1 restos a pagar: estoque por exercício, credor, risco de cancelamento.
 
-## Fase 2 – P2, P3 e censo de leitos de P4 (sprints 8–11)
+## Fase 2 – P2, P3, P10 (carteira) e censo de leitos de P4 (sprints 8–11)
 
 - [ ] P2 cadastro de contratos, metas e comissões; apuração automática a partir de `fct_*` de produção.
 - [ ] P2 extração de relatórios de prestadores (LLM/visão) e conciliação produção × contrato × pagamento.
@@ -30,13 +30,16 @@ Sprints de duas semanas. Marque o estado de cada história aqui (`[ ]` a fazer, 
 - [ ] P3 codificação assistida a partir de resumo de alta (prontuário sintético) e recuperação de procedimentos não faturados.
 - [ ] P3 detecção de atipicidades (procedimentos vasculares, trombectomias, oncologia em unidade sem perfil) com fila de auditoria.
 - [ ] P4 censo eletrônico de leitos (FHIR Encounter/Location) e painel de ocupação em tempo real.
+- [ ] P10 carteira de contratos administrativos (cadastro, fiscal/gestor, saldo, vigência, alertas de 90/180 dias) e integração PNCP; portal de dados abertos.
+- [ ] P10 conciliação nota fiscal → medição → contrato → empenho (P1) e painel de passivo com fornecedores por idade.
 
-## Fase 3 – P4, P5, P7 (sprints 12–16)
+## Fase 3 – P4, P5, P7 e P10 (planejamento e fiscalização) (sprints 12–16)
 
 - [ ] P4 fila única ambulatorial e de exames, protocolos, classificação de risco assistida, devolução de solicitações incompletas.
 - [ ] P4 previsão de ocupação e de demanda de urgência; TFD; mensagens ao paciente.
 - [ ] P5 registro longitudinal, população elegível, convocação, prazos de 60 dias, navegação.
 - [ ] P7 ingestão SINAN semanal + GAL + clima; nowcasting; alertas; boletim assistido; risco de abandono de TB.
+- [ ] P10 planejamento assistido (DFD/ETP/TR/edital), pesquisa de preços com PNCP e Painel de Preços, risco de fornecedores (CEIS/CNEP, vínculos societários), fiscalização e conformidade trabalhista de terceirizados.
 
 ## Fase 4 – P6, P8, P9 e copiloto completo (sprints 17–22)
 
