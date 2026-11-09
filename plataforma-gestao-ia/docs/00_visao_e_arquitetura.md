@@ -9,7 +9,7 @@ Entregar, em 18 meses, uma plataforma modular que torne o gasto da SESA/AP legí
 1. **Monólito modular, não microsserviços.** Um deploy de API e um de web, com módulos isolados por schema de banco e por pacote Python; extraímos serviços apenas quando houver necessidade medida (ex.: inferência pesada).
 2. **Lake primeiro.** Toda origem externa aterrissa em `raw/` (imutável, particionada por origem e competência), é validada para `trusted/` (tipada, deduplicada, pseudonimizada) e modelada em `marts/` (fatos e dimensões por domínio). Os módulos transacionais leem marts via views; nunca leem `raw`.
 3. **Identidade separada do dado.** `core.identity` guarda identificadores diretos criptografados e emite `person_key`, `professional_key`, `facility_key`; pareamento probabilístico (Splink) roda no serviço de identidade.
-4. **Eventos de domínio.** Módulos publicam eventos (`bed.occupied`, `commitment.classified`, `case.deadline_at_risk`) em um barramento leve (PostgreSQL LISTEN/NOTIFY em dev, Redis Streams em prod) consumidos por painéis, alertas e auditoria.
+4. **Eventos de domínio e Inteligência Integrativa.** Módulos publicam eventos CloudEvents (`regulacao.bed.occupied`, `financas.commitment.classified`, `linhas.case.deadline_at_risk`) por outbox transacional em um barramento leve (PostgreSQL LISTEN/NOTIFY em dev, Redis Streams em prod); o núcleo correlaciona eventos entre módulos, gera alertas priorizados e orientações de ação com responsável e prazo, e alimenta painéis, briefing, relatórios e auditoria (`docs/05_inteligencia_integrativa.md`).
 5. **IA como serviço interno.** `packages/ml` (modelos tabulares e séries) e `packages/llm` (linguagem) expõem interfaces estáveis: `predict(model_id, features) -> Prediction(value, confidence, explanation, model_version)` e `ask(agent_id, question, context) -> Answer(text, citations, sql, warnings)`.
 
 ## Diagrama lógico
@@ -19,9 +19,10 @@ Entregar, em 18 meses, uma plataforma modular que torne o gasto da SESA/AP legí
     │  conectores Prefect (packages/connectors)
 [Lake] raw/ ─▶ trusted/ (GX, pseudonimização) ─▶ marts/ (dbt)
     │                                   │
-[Core] identity · audit · auth · events │
+[Core] identity · audit · auth · events (outbox, catálogo CloudEvents) │
+[P0]  alert_engine · recommendation_engine (playbooks) · centro de comando · briefing · relatórios │
     │                                   ▼
-[Módulos] P1 finanças · P2 contratos · P3 faturamento · P4 regulação · P5 linhas · P6 materno · P7 vigilância · P8 farmácia · P9 pessoas
+[Módulos] P1 finanças · P2 contratos assistenciais · P3 faturamento · P4 regulação · P5 linhas · P6 materno · P7 vigilância · P8 farmácia · P9 pessoas · P10 compras e contratos
     │         ▲                 ▲
 [IA] packages/ml (LightGBM, nowcasting, anomalias) · packages/llm (copiloto, text-to-SQL, extração de documentos, classificador de empenhos)
     ▼

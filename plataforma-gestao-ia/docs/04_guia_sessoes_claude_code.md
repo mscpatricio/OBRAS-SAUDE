@@ -3,9 +3,9 @@
 ## Prompt mestre (primeira sessão do repositório)
 
 ```
-Você vai iniciar a construção da Plataforma de Gestão com IA da SESA/AP. Leia CLAUDE.md e todos os arquivos de docs/ (00 a 04 e docs/produtos/P0–P10). Depois:
+Você vai iniciar a construção da Plataforma de Gestão com IA da SESA/AP. Leia CLAUDE.md e todos os arquivos de docs/ (00 a 05 e docs/produtos/P0–P10). Depois:
 1. Crie a estrutura do monorepo descrita em CLAUDE.md (uv + pyproject com workspaces, pnpm + Vite, Makefile, docker compose com postgres/postgis, minio, keycloak, redis, prefect; CI no GitHub Actions com lint, testes e build).
-2. Implemente packages/core (modelos base, auditoria, barramento de eventos, serviço de identidade com person_key e redact()) com testes.
+2. Implemente packages/core (modelos base, auditoria, barramento de eventos com outbox transacional e catálogo CloudEvents conforme docs/05, serviço de identidade com person_key e redact()) com testes de contrato.
 3. Porte os conectores SICONFI, SIOPS Anexo 12, CGU e IBGE a partir de ../estudo-saude-ap/scripts (tipagem, idempotência, partições, testes com os CSVs de ../estudo-saude-ap/dados).
 4. Crie o projeto dbt com staging dessas fontes e as dimensões dim_municipality e dim_budget_account.
 5. Suba apps/api (FastAPI com autenticação Keycloak) e apps/web (layout, navegação por módulo, componente de gráfico ECharts) com um painel mínimo de execução orçamentária da função Saúde 2022–2026.
@@ -17,7 +17,7 @@ Apresente primeiro um plano por etapa com arquivos e testes; implemente etapa a 
 ```
 Contexto: CLAUDE.md, docs/produtos/P<n>.md, docs/01 e docs/02. História: "<texto da história>" (épico "<épico>").
 Entregue: plano → implementação → testes → demonstração.
-Restrições: dados identificados só em core.identity; recomendações de IA com confiança, racional e model_version; interface em português; sem ação automática sobre paciente, pagamento, contrato ou servidor.
+Restrições: dados identificados só em core.identity; recomendações de IA com confiança, racional e model_version; interface em português; sem ação automática sobre paciente, pagamento, contrato ou servidor; eventos do catálogo publicados (docs/05) e tarefas de orientação de ação executáveis no módulo.
 Ao terminar: `make test` verde, OpenAPI atualizado, docs/demos/<modulo>.md com capturas (Playwright), roteiro e CHANGELOG atualizados. Se algo ficar fora, marque [~] no roteiro e descreva o que falta.
 ```
 

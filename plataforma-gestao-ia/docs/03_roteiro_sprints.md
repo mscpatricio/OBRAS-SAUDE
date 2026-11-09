@@ -5,7 +5,7 @@ Sprints de duas semanas. Marque o estado de cada história aqui (`[ ]` a fazer, 
 ## Fase 0 – Fundação (sprints 1–3)
 
 - [ ] Monorepo, `pyproject` (uv), `package.json` (pnpm), Makefile, Compose (postgres, minio, keycloak, prefect, redis), CI (lint, testes, build).
-- [ ] `packages/core`: modelos de `facility`, `municipality`, `user`, `audit_event`, `event_bus`; serviço de identidade com `person_key` e `redact()`.
+- [ ] `packages/core`: modelos de `facility`, `municipality`, `user`, `audit_event`; barramento de eventos com outbox transacional, catálogo CloudEvents e testes de contrato (docs/05); serviço de identidade com `person_key` e `redact()`.
 - [ ] `packages/connectors`: base `Connector`, conectores SICONFI, SIOPS Anexo 12, CGU emendas, IBGE (portados dos scripts existentes com testes usando fixtures de `estudo-saude-ap/dados`).
 - [ ] `packages/connectors`: DATASUS SIH RD, SIA PA, CNES (ST, LT, PF, HB) via pysus; validação com totais do TABNET.
 - [ ] dbt: staging para as fontes acima; `dim_facility`, `dim_municipality`, `dim_procedure`, `fct_hospital_admission`, `fct_ambulatory_production`, `fct_budget_execution`, `fct_revenue`, `fct_transfer`, `fct_amendment`.
@@ -16,6 +16,8 @@ Sprints de duas semanas. Marque o estado de cada história aqui (`[ ]` a fazer, 
 
 - [ ] P0 sala de situação: painéis de produção, estrutura, finanças e vigilância com dados 2022–2026; catálogo de indicadores (20 iniciais); painel de qualidade de dados.
 - [ ] P0 copiloto: text-to-SQL validado sobre `rpt_*`, citações, 50 perguntas no eval.
+- [ ] P0 motor de alertas (regras YAML, correlação entre módulos, priorização) e painel executivo com briefing diário.
+- [ ] P0 motor de orientações de ação (playbooks YAML, tarefas no módulo executor, acompanhamento e adoção) com P1 como primeiro módulo executor.
 - [ ] P1 carga do sistema contábil (adaptador fictício + CSV real quando disponível), `fct_budget_execution` detalhado por empenho.
 - [ ] P1 classificador de empenhos (subfunção, centro de custo, natureza) com revisão em lote.
 - [ ] P1 apuração e projeção do mínimo constitucional (regra LC 141 + Constituição Estadual 15%), alertas com dois bimestres.
@@ -47,6 +49,7 @@ Sprints de duas semanas. Marque o estado de cada história aqui (`[ ]` a fazer, 
 - [ ] P8 estoque, programação, previsão de demanda, triagem de demandas judiciais com minuta de parecer.
 - [ ] P9 cadastro único de profissionais, conciliação CNES/folha/escala, escalas otimizadas, previsão de absenteísmo.
 - [ ] P0 copiloto com todos os módulos; relatórios automatizados (quadrimestral, boletins).
+- [ ] P0 todos os módulos no barramento com playbooks de correlação (epidemia × leitos × escalas × insumos × orçamento; prazo oncológico × regulação × metas; mínimo constitucional × pagamentos × faturamento); linha do tempo por entidade.
 
 ## Fase 5 – Endurecimento (sprints 23–26)
 

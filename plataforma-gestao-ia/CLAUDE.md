@@ -8,7 +8,7 @@ Uma plataforma modular (monólito modular, um repositório) para a Secretaria de
 
 | Código | Módulo | Pasta |
 |---|---|---|
-| P0 | Plataforma de dados e copiloto do gestor | `modules/plataforma` |
+| P0 | Inteligência Integrativa: plataforma de dados, barramento de eventos, alertas, orientações de ação, centro de comando e copiloto | `modules/plataforma` |
 | P1 | Governança financeira do FES | `modules/financas` |
 | P2 | Contratos, OS e metas assistenciais | `modules/contratos` |
 | P3 | Faturamento e auditoria SUS | `modules/faturamento` |
@@ -20,7 +20,7 @@ Uma plataforma modular (monólito modular, um repositório) para a Secretaria de
 | P9 | Força de trabalho e escalas | `modules/pessoas` |
 | P10 | Contratos administrativos, compras e fornecedores | `modules/compras_contratos` |
 
-Todos os módulos dependem de P0 (dados, identidade, auditoria, LLM gateway). Nenhum módulo acessa a base de outro diretamente: usa os serviços do núcleo (`packages/core`) ou os marts analíticos.
+Todos os módulos dependem de P0 (dados, identidade, auditoria, eventos, LLM gateway). Nenhum módulo acessa a base de outro diretamente: usa os serviços do núcleo (`packages/core`) ou os marts analíticos. **Nenhum módulo é uma ilha:** todo módulo publica seus eventos de domínio no barramento (`docs/05_inteligencia_integrativa.md`), expõe indicadores ao catálogo e executa as tarefas geradas pelas orientações de ação do núcleo. Uma história de módulo só está pronta quando seus eventos do catálogo são publicados e testados por contrato.
 
 ## 2. Pilha tecnológica (decidida; não trocar sem ADR)
 
@@ -59,6 +59,7 @@ plataforma-gestao-ia/
 - Migrações: Alembic por schema; nunca editar migrações aplicadas.
 - Datas e competências: competência SUS como `YYYYMM` (inteiro) e período fiscal como `exercicio` + `bimestre`. Valores monetários em `NUMERIC(18,2)`, nunca float.
 - Toda tabela de fato traz `source_system`, `source_version`, `loaded_at`; toda tabela de domínio traz `created_at`, `updated_at`, `created_by`.
+- Eventos seguem CloudEvents 1.0 com tipo `sesa.<modulo>.<entidade>.<acao>.v1`, catalogados em `packages/core/events/catalog.yaml` com JSON Schema; publicação via outbox transacional; payload sem dados identificados.
 - Logs estruturados (JSON) sem dados pessoais. Auditoria de acesso e de decisão em `core.audit_event` (quem, quando, o quê, por quê, versão do modelo quando houver).
 
 ## 4. Regras inegociáveis (segurança, LGPD, IA)
@@ -100,4 +101,4 @@ Antes de abrir PR: `make test` verde, cobertura de `domain/` acima de 90%, migra
 
 ## 8. Definição de pronto (DoD) de uma história
 
-Código com testes verdes; migração e seed; endpoint documentado no OpenAPI; tela acessível e em português; auditoria de ações; métricas e logs; model card (quando houver modelo); documentação do módulo atualizada; demonstração registrada em `docs/demos/<modulo>.md` com capturas de tela geradas por Playwright.
+Código com testes verdes; migração e seed; eventos do catálogo publicados e testados por contrato; indicadores registrados no catálogo de P0; endpoint documentado no OpenAPI; tela acessível e em português; auditoria de ações; métricas e logs; model card (quando houver modelo); documentação do módulo atualizada; demonstração registrada em `docs/demos/<modulo>.md` com capturas de tela geradas por Playwright.

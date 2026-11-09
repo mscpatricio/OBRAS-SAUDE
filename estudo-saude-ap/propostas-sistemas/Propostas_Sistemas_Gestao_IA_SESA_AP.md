@@ -17,6 +17,7 @@ A SESA/AP gerencia o maior orçamento do Estado (R$ 2,33 bilhões em 2025, 20,4%
 3. **Resultado mensurável:** cada produto define indicadores de linha de base (extraídos dos estudos) e metas de 12 e 36 meses, com parcela da remuneração vinculada ao resultado quando couber.
 4. **Conformidade:** LGPD (dados de saúde como dados sensíveis, art. 11), Lei 14.133/2021, normas do Ministério da Saúde para interoperabilidade (RNDS, padrões HL7 FHIR e TISS) e trilhas de auditoria completas.
 5. **Soberania e continuidade:** código, dados e modelos hospedados em nuvem governamental ou em ambiente contratado pelo Estado, com cláusula de transferência de tecnologia e portabilidade.
+6. **Nenhum sistema é uma ilha:** todos os módulos publicam eventos e indicadores para a Inteligência Integrativa (P0), que correlaciona informações entre finanças, contratos, regulação, vigilância, linhas de cuidado e pessoas, e devolve ao gestor um quadro único com relatórios, painéis, alertas priorizados e orientações de ação.
 
 # 2. Visão geral do portfólio
 
@@ -24,7 +25,7 @@ Tabela: Portfólio de soluções propostas, problema de origem e eixo de gestão
 
 | Código | Solução | Problema medido nos estudos | Eixo |
 |---|---|---|---|
-| P0 | Plataforma de Dados e Copiloto do Gestor | Informação dispersa em dez sistemas; ausência de sala de situação integrada | Base |
+| P0 | Inteligência Integrativa da SESA (plataforma de dados, centro de comando e copiloto do gestor) | Informação dispersa em dez sistemas; ausência de sala de situação integrada; decisões sem alertas nem recomendações | Base |
 | P1 | Governança Financeira do FES com IA | 48,5% da despesa em Administração Geral; investimentos com 22% de execução; R$ 110 milhões de RP de 2022 | Governança e finanças |
 | P2 | Gestão de Contratos, OS e Metas Assistenciais | Despesa com entidades privadas saltou de 4,9% para 18,3% em um ano; contratos sem monitoramento público | Governança e finanças |
 | P3 | Faturamento e Auditoria SUS Inteligente | Faturamento de R$ 216 por habitante (18º do país); R$ 25,6 milhões em procedimentos vasculares atípicos | Governança e finanças |
@@ -42,7 +43,7 @@ Tabela: Síntese de prazos e investimento indicativo por solução
 
 | Código | Implantação (meses) | Implantação (R$ mil) | Operação mensal (R$ mil) | Modelo de remuneração |
 |---|---:|---:|---:|---|
-| P0 | 4 a 6 | 900 a 1.400 | 120 a 180 | Licença SaaS + implantação |
+| P0 | 4 a 6 | 1.100 a 1.600 | 150 a 220 | Licença SaaS + implantação |
 | P1 | 3 a 5 | 600 a 900 | 70 a 110 | Licença SaaS + implantação |
 | P2 | 3 a 4 | 400 a 600 | 50 a 80 | Licença SaaS + implantação |
 | P3 | 4 a 6 | 500 a 800 | 60 a 90 | Licença + parcela por resultado (faturamento recuperado) |
@@ -53,47 +54,77 @@ Tabela: Síntese de prazos e investimento indicativo por solução
 | P8 | 4 a 6 | 450 a 700 | 55 a 85 | Licença SaaS + implantação |
 | P9 | 3 a 5 | 350 a 550 | 45 a 70 | Licença SaaS + implantação |
 | P10 | 4 a 6 | 500 a 800 | 60 a 90 | Licença SaaS + parcela por economia em compras |
-| Portfólio completo | 12 a 18 | 6.250 a 9.650 | 775 a 1.180 | Desconto de 15% a 20% para contratação integrada |
+| Portfólio completo | 12 a 18 | 6.450 a 9.850 | 805 a 1.220 | Desconto de 15% a 20% para contratação integrada |
 
 Nota: valores indicativos em reais de 2026, estimados pelo proponente para fins de dimensionamento e sujeitos a detalhamento após levantamento de requisitos; não incluem infraestrutura de nuvem, que pode ser contratada pelo Estado em ata própria. O portfólio completo representa cerca de 0,5% a 0,6% da despesa anual da SESA.
 
-# 3. P0 – Plataforma de Dados e Copiloto do Gestor
+# 3. P0 – Inteligência Integrativa da SESA
 
 ## 3.1 Problema
 
-A SESA não dispõe de uma visão integrada: produção (SIH, SIA), estrutura (CNES), vigilância (SINAN), mortalidade e nascimentos (SIM, SINASC), atenção primária (e-SUS APS, SISAB), regulação (SISREG e sistema estadual), finanças (sistema contábil, SIOPS) e pessoas (folha) vivem em bases separadas, com extrações manuais e defasagem de meses. Os cinco estudos de transição precisaram de centenas de tabulações para montar o quadro que a gestão deveria ter em tempo real.
+A SESA não dispõe de uma visão integrada: produção (SIH, SIA), estrutura (CNES), vigilância (SINAN), mortalidade e nascimentos (SIM, SINASC), atenção primária (e-SUS APS, SISAB), regulação (SISREG e sistema estadual), finanças (sistema contábil, SIOPS), contratos, compras e pessoas (folha) vivem em bases separadas, com extrações manuais e defasagem de meses. Os cinco estudos de transição precisaram de centenas de tabulações para montar o quadro que a gestão deveria ter em tempo real. Mais grave: mesmo quando a informação existe em algum sistema, ela não chega ao gestor na forma de alerta nem se traduz em orientação de ação com responsável e prazo.
 
 ## 3.2 Solução
 
-Plataforma de dados (data lake e camada analítica) com conectores para os sistemas nacionais e estaduais, catálogo de indicadores oficiais (Pacto Interfederativo, Previne/cofinanciamento da APS, RREO Anexo 12) e sala de situação com painéis por região, município, unidade e linha de cuidado. Sobre a plataforma, um copiloto de linguagem natural permite ao gestor perguntar, em português, "quantas gestantes de alto risco sem vinculação ao parto há em Santana?" ou "qual a execução do investimento do Hospital de Emergência?" e receber resposta com a fonte, a data de atualização e o caminho para o dado.
+A Inteligência Integrativa é o núcleo que liga os dez módulos (P1 a P10) e os sistemas legados da SESA em três camadas:
+
+1. **Plataforma de dados:** lake governado com conectores para os sistemas nacionais e estaduais, catálogo de indicadores oficiais (Pacto Interfederativo, cofinanciamento da APS, RREO Anexo 12, SIOPS) e identidade única de pacientes, profissionais, estabelecimentos, fornecedores e contratos, de modo que um mesmo paciente, hospital ou credor seja reconhecido em todos os módulos.
+2. **Barramento de eventos e motor de regras:** cada módulo publica eventos de negócio (leito ocupado, empenho classificado, meta contratual não atingida, caso oncológico fora do prazo, alerta epidêmico, nota fiscal sem atesto, escala descoberta) em um barramento comum; o motor correlaciona eventos de módulos diferentes, calcula impacto e gera alertas priorizados por gravidade, valor e prazo.
+3. **Centro de comando do gestor:** painel executivo do secretário e dos coordenadores, briefing diário, relatórios periódicos gerados automaticamente (quadrimestral de gestão, prestação de contas ao Conselho e ao Tribunal, boletins), alertas com encaminhamento e acompanhamento, e **orientações de ação**: para cada alerta, o sistema propõe medidas concretas, com base em protocolos, normas e histórico, indica o responsável, o prazo e o módulo onde a ação será executada, e acompanha o cumprimento.
+
+Sobre essas camadas, um copiloto em linguagem natural permite ao gestor perguntar, em português, "quantas gestantes de alto risco sem vinculação ao parto há em Santana?", "qual o impacto no mínimo constitucional se antecipar o pagamento das OS?" ou "que contratos vencem em 90 dias nos hospitais com fila de UTI?" e receber resposta com a fonte, a data de atualização e o caminho para o dado.
 
 ## 3.3 Uso da IA
 
-- Copiloto conversacional sobre dados (modelo de linguagem com geração de consultas validadas e citação de fonte; sem acesso a dados identificados sem perfil autorizado).
-- Detecção automática de anomalias em séries (produção, despesa, notificações) com alertas explicados.
-- Harmonização de cadastros (pacientes, profissionais, estabelecimentos) por pareamento probabilístico.
-- Geração assistida de relatórios periódicos (boletins, relatório quadrimestral de gestão, respostas a órgãos de controle) a partir dos indicadores oficiais.
+- Copiloto conversacional sobre dados integrados (modelo de linguagem com geração de consultas validadas e citação de fonte; sem acesso a dados identificados sem perfil autorizado).
+- Correlação de eventos entre módulos e priorização de alertas por aprendizado com as decisões anteriores do gestor (quais alertas foram tratados, ignorados ou escalados).
+- Motor de orientações de ação: combina regras explícitas (protocolos clínicos, normas financeiras e contratuais) com recomendação por similaridade de situações passadas e simulação de impacto (financeiro, assistencial, de prazo), sempre apresentada como sugestão com justificativa.
+- Detecção automática de anomalias em séries (produção, despesa, notificações, ocupação, estoque) com alertas explicados.
+- Harmonização de cadastros (pacientes, profissionais, estabelecimentos, fornecedores) por pareamento probabilístico.
+- Geração assistida de relatórios periódicos e de briefings executivos a partir dos indicadores oficiais e dos eventos da semana, com todos os números rastreáveis à fonte.
 
-## 3.4 Integrações e dados
+## 3.4 Como os sistemas se comunicam
 
-TABNET e arquivos de disseminação do DATASUS (SIH, SIA, CNES, SINAN, SIM, SINASC), e-SUS APS e SISAB, SISREG e regulação estadual, sistema contábil e de folha do Estado, SIOPS, SICONFI, RNDS (quando habilitada), prontuários hospitalares (via HL7 FHIR ou extração periódica).
+Tabela: Exemplos de fluxos integrados entre módulos coordenados pela Inteligência Integrativa
 
-## 3.5 Resultados esperados e indicadores
+| Evento de origem | Módulos acionados | Orientação de ação gerada para o gestor |
+|---|---|---|
+| P7 prevê epidemia de dengue em quatro semanas em Macapá e Santana | P4 (leitos e demanda), P9 (escalas), P8 (soro, insumos), P1 (impacto orçamentário) | Abrir leitos de hidratação e ampliar escalas nas unidades indicadas; antecipar compra de insumos; reservar dotação; comunicar municípios |
+| P5 identifica caso oncológico a 15 dias do prazo legal de 60 dias | P4 (regulação prioritária), P2 (metas do UNACON) | Priorizar agendamento de quimioterapia; notificar prestador; registrar motivo do atraso |
+| P1 projeta percentual aplicado em saúde abaixo de 15,5% no próximo bimestre | P10 (contratos e pagamentos), P2 (parcelas variáveis), P3 (faturamento) | Antecipar liquidações de ASPS elegíveis; revisar classificação de despesas; acelerar faturamento pendente |
+| P10 detecta contrato de limpeza hospitalar vencendo em 60 dias sem processo de renovação | P1 (dotação), P9 (terceirizados), P4 (risco assistencial) | Abrir processo de prorrogação ou nova contratação; verificar conformidade trabalhista; avaliar plano de contingência |
+| P3 encontra procedimentos atípicos faturados por prestador | P2 (metas e glosas), P10 (risco do fornecedor), P1 (pagamentos) | Suspender parcela variável até auditoria; incluir prestador na trilha de risco; notificar controle interno |
+| P4 registra ocupação de UTI acima de 95% por três dias | P9 (dimensionamento), P3 (habilitação de leitos), P10 (contratos de leitos complementares) | Acionar leitos de retaguarda contratados; solicitar habilitação de leitos existentes; reforçar equipe |
+| P6 aponta gestantes de alto risco sem vinculação ao parto em município do interior | P4 (vinculação e transporte), P7 (sífilis), P6 (apoio ao município) | Vincular à maternidade de referência; agendar busca ativa; agendar apoio técnico da SESA ao município |
+| P9 detecta escala descoberta de plantão em pronto-socorro | P4 (fluxo de urgência), P10 (contratos de plantão), P1 (horas extras) | Realocar profissionais; acionar contrato de cobertura; registrar custo |
+
+Fonte: proposta do proponente.
+
+Cada fluxo é configurável pela gestão (regras, limiares, responsáveis e prazos) e auditável: o sistema registra quem recebeu a orientação, qual decisão foi tomada e qual o resultado, alimentando o aprendizado do motor de priorização.
+
+## 3.5 Integrações e dados
+
+TABNET e arquivos de disseminação do DATASUS (SIH, SIA, CNES, SINAN, SIM, SINASC), e-SUS APS e SISAB, SISREG e regulação estadual, sistema contábil e de folha do Estado, sistema de compras e PNCP, SIOPS, SICONFI, RNDS (quando habilitada), prontuários hospitalares (via HL7 FHIR ou extração periódica) e os dez módulos do portfólio (por eventos e APIs). Sistemas legados que permaneçam em uso são integrados por conectores, sem substituição obrigatória.
+
+## 3.6 Resultados esperados e indicadores
 
 | Indicador | Linha de base (estudos) | Meta 12 meses | Meta 36 meses |
 |---|---|---|---|
 | Defasagem média entre o fato e o painel | 3 a 6 meses (TABNET) | 30 dias (bases locais em 24 h) | 7 dias |
 | Indicadores oficiais com cálculo automático e auditável | 0 | 60 | 120 |
+| Módulos integrados ao barramento de eventos | 0 | 5 | 10 |
+| Alertas com orientação de ação, responsável e prazo | 0 | 80% dos alertas críticos | 100% |
+| Orientações de ação tratadas no prazo | não medido | 60% | 85% |
+| Relatórios periódicos gerados automaticamente (quadrimestral, Conselho, boletins) | 0 | 100% em rascunho automático | 100% |
 | Pedidos de informação respondidos com apoio do copiloto | 0 | 70% | 90% |
-| Unidades com painel próprio de produção e custo | 0 | 12 hospitais e 16 municípios | Toda a rede |
 
-## 3.6 Implantação e investimento
+## 3.7 Implantação e investimento
 
-Quatro a seis meses em três ondas: (1) conectores DATASUS e finanças, sala de situação da transição; (2) regulação, APS e vigilância; (3) prontuários e copiloto em produção. Implantação de R$ 900 mil a R$ 1,4 milhão e operação de R$ 120 mil a R$ 180 mil mensais, incluindo sustentação, evolução e treinamento contínuo.
+Quatro a seis meses em três ondas: (1) conectores DATASUS e finanças, identidade única, sala de situação da transição e briefing diário; (2) barramento de eventos com P1, P4 e P10, motor de alertas e primeiras orientações de ação; (3) copiloto em produção, relatórios automáticos e integração dos demais módulos à medida que forem implantados. Implantação de R$ 1,1 milhão a R$ 1,6 milhão e operação de R$ 150 mil a R$ 220 mil mensais, incluindo sustentação, evolução, novos fluxos integrados e treinamento contínuo.
 
-## 3.7 Argumento de venda
+## 3.8 Argumento de venda
 
-É o alicerce de todos os demais produtos e devolve ao Estado o controle do seu próprio dado: a gestão passa a decidir com evidência diária em vez de tabulações anuais, e o copiloto reduz semanas de trabalho de assessoria técnica a minutos.
+É o cérebro do portfólio: sem ele, dez sistemas seriam dez novas ilhas. Com ele, o secretário recebe todas as manhãs um quadro único do que mudou, do que está em risco e do que fazer, com responsável e prazo, e cada módulo contratado depois se encaixa automaticamente. A gestão passa a decidir com evidência diária em vez de tabulações anuais, e o copiloto reduz semanas de trabalho de assessoria técnica a minutos.
 
 # 4. P1 – Governança Financeira do FES com IA
 
@@ -517,7 +548,7 @@ Documentação completa, treinamento de equipe estadual, código das integraçõ
 
 ## 15.2 Condições comerciais propostas
 
-- Contratação modular, com P0 como pré-requisito ou entregue junto com o primeiro produto contratado.
+- Contratação modular, com P0 (Inteligência Integrativa) como pré-requisito ou entregue junto com o primeiro produto contratado; cada novo módulo é integrado ao barramento de eventos, ao centro de comando e ao copiloto sem custo adicional de integração.
 - Desconto de 15% a 20% para contratação integrada do portfólio, com cronograma de 12 a 18 meses.
 - Parcela variável por resultado em P3 (faturamento adicional) e P10 (economia em compras) e, opcionalmente, em P2 (economia por glosa fundamentada) e P4 (redução de absenteísmo).
 - Garantia de nível de serviço: disponibilidade de 99,5%, atendimento a incidentes críticos em quatro horas, atualização dos modelos ao menos trimestral.
@@ -533,9 +564,9 @@ Tabela: Roteiro sugerido de implantação do portfólio, 2027–2028
 
 | Período | Entregas | Produtos |
 |---|---|---|
-| Primeiros 100 dias (jan–abr 2027) | Sala de situação da transição com dados 2022–2026; painel do FES e do mínimo constitucional; censo eletrônico de leitos; carteira de contratos administrativos e assistenciais e de obras com saldo, vigência e responsável | P0 (onda 1), P1, P2 (início), P10 (carteira), P4 (censo) |
+| Primeiros 100 dias (jan–abr 2027) | Sala de situação da transição com dados 2022–2026 e briefing diário do secretário; painel do FES e do mínimo constitucional; censo eletrônico de leitos; carteira de contratos administrativos e assistenciais e de obras com saldo, vigência e responsável | P0 (onda 1), P1, P2 (início), P10 (carteira), P4 (censo) |
 | Meses 4 a 9 (mai–set 2027) | Regulação ambulatorial e de urgência; faturamento assistido nos três maiores hospitais; redação assistida, pesquisa de preços e fiscalização de contratos; vigilância preditiva de arboviroses e tuberculose; linhas de cuidado oncológicas em Macapá e Santana | P4, P3, P10, P7, P5 |
-| Meses 10 a 15 (out 2027–mar 2028) | Plataforma materno-infantil com os 16 municípios; assistência farmacêutica e judicialização; força de trabalho nos hospitais; copiloto do gestor em produção | P6, P8, P9, P0 (onda 3) |
+| Meses 10 a 15 (out 2027–mar 2028) | Plataforma materno-infantil com os 16 municípios; assistência farmacêutica e judicialização; força de trabalho nos hospitais; copiloto do gestor em produção; todos os módulos no barramento de eventos com orientações de ação | P6, P8, P9, P0 (onda 3) |
 | Meses 16 a 24 (abr–dez 2028) | Expansão a toda a rede, parcela por resultado, auditoria externa dos modelos, transferência de tecnologia inicial | Todos |
 
 Fonte: proposta do proponente.
@@ -553,7 +584,7 @@ Fonte: proposta do proponente.
 
 # 18. Encerramento
 
-Os cinco estudos de transição mostraram um sistema de saúde que gasta muito, depende de recursos temporários, enxerga pouco e decide tarde. As onze soluções deste portfólio atacam exatamente essas quatro fragilidades: tornam o dinheiro legível, o acesso regulado, o cuidado contínuo e a vigilância antecipada, com inteligência artificial a serviço de gestores e profissionais e com resultados mensuráveis a cada bimestre. A proposta é iniciar pela plataforma de dados e pela governança financeira nos primeiros cem dias, quando a transição ainda dispõe de margem política, e evoluir para a regulação e as linhas de cuidado ao longo de 2027.
+Os cinco estudos de transição mostraram um sistema de saúde que gasta muito, depende de recursos temporários, enxerga pouco e decide tarde. As onze soluções deste portfólio atacam exatamente essas quatro fragilidades: tornam o dinheiro legível, o acesso regulado, o cuidado contínuo e a vigilância antecipada, com inteligência artificial a serviço de gestores e profissionais e com resultados mensuráveis a cada bimestre. Todas conversam entre si por meio da Inteligência Integrativa, que entrega ao gestor da Secretaria um quadro único com relatórios, painéis, alertas e orientações de ação. A proposta é iniciar pela plataforma de dados e pela governança financeira nos primeiros cem dias, quando a transição ainda dispõe de margem política, e evoluir para a regulação e as linhas de cuidado ao longo de 2027.
 
 # APÊNDICE A – Matriz de aderência aos achados dos estudos
 
@@ -571,4 +602,4 @@ Os cinco estudos de transição mostraram um sistema de saúde que gasta muito, 
 | Dengue 10.693 casos; tuberculose 77/100 mil | P7 | Antecedência do alerta; abandono de tratamento |
 | Pessoal 44% da despesa sem folha por vínculo | P9 | Conciliação CNES/folha/escala; horas extras |
 | R$ 900 milhões anuais em contratos; obras paradas; passivo com fornecedores; prorrogações emergenciais | P10 | Contratos monitorados; economia em compras; notas conciliadas antes do pagamento |
-| Informação dispersa e defasada | P0 | Defasagem fato–painel; indicadores automatizados |
+| Informação dispersa e defasada; decisões sem alertas nem orientação | P0 | Defasagem fato–painel; indicadores automatizados; alertas com orientação de ação tratados no prazo |

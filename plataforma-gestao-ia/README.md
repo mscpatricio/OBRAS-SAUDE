@@ -10,6 +10,7 @@ Este diretório contém a documentação que orienta o Claude Code (e a equipe) 
 | `docs/02_ia_e_governanca.md` | Padrões de IA, gateway de LLM, ciclo de vida de modelos, humano no circuito, LGPD, comitê de IA |
 | `docs/03_roteiro_sprints.md` | Ordem de construção em fases e sprints, com estado das histórias |
 | `docs/04_guia_sessoes_claude_code.md` | Prompt mestre, prompts por história, por modelo e de revisão; boas práticas |
+| `docs/05_inteligencia_integrativa.md` | Contrato de integração entre módulos: barramento de eventos (CloudEvents, outbox), catálogo de eventos, motor de alertas, playbooks de orientações de ação, centro de comando, briefing e relatórios |
 | `docs/produtos/P0.md` a `P10.md` | Especificação de cada produto: objetivo, personas, épicos e histórias, modelo de dados, APIs, IA, critérios de aceite, prompt de arranque |
 | `docs/pendencias.md` | Integrações e definições que dependem da SESA e de outros órgãos |
 
