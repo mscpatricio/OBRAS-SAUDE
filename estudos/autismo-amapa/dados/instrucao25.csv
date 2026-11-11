@@ -1,0 +1,421 @@
+cod,nome,sexo,instrucao,pct,pop25,tea,nivel
+1,Brasil,Homens,Fundamental completo e médio incompleto,0.8,9317140.0,73823.0,BR
+1,Brasil,Homens,Médio completo e superior incompleto,0.7,20229336.0,141597.0,BR
+1,Brasil,Homens,Sem instrução e fundamental incompleto,1.2,23476631.0,281589.0,BR
+1,Brasil,Homens,Superior completo,0.8,9954638.0,80628.0,BR
+1,Brasil,Homens,Total,0.9,62977745.0,577637.0,BR
+1,Brasil,Mulheres,Fundamental completo e médio incompleto,0.9,9349026.0,79469.0,BR
+1,Brasil,Mulheres,Médio completo e superior incompleto,0.7,22815448.0,160067.0,BR
+1,Brasil,Mulheres,Sem instrução e fundamental incompleto,1.1,23436191.0,266138.0,BR
+1,Brasil,Mulheres,Superior completo,0.7,14529609.0,106011.0,BR
+1,Brasil,Mulheres,Total,0.9,70130274.0,611685.0,BR
+1,Brasil,Total,Fundamental completo e médio incompleto,0.8,18666167.0,153293.0,BR
+1,Brasil,Total,Médio completo e superior incompleto,0.7,43044784.0,301664.0,BR
+1,Brasil,Total,Sem instrução e fundamental incompleto,1.2,46912823.0,547727.0,BR
+1,Brasil,Total,Superior completo,0.8,24484247.0,186639.0,BR
+1,Brasil,Total,Total,0.9,133108020.0,1189322.0,BR
+11,Rondônia,Homens,Fundamental completo e médio incompleto,1.0,72644.0,740.0,UF
+11,Rondônia,Homens,Médio completo e superior incompleto,0.7,122002.0,840.0,UF
+11,Rondônia,Homens,Sem instrução e fundamental incompleto,1.1,233656.0,2460.0,UF
+11,Rondônia,Homens,Superior completo,0.7,58858.0,431.0,UF
+11,Rondônia,Homens,Total,0.9,487161.0,4471.0,UF
+11,Rondônia,Mulheres,Fundamental completo e médio incompleto,1.0,64617.0,624.0,UF
+11,Rondônia,Mulheres,Médio completo e superior incompleto,0.7,140458.0,1020.0,UF
+11,Rondônia,Mulheres,Sem instrução e fundamental incompleto,1.3,199594.0,2643.0,UF
+11,Rondônia,Mulheres,Superior completo,0.9,95448.0,829.0,UF
+11,Rondônia,Mulheres,Total,1.0,500118.0,5117.0,UF
+11,Rondônia,Total,Fundamental completo e médio incompleto,1.0,137261.0,1364.0,UF
+11,Rondônia,Total,Médio completo e superior incompleto,0.7,262461.0,1861.0,UF
+11,Rondônia,Total,Sem instrução e fundamental incompleto,1.2,433251.0,5103.0,UF
+11,Rondônia,Total,Superior completo,0.8,154306.0,1260.0,UF
+11,Rondônia,Total,Total,1.0,987279.0,9588.0,UF
+12,Acre,Homens,Fundamental completo e médio incompleto,0.8,30130.0,227.0,UF
+12,Acre,Homens,Médio completo e superior incompleto,0.6,60230.0,384.0,UF
+12,Acre,Homens,Sem instrução e fundamental incompleto,1.1,101131.0,1100.0,UF
+12,Acre,Homens,Superior completo,0.9,30941.0,265.0,UF
+12,Acre,Homens,Total,0.9,222433.0,1976.0,UF
+12,Acre,Mulheres,Fundamental completo e médio incompleto,0.9,27826.0,258.0,UF
+12,Acre,Mulheres,Médio completo e superior incompleto,0.7,67253.0,449.0,UF
+12,Acre,Mulheres,Sem instrução e fundamental incompleto,1.0,87429.0,885.0,UF
+12,Acre,Mulheres,Superior completo,0.5,47490.0,240.0,UF
+12,Acre,Mulheres,Total,0.8,229997.0,1831.0,UF
+12,Acre,Total,Fundamental completo e médio incompleto,0.8,57956.0,484.0,UF
+12,Acre,Total,Médio completo e superior incompleto,0.7,127483.0,833.0,UF
+12,Acre,Total,Sem instrução e fundamental incompleto,1.1,188560.0,1984.0,UF
+12,Acre,Total,Superior completo,0.6,78431.0,506.0,UF
+12,Acre,Total,Total,0.8,452430.0,3807.0,UF
+13,Amazonas,Homens,Fundamental completo e médio incompleto,0.8,157039.0,1247.0,UF
+13,Amazonas,Homens,Médio completo e superior incompleto,0.6,383170.0,2280.0,UF
+13,Amazonas,Homens,Sem instrução e fundamental incompleto,1.1,376523.0,4074.0,UF
+13,Amazonas,Homens,Superior completo,0.5,132770.0,688.0,UF
+13,Amazonas,Homens,Total,0.8,1049503.0,8289.0,UF
+13,Amazonas,Mulheres,Fundamental completo e médio incompleto,0.6,152770.0,988.0,UF
+13,Amazonas,Mulheres,Médio completo e superior incompleto,0.6,411680.0,2422.0,UF
+13,Amazonas,Mulheres,Sem instrução e fundamental incompleto,1.0,332069.0,3452.0,UF
+13,Amazonas,Mulheres,Superior completo,0.6,188429.0,1038.0,UF
+13,Amazonas,Mulheres,Total,0.7,1084948.0,7901.0,UF
+13,Amazonas,Total,Fundamental completo e médio incompleto,0.7,309809.0,2235.0,UF
+13,Amazonas,Total,Médio completo e superior incompleto,0.6,794851.0,4703.0,UF
+13,Amazonas,Total,Sem instrução e fundamental incompleto,1.1,708592.0,7526.0,UF
+13,Amazonas,Total,Superior completo,0.5,321199.0,1726.0,UF
+13,Amazonas,Total,Total,0.8,2134451.0,16189.0,UF
+14,Roraima,Homens,Fundamental completo e médio incompleto,0.8,22971.0,190.0,UF
+14,Roraima,Homens,Médio completo e superior incompleto,0.7,60878.0,453.0,UF
+14,Roraima,Homens,Sem instrução e fundamental incompleto,1.4,58175.0,792.0,UF
+14,Roraima,Homens,Superior completo,0.6,24238.0,144.0,UF
+14,Roraima,Homens,Total,0.9,166262.0,1579.0,UF
+14,Roraima,Mulheres,Fundamental completo e médio incompleto,0.7,19556.0,146.0,UF
+14,Roraima,Mulheres,Médio completo e superior incompleto,0.7,63680.0,425.0,UF
+14,Roraima,Mulheres,Sem instrução e fundamental incompleto,1.1,45953.0,485.0,UF
+14,Roraima,Mulheres,Superior completo,0.8,39268.0,303.0,UF
+14,Roraima,Mulheres,Total,0.8,168457.0,1359.0,UF
+14,Roraima,Total,Fundamental completo e médio incompleto,0.8,42526.0,336.0,UF
+14,Roraima,Total,Médio completo e superior incompleto,0.7,124558.0,878.0,UF
+14,Roraima,Total,Sem instrução e fundamental incompleto,1.2,104128.0,1277.0,UF
+14,Roraima,Total,Superior completo,0.7,63506.0,446.0,UF
+14,Roraima,Total,Total,0.9,334718.0,2938.0,UF
+15,Pará,Homens,Fundamental completo e médio incompleto,0.8,356589.0,2842.0,UF
+15,Pará,Homens,Médio completo e superior incompleto,0.7,646701.0,4679.0,UF
+15,Pará,Homens,Sem instrução e fundamental incompleto,1.1,1090797.0,12168.0,UF
+15,Pará,Homens,Superior completo,0.8,215336.0,1762.0,UF
+15,Pará,Homens,Total,0.9,2309423.0,21452.0,UF
+15,Pará,Mulheres,Fundamental completo e médio incompleto,0.8,357405.0,2961.0,UF
+15,Pará,Mulheres,Médio completo e superior incompleto,0.6,769533.0,4807.0,UF
+15,Pará,Mulheres,Sem instrução e fundamental incompleto,1.1,909219.0,9967.0,UF
+15,Pará,Mulheres,Superior completo,0.5,347060.0,1904.0,UF
+15,Pará,Mulheres,Total,0.8,2383217.0,19639.0,UF
+15,Pará,Total,Fundamental completo e médio incompleto,0.8,713994.0,5803.0,UF
+15,Pará,Total,Médio completo e superior incompleto,0.7,1416234.0,9486.0,UF
+15,Pará,Total,Sem instrução e fundamental incompleto,1.1,2000015.0,22135.0,UF
+15,Pará,Total,Superior completo,0.7,562396.0,3666.0,UF
+15,Pará,Total,Total,0.9,4692640.0,41090.0,UF
+16,Amapá,Homens,Fundamental completo e médio incompleto,1.1,27810.0,307.0,UF
+16,Amapá,Homens,Médio completo e superior incompleto,1.0,65441.0,641.0,UF
+16,Amapá,Homens,Sem instrução e fundamental incompleto,1.3,67946.0,889.0,UF
+16,Amapá,Homens,Superior completo,0.7,32802.0,223.0,UF
+16,Amapá,Homens,Total,1.1,193999.0,2060.0,UF
+16,Amapá,Mulheres,Fundamental completo e médio incompleto,0.9,24651.0,210.0,UF
+16,Amapá,Mulheres,Médio completo e superior incompleto,0.6,72683.0,404.0,UF
+16,Amapá,Mulheres,Sem instrução e fundamental incompleto,1.3,56227.0,745.0,UF
+16,Amapá,Mulheres,Superior completo,0.5,50228.0,250.0,UF
+16,Amapá,Mulheres,Total,0.8,203790.0,1610.0,UF
+16,Amapá,Total,Fundamental completo e médio incompleto,1.0,52462.0,517.0,UF
+16,Amapá,Total,Médio completo e superior incompleto,0.8,138124.0,1045.0,UF
+16,Amapá,Total,Sem instrução e fundamental incompleto,1.3,124173.0,1635.0,UF
+16,Amapá,Total,Superior completo,0.6,83030.0,473.0,UF
+16,Amapá,Total,Total,0.9,397788.0,3670.0,UF
+17,Tocantins,Homens,Fundamental completo e médio incompleto,0.7,62006.0,450.0,UF
+17,Tocantins,Homens,Médio completo e superior incompleto,0.6,139950.0,853.0,UF
+17,Tocantins,Homens,Sem instrução e fundamental incompleto,1.1,192203.0,2075.0,UF
+17,Tocantins,Homens,Superior completo,0.7,59080.0,434.0,UF
+17,Tocantins,Homens,Total,0.8,453240.0,3813.0,UF
+17,Tocantins,Mulheres,Fundamental completo e médio incompleto,0.6,51215.0,285.0,UF
+17,Tocantins,Mulheres,Médio completo e superior incompleto,0.6,151330.0,863.0,UF
+17,Tocantins,Mulheres,Sem instrução e fundamental incompleto,1.1,150822.0,1721.0,UF
+17,Tocantins,Mulheres,Superior completo,0.6,106025.0,598.0,UF
+17,Tocantins,Mulheres,Total,0.8,459393.0,3467.0,UF
+17,Tocantins,Total,Fundamental completo e médio incompleto,0.6,113221.0,735.0,UF
+17,Tocantins,Total,Médio completo e superior incompleto,0.6,291280.0,1716.0,UF
+17,Tocantins,Total,Sem instrução e fundamental incompleto,1.1,343026.0,3796.0,UF
+17,Tocantins,Total,Superior completo,0.6,165105.0,1033.0,UF
+17,Tocantins,Total,Total,0.8,912632.0,7280.0,UF
+21,Maranhão,Homens,Fundamental completo e médio incompleto,0.7,267863.0,1968.0,UF
+21,Maranhão,Homens,Médio completo e superior incompleto,0.6,524063.0,3246.0,UF
+21,Maranhão,Homens,Sem instrução e fundamental incompleto,1.1,951694.0,10481.0,UF
+21,Maranhão,Homens,Superior completo,0.6,150835.0,966.0,UF
+21,Maranhão,Homens,Total,0.9,1894455.0,16661.0,UF
+21,Maranhão,Mulheres,Fundamental completo e médio incompleto,0.8,273128.0,2209.0,UF
+21,Maranhão,Mulheres,Médio completo e superior incompleto,0.6,642898.0,4010.0,UF
+21,Maranhão,Mulheres,Sem instrução e fundamental incompleto,1.1,847115.0,9550.0,UF
+21,Maranhão,Mulheres,Superior completo,0.5,287251.0,1576.0,UF
+21,Maranhão,Mulheres,Total,0.8,2050392.0,17345.0,UF
+21,Maranhão,Total,Fundamental completo e médio incompleto,0.8,540991.0,4177.0,UF
+21,Maranhão,Total,Médio completo e superior incompleto,0.6,1166961.0,7256.0,UF
+21,Maranhão,Total,Sem instrução e fundamental incompleto,1.1,1798809.0,20032.0,UF
+21,Maranhão,Total,Superior completo,0.6,438086.0,2541.0,UF
+21,Maranhão,Total,Total,0.9,3944847.0,34006.0,UF
+22,Piauí,Homens,Fundamental completo e médio incompleto,0.6,127641.0,798.0,UF
+22,Piauí,Homens,Médio completo e superior incompleto,0.5,222073.0,1212.0,UF
+22,Piauí,Homens,Sem instrução e fundamental incompleto,1.0,538901.0,5263.0,UF
+22,Piauí,Homens,Superior completo,0.6,102245.0,619.0,UF
+22,Piauí,Homens,Total,0.8,990860.0,7890.0,UF
+22,Piauí,Mulheres,Fundamental completo e médio incompleto,0.6,130984.0,786.0,UF
+22,Piauí,Mulheres,Médio completo e superior incompleto,0.6,287410.0,1707.0,UF
+22,Piauí,Mulheres,Sem instrução e fundamental incompleto,0.9,477621.0,4512.0,UF
+22,Piauí,Mulheres,Superior completo,0.4,185493.0,834.0,UF
+22,Piauí,Mulheres,Total,0.7,1081507.0,7839.0,UF
+22,Piauí,Total,Fundamental completo e médio incompleto,0.6,258625.0,1583.0,UF
+22,Piauí,Total,Médio completo e superior incompleto,0.6,509482.0,2918.0,UF
+22,Piauí,Total,Sem instrução e fundamental incompleto,1.0,1016522.0,9774.0,UF
+22,Piauí,Total,Superior completo,0.5,287737.0,1453.0,UF
+22,Piauí,Total,Total,0.8,2072366.0,15729.0,UF
+23,Ceará,Homens,Fundamental completo e médio incompleto,0.8,377552.0,2984.0,UF
+23,Ceará,Homens,Médio completo e superior incompleto,0.7,772099.0,5320.0,UF
+23,Ceará,Homens,Sem instrução e fundamental incompleto,1.2,1235832.0,14661.0,UF
+23,Ceará,Homens,Superior completo,0.9,268307.0,2294.0,UF
+23,Ceará,Homens,Total,1.0,2653790.0,25259.0,UF
+23,Ceará,Mulheres,Fundamental completo e médio incompleto,0.7,428082.0,3103.0,UF
+23,Ceará,Mulheres,Médio completo e superior incompleto,0.7,924019.0,6888.0,UF
+23,Ceará,Mulheres,Sem instrução e fundamental incompleto,1.2,1188346.0,14002.0,UF
+23,Ceará,Mulheres,Superior completo,0.7,447009.0,3086.0,UF
+23,Ceará,Mulheres,Total,0.9,2987456.0,27079.0,UF
+23,Ceará,Total,Fundamental completo e médio incompleto,0.8,805634.0,6087.0,UF
+23,Ceará,Total,Médio completo e superior incompleto,0.7,1696118.0,12209.0,UF
+23,Ceará,Total,Sem instrução e fundamental incompleto,1.2,2424177.0,28663.0,UF
+23,Ceará,Total,Superior completo,0.8,715316.0,5379.0,UF
+23,Ceará,Total,Total,0.9,5641246.0,52338.0,UF
+24,Rio Grande do Norte,Homens,Fundamental completo e médio incompleto,0.6,134002.0,749.0,UF
+24,Rio Grande do Norte,Homens,Médio completo e superior incompleto,0.6,280764.0,1759.0,UF
+24,Rio Grande do Norte,Homens,Sem instrução e fundamental incompleto,1.0,470970.0,4538.0,UF
+24,Rio Grande do Norte,Homens,Superior completo,0.7,124953.0,889.0,UF
+24,Rio Grande do Norte,Homens,Total,0.8,1010688.0,7936.0,UF
+24,Rio Grande do Norte,Mulheres,Fundamental completo e médio incompleto,0.7,149883.0,1092.0,UF
+24,Rio Grande do Norte,Mulheres,Médio completo e superior incompleto,0.6,344923.0,1969.0,UF
+24,Rio Grande do Norte,Mulheres,Sem instrução e fundamental incompleto,1.0,443591.0,4250.0,UF
+24,Rio Grande do Norte,Mulheres,Superior completo,0.6,199361.0,1108.0,UF
+24,Rio Grande do Norte,Mulheres,Total,0.7,1137758.0,8419.0,UF
+24,Rio Grande do Norte,Total,Fundamental completo e médio incompleto,0.6,283885.0,1841.0,UF
+24,Rio Grande do Norte,Total,Médio completo e superior incompleto,0.6,625687.0,3729.0,UF
+24,Rio Grande do Norte,Total,Sem instrução e fundamental incompleto,1.0,914561.0,8788.0,UF
+24,Rio Grande do Norte,Total,Superior completo,0.6,324313.0,1997.0,UF
+24,Rio Grande do Norte,Total,Total,0.8,2148447.0,16354.0,UF
+25,Paraíba,Homens,Fundamental completo e médio incompleto,0.6,139430.0,877.0,UF
+25,Paraíba,Homens,Médio completo e superior incompleto,0.6,295629.0,1825.0,UF
+25,Paraíba,Homens,Sem instrução e fundamental incompleto,0.9,619357.0,5322.0,UF
+25,Paraíba,Homens,Superior completo,0.7,139520.0,969.0,UF
+25,Paraíba,Homens,Total,0.8,1193936.0,8993.0,UF
+25,Paraíba,Mulheres,Fundamental completo e médio incompleto,0.6,158478.0,972.0,UF
+25,Paraíba,Mulheres,Médio completo e superior incompleto,0.5,375526.0,2055.0,UF
+25,Paraíba,Mulheres,Sem instrução e fundamental incompleto,0.9,591909.0,5530.0,UF
+25,Paraíba,Mulheres,Superior completo,0.6,230699.0,1380.0,UF
+25,Paraíba,Mulheres,Total,0.7,1356611.0,9937.0,UF
+25,Paraíba,Total,Fundamental completo e médio incompleto,0.6,297908.0,1849.0,UF
+25,Paraíba,Total,Médio completo e superior incompleto,0.6,671155.0,3880.0,UF
+25,Paraíba,Total,Sem instrução e fundamental incompleto,0.9,1211265.0,10853.0,UF
+25,Paraíba,Total,Superior completo,0.6,370219.0,2349.0,UF
+25,Paraíba,Total,Total,0.7,2550547.0,18930.0,UF
+26,Pernambuco,Homens,Fundamental completo e médio incompleto,0.7,324465.0,2384.0,UF
+26,Pernambuco,Homens,Médio completo e superior incompleto,0.6,798418.0,4545.0,UF
+26,Pernambuco,Homens,Sem instrução e fundamental incompleto,1.0,1224322.0,12579.0,UF
+26,Pernambuco,Homens,Superior completo,0.6,304309.0,1878.0,UF
+26,Pernambuco,Homens,Total,0.8,2651515.0,21386.0,UF
+26,Pernambuco,Mulheres,Fundamental completo e médio incompleto,0.8,364617.0,2790.0,UF
+26,Pernambuco,Mulheres,Médio completo e superior incompleto,0.6,1004551.0,6488.0,UF
+26,Pernambuco,Mulheres,Sem instrução e fundamental incompleto,1.0,1244112.0,12877.0,UF
+26,Pernambuco,Mulheres,Superior completo,0.7,500619.0,3376.0,UF
+26,Pernambuco,Mulheres,Total,0.8,3113899.0,25531.0,UF
+26,Pernambuco,Total,Fundamental completo e médio incompleto,0.8,689083.0,5173.0,UF
+26,Pernambuco,Total,Médio completo e superior incompleto,0.6,1802970.0,11034.0,UF
+26,Pernambuco,Total,Sem instrução e fundamental incompleto,1.0,2468434.0,25456.0,UF
+26,Pernambuco,Total,Superior completo,0.7,804928.0,5255.0,UF
+26,Pernambuco,Total,Total,0.8,5765415.0,46917.0,UF
+27,Alagoas,Homens,Fundamental completo e médio incompleto,0.6,112372.0,658.0,UF
+27,Alagoas,Homens,Médio completo e superior incompleto,0.5,216057.0,1122.0,UF
+27,Alagoas,Homens,Sem instrução e fundamental incompleto,1.0,454782.0,4563.0,UF
+27,Alagoas,Homens,Superior completo,0.6,93444.0,550.0,UF
+27,Alagoas,Homens,Total,0.8,876656.0,6892.0,UF
+27,Alagoas,Mulheres,Fundamental completo e médio incompleto,0.7,123638.0,913.0,UF
+27,Alagoas,Mulheres,Médio completo e superior incompleto,0.6,273439.0,1520.0,UF
+27,Alagoas,Mulheres,Sem instrução e fundamental incompleto,1.0,465678.0,4797.0,UF
+27,Alagoas,Mulheres,Superior completo,0.5,160606.0,830.0,UF
+27,Alagoas,Mulheres,Total,0.8,1023360.0,8060.0,UF
+27,Alagoas,Total,Fundamental completo e médio incompleto,0.7,236010.0,1571.0,UF
+27,Alagoas,Total,Médio completo e superior incompleto,0.5,489496.0,2642.0,UF
+27,Alagoas,Total,Sem instrução e fundamental incompleto,1.0,920460.0,9360.0,UF
+27,Alagoas,Total,Superior completo,0.5,254050.0,1380.0,UF
+27,Alagoas,Total,Total,0.8,1900016.0,14952.0,UF
+28,Sergipe,Homens,Fundamental completo e médio incompleto,0.6,81286.0,473.0,UF
+28,Sergipe,Homens,Médio completo e superior incompleto,0.4,178548.0,802.0,UF
+28,Sergipe,Homens,Sem instrução e fundamental incompleto,1.1,305754.0,3224.0,UF
+28,Sergipe,Homens,Superior completo,0.8,76564.0,582.0,UF
+28,Sergipe,Homens,Total,0.8,642152.0,5081.0,UF
+28,Sergipe,Mulheres,Fundamental completo e médio incompleto,0.5,92288.0,502.0,UF
+28,Sergipe,Mulheres,Médio completo e superior incompleto,0.5,220412.0,1109.0,UF
+28,Sergipe,Mulheres,Sem instrução e fundamental incompleto,1.0,302894.0,2931.0,UF
+28,Sergipe,Mulheres,Superior completo,0.7,130628.0,869.0,UF
+28,Sergipe,Mulheres,Total,0.7,746221.0,5411.0,UF
+28,Sergipe,Total,Fundamental completo e médio incompleto,0.6,173574.0,975.0,UF
+28,Sergipe,Total,Médio completo e superior incompleto,0.5,398960.0,1911.0,UF
+28,Sergipe,Total,Sem instrução e fundamental incompleto,1.0,608647.0,6154.0,UF
+28,Sergipe,Total,Superior completo,0.7,207192.0,1451.0,UF
+28,Sergipe,Total,Total,0.8,1388373.0,10492.0,UF
+29,Bahia,Homens,Fundamental completo e médio incompleto,0.7,561053.0,3776.0,UF
+29,Bahia,Homens,Médio completo e superior incompleto,0.5,1248275.0,6311.0,UF
+29,Bahia,Homens,Sem instrução e fundamental incompleto,1.1,2095943.0,23015.0,UF
+29,Bahia,Homens,Superior completo,0.6,393409.0,2438.0,UF
+29,Bahia,Homens,Total,0.8,4298679.0,35539.0,UF
+29,Bahia,Mulheres,Fundamental completo e médio incompleto,0.7,569876.0,4082.0,UF
+29,Bahia,Mulheres,Médio completo e superior incompleto,0.5,1601383.0,8562.0,UF
+29,Bahia,Mulheres,Sem instrução e fundamental incompleto,1.1,1952909.0,21124.0,UF
+29,Bahia,Mulheres,Superior completo,0.6,700794.0,4030.0,UF
+29,Bahia,Mulheres,Total,0.8,4824962.0,37798.0,UF
+29,Bahia,Total,Fundamental completo e médio incompleto,0.7,1130930.0,7858.0,UF
+29,Bahia,Total,Médio completo e superior incompleto,0.5,2849657.0,14873.0,UF
+29,Bahia,Total,Sem instrução e fundamental incompleto,1.1,4048852.0,44139.0,UF
+29,Bahia,Total,Superior completo,0.6,1094202.0,6468.0,UF
+29,Bahia,Total,Total,0.8,9123641.0,73337.0,UF
+31,Minas Gerais,Homens,Fundamental completo e médio incompleto,0.7,1001739.0,6672.0,UF
+31,Minas Gerais,Homens,Médio completo e superior incompleto,0.6,1986862.0,12594.0,UF
+31,Minas Gerais,Homens,Sem instrução e fundamental incompleto,1.1,2692677.0,30887.0,UF
+31,Minas Gerais,Homens,Superior completo,0.7,983460.0,7362.0,UF
+31,Minas Gerais,Homens,Total,0.9,6664738.0,57515.0,UF
+31,Minas Gerais,Mulheres,Fundamental completo e médio incompleto,0.8,927812.0,7156.0,UF
+31,Minas Gerais,Mulheres,Médio completo e superior incompleto,0.7,2227558.0,14669.0,UF
+31,Minas Gerais,Mulheres,Sem instrução e fundamental incompleto,1.0,2619099.0,26950.0,UF
+31,Minas Gerais,Mulheres,Superior completo,0.7,1502805.0,9812.0,UF
+31,Minas Gerais,Mulheres,Total,0.8,7277275.0,58588.0,UF
+31,Minas Gerais,Total,Fundamental completo e médio incompleto,0.7,1929551.0,13828.0,UF
+31,Minas Gerais,Total,Médio completo e superior incompleto,0.6,4214420.0,27264.0,UF
+31,Minas Gerais,Total,Sem instrução e fundamental incompleto,1.1,5311776.0,57837.0,UF
+31,Minas Gerais,Total,Superior completo,0.7,2486265.0,17174.0,UF
+31,Minas Gerais,Total,Total,0.8,13942013.0,116103.0,UF
+32,Espírito Santo,Homens,Fundamental completo e médio incompleto,0.7,187938.0,1409.0,UF
+32,Espírito Santo,Homens,Médio completo e superior incompleto,0.8,404802.0,3181.0,UF
+32,Espírito Santo,Homens,Sem instrução e fundamental incompleto,1.3,445048.0,5838.0,UF
+32,Espírito Santo,Homens,Superior completo,0.8,184720.0,1432.0,UF
+32,Espírito Santo,Homens,Total,1.0,1222508.0,11860.0,UF
+32,Espírito Santo,Mulheres,Fundamental completo e médio incompleto,0.8,171847.0,1369.0,UF
+32,Espírito Santo,Mulheres,Médio completo e superior incompleto,0.7,433624.0,3134.0,UF
+32,Espírito Santo,Mulheres,Sem instrução e fundamental incompleto,1.2,449712.0,5243.0,UF
+32,Espírito Santo,Mulheres,Superior completo,0.8,281782.0,2307.0,UF
+32,Espírito Santo,Mulheres,Total,0.9,1336964.0,12053.0,UF
+32,Espírito Santo,Total,Fundamental completo e médio incompleto,0.8,359784.0,2777.0,UF
+32,Espírito Santo,Total,Médio completo e superior incompleto,0.8,838426.0,6315.0,UF
+32,Espírito Santo,Total,Sem instrução e fundamental incompleto,1.2,894760.0,11081.0,UF
+32,Espírito Santo,Total,Superior completo,0.8,466502.0,3739.0,UF
+32,Espírito Santo,Total,Total,0.9,2559472.0,23912.0,UF
+33,Rio de Janeiro,Homens,Fundamental completo e médio incompleto,1.0,789942.0,7760.0,UF
+33,Rio de Janeiro,Homens,Médio completo e superior incompleto,0.8,1918227.0,15758.0,UF
+33,Rio de Janeiro,Homens,Sem instrução e fundamental incompleto,1.7,1412295.0,23558.0,UF
+33,Rio de Janeiro,Homens,Superior completo,0.8,911597.0,7167.0,UF
+33,Rio de Janeiro,Homens,Total,1.1,5032060.0,54243.0,UF
+33,Rio de Janeiro,Mulheres,Fundamental completo e médio incompleto,1.1,898017.0,10182.0,UF
+33,Rio de Janeiro,Mulheres,Médio completo e superior incompleto,0.8,2212554.0,18227.0,UF
+33,Rio de Janeiro,Mulheres,Sem instrução e fundamental incompleto,1.4,1634026.0,23057.0,UF
+33,Rio de Janeiro,Mulheres,Superior completo,0.8,1251681.0,9731.0,UF
+33,Rio de Janeiro,Mulheres,Total,1.0,5996278.0,61198.0,UF
+33,Rio de Janeiro,Total,Fundamental completo e médio incompleto,1.1,1687959.0,17942.0,UF
+33,Rio de Janeiro,Total,Médio completo e superior incompleto,0.8,4130781.0,33985.0,UF
+33,Rio de Janeiro,Total,Sem instrução e fundamental incompleto,1.5,3046321.0,46616.0,UF
+33,Rio de Janeiro,Total,Superior completo,0.8,2163277.0,16898.0,UF
+33,Rio de Janeiro,Total,Total,1.0,11028338.0,115441.0,UF
+35,São Paulo,Homens,Fundamental completo e médio incompleto,0.9,2146383.0,20081.0,UF
+35,São Paulo,Homens,Médio completo e superior incompleto,0.8,5245736.0,40460.0,UF
+35,São Paulo,Homens,Sem instrução e fundamental incompleto,1.4,3795331.0,54780.0,UF
+35,São Paulo,Homens,Superior completo,0.9,3056514.0,28766.0,UF
+35,São Paulo,Homens,Total,1.0,14243964.0,144088.0,UF
+35,São Paulo,Mulheres,Fundamental completo e médio incompleto,1.0,2164114.0,21875.0,UF
+35,São Paulo,Mulheres,Médio completo e superior incompleto,0.8,5628776.0,45211.0,UF
+35,São Paulo,Mulheres,Sem instrução e fundamental incompleto,1.3,4331396.0,56576.0,UF
+35,São Paulo,Mulheres,Superior completo,0.9,4013512.0,36251.0,UF
+35,São Paulo,Mulheres,Total,1.0,16137798.0,159913.0,UF
+35,São Paulo,Total,Fundamental completo e médio incompleto,1.0,4310497.0,41956.0,UF
+35,São Paulo,Total,Médio completo e superior incompleto,0.8,10874512.0,85672.0,UF
+35,São Paulo,Total,Sem instrução e fundamental incompleto,1.4,8126726.0,111356.0,UF
+35,São Paulo,Total,Superior completo,0.9,7070026.0,65017.0,UF
+35,São Paulo,Total,Total,1.0,30381762.0,304001.0,UF
+41,Paraná,Homens,Fundamental completo e médio incompleto,0.7,558107.0,4074.0,UF
+41,Paraná,Homens,Médio completo e superior incompleto,0.7,1168291.0,7818.0,UF
+41,Paraná,Homens,Sem instrução e fundamental incompleto,1.1,1261054.0,14490.0,UF
+41,Paraná,Homens,Superior completo,0.8,657301.0,5337.0,UF
+41,Paraná,Homens,Total,0.9,3644752.0,31719.0,UF
+41,Paraná,Mulheres,Fundamental completo e médio incompleto,0.8,521261.0,4093.0,UF
+41,Paraná,Mulheres,Médio completo e superior incompleto,0.6,1214096.0,7703.0,UF
+41,Paraná,Mulheres,Sem instrução e fundamental incompleto,1.0,1333461.0,13671.0,UF
+41,Paraná,Mulheres,Superior completo,0.7,927696.0,6599.0,UF
+41,Paraná,Mulheres,Total,0.8,3996515.0,32066.0,UF
+41,Paraná,Total,Fundamental completo e médio incompleto,0.8,1079367.0,8167.0,UF
+41,Paraná,Total,Médio completo e superior incompleto,0.7,2382387.0,15520.0,UF
+41,Paraná,Total,Sem instrução e fundamental incompleto,1.1,2594515.0,28162.0,UF
+41,Paraná,Total,Superior completo,0.8,1584997.0,11935.0,UF
+41,Paraná,Total,Total,0.8,7641267.0,63785.0,UF
+42,Santa Catarina,Homens,Fundamental completo e médio incompleto,0.8,413233.0,3114.0,UF
+42,Santa Catarina,Homens,Médio completo e superior incompleto,0.7,841695.0,6203.0,UF
+42,Santa Catarina,Homens,Sem instrução e fundamental incompleto,1.2,764167.0,8924.0,UF
+42,Santa Catarina,Homens,Superior completo,0.7,465103.0,3443.0,UF
+42,Santa Catarina,Homens,Total,0.9,2484198.0,21683.0,UF
+42,Santa Catarina,Mulheres,Fundamental completo e médio incompleto,0.7,374224.0,2498.0,UF
+42,Santa Catarina,Mulheres,Médio completo e superior incompleto,0.8,840760.0,6311.0,UF
+42,Santa Catarina,Mulheres,Sem instrução e fundamental incompleto,1.0,801528.0,8257.0,UF
+42,Santa Catarina,Mulheres,Superior completo,0.7,632092.0,4237.0,UF
+42,Santa Catarina,Mulheres,Total,0.8,2648604.0,21303.0,UF
+42,Santa Catarina,Total,Fundamental completo e médio incompleto,0.7,787457.0,5611.0,UF
+42,Santa Catarina,Total,Médio completo e superior incompleto,0.7,1682455.0,12514.0,UF
+42,Santa Catarina,Total,Sem instrução e fundamental incompleto,1.1,1565695.0,17182.0,UF
+42,Santa Catarina,Total,Superior completo,0.7,1097195.0,7680.0,UF
+42,Santa Catarina,Total,Total,0.8,5132802.0,42986.0,UF
+43,Rio Grande do Sul,Homens,Fundamental completo e médio incompleto,0.7,597229.0,4212.0,UF
+43,Rio Grande do Sul,Homens,Médio completo e superior incompleto,0.7,1102140.0,7854.0,UF
+43,Rio Grande do Sul,Homens,Sem instrução e fundamental incompleto,1.1,1301564.0,14679.0,UF
+43,Rio Grande do Sul,Homens,Superior completo,0.8,560475.0,4299.0,UF
+43,Rio Grande do Sul,Homens,Total,0.9,3561408.0,31044.0,UF
+43,Rio Grande do Sul,Mulheres,Fundamental completo e médio incompleto,0.8,586701.0,4750.0,UF
+43,Rio Grande do Sul,Mulheres,Médio completo e superior incompleto,0.7,1199459.0,8643.0,UF
+43,Rio Grande do Sul,Mulheres,Sem instrução e fundamental incompleto,1.0,1342922.0,13860.0,UF
+43,Rio Grande do Sul,Mulheres,Superior completo,0.7,859984.0,5672.0,UF
+43,Rio Grande do Sul,Mulheres,Total,0.8,3989066.0,32924.0,UF
+43,Rio Grande do Sul,Total,Fundamental completo e médio incompleto,0.8,1183929.0,8961.0,UF
+43,Rio Grande do Sul,Total,Médio completo e superior incompleto,0.7,2301599.0,16497.0,UF
+43,Rio Grande do Sul,Total,Sem instrução e fundamental incompleto,1.1,2644486.0,28539.0,UF
+43,Rio Grande do Sul,Total,Superior completo,0.7,1420460.0,9971.0,UF
+43,Rio Grande do Sul,Total,Total,0.8,7550474.0,63968.0,UF
+50,Mato Grosso do Sul,Homens,Fundamental completo e médio incompleto,0.7,132120.0,880.0,UF
+50,Mato Grosso do Sul,Homens,Médio completo e superior incompleto,0.7,238146.0,1600.0,UF
+50,Mato Grosso do Sul,Homens,Sem instrução e fundamental incompleto,1.0,335078.0,3437.0,UF
+50,Mato Grosso do Sul,Homens,Superior completo,0.8,137998.0,1048.0,UF
+50,Mato Grosso do Sul,Homens,Total,0.8,843342.0,6965.0,UF
+50,Mato Grosso do Sul,Mulheres,Fundamental completo e médio incompleto,0.7,126179.0,868.0,UF
+50,Mato Grosso do Sul,Mulheres,Médio completo e superior incompleto,0.5,254815.0,1393.0,UF
+50,Mato Grosso do Sul,Mulheres,Sem instrução e fundamental incompleto,1.1,314875.0,3340.0,UF
+50,Mato Grosso do Sul,Mulheres,Superior completo,0.6,207159.0,1261.0,UF
+50,Mato Grosso do Sul,Mulheres,Total,0.8,903028.0,6861.0,UF
+50,Mato Grosso do Sul,Total,Fundamental completo e médio incompleto,0.7,258299.0,1747.0,UF
+50,Mato Grosso do Sul,Total,Médio completo e superior incompleto,0.6,492961.0,2993.0,UF
+50,Mato Grosso do Sul,Total,Sem instrução e fundamental incompleto,1.0,649953.0,6777.0,UF
+50,Mato Grosso do Sul,Total,Superior completo,0.7,345157.0,2309.0,UF
+50,Mato Grosso do Sul,Total,Total,0.8,1746369.0,13826.0,UF
+51,Mato Grosso,Homens,Fundamental completo e médio incompleto,0.8,192647.0,1533.0,UF
+51,Mato Grosso,Homens,Médio completo e superior incompleto,0.8,329515.0,2531.0,UF
+51,Mato Grosso,Homens,Sem instrução e fundamental incompleto,1.1,448924.0,5010.0,UF
+51,Mato Grosso,Homens,Superior completo,0.8,162772.0,1344.0,UF
+51,Mato Grosso,Homens,Total,0.9,1133857.0,10418.0,UF
+51,Mato Grosso,Mulheres,Fundamental completo e médio incompleto,0.9,157826.0,1370.0,UF
+51,Mato Grosso,Mulheres,Médio completo e superior incompleto,0.8,351981.0,2871.0,UF
+51,Mato Grosso,Mulheres,Sem instrução e fundamental incompleto,1.2,365178.0,4314.0,UF
+51,Mato Grosso,Mulheres,Superior completo,0.8,259698.0,2195.0,UF
+51,Mato Grosso,Mulheres,Total,0.9,1134684.0,10751.0,UF
+51,Mato Grosso,Total,Fundamental completo e médio incompleto,0.8,350473.0,2903.0,UF
+51,Mato Grosso,Total,Médio completo e superior incompleto,0.8,681496.0,5402.0,UF
+51,Mato Grosso,Total,Sem instrução e fundamental incompleto,1.1,814102.0,9324.0,UF
+51,Mato Grosso,Total,Superior completo,0.8,422470.0,3540.0,UF
+51,Mato Grosso,Total,Total,0.9,2268541.0,21169.0,UF
+52,Goiás,Homens,Fundamental completo e médio incompleto,0.8,344945.0,2667.0,UF
+52,Goiás,Homens,Médio completo e superior incompleto,0.7,696131.0,5095.0,UF
+52,Goiás,Homens,Sem instrução e fundamental incompleto,1.2,832078.0,9997.0,UF
+52,Goiás,Homens,Superior completo,0.7,328399.0,2371.0,UF
+52,Goiás,Homens,Total,0.9,2201554.0,20131.0,UF
+52,Goiás,Mulheres,Fundamental completo e médio incompleto,0.7,330480.0,2406.0,UF
+52,Goiás,Mulheres,Médio completo e superior incompleto,0.6,773969.0,4770.0,UF
+52,Goiás,Mulheres,Sem instrução e fundamental incompleto,1.2,764094.0,9077.0,UF
+52,Goiás,Mulheres,Superior completo,0.6,492930.0,3155.0,UF
+52,Goiás,Mulheres,Total,0.8,2361473.0,19408.0,UF
+52,Goiás,Total,Fundamental completo e médio incompleto,0.8,675426.0,5073.0,UF
+52,Goiás,Total,Médio completo e superior incompleto,0.7,1470100.0,9865.0,UF
+52,Goiás,Total,Sem instrução e fundamental incompleto,1.2,1596172.0,19075.0,UF
+52,Goiás,Total,Superior completo,0.7,821329.0,5527.0,UF
+52,Goiás,Total,Total,0.9,4563027.0,39539.0,UF
+53,Distrito Federal,Homens,Fundamental completo e médio incompleto,0.8,98002.0,754.0,UF
+53,Distrito Federal,Homens,Médio completo e superior incompleto,0.8,283493.0,2230.0,UF
+53,Distrito Federal,Homens,Sem instrução e fundamental incompleto,1.6,170430.0,2783.0,UF
+53,Distrito Federal,Homens,Superior completo,1.0,298688.0,2928.0,UF
+53,Distrito Federal,Homens,Total,1.0,850613.0,8696.0,UF
+53,Distrito Federal,Mulheres,Fundamental completo e médio incompleto,1.0,101552.0,981.0,UF
+53,Distrito Federal,Mulheres,Médio completo e superior incompleto,0.7,326677.0,2436.0,UF
+53,Distrito Federal,Mulheres,Sem instrução e fundamental incompleto,1.3,184414.0,2322.0,UF
+53,Distrito Federal,Mulheres,Superior completo,0.7,383863.0,2539.0,UF
+53,Distrito Federal,Mulheres,Total,0.8,996506.0,8278.0,UF
+53,Distrito Federal,Total,Fundamental completo e médio incompleto,0.9,199553.0,1735.0,UF
+53,Distrito Federal,Total,Médio completo e superior incompleto,0.8,610170.0,4666.0,UF
+53,Distrito Federal,Total,Sem instrução e fundamental incompleto,1.4,354844.0,5105.0,UF
+53,Distrito Federal,Total,Superior completo,0.8,682551.0,5467.0,UF
+53,Distrito Federal,Total,Total,0.9,1847119.0,16974.0,UF

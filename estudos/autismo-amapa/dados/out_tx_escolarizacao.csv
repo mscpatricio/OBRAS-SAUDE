@@ -1,0 +1,31 @@
+cod,nome,sexo,idade,tx_tea,tx_total,nivel
+1,Brasil,Homens,15 a 17 anos,77.79,84.99,BR
+1,Brasil,Homens,18 a 24 anos,30.83,25.7,BR
+1,Brasil,Homens,25 anos ou mais,8.11,5.59,BR
+1,Brasil,Homens,6 a 14 anos,94.58,98.18,BR
+1,Brasil,Homens,Total,44.15,24.72,BR
+1,Brasil,Mulheres,15 a 17 anos,76.13,85.53,BR
+1,Brasil,Mulheres,18 a 24 anos,29.75,29.69,BR
+1,Brasil,Mulheres,25 anos ou mais,8.52,6.56,BR
+1,Brasil,Mulheres,6 a 14 anos,93.74,98.34,BR
+1,Brasil,Mulheres,Total,26.87,23.99,BR
+1,Brasil,Total,15 a 17 anos,77.28,85.25,BR
+1,Brasil,Total,18 a 24 anos,30.41,27.68,BR
+1,Brasil,Total,25 anos ou mais,8.32,6.1,BR
+1,Brasil,Total,6 a 14 anos,94.36,98.26,BR
+1,Brasil,Total,Total,36.85,24.34,BR
+16,Amapá,Homens,15 a 17 anos,87.11,84.84,UF
+16,Amapá,Homens,18 a 24 anos,40.51,29.15,UF
+16,Amapá,Homens,25 anos ou mais,15.5,7.31,UF
+16,Amapá,Homens,6 a 14 anos,92.54,95.99,UF
+16,Amapá,Homens,Total,58.96,32.23,UF
+16,Amapá,Mulheres,15 a 17 anos,71.96,81.22,UF
+16,Amapá,Mulheres,18 a 24 anos,15.76,31.23,UF
+16,Amapá,Mulheres,25 anos ou mais,5.9,9.32,UF
+16,Amapá,Mulheres,6 a 14 anos,95.48,96.91,UF
+16,Amapá,Mulheres,Total,39.42,32.47,UF
+16,Amapá,Total,15 a 17 anos,82.62,83.08,UF
+16,Amapá,Total,18 a 24 anos,29.18,30.19,UF
+16,Amapá,Total,25 anos ou mais,11.29,8.34,UF
+16,Amapá,Total,6 a 14 anos,93.39,96.45,UF
+16,Amapá,Total,Total,51.75,32.35,UF

@@ -1,0 +1,256 @@
+cod,nome,raca,pct,pop,tea,nivel
+1,Brasil,Amarela,1.2,850873.0,10322.0,BR
+1,Brasil,Branca,1.3,87899705.0,1103580.0,BR
+1,Brasil,Indígena,0.9,1247105.0,11376.0,BR
+1,Brasil,Parda,1.1,92206881.0,1057955.0,BR
+1,Brasil,Preta,1.1,20839163.0,221667.0,BR
+1,Brasil,Total,1.2,203080756.0,2405337.0,BR
+11,Rondônia,Amarela,0.5,4034.0,20.0,UF
+11,Rondônia,Branca,1.2,484673.0,5987.0,UF
+11,Rondônia,Indígena,0.7,16894.0,123.0,UF
+11,Rondônia,Parda,1.3,936596.0,12236.0,UF
+11,Rondônia,Preta,1.3,138947.0,1843.0,UF
+11,Rondônia,Total,1.3,1581196.0,20209.0,UF
+12,Acre,Amarela,2.3,1915.0,44.0,UF
+12,Acre,Branca,2.1,176280.0,3646.0,UF
+12,Acre,Indígena,0.7,28470.0,209.0,UF
+12,Acre,Parda,1.5,552005.0,8437.0,UF
+12,Acre,Preta,1.2,71338.0,889.0,UF
+12,Acre,Total,1.6,830018.0,13224.0,UF
+13,Amazonas,Amarela,0.6,6451.0,38.0,UF
+13,Amazonas,Branca,1.5,713906.0,10652.0,UF
+13,Amazonas,Indígena,0.7,310681.0,2144.0,UF
+13,Amazonas,Parda,1.1,2721887.0,29221.0,UF
+13,Amazonas,Preta,1.0,188414.0,1928.0,UF
+13,Amazonas,Total,1.1,3941613.0,43983.0,UF
+14,Roraima,Amarela,1.2,764.0,9.0,UF
+14,Roraima,Branca,1.4,129558.0,1825.0,UF
+14,Roraima,Indígena,1.0,90928.0,927.0,UF
+14,Roraima,Parda,1.1,364930.0,4093.0,UF
+14,Roraima,Preta,1.0,49479.0,512.0,UF
+14,Roraima,Total,1.2,636707.0,7374.0,UF
+15,Pará,Amarela,0.5,12570.0,60.0,UF
+15,Pará,Branca,1.4,1569244.0,21469.0,UF
+15,Pará,Indígena,1.1,70147.0,784.0,UF
+15,Pará,Parda,1.1,5672829.0,61377.0,UF
+15,Pará,Preta,0.9,793819.0,7511.0,UF
+15,Pará,Total,1.1,8120131.0,91230.0,UF
+16,Amapá,Amarela,2.5,717.0,18.0,UF
+16,Amapá,Branca,2.2,157582.0,3507.0,UF
+16,Amapá,Indígena,0.3,10967.0,31.0,UF
+16,Amapá,Parda,1.4,478918.0,6701.0,UF
+16,Amapá,Preta,1.0,85574.0,824.0,UF
+16,Amapá,Total,1.5,733759.0,11081.0,UF
+17,Tocantins,Amarela,1.0,3696.0,37.0,UF
+17,Tocantins,Branca,1.1,345707.0,3673.0,UF
+17,Tocantins,Indígena,0.4,18549.0,71.0,UF
+17,Tocantins,Parda,1.0,941318.0,9061.0,UF
+17,Tocantins,Preta,0.9,202045.0,1892.0,UF
+17,Tocantins,Total,1.0,1511460.0,14734.0,UF
+21,Maranhão,Amarela,0.6,6604.0,41.0,UF
+21,Maranhão,Branca,1.3,1347298.0,17741.0,UF
+21,Maranhão,Indígena,0.7,54238.0,388.0,UF
+21,Maranhão,Parda,1.1,4501318.0,48438.0,UF
+21,Maranhão,Preta,1.0,866733.0,8675.0,UF
+21,Maranhão,Total,1.1,6776699.0,75283.0,UF
+22,Piauí,Amarela,1.0,2962.0,29.0,UF
+22,Piauí,Branca,1.3,734012.0,9898.0,UF
+22,Piauí,Indígena,2.3,5869.0,137.0,UF
+22,Piauí,Parda,1.1,2125066.0,23779.0,UF
+22,Piauí,Preta,1.0,403138.0,4013.0,UF
+22,Piauí,Total,1.2,3271199.0,37856.0,UF
+23,Ceará,Amarela,2.0,11793.0,232.0,UF
+23,Ceará,Branca,1.6,2424451.0,39917.0,UF
+23,Ceará,Indígena,1.3,40494.0,511.0,UF
+23,Ceará,Parda,1.4,5710276.0,78674.0,UF
+23,Ceará,Preta,1.2,605568.0,7158.0,UF
+23,Ceará,Total,1.4,8794957.0,126548.0,UF
+24,Rio Grande do Norte,Amarela,0.5,5401.0,28.0,UF
+24,Rio Grande do Norte,Branca,1.3,1297504.0,16622.0,UF
+24,Rio Grande do Norte,Indígena,1.8,9449.0,173.0,UF
+24,Rio Grande do Norte,Parda,1.1,1678634.0,17963.0,UF
+24,Rio Grande do Norte,Preta,0.9,311562.0,2838.0,UF
+24,Rio Grande do Norte,Total,1.1,3302729.0,37625.0,UF
+25,Paraíba,Amarela,1.2,4972.0,61.0,UF
+25,Paraíba,Branca,1.3,1410686.0,18867.0,UF
+25,Paraíba,Indígena,1.0,26989.0,281.0,UF
+25,Paraíba,Parda,1.1,2211921.0,24164.0,UF
+25,Paraíba,Preta,1.0,319949.0,3187.0,UF
+25,Paraíba,Total,1.2,3974687.0,46560.0,UF
+26,Pernambuco,Amarela,0.9,12841.0,110.0,UF
+26,Pernambuco,Branca,1.3,3036033.0,40008.0,UF
+26,Pernambuco,Indígena,1.1,86009.0,944.0,UF
+26,Pernambuco,Parda,1.1,5006767.0,56153.0,UF
+26,Pernambuco,Preta,0.9,915027.0,8637.0,UF
+26,Pernambuco,Total,1.2,9058931.0,105852.0,UF
+27,Alagoas,Amarela,0.6,5669.0,36.0,UF
+27,Alagoas,Branca,1.2,908324.0,10898.0,UF
+27,Alagoas,Indígena,0.8,20009.0,153.0,UF
+27,Alagoas,Parda,1.0,1890095.0,19446.0,UF
+27,Alagoas,Preta,0.9,303205.0,2610.0,UF
+27,Alagoas,Total,1.1,3127683.0,33143.0,UF
+28,Sergipe,Amarela,1.3,2780.0,37.0,UF
+28,Sergipe,Branca,1.4,550507.0,7700.0,UF
+28,Sergipe,Indígena,0.7,5472.0,37.0,UF
+28,Sergipe,Parda,1.1,1363881.0,15064.0,UF
+28,Sergipe,Preta,1.0,286991.0,2857.0,UF
+28,Sergipe,Total,1.2,2210004.0,25696.0,UF
+29,Bahia,Amarela,1.4,15820.0,215.0,UF
+29,Bahia,Branca,1.1,2755289.0,30717.0,UF
+29,Bahia,Indígena,1.2,84556.0,1052.0,UF
+29,Bahia,Parda,1.0,8118670.0,81641.0,UF
+29,Bahia,Preta,1.0,3165944.0,31292.0,UF
+29,Bahia,Total,1.0,14141626.0,144928.0,UF
+31,Minas Gerais,Amarela,1.1,31658.0,335.0,UF
+31,Minas Gerais,Branca,1.2,8407525.0,97968.0,UF
+31,Minas Gerais,Indígena,1.1,32152.0,340.0,UF
+31,Minas Gerais,Parda,1.1,9619091.0,104663.0,UF
+31,Minas Gerais,Preta,1.0,2447072.0,25240.0,UF
+31,Minas Gerais,Total,1.1,20539989.0,228557.0,UF
+32,Espírito Santo,Amarela,0.3,4891.0,13.0,UF
+32,Espírito Santo,Branca,1.3,1473203.0,19050.0,UF
+32,Espírito Santo,Indígena,1.8,11980.0,212.0,UF
+32,Espírito Santo,Parda,1.4,1909296.0,26859.0,UF
+32,Espírito Santo,Preta,1.2,434098.0,5195.0,UF
+32,Espírito Santo,Total,1.3,3833712.0,51328.0,UF
+33,Rio de Janeiro,Amarela,2.1,20084.0,417.0,UF
+33,Rio de Janeiro,Branca,1.4,6718429.0,93103.0,UF
+33,Rio de Janeiro,Indígena,1.2,17141.0,199.0,UF
+33,Rio de Janeiro,Parda,1.3,6671384.0,89430.0,UF
+33,Rio de Janeiro,Preta,1.2,2625279.0,31487.0,UF
+33,Rio de Janeiro,Total,1.3,16055174.0,214637.0,UF
+35,São Paulo,Amarela,1.2,511558.0,6359.0,UF
+35,São Paulo,Branca,1.3,25572256.0,323255.0,UF
+35,São Paulo,Indígena,1.4,54532.0,783.0,UF
+35,São Paulo,Parda,1.2,14645686.0,175036.0,UF
+35,São Paulo,Preta,1.2,3611409.0,41872.0,UF
+35,São Paulo,Total,1.2,44411238.0,547545.0,UF
+41,Paraná,Amarela,1.2,101248.0,1195.0,UF
+41,Paraná,Branca,1.2,7356696.0,87015.0,UF
+41,Paraná,Indígena,0.7,28213.0,203.0,UF
+41,Paraná,Parda,1.1,3465007.0,39254.0,UF
+41,Paraná,Preta,1.0,492040.0,4886.0,UF
+41,Paraná,Total,1.2,11444380.0,132604.0,UF
+42,Santa Catarina,Amarela,1.7,12651.0,220.0,UF
+42,Santa Catarina,Branca,1.2,5806821.0,71345.0,UF
+42,Santa Catarina,Indígena,0.7,19942.0,143.0,UF
+42,Santa Catarina,Parda,1.2,1459899.0,16964.0,UF
+42,Santa Catarina,Preta,0.9,310088.0,2916.0,UF
+42,Santa Catarina,Total,1.2,7610361.0,91588.0,UF
+43,Rio Grande do Sul,Amarela,0.9,8264.0,72.0,UF
+43,Rio Grande do Sul,Branca,1.1,8513344.0,96773.0,UF
+43,Rio Grande do Sul,Indígena,1.2,34214.0,400.0,UF
+43,Rio Grande do Sul,Parda,1.2,1612062.0,18714.0,UF
+43,Rio Grande do Sul,Preta,1.2,714522.0,8282.0,UF
+43,Rio Grande do Sul,Total,1.1,10882965.0,124241.0,UF
+50,Mato Grosso do Sul,Amarela,1.5,19977.0,301.0,UF
+50,Mato Grosso do Sul,Branca,1.2,1161181.0,13491.0,UF
+50,Mato Grosso do Sul,Indígena,0.8,95506.0,762.0,UF
+50,Mato Grosso do Sul,Parda,1.0,1297658.0,12907.0,UF
+50,Mato Grosso do Sul,Preta,0.9,182491.0,1628.0,UF
+50,Mato Grosso do Sul,Total,1.1,2757013.0,29088.0,UF
+51,Mato Grosso,Amarela,1.0,12070.0,119.0,UF
+51,Mato Grosso,Branca,1.3,1180952.0,14999.0,UF
+51,Mato Grosso,Indígena,0.4,57516.0,216.0,UF
+51,Mato Grosso,Parda,1.1,2047326.0,22216.0,UF
+51,Mato Grosso,Preta,1.0,360475.0,3697.0,UF
+51,Mato Grosso,Total,1.1,3658649.0,41247.0,UF
+52,Goiás,Amarela,1.1,17664.0,192.0,UF
+52,Goiás,Branca,1.2,2548202.0,29436.0,UF
+52,Goiás,Indígena,1.3,10534.0,135.0,UF
+52,Goiás,Parda,1.0,3828817.0,38319.0,UF
+52,Goiás,Preta,1.1,650394.0,6949.0,UF
+52,Goiás,Total,1.1,7056495.0,75040.0,UF
+53,Distrito Federal,Amarela,0.7,11820.0,85.0,UF
+53,Distrito Federal,Branca,1.3,1120042.0,14019.0,UF
+53,Distrito Federal,Indígena,0.3,5657.0,18.0,UF
+53,Distrito Federal,Parda,1.2,1375544.0,17145.0,UF
+53,Distrito Federal,Preta,0.9,303561.0,2849.0,UF
+53,Distrito Federal,Total,1.2,2817381.0,34136.0,UF
+1600055,Serra do Navio - AP,Branca,0.8,1019.0,8.0,MUN
+1600055,Serra do Navio - AP,Indígena,,3.0,,MUN
+1600055,Serra do Navio - AP,Parda,0.8,3234.0,27.0,MUN
+1600055,Serra do Navio - AP,Preta,1.1,416.0,5.0,MUN
+1600055,Serra do Navio - AP,Total,0.9,4673.0,40.0,MUN
+1600105,Amapá - AP,Amarela,,15.0,,MUN
+1600105,Amapá - AP,Branca,1.3,1425.0,19.0,MUN
+1600105,Amapá - AP,Indígena,,5.0,,MUN
+1600105,Amapá - AP,Parda,2.4,5666.0,134.0,MUN
+1600105,Amapá - AP,Preta,1.3,832.0,11.0,MUN
+1600105,Amapá - AP,Total,2.1,7943.0,163.0,MUN
+1600154,Pedra Branca do Amapari - AP,Amarela,,36.0,,MUN
+1600154,Pedra Branca do Amapari - AP,Branca,2.0,2042.0,41.0,MUN
+1600154,Pedra Branca do Amapari - AP,Indígena,0.5,1704.0,9.0,MUN
+1600154,Pedra Branca do Amapari - AP,Parda,1.0,7809.0,77.0,MUN
+1600154,Pedra Branca do Amapari - AP,Preta,0.4,1254.0,5.0,MUN
+1600154,Pedra Branca do Amapari - AP,Total,1.0,12847.0,132.0,MUN
+1600204,Calçoene - AP,Branca,1.0,1737.0,17.0,MUN
+1600204,Calçoene - AP,Indígena,,15.0,,MUN
+1600204,Calçoene - AP,Parda,1.0,6987.0,72.0,MUN
+1600204,Calçoene - AP,Preta,0.1,1873.0,1.0,MUN
+1600204,Calçoene - AP,Total,0.8,10612.0,90.0,MUN
+1600212,Cutias - AP,Amarela,,3.0,,MUN
+1600212,Cutias - AP,Branca,1.9,597.0,11.0,MUN
+1600212,Cutias - AP,Parda,0.7,3493.0,24.0,MUN
+1600212,Cutias - AP,Preta,1.3,365.0,5.0,MUN
+1600212,Cutias - AP,Total,0.9,4461.0,40.0,MUN
+1600238,Ferreira Gomes - AP,Branca,2.0,1000.0,20.0,MUN
+1600238,Ferreira Gomes - AP,Indígena,,5.0,,MUN
+1600238,Ferreira Gomes - AP,Parda,1.2,4644.0,56.0,MUN
+1600238,Ferreira Gomes - AP,Preta,0.5,1016.0,5.0,MUN
+1600238,Ferreira Gomes - AP,Total,1.2,6666.0,81.0,MUN
+1600253,Itaubal - AP,Amarela,,6.0,,MUN
+1600253,Itaubal - AP,Branca,,805.0,,MUN
+1600253,Itaubal - AP,Indígena,,11.0,,MUN
+1600253,Itaubal - AP,Parda,0.7,4122.0,28.0,MUN
+1600253,Itaubal - AP,Preta,1.3,656.0,8.0,MUN
+1600253,Itaubal - AP,Total,0.6,5599.0,36.0,MUN
+1600279,Laranjal do Jari - AP,Branca,1.6,5823.0,96.0,MUN
+1600279,Laranjal do Jari - AP,Indígena,,135.0,,MUN
+1600279,Laranjal do Jari - AP,Parda,1.3,24759.0,329.0,MUN
+1600279,Laranjal do Jari - AP,Preta,0.8,4398.0,36.0,MUN
+1600279,Laranjal do Jari - AP,Total,1.3,35114.0,461.0,MUN
+1600303,Macapá - AP,Amarela,,513.0,,MUN
+1600303,Macapá - AP,Branca,2.6,105271.0,2737.0,MUN
+1600303,Macapá - AP,Indígena,,800.0,,MUN
+1600303,Macapá - AP,Parda,1.5,281143.0,4295.0,MUN
+1600303,Macapá - AP,Preta,1.0,55206.0,553.0,MUN
+1600303,Macapá - AP,Total,1.7,442933.0,7586.0,MUN
+1600402,Mazagão - AP,Amarela,,11.0,,MUN
+1600402,Mazagão - AP,Branca,1.5,3161.0,47.0,MUN
+1600402,Mazagão - AP,Indígena,,88.0,,MUN
+1600402,Mazagão - AP,Parda,0.7,15619.0,103.0,MUN
+1600402,Mazagão - AP,Preta,1.0,3045.0,31.0,MUN
+1600402,Mazagão - AP,Total,0.8,21924.0,181.0,MUN
+1600501,Oiapoque - AP,Amarela,100.0,9.0,9.0,MUN
+1600501,Oiapoque - AP,Branca,0.2,3921.0,9.0,MUN
+1600501,Oiapoque - AP,Indígena,0.3,8103.0,22.0,MUN
+1600501,Oiapoque - AP,Parda,1.0,12705.0,121.0,MUN
+1600501,Oiapoque - AP,Preta,0.8,2744.0,21.0,MUN
+1600501,Oiapoque - AP,Total,0.7,27482.0,183.0,MUN
+1600535,Porto Grande - AP,Amarela,16.4,54.0,9.0,MUN
+1600535,Porto Grande - AP,Branca,1.6,3251.0,53.0,MUN
+1600535,Porto Grande - AP,Parda,0.9,12789.0,110.0,MUN
+1600535,Porto Grande - AP,Preta,0.6,1754.0,11.0,MUN
+1600535,Porto Grande - AP,Total,1.0,17848.0,183.0,MUN
+1600550,Pracuúba - AP,Branca,1.8,525.0,10.0,MUN
+1600550,Pracuúba - AP,Indígena,,7.0,,MUN
+1600550,Pracuúba - AP,Parda,0.6,2895.0,16.0,MUN
+1600550,Pracuúba - AP,Preta,1.5,375.0,5.0,MUN
+1600550,Pracuúba - AP,Total,0.8,3803.0,31.0,MUN
+1600600,Santana - AP,Amarela,,62.0,,MUN
+1600600,Santana - AP,Branca,1.7,23039.0,397.0,MUN
+1600600,Santana - AP,Indígena,,90.0,,MUN
+1600600,Santana - AP,Parda,1.4,75309.0,1078.0,MUN
+1600600,Santana - AP,Preta,1.1,9117.0,101.0,MUN
+1600600,Santana - AP,Total,1.5,107618.0,1576.0,MUN
+1600709,Tartarugalzinho - AP,Amarela,,3.0,,MUN
+1600709,Tartarugalzinho - AP,Branca,1.5,2106.0,32.0,MUN
+1600709,Tartarugalzinho - AP,Parda,1.2,9344.0,116.0,MUN
+1600709,Tartarugalzinho - AP,Preta,1.2,1491.0,18.0,MUN
+1600709,Tartarugalzinho - AP,Total,1.3,12945.0,167.0,MUN
+1600808,Vitória do Jari - AP,Amarela,,4.0,,MUN
+1600808,Vitória do Jari - AP,Branca,0.6,1857.0,10.0,MUN
+1600808,Vitória do Jari - AP,Parda,1.4,8399.0,113.0,MUN
+1600808,Vitória do Jari - AP,Preta,0.6,1031.0,6.0,MUN
+1600808,Vitória do Jari - AP,Total,1.2,11291.0,130.0,MUN

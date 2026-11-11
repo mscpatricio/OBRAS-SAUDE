@@ -1,0 +1,840 @@
+cod,nome,idade,raca,tx_tea,tx_total,nivel
+1,Brasil,15 a 17 anos,Amarela,77.7,85.62,BR
+1,Brasil,15 a 17 anos,Branca,79.04,86.75,BR
+1,Brasil,15 a 17 anos,Indígena,76.09,78.37,BR
+1,Brasil,15 a 17 anos,Parda,76.07,84.47,BR
+1,Brasil,15 a 17 anos,Preta,75.06,83.92,BR
+1,Brasil,15 a 17 anos,Total,77.28,85.25,BR
+1,Brasil,18 a 24 anos,Amarela,39.57,42.61,BR
+1,Brasil,18 a 24 anos,Branca,33.17,32.4,BR
+1,Brasil,18 a 24 anos,Indígena,26.82,27.48,BR
+1,Brasil,18 a 24 anos,Parda,28.04,24.52,BR
+1,Brasil,18 a 24 anos,Preta,29.34,24.62,BR
+1,Brasil,18 a 24 anos,Total,30.41,27.68,BR
+1,Brasil,25 anos ou mais,Amarela,6.43,6.79,BR
+1,Brasil,25 anos ou mais,Branca,8.71,6.16,BR
+1,Brasil,25 anos ou mais,Indígena,8.75,7.39,BR
+1,Brasil,25 anos ou mais,Parda,7.82,5.93,BR
+1,Brasil,25 anos ou mais,Preta,8.71,6.43,BR
+1,Brasil,25 anos ou mais,Total,8.32,6.1,BR
+1,Brasil,6 a 14 anos,Amarela,94.2,98.38,BR
+1,Brasil,6 a 14 anos,Branca,94.71,98.49,BR
+1,Brasil,6 a 14 anos,Indígena,90.91,92.12,BR
+1,Brasil,6 a 14 anos,Parda,94.15,98.23,BR
+1,Brasil,6 a 14 anos,Preta,93.77,98.06,BR
+1,Brasil,6 a 14 anos,Total,94.36,98.26,BR
+1,Brasil,Total,Amarela,25.45,19.2,BR
+1,Brasil,Total,Branca,37.37,23.51,BR
+1,Brasil,Total,Indígena,36.04,34.31,BR
+1,Brasil,Total,Parda,37.73,25.9,BR
+1,Brasil,Total,Preta,31.0,20.74,BR
+1,Brasil,Total,Total,36.85,24.34,BR
+11,Rondônia,15 a 17 anos,Amarela,,73.4,UF
+11,Rondônia,15 a 17 anos,Branca,66.12,87.38,UF
+11,Rondônia,15 a 17 anos,Indígena,74.11,79.18,UF
+11,Rondônia,15 a 17 anos,Parda,81.49,83.85,UF
+11,Rondônia,15 a 17 anos,Preta,91.57,83.91,UF
+11,Rondônia,15 a 17 anos,Total,78.6,84.76,UF
+11,Rondônia,18 a 24 anos,Amarela,,44.26,UF
+11,Rondônia,18 a 24 anos,Branca,31.16,33.06,UF
+11,Rondônia,18 a 24 anos,Indígena,16.67,35.66,UF
+11,Rondônia,18 a 24 anos,Parda,25.43,28.49,UF
+11,Rondônia,18 a 24 anos,Preta,12.83,27.01,UF
+11,Rondônia,18 a 24 anos,Total,26.38,29.78,UF
+11,Rondônia,25 anos ou mais,Amarela,,8.53,UF
+11,Rondônia,25 anos ou mais,Branca,18.81,8.09,UF
+11,Rondônia,25 anos ou mais,Indígena,10.25,9.6,UF
+11,Rondônia,25 anos ou mais,Parda,8.19,7.68,UF
+11,Rondônia,25 anos ou mais,Preta,16.02,7.81,UF
+11,Rondônia,25 anos ou mais,Total,12.0,7.84,UF
+11,Rondônia,6 a 14 anos,Amarela,100.0,97.42,UF
+11,Rondônia,6 a 14 anos,Branca,96.78,98.1,UF
+11,Rondônia,6 a 14 anos,Indígena,93.95,94.56,UF
+11,Rondônia,6 a 14 anos,Parda,95.41,97.45,UF
+11,Rondônia,6 a 14 anos,Preta,79.75,97.94,UF
+11,Rondônia,6 a 14 anos,Total,94.73,97.62,UF
+11,Rondônia,Total,Amarela,49.88,23.09,UF
+11,Rondônia,Total,Branca,46.26,27.39,UF
+11,Rondônia,Total,Indígena,66.13,39.16,UF
+11,Rondônia,Total,Parda,39.25,28.54,UF
+11,Rondônia,Total,Preta,30.69,20.5,UF
+11,Rondônia,Total,Total,40.56,27.54,UF
+12,Acre,15 a 17 anos,Amarela,,86.18,UF
+12,Acre,15 a 17 anos,Branca,78.54,84.87,UF
+12,Acre,15 a 17 anos,Indígena,59.71,75.19,UF
+12,Acre,15 a 17 anos,Parda,79.85,80.57,UF
+12,Acre,15 a 17 anos,Preta,100.0,82.64,UF
+12,Acre,15 a 17 anos,Total,79.99,81.44,UF
+12,Acre,18 a 24 anos,Amarela,,37.86,UF
+12,Acre,18 a 24 anos,Branca,38.15,30.36,UF
+12,Acre,18 a 24 anos,Indígena,41.04,35.91,UF
+12,Acre,18 a 24 anos,Parda,24.06,26.43,UF
+12,Acre,18 a 24 anos,Preta,30.3,27.63,UF
+12,Acre,18 a 24 anos,Total,28.17,27.72,UF
+12,Acre,25 anos ou mais,Amarela,27.34,8.76,UF
+12,Acre,25 anos ou mais,Branca,3.86,7.0,UF
+12,Acre,25 anos ou mais,Indígena,16.14,8.2,UF
+12,Acre,25 anos ou mais,Parda,8.71,6.54,UF
+12,Acre,25 anos ou mais,Preta,4.11,6.23,UF
+12,Acre,25 anos ou mais,Total,7.38,6.64,UF
+12,Acre,6 a 14 anos,Amarela,100.0,94.72,UF
+12,Acre,6 a 14 anos,Branca,97.02,97.65,UF
+12,Acre,6 a 14 anos,Indígena,93.23,89.76,UF
+12,Acre,6 a 14 anos,Parda,96.16,96.78,UF
+12,Acre,6 a 14 anos,Preta,95.74,98.02,UF
+12,Acre,6 a 14 anos,Total,96.34,96.65,UF
+12,Acre,Total,Amarela,54.85,27.13,UF
+12,Acre,Total,Branca,58.36,32.8,UF
+12,Acre,Total,Indígena,50.64,45.77,UF
+12,Acre,Total,Parda,54.34,30.69,UF
+12,Acre,Total,Preta,44.62,24.22,UF
+12,Acre,Total,Total,54.64,30.99,UF
+13,Amazonas,15 a 17 anos,Amarela,100.0,94.81,UF
+13,Amazonas,15 a 17 anos,Branca,77.36,86.56,UF
+13,Amazonas,15 a 17 anos,Indígena,61.59,78.83,UF
+13,Amazonas,15 a 17 anos,Parda,70.71,83.65,UF
+13,Amazonas,15 a 17 anos,Preta,62.14,83.76,UF
+13,Amazonas,15 a 17 anos,Total,71.79,83.71,UF
+13,Amazonas,18 a 24 anos,Amarela,,36.45,UF
+13,Amazonas,18 a 24 anos,Branca,30.93,31.66,UF
+13,Amazonas,18 a 24 anos,Indígena,22.45,27.44,UF
+13,Amazonas,18 a 24 anos,Parda,34.32,27.1,UF
+13,Amazonas,18 a 24 anos,Preta,21.59,23.76,UF
+13,Amazonas,18 a 24 anos,Total,32.15,27.8,UF
+13,Amazonas,25 anos ou mais,Amarela,,14.46,UF
+13,Amazonas,25 anos ou mais,Branca,10.34,9.86,UF
+13,Amazonas,25 anos ou mais,Indígena,7.0,7.05,UF
+13,Amazonas,25 anos ou mais,Parda,10.46,9.17,UF
+13,Amazonas,25 anos ou mais,Preta,8.23,9.57,UF
+13,Amazonas,25 anos ou mais,Total,10.12,9.21,UF
+13,Amazonas,6 a 14 anos,Amarela,12.34,90.37,UF
+13,Amazonas,6 a 14 anos,Branca,86.41,97.02,UF
+13,Amazonas,6 a 14 anos,Indígena,83.64,90.46,UF
+13,Amazonas,6 a 14 anos,Parda,88.8,96.53,UF
+13,Amazonas,6 a 14 anos,Preta,90.12,95.17,UF
+13,Amazonas,6 a 14 anos,Total,87.79,95.93,UF
+13,Amazonas,Total,Amarela,11.15,26.95,UF
+13,Amazonas,Total,Branca,48.04,33.25,UF
+13,Amazonas,Total,Indígena,38.14,38.6,UF
+13,Amazonas,Total,Parda,44.15,32.65,UF
+13,Amazonas,Total,Preta,30.76,23.58,UF
+13,Amazonas,Total,Total,44.09,32.73,UF
+14,Roraima,15 a 17 anos,Amarela,,55.02,UF
+14,Roraima,15 a 17 anos,Branca,78.7,82.87,UF
+14,Roraima,15 a 17 anos,Indígena,96.31,66.21,UF
+14,Roraima,15 a 17 anos,Parda,80.41,81.6,UF
+14,Roraima,15 a 17 anos,Preta,64.67,77.5,UF
+14,Roraima,15 a 17 anos,Total,81.26,78.78,UF
+14,Roraima,18 a 24 anos,Amarela,,11.88,UF
+14,Roraima,18 a 24 anos,Branca,40.93,26.46,UF
+14,Roraima,18 a 24 anos,Indígena,44.49,23.05,UF
+14,Roraima,18 a 24 anos,Parda,23.81,23.92,UF
+14,Roraima,18 a 24 anos,Preta,13.21,19.81,UF
+14,Roraima,18 a 24 anos,Total,30.57,23.97,UF
+14,Roraima,25 anos ou mais,Branca,5.15,7.54,UF
+14,Roraima,25 anos ou mais,Indígena,17.75,10.2,UF
+14,Roraima,25 anos ou mais,Parda,8.55,6.82,UF
+14,Roraima,25 anos ou mais,Preta,12.68,7.0,UF
+14,Roraima,25 anos ou mais,Total,9.48,7.32,UF
+14,Roraima,6 a 14 anos,Amarela,,96.2,UF
+14,Roraima,6 a 14 anos,Branca,87.16,94.79,UF
+14,Roraima,6 a 14 anos,Indígena,90.41,78.13,UF
+14,Roraima,6 a 14 anos,Parda,91.07,95.49,UF
+14,Roraima,6 a 14 anos,Preta,91.03,90.74,UF
+14,Roraima,6 a 14 anos,Total,89.84,91.52,UF
+14,Roraima,Total,Amarela,,18.83,UF
+14,Roraima,Total,Branca,44.62,30.08,UF
+14,Roraima,Total,Indígena,46.13,37.53,UF
+14,Roraima,Total,Parda,40.49,30.32,UF
+14,Roraima,Total,Preta,36.44,22.59,UF
+14,Roraima,Total,Total,41.75,30.57,UF
+15,Pará,15 a 17 anos,Amarela,,84.7,UF
+15,Pará,15 a 17 anos,Branca,74.82,85.94,UF
+15,Pará,15 a 17 anos,Indígena,85.7,79.61,UF
+15,Pará,15 a 17 anos,Parda,80.42,83.28,UF
+15,Pará,15 a 17 anos,Preta,88.63,83.05,UF
+15,Pará,15 a 17 anos,Total,79.83,83.72,UF
+15,Pará,18 a 24 anos,Amarela,,32.15,UF
+15,Pará,18 a 24 anos,Branca,38.36,33.44,UF
+15,Pará,18 a 24 anos,Indígena,44.68,38.92,UF
+15,Pará,18 a 24 anos,Parda,31.44,28.2,UF
+15,Pará,18 a 24 anos,Preta,31.96,28.94,UF
+15,Pará,18 a 24 anos,Total,33.09,29.37,UF
+15,Pará,25 anos ou mais,Amarela,,8.41,UF
+15,Pará,25 anos ou mais,Branca,9.85,7.76,UF
+15,Pará,25 anos ou mais,Indígena,10.91,11.46,UF
+15,Pará,25 anos ou mais,Parda,8.17,7.05,UF
+15,Pará,25 anos ou mais,Preta,9.76,7.52,UF
+15,Pará,25 anos ou mais,Total,8.69,7.27,UF
+15,Pará,6 a 14 anos,Amarela,100.0,95.44,UF
+15,Pará,6 a 14 anos,Branca,93.64,98.01,UF
+15,Pará,6 a 14 anos,Indígena,95.09,91.82,UF
+15,Pará,6 a 14 anos,Parda,92.52,97.49,UF
+15,Pará,6 a 14 anos,Preta,91.09,97.5,UF
+15,Pará,6 a 14 anos,Total,92.73,97.51,UF
+15,Pará,Total,Amarela,20.44,23.48,UF
+15,Pará,Total,Branca,45.18,30.87,UF
+15,Pará,Total,Indígena,46.46,43.16,UF
+15,Pará,Total,Parda,39.91,30.37,UF
+15,Pará,Total,Preta,35.24,24.46,UF
+15,Pará,Total,Total,40.7,29.96,UF
+16,Amapá,15 a 17 anos,Amarela,,100.0,UF
+16,Amapá,15 a 17 anos,Branca,96.31,84.96,UF
+16,Amapá,15 a 17 anos,Indígena,100.0,90.2,UF
+16,Amapá,15 a 17 anos,Parda,79.95,82.15,UF
+16,Amapá,15 a 17 anos,Preta,34.56,83.21,UF
+16,Amapá,15 a 17 anos,Total,82.62,83.08,UF
+16,Amapá,18 a 24 anos,Amarela,,26.11,UF
+16,Amapá,18 a 24 anos,Branca,48.82,35.59,UF
+16,Amapá,18 a 24 anos,Indígena,34.46,49.75,UF
+16,Amapá,18 a 24 anos,Parda,20.91,28.07,UF
+16,Amapá,18 a 24 anos,Preta,15.81,29.14,UF
+16,Amapá,18 a 24 anos,Total,29.18,30.19,UF
+16,Amapá,25 anos ou mais,Amarela,,6.75,UF
+16,Amapá,25 anos ou mais,Branca,17.71,9.47,UF
+16,Amapá,25 anos ou mais,Indígena,9.42,15.34,UF
+16,Amapá,25 anos ou mais,Parda,10.82,7.95,UF
+16,Amapá,25 anos ou mais,Preta,,7.99,UF
+16,Amapá,25 anos ou mais,Total,11.29,8.34,UF
+16,Amapá,6 a 14 anos,Amarela,,100.0,UF
+16,Amapá,6 a 14 anos,Branca,94.0,96.0,UF
+16,Amapá,6 a 14 anos,Indígena,72.82,95.94,UF
+16,Amapá,6 a 14 anos,Parda,93.37,96.42,UF
+16,Amapá,6 a 14 anos,Preta,91.47,97.83,UF
+16,Amapá,6 a 14 anos,Total,93.39,96.45,UF
+16,Amapá,Total,Amarela,,19.46,UF
+16,Amapá,Total,Branca,64.89,35.23,UF
+16,Amapá,Total,Indígena,46.98,50.4,UF
+16,Amapá,Total,Parda,47.44,32.07,UF
+16,Amapá,Total,Preta,38.81,27.04,UF
+16,Amapá,Total,Total,51.75,32.35,UF
+17,Tocantins,15 a 17 anos,Amarela,,97.63,UF
+17,Tocantins,15 a 17 anos,Branca,95.6,88.59,UF
+17,Tocantins,15 a 17 anos,Indígena,100.0,86.94,UF
+17,Tocantins,15 a 17 anos,Parda,61.51,85.79,UF
+17,Tocantins,15 a 17 anos,Preta,81.23,82.67,UF
+17,Tocantins,15 a 17 anos,Total,72.23,86.09,UF
+17,Tocantins,18 a 24 anos,Amarela,,38.9,UF
+17,Tocantins,18 a 24 anos,Branca,49.55,34.73,UF
+17,Tocantins,18 a 24 anos,Indígena,25.06,37.73,UF
+17,Tocantins,18 a 24 anos,Parda,32.92,27.33,UF
+17,Tocantins,18 a 24 anos,Preta,21.57,24.84,UF
+17,Tocantins,18 a 24 anos,Total,34.78,28.76,UF
+17,Tocantins,25 anos ou mais,Amarela,,5.16,UF
+17,Tocantins,25 anos ou mais,Branca,2.6,6.01,UF
+17,Tocantins,25 anos ou mais,Indígena,37.38,10.0,UF
+17,Tocantins,25 anos ou mais,Parda,6.46,5.37,UF
+17,Tocantins,25 anos ou mais,Preta,8.87,5.31,UF
+17,Tocantins,25 anos ou mais,Total,6.1,5.55,UF
+17,Tocantins,6 a 14 anos,Amarela,,100.0,UF
+17,Tocantins,6 a 14 anos,Branca,91.16,98.81,UF
+17,Tocantins,6 a 14 anos,Indígena,92.32,95.78,UF
+17,Tocantins,6 a 14 anos,Parda,92.89,98.77,UF
+17,Tocantins,6 a 14 anos,Preta,90.91,98.57,UF
+17,Tocantins,6 a 14 anos,Total,92.29,98.7,UF
+17,Tocantins,Total,Amarela,,25.39,UF
+17,Tocantins,Total,Branca,39.27,27.62,UF
+17,Tocantins,Total,Indígena,54.68,46.25,UF
+17,Tocantins,Total,Parda,36.82,28.27,UF
+17,Tocantins,Total,Preta,24.79,21.76,UF
+17,Tocantins,Total,Total,35.72,27.42,UF
+21,Maranhão,15 a 17 anos,Amarela,100.0,86.88,UF
+21,Maranhão,15 a 17 anos,Branca,75.32,86.34,UF
+21,Maranhão,15 a 17 anos,Indígena,75.0,72.5,UF
+21,Maranhão,15 a 17 anos,Parda,76.3,84.66,UF
+21,Maranhão,15 a 17 anos,Preta,62.6,83.71,UF
+21,Maranhão,15 a 17 anos,Total,74.88,84.77,UF
+21,Maranhão,18 a 24 anos,Amarela,,26.36,UF
+21,Maranhão,18 a 24 anos,Branca,25.4,28.11,UF
+21,Maranhão,18 a 24 anos,Indígena,32.96,35.3,UF
+21,Maranhão,18 a 24 anos,Parda,24.87,23.12,UF
+21,Maranhão,18 a 24 anos,Preta,21.84,24.11,UF
+21,Maranhão,18 a 24 anos,Total,24.74,24.29,UF
+21,Maranhão,25 anos ou mais,Amarela,,7.76,UF
+21,Maranhão,25 anos ou mais,Branca,7.13,5.95,UF
+21,Maranhão,25 anos ou mais,Indígena,15.61,7.36,UF
+21,Maranhão,25 anos ou mais,Parda,6.49,5.49,UF
+21,Maranhão,25 anos ou mais,Preta,5.47,5.55,UF
+21,Maranhão,25 anos ou mais,Total,6.51,5.61,UF
+21,Maranhão,6 a 14 anos,Amarela,100.0,98.79,UF
+21,Maranhão,6 a 14 anos,Branca,92.48,98.55,UF
+21,Maranhão,6 a 14 anos,Indígena,76.98,91.86,UF
+21,Maranhão,6 a 14 anos,Parda,93.22,98.53,UF
+21,Maranhão,6 a 14 anos,Preta,97.74,98.42,UF
+21,Maranhão,6 a 14 anos,Total,93.36,98.44,UF
+21,Maranhão,Total,Amarela,59.08,25.38,UF
+21,Maranhão,Total,Branca,43.47,28.25,UF
+21,Maranhão,Total,Indígena,34.29,41.4,UF
+21,Maranhão,Total,Parda,38.54,29.57,UF
+21,Maranhão,Total,Preta,29.13,21.77,UF
+21,Maranhão,Total,Total,38.48,28.35,UF
+22,Piauí,15 a 17 anos,Amarela,,95.57,UF
+22,Piauí,15 a 17 anos,Branca,74.34,89.1,UF
+22,Piauí,15 a 17 anos,Indígena,,78.59,UF
+22,Piauí,15 a 17 anos,Parda,75.85,87.81,UF
+22,Piauí,15 a 17 anos,Preta,76.18,85.95,UF
+22,Piauí,15 a 17 anos,Total,75.51,87.89,UF
+22,Piauí,18 a 24 anos,Amarela,,39.75,UF
+22,Piauí,18 a 24 anos,Branca,39.67,35.8,UF
+22,Piauí,18 a 24 anos,Indígena,,31.98,UF
+22,Piauí,18 a 24 anos,Parda,34.58,28.41,UF
+22,Piauí,18 a 24 anos,Preta,37.52,28.95,UF
+22,Piauí,18 a 24 anos,Total,35.75,30.11,UF
+22,Piauí,25 anos ou mais,Amarela,24.38,6.65,UF
+22,Piauí,25 anos ou mais,Branca,8.56,6.31,UF
+22,Piauí,25 anos ou mais,Indígena,,6.83,UF
+22,Piauí,25 anos ou mais,Parda,7.24,5.83,UF
+22,Piauí,25 anos ou mais,Preta,6.91,5.97,UF
+22,Piauí,25 anos ou mais,Total,7.45,5.96,UF
+22,Piauí,6 a 14 anos,Amarela,,100.0,UF
+22,Piauí,6 a 14 anos,Branca,93.43,98.91,UF
+22,Piauí,6 a 14 anos,Indígena,100.0,99.73,UF
+22,Piauí,6 a 14 anos,Parda,93.25,98.94,UF
+22,Piauí,6 a 14 anos,Preta,95.39,98.86,UF
+22,Piauí,6 a 14 anos,Total,93.47,98.93,UF
+22,Piauí,Total,Amarela,20.22,24.81,UF
+22,Piauí,Total,Branca,51.14,27.48,UF
+22,Piauí,Total,Indígena,8.31,27.35,UF
+22,Piauí,Total,Parda,42.77,26.71,UF
+22,Piauí,Total,Preta,32.72,20.73,UF
+22,Piauí,Total,Total,43.52,26.12,UF
+23,Ceará,15 a 17 anos,Amarela,100.0,83.89,UF
+23,Ceará,15 a 17 anos,Branca,72.55,87.62,UF
+23,Ceará,15 a 17 anos,Indígena,89.35,83.34,UF
+23,Ceará,15 a 17 anos,Parda,73.43,85.4,UF
+23,Ceará,15 a 17 anos,Preta,62.87,83.6,UF
+23,Ceará,15 a 17 anos,Total,72.63,85.91,UF
+23,Ceará,18 a 24 anos,Amarela,72.21,24.49,UF
+23,Ceará,18 a 24 anos,Branca,31.62,30.15,UF
+23,Ceará,18 a 24 anos,Indígena,6.95,16.49,UF
+23,Ceará,18 a 24 anos,Parda,21.35,22.15,UF
+23,Ceará,18 a 24 anos,Preta,25.57,22.23,UF
+23,Ceará,18 a 24 anos,Total,24.88,24.27,UF
+23,Ceará,25 anos ou mais,Amarela,,8.91,UF
+23,Ceará,25 anos ou mais,Branca,8.2,5.99,UF
+23,Ceará,25 anos ou mais,Indígena,0.38,5.43,UF
+23,Ceará,25 anos ou mais,Parda,5.93,5.28,UF
+23,Ceará,25 anos ou mais,Preta,7.44,5.86,UF
+23,Ceará,25 anos ou mais,Total,6.71,5.53,UF
+23,Ceará,6 a 14 anos,Amarela,100.0,98.09,UF
+23,Ceará,6 a 14 anos,Branca,93.4,98.64,UF
+23,Ceará,6 a 14 anos,Indígena,95.48,97.62,UF
+23,Ceará,6 a 14 anos,Parda,95.33,98.63,UF
+23,Ceará,6 a 14 anos,Preta,96.13,98.21,UF
+23,Ceará,6 a 14 anos,Total,94.76,98.61,UF
+23,Ceará,Total,Amarela,65.71,22.46,UF
+23,Ceará,Total,Branca,44.02,25.38,UF
+23,Ceará,Total,Indígena,33.24,24.81,UF
+23,Ceará,Total,Parda,41.04,24.75,UF
+23,Ceará,Total,Preta,32.9,17.49,UF
+23,Ceará,Total,Total,41.49,24.39,UF
+24,Rio Grande do Norte,15 a 17 anos,Amarela,,79.51,UF
+24,Rio Grande do Norte,15 a 17 anos,Branca,76.69,89.09,UF
+24,Rio Grande do Norte,15 a 17 anos,Indígena,100.0,84.83,UF
+24,Rio Grande do Norte,15 a 17 anos,Parda,72.06,86.94,UF
+24,Rio Grande do Norte,15 a 17 anos,Preta,71.18,83.71,UF
+24,Rio Grande do Norte,15 a 17 anos,Total,74.15,87.49,UF
+24,Rio Grande do Norte,18 a 24 anos,Amarela,,37.92,UF
+24,Rio Grande do Norte,18 a 24 anos,Branca,34.46,36.03,UF
+24,Rio Grande do Norte,18 a 24 anos,Indígena,,18.61,UF
+24,Rio Grande do Norte,18 a 24 anos,Parda,30.14,29.87,UF
+24,Rio Grande do Norte,18 a 24 anos,Preta,33.19,28.98,UF
+24,Rio Grande do Norte,18 a 24 anos,Total,31.8,32.1,UF
+24,Rio Grande do Norte,25 anos ou mais,Amarela,,6.56,UF
+24,Rio Grande do Norte,25 anos ou mais,Branca,8.21,6.43,UF
+24,Rio Grande do Norte,25 anos ou mais,Indígena,27.12,5.84,UF
+24,Rio Grande do Norte,25 anos ou mais,Parda,6.58,6.01,UF
+24,Rio Grande do Norte,25 anos ou mais,Preta,8.52,6.22,UF
+24,Rio Grande do Norte,25 anos ou mais,Total,7.54,6.2,UF
+24,Rio Grande do Norte,6 a 14 anos,Amarela,,98.64,UF
+24,Rio Grande do Norte,6 a 14 anos,Branca,91.58,98.6,UF
+24,Rio Grande do Norte,6 a 14 anos,Indígena,100.0,99.5,UF
+24,Rio Grande do Norte,6 a 14 anos,Parda,91.46,98.44,UF
+24,Rio Grande do Norte,6 a 14 anos,Preta,97.02,98.32,UF
+24,Rio Grande do Norte,6 a 14 anos,Total,91.92,98.5,UF
+24,Rio Grande do Norte,Total,Amarela,,21.84,UF
+24,Rio Grande do Norte,Total,Branca,43.54,26.88,UF
+24,Rio Grande do Norte,Total,Indígena,46.32,24.24,UF
+24,Rio Grande do Norte,Total,Parda,39.12,25.63,UF
+24,Rio Grande do Norte,Total,Preta,34.52,19.22,UF
+24,Rio Grande do Norte,Total,Total,40.6,25.47,UF
+25,Paraíba,15 a 17 anos,Amarela,,91.63,UF
+25,Paraíba,15 a 17 anos,Branca,77.13,86.67,UF
+25,Paraíba,15 a 17 anos,Indígena,76.64,87.37,UF
+25,Paraíba,15 a 17 anos,Parda,75.71,84.74,UF
+25,Paraíba,15 a 17 anos,Preta,54.33,83.36,UF
+25,Paraíba,15 a 17 anos,Total,75.09,85.35,UF
+25,Paraíba,18 a 24 anos,Amarela,,34.54,UF
+25,Paraíba,18 a 24 anos,Branca,33.74,33.41,UF
+25,Paraíba,18 a 24 anos,Indígena,23.01,27.72,UF
+25,Paraíba,18 a 24 anos,Parda,27.58,26.92,UF
+25,Paraíba,18 a 24 anos,Preta,28.31,26.31,UF
+25,Paraíba,18 a 24 anos,Total,30.03,29.07,UF
+25,Paraíba,25 anos ou mais,Amarela,32.4,7.33,UF
+25,Paraíba,25 anos ou mais,Branca,7.86,5.79,UF
+25,Paraíba,25 anos ou mais,Indígena,8.64,8.25,UF
+25,Paraíba,25 anos ou mais,Parda,7.03,5.58,UF
+25,Paraíba,25 anos ou mais,Preta,12.73,5.89,UF
+25,Paraíba,25 anos ou mais,Total,7.97,5.7,UF
+25,Paraíba,6 a 14 anos,Amarela,100.0,97.07,UF
+25,Paraíba,6 a 14 anos,Branca,92.04,98.62,UF
+25,Paraíba,6 a 14 anos,Indígena,95.66,97.87,UF
+25,Paraíba,6 a 14 anos,Parda,93.39,98.54,UF
+25,Paraíba,6 a 14 anos,Preta,82.52,97.5,UF
+25,Paraíba,6 a 14 anos,Total,92.34,98.51,UF
+25,Paraíba,Total,Amarela,51.32,22.37,UF
+25,Paraíba,Total,Branca,43.12,25.88,UF
+25,Paraíba,Total,Indígena,45.21,31.19,UF
+25,Paraíba,Total,Parda,43.43,25.65,UF
+25,Paraíba,Total,Preta,31.1,19.32,UF
+25,Paraíba,Total,Total,42.39,25.23,UF
+26,Pernambuco,15 a 17 anos,Amarela,100.0,94.01,UF
+26,Pernambuco,15 a 17 anos,Branca,73.62,86.25,UF
+26,Pernambuco,15 a 17 anos,Indígena,79.67,85.19,UF
+26,Pernambuco,15 a 17 anos,Parda,71.45,84.0,UF
+26,Pernambuco,15 a 17 anos,Preta,72.36,84.02,UF
+26,Pernambuco,15 a 17 anos,Total,72.57,84.75,UF
+26,Pernambuco,18 a 24 anos,Amarela,,29.09,UF
+26,Pernambuco,18 a 24 anos,Branca,35.11,29.71,UF
+26,Pernambuco,18 a 24 anos,Indígena,8.06,25.97,UF
+26,Pernambuco,18 a 24 anos,Parda,30.31,23.05,UF
+26,Pernambuco,18 a 24 anos,Preta,31.1,24.49,UF
+26,Pernambuco,18 a 24 anos,Total,31.98,25.32,UF
+26,Pernambuco,25 anos ou mais,Amarela,,8.11,UF
+26,Pernambuco,25 anos ou mais,Branca,7.81,5.9,UF
+26,Pernambuco,25 anos ou mais,Indígena,16.17,6.84,UF
+26,Pernambuco,25 anos ou mais,Parda,7.37,5.23,UF
+26,Pernambuco,25 anos ou mais,Preta,7.41,5.69,UF
+26,Pernambuco,25 anos ou mais,Total,7.59,5.52,UF
+26,Pernambuco,6 a 14 anos,Amarela,,98.0,UF
+26,Pernambuco,6 a 14 anos,Branca,93.49,98.45,UF
+26,Pernambuco,6 a 14 anos,Indígena,100.0,96.42,UF
+26,Pernambuco,6 a 14 anos,Parda,93.71,98.13,UF
+26,Pernambuco,6 a 14 anos,Preta,90.09,97.7,UF
+26,Pernambuco,6 a 14 anos,Total,93.44,98.18,UF
+26,Pernambuco,Total,Amarela,12.84,22.96,UF
+26,Pernambuco,Total,Branca,44.38,25.58,UF
+26,Pernambuco,Total,Indígena,44.96,29.56,UF
+26,Pernambuco,Total,Parda,39.99,25.43,UF
+26,Pernambuco,Total,Preta,30.74,19.68,UF
+26,Pernambuco,Total,Total,40.81,24.91,UF
+27,Alagoas,15 a 17 anos,Amarela,,70.74,UF
+27,Alagoas,15 a 17 anos,Branca,81.64,86.53,UF
+27,Alagoas,15 a 17 anos,Indígena,100.0,89.64,UF
+27,Alagoas,15 a 17 anos,Parda,72.68,84.7,UF
+27,Alagoas,15 a 17 anos,Preta,87.68,83.12,UF
+27,Alagoas,15 a 17 anos,Total,76.93,85.12,UF
+27,Alagoas,18 a 24 anos,Amarela,,22.53,UF
+27,Alagoas,18 a 24 anos,Branca,28.05,30.85,UF
+27,Alagoas,18 a 24 anos,Indígena,51.07,28.06,UF
+27,Alagoas,18 a 24 anos,Parda,26.63,25.46,UF
+27,Alagoas,18 a 24 anos,Preta,38.11,24.38,UF
+27,Alagoas,18 a 24 anos,Total,28.31,26.83,UF
+27,Alagoas,25 anos ou mais,Amarela,50.52,8.69,UF
+27,Alagoas,25 anos ou mais,Branca,9.14,6.85,UF
+27,Alagoas,25 anos ou mais,Indígena,,7.34,UF
+27,Alagoas,25 anos ou mais,Parda,9.23,6.98,UF
+27,Alagoas,25 anos ou mais,Preta,7.35,6.89,UF
+27,Alagoas,25 anos ou mais,Total,9.07,6.94,UF
+27,Alagoas,6 a 14 anos,Amarela,,99.74,UF
+27,Alagoas,6 a 14 anos,Branca,93.07,97.86,UF
+27,Alagoas,6 a 14 anos,Indígena,100.0,99.07,UF
+27,Alagoas,6 a 14 anos,Parda,93.93,98.02,UF
+27,Alagoas,6 a 14 anos,Preta,85.68,97.03,UF
+27,Alagoas,6 a 14 anos,Total,93.1,97.92,UF
+27,Alagoas,Total,Amarela,34.36,27.0,UF
+27,Alagoas,Total,Branca,44.04,28.47,UF
+27,Alagoas,Total,Indígena,31.48,31.29,UF
+27,Alagoas,Total,Parda,39.78,28.33,UF
+27,Alagoas,Total,Preta,34.55,21.44,UF
+27,Alagoas,Total,Total,40.69,27.69,UF
+28,Sergipe,15 a 17 anos,Amarela,,100.0,UF
+28,Sergipe,15 a 17 anos,Branca,94.35,90.77,UF
+28,Sergipe,15 a 17 anos,Indígena,,90.84,UF
+28,Sergipe,15 a 17 anos,Parda,73.19,87.52,UF
+28,Sergipe,15 a 17 anos,Preta,68.78,86.59,UF
+28,Sergipe,15 a 17 anos,Total,78.26,88.22,UF
+28,Sergipe,18 a 24 anos,Amarela,,42.1,UF
+28,Sergipe,18 a 24 anos,Branca,34.92,33.43,UF
+28,Sergipe,18 a 24 anos,Indígena,,42.65,UF
+28,Sergipe,18 a 24 anos,Parda,33.26,28.53,UF
+28,Sergipe,18 a 24 anos,Preta,33.47,27.6,UF
+28,Sergipe,18 a 24 anos,Total,33.91,29.62,UF
+28,Sergipe,25 anos ou mais,Amarela,,4.02,UF
+28,Sergipe,25 anos ou mais,Branca,6.48,5.28,UF
+28,Sergipe,25 anos ou mais,Indígena,,3.09,UF
+28,Sergipe,25 anos ou mais,Parda,6.91,4.9,UF
+28,Sergipe,25 anos ou mais,Preta,10.07,5.39,UF
+28,Sergipe,25 anos ou mais,Total,7.21,5.06,UF
+28,Sergipe,6 a 14 anos,Amarela,100.0,100.0,UF
+28,Sergipe,6 a 14 anos,Branca,94.54,98.57,UF
+28,Sergipe,6 a 14 anos,Indígena,100.0,90.53,UF
+28,Sergipe,6 a 14 anos,Parda,97.07,98.55,UF
+28,Sergipe,6 a 14 anos,Preta,90.71,98.71,UF
+28,Sergipe,6 a 14 anos,Total,95.69,98.55,UF
+28,Sergipe,Total,Amarela,50.1,22.47,UF
+28,Sergipe,Total,Branca,47.18,26.54,UF
+28,Sergipe,Total,Indígena,11.26,20.89,UF
+28,Sergipe,Total,Parda,44.51,26.55,UF
+28,Sergipe,Total,Preta,37.03,21.11,UF
+28,Sergipe,Total,Total,44.35,25.8,UF
+29,Bahia,15 a 17 anos,Amarela,,75.28,UF
+29,Bahia,15 a 17 anos,Branca,70.01,87.34,UF
+29,Bahia,15 a 17 anos,Indígena,68.71,81.42,UF
+29,Bahia,15 a 17 anos,Parda,72.83,85.64,UF
+29,Bahia,15 a 17 anos,Preta,71.52,84.89,UF
+29,Bahia,15 a 17 anos,Total,71.88,85.77,UF
+29,Bahia,18 a 24 anos,Amarela,,27.83,UF
+29,Bahia,18 a 24 anos,Branca,28.12,31.2,UF
+29,Bahia,18 a 24 anos,Indígena,55.45,25.8,UF
+29,Bahia,18 a 24 anos,Parda,33.25,26.05,UF
+29,Bahia,18 a 24 anos,Preta,31.01,27.07,UF
+29,Bahia,18 a 24 anos,Total,31.88,27.22,UF
+29,Bahia,25 anos ou mais,Amarela,,6.65,UF
+29,Bahia,25 anos ou mais,Branca,7.38,5.55,UF
+29,Bahia,25 anos ou mais,Indígena,10.46,5.6,UF
+29,Bahia,25 anos ou mais,Parda,6.93,5.19,UF
+29,Bahia,25 anos ou mais,Preta,7.29,5.79,UF
+29,Bahia,25 anos ou mais,Total,7.14,5.41,UF
+29,Bahia,6 a 14 anos,Amarela,100.0,95.68,UF
+29,Bahia,6 a 14 anos,Branca,92.46,98.56,UF
+29,Bahia,6 a 14 anos,Indígena,94.65,97.54,UF
+29,Bahia,6 a 14 anos,Parda,93.38,98.46,UF
+29,Bahia,6 a 14 anos,Preta,92.95,98.24,UF
+29,Bahia,6 a 14 anos,Total,93.11,98.43,UF
+29,Bahia,Total,Amarela,26.86,22.31,UF
+29,Bahia,Total,Branca,36.03,24.66,UF
+29,Bahia,Total,Indígena,35.91,26.39,UF
+29,Bahia,Total,Parda,35.56,25.55,UF
+29,Bahia,Total,Preta,31.72,22.19,UF
+29,Bahia,Total,Total,34.8,24.61,UF
+31,Minas Gerais,15 a 17 anos,Amarela,100.0,82.16,UF
+31,Minas Gerais,15 a 17 anos,Branca,81.33,87.83,UF
+31,Minas Gerais,15 a 17 anos,Indígena,47.16,79.43,UF
+31,Minas Gerais,15 a 17 anos,Parda,79.39,85.28,UF
+31,Minas Gerais,15 a 17 anos,Preta,79.45,84.2,UF
+31,Minas Gerais,15 a 17 anos,Total,80.18,86.08,UF
+31,Minas Gerais,18 a 24 anos,Amarela,100.0,35.28,UF
+31,Minas Gerais,18 a 24 anos,Branca,32.84,33.05,UF
+31,Minas Gerais,18 a 24 anos,Indígena,3.4,21.28,UF
+31,Minas Gerais,18 a 24 anos,Parda,25.71,22.78,UF
+31,Minas Gerais,18 a 24 anos,Preta,25.8,21.67,UF
+31,Minas Gerais,18 a 24 anos,Total,28.51,26.42,UF
+31,Minas Gerais,25 anos ou mais,Amarela,17.4,8.1,UF
+31,Minas Gerais,25 anos ou mais,Branca,7.74,5.44,UF
+31,Minas Gerais,25 anos ou mais,Indígena,3.91,6.58,UF
+31,Minas Gerais,25 anos ou mais,Parda,6.23,5.18,UF
+31,Minas Gerais,25 anos ou mais,Preta,8.23,5.51,UF
+31,Minas Gerais,25 anos ou mais,Total,7.14,5.34,UF
+31,Minas Gerais,6 a 14 anos,Amarela,93.93,97.91,UF
+31,Minas Gerais,6 a 14 anos,Branca,96.89,98.92,UF
+31,Minas Gerais,6 a 14 anos,Indígena,100.0,95.82,UF
+31,Minas Gerais,6 a 14 anos,Parda,96.72,98.81,UF
+31,Minas Gerais,6 a 14 anos,Preta,95.28,98.73,UF
+31,Minas Gerais,6 a 14 anos,Total,96.66,98.83,UF
+31,Minas Gerais,Total,Amarela,39.66,21.21,UF
+31,Minas Gerais,Total,Branca,36.41,21.69,UF
+31,Minas Gerais,Total,Indígena,27.64,26.64,UF
+31,Minas Gerais,Total,Parda,36.64,23.6,UF
+31,Minas Gerais,Total,Preta,31.13,18.66,UF
+31,Minas Gerais,Total,Total,35.9,22.22,UF
+32,Espírito Santo,15 a 17 anos,Amarela,,84.91,UF
+32,Espírito Santo,15 a 17 anos,Branca,74.97,85.07,UF
+32,Espírito Santo,15 a 17 anos,Indígena,44.38,86.18,UF
+32,Espírito Santo,15 a 17 anos,Parda,86.43,83.19,UF
+32,Espírito Santo,15 a 17 anos,Preta,78.57,80.57,UF
+32,Espírito Santo,15 a 17 anos,Total,81.37,83.55,UF
+32,Espírito Santo,18 a 24 anos,Amarela,,38.97,UF
+32,Espírito Santo,18 a 24 anos,Branca,34.3,35.18,UF
+32,Espírito Santo,18 a 24 anos,Indígena,20.34,22.54,UF
+32,Espírito Santo,18 a 24 anos,Parda,24.17,25.08,UF
+32,Espírito Santo,18 a 24 anos,Preta,20.85,22.57,UF
+32,Espírito Santo,18 a 24 anos,Total,27.19,28.19,UF
+32,Espírito Santo,25 anos ou mais,Amarela,,5.84,UF
+32,Espírito Santo,25 anos ou mais,Branca,5.27,5.17,UF
+32,Espírito Santo,25 anos ou mais,Indígena,10.84,8.09,UF
+32,Espírito Santo,25 anos ou mais,Parda,6.51,5.32,UF
+32,Espírito Santo,25 anos ou mais,Preta,9.8,6.1,UF
+32,Espírito Santo,25 anos ou mais,Total,6.45,5.36,UF
+32,Espírito Santo,6 a 14 anos,Amarela,100.0,100.0,UF
+32,Espírito Santo,6 a 14 anos,Branca,97.18,98.44,UF
+32,Espírito Santo,6 a 14 anos,Indígena,98.26,97.56,UF
+32,Espírito Santo,6 a 14 anos,Parda,96.98,98.58,UF
+32,Espírito Santo,6 a 14 anos,Preta,96.83,98.1,UF
+32,Espírito Santo,6 a 14 anos,Total,97.04,98.49,UF
+32,Espírito Santo,Total,Amarela,100.0,22.91,UF
+32,Espírito Santo,Total,Branca,38.37,21.45,UF
+32,Espírito Santo,Total,Indígena,39.19,27.19,UF
+32,Espírito Santo,Total,Parda,41.16,25.04,UF
+32,Espírito Santo,Total,Preta,35.12,19.78,UF
+32,Espírito Santo,Total,Total,39.53,23.05,UF
+33,Rio de Janeiro,15 a 17 anos,Amarela,,82.41,UF
+33,Rio de Janeiro,15 a 17 anos,Branca,87.8,87.94,UF
+33,Rio de Janeiro,15 a 17 anos,Indígena,,92.15,UF
+33,Rio de Janeiro,15 a 17 anos,Parda,79.46,85.63,UF
+33,Rio de Janeiro,15 a 17 anos,Preta,80.4,84.52,UF
+33,Rio de Janeiro,15 a 17 anos,Total,83.32,86.33,UF
+33,Rio de Janeiro,18 a 24 anos,Amarela,42.07,42.19,UF
+33,Rio de Janeiro,18 a 24 anos,Branca,35.72,35.33,UF
+33,Rio de Janeiro,18 a 24 anos,Indígena,,27.72,UF
+33,Rio de Janeiro,18 a 24 anos,Parda,31.45,26.81,UF
+33,Rio de Janeiro,18 a 24 anos,Preta,38.2,26.62,UF
+33,Rio de Janeiro,18 a 24 anos,Total,34.31,30.01,UF
+33,Rio de Janeiro,25 anos ou mais,Amarela,,10.21,UF
+33,Rio de Janeiro,25 anos ou mais,Branca,8.84,6.99,UF
+33,Rio de Janeiro,25 anos ou mais,Indígena,,7.66,UF
+33,Rio de Janeiro,25 anos ou mais,Parda,9.47,6.57,UF
+33,Rio de Janeiro,25 anos ou mais,Preta,9.07,7.2,UF
+33,Rio de Janeiro,25 anos ou mais,Total,9.11,6.86,UF
+33,Rio de Janeiro,6 a 14 anos,Amarela,80.53,97.78,UF
+33,Rio de Janeiro,6 a 14 anos,Branca,93.78,98.44,UF
+33,Rio de Janeiro,6 a 14 anos,Indígena,100.0,98.7,UF
+33,Rio de Janeiro,6 a 14 anos,Parda,94.19,98.19,UF
+33,Rio de Janeiro,6 a 14 anos,Preta,96.34,97.95,UF
+33,Rio de Janeiro,6 a 14 anos,Total,94.25,98.25,UF
+33,Rio de Janeiro,Total,Amarela,20.71,22.34,UF
+33,Rio de Janeiro,Total,Branca,35.8,22.46,UF
+33,Rio de Janeiro,Total,Indígena,37.18,18.98,UF
+33,Rio de Janeiro,Total,Parda,35.9,24.82,UF
+33,Rio de Janeiro,Total,Preta,30.44,21.9,UF
+33,Rio de Janeiro,Total,Total,34.99,23.34,UF
+35,São Paulo,15 a 17 anos,Amarela,82.76,86.59,UF
+35,São Paulo,15 a 17 anos,Branca,76.97,86.08,UF
+35,São Paulo,15 a 17 anos,Indígena,88.69,77.85,UF
+35,São Paulo,15 a 17 anos,Parda,75.01,83.79,UF
+35,São Paulo,15 a 17 anos,Preta,74.19,83.3,UF
+35,São Paulo,15 a 17 anos,Total,76.11,85.0,UF
+35,São Paulo,18 a 24 anos,Amarela,39.21,45.45,UF
+35,São Paulo,18 a 24 anos,Branca,31.1,30.79,UF
+35,São Paulo,18 a 24 anos,Indígena,2.05,22.41,UF
+35,São Paulo,18 a 24 anos,Parda,24.86,20.76,UF
+35,São Paulo,18 a 24 anos,Preta,26.14,21.55,UF
+35,São Paulo,18 a 24 anos,Total,28.44,26.31,UF
+35,São Paulo,25 anos ou mais,Amarela,4.89,6.23,UF
+35,São Paulo,25 anos ou mais,Branca,9.38,6.15,UF
+35,São Paulo,25 anos ou mais,Indígena,1.43,6.85,UF
+35,São Paulo,25 anos ou mais,Parda,8.81,6.01,UF
+35,São Paulo,25 anos ou mais,Preta,10.08,6.96,UF
+35,São Paulo,25 anos ou mais,Total,9.19,6.18,UF
+35,São Paulo,6 a 14 anos,Amarela,93.81,98.41,UF
+35,São Paulo,6 a 14 anos,Branca,95.56,98.42,UF
+35,São Paulo,6 a 14 anos,Indígena,97.96,97.49,UF
+35,São Paulo,6 a 14 anos,Parda,94.05,98.24,UF
+35,São Paulo,6 a 14 anos,Preta,92.69,98.06,UF
+35,São Paulo,6 a 14 anos,Total,94.87,98.33,UF
+35,São Paulo,Total,Amarela,20.45,17.37,UF
+35,São Paulo,Total,Branca,33.39,22.39,UF
+35,São Paulo,Total,Indígena,20.45,21.2,UF
+35,São Paulo,Total,Parda,32.9,23.87,UF
+35,São Paulo,Total,Preta,28.76,19.89,UF
+35,São Paulo,Total,Total,32.69,22.6,UF
+41,Paraná,15 a 17 anos,Amarela,55.23,88.21,UF
+41,Paraná,15 a 17 anos,Branca,79.3,86.17,UF
+41,Paraná,15 a 17 anos,Indígena,49.76,75.28,UF
+41,Paraná,15 a 17 anos,Parda,76.36,82.78,UF
+41,Paraná,15 a 17 anos,Preta,85.52,84.46,UF
+41,Paraná,15 a 17 anos,Total,78.27,84.94,UF
+41,Paraná,18 a 24 anos,Amarela,48.08,51.91,UF
+41,Paraná,18 a 24 anos,Branca,37.03,34.36,UF
+41,Paraná,18 a 24 anos,Indígena,22.74,19.6,UF
+41,Paraná,18 a 24 anos,Parda,30.16,23.81,UF
+41,Paraná,18 a 24 anos,Preta,35.75,24.04,UF
+41,Paraná,18 a 24 anos,Total,34.89,30.4,UF
+41,Paraná,25 anos ou mais,Amarela,11.25,6.68,UF
+41,Paraná,25 anos ou mais,Branca,9.65,6.35,UF
+41,Paraná,25 anos ou mais,Indígena,10.48,6.1,UF
+41,Paraná,25 anos ou mais,Parda,7.51,5.65,UF
+41,Paraná,25 anos ou mais,Preta,13.8,6.39,UF
+41,Paraná,25 anos ou mais,Total,9.22,6.15,UF
+41,Paraná,6 a 14 anos,Amarela,100.0,99.8,UF
+41,Paraná,6 a 14 anos,Branca,95.61,98.82,UF
+41,Paraná,6 a 14 anos,Indígena,90.56,96.89,UF
+41,Paraná,6 a 14 anos,Parda,94.62,98.66,UF
+41,Paraná,6 a 14 anos,Preta,100.0,98.81,UF
+41,Paraná,6 a 14 anos,Total,95.45,98.77,UF
+41,Paraná,Total,Amarela,35.31,20.78,UF
+41,Paraná,Total,Branca,39.27,24.1,UF
+41,Paraná,Total,Indígena,25.26,30.18,UF
+41,Paraná,Total,Parda,37.23,24.54,UF
+41,Paraná,Total,Preta,35.71,18.21,UF
+41,Paraná,Total,Total,38.44,23.96,UF
+42,Santa Catarina,15 a 17 anos,Amarela,100.0,89.43,UF
+42,Santa Catarina,15 a 17 anos,Branca,83.18,88.03,UF
+42,Santa Catarina,15 a 17 anos,Indígena,54.2,75.31,UF
+42,Santa Catarina,15 a 17 anos,Parda,82.41,83.97,UF
+42,Santa Catarina,15 a 17 anos,Preta,68.31,83.64,UF
+42,Santa Catarina,15 a 17 anos,Total,82.39,86.85,UF
+42,Santa Catarina,18 a 24 anos,Amarela,11.34,57.0,UF
+42,Santa Catarina,18 a 24 anos,Branca,31.42,31.4,UF
+42,Santa Catarina,18 a 24 anos,Indígena,23.96,22.41,UF
+42,Santa Catarina,18 a 24 anos,Parda,21.3,20.64,UF
+42,Santa Catarina,18 a 24 anos,Preta,16.17,21.61,UF
+42,Santa Catarina,18 a 24 anos,Total,28.84,28.34,UF
+42,Santa Catarina,25 anos ou mais,Amarela,7.06,7.81,UF
+42,Santa Catarina,25 anos ou mais,Branca,8.1,5.46,UF
+42,Santa Catarina,25 anos ou mais,Indígena,8.36,6.67,UF
+42,Santa Catarina,25 anos ou mais,Parda,7.9,5.56,UF
+42,Santa Catarina,25 anos ou mais,Preta,10.05,6.27,UF
+42,Santa Catarina,25 anos ou mais,Total,8.13,5.52,UF
+42,Santa Catarina,6 a 14 anos,Amarela,100.0,100.0,UF
+42,Santa Catarina,6 a 14 anos,Branca,95.3,98.65,UF
+42,Santa Catarina,6 a 14 anos,Indígena,95.19,96.84,UF
+42,Santa Catarina,6 a 14 anos,Parda,96.63,98.54,UF
+42,Santa Catarina,6 a 14 anos,Preta,99.62,98.55,UF
+42,Santa Catarina,6 a 14 anos,Total,95.68,98.62,UF
+42,Santa Catarina,Total,Amarela,37.54,26.35,UF
+42,Santa Catarina,Total,Branca,38.5,22.09,UF
+42,Santa Catarina,Total,Indígena,26.46,28.84,UF
+42,Santa Catarina,Total,Parda,41.23,25.34,UF
+42,Santa Catarina,Total,Preta,33.55,19.81,UF
+42,Santa Catarina,Total,Total,38.82,22.64,UF
+43,Rio Grande do Sul,15 a 17 anos,Amarela,100.0,98.14,UF
+43,Rio Grande do Sul,15 a 17 anos,Branca,80.33,86.71,UF
+43,Rio Grande do Sul,15 a 17 anos,Indígena,21.41,72.03,UF
+43,Rio Grande do Sul,15 a 17 anos,Parda,77.35,83.82,UF
+43,Rio Grande do Sul,15 a 17 anos,Preta,66.42,84.14,UF
+43,Rio Grande do Sul,15 a 17 anos,Total,79.19,85.94,UF
+43,Rio Grande do Sul,18 a 24 anos,Amarela,,29.84,UF
+43,Rio Grande do Sul,18 a 24 anos,Branca,29.55,32.75,UF
+43,Rio Grande do Sul,18 a 24 anos,Indígena,33.28,19.09,UF
+43,Rio Grande do Sul,18 a 24 anos,Parda,25.51,22.74,UF
+43,Rio Grande do Sul,18 a 24 anos,Preta,33.97,24.34,UF
+43,Rio Grande do Sul,18 a 24 anos,Total,29.35,30.2,UF
+43,Rio Grande do Sul,25 anos ou mais,Amarela,14.58,8.74,UF
+43,Rio Grande do Sul,25 anos ou mais,Branca,7.28,5.88,UF
+43,Rio Grande do Sul,25 anos ou mais,Indígena,3.06,4.56,UF
+43,Rio Grande do Sul,25 anos ou mais,Parda,8.23,5.76,UF
+43,Rio Grande do Sul,25 anos ou mais,Preta,6.19,6.88,UF
+43,Rio Grande do Sul,25 anos ou mais,Total,7.32,5.93,UF
+43,Rio Grande do Sul,6 a 14 anos,Amarela,,94.41,UF
+43,Rio Grande do Sul,6 a 14 anos,Branca,94.58,98.35,UF
+43,Rio Grande do Sul,6 a 14 anos,Indígena,95.01,95.9,UF
+43,Rio Grande do Sul,6 a 14 anos,Parda,93.86,97.82,UF
+43,Rio Grande do Sul,6 a 14 anos,Preta,90.48,97.31,UF
+43,Rio Grande do Sul,6 a 14 anos,Total,94.21,98.18,UF
+43,Rio Grande do Sul,Total,Amarela,23.72,17.81,UF
+43,Rio Grande do Sul,Total,Branca,33.99,21.69,UF
+43,Rio Grande do Sul,Total,Indígena,24.81,26.81,UF
+43,Rio Grande do Sul,Total,Parda,39.05,24.82,UF
+43,Rio Grande do Sul,Total,Preta,28.77,21.62,UF
+43,Rio Grande do Sul,Total,Total,34.36,22.16,UF
+50,Mato Grosso do Sul,15 a 17 anos,Amarela,,77.18,UF
+50,Mato Grosso do Sul,15 a 17 anos,Branca,81.8,85.15,UF
+50,Mato Grosso do Sul,15 a 17 anos,Indígena,79.04,74.44,UF
+50,Mato Grosso do Sul,15 a 17 anos,Parda,84.27,81.91,UF
+50,Mato Grosso do Sul,15 a 17 anos,Preta,100.0,83.04,UF
+50,Mato Grosso do Sul,15 a 17 anos,Total,84.01,82.81,UF
+50,Mato Grosso do Sul,18 a 24 anos,Amarela,44.22,43.51,UF
+50,Mato Grosso do Sul,18 a 24 anos,Branca,44.21,33.96,UF
+50,Mato Grosso do Sul,18 a 24 anos,Indígena,23.28,25.8,UF
+50,Mato Grosso do Sul,18 a 24 anos,Parda,28.77,25.88,UF
+50,Mato Grosso do Sul,18 a 24 anos,Preta,15.32,23.42,UF
+50,Mato Grosso do Sul,18 a 24 anos,Total,34.97,28.85,UF
+50,Mato Grosso do Sul,25 anos ou mais,Amarela,13.19,5.98,UF
+50,Mato Grosso do Sul,25 anos ou mais,Branca,8.44,7.18,UF
+50,Mato Grosso do Sul,25 anos ou mais,Indígena,5.22,7.72,UF
+50,Mato Grosso do Sul,25 anos ou mais,Parda,8.93,6.81,UF
+50,Mato Grosso do Sul,25 anos ou mais,Preta,9.29,7.66,UF
+50,Mato Grosso do Sul,25 anos ou mais,Total,8.69,7.05,UF
+50,Mato Grosso do Sul,6 a 14 anos,Amarela,100.0,98.38,UF
+50,Mato Grosso do Sul,6 a 14 anos,Branca,96.22,98.4,UF
+50,Mato Grosso do Sul,6 a 14 anos,Indígena,76.24,95.79,UF
+50,Mato Grosso do Sul,6 a 14 anos,Parda,95.39,98.22,UF
+50,Mato Grosso do Sul,6 a 14 anos,Preta,98.85,97.4,UF
+50,Mato Grosso do Sul,6 a 14 anos,Total,95.65,98.13,UF
+50,Mato Grosso do Sul,Total,Amarela,30.14,19.92,UF
+50,Mato Grosso do Sul,Total,Branca,41.88,26.19,UF
+50,Mato Grosso do Sul,Total,Indígena,24.22,36.88,UF
+50,Mato Grosso do Sul,Total,Parda,38.64,26.74,UF
+50,Mato Grosso do Sul,Total,Preta,31.56,20.27,UF
+50,Mato Grosso do Sul,Total,Total,39.17,26.35,UF
+51,Mato Grosso,15 a 17 anos,Amarela,100.0,70.94,UF
+51,Mato Grosso,15 a 17 anos,Branca,77.67,82.56,UF
+51,Mato Grosso,15 a 17 anos,Indígena,75.0,78.33,UF
+51,Mato Grosso,15 a 17 anos,Parda,68.52,79.4,UF
+51,Mato Grosso,15 a 17 anos,Preta,84.86,77.75,UF
+51,Mato Grosso,15 a 17 anos,Total,73.4,80.14,UF
+51,Mato Grosso,18 a 24 anos,Amarela,26.15,28.21,UF
+51,Mato Grosso,18 a 24 anos,Branca,42.54,30.62,UF
+51,Mato Grosso,18 a 24 anos,Indígena,32.84,29.62,UF
+51,Mato Grosso,18 a 24 anos,Parda,34.11,23.41,UF
+51,Mato Grosso,18 a 24 anos,Preta,28.05,23.63,UF
+51,Mato Grosso,18 a 24 anos,Total,36.45,25.66,UF
+51,Mato Grosso,25 anos ou mais,Amarela,31.57,9.1,UF
+51,Mato Grosso,25 anos ou mais,Branca,11.81,6.83,UF
+51,Mato Grosso,25 anos ou mais,Indígena,6.82,9.38,UF
+51,Mato Grosso,25 anos ou mais,Parda,10.54,6.54,UF
+51,Mato Grosso,25 anos ou mais,Preta,10.87,7.46,UF
+51,Mato Grosso,25 anos ou mais,Total,11.0,6.78,UF
+51,Mato Grosso,6 a 14 anos,Amarela,100.0,100.0,UF
+51,Mato Grosso,6 a 14 anos,Branca,95.23,98.26,UF
+51,Mato Grosso,6 a 14 anos,Indígena,75.03,92.36,UF
+51,Mato Grosso,6 a 14 anos,Parda,93.42,97.63,UF
+51,Mato Grosso,6 a 14 anos,Preta,90.79,97.41,UF
+51,Mato Grosso,6 a 14 anos,Total,93.85,97.66,UF
+51,Mato Grosso,Total,Amarela,75.76,22.42,UF
+51,Mato Grosso,Total,Branca,40.38,25.51,UF
+51,Mato Grosso,Total,Indígena,29.38,43.03,UF
+51,Mato Grosso,Total,Parda,35.13,27.02,UF
+51,Mato Grosso,Total,Preta,30.09,20.89,UF
+51,Mato Grosso,Total,Total,36.56,26.12,UF
+52,Goiás,15 a 17 anos,Amarela,,82.22,UF
+52,Goiás,15 a 17 anos,Branca,80.03,85.34,UF
+52,Goiás,15 a 17 anos,Indígena,,85.79,UF
+52,Goiás,15 a 17 anos,Parda,73.52,83.46,UF
+52,Goiás,15 a 17 anos,Preta,73.86,82.87,UF
+52,Goiás,15 a 17 anos,Total,76.14,84.05,UF
+52,Goiás,18 a 24 anos,Amarela,,34.82,UF
+52,Goiás,18 a 24 anos,Branca,32.66,32.9,UF
+52,Goiás,18 a 24 anos,Indígena,100.0,28.34,UF
+52,Goiás,18 a 24 anos,Parda,25.94,25.02,UF
+52,Goiás,18 a 24 anos,Preta,27.28,22.97,UF
+52,Goiás,18 a 24 anos,Total,28.77,27.42,UF
+52,Goiás,25 anos ou mais,Amarela,12.93,8.15,UF
+52,Goiás,25 anos ou mais,Branca,7.64,6.14,UF
+52,Goiás,25 anos ou mais,Indígena,14.27,5.43,UF
+52,Goiás,25 anos ou mais,Parda,6.88,5.68,UF
+52,Goiás,25 anos ou mais,Preta,7.51,5.99,UF
+52,Goiás,25 anos ou mais,Total,7.28,5.88,UF
+52,Goiás,6 a 14 anos,Amarela,,96.73,UF
+52,Goiás,6 a 14 anos,Branca,93.74,98.14,UF
+52,Goiás,6 a 14 anos,Indígena,100.0,95.75,UF
+52,Goiás,6 a 14 anos,Parda,92.69,98.11,UF
+52,Goiás,6 a 14 anos,Preta,95.08,97.93,UF
+52,Goiás,6 a 14 anos,Total,93.26,98.1,UF
+52,Goiás,Total,Amarela,12.16,22.28,UF
+52,Goiás,Total,Branca,34.31,24.36,UF
+52,Goiás,Total,Indígena,29.4,22.18,UF
+52,Goiás,Total,Parda,33.17,25.32,UF
+52,Goiás,Total,Preta,27.62,19.85,UF
+52,Goiás,Total,Total,32.99,24.44,UF
+53,Distrito Federal,15 a 17 anos,Amarela,,81.66,UF
+53,Distrito Federal,15 a 17 anos,Branca,89.87,90.34,UF
+53,Distrito Federal,15 a 17 anos,Indígena,,94.73,UF
+53,Distrito Federal,15 a 17 anos,Parda,80.94,89.05,UF
+53,Distrito Federal,15 a 17 anos,Preta,71.69,88.95,UF
+53,Distrito Federal,15 a 17 anos,Total,83.53,89.49,UF
+53,Distrito Federal,18 a 24 anos,Amarela,,52.1,UF
+53,Distrito Federal,18 a 24 anos,Branca,55.96,44.67,UF
+53,Distrito Federal,18 a 24 anos,Indígena,,31.13,UF
+53,Distrito Federal,18 a 24 anos,Parda,33.34,32.47,UF
+53,Distrito Federal,18 a 24 anos,Preta,23.49,32.16,UF
+53,Distrito Federal,18 a 24 anos,Total,40.57,36.83,UF
+53,Distrito Federal,25 anos ou mais,Amarela,,9.84,UF
+53,Distrito Federal,25 anos ou mais,Branca,14.16,9.08,UF
+53,Distrito Federal,25 anos ou mais,Indígena,,7.7,UF
+53,Distrito Federal,25 anos ou mais,Parda,9.84,7.93,UF
+53,Distrito Federal,25 anos ou mais,Preta,6.28,8.56,UF
+53,Distrito Federal,25 anos ou mais,Total,11.26,8.48,UF
+53,Distrito Federal,6 a 14 anos,Amarela,,100.0,UF
+53,Distrito Federal,6 a 14 anos,Branca,99.2,99.2,UF
+53,Distrito Federal,6 a 14 anos,Indígena,,100.0,UF
+53,Distrito Federal,6 a 14 anos,Parda,94.16,98.86,UF
+53,Distrito Federal,6 a 14 anos,Preta,98.18,98.41,UF
+53,Distrito Federal,6 a 14 anos,Total,96.33,98.96,UF
+53,Distrito Federal,Total,Amarela,,21.51,UF
+53,Distrito Federal,Total,Branca,42.1,27.62,UF
+53,Distrito Federal,Total,Indígena,,25.95,UF
+53,Distrito Federal,Total,Parda,40.09,27.64,UF
+53,Distrito Federal,Total,Preta,31.9,23.43,UF
+53,Distrito Federal,Total,Total,40.09,27.13,UF

@@ -1,0 +1,3167 @@
+nivel,cod,nome,sexo,idade_cod,idade,pop,tea,pct
+BR,1,Brasil,Homens,1140,0 a 4 anos,6475658.0,189626.0,2.9
+BR,1,Brasil,Homens,1141,5 a 9 anos,7013145.0,264621.0,3.8
+BR,1,Brasil,Homens,1142,10 a 14 anos,6989598.0,186053.0,2.7
+BR,1,Brasil,Homens,1143,15 a 19 anos,7312955.0,130027.0,1.8
+BR,1,Brasil,Homens,1144,20 a 24 anos,7763330.0,93244.0,1.2
+BR,1,Brasil,Homens,1145,25 a 29 anos,7620245.0,78359.0,1.0
+BR,1,Brasil,Homens,1146,30 a 34 anos,7526108.0,70597.0,0.9
+BR,1,Brasil,Homens,1147,35 a 39 anos,7811190.0,70963.0,0.9
+BR,1,Brasil,Homens,1148,40 a 44 anos,7770077.0,67659.0,0.9
+BR,1,Brasil,Homens,1149,45 a 49 anos,6539406.0,55715.0,0.9
+BR,1,Brasil,Homens,1150,50 a 54 anos,6015019.0,50802.0,0.8
+BR,1,Brasil,Homens,1151,55 a 59 anos,5420934.0,49440.0,0.9
+BR,1,Brasil,Homens,1152,60 a 64 anos,4610752.0,41878.0,0.9
+BR,1,Brasil,Homens,1153,65 a 69 anos,3602635.0,33798.0,0.9
+BR,1,Brasil,Homens,1154,70 a 74 anos,2630379.0,26425.0,1.0
+BR,1,Brasil,Homens,1155,75 a 79 anos,1665793.0,15571.0,0.9
+BR,1,Brasil,Homens,6802,80 a 84 anos,1016223.0,9524.0,0.9
+BR,1,Brasil,Homens,6803,85 a 89 anos,495689.0,4810.0,1.0
+BR,1,Brasil,Homens,92963,90 a 94 anos,194003.0,1589.0,0.8
+BR,1,Brasil,Homens,92964,95 a 99 anos,49824.0,366.0,0.7
+BR,1,Brasil,Homens,92965,100 anos ou mais,9471.0,142.0,1.5
+BR,1,Brasil,Homens,95253,Total,98532431.0,1441208.0,1.5
+BR,1,Brasil,Mulheres,1140,0 a 4 anos,6251446.0,73481.0,1.2
+BR,1,Brasil,Mulheres,1141,5 a 9 anos,6740357.0,86322.0,1.3
+BR,1,Brasil,Mulheres,1142,10 a 14 anos,6677519.0,68768.0,1.0
+BR,1,Brasil,Mulheres,1143,15 a 19 anos,7057510.0,61158.0,0.9
+BR,1,Brasil,Mulheres,1144,20 a 24 anos,7691219.0,62716.0,0.8
+BR,1,Brasil,Mulheres,1145,25 a 29 anos,7830331.0,63287.0,0.8
+BR,1,Brasil,Mulheres,1146,30 a 34 anos,7920980.0,64018.0,0.8
+BR,1,Brasil,Mulheres,1147,35 a 39 anos,8319691.0,66255.0,0.8
+BR,1,Brasil,Mulheres,1148,40 a 44 anos,8285281.0,68671.0,0.8
+BR,1,Brasil,Mulheres,1149,45 a 49 anos,7080265.0,62195.0,0.9
+BR,1,Brasil,Mulheres,1150,50 a 54 anos,6581328.0,57909.0,0.9
+BR,1,Brasil,Mulheres,1151,55 a 59 anos,6158587.0,56619.0,0.9
+BR,1,Brasil,Mulheres,1152,60 a 64 anos,5351294.0,52339.0,1.0
+BR,1,Brasil,Mulheres,1153,65 a 69 anos,4302680.0,41950.0,1.0
+BR,1,Brasil,Mulheres,1154,70 a 74 anos,3261872.0,32268.0,1.0
+BR,1,Brasil,Mulheres,1155,75 a 79 anos,2199549.0,21856.0,1.0
+BR,1,Brasil,Mulheres,6802,80 a 84 anos,1472881.0,13267.0,0.9
+BR,1,Brasil,Mulheres,6803,85 a 89 anos,839105.0,6997.0,0.8
+BR,1,Brasil,Mulheres,92963,90 a 94 anos,385360.0,2882.0,0.7
+BR,1,Brasil,Mulheres,92964,95 a 99 anos,114157.0,980.0,0.9
+BR,1,Brasil,Mulheres,92965,100 anos ou mais,26914.0,194.0,0.7
+BR,1,Brasil,Mulheres,95253,Total,104548325.0,964129.0,0.9
+BR,1,Brasil,Total,1140,0 a 4 anos,12727104.0,263106.0,2.1
+BR,1,Brasil,Total,1141,5 a 9 anos,13753502.0,350942.0,2.6
+BR,1,Brasil,Total,1142,10 a 14 anos,13667117.0,254821.0,1.9
+BR,1,Brasil,Total,1143,15 a 19 anos,14370465.0,191185.0,1.3
+BR,1,Brasil,Total,1144,20 a 24 anos,15454549.0,155960.0,1.0
+BR,1,Brasil,Total,1145,25 a 29 anos,15450575.0,141646.0,0.9
+BR,1,Brasil,Total,1146,30 a 34 anos,15447087.0,134615.0,0.9
+BR,1,Brasil,Total,1147,35 a 39 anos,16130880.0,137218.0,0.9
+BR,1,Brasil,Total,1148,40 a 44 anos,16055357.0,136330.0,0.8
+BR,1,Brasil,Total,1149,45 a 49 anos,13619672.0,117910.0,0.9
+BR,1,Brasil,Total,1150,50 a 54 anos,12596346.0,108711.0,0.9
+BR,1,Brasil,Total,1151,55 a 59 anos,11579521.0,106059.0,0.9
+BR,1,Brasil,Total,1152,60 a 64 anos,9962046.0,94216.0,0.9
+BR,1,Brasil,Total,1153,65 a 69 anos,7905315.0,75748.0,1.0
+BR,1,Brasil,Total,1154,70 a 74 anos,5892251.0,58693.0,1.0
+BR,1,Brasil,Total,1155,75 a 79 anos,3865342.0,37426.0,1.0
+BR,1,Brasil,Total,6802,80 a 84 anos,2489104.0,22791.0,0.9
+BR,1,Brasil,Total,6803,85 a 89 anos,1334794.0,11808.0,0.9
+BR,1,Brasil,Total,92963,90 a 94 anos,579363.0,4471.0,0.8
+BR,1,Brasil,Total,92964,95 a 99 anos,163981.0,1346.0,0.8
+BR,1,Brasil,Total,92965,100 anos ou mais,36385.0,336.0,0.9
+BR,1,Brasil,Total,95253,Total,203080756.0,2405337.0,1.2
+REG,1,Norte,Homens,1140,0 a 4 anos,720584.0,16847.0,2.3
+REG,1,Norte,Homens,1141,5 a 9 anos,753761.0,24703.0,3.3
+REG,1,Norte,Homens,1142,10 a 14 anos,757245.0,18925.0,2.5
+REG,1,Norte,Homens,1143,15 a 19 anos,784603.0,13594.0,1.7
+REG,1,Norte,Homens,1144,20 a 24 anos,764908.0,8671.0,1.1
+REG,1,Norte,Homens,1145,25 a 29 anos,706609.0,6901.0,1.0
+REG,1,Norte,Homens,1146,30 a 34 anos,661453.0,5826.0,0.9
+REG,1,Norte,Homens,1147,35 a 39 anos,669726.0,5797.0,0.9
+REG,1,Norte,Homens,1148,40 a 44 anos,634783.0,5210.0,0.8
+REG,1,Norte,Homens,1149,45 a 49 anos,520144.0,4288.0,0.8
+REG,1,Norte,Homens,1150,50 a 54 anos,445804.0,3857.0,0.9
+REG,1,Norte,Homens,1151,55 a 59 anos,365615.0,3209.0,0.9
+REG,1,Norte,Homens,1152,60 a 64 anos,298342.0,2781.0,0.9
+REG,1,Norte,Homens,1153,65 a 69 anos,225737.0,2137.0,0.9
+REG,1,Norte,Homens,1154,70 a 74 anos,155045.0,1765.0,1.1
+REG,1,Norte,Homens,1155,75 a 79 anos,96994.0,833.0,0.9
+REG,1,Norte,Homens,6802,80 a 84 anos,59234.0,570.0,1.0
+REG,1,Norte,Homens,6803,85 a 89 anos,26847.0,231.0,0.9
+REG,1,Norte,Homens,92963,90 a 94 anos,11172.0,199.0,1.8
+REG,1,Norte,Homens,92964,95 a 99 anos,3518.0,14.0,0.4
+REG,1,Norte,Homens,92965,100 anos ou mais,998.0,21.0,2.1
+REG,1,Norte,Homens,95253,Total,8663119.0,126379.0,1.5
+REG,1,Norte,Mulheres,1140,0 a 4 anos,695354.0,6698.0,1.0
+REG,1,Norte,Mulheres,1141,5 a 9 anos,725444.0,8149.0,1.1
+REG,1,Norte,Mulheres,1142,10 a 14 anos,724244.0,7565.0,1.0
+REG,1,Norte,Mulheres,1143,15 a 19 anos,759630.0,6202.0,0.8
+REG,1,Norte,Mulheres,1144,20 a 24 anos,757174.0,5919.0,0.8
+REG,1,Norte,Mulheres,1145,25 a 29 anos,722636.0,5660.0,0.8
+REG,1,Norte,Mulheres,1146,30 a 34 anos,687802.0,5003.0,0.7
+REG,1,Norte,Mulheres,1147,35 a 39 anos,694554.0,5598.0,0.8
+REG,1,Norte,Mulheres,1148,40 a 44 anos,646781.0,5103.0,0.8
+REG,1,Norte,Mulheres,1149,45 a 49 anos,527562.0,4107.0,0.8
+REG,1,Norte,Mulheres,1150,50 a 54 anos,444065.0,3636.0,0.8
+REG,1,Norte,Mulheres,1151,55 a 59 anos,373614.0,3336.0,0.9
+REG,1,Norte,Mulheres,1152,60 a 64 anos,304888.0,2899.0,1.0
+REG,1,Norte,Mulheres,1153,65 a 69 anos,231534.0,1862.0,0.8
+REG,1,Norte,Mulheres,1154,70 a 74 anos,160922.0,1678.0,1.0
+REG,1,Norte,Mulheres,1155,75 a 79 anos,107354.0,1090.0,1.0
+REG,1,Norte,Mulheres,6802,80 a 84 anos,69067.0,472.0,0.7
+REG,1,Norte,Mulheres,6803,85 a 89 anos,36170.0,279.0,0.8
+REG,1,Norte,Mulheres,92963,90 a 94 anos,15814.0,124.0,0.8
+REG,1,Norte,Mulheres,92964,95 a 99 anos,5093.0,45.0,0.9
+REG,1,Norte,Mulheres,92965,100 anos ou mais,2065.0,33.0,1.6
+REG,1,Norte,Mulheres,95253,Total,8691765.0,75456.0,0.9
+REG,1,Norte,Total,1140,0 a 4 anos,1415938.0,23545.0,1.7
+REG,1,Norte,Total,1141,5 a 9 anos,1479204.0,32853.0,2.2
+REG,1,Norte,Total,1142,10 a 14 anos,1481489.0,26490.0,1.8
+REG,1,Norte,Total,1143,15 a 19 anos,1544233.0,19795.0,1.3
+REG,1,Norte,Total,1144,20 a 24 anos,1522082.0,14590.0,1.0
+REG,1,Norte,Total,1145,25 a 29 anos,1429245.0,12561.0,0.9
+REG,1,Norte,Total,1146,30 a 34 anos,1349255.0,10829.0,0.8
+REG,1,Norte,Total,1147,35 a 39 anos,1364279.0,11396.0,0.8
+REG,1,Norte,Total,1148,40 a 44 anos,1281564.0,10313.0,0.8
+REG,1,Norte,Total,1149,45 a 49 anos,1047706.0,8394.0,0.8
+REG,1,Norte,Total,1150,50 a 54 anos,889869.0,7493.0,0.8
+REG,1,Norte,Total,1151,55 a 59 anos,739228.0,6545.0,0.9
+REG,1,Norte,Total,1152,60 a 64 anos,603230.0,5679.0,0.9
+REG,1,Norte,Total,1153,65 a 69 anos,457271.0,3999.0,0.9
+REG,1,Norte,Total,1154,70 a 74 anos,315967.0,3442.0,1.1
+REG,1,Norte,Total,1155,75 a 79 anos,204347.0,1923.0,0.9
+REG,1,Norte,Total,6802,80 a 84 anos,128300.0,1042.0,0.8
+REG,1,Norte,Total,6803,85 a 89 anos,63017.0,510.0,0.8
+REG,1,Norte,Total,92963,90 a 94 anos,26986.0,323.0,1.2
+REG,1,Norte,Total,92964,95 a 99 anos,8611.0,59.0,0.7
+REG,1,Norte,Total,92965,100 anos ou mais,3062.0,54.0,1.8
+REG,1,Norte,Total,95253,Total,17354884.0,201835.0,1.2
+REG,2,Nordeste,Homens,1140,0 a 4 anos,1850002.0,55299.0,3.0
+REG,2,Nordeste,Homens,1141,5 a 9 anos,1980224.0,79943.0,4.0
+REG,2,Nordeste,Homens,1142,10 a 14 anos,2060450.0,55798.0,2.7
+REG,2,Nordeste,Homens,1143,15 a 19 anos,2159783.0,36640.0,1.7
+REG,2,Nordeste,Homens,1144,20 a 24 anos,2154612.0,23403.0,1.1
+REG,2,Nordeste,Homens,1145,25 a 29 anos,2012459.0,18368.0,0.9
+REG,2,Nordeste,Homens,1146,30 a 34 anos,1967699.0,16913.0,0.9
+REG,2,Nordeste,Homens,1147,35 a 39 anos,2087900.0,17047.0,0.8
+REG,2,Nordeste,Homens,1148,40 a 44 anos,2046195.0,16465.0,0.8
+REG,2,Nordeste,Homens,1149,45 a 49 anos,1708507.0,13741.0,0.8
+REG,2,Nordeste,Homens,1150,50 a 54 anos,1520928.0,11203.0,0.7
+REG,2,Nordeste,Homens,1151,55 a 59 anos,1349747.0,12196.0,0.9
+REG,2,Nordeste,Homens,1152,60 a 64 anos,1100933.0,9117.0,0.8
+REG,2,Nordeste,Homens,1153,65 a 69 anos,841767.0,7176.0,0.9
+REG,2,Nordeste,Homens,1154,70 a 74 anos,650891.0,5637.0,0.9
+REG,2,Nordeste,Homens,1155,75 a 79 anos,431033.0,3568.0,0.8
+REG,2,Nordeste,Homens,6802,80 a 84 anos,276632.0,2356.0,0.9
+REG,2,Nordeste,Homens,6803,85 a 89 anos,137291.0,1259.0,0.9
+REG,2,Nordeste,Homens,92963,90 a 94 anos,57781.0,417.0,0.7
+REG,2,Nordeste,Homens,92964,95 a 99 anos,18285.0,122.0,0.7
+REG,2,Nordeste,Homens,92965,100 anos ou mais,4682.0,54.0,1.2
+REG,2,Nordeste,Homens,95253,Total,26417802.0,386722.0,1.5
+REG,2,Nordeste,Mulheres,1140,0 a 4 anos,1785610.0,21166.0,1.2
+REG,2,Nordeste,Mulheres,1141,5 a 9 anos,1903949.0,24952.0,1.3
+REG,2,Nordeste,Mulheres,1142,10 a 14 anos,1971753.0,20259.0,1.0
+REG,2,Nordeste,Mulheres,1143,15 a 19 anos,2088228.0,17029.0,0.8
+REG,2,Nordeste,Mulheres,1144,20 a 24 anos,2169007.0,15944.0,0.7
+REG,2,Nordeste,Mulheres,1145,25 a 29 anos,2136624.0,15219.0,0.7
+REG,2,Nordeste,Mulheres,1146,30 a 34 anos,2153242.0,15970.0,0.7
+REG,2,Nordeste,Mulheres,1147,35 a 39 anos,2287975.0,17316.0,0.8
+REG,2,Nordeste,Mulheres,1148,40 a 44 anos,2211217.0,17282.0,0.8
+REG,2,Nordeste,Mulheres,1149,45 a 49 anos,1872420.0,15591.0,0.8
+REG,2,Nordeste,Mulheres,1150,50 a 54 anos,1693210.0,14075.0,0.8
+REG,2,Nordeste,Mulheres,1151,55 a 59 anos,1562413.0,14499.0,0.9
+REG,2,Nordeste,Mulheres,1152,60 a 64 anos,1282918.0,11385.0,0.9
+REG,2,Nordeste,Mulheres,1153,65 a 69 anos,1010888.0,8469.0,0.8
+REG,2,Nordeste,Mulheres,1154,70 a 74 anos,805211.0,6897.0,0.9
+REG,2,Nordeste,Mulheres,1155,75 a 79 anos,552024.0,4681.0,0.8
+REG,2,Nordeste,Mulheres,6802,80 a 84 anos,387283.0,3130.0,0.8
+REG,2,Nordeste,Mulheres,6803,85 a 89 anos,215406.0,1770.0,0.8
+REG,2,Nordeste,Mulheres,92963,90 a 94 anos,104234.0,709.0,0.7
+REG,2,Nordeste,Mulheres,92964,95 a 99 anos,35780.0,323.0,0.9
+REG,2,Nordeste,Mulheres,92965,100 anos ou mais,11319.0,102.0,0.9
+REG,2,Nordeste,Mulheres,95253,Total,28240713.0,246768.0,0.9
+REG,2,Nordeste,Total,1140,0 a 4 anos,3635612.0,76465.0,2.1
+REG,2,Nordeste,Total,1141,5 a 9 anos,3884173.0,104896.0,2.7
+REG,2,Nordeste,Total,1142,10 a 14 anos,4032203.0,76057.0,1.9
+REG,2,Nordeste,Total,1143,15 a 19 anos,4248011.0,53669.0,1.3
+REG,2,Nordeste,Total,1144,20 a 24 anos,4323619.0,39348.0,0.9
+REG,2,Nordeste,Total,1145,25 a 29 anos,4149083.0,33586.0,0.8
+REG,2,Nordeste,Total,1146,30 a 34 anos,4120941.0,32883.0,0.8
+REG,2,Nordeste,Total,1147,35 a 39 anos,4375876.0,34362.0,0.8
+REG,2,Nordeste,Total,1148,40 a 44 anos,4257413.0,33747.0,0.8
+REG,2,Nordeste,Total,1149,45 a 49 anos,3580926.0,29332.0,0.8
+REG,2,Nordeste,Total,1150,50 a 54 anos,3214139.0,25278.0,0.8
+REG,2,Nordeste,Total,1151,55 a 59 anos,2912160.0,26695.0,0.9
+REG,2,Nordeste,Total,1152,60 a 64 anos,2383852.0,20501.0,0.9
+REG,2,Nordeste,Total,1153,65 a 69 anos,1852655.0,15645.0,0.8
+REG,2,Nordeste,Total,1154,70 a 74 anos,1456102.0,12534.0,0.9
+REG,2,Nordeste,Total,1155,75 a 79 anos,983057.0,8250.0,0.8
+REG,2,Nordeste,Total,6802,80 a 84 anos,663916.0,5485.0,0.8
+REG,2,Nordeste,Total,6803,85 a 89 anos,352697.0,3029.0,0.9
+REG,2,Nordeste,Total,92963,90 a 94 anos,162016.0,1125.0,0.7
+REG,2,Nordeste,Total,92964,95 a 99 anos,54065.0,445.0,0.8
+REG,2,Nordeste,Total,92965,100 anos ou mais,16001.0,157.0,1.0
+REG,2,Nordeste,Total,95253,Total,54658515.0,633490.0,1.2
+REG,3,Sudeste,Homens,1140,0 a 4 anos,2434727.0,73530.0,3.0
+REG,3,Sudeste,Homens,1141,5 a 9 anos,2704952.0,102403.0,3.8
+REG,3,Sudeste,Homens,1142,10 a 14 anos,2661339.0,71708.0,2.7
+REG,3,Sudeste,Homens,1143,15 a 19 anos,2792261.0,51604.0,1.8
+REG,3,Sudeste,Homens,1144,20 a 24 anos,3103274.0,40206.0,1.3
+REG,3,Sudeste,Homens,1145,25 a 29 anos,3110434.0,34747.0,1.1
+REG,3,Sudeste,Homens,1146,30 a 34 anos,3123700.0,31663.0,1.0
+REG,3,Sudeste,Homens,1147,35 a 39 anos,3258057.0,32693.0,1.0
+REG,3,Sudeste,Homens,1148,40 a 44 anos,3313723.0,30945.0,0.9
+REG,3,Sudeste,Homens,1149,45 a 49 anos,2800395.0,25703.0,0.9
+REG,3,Sudeste,Homens,1150,50 a 54 anos,2628964.0,23912.0,0.9
+REG,3,Sudeste,Homens,1151,55 a 59 anos,2399168.0,23305.0,1.0
+REG,3,Sudeste,Homens,1152,60 a 64 anos,2108866.0,19842.0,0.9
+REG,3,Sudeste,Homens,1153,65 a 69 anos,1675009.0,16609.0,1.0
+REG,3,Sudeste,Homens,1154,70 a 74 anos,1205924.0,13056.0,1.1
+REG,3,Sudeste,Homens,1155,75 a 79 anos,750031.0,7477.0,1.0
+REG,3,Sudeste,Homens,6802,80 a 84 anos,454485.0,4533.0,1.0
+REG,3,Sudeste,Homens,6803,85 a 89 anos,225795.0,2385.0,1.1
+REG,3,Sudeste,Homens,92963,90 a 94 anos,86424.0,627.0,0.7
+REG,3,Sudeste,Homens,92964,95 a 99 anos,19851.0,165.0,0.8
+REG,3,Sudeste,Homens,92965,100 anos ou mais,2444.0,40.0,1.6
+REG,3,Sudeste,Homens,95253,Total,40859823.0,607155.0,1.5
+REG,3,Sudeste,Mulheres,1140,0 a 4 anos,2356012.0,29741.0,1.3
+REG,3,Sudeste,Mulheres,1141,5 a 9 anos,2601356.0,34632.0,1.3
+REG,3,Sudeste,Mulheres,1142,10 a 14 anos,2538462.0,27073.0,1.1
+REG,3,Sudeste,Mulheres,1143,15 a 19 anos,2686074.0,24539.0,0.9
+REG,3,Sudeste,Mulheres,1144,20 a 24 anos,3050071.0,27175.0,0.9
+REG,3,Sudeste,Mulheres,1145,25 a 29 anos,3163453.0,28196.0,0.9
+REG,3,Sudeste,Mulheres,1146,30 a 34 anos,3262773.0,29413.0,0.9
+REG,3,Sudeste,Mulheres,1147,35 a 39 anos,3469316.0,30156.0,0.9
+REG,3,Sudeste,Mulheres,1148,40 a 44 anos,3570775.0,31604.0,0.9
+REG,3,Sudeste,Mulheres,1149,45 a 49 anos,3073131.0,29212.0,1.0
+REG,3,Sudeste,Mulheres,1150,50 a 54 anos,2917760.0,27964.0,1.0
+REG,3,Sudeste,Mulheres,1151,55 a 59 anos,2770964.0,26343.0,1.0
+REG,3,Sudeste,Mulheres,1152,60 a 64 anos,2509146.0,26279.0,1.0
+REG,3,Sudeste,Mulheres,1153,65 a 69 anos,2059786.0,22333.0,1.1
+REG,3,Sudeste,Mulheres,1154,70 a 74 anos,1548120.0,16818.0,1.1
+REG,3,Sudeste,Mulheres,1155,75 a 79 anos,1042308.0,11119.0,1.1
+REG,3,Sudeste,Mulheres,6802,80 a 84 anos,698463.0,6886.0,1.0
+REG,3,Sudeste,Mulheres,6803,85 a 89 anos,409240.0,3558.0,0.9
+REG,3,Sudeste,Mulheres,92963,90 a 94 anos,189780.0,1421.0,0.7
+REG,3,Sudeste,Mulheres,92964,95 a 99 anos,53507.0,438.0,0.8
+REG,3,Sudeste,Mulheres,92965,100 anos ou mais,9792.0,13.0,0.1
+REG,3,Sudeste,Mulheres,95253,Total,43980290.0,434911.0,1.0
+REG,3,Sudeste,Total,1140,0 a 4 anos,4790739.0,103271.0,2.2
+REG,3,Sudeste,Total,1141,5 a 9 anos,5306307.0,137034.0,2.6
+REG,3,Sudeste,Total,1142,10 a 14 anos,5199801.0,98781.0,1.9
+REG,3,Sudeste,Total,1143,15 a 19 anos,5478336.0,76143.0,1.4
+REG,3,Sudeste,Total,1144,20 a 24 anos,6153345.0,67380.0,1.1
+REG,3,Sudeste,Total,1145,25 a 29 anos,6273887.0,62943.0,1.0
+REG,3,Sudeste,Total,1146,30 a 34 anos,6386473.0,61076.0,1.0
+REG,3,Sudeste,Total,1147,35 a 39 anos,6727373.0,62849.0,0.9
+REG,3,Sudeste,Total,1148,40 a 44 anos,6884498.0,62549.0,0.9
+REG,3,Sudeste,Total,1149,45 a 49 anos,5873526.0,54916.0,0.9
+REG,3,Sudeste,Total,1150,50 a 54 anos,5546725.0,51877.0,0.9
+REG,3,Sudeste,Total,1151,55 a 59 anos,5170131.0,49648.0,1.0
+REG,3,Sudeste,Total,1152,60 a 64 anos,4618013.0,46121.0,1.0
+REG,3,Sudeste,Total,1153,65 a 69 anos,3734795.0,38942.0,1.0
+REG,3,Sudeste,Total,1154,70 a 74 anos,2754044.0,29874.0,1.1
+REG,3,Sudeste,Total,1155,75 a 79 anos,1792339.0,18596.0,1.0
+REG,3,Sudeste,Total,6802,80 a 84 anos,1152948.0,11418.0,1.0
+REG,3,Sudeste,Total,6803,85 a 89 anos,635034.0,5943.0,0.9
+REG,3,Sudeste,Total,92963,90 a 94 anos,276204.0,2048.0,0.7
+REG,3,Sudeste,Total,92964,95 a 99 anos,73358.0,603.0,0.8
+REG,3,Sudeste,Total,92965,100 anos ou mais,12236.0,53.0,0.4
+REG,3,Sudeste,Total,95253,Total,84840113.0,1042066.0,1.2
+REG,4,Sul,Homens,1140,0 a 4 anos,907362.0,29730.0,3.3
+REG,4,Sul,Homens,1141,5 a 9 anos,979257.0,38803.0,4.0
+REG,4,Sul,Homens,1142,10 a 14 anos,936806.0,26988.0,2.9
+REG,4,Sul,Homens,1143,15 a 19 anos,972175.0,18639.0,1.9
+REG,4,Sul,Homens,1144,20 a 24 anos,1098246.0,13711.0,1.2
+REG,4,Sul,Homens,1145,25 a 29 anos,1140845.0,11598.0,1.0
+REG,4,Sul,Homens,1146,30 a 34 anos,1134038.0,10598.0,0.9
+REG,4,Sul,Homens,1147,35 a 39 anos,1142788.0,9735.0,0.9
+REG,4,Sul,Homens,1148,40 a 44 anos,1128393.0,9492.0,0.8
+REG,4,Sul,Homens,1149,45 a 49 anos,967274.0,7484.0,0.8
+REG,4,Sul,Homens,1150,50 a 54 anos,932818.0,7365.0,0.8
+REG,4,Sul,Homens,1151,55 a 59 anos,892233.0,6993.0,0.8
+REG,4,Sul,Homens,1152,60 a 64 anos,768836.0,6920.0,0.9
+REG,4,Sul,Homens,1153,65 a 69 anos,607808.0,5588.0,0.9
+REG,4,Sul,Homens,1154,70 a 74 anos,439334.0,4052.0,0.9
+REG,4,Sul,Homens,1155,75 a 79 anos,274143.0,2496.0,0.9
+REG,4,Sul,Homens,6802,80 a 84 anos,156517.0,1299.0,0.8
+REG,4,Sul,Homens,6803,85 a 89 anos,73011.0,587.0,0.8
+REG,4,Sul,Homens,92963,90 a 94 anos,26283.0,203.0,0.8
+REG,4,Sul,Homens,92964,95 a 99 anos,5319.0,26.0,0.5
+REG,4,Sul,Homens,92965,100 anos ou mais,717.0,10.0,1.4
+REG,4,Sul,Homens,95253,Total,14584204.0,212316.0,1.5
+REG,4,Sul,Mulheres,1140,0 a 4 anos,869290.0,10700.0,1.2
+REG,4,Sul,Mulheres,1141,5 a 9 anos,934479.0,12466.0,1.3
+REG,4,Sul,Mulheres,1142,10 a 14 anos,894935.0,9263.0,1.0
+REG,4,Sul,Mulheres,1143,15 a 19 anos,940199.0,8600.0,0.9
+REG,4,Sul,Mulheres,1144,20 a 24 anos,1080414.0,8795.0,0.8
+REG,4,Sul,Mulheres,1145,25 a 29 anos,1149928.0,9113.0,0.8
+REG,4,Sul,Mulheres,1146,30 a 34 anos,1160621.0,8776.0,0.8
+REG,4,Sul,Mulheres,1147,35 a 39 anos,1184642.0,8564.0,0.7
+REG,4,Sul,Mulheres,1148,40 a 44 anos,1174808.0,9204.0,0.8
+REG,4,Sul,Mulheres,1149,45 a 49 anos,1028878.0,8117.0,0.8
+REG,4,Sul,Mulheres,1150,50 a 54 anos,1007319.0,7719.0,0.8
+REG,4,Sul,Mulheres,1151,55 a 59 anos,996830.0,8300.0,0.8
+REG,4,Sul,Mulheres,1152,60 a 64 anos,878981.0,8137.0,0.9
+REG,4,Sul,Mulheres,1153,65 a 69 anos,712770.0,6485.0,0.9
+REG,4,Sul,Mulheres,1154,70 a 74 anos,539921.0,4922.0,0.9
+REG,4,Sul,Mulheres,1155,75 a 79 anos,363310.0,3485.0,1.0
+REG,4,Sul,Mulheres,6802,80 a 84 anos,231151.0,1934.0,0.8
+REG,4,Sul,Mulheres,6803,85 a 89 anos,132319.0,940.0,0.7
+REG,4,Sul,Mulheres,92963,90 a 94 anos,56182.0,479.0,0.9
+REG,4,Sul,Mulheres,92964,95 a 99 anos,14126.0,109.0,0.8
+REG,4,Sul,Mulheres,92965,100 anos ou mais,2399.0,9.0,0.4
+REG,4,Sul,Mulheres,95253,Total,15353502.0,136117.0,0.9
+REG,4,Sul,Total,1140,0 a 4 anos,1776652.0,40430.0,2.3
+REG,4,Sul,Total,1141,5 a 9 anos,1913737.0,51268.0,2.7
+REG,4,Sul,Total,1142,10 a 14 anos,1831741.0,36250.0,2.0
+REG,4,Sul,Total,1143,15 a 19 anos,1912374.0,27239.0,1.4
+REG,4,Sul,Total,1144,20 a 24 anos,2178660.0,22506.0,1.0
+REG,4,Sul,Total,1145,25 a 29 anos,2290773.0,20711.0,0.9
+REG,4,Sul,Total,1146,30 a 34 anos,2294659.0,19373.0,0.8
+REG,4,Sul,Total,1147,35 a 39 anos,2327430.0,18299.0,0.8
+REG,4,Sul,Total,1148,40 a 44 anos,2303201.0,18696.0,0.8
+REG,4,Sul,Total,1149,45 a 49 anos,1996152.0,15601.0,0.8
+REG,4,Sul,Total,1150,50 a 54 anos,1940137.0,15084.0,0.8
+REG,4,Sul,Total,1151,55 a 59 anos,1889063.0,15294.0,0.8
+REG,4,Sul,Total,1152,60 a 64 anos,1647817.0,15057.0,0.9
+REG,4,Sul,Total,1153,65 a 69 anos,1320578.0,12072.0,0.9
+REG,4,Sul,Total,1154,70 a 74 anos,979255.0,8974.0,0.9
+REG,4,Sul,Total,1155,75 a 79 anos,637454.0,5981.0,0.9
+REG,4,Sul,Total,6802,80 a 84 anos,387668.0,3234.0,0.8
+REG,4,Sul,Total,6803,85 a 89 anos,205330.0,1527.0,0.7
+REG,4,Sul,Total,92963,90 a 94 anos,82465.0,683.0,0.8
+REG,4,Sul,Total,92964,95 a 99 anos,19445.0,135.0,0.7
+REG,4,Sul,Total,92965,100 anos ou mais,3116.0,19.0,0.6
+REG,4,Sul,Total,95253,Total,29937706.0,348433.0,1.2
+REG,5,Centro-Oeste,Homens,1140,0 a 4 anos,562984.0,14219.0,2.5
+REG,5,Centro-Oeste,Homens,1141,5 a 9 anos,594951.0,18768.0,3.2
+REG,5,Centro-Oeste,Homens,1142,10 a 14 anos,573758.0,12634.0,2.2
+REG,5,Centro-Oeste,Homens,1143,15 a 19 anos,604133.0,9551.0,1.6
+REG,5,Centro-Oeste,Homens,1144,20 a 24 anos,642291.0,7253.0,1.1
+REG,5,Centro-Oeste,Homens,1145,25 a 29 anos,649897.0,6745.0,1.0
+REG,5,Centro-Oeste,Homens,1146,30 a 34 anos,639217.0,5597.0,0.9
+REG,5,Centro-Oeste,Homens,1147,35 a 39 anos,652718.0,5691.0,0.9
+REG,5,Centro-Oeste,Homens,1148,40 a 44 anos,646982.0,5547.0,0.9
+REG,5,Centro-Oeste,Homens,1149,45 a 49 anos,543086.0,4498.0,0.8
+REG,5,Centro-Oeste,Homens,1150,50 a 54 anos,486504.0,4465.0,0.9
+REG,5,Centro-Oeste,Homens,1151,55 a 59 anos,414172.0,3737.0,0.9
+REG,5,Centro-Oeste,Homens,1152,60 a 64 anos,333775.0,3218.0,1.0
+REG,5,Centro-Oeste,Homens,1153,65 a 69 anos,252314.0,2287.0,0.9
+REG,5,Centro-Oeste,Homens,1154,70 a 74 anos,179185.0,1915.0,1.1
+REG,5,Centro-Oeste,Homens,1155,75 a 79 anos,113591.0,1196.0,1.1
+REG,5,Centro-Oeste,Homens,6802,80 a 84 anos,69356.0,766.0,1.1
+REG,5,Centro-Oeste,Homens,6803,85 a 89 anos,32745.0,348.0,1.1
+REG,5,Centro-Oeste,Homens,92963,90 a 94 anos,12342.0,143.0,1.2
+REG,5,Centro-Oeste,Homens,92964,95 a 99 anos,2850.0,38.0,1.3
+REG,5,Centro-Oeste,Homens,92965,100 anos ou mais,630.0,17.0,2.7
+REG,5,Centro-Oeste,Homens,95253,Total,8007483.0,108636.0,1.4
+REG,5,Centro-Oeste,Mulheres,1140,0 a 4 anos,545179.0,5176.0,0.9
+REG,5,Centro-Oeste,Mulheres,1141,5 a 9 anos,575129.0,6123.0,1.1
+REG,5,Centro-Oeste,Mulheres,1142,10 a 14 anos,548126.0,4608.0,0.8
+REG,5,Centro-Oeste,Mulheres,1143,15 a 19 anos,583379.0,4788.0,0.8
+REG,5,Centro-Oeste,Mulheres,1144,20 a 24 anos,634552.0,4883.0,0.8
+REG,5,Centro-Oeste,Mulheres,1145,25 a 29 anos,657691.0,5099.0,0.8
+REG,5,Centro-Oeste,Mulheres,1146,30 a 34 anos,656542.0,4857.0,0.7
+REG,5,Centro-Oeste,Mulheres,1147,35 a 39 anos,683205.0,4621.0,0.7
+REG,5,Centro-Oeste,Mulheres,1148,40 a 44 anos,681699.0,5478.0,0.8
+REG,5,Centro-Oeste,Mulheres,1149,45 a 49 anos,578275.0,5168.0,0.9
+REG,5,Centro-Oeste,Mulheres,1150,50 a 54 anos,518973.0,4515.0,0.9
+REG,5,Centro-Oeste,Mulheres,1151,55 a 59 anos,454766.0,4140.0,0.9
+REG,5,Centro-Oeste,Mulheres,1152,60 a 64 anos,375359.0,3640.0,1.0
+REG,5,Centro-Oeste,Mulheres,1153,65 a 69 anos,287702.0,2802.0,1.0
+REG,5,Centro-Oeste,Mulheres,1154,70 a 74 anos,207697.0,1953.0,0.9
+REG,5,Centro-Oeste,Mulheres,1155,75 a 79 anos,134553.0,1480.0,1.1
+REG,5,Centro-Oeste,Mulheres,6802,80 a 84 anos,86917.0,846.0,1.0
+REG,5,Centro-Oeste,Mulheres,6803,85 a 89 anos,45971.0,450.0,1.0
+REG,5,Centro-Oeste,Mulheres,92963,90 a 94 anos,19350.0,149.0,0.8
+REG,5,Centro-Oeste,Mulheres,92964,95 a 99 anos,5651.0,65.0,1.1
+REG,5,Centro-Oeste,Mulheres,92965,100 anos ou mais,1339.0,36.0,2.7
+REG,5,Centro-Oeste,Mulheres,95253,Total,8282055.0,70876.0,0.9
+REG,5,Centro-Oeste,Total,1140,0 a 4 anos,1108163.0,19395.0,1.8
+REG,5,Centro-Oeste,Total,1141,5 a 9 anos,1170080.0,24891.0,2.1
+REG,5,Centro-Oeste,Total,1142,10 a 14 anos,1121883.0,17243.0,1.5
+REG,5,Centro-Oeste,Total,1143,15 a 19 anos,1187512.0,14339.0,1.2
+REG,5,Centro-Oeste,Total,1144,20 a 24 anos,1276843.0,12136.0,1.0
+REG,5,Centro-Oeste,Total,1145,25 a 29 anos,1307588.0,11845.0,0.9
+REG,5,Centro-Oeste,Total,1146,30 a 34 anos,1295759.0,10454.0,0.8
+REG,5,Centro-Oeste,Total,1147,35 a 39 anos,1335923.0,10312.0,0.8
+REG,5,Centro-Oeste,Total,1148,40 a 44 anos,1328681.0,11025.0,0.8
+REG,5,Centro-Oeste,Total,1149,45 a 49 anos,1121361.0,9666.0,0.9
+REG,5,Centro-Oeste,Total,1150,50 a 54 anos,1005477.0,8980.0,0.9
+REG,5,Centro-Oeste,Total,1151,55 a 59 anos,868938.0,7877.0,0.9
+REG,5,Centro-Oeste,Total,1152,60 a 64 anos,709135.0,6857.0,1.0
+REG,5,Centro-Oeste,Total,1153,65 a 69 anos,540017.0,5089.0,0.9
+REG,5,Centro-Oeste,Total,1154,70 a 74 anos,386883.0,3868.0,1.0
+REG,5,Centro-Oeste,Total,1155,75 a 79 anos,248145.0,2676.0,1.1
+REG,5,Centro-Oeste,Total,6802,80 a 84 anos,156273.0,1612.0,1.0
+REG,5,Centro-Oeste,Total,6803,85 a 89 anos,78716.0,798.0,1.0
+REG,5,Centro-Oeste,Total,92963,90 a 94 anos,31692.0,292.0,0.9
+REG,5,Centro-Oeste,Total,92964,95 a 99 anos,8501.0,103.0,1.2
+REG,5,Centro-Oeste,Total,92965,100 anos ou mais,1969.0,53.0,2.7
+REG,5,Centro-Oeste,Total,95253,Total,16289538.0,179512.0,1.1
+UF,11,Rondônia,Homens,1140,0 a 4 anos,57979.0,1411.0,2.4
+UF,11,Rondônia,Homens,1141,5 a 9 anos,59898.0,2071.0,3.5
+UF,11,Rondônia,Homens,1142,10 a 14 anos,59579.0,1835.0,3.1
+UF,11,Rondônia,Homens,1143,15 a 19 anos,61347.0,1235.0,2.0
+UF,11,Rondônia,Homens,1144,20 a 24 anos,62023.0,774.0,1.2
+UF,11,Rondônia,Homens,1145,25 a 29 anos,62344.0,716.0,1.1
+UF,11,Rondônia,Homens,1146,30 a 34 anos,61663.0,493.0,0.8
+UF,11,Rondônia,Homens,1147,35 a 39 anos,62302.0,602.0,1.0
+UF,11,Rondônia,Homens,1148,40 a 44 anos,60576.0,685.0,1.1
+UF,11,Rondônia,Homens,1149,45 a 49 anos,52205.0,407.0,0.8
+UF,11,Rondônia,Homens,1150,50 a 54 anos,47543.0,369.0,0.8
+UF,11,Rondônia,Homens,1151,55 a 59 anos,42605.0,352.0,0.8
+UF,11,Rondônia,Homens,1152,60 a 64 anos,33984.0,243.0,0.7
+UF,11,Rondônia,Homens,1153,65 a 69 anos,25296.0,205.0,0.8
+UF,11,Rondônia,Homens,1154,70 a 74 anos,16929.0,207.0,1.2
+UF,11,Rondônia,Homens,1155,75 a 79 anos,10588.0,86.0,0.8
+UF,11,Rondônia,Homens,6802,80 a 84 anos,6588.0,78.0,1.2
+UF,11,Rondônia,Homens,6803,85 a 89 anos,2876.0,13.0,0.5
+UF,11,Rondônia,Homens,92963,90 a 94 anos,1259.0,13.0,1.0
+UF,11,Rondônia,Homens,92964,95 a 99 anos,323.0,,
+UF,11,Rondônia,Homens,92965,100 anos ou mais,80.0,,
+UF,11,Rondônia,Homens,95253,Total,787987.0,11797.0,1.5
+UF,11,Rondônia,Mulheres,1140,0 a 4 anos,55725.0,572.0,1.0
+UF,11,Rondônia,Mulheres,1141,5 a 9 anos,57880.0,801.0,1.4
+UF,11,Rondônia,Mulheres,1142,10 a 14 anos,57388.0,699.0,1.2
+UF,11,Rondônia,Mulheres,1143,15 a 19 anos,59818.0,598.0,1.0
+UF,11,Rondônia,Mulheres,1144,20 a 24 anos,62280.0,624.0,1.0
+UF,11,Rondônia,Mulheres,1145,25 a 29 anos,64000.0,637.0,1.0
+UF,11,Rondônia,Mulheres,1146,30 a 34 anos,63804.0,592.0,0.9
+UF,11,Rondônia,Mulheres,1147,35 a 39 anos,65823.0,738.0,1.1
+UF,11,Rondônia,Mulheres,1148,40 a 44 anos,63110.0,601.0,1.0
+UF,11,Rondônia,Mulheres,1149,45 a 49 anos,54406.0,657.0,1.2
+UF,11,Rondônia,Mulheres,1150,50 a 54 anos,48331.0,383.0,0.8
+UF,11,Rondônia,Mulheres,1151,55 a 59 anos,42403.0,481.0,1.1
+UF,11,Rondônia,Mulheres,1152,60 a 64 anos,33521.0,382.0,1.1
+UF,11,Rondônia,Mulheres,1153,65 a 69 anos,25105.0,168.0,0.7
+UF,11,Rondônia,Mulheres,1154,70 a 74 anos,17304.0,219.0,1.3
+UF,11,Rondônia,Mulheres,1155,75 a 79 anos,10811.0,87.0,0.8
+UF,11,Rondônia,Mulheres,6802,80 a 84 anos,6509.0,111.0,1.7
+UF,11,Rondônia,Mulheres,6803,85 a 89 anos,3439.0,54.0,1.6
+UF,11,Rondônia,Mulheres,92963,90 a 94 anos,1240.0,5.0,0.4
+UF,11,Rondônia,Mulheres,92964,95 a 99 anos,258.0,,
+UF,11,Rondônia,Mulheres,92965,100 anos ou mais,53.0,,
+UF,11,Rondônia,Mulheres,95253,Total,793209.0,8412.0,1.1
+UF,11,Rondônia,Total,1140,0 a 4 anos,113704.0,1983.0,1.7
+UF,11,Rondônia,Total,1141,5 a 9 anos,117778.0,2873.0,2.4
+UF,11,Rondônia,Total,1142,10 a 14 anos,116966.0,2534.0,2.2
+UF,11,Rondônia,Total,1143,15 a 19 anos,121166.0,1833.0,1.5
+UF,11,Rondônia,Total,1144,20 a 24 anos,124303.0,1398.0,1.1
+UF,11,Rondônia,Total,1145,25 a 29 anos,126343.0,1354.0,1.1
+UF,11,Rondônia,Total,1146,30 a 34 anos,125467.0,1084.0,0.9
+UF,11,Rondônia,Total,1147,35 a 39 anos,128125.0,1340.0,1.0
+UF,11,Rondônia,Total,1148,40 a 44 anos,123687.0,1286.0,1.0
+UF,11,Rondônia,Total,1149,45 a 49 anos,106611.0,1065.0,1.0
+UF,11,Rondônia,Total,1150,50 a 54 anos,95873.0,752.0,0.8
+UF,11,Rondônia,Total,1151,55 a 59 anos,85008.0,833.0,1.0
+UF,11,Rondônia,Total,1152,60 a 64 anos,67505.0,626.0,0.9
+UF,11,Rondônia,Total,1153,65 a 69 anos,50402.0,374.0,0.7
+UF,11,Rondônia,Total,1154,70 a 74 anos,34233.0,427.0,1.2
+UF,11,Rondônia,Total,1155,75 a 79 anos,21399.0,174.0,0.8
+UF,11,Rondônia,Total,6802,80 a 84 anos,13097.0,189.0,1.4
+UF,11,Rondônia,Total,6803,85 a 89 anos,6315.0,68.0,1.1
+UF,11,Rondônia,Total,92963,90 a 94 anos,2499.0,17.0,0.7
+UF,11,Rondônia,Total,92964,95 a 99 anos,581.0,,
+UF,11,Rondônia,Total,92965,100 anos ou mais,133.0,,
+UF,11,Rondônia,Total,95253,Total,1581196.0,20209.0,1.3
+UF,12,Acre,Homens,1140,0 a 4 anos,36209.0,1410.0,3.9
+UF,12,Acre,Homens,1141,5 a 9 anos,38257.0,2321.0,6.1
+UF,12,Acre,Homens,1142,10 a 14 anos,38805.0,1593.0,4.1
+UF,12,Acre,Homens,1143,15 a 19 anos,40512.0,826.0,2.0
+UF,12,Acre,Homens,1144,20 a 24 anos,39116.0,576.0,1.5
+UF,12,Acre,Homens,1145,25 a 29 anos,34077.0,363.0,1.1
+UF,12,Acre,Homens,1146,30 a 34 anos,30600.0,348.0,1.1
+UF,12,Acre,Homens,1147,35 a 39 anos,30703.0,242.0,0.8
+UF,12,Acre,Homens,1148,40 a 44 anos,29721.0,224.0,0.8
+UF,12,Acre,Homens,1149,45 a 49 anos,23800.0,141.0,0.6
+UF,12,Acre,Homens,1150,50 a 54 anos,19806.0,148.0,0.7
+UF,12,Acre,Homens,1151,55 a 59 anos,15698.0,141.0,0.9
+UF,12,Acre,Homens,1152,60 a 64 anos,12545.0,111.0,0.9
+UF,12,Acre,Homens,1153,65 a 69 anos,9707.0,68.0,0.7
+UF,12,Acre,Homens,1154,70 a 74 anos,6786.0,103.0,1.5
+UF,12,Acre,Homens,1155,75 a 79 anos,4285.0,54.0,1.3
+UF,12,Acre,Homens,6802,80 a 84 anos,2655.0,16.0,0.6
+UF,12,Acre,Homens,6803,85 a 89 anos,1229.0,,
+UF,12,Acre,Homens,92963,90 a 94 anos,559.0,6.0,1.1
+UF,12,Acre,Homens,92964,95 a 99 anos,155.0,11.0,6.8
+UF,12,Acre,Homens,92965,100 anos ou mais,107.0,,
+UF,12,Acre,Homens,95253,Total,415332.0,8703.0,2.1
+UF,12,Acre,Mulheres,1140,0 a 4 anos,35033.0,661.0,1.9
+UF,12,Acre,Mulheres,1141,5 a 9 anos,36408.0,769.0,2.1
+UF,12,Acre,Mulheres,1142,10 a 14 anos,36883.0,476.0,1.3
+UF,12,Acre,Mulheres,1143,15 a 19 anos,38399.0,402.0,1.0
+UF,12,Acre,Mulheres,1144,20 a 24 anos,37965.0,381.0,1.0
+UF,12,Acre,Mulheres,1145,25 a 29 anos,34836.0,305.0,0.9
+UF,12,Acre,Mulheres,1146,30 a 34 anos,31876.0,197.0,0.6
+UF,12,Acre,Mulheres,1147,35 a 39 anos,32165.0,196.0,0.6
+UF,12,Acre,Mulheres,1148,40 a 44 anos,30575.0,214.0,0.7
+UF,12,Acre,Mulheres,1149,45 a 49 anos,24079.0,230.0,1.0
+UF,12,Acre,Mulheres,1150,50 a 54 anos,19922.0,141.0,0.7
+UF,12,Acre,Mulheres,1151,55 a 59 anos,16424.0,157.0,1.0
+UF,12,Acre,Mulheres,1152,60 a 64 anos,13124.0,146.0,1.1
+UF,12,Acre,Mulheres,1153,65 a 69 anos,9811.0,74.0,0.8
+UF,12,Acre,Mulheres,1154,70 a 74 anos,7066.0,104.0,1.5
+UF,12,Acre,Mulheres,1155,75 a 79 anos,4644.0,37.0,0.8
+UF,12,Acre,Mulheres,6802,80 a 84 anos,3097.0,14.0,0.5
+UF,12,Acre,Mulheres,6803,85 a 89 anos,1410.0,16.0,1.2
+UF,12,Acre,Mulheres,92963,90 a 94 anos,672.0,,
+UF,12,Acre,Mulheres,92964,95 a 99 anos,217.0,,
+UF,12,Acre,Mulheres,92965,100 anos ou mais,80.0,,
+UF,12,Acre,Mulheres,95253,Total,414686.0,4521.0,1.1
+UF,12,Acre,Total,1140,0 a 4 anos,71242.0,2071.0,2.9
+UF,12,Acre,Total,1141,5 a 9 anos,74665.0,3090.0,4.1
+UF,12,Acre,Total,1142,10 a 14 anos,75688.0,2070.0,2.7
+UF,12,Acre,Total,1143,15 a 19 anos,78911.0,1228.0,1.6
+UF,12,Acre,Total,1144,20 a 24 anos,77081.0,957.0,1.2
+UF,12,Acre,Total,1145,25 a 29 anos,68914.0,668.0,1.0
+UF,12,Acre,Total,1146,30 a 34 anos,62476.0,545.0,0.9
+UF,12,Acre,Total,1147,35 a 39 anos,62868.0,439.0,0.7
+UF,12,Acre,Total,1148,40 a 44 anos,60295.0,438.0,0.7
+UF,12,Acre,Total,1149,45 a 49 anos,47879.0,370.0,0.8
+UF,12,Acre,Total,1150,50 a 54 anos,39728.0,290.0,0.7
+UF,12,Acre,Total,1151,55 a 59 anos,32122.0,297.0,0.9
+UF,12,Acre,Total,1152,60 a 64 anos,25668.0,257.0,1.0
+UF,12,Acre,Total,1153,65 a 69 anos,19518.0,142.0,0.7
+UF,12,Acre,Total,1154,70 a 74 anos,13851.0,207.0,1.5
+UF,12,Acre,Total,1155,75 a 79 anos,8929.0,91.0,1.0
+UF,12,Acre,Total,6802,80 a 84 anos,5752.0,30.0,0.5
+UF,12,Acre,Total,6803,85 a 89 anos,2639.0,16.0,0.6
+UF,12,Acre,Total,92963,90 a 94 anos,1231.0,6.0,0.5
+UF,12,Acre,Total,92964,95 a 99 anos,372.0,11.0,2.8
+UF,12,Acre,Total,92965,100 anos ou mais,187.0,,
+UF,12,Acre,Total,95253,Total,830018.0,13224.0,1.6
+UF,13,Amazonas,Homens,1140,0 a 4 anos,179155.0,3982.0,2.2
+UF,13,Amazonas,Homens,1141,5 a 9 anos,187295.0,6080.0,3.2
+UF,13,Amazonas,Homens,1142,10 a 14 anos,181324.0,4450.0,2.5
+UF,13,Amazonas,Homens,1143,15 a 19 anos,186731.0,3610.0,1.9
+UF,13,Amazonas,Homens,1144,20 a 24 anos,181801.0,1950.0,1.1
+UF,13,Amazonas,Homens,1145,25 a 29 anos,165536.0,1346.0,0.8
+UF,13,Amazonas,Homens,1146,30 a 34 anos,146001.0,1084.0,0.7
+UF,13,Amazonas,Homens,1147,35 a 39 anos,146944.0,1060.0,0.7
+UF,13,Amazonas,Homens,1148,40 a 44 anos,139864.0,866.0,0.6
+UF,13,Amazonas,Homens,1149,45 a 49 anos,112380.0,720.0,0.6
+UF,13,Amazonas,Homens,1150,50 a 54 anos,94714.0,879.0,0.9
+UF,13,Amazonas,Homens,1151,55 a 59 anos,74784.0,534.0,0.7
+UF,13,Amazonas,Homens,1152,60 a 64 anos,60594.0,590.0,1.0
+UF,13,Amazonas,Homens,1153,65 a 69 anos,44765.0,438.0,1.0
+UF,13,Amazonas,Homens,1154,70 a 74 anos,28829.0,422.0,1.5
+UF,13,Amazonas,Homens,1155,75 a 79 anos,17294.0,117.0,0.7
+UF,13,Amazonas,Homens,6802,80 a 84 anos,10307.0,106.0,1.0
+UF,13,Amazonas,Homens,6803,85 a 89 anos,4797.0,48.0,1.0
+UF,13,Amazonas,Homens,92963,90 a 94 anos,1906.0,74.0,3.9
+UF,13,Amazonas,Homens,92964,95 a 99 anos,609.0,,
+UF,13,Amazonas,Homens,92965,100 anos ou mais,178.0,3.0,1.9
+UF,13,Amazonas,Homens,95253,Total,1965810.0,28361.0,1.4
+UF,13,Amazonas,Mulheres,1140,0 a 4 anos,173425.0,1712.0,1.0
+UF,13,Amazonas,Mulheres,1141,5 a 9 anos,180776.0,1734.0,1.0
+UF,13,Amazonas,Mulheres,1142,10 a 14 anos,175087.0,1603.0,0.9
+UF,13,Amazonas,Mulheres,1143,15 a 19 anos,180827.0,1199.0,0.7
+UF,13,Amazonas,Mulheres,1144,20 a 24 anos,180740.0,1474.0,0.8
+UF,13,Amazonas,Mulheres,1145,25 a 29 anos,166905.0,1141.0,0.7
+UF,13,Amazonas,Mulheres,1146,30 a 34 anos,151487.0,945.0,0.6
+UF,13,Amazonas,Mulheres,1147,35 a 39 anos,151402.0,1146.0,0.8
+UF,13,Amazonas,Mulheres,1148,40 a 44 anos,142224.0,873.0,0.6
+UF,13,Amazonas,Mulheres,1149,45 a 49 anos,114753.0,850.0,0.7
+UF,13,Amazonas,Mulheres,1150,50 a 54 anos,93925.0,793.0,0.8
+UF,13,Amazonas,Mulheres,1151,55 a 59 anos,76892.0,604.0,0.8
+UF,13,Amazonas,Mulheres,1152,60 a 64 anos,63331.0,513.0,0.8
+UF,13,Amazonas,Mulheres,1153,65 a 69 anos,47200.0,330.0,0.7
+UF,13,Amazonas,Mulheres,1154,70 a 74 anos,31733.0,301.0,0.9
+UF,13,Amazonas,Mulheres,1155,75 a 79 anos,20480.0,166.0,0.8
+UF,13,Amazonas,Mulheres,6802,80 a 84 anos,13449.0,121.0,0.9
+UF,13,Amazonas,Mulheres,6803,85 a 89 anos,6472.0,37.0,0.6
+UF,13,Amazonas,Mulheres,92963,90 a 94 anos,3037.0,7.0,0.2
+UF,13,Amazonas,Mulheres,92964,95 a 99 anos,1177.0,38.0,3.3
+UF,13,Amazonas,Mulheres,92965,100 anos ou mais,483.0,33.0,6.8
+UF,13,Amazonas,Mulheres,95253,Total,1975803.0,15622.0,0.8
+UF,13,Amazonas,Total,1140,0 a 4 anos,352580.0,5694.0,1.6
+UF,13,Amazonas,Total,1141,5 a 9 anos,368071.0,7814.0,2.1
+UF,13,Amazonas,Total,1142,10 a 14 anos,356412.0,6053.0,1.7
+UF,13,Amazonas,Total,1143,15 a 19 anos,367558.0,4809.0,1.3
+UF,13,Amazonas,Total,1144,20 a 24 anos,362541.0,3424.0,0.9
+UF,13,Amazonas,Total,1145,25 a 29 anos,332441.0,2487.0,0.7
+UF,13,Amazonas,Total,1146,30 a 34 anos,297488.0,2029.0,0.7
+UF,13,Amazonas,Total,1147,35 a 39 anos,298346.0,2207.0,0.7
+UF,13,Amazonas,Total,1148,40 a 44 anos,282087.0,1739.0,0.6
+UF,13,Amazonas,Total,1149,45 a 49 anos,227133.0,1570.0,0.7
+UF,13,Amazonas,Total,1150,50 a 54 anos,188640.0,1672.0,0.9
+UF,13,Amazonas,Total,1151,55 a 59 anos,151676.0,1138.0,0.8
+UF,13,Amazonas,Total,1152,60 a 64 anos,123925.0,1104.0,0.9
+UF,13,Amazonas,Total,1153,65 a 69 anos,91966.0,769.0,0.8
+UF,13,Amazonas,Total,1154,70 a 74 anos,60562.0,723.0,1.2
+UF,13,Amazonas,Total,1155,75 a 79 anos,37773.0,283.0,0.7
+UF,13,Amazonas,Total,6802,80 a 84 anos,23756.0,228.0,1.0
+UF,13,Amazonas,Total,6803,85 a 89 anos,11269.0,85.0,0.8
+UF,13,Amazonas,Total,92963,90 a 94 anos,4943.0,81.0,1.6
+UF,13,Amazonas,Total,92964,95 a 99 anos,1785.0,38.0,2.2
+UF,13,Amazonas,Total,92965,100 anos ou mais,660.0,36.0,5.5
+UF,13,Amazonas,Total,95253,Total,3941613.0,43983.0,1.1
+UF,14,Roraima,Homens,1140,0 a 4 anos,33159.0,855.0,2.6
+UF,14,Roraima,Homens,1141,5 a 9 anos,32438.0,868.0,2.7
+UF,14,Roraima,Homens,1142,10 a 14 anos,30357.0,671.0,2.2
+UF,14,Roraima,Homens,1143,15 a 19 anos,29159.0,442.0,1.5
+UF,14,Roraima,Homens,1144,20 a 24 anos,29019.0,272.0,0.9
+UF,14,Roraima,Homens,1145,25 a 29 anos,27822.0,261.0,0.9
+UF,14,Roraima,Homens,1146,30 a 34 anos,24363.0,151.0,0.6
+UF,14,Roraima,Homens,1147,35 a 39 anos,24268.0,175.0,0.7
+UF,14,Roraima,Homens,1148,40 a 44 anos,21437.0,287.0,1.3
+UF,14,Roraima,Homens,1149,45 a 49 anos,16724.0,83.0,0.5
+UF,14,Roraima,Homens,1150,50 a 54 anos,14274.0,152.0,1.1
+UF,14,Roraima,Homens,1151,55 a 59 anos,11925.0,132.0,1.1
+UF,14,Roraima,Homens,1152,60 a 64 anos,8971.0,84.0,0.9
+UF,14,Roraima,Homens,1153,65 a 69 anos,6802.0,84.0,1.2
+UF,14,Roraima,Homens,1154,70 a 74 anos,4577.0,61.0,1.3
+UF,14,Roraima,Homens,1155,75 a 79 anos,2632.0,45.0,1.7
+UF,14,Roraima,Homens,6802,80 a 84 anos,1418.0,26.0,1.9
+UF,14,Roraima,Homens,6803,85 a 89 anos,703.0,30.0,4.2
+UF,14,Roraima,Homens,92963,90 a 94 anos,258.0,,
+UF,14,Roraima,Homens,92964,95 a 99 anos,61.0,,
+UF,14,Roraima,Homens,92965,100 anos ou mais,28.0,7.0,26.6
+UF,14,Roraima,Homens,95253,Total,320392.0,4687.0,1.5
+UF,14,Roraima,Mulheres,1140,0 a 4 anos,31561.0,358.0,1.1
+UF,14,Roraima,Mulheres,1141,5 a 9 anos,30634.0,304.0,1.0
+UF,14,Roraima,Mulheres,1142,10 a 14 anos,28360.0,262.0,0.9
+UF,14,Roraima,Mulheres,1143,15 a 19 anos,28422.0,233.0,0.8
+UF,14,Roraima,Mulheres,1144,20 a 24 anos,28882.0,170.0,0.6
+UF,14,Roraima,Mulheres,1145,25 a 29 anos,28154.0,205.0,0.7
+UF,14,Roraima,Mulheres,1146,30 a 34 anos,24940.0,178.0,0.7
+UF,14,Roraima,Mulheres,1147,35 a 39 anos,24896.0,242.0,1.0
+UF,14,Roraima,Mulheres,1148,40 a 44 anos,22252.0,141.0,0.6
+UF,14,Roraima,Mulheres,1149,45 a 49 anos,17673.0,141.0,0.8
+UF,14,Roraima,Mulheres,1150,50 a 54 anos,13800.0,166.0,1.2
+UF,14,Roraima,Mulheres,1151,55 a 59 anos,11839.0,100.0,0.8
+UF,14,Roraima,Mulheres,1152,60 a 64 anos,8955.0,44.0,0.5
+UF,14,Roraima,Mulheres,1153,65 a 69 anos,6548.0,95.0,1.5
+UF,14,Roraima,Mulheres,1154,70 a 74 anos,4112.0,17.0,0.4
+UF,14,Roraima,Mulheres,1155,75 a 79 anos,2425.0,19.0,0.8
+UF,14,Roraima,Mulheres,6802,80 a 84 anos,1575.0,,
+UF,14,Roraima,Mulheres,6803,85 a 89 anos,806.0,12.0,1.5
+UF,14,Roraima,Mulheres,92963,90 a 94 anos,310.0,,
+UF,14,Roraima,Mulheres,92964,95 a 99 anos,134.0,,
+UF,14,Roraima,Mulheres,92965,100 anos ou mais,37.0,,
+UF,14,Roraima,Mulheres,95253,Total,316315.0,2687.0,0.8
+UF,14,Roraima,Total,1140,0 a 4 anos,64720.0,1214.0,1.9
+UF,14,Roraima,Total,1141,5 a 9 anos,63071.0,1172.0,1.9
+UF,14,Roraima,Total,1142,10 a 14 anos,58716.0,934.0,1.6
+UF,14,Roraima,Total,1143,15 a 19 anos,57581.0,675.0,1.2
+UF,14,Roraima,Total,1144,20 a 24 anos,57901.0,442.0,0.8
+UF,14,Roraima,Total,1145,25 a 29 anos,55976.0,466.0,0.8
+UF,14,Roraima,Total,1146,30 a 34 anos,49302.0,329.0,0.7
+UF,14,Roraima,Total,1147,35 a 39 anos,49164.0,417.0,0.8
+UF,14,Roraima,Total,1148,40 a 44 anos,43689.0,428.0,1.0
+UF,14,Roraima,Total,1149,45 a 49 anos,34398.0,224.0,0.7
+UF,14,Roraima,Total,1150,50 a 54 anos,28074.0,317.0,1.1
+UF,14,Roraima,Total,1151,55 a 59 anos,23764.0,232.0,1.0
+UF,14,Roraima,Total,1152,60 a 64 anos,17926.0,129.0,0.7
+UF,14,Roraima,Total,1153,65 a 69 anos,13349.0,179.0,1.3
+UF,14,Roraima,Total,1154,70 a 74 anos,8689.0,77.0,0.9
+UF,14,Roraima,Total,1155,75 a 79 anos,5058.0,64.0,1.3
+UF,14,Roraima,Total,6802,80 a 84 anos,2992.0,26.0,0.9
+UF,14,Roraima,Total,6803,85 a 89 anos,1509.0,41.0,2.7
+UF,14,Roraima,Total,92963,90 a 94 anos,567.0,,
+UF,14,Roraima,Total,92964,95 a 99 anos,195.0,,
+UF,14,Roraima,Total,92965,100 anos ou mais,65.0,7.0,11.4
+UF,14,Roraima,Total,95253,Total,636707.0,7374.0,1.2
+UF,15,Pará,Homens,1140,0 a 4 anos,321952.0,6676.0,2.1
+UF,15,Pará,Homens,1141,5 a 9 anos,342102.0,9942.0,2.9
+UF,15,Pará,Homens,1142,10 a 14 anos,353066.0,8211.0,2.3
+UF,15,Pará,Homens,1143,15 a 19 anos,369211.0,6045.0,1.6
+UF,15,Pará,Homens,1144,20 a 24 anos,356059.0,4315.0,1.2
+UF,15,Pará,Homens,1145,25 a 29 anos,327552.0,3158.0,1.0
+UF,15,Pará,Homens,1146,30 a 34 anos,314049.0,3228.0,1.0
+UF,15,Pará,Homens,1147,35 a 39 anos,319756.0,2786.0,0.9
+UF,15,Pará,Homens,1148,40 a 44 anos,300806.0,2375.0,0.8
+UF,15,Pará,Homens,1149,45 a 49 anos,244749.0,2303.0,0.9
+UF,15,Pará,Homens,1150,50 a 54 anos,210176.0,1875.0,0.9
+UF,15,Pará,Homens,1151,55 a 59 anos,170344.0,1625.0,1.0
+UF,15,Pará,Homens,1152,60 a 64 anos,142200.0,1417.0,1.0
+UF,15,Pará,Homens,1153,65 a 69 anos,108479.0,1098.0,1.0
+UF,15,Pará,Homens,1154,70 a 74 anos,75180.0,770.0,1.0
+UF,15,Pará,Homens,1155,75 a 79 anos,47543.0,384.0,0.8
+UF,15,Pará,Homens,6802,80 a 84 anos,28773.0,241.0,0.8
+UF,15,Pará,Homens,6803,85 a 89 anos,12371.0,121.0,1.0
+UF,15,Pará,Homens,92963,90 a 94 anos,5184.0,64.0,1.2
+UF,15,Pará,Homens,92964,95 a 99 anos,1786.0,,
+UF,15,Pará,Homens,92965,100 anos ou mais,475.0,7.0,1.5
+UF,15,Pará,Homens,95253,Total,4051813.0,56640.0,1.4
+UF,15,Pará,Mulheres,1140,0 a 4 anos,311739.0,2461.0,0.8
+UF,15,Pará,Mulheres,1141,5 a 9 anos,329288.0,3471.0,1.1
+UF,15,Pará,Mulheres,1142,10 a 14 anos,336243.0,3442.0,1.0
+UF,15,Pará,Mulheres,1143,15 a 19 anos,356951.0,3021.0,0.8
+UF,15,Pará,Mulheres,1144,20 a 24 anos,350880.0,2557.0,0.7
+UF,15,Pará,Mulheres,1145,25 a 29 anos,336629.0,2679.0,0.8
+UF,15,Pará,Mulheres,1146,30 a 34 anos,327259.0,2508.0,0.8
+UF,15,Pará,Mulheres,1147,35 a 39 anos,330199.0,2610.0,0.8
+UF,15,Pará,Mulheres,1148,40 a 44 anos,303801.0,2561.0,0.8
+UF,15,Pará,Mulheres,1149,45 a 49 anos,245453.0,1709.0,0.7
+UF,15,Pará,Mulheres,1150,50 a 54 anos,208220.0,1662.0,0.8
+UF,15,Pará,Mulheres,1151,55 a 59 anos,175525.0,1597.0,0.9
+UF,15,Pará,Mulheres,1152,60 a 64 anos,145695.0,1452.0,1.0
+UF,15,Pará,Mulheres,1153,65 a 69 anos,111882.0,1021.0,0.9
+UF,15,Pará,Mulheres,1154,70 a 74 anos,78946.0,877.0,1.1
+UF,15,Pará,Mulheres,1155,75 a 79 anos,54099.0,631.0,1.2
+UF,15,Pará,Mulheres,6802,80 a 84 anos,34558.0,147.0,0.4
+UF,15,Pará,Mulheres,6803,85 a 89 anos,18875.0,94.0,0.5
+UF,15,Pará,Mulheres,92963,90 a 94 anos,8333.0,90.0,1.1
+UF,15,Pará,Mulheres,92964,95 a 99 anos,2674.0,,
+UF,15,Pará,Mulheres,92965,100 anos ou mais,1070.0,,
+UF,15,Pará,Mulheres,95253,Total,4068318.0,34590.0,0.9
+UF,15,Pará,Total,1140,0 a 4 anos,633691.0,9137.0,1.4
+UF,15,Pará,Total,1141,5 a 9 anos,671391.0,13413.0,2.0
+UF,15,Pará,Total,1142,10 a 14 anos,689309.0,11652.0,1.7
+UF,15,Pará,Total,1143,15 a 19 anos,726162.0,9067.0,1.2
+UF,15,Pará,Total,1144,20 a 24 anos,706938.0,6871.0,1.0
+UF,15,Pará,Total,1145,25 a 29 anos,664181.0,5837.0,0.9
+UF,15,Pará,Total,1146,30 a 34 anos,641309.0,5736.0,0.9
+UF,15,Pará,Total,1147,35 a 39 anos,649955.0,5396.0,0.8
+UF,15,Pará,Total,1148,40 a 44 anos,604607.0,4936.0,0.8
+UF,15,Pará,Total,1149,45 a 49 anos,490202.0,4013.0,0.8
+UF,15,Pará,Total,1150,50 a 54 anos,418396.0,3538.0,0.8
+UF,15,Pará,Total,1151,55 a 59 anos,345869.0,3222.0,0.9
+UF,15,Pará,Total,1152,60 a 64 anos,287896.0,2869.0,1.0
+UF,15,Pará,Total,1153,65 a 69 anos,220360.0,2119.0,1.0
+UF,15,Pará,Total,1154,70 a 74 anos,154125.0,1647.0,1.1
+UF,15,Pará,Total,1155,75 a 79 anos,101643.0,1014.0,1.0
+UF,15,Pará,Total,6802,80 a 84 anos,63331.0,388.0,0.6
+UF,15,Pará,Total,6803,85 a 89 anos,31245.0,215.0,0.7
+UF,15,Pará,Total,92963,90 a 94 anos,13517.0,154.0,1.1
+UF,15,Pará,Total,92964,95 a 99 anos,4460.0,,
+UF,15,Pará,Total,92965,100 anos ou mais,1545.0,7.0,0.4
+UF,15,Pará,Total,95253,Total,8120131.0,91230.0,1.1
+UF,16,Amapá,Homens,1140,0 a 4 anos,33442.0,1171.0,3.5
+UF,16,Amapá,Homens,1141,5 a 9 anos,34327.0,1848.0,5.4
+UF,16,Amapá,Homens,1142,10 a 14 anos,33372.0,1077.0,3.2
+UF,16,Amapá,Homens,1143,15 a 19 anos,34245.0,639.0,1.9
+UF,16,Amapá,Homens,1144,20 a 24 anos,35130.0,404.0,1.1
+UF,16,Amapá,Homens,1145,25 a 29 anos,31018.0,543.0,1.7
+UF,16,Amapá,Homens,1146,30 a 34 anos,28667.0,140.0,0.5
+UF,16,Amapá,Homens,1147,35 a 39 anos,27481.0,355.0,1.3
+UF,16,Amapá,Homens,1148,40 a 44 anos,25108.0,224.0,0.9
+UF,16,Amapá,Homens,1149,45 a 49 anos,20799.0,236.0,1.1
+UF,16,Amapá,Homens,1150,50 a 54 anos,17515.0,143.0,0.8
+UF,16,Amapá,Homens,1151,55 a 59 anos,13580.0,135.0,1.0
+UF,16,Amapá,Homens,1152,60 a 64 anos,10637.0,93.0,0.9
+UF,16,Amapá,Homens,1153,65 a 69 anos,7597.0,80.0,1.1
+UF,16,Amapá,Homens,1154,70 a 74 anos,5136.0,34.0,0.7
+UF,16,Amapá,Homens,1155,75 a 79 anos,3148.0,32.0,1.0
+UF,16,Amapá,Homens,6802,80 a 84 anos,1775.0,28.0,1.6
+UF,16,Amapá,Homens,6803,85 a 89 anos,990.0,,
+UF,16,Amapá,Homens,92963,90 a 94 anos,428.0,19.0,4.4
+UF,16,Amapá,Homens,92964,95 a 99 anos,103.0,,
+UF,16,Amapá,Homens,92965,100 anos ou mais,16.0,,
+UF,16,Amapá,Homens,95253,Total,364516.0,7200.0,2.0
+UF,16,Amapá,Mulheres,1140,0 a 4 anos,32223.0,531.0,1.6
+UF,16,Amapá,Mulheres,1141,5 a 9 anos,32956.0,529.0,1.6
+UF,16,Amapá,Mulheres,1142,10 a 14 anos,32133.0,555.0,1.7
+UF,16,Amapá,Mulheres,1143,15 a 19 anos,33302.0,351.0,1.1
+UF,16,Amapá,Mulheres,1144,20 a 24 anos,34839.0,305.0,0.9
+UF,16,Amapá,Mulheres,1145,25 a 29 anos,32335.0,282.0,0.9
+UF,16,Amapá,Mulheres,1146,30 a 34 anos,29636.0,230.0,0.8
+UF,16,Amapá,Mulheres,1147,35 a 39 anos,29318.0,272.0,0.9
+UF,16,Amapá,Mulheres,1148,40 a 44 anos,26650.0,238.0,0.9
+UF,16,Amapá,Mulheres,1149,45 a 49 anos,21974.0,189.0,0.9
+UF,16,Amapá,Mulheres,1150,50 a 54 anos,17826.0,131.0,0.7
+UF,16,Amapá,Mulheres,1151,55 a 59 anos,13925.0,51.0,0.4
+UF,16,Amapá,Mulheres,1152,60 a 64 anos,11012.0,71.0,0.6
+UF,16,Amapá,Mulheres,1153,65 a 69 anos,8063.0,45.0,0.6
+UF,16,Amapá,Mulheres,1154,70 a 74 anos,5141.0,29.0,0.6
+UF,16,Amapá,Mulheres,1155,75 a 79 anos,3570.0,58.0,1.6
+UF,16,Amapá,Mulheres,6802,80 a 84 anos,2293.0,6.0,0.3
+UF,16,Amapá,Mulheres,6803,85 a 89 anos,1208.0,9.0,0.7
+UF,16,Amapá,Mulheres,92963,90 a 94 anos,548.0,,
+UF,16,Amapá,Mulheres,92964,95 a 99 anos,153.0,,
+UF,16,Amapá,Mulheres,92965,100 anos ou mais,138.0,,
+UF,16,Amapá,Mulheres,95253,Total,369243.0,3881.0,1.1
+UF,16,Amapá,Total,1140,0 a 4 anos,65666.0,1702.0,2.6
+UF,16,Amapá,Total,1141,5 a 9 anos,67283.0,2377.0,3.5
+UF,16,Amapá,Total,1142,10 a 14 anos,65505.0,1633.0,2.5
+UF,16,Amapá,Total,1143,15 a 19 anos,67547.0,990.0,1.5
+UF,16,Amapá,Total,1144,20 a 24 anos,69969.0,709.0,1.0
+UF,16,Amapá,Total,1145,25 a 29 anos,63353.0,824.0,1.3
+UF,16,Amapá,Total,1146,30 a 34 anos,58303.0,369.0,0.6
+UF,16,Amapá,Total,1147,35 a 39 anos,56799.0,626.0,1.1
+UF,16,Amapá,Total,1148,40 a 44 anos,51759.0,462.0,0.9
+UF,16,Amapá,Total,1149,45 a 49 anos,42773.0,425.0,1.0
+UF,16,Amapá,Total,1150,50 a 54 anos,35341.0,274.0,0.8
+UF,16,Amapá,Total,1151,55 a 59 anos,27506.0,186.0,0.7
+UF,16,Amapá,Total,1152,60 a 64 anos,21649.0,164.0,0.8
+UF,16,Amapá,Total,1153,65 a 69 anos,15660.0,125.0,0.8
+UF,16,Amapá,Total,1154,70 a 74 anos,10277.0,62.0,0.6
+UF,16,Amapá,Total,1155,75 a 79 anos,6718.0,90.0,1.3
+UF,16,Amapá,Total,6802,80 a 84 anos,4068.0,34.0,0.8
+UF,16,Amapá,Total,6803,85 a 89 anos,2198.0,9.0,0.4
+UF,16,Amapá,Total,92963,90 a 94 anos,976.0,19.0,1.9
+UF,16,Amapá,Total,92964,95 a 99 anos,256.0,,
+UF,16,Amapá,Total,92965,100 anos ou mais,154.0,,
+UF,16,Amapá,Total,95253,Total,733759.0,11081.0,1.5
+UF,17,Tocantins,Homens,1140,0 a 4 anos,58688.0,1342.0,2.3
+UF,17,Tocantins,Homens,1141,5 a 9 anos,59443.0,1573.0,2.6
+UF,17,Tocantins,Homens,1142,10 a 14 anos,60741.0,1087.0,1.8
+UF,17,Tocantins,Homens,1143,15 a 19 anos,63397.0,795.0,1.3
+UF,17,Tocantins,Homens,1144,20 a 24 anos,61761.0,380.0,0.6
+UF,17,Tocantins,Homens,1145,25 a 29 anos,58260.0,514.0,0.9
+UF,17,Tocantins,Homens,1146,30 a 34 anos,56110.0,383.0,0.7
+UF,17,Tocantins,Homens,1147,35 a 39 anos,58271.0,577.0,1.0
+UF,17,Tocantins,Homens,1148,40 a 44 anos,57272.0,549.0,1.0
+UF,17,Tocantins,Homens,1149,45 a 49 anos,49487.0,397.0,0.8
+UF,17,Tocantins,Homens,1150,50 a 54 anos,41776.0,291.0,0.7
+UF,17,Tocantins,Homens,1151,55 a 59 anos,36679.0,290.0,0.8
+UF,17,Tocantins,Homens,1152,60 a 64 anos,29410.0,242.0,0.8
+UF,17,Tocantins,Homens,1153,65 a 69 anos,23091.0,164.0,0.7
+UF,17,Tocantins,Homens,1154,70 a 74 anos,17609.0,168.0,1.0
+UF,17,Tocantins,Homens,1155,75 a 79 anos,11504.0,116.0,1.0
+UF,17,Tocantins,Homens,6802,80 a 84 anos,7717.0,74.0,1.0
+UF,17,Tocantins,Homens,6803,85 a 89 anos,3881.0,19.0,0.5
+UF,17,Tocantins,Homens,92963,90 a 94 anos,1576.0,23.0,1.5
+UF,17,Tocantins,Homens,92964,95 a 99 anos,482.0,4.0,0.8
+UF,17,Tocantins,Homens,92965,100 anos ou mais,114.0,3.0,2.7
+UF,17,Tocantins,Homens,95253,Total,757269.0,8991.0,1.2
+UF,17,Tocantins,Mulheres,1140,0 a 4 anos,55648.0,402.0,0.7
+UF,17,Tocantins,Mulheres,1141,5 a 9 anos,57502.0,542.0,0.9
+UF,17,Tocantins,Mulheres,1142,10 a 14 anos,58150.0,527.0,0.9
+UF,17,Tocantins,Mulheres,1143,15 a 19 anos,61911.0,398.0,0.6
+UF,17,Tocantins,Mulheres,1144,20 a 24 anos,61587.0,407.0,0.7
+UF,17,Tocantins,Mulheres,1145,25 a 29 anos,59776.0,411.0,0.7
+UF,17,Tocantins,Mulheres,1146,30 a 34 anos,58801.0,353.0,0.6
+UF,17,Tocantins,Mulheres,1147,35 a 39 anos,60750.0,394.0,0.6
+UF,17,Tocantins,Mulheres,1148,40 a 44 anos,58168.0,475.0,0.8
+UF,17,Tocantins,Mulheres,1149,45 a 49 anos,49224.0,331.0,0.7
+UF,17,Tocantins,Mulheres,1150,50 a 54 anos,42041.0,359.0,0.9
+UF,17,Tocantins,Mulheres,1151,55 a 59 anos,36606.0,346.0,0.9
+UF,17,Tocantins,Mulheres,1152,60 a 64 anos,29251.0,290.0,1.0
+UF,17,Tocantins,Mulheres,1153,65 a 69 anos,22925.0,128.0,0.6
+UF,17,Tocantins,Mulheres,1154,70 a 74 anos,16620.0,131.0,0.8
+UF,17,Tocantins,Mulheres,1155,75 a 79 anos,11324.0,91.0,0.8
+UF,17,Tocantins,Mulheres,6802,80 a 84 anos,7586.0,72.0,0.9
+UF,17,Tocantins,Mulheres,6803,85 a 89 anos,3961.0,57.0,1.4
+UF,17,Tocantins,Mulheres,92963,90 a 94 anos,1676.0,22.0,1.3
+UF,17,Tocantins,Mulheres,92964,95 a 99 anos,481.0,7.0,1.4
+UF,17,Tocantins,Mulheres,92965,100 anos ou mais,204.0,,
+UF,17,Tocantins,Mulheres,95253,Total,754191.0,5743.0,0.8
+UF,17,Tocantins,Total,1140,0 a 4 anos,114336.0,1744.0,1.5
+UF,17,Tocantins,Total,1141,5 a 9 anos,116944.0,2115.0,1.8
+UF,17,Tocantins,Total,1142,10 a 14 anos,118891.0,1614.0,1.4
+UF,17,Tocantins,Total,1143,15 a 19 anos,125308.0,1193.0,1.0
+UF,17,Tocantins,Total,1144,20 a 24 anos,123348.0,787.0,0.6
+UF,17,Tocantins,Total,1145,25 a 29 anos,118037.0,925.0,0.8
+UF,17,Tocantins,Total,1146,30 a 34 anos,114911.0,735.0,0.6
+UF,17,Tocantins,Total,1147,35 a 39 anos,119021.0,971.0,0.8
+UF,17,Tocantins,Total,1148,40 a 44 anos,115440.0,1025.0,0.9
+UF,17,Tocantins,Total,1149,45 a 49 anos,98711.0,728.0,0.7
+UF,17,Tocantins,Total,1150,50 a 54 anos,83818.0,651.0,0.8
+UF,17,Tocantins,Total,1151,55 a 59 anos,73284.0,635.0,0.9
+UF,17,Tocantins,Total,1152,60 a 64 anos,58661.0,532.0,0.9
+UF,17,Tocantins,Total,1153,65 a 69 anos,46016.0,291.0,0.6
+UF,17,Tocantins,Total,1154,70 a 74 anos,34229.0,299.0,0.9
+UF,17,Tocantins,Total,1155,75 a 79 anos,22828.0,207.0,0.9
+UF,17,Tocantins,Total,6802,80 a 84 anos,15304.0,146.0,1.0
+UF,17,Tocantins,Total,6803,85 a 89 anos,7842.0,76.0,1.0
+UF,17,Tocantins,Total,92963,90 a 94 anos,3252.0,46.0,1.4
+UF,17,Tocantins,Total,92964,95 a 99 anos,963.0,10.0,1.1
+UF,17,Tocantins,Total,92965,100 anos ou mais,318.0,3.0,1.0
+UF,17,Tocantins,Total,95253,Total,1511460.0,14734.0,1.0
+UF,21,Maranhão,Homens,1140,0 a 4 anos,262540.0,6060.0,2.3
+UF,21,Maranhão,Homens,1141,5 a 9 anos,278857.0,8579.0,3.1
+UF,21,Maranhão,Homens,1142,10 a 14 anos,297097.0,6575.0,2.2
+UF,21,Maranhão,Homens,1143,15 a 19 anos,311452.0,4356.0,1.4
+UF,21,Maranhão,Homens,1144,20 a 24 anos,285023.0,3160.0,1.1
+UF,21,Maranhão,Homens,1145,25 a 29 anos,252441.0,2303.0,0.9
+UF,21,Maranhão,Homens,1146,30 a 34 anos,251190.0,2205.0,0.9
+UF,21,Maranhão,Homens,1147,35 a 39 anos,263543.0,2149.0,0.8
+UF,21,Maranhão,Homens,1148,40 a 44 anos,242498.0,2101.0,0.9
+UF,21,Maranhão,Homens,1149,45 a 49 anos,193067.0,1626.0,0.8
+UF,21,Maranhão,Homens,1150,50 a 54 anos,164874.0,1256.0,0.8
+UF,21,Maranhão,Homens,1151,55 a 59 anos,141043.0,1385.0,1.0
+UF,21,Maranhão,Homens,1152,60 a 64 anos,118331.0,969.0,0.8
+UF,21,Maranhão,Homens,1153,65 a 69 anos,94458.0,964.0,1.0
+UF,21,Maranhão,Homens,1154,70 a 74 anos,71258.0,781.0,1.1
+UF,21,Maranhão,Homens,1155,75 a 79 anos,46932.0,391.0,0.8
+UF,21,Maranhão,Homens,6802,80 a 84 anos,30581.0,277.0,0.9
+UF,21,Maranhão,Homens,6803,85 a 89 anos,15633.0,190.0,1.2
+UF,21,Maranhão,Homens,92963,90 a 94 anos,6098.0,52.0,0.9
+UF,21,Maranhão,Homens,92964,95 a 99 anos,1761.0,9.0,0.5
+UF,21,Maranhão,Homens,92965,100 anos ou mais,747.0,,
+UF,21,Maranhão,Homens,95253,Total,3329423.0,45391.0,1.4
+UF,21,Maranhão,Mulheres,1140,0 a 4 anos,254624.0,2115.0,0.8
+UF,21,Maranhão,Mulheres,1141,5 a 9 anos,267650.0,3211.0,1.2
+UF,21,Maranhão,Mulheres,1142,10 a 14 anos,284347.0,2707.0,1.0
+UF,21,Maranhão,Mulheres,1143,15 a 19 anos,302169.0,2415.0,0.8
+UF,21,Maranhão,Mulheres,1144,20 a 24 anos,288095.0,2098.0,0.7
+UF,21,Maranhão,Mulheres,1145,25 a 29 anos,265059.0,1662.0,0.6
+UF,21,Maranhão,Mulheres,1146,30 a 34 anos,270490.0,2007.0,0.7
+UF,21,Maranhão,Mulheres,1147,35 a 39 anos,281065.0,2248.0,0.8
+UF,21,Maranhão,Mulheres,1148,40 a 44 anos,254330.0,2280.0,0.9
+UF,21,Maranhão,Mulheres,1149,45 a 49 anos,203228.0,1736.0,0.9
+UF,21,Maranhão,Mulheres,1150,50 a 54 anos,177792.0,1829.0,1.0
+UF,21,Maranhão,Mulheres,1151,55 a 59 anos,160397.0,1462.0,0.9
+UF,21,Maranhão,Mulheres,1152,60 a 64 anos,131071.0,1138.0,0.9
+UF,21,Maranhão,Mulheres,1153,65 a 69 anos,105015.0,1144.0,1.1
+UF,21,Maranhão,Mulheres,1154,70 a 74 anos,78756.0,660.0,0.8
+UF,21,Maranhão,Mulheres,1155,75 a 79 anos,52471.0,442.0,0.8
+UF,21,Maranhão,Mulheres,6802,80 a 84 anos,36921.0,423.0,1.1
+UF,21,Maranhão,Mulheres,6803,85 a 89 anos,20012.0,211.0,1.1
+UF,21,Maranhão,Mulheres,92963,90 a 94 anos,8777.0,59.0,0.7
+UF,21,Maranhão,Mulheres,92964,95 a 99 anos,3332.0,40.0,1.2
+UF,21,Maranhão,Mulheres,92965,100 anos ou mais,1676.0,3.0,0.2
+UF,21,Maranhão,Mulheres,95253,Total,3447276.0,29892.0,0.9
+UF,21,Maranhão,Total,1140,0 a 4 anos,517164.0,8175.0,1.6
+UF,21,Maranhão,Total,1141,5 a 9 anos,546507.0,11790.0,2.2
+UF,21,Maranhão,Total,1142,10 a 14 anos,581444.0,9282.0,1.6
+UF,21,Maranhão,Total,1143,15 a 19 anos,613621.0,6772.0,1.1
+UF,21,Maranhão,Total,1144,20 a 24 anos,573118.0,5258.0,0.9
+UF,21,Maranhão,Total,1145,25 a 29 anos,517500.0,3965.0,0.8
+UF,21,Maranhão,Total,1146,30 a 34 anos,521680.0,4212.0,0.8
+UF,21,Maranhão,Total,1147,35 a 39 anos,544608.0,4397.0,0.8
+UF,21,Maranhão,Total,1148,40 a 44 anos,496827.0,4382.0,0.9
+UF,21,Maranhão,Total,1149,45 a 49 anos,396296.0,3362.0,0.8
+UF,21,Maranhão,Total,1150,50 a 54 anos,342666.0,3085.0,0.9
+UF,21,Maranhão,Total,1151,55 a 59 anos,301440.0,2847.0,0.9
+UF,21,Maranhão,Total,1152,60 a 64 anos,249401.0,2108.0,0.8
+UF,21,Maranhão,Total,1153,65 a 69 anos,199473.0,2108.0,1.1
+UF,21,Maranhão,Total,1154,70 a 74 anos,150014.0,1441.0,1.0
+UF,21,Maranhão,Total,1155,75 a 79 anos,99403.0,833.0,0.8
+UF,21,Maranhão,Total,6802,80 a 84 anos,67502.0,700.0,1.0
+UF,21,Maranhão,Total,6803,85 a 89 anos,35645.0,401.0,1.1
+UF,21,Maranhão,Total,92963,90 a 94 anos,14875.0,111.0,0.7
+UF,21,Maranhão,Total,92964,95 a 99 anos,5092.0,49.0,1.0
+UF,21,Maranhão,Total,92965,100 anos ou mais,2423.0,3.0,0.1
+UF,21,Maranhão,Total,95253,Total,6776699.0,75283.0,1.1
+UF,22,Piauí,Homens,1140,0 a 4 anos,110486.0,3279.0,3.0
+UF,22,Piauí,Homens,1141,5 a 9 anos,115054.0,5370.0,4.7
+UF,22,Piauí,Homens,1142,10 a 14 anos,122492.0,3732.0,3.0
+UF,22,Piauí,Homens,1143,15 a 19 anos,131984.0,2154.0,1.6
+UF,22,Piauí,Homens,1144,20 a 24 anos,129726.0,1552.0,1.2
+UF,22,Piauí,Homens,1145,25 a 29 anos,120099.0,1164.0,1.0
+UF,22,Piauí,Homens,1146,30 a 34 anos,119706.0,987.0,0.8
+UF,22,Piauí,Homens,1147,35 a 39 anos,128060.0,991.0,0.8
+UF,22,Piauí,Homens,1148,40 a 44 anos,122211.0,927.0,0.8
+UF,22,Piauí,Homens,1149,45 a 49 anos,103641.0,859.0,0.8
+UF,22,Piauí,Homens,1150,50 a 54 anos,90141.0,670.0,0.7
+UF,22,Piauí,Homens,1151,55 a 59 anos,82408.0,539.0,0.7
+UF,22,Piauí,Homens,1152,60 a 64 anos,67413.0,584.0,0.9
+UF,22,Piauí,Homens,1153,65 a 69 anos,52751.0,369.0,0.7
+UF,22,Piauí,Homens,1154,70 a 74 anos,42863.0,326.0,0.8
+UF,22,Piauí,Homens,1155,75 a 79 anos,28447.0,197.0,0.7
+UF,22,Piauí,Homens,6802,80 a 84 anos,18425.0,214.0,1.2
+UF,22,Piauí,Homens,6803,85 a 89 anos,9092.0,34.0,0.4
+UF,22,Piauí,Homens,92963,90 a 94 anos,4163.0,32.0,0.8
+UF,22,Piauí,Homens,92964,95 a 99 anos,1298.0,,
+UF,22,Piauí,Homens,92965,100 anos ou mais,140.0,,
+UF,22,Piauí,Homens,95253,Total,1600602.0,23978.0,1.5
+UF,22,Piauí,Mulheres,1140,0 a 4 anos,106305.0,1149.0,1.1
+UF,22,Piauí,Mulheres,1141,5 a 9 anos,111128.0,1491.0,1.3
+UF,22,Piauí,Mulheres,1142,10 a 14 anos,116855.0,1333.0,1.1
+UF,22,Piauí,Mulheres,1143,15 a 19 anos,125914.0,1094.0,0.9
+UF,22,Piauí,Mulheres,1144,20 a 24 anos,128889.0,972.0,0.8
+UF,22,Piauí,Mulheres,1145,25 a 29 anos,121758.0,822.0,0.7
+UF,22,Piauí,Mulheres,1146,30 a 34 anos,126495.0,980.0,0.8
+UF,22,Piauí,Mulheres,1147,35 a 39 anos,135430.0,910.0,0.7
+UF,22,Piauí,Mulheres,1148,40 a 44 anos,128616.0,883.0,0.7
+UF,22,Piauí,Mulheres,1149,45 a 49 anos,109818.0,708.0,0.6
+UF,22,Piauí,Mulheres,1150,50 a 54 anos,97334.0,658.0,0.7
+UF,22,Piauí,Mulheres,1151,55 a 59 anos,93203.0,838.0,0.9
+UF,22,Piauí,Mulheres,1152,60 a 64 anos,77222.0,741.0,1.0
+UF,22,Piauí,Mulheres,1153,65 a 69 anos,61549.0,399.0,0.6
+UF,22,Piauí,Mulheres,1154,70 a 74 anos,50574.0,324.0,0.6
+UF,22,Piauí,Mulheres,1155,75 a 79 anos,34400.0,255.0,0.7
+UF,22,Piauí,Mulheres,6802,80 a 84 anos,22561.0,117.0,0.5
+UF,22,Piauí,Mulheres,6803,85 a 89 anos,13854.0,132.0,1.0
+UF,22,Piauí,Mulheres,92963,90 a 94 anos,6218.0,45.0,0.7
+UF,22,Piauí,Mulheres,92964,95 a 99 anos,2173.0,27.0,1.2
+UF,22,Piauí,Mulheres,92965,100 anos ou mais,301.0,,
+UF,22,Piauí,Mulheres,95253,Total,1670597.0,13878.0,0.8
+UF,22,Piauí,Total,1140,0 a 4 anos,216791.0,4428.0,2.0
+UF,22,Piauí,Total,1141,5 a 9 anos,226182.0,6861.0,3.0
+UF,22,Piauí,Total,1142,10 a 14 anos,239347.0,5065.0,2.1
+UF,22,Piauí,Total,1143,15 a 19 anos,257898.0,3248.0,1.3
+UF,22,Piauí,Total,1144,20 a 24 anos,258615.0,2525.0,1.0
+UF,22,Piauí,Total,1145,25 a 29 anos,241858.0,1985.0,0.8
+UF,22,Piauí,Total,1146,30 a 34 anos,246201.0,1966.0,0.8
+UF,22,Piauí,Total,1147,35 a 39 anos,263490.0,1901.0,0.7
+UF,22,Piauí,Total,1148,40 a 44 anos,250827.0,1810.0,0.7
+UF,22,Piauí,Total,1149,45 a 49 anos,213459.0,1567.0,0.7
+UF,22,Piauí,Total,1150,50 a 54 anos,187475.0,1327.0,0.7
+UF,22,Piauí,Total,1151,55 a 59 anos,175611.0,1377.0,0.8
+UF,22,Piauí,Total,1152,60 a 64 anos,144635.0,1325.0,0.9
+UF,22,Piauí,Total,1153,65 a 69 anos,114300.0,768.0,0.7
+UF,22,Piauí,Total,1154,70 a 74 anos,93438.0,649.0,0.7
+UF,22,Piauí,Total,1155,75 a 79 anos,62847.0,452.0,0.7
+UF,22,Piauí,Total,6802,80 a 84 anos,40986.0,332.0,0.8
+UF,22,Piauí,Total,6803,85 a 89 anos,22946.0,166.0,0.7
+UF,22,Piauí,Total,92963,90 a 94 anos,10381.0,77.0,0.7
+UF,22,Piauí,Total,92964,95 a 99 anos,3471.0,27.0,0.8
+UF,22,Piauí,Total,92965,100 anos ou mais,441.0,,
+UF,22,Piauí,Total,95253,Total,3271199.0,37856.0,1.2
+UF,23,Ceará,Homens,1140,0 a 4 anos,293661.0,12760.0,4.3
+UF,23,Ceará,Homens,1141,5 a 9 anos,311045.0,18161.0,5.8
+UF,23,Ceará,Homens,1142,10 a 14 anos,317455.0,11521.0,3.6
+UF,23,Ceará,Homens,1143,15 a 19 anos,329922.0,7053.0,2.1
+UF,23,Ceará,Homens,1144,20 a 24 anos,352055.0,4491.0,1.3
+UF,23,Ceará,Homens,1145,25 a 29 anos,350522.0,3423.0,1.0
+UF,23,Ceará,Homens,1146,30 a 34 anos,337482.0,3331.0,1.0
+UF,23,Ceará,Homens,1147,35 a 39 anos,338362.0,3390.0,1.0
+UF,23,Ceará,Homens,1148,40 a 44 anos,320527.0,2889.0,0.9
+UF,23,Ceará,Homens,1149,45 a 49 anos,269574.0,2447.0,0.9
+UF,23,Ceará,Homens,1150,50 a 54 anos,244114.0,2173.0,0.9
+UF,23,Ceará,Homens,1151,55 a 59 anos,222104.0,2190.0,1.0
+UF,23,Ceará,Homens,1152,60 a 64 anos,173855.0,1632.0,0.9
+UF,23,Ceará,Homens,1153,65 a 69 anos,132667.0,1275.0,1.0
+UF,23,Ceará,Homens,1154,70 a 74 anos,106742.0,952.0,0.9
+UF,23,Ceará,Homens,1155,75 a 79 anos,71550.0,727.0,1.0
+UF,23,Ceará,Homens,6802,80 a 84 anos,47567.0,339.0,0.7
+UF,23,Ceará,Homens,6803,85 a 89 anos,24105.0,314.0,1.3
+UF,23,Ceará,Homens,92963,90 a 94 anos,10980.0,126.0,1.1
+UF,23,Ceará,Homens,92964,95 a 99 anos,3030.0,30.0,1.0
+UF,23,Ceará,Homens,92965,100 anos ou mais,609.0,21.0,3.5
+UF,23,Ceará,Homens,95253,Total,4257927.0,79245.0,1.9
+UF,23,Ceará,Mulheres,1140,0 a 4 anos,281690.0,5030.0,1.8
+UF,23,Ceará,Mulheres,1141,5 a 9 anos,298828.0,5325.0,1.8
+UF,23,Ceará,Mulheres,1142,10 a 14 anos,302109.0,3941.0,1.3
+UF,23,Ceará,Mulheres,1143,15 a 19 anos,318568.0,3007.0,0.9
+UF,23,Ceará,Mulheres,1144,20 a 24 anos,348377.0,2921.0,0.8
+UF,23,Ceará,Mulheres,1145,25 a 29 anos,368691.0,2949.0,0.8
+UF,23,Ceará,Mulheres,1146,30 a 34 anos,360334.0,2894.0,0.8
+UF,23,Ceará,Mulheres,1147,35 a 39 anos,364474.0,3026.0,0.8
+UF,23,Ceará,Mulheres,1148,40 a 44 anos,345374.0,2731.0,0.8
+UF,23,Ceará,Mulheres,1149,45 a 49 anos,297606.0,2807.0,0.9
+UF,23,Ceará,Mulheres,1150,50 a 54 anos,273251.0,2574.0,0.9
+UF,23,Ceará,Mulheres,1151,55 a 59 anos,258136.0,3040.0,1.2
+UF,23,Ceará,Mulheres,1152,60 a 64 anos,203013.0,1953.0,1.0
+UF,23,Ceará,Mulheres,1153,65 a 69 anos,161893.0,1551.0,1.0
+UF,23,Ceará,Mulheres,1154,70 a 74 anos,133728.0,1314.0,1.0
+UF,23,Ceará,Mulheres,1155,75 a 79 anos,91093.0,995.0,1.1
+UF,23,Ceará,Mulheres,6802,80 a 84 anos,67560.0,630.0,0.9
+UF,23,Ceará,Mulheres,6803,85 a 89 anos,36027.0,374.0,1.0
+UF,23,Ceará,Mulheres,92963,90 a 94 anos,18633.0,136.0,0.7
+UF,23,Ceará,Mulheres,92964,95 a 99 anos,6477.0,93.0,1.4
+UF,23,Ceará,Mulheres,92965,100 anos ou mais,1165.0,13.0,1.1
+UF,23,Ceará,Mulheres,95253,Total,4537030.0,47303.0,1.0
+UF,23,Ceará,Total,1140,0 a 4 anos,575351.0,17790.0,3.1
+UF,23,Ceará,Total,1141,5 a 9 anos,609873.0,23486.0,3.9
+UF,23,Ceará,Total,1142,10 a 14 anos,619564.0,15462.0,2.5
+UF,23,Ceará,Total,1143,15 a 19 anos,648490.0,10060.0,1.6
+UF,23,Ceará,Total,1144,20 a 24 anos,700432.0,7412.0,1.1
+UF,23,Ceará,Total,1145,25 a 29 anos,719213.0,6372.0,0.9
+UF,23,Ceará,Total,1146,30 a 34 anos,697816.0,6225.0,0.9
+UF,23,Ceará,Total,1147,35 a 39 anos,702836.0,6417.0,0.9
+UF,23,Ceará,Total,1148,40 a 44 anos,665901.0,5619.0,0.8
+UF,23,Ceará,Total,1149,45 a 49 anos,567180.0,5254.0,0.9
+UF,23,Ceará,Total,1150,50 a 54 anos,517365.0,4747.0,0.9
+UF,23,Ceará,Total,1151,55 a 59 anos,480240.0,5229.0,1.1
+UF,23,Ceará,Total,1152,60 a 64 anos,376869.0,3585.0,1.0
+UF,23,Ceará,Total,1153,65 a 69 anos,294561.0,2826.0,1.0
+UF,23,Ceará,Total,1154,70 a 74 anos,240470.0,2266.0,0.9
+UF,23,Ceará,Total,1155,75 a 79 anos,162642.0,1722.0,1.1
+UF,23,Ceará,Total,6802,80 a 84 anos,115127.0,969.0,0.8
+UF,23,Ceará,Total,6803,85 a 89 anos,60132.0,688.0,1.1
+UF,23,Ceará,Total,92963,90 a 94 anos,29613.0,261.0,0.9
+UF,23,Ceará,Total,92964,95 a 99 anos,9507.0,123.0,1.3
+UF,23,Ceará,Total,92965,100 anos ou mais,1774.0,34.0,1.9
+UF,23,Ceará,Total,95253,Total,8794957.0,126548.0,1.4
+UF,24,Rio Grande do Norte,Homens,1140,0 a 4 anos,104998.0,3173.0,3.0
+UF,24,Rio Grande do Norte,Homens,1141,5 a 9 anos,113168.0,4778.0,4.2
+UF,24,Rio Grande do Norte,Homens,1142,10 a 14 anos,117614.0,3572.0,3.0
+UF,24,Rio Grande do Norte,Homens,1143,15 a 19 anos,124009.0,2730.0,2.2
+UF,24,Rio Grande do Norte,Homens,1144,20 a 24 anos,128285.0,1266.0,1.0
+UF,24,Rio Grande do Norte,Homens,1145,25 a 29 anos,125273.0,1281.0,1.0
+UF,24,Rio Grande do Norte,Homens,1146,30 a 34 anos,123050.0,902.0,0.7
+UF,24,Rio Grande do Norte,Homens,1147,35 a 39 anos,130181.0,993.0,0.8
+UF,24,Rio Grande do Norte,Homens,1148,40 a 44 anos,123961.0,1101.0,0.9
+UF,24,Rio Grande do Norte,Homens,1149,45 a 49 anos,104584.0,733.0,0.7
+UF,24,Rio Grande do Norte,Homens,1150,50 a 54 anos,95881.0,695.0,0.7
+UF,24,Rio Grande do Norte,Homens,1151,55 a 59 anos,88427.0,720.0,0.8
+UF,24,Rio Grande do Norte,Homens,1152,60 a 64 anos,69891.0,439.0,0.6
+UF,24,Rio Grande do Norte,Homens,1153,65 a 69 anos,51144.0,339.0,0.7
+UF,24,Rio Grande do Norte,Homens,1154,70 a 74 anos,39687.0,300.0,0.8
+UF,24,Rio Grande do Norte,Homens,1155,75 a 79 anos,26695.0,232.0,0.9
+UF,24,Rio Grande do Norte,Homens,6802,80 a 84 anos,18111.0,122.0,0.7
+UF,24,Rio Grande do Norte,Homens,6803,85 a 89 anos,8944.0,39.0,0.4
+UF,24,Rio Grande do Norte,Homens,92963,90 a 94 anos,3474.0,39.0,1.1
+UF,24,Rio Grande do Norte,Homens,92964,95 a 99 anos,1130.0,,
+UF,24,Rio Grande do Norte,Homens,92965,100 anos ou mais,253.0,,
+UF,24,Rio Grande do Norte,Homens,95253,Total,1598762.0,23454.0,1.5
+UF,24,Rio Grande do Norte,Mulheres,1140,0 a 4 anos,100412.0,1315.0,1.3
+UF,24,Rio Grande do Norte,Mulheres,1141,5 a 9 anos,107751.0,1296.0,1.2
+UF,24,Rio Grande do Norte,Mulheres,1142,10 a 14 anos,112602.0,1151.0,1.0
+UF,24,Rio Grande do Norte,Mulheres,1143,15 a 19 anos,119196.0,1106.0,0.9
+UF,24,Rio Grande do Norte,Mulheres,1144,20 a 24 anos,126248.0,883.0,0.7
+UF,24,Rio Grande do Norte,Mulheres,1145,25 a 29 anos,130781.0,1007.0,0.8
+UF,24,Rio Grande do Norte,Mulheres,1146,30 a 34 anos,131909.0,851.0,0.6
+UF,24,Rio Grande do Norte,Mulheres,1147,35 a 39 anos,139514.0,1130.0,0.8
+UF,24,Rio Grande do Norte,Mulheres,1148,40 a 44 anos,133292.0,1004.0,0.8
+UF,24,Rio Grande do Norte,Mulheres,1149,45 a 49 anos,114610.0,837.0,0.7
+UF,24,Rio Grande do Norte,Mulheres,1150,50 a 54 anos,106088.0,824.0,0.8
+UF,24,Rio Grande do Norte,Mulheres,1151,55 a 59 anos,102188.0,836.0,0.8
+UF,24,Rio Grande do Norte,Mulheres,1152,60 a 64 anos,80869.0,539.0,0.7
+UF,24,Rio Grande do Norte,Mulheres,1153,65 a 69 anos,62658.0,439.0,0.7
+UF,24,Rio Grande do Norte,Mulheres,1154,70 a 74 anos,50745.0,390.0,0.8
+UF,24,Rio Grande do Norte,Mulheres,1155,75 a 79 anos,34968.0,266.0,0.8
+UF,24,Rio Grande do Norte,Mulheres,6802,80 a 84 anos,25651.0,161.0,0.6
+UF,24,Rio Grande do Norte,Mulheres,6803,85 a 89 anos,14167.0,60.0,0.4
+UF,24,Rio Grande do Norte,Mulheres,92963,90 a 94 anos,6684.0,64.0,1.0
+UF,24,Rio Grande do Norte,Mulheres,92964,95 a 99 anos,2892.0,10.0,0.3
+UF,24,Rio Grande do Norte,Mulheres,92965,100 anos ou mais,743.0,1.0,0.1
+UF,24,Rio Grande do Norte,Mulheres,95253,Total,1703967.0,14170.0,0.8
+UF,24,Rio Grande do Norte,Total,1140,0 a 4 anos,205410.0,4488.0,2.2
+UF,24,Rio Grande do Norte,Total,1141,5 a 9 anos,220919.0,6075.0,2.7
+UF,24,Rio Grande do Norte,Total,1142,10 a 14 anos,230216.0,4723.0,2.1
+UF,24,Rio Grande do Norte,Total,1143,15 a 19 anos,243205.0,3836.0,1.6
+UF,24,Rio Grande do Norte,Total,1144,20 a 24 anos,254532.0,2149.0,0.8
+UF,24,Rio Grande do Norte,Total,1145,25 a 29 anos,256054.0,2288.0,0.9
+UF,24,Rio Grande do Norte,Total,1146,30 a 34 anos,254959.0,1753.0,0.7
+UF,24,Rio Grande do Norte,Total,1147,35 a 39 anos,269696.0,2123.0,0.8
+UF,24,Rio Grande do Norte,Total,1148,40 a 44 anos,257254.0,2106.0,0.8
+UF,24,Rio Grande do Norte,Total,1149,45 a 49 anos,219193.0,1569.0,0.7
+UF,24,Rio Grande do Norte,Total,1150,50 a 54 anos,201970.0,1519.0,0.8
+UF,24,Rio Grande do Norte,Total,1151,55 a 59 anos,190615.0,1556.0,0.8
+UF,24,Rio Grande do Norte,Total,1152,60 a 64 anos,150760.0,978.0,0.6
+UF,24,Rio Grande do Norte,Total,1153,65 a 69 anos,113802.0,777.0,0.7
+UF,24,Rio Grande do Norte,Total,1154,70 a 74 anos,90432.0,690.0,0.8
+UF,24,Rio Grande do Norte,Total,1155,75 a 79 anos,61663.0,498.0,0.8
+UF,24,Rio Grande do Norte,Total,6802,80 a 84 anos,43763.0,284.0,0.6
+UF,24,Rio Grande do Norte,Total,6803,85 a 89 anos,23111.0,99.0,0.4
+UF,24,Rio Grande do Norte,Total,92963,90 a 94 anos,10158.0,103.0,1.0
+UF,24,Rio Grande do Norte,Total,92964,95 a 99 anos,4022.0,10.0,0.3
+UF,24,Rio Grande do Norte,Total,92965,100 anos ou mais,996.0,1.0,0.1
+UF,24,Rio Grande do Norte,Total,95253,Total,3302729.0,37625.0,1.1
+UF,25,Paraíba,Homens,1140,0 a 4 anos,134893.0,4873.0,3.6
+UF,25,Paraíba,Homens,1141,5 a 9 anos,141107.0,6570.0,4.7
+UF,25,Paraíba,Homens,1142,10 a 14 anos,146938.0,4388.0,3.0
+UF,25,Paraíba,Homens,1143,15 a 19 anos,151241.0,2541.0,1.7
+UF,25,Paraíba,Homens,1144,20 a 24 anos,150740.0,1500.0,1.0
+UF,25,Paraíba,Homens,1145,25 a 29 anos,144847.0,1290.0,0.9
+UF,25,Paraíba,Homens,1146,30 a 34 anos,142922.0,1175.0,0.8
+UF,25,Paraíba,Homens,1147,35 a 39 anos,150404.0,1064.0,0.7
+UF,25,Paraíba,Homens,1148,40 a 44 anos,146801.0,1022.0,0.7
+UF,25,Paraíba,Homens,1149,45 a 49 anos,126907.0,1016.0,0.8
+UF,25,Paraíba,Homens,1150,50 a 54 anos,112220.0,637.0,0.6
+UF,25,Paraíba,Homens,1151,55 a 59 anos,102083.0,778.0,0.8
+UF,25,Paraíba,Homens,1152,60 a 64 anos,81160.0,626.0,0.8
+UF,25,Paraíba,Homens,1153,65 a 69 anos,62907.0,488.0,0.8
+UF,25,Paraíba,Homens,1154,70 a 74 anos,49839.0,418.0,0.8
+UF,25,Paraíba,Homens,1155,75 a 79 anos,33490.0,241.0,0.7
+UF,25,Paraíba,Homens,6802,80 a 84 anos,22772.0,155.0,0.7
+UF,25,Paraíba,Homens,6803,85 a 89 anos,11241.0,67.0,0.6
+UF,25,Paraíba,Homens,92963,90 a 94 anos,4418.0,15.0,0.3
+UF,25,Paraíba,Homens,92964,95 a 99 anos,1452.0,,
+UF,25,Paraíba,Homens,92965,100 anos ou mais,472.0,,
+UF,25,Paraíba,Homens,95253,Total,1918855.0,28865.0,1.5
+UF,25,Paraíba,Mulheres,1140,0 a 4 anos,129795.0,1881.0,1.4
+UF,25,Paraíba,Mulheres,1141,5 a 9 anos,135542.0,2156.0,1.6
+UF,25,Paraíba,Mulheres,1142,10 a 14 anos,138765.0,1313.0,0.9
+UF,25,Paraíba,Mulheres,1143,15 a 19 anos,145151.0,1354.0,0.9
+UF,25,Paraíba,Mulheres,1144,20 a 24 anos,149968.0,1054.0,0.7
+UF,25,Paraíba,Mulheres,1145,25 a 29 anos,151114.0,1039.0,0.7
+UF,25,Paraíba,Mulheres,1146,30 a 34 anos,153865.0,1216.0,0.8
+UF,25,Paraíba,Mulheres,1147,35 a 39 anos,162201.0,1150.0,0.7
+UF,25,Paraíba,Mulheres,1148,40 a 44 anos,158856.0,1152.0,0.7
+UF,25,Paraíba,Mulheres,1149,45 a 49 anos,138504.0,989.0,0.7
+UF,25,Paraíba,Mulheres,1150,50 a 54 anos,125673.0,913.0,0.7
+UF,25,Paraíba,Mulheres,1151,55 a 59 anos,118381.0,924.0,0.8
+UF,25,Paraíba,Mulheres,1152,60 a 64 anos,95658.0,821.0,0.9
+UF,25,Paraíba,Mulheres,1153,65 a 69 anos,77676.0,545.0,0.7
+UF,25,Paraíba,Mulheres,1154,70 a 74 anos,65074.0,442.0,0.7
+UF,25,Paraíba,Mulheres,1155,75 a 79 anos,45338.0,332.0,0.7
+UF,25,Paraíba,Mulheres,6802,80 a 84 anos,33524.0,175.0,0.5
+UF,25,Paraíba,Mulheres,6803,85 a 89 anos,18734.0,164.0,0.9
+UF,25,Paraíba,Mulheres,92963,90 a 94 anos,8418.0,42.0,0.5
+UF,25,Paraíba,Mulheres,92964,95 a 99 anos,2762.0,10.0,0.4
+UF,25,Paraíba,Mulheres,92965,100 anos ou mais,832.0,25.0,3.0
+UF,25,Paraíba,Mulheres,95253,Total,2055832.0,17695.0,0.9
+UF,25,Paraíba,Total,1140,0 a 4 anos,264689.0,6753.0,2.6
+UF,25,Paraíba,Total,1141,5 a 9 anos,276649.0,8726.0,3.2
+UF,25,Paraíba,Total,1142,10 a 14 anos,285703.0,5701.0,2.0
+UF,25,Paraíba,Total,1143,15 a 19 anos,296392.0,3895.0,1.3
+UF,25,Paraíba,Total,1144,20 a 24 anos,300708.0,2555.0,0.8
+UF,25,Paraíba,Total,1145,25 a 29 anos,295961.0,2329.0,0.8
+UF,25,Paraíba,Total,1146,30 a 34 anos,296787.0,2391.0,0.8
+UF,25,Paraíba,Total,1147,35 a 39 anos,312605.0,2214.0,0.7
+UF,25,Paraíba,Total,1148,40 a 44 anos,305658.0,2174.0,0.7
+UF,25,Paraíba,Total,1149,45 a 49 anos,265411.0,2005.0,0.8
+UF,25,Paraíba,Total,1150,50 a 54 anos,237894.0,1550.0,0.7
+UF,25,Paraíba,Total,1151,55 a 59 anos,220464.0,1702.0,0.8
+UF,25,Paraíba,Total,1152,60 a 64 anos,176818.0,1447.0,0.8
+UF,25,Paraíba,Total,1153,65 a 69 anos,140583.0,1033.0,0.7
+UF,25,Paraíba,Total,1154,70 a 74 anos,114913.0,860.0,0.7
+UF,25,Paraíba,Total,1155,75 a 79 anos,78827.0,573.0,0.7
+UF,25,Paraíba,Total,6802,80 a 84 anos,56296.0,330.0,0.6
+UF,25,Paraíba,Total,6803,85 a 89 anos,29974.0,231.0,0.8
+UF,25,Paraíba,Total,92963,90 a 94 anos,12836.0,57.0,0.4
+UF,25,Paraíba,Total,92964,95 a 99 anos,4215.0,10.0,0.2
+UF,25,Paraíba,Total,92965,100 anos ou mais,1304.0,25.0,1.9
+UF,25,Paraíba,Total,95253,Total,3974687.0,46560.0,1.2
+UF,26,Pernambuco,Homens,1140,0 a 4 anos,301757.0,9150.0,3.0
+UF,26,Pernambuco,Homens,1141,5 a 9 anos,329103.0,13490.0,4.1
+UF,26,Pernambuco,Homens,1142,10 a 14 anos,334125.0,9911.0,3.0
+UF,26,Pernambuco,Homens,1143,15 a 19 anos,348466.0,6227.0,1.8
+UF,26,Pernambuco,Homens,1144,20 a 24 anos,356354.0,3684.0,1.0
+UF,26,Pernambuco,Homens,1145,25 a 29 anos,329488.0,2731.0,0.8
+UF,26,Pernambuco,Homens,1146,30 a 34 anos,325872.0,2717.0,0.8
+UF,26,Pernambuco,Homens,1147,35 a 39 anos,334488.0,2638.0,0.8
+UF,26,Pernambuco,Homens,1148,40 a 44 anos,333133.0,2870.0,0.9
+UF,26,Pernambuco,Homens,1149,45 a 49 anos,286866.0,2222.0,0.8
+UF,26,Pernambuco,Homens,1150,50 a 54 anos,253971.0,1750.0,0.7
+UF,26,Pernambuco,Homens,1151,55 a 59 anos,221180.0,1634.0,0.7
+UF,26,Pernambuco,Homens,1152,60 a 64 anos,183147.0,1562.0,0.9
+UF,26,Pernambuco,Homens,1153,65 a 69 anos,138290.0,1098.0,0.8
+UF,26,Pernambuco,Homens,1154,70 a 74 anos,103675.0,809.0,0.8
+UF,26,Pernambuco,Homens,1155,75 a 79 anos,67884.0,606.0,0.9
+UF,26,Pernambuco,Homens,6802,80 a 84 anos,42334.0,484.0,1.1
+UF,26,Pernambuco,Homens,6803,85 a 89 anos,20515.0,184.0,0.9
+UF,26,Pernambuco,Homens,92963,90 a 94 anos,7557.0,45.0,0.6
+UF,26,Pernambuco,Homens,92964,95 a 99 anos,2475.0,29.0,1.2
+UF,26,Pernambuco,Homens,92965,100 anos ou mais,641.0,6.0,1.0
+UF,26,Pernambuco,Homens,95253,Total,4321320.0,63848.0,1.5
+UF,26,Pernambuco,Mulheres,1140,0 a 4 anos,291319.0,3521.0,1.2
+UF,26,Pernambuco,Mulheres,1141,5 a 9 anos,316351.0,4367.0,1.4
+UF,26,Pernambuco,Mulheres,1142,10 a 14 anos,320595.0,3383.0,1.1
+UF,26,Pernambuco,Mulheres,1143,15 a 19 anos,338121.0,2693.0,0.8
+UF,26,Pernambuco,Mulheres,1144,20 a 24 anos,357326.0,2508.0,0.7
+UF,26,Pernambuco,Mulheres,1145,25 a 29 anos,349827.0,2773.0,0.8
+UF,26,Pernambuco,Mulheres,1146,30 a 34 anos,359596.0,2778.0,0.8
+UF,26,Pernambuco,Mulheres,1147,35 a 39 anos,373006.0,2942.0,0.8
+UF,26,Pernambuco,Mulheres,1148,40 a 44 anos,368582.0,3006.0,0.8
+UF,26,Pernambuco,Mulheres,1149,45 a 49 anos,326075.0,2754.0,0.8
+UF,26,Pernambuco,Mulheres,1150,50 a 54 anos,296161.0,2125.0,0.7
+UF,26,Pernambuco,Mulheres,1151,55 a 59 anos,271344.0,2330.0,0.9
+UF,26,Pernambuco,Mulheres,1152,60 a 64 anos,226982.0,2082.0,0.9
+UF,26,Pernambuco,Mulheres,1153,65 a 69 anos,179684.0,1545.0,0.9
+UF,26,Pernambuco,Mulheres,1154,70 a 74 anos,140828.0,1374.0,1.0
+UF,26,Pernambuco,Mulheres,1155,75 a 79 anos,96576.0,838.0,0.9
+UF,26,Pernambuco,Mulheres,6802,80 a 84 anos,64962.0,504.0,0.8
+UF,26,Pernambuco,Mulheres,6803,85 a 89 anos,36348.0,315.0,0.9
+UF,26,Pernambuco,Mulheres,92963,90 a 94 anos,16983.0,112.0,0.7
+UF,26,Pernambuco,Mulheres,92964,95 a 99 anos,5428.0,43.0,0.8
+UF,26,Pernambuco,Mulheres,92965,100 anos ou mais,1517.0,10.0,0.7
+UF,26,Pernambuco,Mulheres,95253,Total,4737611.0,42004.0,0.9
+UF,26,Pernambuco,Total,1140,0 a 4 anos,593076.0,12671.0,2.1
+UF,26,Pernambuco,Total,1141,5 a 9 anos,645453.0,17858.0,2.8
+UF,26,Pernambuco,Total,1142,10 a 14 anos,654720.0,13294.0,2.0
+UF,26,Pernambuco,Total,1143,15 a 19 anos,686587.0,8920.0,1.3
+UF,26,Pernambuco,Total,1144,20 a 24 anos,713680.0,6192.0,0.9
+UF,26,Pernambuco,Total,1145,25 a 29 anos,679315.0,5504.0,0.8
+UF,26,Pernambuco,Total,1146,30 a 34 anos,685468.0,5494.0,0.8
+UF,26,Pernambuco,Total,1147,35 a 39 anos,707494.0,5580.0,0.8
+UF,26,Pernambuco,Total,1148,40 a 44 anos,701715.0,5876.0,0.8
+UF,26,Pernambuco,Total,1149,45 a 49 anos,612942.0,4976.0,0.8
+UF,26,Pernambuco,Total,1150,50 a 54 anos,550132.0,3875.0,0.7
+UF,26,Pernambuco,Total,1151,55 a 59 anos,492523.0,3964.0,0.8
+UF,26,Pernambuco,Total,1152,60 a 64 anos,410129.0,3644.0,0.9
+UF,26,Pernambuco,Total,1153,65 a 69 anos,317974.0,2642.0,0.8
+UF,26,Pernambuco,Total,1154,70 a 74 anos,244503.0,2183.0,0.9
+UF,26,Pernambuco,Total,1155,75 a 79 anos,164460.0,1444.0,0.9
+UF,26,Pernambuco,Total,6802,80 a 84 anos,107296.0,988.0,0.9
+UF,26,Pernambuco,Total,6803,85 a 89 anos,56863.0,499.0,0.9
+UF,26,Pernambuco,Total,92963,90 a 94 anos,24540.0,157.0,0.6
+UF,26,Pernambuco,Total,92964,95 a 99 anos,7903.0,73.0,0.9
+UF,26,Pernambuco,Total,92965,100 anos ou mais,2158.0,16.0,0.8
+UF,26,Pernambuco,Total,95253,Total,9058931.0,105852.0,1.2
+UF,27,Alagoas,Homens,1140,0 a 4 anos,115943.0,2792.0,2.4
+UF,27,Alagoas,Homens,1141,5 a 9 anos,121036.0,4168.0,3.4
+UF,27,Alagoas,Homens,1142,10 a 14 anos,124760.0,2819.0,2.3
+UF,27,Alagoas,Homens,1143,15 a 19 anos,131732.0,1815.0,1.4
+UF,27,Alagoas,Homens,1144,20 a 24 anos,127293.0,1230.0,1.0
+UF,27,Alagoas,Homens,1145,25 a 29 anos,115368.0,852.0,0.7
+UF,27,Alagoas,Homens,1146,30 a 34 anos,106192.0,906.0,0.9
+UF,27,Alagoas,Homens,1147,35 a 39 anos,112333.0,842.0,0.7
+UF,27,Alagoas,Homens,1148,40 a 44 anos,110431.0,906.0,0.8
+UF,27,Alagoas,Homens,1149,45 a 49 anos,95708.0,611.0,0.6
+UF,27,Alagoas,Homens,1150,50 a 54 anos,83527.0,506.0,0.6
+UF,27,Alagoas,Homens,1151,55 a 59 anos,73396.0,704.0,1.0
+UF,27,Alagoas,Homens,1152,60 a 64 anos,58250.0,591.0,1.0
+UF,27,Alagoas,Homens,1153,65 a 69 anos,45494.0,409.0,0.9
+UF,27,Alagoas,Homens,1154,70 a 74 anos,33097.0,231.0,0.7
+UF,27,Alagoas,Homens,1155,75 a 79 anos,21404.0,121.0,0.6
+UF,27,Alagoas,Homens,6802,80 a 84 anos,12637.0,118.0,0.9
+UF,27,Alagoas,Homens,6803,85 a 89 anos,5535.0,68.0,1.2
+UF,27,Alagoas,Homens,92963,90 a 94 anos,2305.0,22.0,1.0
+UF,27,Alagoas,Homens,92964,95 a 99 anos,651.0,4.0,0.6
+UF,27,Alagoas,Homens,92965,100 anos ou mais,328.0,,
+UF,27,Alagoas,Homens,95253,Total,1497419.0,19716.0,1.3
+UF,27,Alagoas,Mulheres,1140,0 a 4 anos,111776.0,968.0,0.9
+UF,27,Alagoas,Mulheres,1141,5 a 9 anos,115699.0,1233.0,1.1
+UF,27,Alagoas,Mulheres,1142,10 a 14 anos,121865.0,1236.0,1.0
+UF,27,Alagoas,Mulheres,1143,15 a 19 anos,126516.0,1017.0,0.8
+UF,27,Alagoas,Mulheres,1144,20 a 24 anos,131048.0,913.0,0.7
+UF,27,Alagoas,Mulheres,1145,25 a 29 anos,127203.0,779.0,0.6
+UF,27,Alagoas,Mulheres,1146,30 a 34 anos,121483.0,879.0,0.7
+UF,27,Alagoas,Mulheres,1147,35 a 39 anos,127988.0,894.0,0.7
+UF,27,Alagoas,Mulheres,1148,40 a 44 anos,123525.0,917.0,0.7
+UF,27,Alagoas,Mulheres,1149,45 a 49 anos,108660.0,795.0,0.7
+UF,27,Alagoas,Mulheres,1150,50 a 54 anos,97016.0,759.0,0.8
+UF,27,Alagoas,Mulheres,1151,55 a 59 anos,86892.0,738.0,0.8
+UF,27,Alagoas,Mulheres,1152,60 a 64 anos,70961.0,883.0,1.2
+UF,27,Alagoas,Mulheres,1153,65 a 69 anos,55366.0,596.0,1.1
+UF,27,Alagoas,Mulheres,1154,70 a 74 anos,42650.0,381.0,0.9
+UF,27,Alagoas,Mulheres,1155,75 a 79 anos,27901.0,190.0,0.7
+UF,27,Alagoas,Mulheres,6802,80 a 84 anos,18186.0,174.0,1.0
+UF,27,Alagoas,Mulheres,6803,85 a 89 anos,9333.0,60.0,0.6
+UF,27,Alagoas,Mulheres,92963,90 a 94 anos,4333.0,15.0,0.4
+UF,27,Alagoas,Mulheres,92964,95 a 99 anos,1333.0,,
+UF,27,Alagoas,Mulheres,92965,100 anos ou mais,531.0,,
+UF,27,Alagoas,Mulheres,95253,Total,1630264.0,13427.0,0.8
+UF,27,Alagoas,Total,1140,0 a 4 anos,227719.0,3760.0,1.7
+UF,27,Alagoas,Total,1141,5 a 9 anos,236735.0,5401.0,2.3
+UF,27,Alagoas,Total,1142,10 a 14 anos,246625.0,4056.0,1.6
+UF,27,Alagoas,Total,1143,15 a 19 anos,258248.0,2832.0,1.1
+UF,27,Alagoas,Total,1144,20 a 24 anos,258341.0,2143.0,0.8
+UF,27,Alagoas,Total,1145,25 a 29 anos,242571.0,1631.0,0.7
+UF,27,Alagoas,Total,1146,30 a 34 anos,227675.0,1785.0,0.8
+UF,27,Alagoas,Total,1147,35 a 39 anos,240321.0,1736.0,0.7
+UF,27,Alagoas,Total,1148,40 a 44 anos,233955.0,1823.0,0.8
+UF,27,Alagoas,Total,1149,45 a 49 anos,204367.0,1406.0,0.7
+UF,27,Alagoas,Total,1150,50 a 54 anos,180543.0,1265.0,0.7
+UF,27,Alagoas,Total,1151,55 a 59 anos,160287.0,1442.0,0.9
+UF,27,Alagoas,Total,1152,60 a 64 anos,129212.0,1474.0,1.1
+UF,27,Alagoas,Total,1153,65 a 69 anos,100860.0,1005.0,1.0
+UF,27,Alagoas,Total,1154,70 a 74 anos,75747.0,612.0,0.8
+UF,27,Alagoas,Total,1155,75 a 79 anos,49305.0,311.0,0.6
+UF,27,Alagoas,Total,6802,80 a 84 anos,30824.0,292.0,0.9
+UF,27,Alagoas,Total,6803,85 a 89 anos,14868.0,128.0,0.9
+UF,27,Alagoas,Total,92963,90 a 94 anos,6638.0,37.0,0.6
+UF,27,Alagoas,Total,92964,95 a 99 anos,1984.0,4.0,0.2
+UF,27,Alagoas,Total,92965,100 anos ou mais,860.0,,
+UF,27,Alagoas,Total,95253,Total,3127683.0,33143.0,1.1
+UF,28,Sergipe,Homens,1140,0 a 4 anos,75451.0,2639.0,3.5
+UF,28,Sergipe,Homens,1141,5 a 9 anos,80315.0,3464.0,4.3
+UF,28,Sergipe,Homens,1142,10 a 14 anos,84412.0,2551.0,3.0
+UF,28,Sergipe,Homens,1143,15 a 19 anos,87645.0,1486.0,1.7
+UF,28,Sergipe,Homens,1144,20 a 24 anos,87833.0,876.0,1.0
+UF,28,Sergipe,Homens,1145,25 a 29 anos,83837.0,658.0,0.8
+UF,28,Sergipe,Homens,1146,30 a 34 anos,79986.0,498.0,0.6
+UF,28,Sergipe,Homens,1147,35 a 39 anos,83108.0,688.0,0.8
+UF,28,Sergipe,Homens,1148,40 a 44 anos,82138.0,622.0,0.8
+UF,28,Sergipe,Homens,1149,45 a 49 anos,68384.0,527.0,0.8
+UF,28,Sergipe,Homens,1150,50 a 54 anos,62366.0,468.0,0.7
+UF,28,Sergipe,Homens,1151,55 a 59 anos,53476.0,546.0,1.0
+UF,28,Sergipe,Homens,1152,60 a 64 anos,41965.0,324.0,0.8
+UF,28,Sergipe,Homens,1153,65 a 69 anos,31861.0,395.0,1.2
+UF,28,Sergipe,Homens,1154,70 a 74 anos,23495.0,196.0,0.8
+UF,28,Sergipe,Homens,1155,75 a 79 anos,15251.0,65.0,0.4
+UF,28,Sergipe,Homens,6802,80 a 84 anos,9088.0,30.0,0.3
+UF,28,Sergipe,Homens,6803,85 a 89 anos,4509.0,35.0,0.8
+UF,28,Sergipe,Homens,92963,90 a 94 anos,1818.0,12.0,0.6
+UF,28,Sergipe,Homens,92964,95 a 99 anos,686.0,18.0,2.7
+UF,28,Sergipe,Homens,92965,100 anos ou mais,184.0,,
+UF,28,Sergipe,Homens,95253,Total,1057808.0,16098.0,1.5
+UF,28,Sergipe,Mulheres,1140,0 a 4 anos,72555.0,869.0,1.2
+UF,28,Sergipe,Mulheres,1141,5 a 9 anos,76788.0,1205.0,1.6
+UF,28,Sergipe,Mulheres,1142,10 a 14 anos,80754.0,925.0,1.1
+UF,28,Sergipe,Mulheres,1143,15 a 19 anos,84928.0,509.0,0.6
+UF,28,Sergipe,Mulheres,1144,20 a 24 anos,90949.0,678.0,0.7
+UF,28,Sergipe,Mulheres,1145,25 a 29 anos,91335.0,527.0,0.6
+UF,28,Sergipe,Mulheres,1146,30 a 34 anos,89778.0,823.0,0.9
+UF,28,Sergipe,Mulheres,1147,35 a 39 anos,94416.0,618.0,0.7
+UF,28,Sergipe,Mulheres,1148,40 a 44 anos,92100.0,555.0,0.6
+UF,28,Sergipe,Mulheres,1149,45 a 49 anos,78836.0,648.0,0.8
+UF,28,Sergipe,Mulheres,1150,50 a 54 anos,71472.0,507.0,0.7
+UF,28,Sergipe,Mulheres,1151,55 a 59 anos,62789.0,467.0,0.7
+UF,28,Sergipe,Mulheres,1152,60 a 64 anos,49904.0,506.0,1.0
+UF,28,Sergipe,Mulheres,1153,65 a 69 anos,38841.0,226.0,0.6
+UF,28,Sergipe,Mulheres,1154,70 a 74 anos,29761.0,164.0,0.6
+UF,28,Sergipe,Mulheres,1155,75 a 79 anos,20236.0,157.0,0.8
+UF,28,Sergipe,Mulheres,6802,80 a 84 anos,13940.0,116.0,0.8
+UF,28,Sergipe,Mulheres,6803,85 a 89 anos,7544.0,53.0,0.7
+UF,28,Sergipe,Mulheres,92963,90 a 94 anos,3730.0,45.0,1.2
+UF,28,Sergipe,Mulheres,92964,95 a 99 anos,1101.0,,
+UF,28,Sergipe,Mulheres,92965,100 anos ou mais,438.0,,
+UF,28,Sergipe,Mulheres,95253,Total,1152196.0,9597.0,0.8
+UF,28,Sergipe,Total,1140,0 a 4 anos,148007.0,3508.0,2.4
+UF,28,Sergipe,Total,1141,5 a 9 anos,157103.0,4669.0,3.0
+UF,28,Sergipe,Total,1142,10 a 14 anos,165166.0,3476.0,2.1
+UF,28,Sergipe,Total,1143,15 a 19 anos,172573.0,1995.0,1.2
+UF,28,Sergipe,Total,1144,20 a 24 anos,178782.0,1555.0,0.9
+UF,28,Sergipe,Total,1145,25 a 29 anos,175172.0,1185.0,0.7
+UF,28,Sergipe,Total,1146,30 a 34 anos,169765.0,1321.0,0.8
+UF,28,Sergipe,Total,1147,35 a 39 anos,177524.0,1305.0,0.7
+UF,28,Sergipe,Total,1148,40 a 44 anos,174238.0,1177.0,0.7
+UF,28,Sergipe,Total,1149,45 a 49 anos,147221.0,1175.0,0.8
+UF,28,Sergipe,Total,1150,50 a 54 anos,133837.0,974.0,0.7
+UF,28,Sergipe,Total,1151,55 a 59 anos,116265.0,1013.0,0.9
+UF,28,Sergipe,Total,1152,60 a 64 anos,91869.0,830.0,0.9
+UF,28,Sergipe,Total,1153,65 a 69 anos,70702.0,621.0,0.9
+UF,28,Sergipe,Total,1154,70 a 74 anos,53256.0,360.0,0.7
+UF,28,Sergipe,Total,1155,75 a 79 anos,35487.0,222.0,0.6
+UF,28,Sergipe,Total,6802,80 a 84 anos,23028.0,146.0,0.6
+UF,28,Sergipe,Total,6803,85 a 89 anos,12054.0,87.0,0.7
+UF,28,Sergipe,Total,92963,90 a 94 anos,5548.0,57.0,1.0
+UF,28,Sergipe,Total,92964,95 a 99 anos,1787.0,18.0,1.0
+UF,28,Sergipe,Total,92965,100 anos ou mais,621.0,,
+UF,28,Sergipe,Total,95253,Total,2210004.0,25696.0,1.2
+UF,29,Bahia,Homens,1140,0 a 4 anos,450272.0,10574.0,2.3
+UF,29,Bahia,Homens,1141,5 a 9 anos,490540.0,15362.0,3.1
+UF,29,Bahia,Homens,1142,10 a 14 anos,515558.0,10729.0,2.1
+UF,29,Bahia,Homens,1143,15 a 19 anos,543332.0,8277.0,1.5
+UF,29,Bahia,Homens,1144,20 a 24 anos,537304.0,5644.0,1.1
+UF,29,Bahia,Homens,1145,25 a 29 anos,490584.0,4664.0,1.0
+UF,29,Bahia,Homens,1146,30 a 34 anos,481299.0,4192.0,0.9
+UF,29,Bahia,Homens,1147,35 a 39 anos,547420.0,4292.0,0.8
+UF,29,Bahia,Homens,1148,40 a 44 anos,564495.0,4026.0,0.7
+UF,29,Bahia,Homens,1149,45 a 49 anos,459776.0,3701.0,0.8
+UF,29,Bahia,Homens,1150,50 a 54 anos,413834.0,3048.0,0.7
+UF,29,Bahia,Homens,1151,55 a 59 anos,365630.0,3699.0,1.0
+UF,29,Bahia,Homens,1152,60 a 64 anos,306921.0,2390.0,0.8
+UF,29,Bahia,Homens,1153,65 a 69 anos,232195.0,1838.0,0.8
+UF,29,Bahia,Homens,1154,70 a 74 anos,180234.0,1625.0,0.9
+UF,29,Bahia,Homens,1155,75 a 79 anos,119380.0,988.0,0.8
+UF,29,Bahia,Homens,6802,80 a 84 anos,75116.0,616.0,0.8
+UF,29,Bahia,Homens,6803,85 a 89 anos,37718.0,328.0,0.9
+UF,29,Bahia,Homens,92963,90 a 94 anos,16968.0,74.0,0.4
+UF,29,Bahia,Homens,92964,95 a 99 anos,5802.0,31.0,0.5
+UF,29,Bahia,Homens,92965,100 anos ou mais,1308.0,27.0,2.0
+UF,29,Bahia,Homens,95253,Total,6835686.0,86126.0,1.3
+UF,29,Bahia,Mulheres,1140,0 a 4 anos,437134.0,4317.0,1.0
+UF,29,Bahia,Mulheres,1141,5 a 9 anos,474212.0,4668.0,1.0
+UF,29,Bahia,Mulheres,1142,10 a 14 anos,493860.0,4270.0,0.9
+UF,29,Bahia,Mulheres,1143,15 a 19 anos,527665.0,3834.0,0.7
+UF,29,Bahia,Mulheres,1144,20 a 24 anos,548107.0,3916.0,0.7
+UF,29,Bahia,Mulheres,1145,25 a 29 anos,530856.0,3662.0,0.7
+UF,29,Bahia,Mulheres,1146,30 a 34 anos,539293.0,3543.0,0.7
+UF,29,Bahia,Mulheres,1147,35 a 39 anos,609881.0,4398.0,0.7
+UF,29,Bahia,Mulheres,1148,40 a 44 anos,606542.0,4753.0,0.8
+UF,29,Bahia,Mulheres,1149,45 a 49 anos,495081.0,4317.0,0.9
+UF,29,Bahia,Mulheres,1150,50 a 54 anos,448422.0,3887.0,0.9
+UF,29,Bahia,Mulheres,1151,55 a 59 anos,409084.0,3864.0,0.9
+UF,29,Bahia,Mulheres,1152,60 a 64 anos,347239.0,2721.0,0.8
+UF,29,Bahia,Mulheres,1153,65 a 69 anos,268205.0,2025.0,0.8
+UF,29,Bahia,Mulheres,1154,70 a 74 anos,213095.0,1848.0,0.9
+UF,29,Bahia,Mulheres,1155,75 a 79 anos,149042.0,1207.0,0.8
+UF,29,Bahia,Mulheres,6802,80 a 84 anos,103977.0,828.0,0.8
+UF,29,Bahia,Mulheres,6803,85 a 89 anos,59387.0,401.0,0.7
+UF,29,Bahia,Mulheres,92963,90 a 94 anos,30459.0,192.0,0.6
+UF,29,Bahia,Mulheres,92964,95 a 99 anos,10282.0,100.0,1.0
+UF,29,Bahia,Mulheres,92965,100 anos ou mais,4117.0,51.0,1.2
+UF,29,Bahia,Mulheres,95253,Total,7305940.0,58802.0,0.8
+UF,29,Bahia,Total,1140,0 a 4 anos,887406.0,14891.0,1.7
+UF,29,Bahia,Total,1141,5 a 9 anos,964752.0,20030.0,2.1
+UF,29,Bahia,Total,1142,10 a 14 anos,1009419.0,14999.0,1.5
+UF,29,Bahia,Total,1143,15 a 19 anos,1070997.0,12110.0,1.1
+UF,29,Bahia,Total,1144,20 a 24 anos,1085411.0,9560.0,0.9
+UF,29,Bahia,Total,1145,25 a 29 anos,1021439.0,8326.0,0.8
+UF,29,Bahia,Total,1146,30 a 34 anos,1020592.0,7735.0,0.8
+UF,29,Bahia,Total,1147,35 a 39 anos,1157302.0,8690.0,0.8
+UF,29,Bahia,Total,1148,40 a 44 anos,1171037.0,8780.0,0.7
+UF,29,Bahia,Total,1149,45 a 49 anos,954857.0,8018.0,0.8
+UF,29,Bahia,Total,1150,50 a 54 anos,862256.0,6935.0,0.8
+UF,29,Bahia,Total,1151,55 a 59 anos,774714.0,7564.0,1.0
+UF,29,Bahia,Total,1152,60 a 64 anos,654159.0,5111.0,0.8
+UF,29,Bahia,Total,1153,65 a 69 anos,500401.0,3863.0,0.8
+UF,29,Bahia,Total,1154,70 a 74 anos,393329.0,3473.0,0.9
+UF,29,Bahia,Total,1155,75 a 79 anos,268422.0,2195.0,0.8
+UF,29,Bahia,Total,6802,80 a 84 anos,179093.0,1444.0,0.8
+UF,29,Bahia,Total,6803,85 a 89 anos,97105.0,729.0,0.8
+UF,29,Bahia,Total,92963,90 a 94 anos,47427.0,266.0,0.6
+UF,29,Bahia,Total,92964,95 a 99 anos,16083.0,131.0,0.8
+UF,29,Bahia,Total,92965,100 anos ou mais,5426.0,78.0,1.4
+UF,29,Bahia,Total,95253,Total,14141626.0,144928.0,1.0
+UF,31,Minas Gerais,Homens,1140,0 a 4 anos,603898.0,16943.0,2.8
+UF,31,Minas Gerais,Homens,1141,5 a 9 anos,640631.0,24059.0,3.8
+UF,31,Minas Gerais,Homens,1142,10 a 14 anos,646495.0,17180.0,2.7
+UF,31,Minas Gerais,Homens,1143,15 a 19 anos,692950.0,12004.0,1.7
+UF,31,Minas Gerais,Homens,1144,20 a 24 anos,766997.0,8840.0,1.2
+UF,31,Minas Gerais,Homens,1145,25 a 29 anos,763925.0,7572.0,1.0
+UF,31,Minas Gerais,Homens,1146,30 a 34 anos,757182.0,7150.0,0.9
+UF,31,Minas Gerais,Homens,1147,35 a 39 anos,774629.0,6772.0,0.9
+UF,31,Minas Gerais,Homens,1148,40 a 44 anos,794885.0,6413.0,0.8
+UF,31,Minas Gerais,Homens,1149,45 a 49 anos,673027.0,5521.0,0.8
+UF,31,Minas Gerais,Homens,1150,50 a 54 anos,643572.0,5133.0,0.8
+UF,31,Minas Gerais,Homens,1151,55 a 59 anos,598691.0,5348.0,0.9
+UF,31,Minas Gerais,Homens,1152,60 a 64 anos,526934.0,4334.0,0.8
+UF,31,Minas Gerais,Homens,1153,65 a 69 anos,419190.0,3686.0,0.9
+UF,31,Minas Gerais,Homens,1154,70 a 74 anos,302419.0,2255.0,0.7
+UF,31,Minas Gerais,Homens,1155,75 a 79 anos,194720.0,1397.0,0.7
+UF,31,Minas Gerais,Homens,6802,80 a 84 anos,121496.0,1096.0,0.9
+UF,31,Minas Gerais,Homens,6803,85 a 89 anos,62226.0,657.0,1.1
+UF,31,Minas Gerais,Homens,92963,90 a 94 anos,24695.0,147.0,0.6
+UF,31,Minas Gerais,Homens,92964,95 a 99 anos,6186.0,24.0,0.4
+UF,31,Minas Gerais,Homens,92965,100 anos ou mais,960.0,11.0,1.1
+UF,31,Minas Gerais,Homens,95253,Total,10015709.0,136542.0,1.4
+UF,31,Minas Gerais,Mulheres,1140,0 a 4 anos,582714.0,6815.0,1.2
+UF,31,Minas Gerais,Mulheres,1141,5 a 9 anos,616051.0,8086.0,1.3
+UF,31,Minas Gerais,Mulheres,1142,10 a 14 anos,618536.0,6835.0,1.1
+UF,31,Minas Gerais,Mulheres,1143,15 a 19 anos,671545.0,5971.0,0.9
+UF,31,Minas Gerais,Mulheres,1144,20 a 24 anos,758159.0,5720.0,0.8
+UF,31,Minas Gerais,Mulheres,1145,25 a 29 anos,770223.0,5855.0,0.8
+UF,31,Minas Gerais,Mulheres,1146,30 a 34 anos,779648.0,6034.0,0.8
+UF,31,Minas Gerais,Mulheres,1147,35 a 39 anos,807139.0,5774.0,0.7
+UF,31,Minas Gerais,Mulheres,1148,40 a 44 anos,833669.0,6550.0,0.8
+UF,31,Minas Gerais,Mulheres,1149,45 a 49 anos,719026.0,5579.0,0.8
+UF,31,Minas Gerais,Mulheres,1150,50 a 54 anos,691882.0,5925.0,0.9
+UF,31,Minas Gerais,Mulheres,1151,55 a 59 anos,665736.0,5465.0,0.8
+UF,31,Minas Gerais,Mulheres,1152,60 a 64 anos,590740.0,5237.0,0.9
+UF,31,Minas Gerais,Mulheres,1153,65 a 69 anos,478664.0,4151.0,0.9
+UF,31,Minas Gerais,Mulheres,1154,70 a 74 anos,359848.0,3263.0,0.9
+UF,31,Minas Gerais,Mulheres,1155,75 a 79 anos,248704.0,2227.0,0.9
+UF,31,Minas Gerais,Mulheres,6802,80 a 84 anos,168730.0,1330.0,0.8
+UF,31,Minas Gerais,Mulheres,6803,85 a 89 anos,99659.0,801.0,0.8
+UF,31,Minas Gerais,Mulheres,92963,90 a 94 anos,47114.0,282.0,0.6
+UF,31,Minas Gerais,Mulheres,92964,95 a 99 anos,13759.0,109.0,0.8
+UF,31,Minas Gerais,Mulheres,92965,100 anos ou mais,2734.0,6.0,0.2
+UF,31,Minas Gerais,Mulheres,95253,Total,10524280.0,92015.0,0.9
+UF,31,Minas Gerais,Total,1140,0 a 4 anos,1186612.0,23758.0,2.0
+UF,31,Minas Gerais,Total,1141,5 a 9 anos,1256682.0,32146.0,2.6
+UF,31,Minas Gerais,Total,1142,10 a 14 anos,1265031.0,24015.0,1.9
+UF,31,Minas Gerais,Total,1143,15 a 19 anos,1364495.0,17975.0,1.3
+UF,31,Minas Gerais,Total,1144,20 a 24 anos,1525156.0,14560.0,1.0
+UF,31,Minas Gerais,Total,1145,25 a 29 anos,1534148.0,13427.0,0.9
+UF,31,Minas Gerais,Total,1146,30 a 34 anos,1536830.0,13184.0,0.9
+UF,31,Minas Gerais,Total,1147,35 a 39 anos,1581768.0,12546.0,0.8
+UF,31,Minas Gerais,Total,1148,40 a 44 anos,1628554.0,12963.0,0.8
+UF,31,Minas Gerais,Total,1149,45 a 49 anos,1392053.0,11100.0,0.8
+UF,31,Minas Gerais,Total,1150,50 a 54 anos,1335454.0,11058.0,0.8
+UF,31,Minas Gerais,Total,1151,55 a 59 anos,1264428.0,10813.0,0.9
+UF,31,Minas Gerais,Total,1152,60 a 64 anos,1117674.0,9571.0,0.9
+UF,31,Minas Gerais,Total,1153,65 a 69 anos,897854.0,7837.0,0.9
+UF,31,Minas Gerais,Total,1154,70 a 74 anos,662267.0,5517.0,0.8
+UF,31,Minas Gerais,Total,1155,75 a 79 anos,443424.0,3623.0,0.8
+UF,31,Minas Gerais,Total,6802,80 a 84 anos,290226.0,2426.0,0.8
+UF,31,Minas Gerais,Total,6803,85 a 89 anos,161885.0,1458.0,0.9
+UF,31,Minas Gerais,Total,92963,90 a 94 anos,71810.0,429.0,0.6
+UF,31,Minas Gerais,Total,92964,95 a 99 anos,19944.0,133.0,0.7
+UF,31,Minas Gerais,Total,92965,100 anos ou mais,3694.0,17.0,0.5
+UF,31,Minas Gerais,Total,95253,Total,20539989.0,228557.0,1.1
+UF,32,Espírito Santo,Homens,1140,0 a 4 anos,122652.0,3789.0,3.1
+UF,32,Espírito Santo,Homens,1141,5 a 9 anos,129492.0,6720.0,5.2
+UF,32,Espírito Santo,Homens,1142,10 a 14 anos,126048.0,4611.0,3.7
+UF,32,Espírito Santo,Homens,1143,15 a 19 anos,130036.0,2709.0,2.1
+UF,32,Espírito Santo,Homens,1144,20 a 24 anos,139327.0,1981.0,1.4
+UF,32,Espírito Santo,Homens,1145,25 a 29 anos,138159.0,1833.0,1.3
+UF,32,Espírito Santo,Homens,1146,30 a 34 anos,142802.0,1547.0,1.1
+UF,32,Espírito Santo,Homens,1147,35 a 39 anos,152048.0,1672.0,1.1
+UF,32,Espírito Santo,Homens,1148,40 a 44 anos,153434.0,1537.0,1.0
+UF,32,Espírito Santo,Homens,1149,45 a 49 anos,126717.0,1128.0,0.9
+UF,32,Espírito Santo,Homens,1150,50 a 54 anos,117162.0,864.0,0.7
+UF,32,Espírito Santo,Homens,1151,55 a 59 anos,106970.0,792.0,0.7
+UF,32,Espírito Santo,Homens,1152,60 a 64 anos,94226.0,680.0,0.7
+UF,32,Espírito Santo,Homens,1153,65 a 69 anos,75614.0,823.0,1.1
+UF,32,Espírito Santo,Homens,1154,70 a 74 anos,50753.0,433.0,0.9
+UF,32,Espírito Santo,Homens,1155,75 a 79 anos,30885.0,317.0,1.0
+UF,32,Espírito Santo,Homens,6802,80 a 84 anos,18651.0,118.0,0.6
+UF,32,Espírito Santo,Homens,6803,85 a 89 anos,10105.0,91.0,0.9
+UF,32,Espírito Santo,Homens,92963,90 a 94 anos,3841.0,,
+UF,32,Espírito Santo,Homens,92964,95 a 99 anos,1033.0,12.0,1.2
+UF,32,Espírito Santo,Homens,92965,100 anos ou mais,107.0,10.0,9.8
+UF,32,Espírito Santo,Homens,95253,Total,1870063.0,31671.0,1.7
+UF,32,Espírito Santo,Mulheres,1140,0 a 4 anos,118089.0,1476.0,1.3
+UF,32,Espírito Santo,Mulheres,1141,5 a 9 anos,124812.0,2020.0,1.6
+UF,32,Espírito Santo,Mulheres,1142,10 a 14 anos,120239.0,1311.0,1.1
+UF,32,Espírito Santo,Mulheres,1143,15 a 19 anos,125806.0,1321.0,1.0
+UF,32,Espírito Santo,Mulheres,1144,20 a 24 anos,137738.0,1477.0,1.1
+UF,32,Espírito Santo,Mulheres,1145,25 a 29 anos,141337.0,1381.0,1.0
+UF,32,Espírito Santo,Mulheres,1146,30 a 34 anos,149070.0,1383.0,0.9
+UF,32,Espírito Santo,Mulheres,1147,35 a 39 anos,160397.0,1447.0,0.9
+UF,32,Espírito Santo,Mulheres,1148,40 a 44 anos,161501.0,1470.0,0.9
+UF,32,Espírito Santo,Mulheres,1149,45 a 49 anos,134148.0,1202.0,0.9
+UF,32,Espírito Santo,Mulheres,1150,50 a 54 anos,125234.0,1091.0,0.9
+UF,32,Espírito Santo,Mulheres,1151,55 a 59 anos,118499.0,1110.0,0.9
+UF,32,Espírito Santo,Mulheres,1152,60 a 64 anos,106416.0,918.0,0.9
+UF,32,Espírito Santo,Mulheres,1153,65 a 69 anos,86578.0,586.0,0.7
+UF,32,Espírito Santo,Mulheres,1154,70 a 74 anos,60487.0,661.0,1.1
+UF,32,Espírito Santo,Mulheres,1155,75 a 79 anos,39302.0,352.0,0.9
+UF,32,Espírito Santo,Mulheres,6802,80 a 84 anos,27619.0,211.0,0.8
+UF,32,Espírito Santo,Mulheres,6803,85 a 89 anos,15757.0,170.0,1.1
+UF,32,Espírito Santo,Mulheres,92963,90 a 94 anos,7782.0,47.0,0.6
+UF,32,Espírito Santo,Mulheres,92964,95 a 99 anos,2292.0,20.0,0.9
+UF,32,Espírito Santo,Mulheres,92965,100 anos ou mais,548.0,7.0,1.2
+UF,32,Espírito Santo,Mulheres,95253,Total,1963649.0,19658.0,1.0
+UF,32,Espírito Santo,Total,1140,0 a 4 anos,240741.0,5265.0,2.2
+UF,32,Espírito Santo,Total,1141,5 a 9 anos,254304.0,8740.0,3.4
+UF,32,Espírito Santo,Total,1142,10 a 14 anos,246288.0,5922.0,2.4
+UF,32,Espírito Santo,Total,1143,15 a 19 anos,255842.0,4030.0,1.6
+UF,32,Espírito Santo,Total,1144,20 a 24 anos,277065.0,3459.0,1.2
+UF,32,Espírito Santo,Total,1145,25 a 29 anos,279495.0,3214.0,1.1
+UF,32,Espírito Santo,Total,1146,30 a 34 anos,291872.0,2930.0,1.0
+UF,32,Espírito Santo,Total,1147,35 a 39 anos,312445.0,3119.0,1.0
+UF,32,Espírito Santo,Total,1148,40 a 44 anos,314935.0,3007.0,1.0
+UF,32,Espírito Santo,Total,1149,45 a 49 anos,260864.0,2330.0,0.9
+UF,32,Espírito Santo,Total,1150,50 a 54 anos,242397.0,1956.0,0.8
+UF,32,Espírito Santo,Total,1151,55 a 59 anos,225469.0,1902.0,0.8
+UF,32,Espírito Santo,Total,1152,60 a 64 anos,200641.0,1598.0,0.8
+UF,32,Espírito Santo,Total,1153,65 a 69 anos,162192.0,1408.0,0.9
+UF,32,Espírito Santo,Total,1154,70 a 74 anos,111240.0,1093.0,1.0
+UF,32,Espírito Santo,Total,1155,75 a 79 anos,70187.0,669.0,1.0
+UF,32,Espírito Santo,Total,6802,80 a 84 anos,46269.0,329.0,0.7
+UF,32,Espírito Santo,Total,6803,85 a 89 anos,25862.0,261.0,1.0
+UF,32,Espírito Santo,Total,92963,90 a 94 anos,11623.0,47.0,0.4
+UF,32,Espírito Santo,Total,92964,95 a 99 anos,3324.0,32.0,1.0
+UF,32,Espírito Santo,Total,92965,100 anos ou mais,655.0,17.0,2.6
+UF,32,Espírito Santo,Total,95253,Total,3833712.0,51328.0,1.3
+UF,33,Rio de Janeiro,Homens,1140,0 a 4 anos,448991.0,14139.0,3.1
+UF,33,Rio de Janeiro,Homens,1141,5 a 9 anos,521542.0,21327.0,4.1
+UF,33,Rio de Janeiro,Homens,1142,10 a 14 anos,491068.0,14869.0,3.0
+UF,33,Rio de Janeiro,Homens,1143,15 a 19 anos,511958.0,10539.0,2.1
+UF,33,Rio de Janeiro,Homens,1144,20 a 24 anos,572057.0,8547.0,1.5
+UF,33,Rio de Janeiro,Homens,1145,25 a 29 anos,559586.0,7116.0,1.3
+UF,33,Rio de Janeiro,Homens,1146,30 a 34 anos,552812.0,5947.0,1.1
+UF,33,Rio de Janeiro,Homens,1147,35 a 39 anos,572543.0,5978.0,1.0
+UF,33,Rio de Janeiro,Homens,1148,40 a 44 anos,608802.0,6211.0,1.0
+UF,33,Rio de Janeiro,Homens,1149,45 a 49 anos,517249.0,5850.0,1.1
+UF,33,Rio de Janeiro,Homens,1150,50 a 54 anos,491819.0,4842.0,1.0
+UF,33,Rio de Janeiro,Homens,1151,55 a 59 anos,460616.0,4901.0,1.1
+UF,33,Rio de Janeiro,Homens,1152,60 a 64 anos,414135.0,4247.0,1.0
+UF,33,Rio de Janeiro,Homens,1153,65 a 69 anos,328771.0,3045.0,0.9
+UF,33,Rio de Janeiro,Homens,1154,70 a 74 anos,237821.0,2927.0,1.2
+UF,33,Rio de Janeiro,Homens,1155,75 a 79 anos,141906.0,1579.0,1.1
+UF,33,Rio de Janeiro,Homens,6802,80 a 84 anos,83897.0,1070.0,1.3
+UF,33,Rio de Janeiro,Homens,6803,85 a 89 anos,42735.0,389.0,0.9
+UF,33,Rio de Janeiro,Homens,92963,90 a 94 anos,15553.0,102.0,0.7
+UF,33,Rio de Janeiro,Homens,92964,95 a 99 anos,3480.0,38.0,1.1
+UF,33,Rio de Janeiro,Homens,92965,100 anos ou mais,337.0,,
+UF,33,Rio de Janeiro,Homens,95253,Total,7577675.0,123663.0,1.6
+UF,33,Rio de Janeiro,Mulheres,1140,0 a 4 anos,439430.0,6113.0,1.4
+UF,33,Rio de Janeiro,Mulheres,1141,5 a 9 anos,502010.0,7593.0,1.5
+UF,33,Rio de Janeiro,Mulheres,1142,10 a 14 anos,466863.0,5377.0,1.2
+UF,33,Rio de Janeiro,Mulheres,1143,15 a 19 anos,495962.0,5062.0,1.0
+UF,33,Rio de Janeiro,Mulheres,1144,20 a 24 anos,576956.0,5631.0,1.0
+UF,33,Rio de Janeiro,Mulheres,1145,25 a 29 anos,598554.0,5576.0,0.9
+UF,33,Rio de Janeiro,Mulheres,1146,30 a 34 anos,607831.0,6210.0,1.0
+UF,33,Rio de Janeiro,Mulheres,1147,35 a 39 anos,637776.0,6130.0,1.0
+UF,33,Rio de Janeiro,Mulheres,1148,40 a 44 anos,676057.0,6526.0,1.0
+UF,33,Rio de Janeiro,Mulheres,1149,45 a 49 anos,587654.0,5906.0,1.0
+UF,33,Rio de Janeiro,Mulheres,1150,50 a 54 anos,564098.0,5531.0,1.0
+UF,33,Rio de Janeiro,Mulheres,1151,55 a 59 anos,550546.0,5636.0,1.0
+UF,33,Rio de Janeiro,Mulheres,1152,60 a 64 anos,511360.0,5626.0,1.1
+UF,33,Rio de Janeiro,Mulheres,1153,65 a 69 anos,433267.0,4695.0,1.1
+UF,33,Rio de Janeiro,Mulheres,1154,70 a 74 anos,325127.0,3892.0,1.2
+UF,33,Rio de Janeiro,Mulheres,1155,75 a 79 anos,215142.0,2462.0,1.1
+UF,33,Rio de Janeiro,Mulheres,6802,80 a 84 anos,146487.0,1760.0,1.2
+UF,33,Rio de Janeiro,Mulheres,6803,85 a 89 anos,87490.0,854.0,1.0
+UF,33,Rio de Janeiro,Mulheres,92963,90 a 94 anos,40894.0,349.0,0.9
+UF,33,Rio de Janeiro,Mulheres,92964,95 a 99 anos,11823.0,44.0,0.4
+UF,33,Rio de Janeiro,Mulheres,92965,100 anos ou mais,2174.0,,
+UF,33,Rio de Janeiro,Mulheres,95253,Total,8477499.0,90974.0,1.1
+UF,33,Rio de Janeiro,Total,1140,0 a 4 anos,888420.0,20253.0,2.3
+UF,33,Rio de Janeiro,Total,1141,5 a 9 anos,1023552.0,28919.0,2.8
+UF,33,Rio de Janeiro,Total,1142,10 a 14 anos,957931.0,20246.0,2.1
+UF,33,Rio de Janeiro,Total,1143,15 a 19 anos,1007920.0,15601.0,1.5
+UF,33,Rio de Janeiro,Total,1144,20 a 24 anos,1149013.0,14178.0,1.2
+UF,33,Rio de Janeiro,Total,1145,25 a 29 anos,1158141.0,12692.0,1.1
+UF,33,Rio de Janeiro,Total,1146,30 a 34 anos,1160642.0,12157.0,1.0
+UF,33,Rio de Janeiro,Total,1147,35 a 39 anos,1210319.0,12108.0,1.0
+UF,33,Rio de Janeiro,Total,1148,40 a 44 anos,1284859.0,12738.0,1.0
+UF,33,Rio de Janeiro,Total,1149,45 a 49 anos,1104902.0,11756.0,1.1
+UF,33,Rio de Janeiro,Total,1150,50 a 54 anos,1055917.0,10374.0,1.0
+UF,33,Rio de Janeiro,Total,1151,55 a 59 anos,1011162.0,10538.0,1.0
+UF,33,Rio de Janeiro,Total,1152,60 a 64 anos,925495.0,9873.0,1.1
+UF,33,Rio de Janeiro,Total,1153,65 a 69 anos,762038.0,7740.0,1.0
+UF,33,Rio de Janeiro,Total,1154,70 a 74 anos,562948.0,6820.0,1.2
+UF,33,Rio de Janeiro,Total,1155,75 a 79 anos,357047.0,4041.0,1.1
+UF,33,Rio de Janeiro,Total,6802,80 a 84 anos,230384.0,2830.0,1.2
+UF,33,Rio de Janeiro,Total,6803,85 a 89 anos,130224.0,1243.0,1.0
+UF,33,Rio de Janeiro,Total,92963,90 a 94 anos,56447.0,451.0,0.8
+UF,33,Rio de Janeiro,Total,92964,95 a 99 anos,15303.0,82.0,0.5
+UF,33,Rio de Janeiro,Total,92965,100 anos ou mais,2511.0,,
+UF,33,Rio de Janeiro,Total,95253,Total,16055174.0,214637.0,1.3
+UF,35,São Paulo,Homens,1140,0 a 4 anos,1259187.0,38658.0,3.1
+UF,35,São Paulo,Homens,1141,5 a 9 anos,1413287.0,50297.0,3.6
+UF,35,São Paulo,Homens,1142,10 a 14 anos,1397728.0,35047.0,2.5
+UF,35,São Paulo,Homens,1143,15 a 19 anos,1457318.0,26352.0,1.8
+UF,35,São Paulo,Homens,1144,20 a 24 anos,1624893.0,20838.0,1.3
+UF,35,São Paulo,Homens,1145,25 a 29 anos,1648763.0,18226.0,1.1
+UF,35,São Paulo,Homens,1146,30 a 34 anos,1670904.0,17019.0,1.0
+UF,35,São Paulo,Homens,1147,35 a 39 anos,1758837.0,18270.0,1.0
+UF,35,São Paulo,Homens,1148,40 a 44 anos,1756601.0,16784.0,1.0
+UF,35,São Paulo,Homens,1149,45 a 49 anos,1483402.0,13204.0,0.9
+UF,35,São Paulo,Homens,1150,50 a 54 anos,1376411.0,13073.0,0.9
+UF,35,São Paulo,Homens,1151,55 a 59 anos,1232890.0,12263.0,1.0
+UF,35,São Paulo,Homens,1152,60 a 64 anos,1073572.0,10581.0,1.0
+UF,35,São Paulo,Homens,1153,65 a 69 anos,851433.0,9055.0,1.1
+UF,35,São Paulo,Homens,1154,70 a 74 anos,614930.0,7442.0,1.2
+UF,35,São Paulo,Homens,1155,75 a 79 anos,382521.0,4185.0,1.1
+UF,35,São Paulo,Homens,6802,80 a 84 anos,230441.0,2248.0,1.0
+UF,35,São Paulo,Homens,6803,85 a 89 anos,110730.0,1248.0,1.1
+UF,35,São Paulo,Homens,92963,90 a 94 anos,42335.0,378.0,0.9
+UF,35,São Paulo,Homens,92964,95 a 99 anos,9153.0,91.0,1.0
+UF,35,São Paulo,Homens,92965,100 anos ou mais,1040.0,19.0,1.8
+UF,35,São Paulo,Homens,95253,Total,21396376.0,315279.0,1.5
+UF,35,São Paulo,Mulheres,1140,0 a 4 anos,1215779.0,15337.0,1.3
+UF,35,São Paulo,Mulheres,1141,5 a 9 anos,1358483.0,16933.0,1.2
+UF,35,São Paulo,Mulheres,1142,10 a 14 anos,1332824.0,13550.0,1.0
+UF,35,São Paulo,Mulheres,1143,15 a 19 anos,1392761.0,12186.0,0.9
+UF,35,São Paulo,Mulheres,1144,20 a 24 anos,1577218.0,14346.0,0.9
+UF,35,São Paulo,Mulheres,1145,25 a 29 anos,1653339.0,15384.0,0.9
+UF,35,São Paulo,Mulheres,1146,30 a 34 anos,1726225.0,15786.0,0.9
+UF,35,São Paulo,Mulheres,1147,35 a 39 anos,1864003.0,16805.0,0.9
+UF,35,São Paulo,Mulheres,1148,40 a 44 anos,1899549.0,17057.0,0.9
+UF,35,São Paulo,Mulheres,1149,45 a 49 anos,1632304.0,16526.0,1.0
+UF,35,São Paulo,Mulheres,1150,50 a 54 anos,1536546.0,15416.0,1.0
+UF,35,São Paulo,Mulheres,1151,55 a 59 anos,1436183.0,14132.0,1.0
+UF,35,São Paulo,Mulheres,1152,60 a 64 anos,1300631.0,14498.0,1.1
+UF,35,São Paulo,Mulheres,1153,65 a 69 anos,1061278.0,12902.0,1.2
+UF,35,São Paulo,Mulheres,1154,70 a 74 anos,802659.0,9002.0,1.1
+UF,35,São Paulo,Mulheres,1155,75 a 79 anos,539160.0,6079.0,1.1
+UF,35,São Paulo,Mulheres,6802,80 a 84 anos,355627.0,3585.0,1.0
+UF,35,São Paulo,Mulheres,6803,85 a 89 anos,206334.0,1734.0,0.8
+UF,35,São Paulo,Mulheres,92963,90 a 94 anos,93990.0,743.0,0.8
+UF,35,São Paulo,Mulheres,92964,95 a 99 anos,25633.0,266.0,1.0
+UF,35,São Paulo,Mulheres,92965,100 anos ou mais,4337.0,,
+UF,35,São Paulo,Mulheres,95253,Total,23014862.0,232265.0,1.0
+UF,35,São Paulo,Total,1140,0 a 4 anos,2474966.0,53995.0,2.2
+UF,35,São Paulo,Total,1141,5 a 9 anos,2771770.0,67230.0,2.4
+UF,35,São Paulo,Total,1142,10 a 14 anos,2730551.0,48597.0,1.8
+UF,35,São Paulo,Total,1143,15 a 19 anos,2850079.0,38538.0,1.4
+UF,35,São Paulo,Total,1144,20 a 24 anos,3202111.0,35184.0,1.1
+UF,35,São Paulo,Total,1145,25 a 29 anos,3302103.0,33610.0,1.0
+UF,35,São Paulo,Total,1146,30 a 34 anos,3397128.0,32805.0,1.0
+UF,35,São Paulo,Total,1147,35 a 39 anos,3622840.0,35075.0,1.0
+UF,35,São Paulo,Total,1148,40 a 44 anos,3656150.0,33841.0,0.9
+UF,35,São Paulo,Total,1149,45 a 49 anos,3115706.0,29730.0,1.0
+UF,35,São Paulo,Total,1150,50 a 54 anos,2912956.0,28489.0,1.0
+UF,35,São Paulo,Total,1151,55 a 59 anos,2669073.0,26395.0,1.0
+UF,35,São Paulo,Total,1152,60 a 64 anos,2374202.0,25080.0,1.1
+UF,35,São Paulo,Total,1153,65 a 69 anos,1912711.0,21957.0,1.1
+UF,35,São Paulo,Total,1154,70 a 74 anos,1417589.0,16444.0,1.2
+UF,35,São Paulo,Total,1155,75 a 79 anos,921681.0,10263.0,1.1
+UF,35,São Paulo,Total,6802,80 a 84 anos,586068.0,5833.0,1.0
+UF,35,São Paulo,Total,6803,85 a 89 anos,317064.0,2981.0,0.9
+UF,35,São Paulo,Total,92963,90 a 94 anos,136325.0,1121.0,0.8
+UF,35,São Paulo,Total,92964,95 a 99 anos,34786.0,357.0,1.0
+UF,35,São Paulo,Total,92965,100 anos ou mais,5377.0,19.0,0.4
+UF,35,São Paulo,Total,95253,Total,44411238.0,547545.0,1.2
+UF,41,Paraná,Homens,1140,0 a 4 anos,356539.0,11979.0,3.4
+UF,41,Paraná,Homens,1141,5 a 9 anos,387315.0,14726.0,3.8
+UF,41,Paraná,Homens,1142,10 a 14 anos,377432.0,10655.0,2.8
+UF,41,Paraná,Homens,1143,15 a 19 anos,386036.0,6989.0,1.8
+UF,41,Paraná,Homens,1144,20 a 24 anos,425277.0,5023.0,1.2
+UF,41,Paraná,Homens,1145,25 a 29 anos,441347.0,4011.0,0.9
+UF,41,Paraná,Homens,1146,30 a 34 anos,429347.0,4095.0,1.0
+UF,41,Paraná,Homens,1147,35 a 39 anos,427195.0,3552.0,0.8
+UF,41,Paraná,Homens,1148,40 a 44 anos,426433.0,3606.0,0.8
+UF,41,Paraná,Homens,1149,45 a 49 anos,377088.0,2872.0,0.8
+UF,41,Paraná,Homens,1150,50 a 54 anos,362641.0,3040.0,0.8
+UF,41,Paraná,Homens,1151,55 a 59 anos,330990.0,2654.0,0.8
+UF,41,Paraná,Homens,1152,60 a 64 anos,274358.0,2576.0,0.9
+UF,41,Paraná,Homens,1153,65 a 69 anos,218687.0,2065.0,0.9
+UF,41,Paraná,Homens,1154,70 a 74 anos,155881.0,1389.0,0.9
+UF,41,Paraná,Homens,1155,75 a 79 anos,100588.0,998.0,1.0
+UF,41,Paraná,Homens,6802,80 a 84 anos,59284.0,538.0,0.9
+UF,41,Paraná,Homens,6803,85 a 89 anos,28158.0,219.0,0.8
+UF,41,Paraná,Homens,92963,90 a 94 anos,10355.0,88.0,0.9
+UF,41,Paraná,Homens,92964,95 a 99 anos,2124.0,16.0,0.8
+UF,41,Paraná,Homens,92965,100 anos ou mais,276.0,,
+UF,41,Paraná,Homens,95253,Total,5577350.0,81091.0,1.5
+UF,41,Paraná,Mulheres,1140,0 a 4 anos,343532.0,4355.0,1.3
+UF,41,Paraná,Mulheres,1141,5 a 9 anos,371431.0,4716.0,1.3
+UF,41,Paraná,Mulheres,1142,10 a 14 anos,360690.0,3768.0,1.0
+UF,41,Paraná,Mulheres,1143,15 a 19 anos,374878.0,3230.0,0.9
+UF,41,Paraná,Mulheres,1144,20 a 24 anos,419983.0,3377.0,0.8
+UF,41,Paraná,Mulheres,1145,25 a 29 anos,444545.0,3482.0,0.8
+UF,41,Paraná,Mulheres,1146,30 a 34 anos,442581.0,3299.0,0.7
+UF,41,Paraná,Mulheres,1147,35 a 39 anos,445645.0,2895.0,0.6
+UF,41,Paraná,Mulheres,1148,40 a 44 anos,448303.0,3251.0,0.7
+UF,41,Paraná,Mulheres,1149,45 a 49 anos,402075.0,3364.0,0.8
+UF,41,Paraná,Mulheres,1150,50 a 54 anos,394184.0,3131.0,0.8
+UF,41,Paraná,Mulheres,1151,55 a 59 anos,372493.0,3205.0,0.9
+UF,41,Paraná,Mulheres,1152,60 a 64 anos,319816.0,2892.0,0.9
+UF,41,Paraná,Mulheres,1153,65 a 69 anos,257900.0,2327.0,0.9
+UF,41,Paraná,Mulheres,1154,70 a 74 anos,190341.0,1680.0,0.9
+UF,41,Paraná,Mulheres,1155,75 a 79 anos,129056.0,1317.0,1.0
+UF,41,Paraná,Mulheres,6802,80 a 84 anos,80032.0,663.0,0.8
+UF,41,Paraná,Mulheres,6803,85 a 89 anos,45376.0,371.0,0.8
+UF,41,Paraná,Mulheres,92963,90 a 94 anos,18679.0,146.0,0.8
+UF,41,Paraná,Mulheres,92964,95 a 99 anos,4558.0,44.0,1.0
+UF,41,Paraná,Mulheres,92965,100 anos ou mais,932.0,,
+UF,41,Paraná,Mulheres,95253,Total,5867030.0,51513.0,0.9
+UF,41,Paraná,Total,1140,0 a 4 anos,700071.0,16333.0,2.3
+UF,41,Paraná,Total,1141,5 a 9 anos,758746.0,19442.0,2.6
+UF,41,Paraná,Total,1142,10 a 14 anos,738122.0,14423.0,2.0
+UF,41,Paraná,Total,1143,15 a 19 anos,760913.0,10219.0,1.3
+UF,41,Paraná,Total,1144,20 a 24 anos,845260.0,8401.0,1.0
+UF,41,Paraná,Total,1145,25 a 29 anos,885892.0,7493.0,0.8
+UF,41,Paraná,Total,1146,30 a 34 anos,871928.0,7395.0,0.8
+UF,41,Paraná,Total,1147,35 a 39 anos,872840.0,6447.0,0.7
+UF,41,Paraná,Total,1148,40 a 44 anos,874736.0,6857.0,0.8
+UF,41,Paraná,Total,1149,45 a 49 anos,779163.0,6236.0,0.8
+UF,41,Paraná,Total,1150,50 a 54 anos,756826.0,6170.0,0.8
+UF,41,Paraná,Total,1151,55 a 59 anos,703483.0,5859.0,0.8
+UF,41,Paraná,Total,1152,60 a 64 anos,594174.0,5468.0,0.9
+UF,41,Paraná,Total,1153,65 a 69 anos,476587.0,4392.0,0.9
+UF,41,Paraná,Total,1154,70 a 74 anos,346222.0,3069.0,0.9
+UF,41,Paraná,Total,1155,75 a 79 anos,229643.0,2316.0,1.0
+UF,41,Paraná,Total,6802,80 a 84 anos,139317.0,1201.0,0.9
+UF,41,Paraná,Total,6803,85 a 89 anos,73534.0,590.0,0.8
+UF,41,Paraná,Total,92963,90 a 94 anos,29034.0,234.0,0.8
+UF,41,Paraná,Total,92964,95 a 99 anos,6682.0,60.0,0.9
+UF,41,Paraná,Total,92965,100 anos ou mais,1208.0,,
+UF,41,Paraná,Total,95253,Total,11444380.0,132604.0,1.2
+UF,42,Santa Catarina,Homens,1140,0 a 4 anos,239593.0,8041.0,3.4
+UF,42,Santa Catarina,Homens,1141,5 a 9 anos,250964.0,11256.0,4.5
+UF,42,Santa Catarina,Homens,1142,10 a 14 anos,237645.0,7507.0,3.2
+UF,42,Santa Catarina,Homens,1143,15 a 19 anos,245471.0,5257.0,2.1
+UF,42,Santa Catarina,Homens,1144,20 a 24 anos,293232.0,3622.0,1.2
+UF,42,Santa Catarina,Homens,1145,25 a 29 anos,312805.0,2982.0,1.0
+UF,42,Santa Catarina,Homens,1146,30 a 34 anos,318914.0,2935.0,0.9
+UF,42,Santa Catarina,Homens,1147,35 a 39 anos,313478.0,2530.0,0.8
+UF,42,Santa Catarina,Homens,1148,40 a 44 anos,300721.0,2399.0,0.8
+UF,42,Santa Catarina,Homens,1149,45 a 49 anos,247395.0,1753.0,0.7
+UF,42,Santa Catarina,Homens,1150,50 a 54 anos,233701.0,2126.0,0.9
+UF,42,Santa Catarina,Homens,1151,55 a 59 anos,218946.0,1689.0,0.8
+UF,42,Santa Catarina,Homens,1152,60 a 64 anos,185209.0,1888.0,1.0
+UF,42,Santa Catarina,Homens,1153,65 a 69 anos,140003.0,1409.0,1.0
+UF,42,Santa Catarina,Homens,1154,70 a 74 anos,100190.0,932.0,0.9
+UF,42,Santa Catarina,Homens,1155,75 a 79 anos,58713.0,526.0,0.9
+UF,42,Santa Catarina,Homens,6802,80 a 84 anos,33602.0,288.0,0.9
+UF,42,Santa Catarina,Homens,6803,85 a 89 anos,14153.0,204.0,1.4
+UF,42,Santa Catarina,Homens,92963,90 a 94 anos,5309.0,12.0,0.2
+UF,42,Santa Catarina,Homens,92964,95 a 99 anos,889.0,10.0,1.1
+UF,42,Santa Catarina,Homens,92965,100 anos ou mais,170.0,,
+UF,42,Santa Catarina,Homens,95253,Total,3751103.0,57368.0,1.5
+UF,42,Santa Catarina,Mulheres,1140,0 a 4 anos,227544.0,2756.0,1.2
+UF,42,Santa Catarina,Mulheres,1141,5 a 9 anos,237287.0,3341.0,1.4
+UF,42,Santa Catarina,Mulheres,1142,10 a 14 anos,226439.0,2521.0,1.1
+UF,42,Santa Catarina,Mulheres,1143,15 a 19 anos,235369.0,2115.0,0.9
+UF,42,Santa Catarina,Mulheres,1144,20 a 24 anos,284015.0,2185.0,0.8
+UF,42,Santa Catarina,Mulheres,1145,25 a 29 anos,309760.0,2540.0,0.8
+UF,42,Santa Catarina,Mulheres,1146,30 a 34 anos,315350.0,2596.0,0.8
+UF,42,Santa Catarina,Mulheres,1147,35 a 39 anos,318756.0,2294.0,0.7
+UF,42,Santa Catarina,Mulheres,1148,40 a 44 anos,303751.0,2270.0,0.7
+UF,42,Santa Catarina,Mulheres,1149,45 a 49 anos,259376.0,1856.0,0.7
+UF,42,Santa Catarina,Mulheres,1150,50 a 54 anos,246827.0,1788.0,0.7
+UF,42,Santa Catarina,Mulheres,1151,55 a 59 anos,241924.0,2039.0,0.8
+UF,42,Santa Catarina,Mulheres,1152,60 a 64 anos,206782.0,1806.0,0.9
+UF,42,Santa Catarina,Mulheres,1153,65 a 69 anos,159615.0,1476.0,0.9
+UF,42,Santa Catarina,Mulheres,1154,70 a 74 anos,120290.0,1167.0,1.0
+UF,42,Santa Catarina,Mulheres,1155,75 a 79 anos,76586.0,691.0,0.9
+UF,42,Santa Catarina,Mulheres,6802,80 a 84 anos,47742.0,447.0,0.9
+UF,42,Santa Catarina,Mulheres,6803,85 a 89 anos,27271.0,189.0,0.7
+UF,42,Santa Catarina,Mulheres,92963,90 a 94 anos,11497.0,111.0,1.0
+UF,42,Santa Catarina,Mulheres,92964,95 a 99 anos,2765.0,27.0,1.0
+UF,42,Santa Catarina,Mulheres,92965,100 anos ou mais,313.0,5.0,1.6
+UF,42,Santa Catarina,Mulheres,95253,Total,3859258.0,34221.0,0.9
+UF,42,Santa Catarina,Total,1140,0 a 4 anos,467138.0,10797.0,2.3
+UF,42,Santa Catarina,Total,1141,5 a 9 anos,488250.0,14598.0,3.0
+UF,42,Santa Catarina,Total,1142,10 a 14 anos,464084.0,10028.0,2.2
+UF,42,Santa Catarina,Total,1143,15 a 19 anos,480841.0,7373.0,1.5
+UF,42,Santa Catarina,Total,1144,20 a 24 anos,577247.0,5807.0,1.0
+UF,42,Santa Catarina,Total,1145,25 a 29 anos,622565.0,5522.0,0.9
+UF,42,Santa Catarina,Total,1146,30 a 34 anos,634264.0,5531.0,0.9
+UF,42,Santa Catarina,Total,1147,35 a 39 anos,632234.0,4825.0,0.8
+UF,42,Santa Catarina,Total,1148,40 a 44 anos,604472.0,4668.0,0.8
+UF,42,Santa Catarina,Total,1149,45 a 49 anos,506771.0,3609.0,0.7
+UF,42,Santa Catarina,Total,1150,50 a 54 anos,480528.0,3914.0,0.8
+UF,42,Santa Catarina,Total,1151,55 a 59 anos,460870.0,3729.0,0.8
+UF,42,Santa Catarina,Total,1152,60 a 64 anos,391991.0,3695.0,0.9
+UF,42,Santa Catarina,Total,1153,65 a 69 anos,299618.0,2885.0,1.0
+UF,42,Santa Catarina,Total,1154,70 a 74 anos,220480.0,2099.0,1.0
+UF,42,Santa Catarina,Total,1155,75 a 79 anos,135299.0,1218.0,0.9
+UF,42,Santa Catarina,Total,6802,80 a 84 anos,81344.0,735.0,0.9
+UF,42,Santa Catarina,Total,6803,85 a 89 anos,41423.0,394.0,0.9
+UF,42,Santa Catarina,Total,92963,90 a 94 anos,16806.0,123.0,0.7
+UF,42,Santa Catarina,Total,92964,95 a 99 anos,3654.0,37.0,1.0
+UF,42,Santa Catarina,Total,92965,100 anos ou mais,483.0,5.0,1.1
+UF,42,Santa Catarina,Total,95253,Total,7610361.0,91588.0,1.2
+UF,43,Rio Grande do Sul,Homens,1140,0 a 4 anos,311230.0,9710.0,3.1
+UF,43,Rio Grande do Sul,Homens,1141,5 a 9 anos,340979.0,12820.0,3.8
+UF,43,Rio Grande do Sul,Homens,1142,10 a 14 anos,321729.0,8826.0,2.7
+UF,43,Rio Grande do Sul,Homens,1143,15 a 19 anos,340668.0,6393.0,1.9
+UF,43,Rio Grande do Sul,Homens,1144,20 a 24 anos,379737.0,5065.0,1.3
+UF,43,Rio Grande do Sul,Homens,1145,25 a 29 anos,386692.0,4604.0,1.2
+UF,43,Rio Grande do Sul,Homens,1146,30 a 34 anos,385778.0,3567.0,0.9
+UF,43,Rio Grande do Sul,Homens,1147,35 a 39 anos,402115.0,3652.0,0.9
+UF,43,Rio Grande do Sul,Homens,1148,40 a 44 anos,401239.0,3488.0,0.9
+UF,43,Rio Grande do Sul,Homens,1149,45 a 49 anos,342791.0,2860.0,0.8
+UF,43,Rio Grande do Sul,Homens,1150,50 a 54 anos,336476.0,2200.0,0.7
+UF,43,Rio Grande do Sul,Homens,1151,55 a 59 anos,342297.0,2650.0,0.8
+UF,43,Rio Grande do Sul,Homens,1152,60 a 64 anos,309268.0,2456.0,0.8
+UF,43,Rio Grande do Sul,Homens,1153,65 a 69 anos,249118.0,2114.0,0.8
+UF,43,Rio Grande do Sul,Homens,1154,70 a 74 anos,183263.0,1731.0,0.9
+UF,43,Rio Grande do Sul,Homens,1155,75 a 79 anos,114843.0,971.0,0.8
+UF,43,Rio Grande do Sul,Homens,6802,80 a 84 anos,63631.0,474.0,0.7
+UF,43,Rio Grande do Sul,Homens,6803,85 a 89 anos,30701.0,164.0,0.5
+UF,43,Rio Grande do Sul,Homens,92963,90 a 94 anos,10619.0,103.0,1.0
+UF,43,Rio Grande do Sul,Homens,92964,95 a 99 anos,2306.0,,
+UF,43,Rio Grande do Sul,Homens,92965,100 anos ou mais,271.0,10.0,3.8
+UF,43,Rio Grande do Sul,Homens,95253,Total,5255751.0,73858.0,1.4
+UF,43,Rio Grande do Sul,Mulheres,1140,0 a 4 anos,298213.0,3590.0,1.2
+UF,43,Rio Grande do Sul,Mulheres,1141,5 a 9 anos,325761.0,4408.0,1.4
+UF,43,Rio Grande do Sul,Mulheres,1142,10 a 14 anos,307805.0,2974.0,1.0
+UF,43,Rio Grande do Sul,Mulheres,1143,15 a 19 anos,329952.0,3254.0,1.0
+UF,43,Rio Grande do Sul,Mulheres,1144,20 a 24 anos,376416.0,3233.0,0.9
+UF,43,Rio Grande do Sul,Mulheres,1145,25 a 29 anos,395623.0,3092.0,0.8
+UF,43,Rio Grande do Sul,Mulheres,1146,30 a 34 anos,402690.0,2880.0,0.7
+UF,43,Rio Grande do Sul,Mulheres,1147,35 a 39 anos,420240.0,3374.0,0.8
+UF,43,Rio Grande do Sul,Mulheres,1148,40 a 44 anos,422754.0,3683.0,0.9
+UF,43,Rio Grande do Sul,Mulheres,1149,45 a 49 anos,367427.0,2897.0,0.8
+UF,43,Rio Grande do Sul,Mulheres,1150,50 a 54 anos,366307.0,2800.0,0.8
+UF,43,Rio Grande do Sul,Mulheres,1151,55 a 59 anos,382413.0,3056.0,0.8
+UF,43,Rio Grande do Sul,Mulheres,1152,60 a 64 anos,352384.0,3439.0,1.0
+UF,43,Rio Grande do Sul,Mulheres,1153,65 a 69 anos,295255.0,2682.0,0.9
+UF,43,Rio Grande do Sul,Mulheres,1154,70 a 74 anos,229290.0,2075.0,0.9
+UF,43,Rio Grande do Sul,Mulheres,1155,75 a 79 anos,157669.0,1476.0,0.9
+UF,43,Rio Grande do Sul,Mulheres,6802,80 a 84 anos,103376.0,824.0,0.8
+UF,43,Rio Grande do Sul,Mulheres,6803,85 a 89 anos,59672.0,380.0,0.6
+UF,43,Rio Grande do Sul,Mulheres,92963,90 a 94 anos,26006.0,223.0,0.9
+UF,43,Rio Grande do Sul,Mulheres,92964,95 a 99 anos,6803.0,38.0,0.6
+UF,43,Rio Grande do Sul,Mulheres,92965,100 anos ou mais,1154.0,4.0,0.4
+UF,43,Rio Grande do Sul,Mulheres,95253,Total,5627214.0,50383.0,0.9
+UF,43,Rio Grande do Sul,Total,1140,0 a 4 anos,609443.0,13300.0,2.2
+UF,43,Rio Grande do Sul,Total,1141,5 a 9 anos,666740.0,17228.0,2.6
+UF,43,Rio Grande do Sul,Total,1142,10 a 14 anos,629535.0,11799.0,1.9
+UF,43,Rio Grande do Sul,Total,1143,15 a 19 anos,670620.0,9647.0,1.4
+UF,43,Rio Grande do Sul,Total,1144,20 a 24 anos,756153.0,8298.0,1.1
+UF,43,Rio Grande do Sul,Total,1145,25 a 29 anos,782316.0,7696.0,1.0
+UF,43,Rio Grande do Sul,Total,1146,30 a 34 anos,788468.0,6447.0,0.8
+UF,43,Rio Grande do Sul,Total,1147,35 a 39 anos,822356.0,7027.0,0.9
+UF,43,Rio Grande do Sul,Total,1148,40 a 44 anos,823993.0,7171.0,0.9
+UF,43,Rio Grande do Sul,Total,1149,45 a 49 anos,710219.0,5757.0,0.8
+UF,43,Rio Grande do Sul,Total,1150,50 a 54 anos,702783.0,4999.0,0.7
+UF,43,Rio Grande do Sul,Total,1151,55 a 59 anos,724711.0,5706.0,0.8
+UF,43,Rio Grande do Sul,Total,1152,60 a 64 anos,661652.0,5895.0,0.9
+UF,43,Rio Grande do Sul,Total,1153,65 a 69 anos,544373.0,4796.0,0.9
+UF,43,Rio Grande do Sul,Total,1154,70 a 74 anos,412553.0,3807.0,0.9
+UF,43,Rio Grande do Sul,Total,1155,75 a 79 anos,272512.0,2448.0,0.9
+UF,43,Rio Grande do Sul,Total,6802,80 a 84 anos,167007.0,1298.0,0.8
+UF,43,Rio Grande do Sul,Total,6803,85 a 89 anos,90373.0,544.0,0.6
+UF,43,Rio Grande do Sul,Total,92963,90 a 94 anos,36626.0,326.0,0.9
+UF,43,Rio Grande do Sul,Total,92964,95 a 99 anos,9110.0,38.0,0.4
+UF,43,Rio Grande do Sul,Total,92965,100 anos ou mais,1425.0,14.0,1.0
+UF,43,Rio Grande do Sul,Total,95253,Total,10882965.0,124241.0,1.1
+UF,50,Mato Grosso do Sul,Homens,1140,0 a 4 anos,100930.0,2418.0,2.4
+UF,50,Mato Grosso do Sul,Homens,1141,5 a 9 anos,105819.0,3088.0,2.9
+UF,50,Mato Grosso do Sul,Homens,1142,10 a 14 anos,102161.0,2538.0,2.5
+UF,50,Mato Grosso do Sul,Homens,1143,15 a 19 anos,100917.0,1530.0,1.5
+UF,50,Mato Grosso do Sul,Homens,1144,20 a 24 anos,103346.0,1115.0,1.1
+UF,50,Mato Grosso do Sul,Homens,1145,25 a 29 anos,107179.0,1042.0,1.0
+UF,50,Mato Grosso do Sul,Homens,1146,30 a 34 anos,104681.0,1021.0,1.0
+UF,50,Mato Grosso do Sul,Homens,1147,35 a 39 anos,106272.0,753.0,0.7
+UF,50,Mato Grosso do Sul,Homens,1148,40 a 44 anos,103140.0,738.0,0.7
+UF,50,Mato Grosso do Sul,Homens,1149,45 a 49 anos,87995.0,648.0,0.7
+UF,50,Mato Grosso do Sul,Homens,1150,50 a 54 anos,81383.0,634.0,0.8
+UF,50,Mato Grosso do Sul,Homens,1151,55 a 59 anos,70997.0,462.0,0.7
+UF,50,Mato Grosso do Sul,Homens,1152,60 a 64 anos,59846.0,496.0,0.8
+UF,50,Mato Grosso do Sul,Homens,1153,65 a 69 anos,45773.0,446.0,1.0
+UF,50,Mato Grosso do Sul,Homens,1154,70 a 74 anos,32873.0,303.0,0.9
+UF,50,Mato Grosso do Sul,Homens,1155,75 a 79 anos,20950.0,233.0,1.1
+UF,50,Mato Grosso do Sul,Homens,6802,80 a 84 anos,12496.0,69.0,0.6
+UF,50,Mato Grosso do Sul,Homens,6803,85 a 89 anos,6291.0,66.0,1.1
+UF,50,Mato Grosso do Sul,Homens,92963,90 a 94 anos,2722.0,41.0,1.5
+UF,50,Mato Grosso do Sul,Homens,92964,95 a 99 anos,615.0,13.0,2.1
+UF,50,Mato Grosso do Sul,Homens,92965,100 anos ou mais,129.0,,
+UF,50,Mato Grosso do Sul,Homens,95253,Total,1356515.0,17654.0,1.3
+UF,50,Mato Grosso do Sul,Mulheres,1140,0 a 4 anos,97714.0,990.0,1.0
+UF,50,Mato Grosso do Sul,Mulheres,1141,5 a 9 anos,102418.0,1149.0,1.1
+UF,50,Mato Grosso do Sul,Mulheres,1142,10 a 14 anos,97692.0,879.0,0.9
+UF,50,Mato Grosso do Sul,Mulheres,1143,15 a 19 anos,96392.0,743.0,0.8
+UF,50,Mato Grosso do Sul,Mulheres,1144,20 a 24 anos,103254.0,813.0,0.8
+UF,50,Mato Grosso do Sul,Mulheres,1145,25 a 29 anos,109775.0,597.0,0.5
+UF,50,Mato Grosso do Sul,Mulheres,1146,30 a 34 anos,107292.0,804.0,0.7
+UF,50,Mato Grosso do Sul,Mulheres,1147,35 a 39 anos,110260.0,831.0,0.8
+UF,50,Mato Grosso do Sul,Mulheres,1148,40 a 44 anos,107334.0,705.0,0.7
+UF,50,Mato Grosso do Sul,Mulheres,1149,45 a 49 anos,92577.0,837.0,0.9
+UF,50,Mato Grosso do Sul,Mulheres,1150,50 a 54 anos,85822.0,559.0,0.7
+UF,50,Mato Grosso do Sul,Mulheres,1151,55 a 59 anos,78962.0,648.0,0.8
+UF,50,Mato Grosso do Sul,Mulheres,1152,60 a 64 anos,67581.0,670.0,1.0
+UF,50,Mato Grosso do Sul,Mulheres,1153,65 a 69 anos,52467.0,473.0,0.9
+UF,50,Mato Grosso do Sul,Mulheres,1154,70 a 74 anos,36371.0,289.0,0.8
+UF,50,Mato Grosso do Sul,Mulheres,1155,75 a 79 anos,24775.0,208.0,0.8
+UF,50,Mato Grosso do Sul,Mulheres,6802,80 a 84 anos,15460.0,165.0,1.1
+UF,50,Mato Grosso do Sul,Mulheres,6803,85 a 89 anos,8767.0,72.0,0.8
+UF,50,Mato Grosso do Sul,Mulheres,92963,90 a 94 anos,3915.0,1.0,0.0
+UF,50,Mato Grosso do Sul,Mulheres,92964,95 a 99 anos,1407.0,2.0,0.1
+UF,50,Mato Grosso do Sul,Mulheres,92965,100 anos ou mais,262.0,,
+UF,50,Mato Grosso do Sul,Mulheres,95253,Total,1400498.0,11435.0,0.8
+UF,50,Mato Grosso do Sul,Total,1140,0 a 4 anos,198643.0,3408.0,1.7
+UF,50,Mato Grosso do Sul,Total,1141,5 a 9 anos,208237.0,4237.0,2.0
+UF,50,Mato Grosso do Sul,Total,1142,10 a 14 anos,199853.0,3416.0,1.7
+UF,50,Mato Grosso do Sul,Total,1143,15 a 19 anos,197309.0,2273.0,1.2
+UF,50,Mato Grosso do Sul,Total,1144,20 a 24 anos,206601.0,1928.0,0.9
+UF,50,Mato Grosso do Sul,Total,1145,25 a 29 anos,216955.0,1639.0,0.8
+UF,50,Mato Grosso do Sul,Total,1146,30 a 34 anos,211973.0,1825.0,0.9
+UF,50,Mato Grosso do Sul,Total,1147,35 a 39 anos,216532.0,1584.0,0.7
+UF,50,Mato Grosso do Sul,Total,1148,40 a 44 anos,210474.0,1443.0,0.7
+UF,50,Mato Grosso do Sul,Total,1149,45 a 49 anos,180572.0,1484.0,0.8
+UF,50,Mato Grosso do Sul,Total,1150,50 a 54 anos,167205.0,1194.0,0.7
+UF,50,Mato Grosso do Sul,Total,1151,55 a 59 anos,149960.0,1110.0,0.7
+UF,50,Mato Grosso do Sul,Total,1152,60 a 64 anos,127426.0,1166.0,0.9
+UF,50,Mato Grosso do Sul,Total,1153,65 a 69 anos,98240.0,919.0,0.9
+UF,50,Mato Grosso do Sul,Total,1154,70 a 74 anos,69244.0,591.0,0.9
+UF,50,Mato Grosso do Sul,Total,1155,75 a 79 anos,45724.0,441.0,1.0
+UF,50,Mato Grosso do Sul,Total,6802,80 a 84 anos,27955.0,234.0,0.8
+UF,50,Mato Grosso do Sul,Total,6803,85 a 89 anos,15058.0,139.0,0.9
+UF,50,Mato Grosso do Sul,Total,92963,90 a 94 anos,6637.0,42.0,0.6
+UF,50,Mato Grosso do Sul,Total,92964,95 a 99 anos,2022.0,15.0,0.7
+UF,50,Mato Grosso do Sul,Total,92965,100 anos ou mais,391.0,,
+UF,50,Mato Grosso do Sul,Total,95253,Total,2757013.0,29088.0,1.1
+UF,51,Mato Grosso,Homens,1140,0 a 4 anos,143538.0,3462.0,2.4
+UF,51,Mato Grosso,Homens,1141,5 a 9 anos,144097.0,4018.0,2.8
+UF,51,Mato Grosso,Homens,1142,10 a 14 anos,135568.0,2705.0,2.0
+UF,51,Mato Grosso,Homens,1143,15 a 19 anos,137843.0,2214.0,1.6
+UF,51,Mato Grosso,Homens,1144,20 a 24 anos,146338.0,1779.0,1.2
+UF,51,Mato Grosso,Homens,1145,25 a 29 anos,152636.0,1433.0,0.9
+UF,51,Mato Grosso,Homens,1146,30 a 34 anos,150596.0,1142.0,0.8
+UF,51,Mato Grosso,Homens,1147,35 a 39 anos,152508.0,1449.0,1.0
+UF,51,Mato Grosso,Homens,1148,40 a 44 anos,144440.0,1218.0,0.8
+UF,51,Mato Grosso,Homens,1149,45 a 49 anos,120759.0,1043.0,0.9
+UF,51,Mato Grosso,Homens,1150,50 a 54 anos,108211.0,871.0,0.8
+UF,51,Mato Grosso,Homens,1151,55 a 59 anos,92639.0,877.0,0.9
+UF,51,Mato Grosso,Homens,1152,60 a 64 anos,74422.0,765.0,1.0
+UF,51,Mato Grosso,Homens,1153,65 a 69 anos,54699.0,594.0,1.1
+UF,51,Mato Grosso,Homens,1154,70 a 74 anos,37004.0,377.0,1.0
+UF,51,Mato Grosso,Homens,1155,75 a 79 anos,23011.0,350.0,1.5
+UF,51,Mato Grosso,Homens,6802,80 a 84 anos,13848.0,195.0,1.4
+UF,51,Mato Grosso,Homens,6803,85 a 89 anos,5882.0,49.0,0.8
+UF,51,Mato Grosso,Homens,92963,90 a 94 anos,2489.0,36.0,1.4
+UF,51,Mato Grosso,Homens,92964,95 a 99 anos,514.0,1.0,0.3
+UF,51,Mato Grosso,Homens,92965,100 anos ou mais,199.0,17.0,8.4
+UF,51,Mato Grosso,Homens,95253,Total,1841241.0,24596.0,1.3
+UF,51,Mato Grosso,Mulheres,1140,0 a 4 anos,138348.0,1142.0,0.8
+UF,51,Mato Grosso,Mulheres,1141,5 a 9 anos,139139.0,1497.0,1.1
+UF,51,Mato Grosso,Mulheres,1142,10 a 14 anos,128980.0,1095.0,0.8
+UF,51,Mato Grosso,Mulheres,1143,15 a 19 anos,133208.0,1232.0,0.9
+UF,51,Mato Grosso,Mulheres,1144,20 a 24 anos,143049.0,935.0,0.7
+UF,51,Mato Grosso,Mulheres,1145,25 a 29 anos,151455.0,1242.0,0.8
+UF,51,Mato Grosso,Mulheres,1146,30 a 34 anos,149853.0,1264.0,0.8
+UF,51,Mato Grosso,Mulheres,1147,35 a 39 anos,151232.0,1153.0,0.8
+UF,51,Mato Grosso,Mulheres,1148,40 a 44 anos,143617.0,1337.0,0.9
+UF,51,Mato Grosso,Mulheres,1149,45 a 49 anos,121092.0,1198.0,1.0
+UF,51,Mato Grosso,Mulheres,1150,50 a 54 anos,107379.0,981.0,0.9
+UF,51,Mato Grosso,Mulheres,1151,55 a 59 anos,92347.0,921.0,1.0
+UF,51,Mato Grosso,Mulheres,1152,60 a 64 anos,73599.0,894.0,1.2
+UF,51,Mato Grosso,Mulheres,1153,65 a 69 anos,55366.0,628.0,1.1
+UF,51,Mato Grosso,Mulheres,1154,70 a 74 anos,37763.0,476.0,1.3
+UF,51,Mato Grosso,Mulheres,1155,75 a 79 anos,24188.0,285.0,1.2
+UF,51,Mato Grosso,Mulheres,6802,80 a 84 anos,14922.0,199.0,1.3
+UF,51,Mato Grosso,Mulheres,6803,85 a 89 anos,7543.0,52.0,0.7
+UF,51,Mato Grosso,Mulheres,92963,90 a 94 anos,3288.0,42.0,1.3
+UF,51,Mato Grosso,Mulheres,92964,95 a 99 anos,729.0,44.0,6.0
+UF,51,Mato Grosso,Mulheres,92965,100 anos ou mais,311.0,36.0,11.6
+UF,51,Mato Grosso,Mulheres,95253,Total,1817408.0,16651.0,0.9
+UF,51,Mato Grosso,Total,1140,0 a 4 anos,281886.0,4604.0,1.6
+UF,51,Mato Grosso,Total,1141,5 a 9 anos,283236.0,5515.0,1.9
+UF,51,Mato Grosso,Total,1142,10 a 14 anos,264548.0,3800.0,1.4
+UF,51,Mato Grosso,Total,1143,15 a 19 anos,271050.0,3446.0,1.3
+UF,51,Mato Grosso,Total,1144,20 a 24 anos,289388.0,2713.0,0.9
+UF,51,Mato Grosso,Total,1145,25 a 29 anos,304091.0,2675.0,0.9
+UF,51,Mato Grosso,Total,1146,30 a 34 anos,300449.0,2406.0,0.8
+UF,51,Mato Grosso,Total,1147,35 a 39 anos,303740.0,2603.0,0.9
+UF,51,Mato Grosso,Total,1148,40 a 44 anos,288057.0,2555.0,0.9
+UF,51,Mato Grosso,Total,1149,45 a 49 anos,241851.0,2241.0,0.9
+UF,51,Mato Grosso,Total,1150,50 a 54 anos,215590.0,1852.0,0.9
+UF,51,Mato Grosso,Total,1151,55 a 59 anos,184987.0,1798.0,1.0
+UF,51,Mato Grosso,Total,1152,60 a 64 anos,148021.0,1659.0,1.1
+UF,51,Mato Grosso,Total,1153,65 a 69 anos,110065.0,1222.0,1.1
+UF,51,Mato Grosso,Total,1154,70 a 74 anos,74767.0,854.0,1.1
+UF,51,Mato Grosso,Total,1155,75 a 79 anos,47199.0,635.0,1.3
+UF,51,Mato Grosso,Total,6802,80 a 84 anos,28770.0,394.0,1.4
+UF,51,Mato Grosso,Total,6803,85 a 89 anos,13425.0,101.0,0.8
+UF,51,Mato Grosso,Total,92963,90 a 94 anos,5777.0,78.0,1.3
+UF,51,Mato Grosso,Total,92964,95 a 99 anos,1243.0,45.0,3.6
+UF,51,Mato Grosso,Total,92965,100 anos ou mais,510.0,53.0,10.3
+UF,51,Mato Grosso,Total,95253,Total,3658649.0,41247.0,1.1
+UF,52,Goiás,Homens,1140,0 a 4 anos,234197.0,5771.0,2.5
+UF,52,Goiás,Homens,1141,5 a 9 anos,250619.0,7462.0,3.0
+UF,52,Goiás,Homens,1142,10 a 14 anos,243683.0,5026.0,2.1
+UF,52,Goiás,Homens,1143,15 a 19 anos,258659.0,3867.0,1.5
+UF,52,Goiás,Homens,1144,20 a 24 anos,278228.0,3058.0,1.1
+UF,52,Goiás,Homens,1145,25 a 29 anos,280434.0,3029.0,1.1
+UF,52,Goiás,Homens,1146,30 a 34 anos,277308.0,2303.0,0.8
+UF,52,Goiás,Homens,1147,35 a 39 anos,282494.0,2403.0,0.9
+UF,52,Goiás,Homens,1148,40 a 44 anos,280779.0,2581.0,0.9
+UF,52,Goiás,Homens,1149,45 a 49 anos,237294.0,1943.0,0.8
+UF,52,Goiás,Homens,1150,50 a 54 anos,212737.0,1955.0,0.9
+UF,52,Goiás,Homens,1151,55 a 59 anos,182288.0,1622.0,0.9
+UF,52,Goiás,Homens,1152,60 a 64 anos,148586.0,1412.0,1.0
+UF,52,Goiás,Homens,1153,65 a 69 anos,112468.0,956.0,0.9
+UF,52,Goiás,Homens,1154,70 a 74 anos,81646.0,875.0,1.1
+UF,52,Goiás,Homens,1155,75 a 79 anos,51874.0,502.0,1.0
+UF,52,Goiás,Homens,6802,80 a 84 anos,31458.0,281.0,0.9
+UF,52,Goiás,Homens,6803,85 a 89 anos,14907.0,178.0,1.2
+UF,52,Goiás,Homens,92963,90 a 94 anos,5570.0,66.0,1.2
+UF,52,Goiás,Homens,92964,95 a 99 anos,1446.0,24.0,1.7
+UF,52,Goiás,Homens,92965,100 anos ou mais,265.0,,
+UF,52,Goiás,Homens,95253,Total,3466941.0,45315.0,1.3
+UF,52,Goiás,Mulheres,1140,0 a 4 anos,226667.0,2099.0,0.9
+UF,52,Goiás,Mulheres,1141,5 a 9 anos,243540.0,2453.0,1.0
+UF,52,Goiás,Mulheres,1142,10 a 14 anos,232195.0,1706.0,0.7
+UF,52,Goiás,Mulheres,1143,15 a 19 anos,250153.0,1991.0,0.8
+UF,52,Goiás,Mulheres,1144,20 a 24 anos,275525.0,2067.0,0.8
+UF,52,Goiás,Mulheres,1145,25 a 29 anos,284101.0,2319.0,0.8
+UF,52,Goiás,Mulheres,1146,30 a 34 anos,286526.0,1882.0,0.7
+UF,52,Goiás,Mulheres,1147,35 a 39 anos,294283.0,1857.0,0.6
+UF,52,Goiás,Mulheres,1148,40 a 44 anos,294008.0,2137.0,0.7
+UF,52,Goiás,Mulheres,1149,45 a 49 anos,252429.0,2211.0,0.9
+UF,52,Goiás,Mulheres,1150,50 a 54 anos,228449.0,2109.0,0.9
+UF,52,Goiás,Mulheres,1151,55 a 59 anos,201326.0,1889.0,0.9
+UF,52,Goiás,Mulheres,1152,60 a 64 anos,167495.0,1500.0,0.9
+UF,52,Goiás,Mulheres,1153,65 a 69 anos,128524.0,1202.0,0.9
+UF,52,Goiás,Mulheres,1154,70 a 74 anos,93661.0,965.0,1.0
+UF,52,Goiás,Mulheres,1155,75 a 79 anos,59916.0,723.0,1.2
+UF,52,Goiás,Mulheres,6802,80 a 84 anos,39329.0,340.0,0.9
+UF,52,Goiás,Mulheres,6803,85 a 89 anos,20055.0,194.0,1.0
+UF,52,Goiás,Mulheres,92963,90 a 94 anos,8583.0,60.0,0.7
+UF,52,Goiás,Mulheres,92964,95 a 99 anos,2306.0,19.0,0.8
+UF,52,Goiás,Mulheres,92965,100 anos ou mais,483.0,,
+UF,52,Goiás,Mulheres,95253,Total,3589554.0,29725.0,0.8
+UF,52,Goiás,Total,1140,0 a 4 anos,460864.0,7871.0,1.7
+UF,52,Goiás,Total,1141,5 a 9 anos,494159.0,9916.0,2.0
+UF,52,Goiás,Total,1142,10 a 14 anos,475878.0,6733.0,1.4
+UF,52,Goiás,Total,1143,15 a 19 anos,508813.0,5858.0,1.2
+UF,52,Goiás,Total,1144,20 a 24 anos,553754.0,5124.0,0.9
+UF,52,Goiás,Total,1145,25 a 29 anos,564535.0,5348.0,0.9
+UF,52,Goiás,Total,1146,30 a 34 anos,563835.0,4185.0,0.7
+UF,52,Goiás,Total,1147,35 a 39 anos,576776.0,4261.0,0.7
+UF,52,Goiás,Total,1148,40 a 44 anos,574787.0,4718.0,0.8
+UF,52,Goiás,Total,1149,45 a 49 anos,489723.0,4154.0,0.8
+UF,52,Goiás,Total,1150,50 a 54 anos,441186.0,4064.0,0.9
+UF,52,Goiás,Total,1151,55 a 59 anos,383614.0,3512.0,0.9
+UF,52,Goiás,Total,1152,60 a 64 anos,316080.0,2912.0,0.9
+UF,52,Goiás,Total,1153,65 a 69 anos,240992.0,2158.0,0.9
+UF,52,Goiás,Total,1154,70 a 74 anos,175306.0,1840.0,1.0
+UF,52,Goiás,Total,1155,75 a 79 anos,111790.0,1225.0,1.1
+UF,52,Goiás,Total,6802,80 a 84 anos,70787.0,622.0,0.9
+UF,52,Goiás,Total,6803,85 a 89 anos,34963.0,371.0,1.1
+UF,52,Goiás,Total,92963,90 a 94 anos,14153.0,126.0,0.9
+UF,52,Goiás,Total,92964,95 a 99 anos,3752.0,43.0,1.1
+UF,52,Goiás,Total,92965,100 anos ou mais,748.0,,
+UF,52,Goiás,Total,95253,Total,7056495.0,75040.0,1.1
+UF,53,Distrito Federal,Homens,1140,0 a 4 anos,84319.0,2568.0,3.0
+UF,53,Distrito Federal,Homens,1141,5 a 9 anos,94417.0,4199.0,4.4
+UF,53,Distrito Federal,Homens,1142,10 a 14 anos,92345.0,2365.0,2.6
+UF,53,Distrito Federal,Homens,1143,15 a 19 anos,106714.0,1940.0,1.8
+UF,53,Distrito Federal,Homens,1144,20 a 24 anos,114377.0,1302.0,1.1
+UF,53,Distrito Federal,Homens,1145,25 a 29 anos,109648.0,1241.0,1.1
+UF,53,Distrito Federal,Homens,1146,30 a 34 anos,106631.0,1131.0,1.1
+UF,53,Distrito Federal,Homens,1147,35 a 39 anos,111444.0,1085.0,1.0
+UF,53,Distrito Federal,Homens,1148,40 a 44 anos,118623.0,1010.0,0.9
+UF,53,Distrito Federal,Homens,1149,45 a 49 anos,97039.0,864.0,0.9
+UF,53,Distrito Federal,Homens,1150,50 a 54 anos,84173.0,1005.0,1.2
+UF,53,Distrito Federal,Homens,1151,55 a 59 anos,68248.0,776.0,1.1
+UF,53,Distrito Federal,Homens,1152,60 a 64 anos,50922.0,545.0,1.1
+UF,53,Distrito Federal,Homens,1153,65 a 69 anos,39373.0,291.0,0.7
+UF,53,Distrito Federal,Homens,1154,70 a 74 anos,27662.0,360.0,1.3
+UF,53,Distrito Federal,Homens,1155,75 a 79 anos,17756.0,111.0,0.6
+UF,53,Distrito Federal,Homens,6802,80 a 84 anos,11554.0,221.0,1.9
+UF,53,Distrito Federal,Homens,6803,85 a 89 anos,5665.0,55.0,1.0
+UF,53,Distrito Federal,Homens,92963,90 a 94 anos,1562.0,,
+UF,53,Distrito Federal,Homens,92964,95 a 99 anos,275.0,,
+UF,53,Distrito Federal,Homens,92965,100 anos ou mais,36.0,,
+UF,53,Distrito Federal,Homens,95253,Total,1342786.0,21070.0,1.6
+UF,53,Distrito Federal,Mulheres,1140,0 a 4 anos,82450.0,945.0,1.1
+UF,53,Distrito Federal,Mulheres,1141,5 a 9 anos,90032.0,1023.0,1.1
+UF,53,Distrito Federal,Mulheres,1142,10 a 14 anos,89258.0,929.0,1.0
+UF,53,Distrito Federal,Mulheres,1143,15 a 19 anos,103625.0,822.0,0.8
+UF,53,Distrito Federal,Mulheres,1144,20 a 24 anos,112724.0,1069.0,0.9
+UF,53,Distrito Federal,Mulheres,1145,25 a 29 anos,112359.0,941.0,0.8
+UF,53,Distrito Federal,Mulheres,1146,30 a 34 anos,112871.0,907.0,0.8
+UF,53,Distrito Federal,Mulheres,1147,35 a 39 anos,127429.0,780.0,0.6
+UF,53,Distrito Federal,Mulheres,1148,40 a 44 anos,136739.0,1299.0,0.9
+UF,53,Distrito Federal,Mulheres,1149,45 a 49 anos,112177.0,923.0,0.8
+UF,53,Distrito Federal,Mulheres,1150,50 a 54 anos,97323.0,865.0,0.9
+UF,53,Distrito Federal,Mulheres,1151,55 a 59 anos,82130.0,682.0,0.8
+UF,53,Distrito Federal,Mulheres,1152,60 a 64 anos,66685.0,576.0,0.9
+UF,53,Distrito Federal,Mulheres,1153,65 a 69 anos,51345.0,499.0,1.0
+UF,53,Distrito Federal,Mulheres,1154,70 a 74 anos,39903.0,223.0,0.6
+UF,53,Distrito Federal,Mulheres,1155,75 a 79 anos,25675.0,265.0,1.0
+UF,53,Distrito Federal,Mulheres,6802,80 a 84 anos,17207.0,141.0,0.8
+UF,53,Distrito Federal,Mulheres,6803,85 a 89 anos,9605.0,132.0,1.4
+UF,53,Distrito Federal,Mulheres,92963,90 a 94 anos,3563.0,46.0,1.3
+UF,53,Distrito Federal,Mulheres,92964,95 a 99 anos,1209.0,,
+UF,53,Distrito Federal,Mulheres,92965,100 anos ou mais,284.0,,
+UF,53,Distrito Federal,Mulheres,95253,Total,1474595.0,13066.0,0.9
+UF,53,Distrito Federal,Total,1140,0 a 4 anos,166770.0,3512.0,2.1
+UF,53,Distrito Federal,Total,1141,5 a 9 anos,184448.0,5222.0,2.8
+UF,53,Distrito Federal,Total,1142,10 a 14 anos,181604.0,3294.0,1.8
+UF,53,Distrito Federal,Total,1143,15 a 19 anos,210339.0,2762.0,1.3
+UF,53,Distrito Federal,Total,1144,20 a 24 anos,227101.0,2371.0,1.0
+UF,53,Distrito Federal,Total,1145,25 a 29 anos,222008.0,2182.0,1.0
+UF,53,Distrito Federal,Total,1146,30 a 34 anos,219503.0,2038.0,0.9
+UF,53,Distrito Federal,Total,1147,35 a 39 anos,238874.0,1865.0,0.8
+UF,53,Distrito Federal,Total,1148,40 a 44 anos,255363.0,2309.0,0.9
+UF,53,Distrito Federal,Total,1149,45 a 49 anos,209215.0,1787.0,0.9
+UF,53,Distrito Federal,Total,1150,50 a 54 anos,181496.0,1870.0,1.0
+UF,53,Distrito Federal,Total,1151,55 a 59 anos,150378.0,1458.0,1.0
+UF,53,Distrito Federal,Total,1152,60 a 64 anos,117607.0,1121.0,1.0
+UF,53,Distrito Federal,Total,1153,65 a 69 anos,90719.0,790.0,0.9
+UF,53,Distrito Federal,Total,1154,70 a 74 anos,67565.0,583.0,0.9
+UF,53,Distrito Federal,Total,1155,75 a 79 anos,43432.0,375.0,0.9
+UF,53,Distrito Federal,Total,6802,80 a 84 anos,28761.0,362.0,1.3
+UF,53,Distrito Federal,Total,6803,85 a 89 anos,15270.0,187.0,1.2
+UF,53,Distrito Federal,Total,92963,90 a 94 anos,5126.0,46.0,0.9
+UF,53,Distrito Federal,Total,92964,95 a 99 anos,1485.0,,
+UF,53,Distrito Federal,Total,92965,100 anos ou mais,320.0,,
+UF,53,Distrito Federal,Total,95253,Total,2817381.0,34136.0,1.2
+MUN,1600055,Serra do Navio - AP,Homens,1140,0 a 4 anos,230.0,2.0,0.9
+MUN,1600055,Serra do Navio - AP,Homens,1141,5 a 9 anos,212.0,7.0,3.3
+MUN,1600055,Serra do Navio - AP,Homens,1142,10 a 14 anos,211.0,9.0,4.4
+MUN,1600055,Serra do Navio - AP,Homens,1143,15 a 19 anos,250.0,5.0,2.1
+MUN,1600055,Serra do Navio - AP,Homens,1144,20 a 24 anos,225.0,,
+MUN,1600055,Serra do Navio - AP,Homens,1145,25 a 29 anos,202.0,,
+MUN,1600055,Serra do Navio - AP,Homens,1146,30 a 34 anos,192.0,,
+MUN,1600055,Serra do Navio - AP,Homens,1147,35 a 39 anos,187.0,3.0,1.5
+MUN,1600055,Serra do Navio - AP,Homens,1148,40 a 44 anos,174.0,,
+MUN,1600055,Serra do Navio - AP,Homens,1149,45 a 49 anos,134.0,,
+MUN,1600055,Serra do Navio - AP,Homens,1150,50 a 54 anos,115.0,,
+MUN,1600055,Serra do Navio - AP,Homens,1151,55 a 59 anos,104.0,,
+MUN,1600055,Serra do Navio - AP,Homens,1152,60 a 64 anos,74.0,,
+MUN,1600055,Serra do Navio - AP,Homens,1153,65 a 69 anos,44.0,,
+MUN,1600055,Serra do Navio - AP,Homens,1154,70 a 74 anos,27.0,,
+MUN,1600055,Serra do Navio - AP,Homens,1155,75 a 79 anos,11.0,2.0,21.7
+MUN,1600055,Serra do Navio - AP,Homens,6802,80 a 84 anos,8.0,,
+MUN,1600055,Serra do Navio - AP,Homens,6803,85 a 89 anos,7.0,,
+MUN,1600055,Serra do Navio - AP,Homens,92963,90 a 94 anos,7.0,,
+MUN,1600055,Serra do Navio - AP,Homens,95253,Total,2414.0,29.0,1.2
+MUN,1600055,Serra do Navio - AP,Mulheres,1140,0 a 4 anos,257.0,3.0,1.1
+MUN,1600055,Serra do Navio - AP,Mulheres,1141,5 a 9 anos,200.0,,
+MUN,1600055,Serra do Navio - AP,Mulheres,1142,10 a 14 anos,191.0,,
+MUN,1600055,Serra do Navio - AP,Mulheres,1143,15 a 19 anos,218.0,4.0,2.0
+MUN,1600055,Serra do Navio - AP,Mulheres,1144,20 a 24 anos,182.0,,
+MUN,1600055,Serra do Navio - AP,Mulheres,1145,25 a 29 anos,198.0,,
+MUN,1600055,Serra do Navio - AP,Mulheres,1146,30 a 34 anos,199.0,,
+MUN,1600055,Serra do Navio - AP,Mulheres,1147,35 a 39 anos,190.0,1.0,0.8
+MUN,1600055,Serra do Navio - AP,Mulheres,1148,40 a 44 anos,159.0,2.0,1.4
+MUN,1600055,Serra do Navio - AP,Mulheres,1149,45 a 49 anos,128.0,,
+MUN,1600055,Serra do Navio - AP,Mulheres,1150,50 a 54 anos,110.0,,
+MUN,1600055,Serra do Navio - AP,Mulheres,1151,55 a 59 anos,69.0,,
+MUN,1600055,Serra do Navio - AP,Mulheres,1152,60 a 64 anos,60.0,,
+MUN,1600055,Serra do Navio - AP,Mulheres,1153,65 a 69 anos,43.0,,
+MUN,1600055,Serra do Navio - AP,Mulheres,1154,70 a 74 anos,21.0,,
+MUN,1600055,Serra do Navio - AP,Mulheres,1155,75 a 79 anos,15.0,,
+MUN,1600055,Serra do Navio - AP,Mulheres,6802,80 a 84 anos,5.0,,
+MUN,1600055,Serra do Navio - AP,Mulheres,6803,85 a 89 anos,6.0,,
+MUN,1600055,Serra do Navio - AP,Mulheres,92963,90 a 94 anos,3.0,,
+MUN,1600055,Serra do Navio - AP,Mulheres,92964,95 a 99 anos,4.0,,
+MUN,1600055,Serra do Navio - AP,Mulheres,95253,Total,2259.0,11.0,0.5
+MUN,1600055,Serra do Navio - AP,Total,1140,0 a 4 anos,487.0,5.0,1.0
+MUN,1600055,Serra do Navio - AP,Total,1141,5 a 9 anos,412.0,7.0,1.7
+MUN,1600055,Serra do Navio - AP,Total,1142,10 a 14 anos,402.0,9.0,2.3
+MUN,1600055,Serra do Navio - AP,Total,1143,15 a 19 anos,468.0,10.0,2.0
+MUN,1600055,Serra do Navio - AP,Total,1144,20 a 24 anos,407.0,,
+MUN,1600055,Serra do Navio - AP,Total,1145,25 a 29 anos,400.0,,
+MUN,1600055,Serra do Navio - AP,Total,1146,30 a 34 anos,391.0,,
+MUN,1600055,Serra do Navio - AP,Total,1147,35 a 39 anos,377.0,4.0,1.1
+MUN,1600055,Serra do Navio - AP,Total,1148,40 a 44 anos,333.0,2.0,0.7
+MUN,1600055,Serra do Navio - AP,Total,1149,45 a 49 anos,262.0,,
+MUN,1600055,Serra do Navio - AP,Total,1150,50 a 54 anos,225.0,,
+MUN,1600055,Serra do Navio - AP,Total,1151,55 a 59 anos,173.0,,
+MUN,1600055,Serra do Navio - AP,Total,1152,60 a 64 anos,134.0,,
+MUN,1600055,Serra do Navio - AP,Total,1153,65 a 69 anos,87.0,,
+MUN,1600055,Serra do Navio - AP,Total,1154,70 a 74 anos,48.0,,
+MUN,1600055,Serra do Navio - AP,Total,1155,75 a 79 anos,27.0,2.0,9.2
+MUN,1600055,Serra do Navio - AP,Total,6802,80 a 84 anos,13.0,,
+MUN,1600055,Serra do Navio - AP,Total,6803,85 a 89 anos,13.0,,
+MUN,1600055,Serra do Navio - AP,Total,92963,90 a 94 anos,11.0,,
+MUN,1600055,Serra do Navio - AP,Total,92964,95 a 99 anos,4.0,,
+MUN,1600055,Serra do Navio - AP,Total,95253,Total,4673.0,40.0,0.9
+MUN,1600105,Amapá - AP,Homens,1140,0 a 4 anos,427.0,13.0,3.0
+MUN,1600105,Amapá - AP,Homens,1141,5 a 9 anos,408.0,57.0,14.1
+MUN,1600105,Amapá - AP,Homens,1142,10 a 14 anos,377.0,16.0,4.3
+MUN,1600105,Amapá - AP,Homens,1143,15 a 19 anos,393.0,5.0,1.3
+MUN,1600105,Amapá - AP,Homens,1144,20 a 24 anos,396.0,10.0,2.6
+MUN,1600105,Amapá - AP,Homens,1145,25 a 29 anos,303.0,8.0,2.7
+MUN,1600105,Amapá - AP,Homens,1146,30 a 34 anos,268.0,,
+MUN,1600105,Amapá - AP,Homens,1147,35 a 39 anos,314.0,,
+MUN,1600105,Amapá - AP,Homens,1148,40 a 44 anos,253.0,,
+MUN,1600105,Amapá - AP,Homens,1149,45 a 49 anos,226.0,7.0,3.1
+MUN,1600105,Amapá - AP,Homens,1150,50 a 54 anos,197.0,7.0,3.5
+MUN,1600105,Amapá - AP,Homens,1151,55 a 59 anos,164.0,,
+MUN,1600105,Amapá - AP,Homens,1152,60 a 64 anos,150.0,,
+MUN,1600105,Amapá - AP,Homens,1153,65 a 69 anos,92.0,,
+MUN,1600105,Amapá - AP,Homens,1154,70 a 74 anos,62.0,,
+MUN,1600105,Amapá - AP,Homens,1155,75 a 79 anos,49.0,,
+MUN,1600105,Amapá - AP,Homens,6802,80 a 84 anos,32.0,,
+MUN,1600105,Amapá - AP,Homens,6803,85 a 89 anos,7.0,,
+MUN,1600105,Amapá - AP,Homens,92963,90 a 94 anos,12.0,,
+MUN,1600105,Amapá - AP,Homens,95253,Total,4129.0,124.0,3.0
+MUN,1600105,Amapá - AP,Mulheres,1140,0 a 4 anos,425.0,12.0,2.8
+MUN,1600105,Amapá - AP,Mulheres,1141,5 a 9 anos,369.0,9.0,2.3
+MUN,1600105,Amapá - AP,Mulheres,1142,10 a 14 anos,390.0,6.0,1.5
+MUN,1600105,Amapá - AP,Mulheres,1143,15 a 19 anos,339.0,6.0,1.9
+MUN,1600105,Amapá - AP,Mulheres,1144,20 a 24 anos,354.0,,
+MUN,1600105,Amapá - AP,Mulheres,1145,25 a 29 anos,301.0,,
+MUN,1600105,Amapá - AP,Mulheres,1146,30 a 34 anos,265.0,5.0,1.9
+MUN,1600105,Amapá - AP,Mulheres,1147,35 a 39 anos,283.0,1.0,0.4
+MUN,1600105,Amapá - AP,Mulheres,1148,40 a 44 anos,230.0,,
+MUN,1600105,Amapá - AP,Mulheres,1149,45 a 49 anos,182.0,,
+MUN,1600105,Amapá - AP,Mulheres,1150,50 a 54 anos,179.0,1.0,0.6
+MUN,1600105,Amapá - AP,Mulheres,1151,55 a 59 anos,152.0,,
+MUN,1600105,Amapá - AP,Mulheres,1152,60 a 64 anos,109.0,,
+MUN,1600105,Amapá - AP,Mulheres,1153,65 a 69 anos,73.0,,
+MUN,1600105,Amapá - AP,Mulheres,1154,70 a 74 anos,58.0,,
+MUN,1600105,Amapá - AP,Mulheres,1155,75 a 79 anos,54.0,,
+MUN,1600105,Amapá - AP,Mulheres,6802,80 a 84 anos,24.0,,
+MUN,1600105,Amapá - AP,Mulheres,6803,85 a 89 anos,27.0,,
+MUN,1600105,Amapá - AP,Mulheres,95253,Total,3814.0,40.0,1.0
+MUN,1600105,Amapá - AP,Total,1140,0 a 4 anos,852.0,25.0,2.9
+MUN,1600105,Amapá - AP,Total,1141,5 a 9 anos,777.0,66.0,8.5
+MUN,1600105,Amapá - AP,Total,1142,10 a 14 anos,767.0,22.0,2.9
+MUN,1600105,Amapá - AP,Total,1143,15 a 19 anos,732.0,11.0,1.6
+MUN,1600105,Amapá - AP,Total,1144,20 a 24 anos,750.0,10.0,1.4
+MUN,1600105,Amapá - AP,Total,1145,25 a 29 anos,604.0,8.0,1.4
+MUN,1600105,Amapá - AP,Total,1146,30 a 34 anos,533.0,5.0,0.9
+MUN,1600105,Amapá - AP,Total,1147,35 a 39 anos,597.0,1.0,0.2
+MUN,1600105,Amapá - AP,Total,1148,40 a 44 anos,483.0,,
+MUN,1600105,Amapá - AP,Total,1149,45 a 49 anos,408.0,7.0,1.7
+MUN,1600105,Amapá - AP,Total,1150,50 a 54 anos,376.0,8.0,2.1
+MUN,1600105,Amapá - AP,Total,1151,55 a 59 anos,316.0,,
+MUN,1600105,Amapá - AP,Total,1152,60 a 64 anos,259.0,,
+MUN,1600105,Amapá - AP,Total,1153,65 a 69 anos,165.0,,
+MUN,1600105,Amapá - AP,Total,1154,70 a 74 anos,120.0,,
+MUN,1600105,Amapá - AP,Total,1155,75 a 79 anos,103.0,,
+MUN,1600105,Amapá - AP,Total,6802,80 a 84 anos,55.0,,
+MUN,1600105,Amapá - AP,Total,6803,85 a 89 anos,34.0,,
+MUN,1600105,Amapá - AP,Total,92963,90 a 94 anos,12.0,,
+MUN,1600105,Amapá - AP,Total,95253,Total,7943.0,163.0,2.1
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,1140,0 a 4 anos,882.0,30.0,3.4
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,1141,5 a 9 anos,862.0,27.0,3.1
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,1142,10 a 14 anos,716.0,22.0,3.1
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,1143,15 a 19 anos,604.0,2.0,0.3
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,1144,20 a 24 anos,576.0,11.0,1.9
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,1145,25 a 29 anos,588.0,6.0,1.1
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,1146,30 a 34 anos,508.0,5.0,1.0
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,1147,35 a 39 anos,419.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,1148,40 a 44 anos,420.0,5.0,1.3
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,1149,45 a 49 anos,276.0,11.0,4.0
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,1150,50 a 54 anos,253.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,1151,55 a 59 anos,134.0,5.0,4.1
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,1152,60 a 64 anos,119.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,1153,65 a 69 anos,112.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,1154,70 a 74 anos,112.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,1155,75 a 79 anos,50.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,6802,80 a 84 anos,19.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,6803,85 a 89 anos,21.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,92963,90 a 94 anos,9.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,92964,95 a 99 anos,5.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Homens,95253,Total,6683.0,125.0,1.9
+MUN,1600154,Pedra Branca do Amapari - AP,Mulheres,1140,0 a 4 anos,816.0,1.0,0.1
+MUN,1600154,Pedra Branca do Amapari - AP,Mulheres,1141,5 a 9 anos,764.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Mulheres,1142,10 a 14 anos,650.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Mulheres,1143,15 a 19 anos,515.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Mulheres,1144,20 a 24 anos,622.0,1.0,0.2
+MUN,1600154,Pedra Branca do Amapari - AP,Mulheres,1145,25 a 29 anos,632.0,1.0,0.2
+MUN,1600154,Pedra Branca do Amapari - AP,Mulheres,1146,30 a 34 anos,424.0,4.0,1.0
+MUN,1600154,Pedra Branca do Amapari - AP,Mulheres,1147,35 a 39 anos,474.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Mulheres,1148,40 a 44 anos,394.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Mulheres,1149,45 a 49 anos,238.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Mulheres,1150,50 a 54 anos,215.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Mulheres,1151,55 a 59 anos,126.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Mulheres,1152,60 a 64 anos,121.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Mulheres,1153,65 a 69 anos,88.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Mulheres,1154,70 a 74 anos,66.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Mulheres,1155,75 a 79 anos,7.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Mulheres,6802,80 a 84 anos,6.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Mulheres,6803,85 a 89 anos,1.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Mulheres,92963,90 a 94 anos,5.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Mulheres,95253,Total,6164.0,7.0,0.1
+MUN,1600154,Pedra Branca do Amapari - AP,Total,1140,0 a 4 anos,1698.0,31.0,1.8
+MUN,1600154,Pedra Branca do Amapari - AP,Total,1141,5 a 9 anos,1626.0,27.0,1.7
+MUN,1600154,Pedra Branca do Amapari - AP,Total,1142,10 a 14 anos,1366.0,22.0,1.6
+MUN,1600154,Pedra Branca do Amapari - AP,Total,1143,15 a 19 anos,1119.0,2.0,0.2
+MUN,1600154,Pedra Branca do Amapari - AP,Total,1144,20 a 24 anos,1198.0,12.0,1.0
+MUN,1600154,Pedra Branca do Amapari - AP,Total,1145,25 a 29 anos,1220.0,7.0,0.6
+MUN,1600154,Pedra Branca do Amapari - AP,Total,1146,30 a 34 anos,932.0,9.0,1.0
+MUN,1600154,Pedra Branca do Amapari - AP,Total,1147,35 a 39 anos,892.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Total,1148,40 a 44 anos,814.0,5.0,0.7
+MUN,1600154,Pedra Branca do Amapari - AP,Total,1149,45 a 49 anos,513.0,11.0,2.2
+MUN,1600154,Pedra Branca do Amapari - AP,Total,1150,50 a 54 anos,468.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Total,1151,55 a 59 anos,260.0,5.0,2.1
+MUN,1600154,Pedra Branca do Amapari - AP,Total,1152,60 a 64 anos,240.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Total,1153,65 a 69 anos,200.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Total,1154,70 a 74 anos,178.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Total,1155,75 a 79 anos,57.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Total,6802,80 a 84 anos,25.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Total,6803,85 a 89 anos,22.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Total,92963,90 a 94 anos,14.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Total,92964,95 a 99 anos,5.0,,
+MUN,1600154,Pedra Branca do Amapari - AP,Total,95253,Total,12847.0,132.0,1.0
+MUN,1600204,Calçoene - AP,Homens,1140,0 a 4 anos,601.0,,
+MUN,1600204,Calçoene - AP,Homens,1141,5 a 9 anos,536.0,22.0,4.0
+MUN,1600204,Calçoene - AP,Homens,1142,10 a 14 anos,526.0,19.0,3.6
+MUN,1600204,Calçoene - AP,Homens,1143,15 a 19 anos,497.0,7.0,1.3
+MUN,1600204,Calçoene - AP,Homens,1144,20 a 24 anos,511.0,,
+MUN,1600204,Calçoene - AP,Homens,1145,25 a 29 anos,422.0,13.0,3.1
+MUN,1600204,Calçoene - AP,Homens,1146,30 a 34 anos,364.0,,
+MUN,1600204,Calçoene - AP,Homens,1147,35 a 39 anos,357.0,5.0,1.3
+MUN,1600204,Calçoene - AP,Homens,1148,40 a 44 anos,357.0,,
+MUN,1600204,Calçoene - AP,Homens,1149,45 a 49 anos,299.0,,
+MUN,1600204,Calçoene - AP,Homens,1150,50 a 54 anos,289.0,,
+MUN,1600204,Calçoene - AP,Homens,1151,55 a 59 anos,274.0,,
+MUN,1600204,Calçoene - AP,Homens,1152,60 a 64 anos,222.0,1.0,0.5
+MUN,1600204,Calçoene - AP,Homens,1153,65 a 69 anos,126.0,,
+MUN,1600204,Calçoene - AP,Homens,1154,70 a 74 anos,101.0,,
+MUN,1600204,Calçoene - AP,Homens,1155,75 a 79 anos,45.0,,
+MUN,1600204,Calçoene - AP,Homens,6802,80 a 84 anos,20.0,,
+MUN,1600204,Calçoene - AP,Homens,6803,85 a 89 anos,20.0,,
+MUN,1600204,Calçoene - AP,Homens,92963,90 a 94 anos,6.0,,
+MUN,1600204,Calçoene - AP,Homens,95253,Total,5574.0,66.0,1.2
+MUN,1600204,Calçoene - AP,Mulheres,1140,0 a 4 anos,551.0,15.0,2.7
+MUN,1600204,Calçoene - AP,Mulheres,1141,5 a 9 anos,512.0,,
+MUN,1600204,Calçoene - AP,Mulheres,1142,10 a 14 anos,500.0,,
+MUN,1600204,Calçoene - AP,Mulheres,1143,15 a 19 anos,501.0,6.0,1.1
+MUN,1600204,Calçoene - AP,Mulheres,1144,20 a 24 anos,417.0,,
+MUN,1600204,Calçoene - AP,Mulheres,1145,25 a 29 anos,406.0,,
+MUN,1600204,Calçoene - AP,Mulheres,1146,30 a 34 anos,407.0,,
+MUN,1600204,Calçoene - AP,Mulheres,1147,35 a 39 anos,361.0,,
+MUN,1600204,Calçoene - AP,Mulheres,1148,40 a 44 anos,337.0,,
+MUN,1600204,Calçoene - AP,Mulheres,1149,45 a 49 anos,277.0,,
+MUN,1600204,Calçoene - AP,Mulheres,1150,50 a 54 anos,227.0,,
+MUN,1600204,Calçoene - AP,Mulheres,1151,55 a 59 anos,187.0,,
+MUN,1600204,Calçoene - AP,Mulheres,1152,60 a 64 anos,135.0,,
+MUN,1600204,Calçoene - AP,Mulheres,1153,65 a 69 anos,92.0,4.0,3.9
+MUN,1600204,Calçoene - AP,Mulheres,1154,70 a 74 anos,40.0,,
+MUN,1600204,Calçoene - AP,Mulheres,1155,75 a 79 anos,42.0,,
+MUN,1600204,Calçoene - AP,Mulheres,6802,80 a 84 anos,39.0,,
+MUN,1600204,Calçoene - AP,Mulheres,6803,85 a 89 anos,7.0,,
+MUN,1600204,Calçoene - AP,Mulheres,95253,Total,5038.0,24.0,0.5
+MUN,1600204,Calçoene - AP,Total,1140,0 a 4 anos,1152.0,15.0,1.3
+MUN,1600204,Calçoene - AP,Total,1141,5 a 9 anos,1048.0,22.0,2.1
+MUN,1600204,Calçoene - AP,Total,1142,10 a 14 anos,1026.0,19.0,1.8
+MUN,1600204,Calçoene - AP,Total,1143,15 a 19 anos,998.0,12.0,1.2
+MUN,1600204,Calçoene - AP,Total,1144,20 a 24 anos,928.0,,
+MUN,1600204,Calçoene - AP,Total,1145,25 a 29 anos,828.0,13.0,1.6
+MUN,1600204,Calçoene - AP,Total,1146,30 a 34 anos,771.0,,
+MUN,1600204,Calçoene - AP,Total,1147,35 a 39 anos,718.0,5.0,0.6
+MUN,1600204,Calçoene - AP,Total,1148,40 a 44 anos,694.0,,
+MUN,1600204,Calçoene - AP,Total,1149,45 a 49 anos,576.0,,
+MUN,1600204,Calçoene - AP,Total,1150,50 a 54 anos,516.0,,
+MUN,1600204,Calçoene - AP,Total,1151,55 a 59 anos,461.0,,
+MUN,1600204,Calçoene - AP,Total,1152,60 a 64 anos,357.0,1.0,0.3
+MUN,1600204,Calçoene - AP,Total,1153,65 a 69 anos,218.0,4.0,1.6
+MUN,1600204,Calçoene - AP,Total,1154,70 a 74 anos,141.0,,
+MUN,1600204,Calçoene - AP,Total,1155,75 a 79 anos,87.0,,
+MUN,1600204,Calçoene - AP,Total,6802,80 a 84 anos,59.0,,
+MUN,1600204,Calçoene - AP,Total,6803,85 a 89 anos,28.0,,
+MUN,1600204,Calçoene - AP,Total,92963,90 a 94 anos,6.0,,
+MUN,1600204,Calçoene - AP,Total,95253,Total,10612.0,90.0,0.8
+MUN,1600212,Cutias - AP,Homens,1140,0 a 4 anos,244.0,4.0,1.8
+MUN,1600212,Cutias - AP,Homens,1141,5 a 9 anos,245.0,3.0,1.3
+MUN,1600212,Cutias - AP,Homens,1142,10 a 14 anos,215.0,5.0,2.1
+MUN,1600212,Cutias - AP,Homens,1143,15 a 19 anos,247.0,4.0,1.5
+MUN,1600212,Cutias - AP,Homens,1144,20 a 24 anos,202.0,10.0,5.1
+MUN,1600212,Cutias - AP,Homens,1145,25 a 29 anos,177.0,4.0,2.0
+MUN,1600212,Cutias - AP,Homens,1146,30 a 34 anos,178.0,,
+MUN,1600212,Cutias - AP,Homens,1147,35 a 39 anos,146.0,,
+MUN,1600212,Cutias - AP,Homens,1148,40 a 44 anos,125.0,,
+MUN,1600212,Cutias - AP,Homens,1149,45 a 49 anos,112.0,,
+MUN,1600212,Cutias - AP,Homens,1150,50 a 54 anos,97.0,,
+MUN,1600212,Cutias - AP,Homens,1151,55 a 59 anos,94.0,,
+MUN,1600212,Cutias - AP,Homens,1152,60 a 64 anos,70.0,,
+MUN,1600212,Cutias - AP,Homens,1153,65 a 69 anos,58.0,,
+MUN,1600212,Cutias - AP,Homens,1154,70 a 74 anos,47.0,,
+MUN,1600212,Cutias - AP,Homens,1155,75 a 79 anos,11.0,1.0,9.2
+MUN,1600212,Cutias - AP,Homens,6802,80 a 84 anos,10.0,,
+MUN,1600212,Cutias - AP,Homens,6803,85 a 89 anos,6.0,,
+MUN,1600212,Cutias - AP,Homens,92963,90 a 94 anos,2.0,,
+MUN,1600212,Cutias - AP,Homens,92964,95 a 99 anos,3.0,,
+MUN,1600212,Cutias - AP,Homens,92965,100 anos ou mais,2.0,,
+MUN,1600212,Cutias - AP,Homens,95253,Total,2291.0,31.0,1.3
+MUN,1600212,Cutias - AP,Mulheres,1140,0 a 4 anos,259.0,,
+MUN,1600212,Cutias - AP,Mulheres,1141,5 a 9 anos,232.0,,
+MUN,1600212,Cutias - AP,Mulheres,1142,10 a 14 anos,262.0,3.0,1.1
+MUN,1600212,Cutias - AP,Mulheres,1143,15 a 19 anos,230.0,,
+MUN,1600212,Cutias - AP,Mulheres,1144,20 a 24 anos,179.0,,
+MUN,1600212,Cutias - AP,Mulheres,1145,25 a 29 anos,172.0,,
+MUN,1600212,Cutias - AP,Mulheres,1146,30 a 34 anos,152.0,2.0,1.3
+MUN,1600212,Cutias - AP,Mulheres,1147,35 a 39 anos,144.0,1.0,0.7
+MUN,1600212,Cutias - AP,Mulheres,1148,40 a 44 anos,138.0,,
+MUN,1600212,Cutias - AP,Mulheres,1149,45 a 49 anos,105.0,,
+MUN,1600212,Cutias - AP,Mulheres,1150,50 a 54 anos,77.0,1.0,1.3
+MUN,1600212,Cutias - AP,Mulheres,1151,55 a 59 anos,56.0,,
+MUN,1600212,Cutias - AP,Mulheres,1152,60 a 64 anos,59.0,,
+MUN,1600212,Cutias - AP,Mulheres,1153,65 a 69 anos,31.0,,
+MUN,1600212,Cutias - AP,Mulheres,1154,70 a 74 anos,23.0,,
+MUN,1600212,Cutias - AP,Mulheres,1155,75 a 79 anos,28.0,,
+MUN,1600212,Cutias - AP,Mulheres,6802,80 a 84 anos,6.0,,
+MUN,1600212,Cutias - AP,Mulheres,6803,85 a 89 anos,14.0,3.0,18.1
+MUN,1600212,Cutias - AP,Mulheres,92963,90 a 94 anos,2.0,,
+MUN,1600212,Cutias - AP,Mulheres,92965,100 anos ou mais,1.0,,
+MUN,1600212,Cutias - AP,Mulheres,95253,Total,2170.0,10.0,0.4
+MUN,1600212,Cutias - AP,Total,1140,0 a 4 anos,503.0,4.0,0.9
+MUN,1600212,Cutias - AP,Total,1141,5 a 9 anos,477.0,3.0,0.6
+MUN,1600212,Cutias - AP,Total,1142,10 a 14 anos,477.0,8.0,1.6
+MUN,1600212,Cutias - AP,Total,1143,15 a 19 anos,477.0,4.0,0.8
+MUN,1600212,Cutias - AP,Total,1144,20 a 24 anos,381.0,10.0,2.7
+MUN,1600212,Cutias - AP,Total,1145,25 a 29 anos,349.0,4.0,1.0
+MUN,1600212,Cutias - AP,Total,1146,30 a 34 anos,330.0,2.0,0.6
+MUN,1600212,Cutias - AP,Total,1147,35 a 39 anos,290.0,1.0,0.3
+MUN,1600212,Cutias - AP,Total,1148,40 a 44 anos,263.0,,
+MUN,1600212,Cutias - AP,Total,1149,45 a 49 anos,217.0,,
+MUN,1600212,Cutias - AP,Total,1150,50 a 54 anos,174.0,1.0,0.6
+MUN,1600212,Cutias - AP,Total,1151,55 a 59 anos,150.0,,
+MUN,1600212,Cutias - AP,Total,1152,60 a 64 anos,129.0,,
+MUN,1600212,Cutias - AP,Total,1153,65 a 69 anos,89.0,,
+MUN,1600212,Cutias - AP,Total,1154,70 a 74 anos,70.0,,
+MUN,1600212,Cutias - AP,Total,1155,75 a 79 anos,38.0,1.0,2.6
+MUN,1600212,Cutias - AP,Total,6802,80 a 84 anos,16.0,,
+MUN,1600212,Cutias - AP,Total,6803,85 a 89 anos,20.0,3.0,12.6
+MUN,1600212,Cutias - AP,Total,92963,90 a 94 anos,5.0,,
+MUN,1600212,Cutias - AP,Total,92964,95 a 99 anos,3.0,,
+MUN,1600212,Cutias - AP,Total,92965,100 anos ou mais,3.0,,
+MUN,1600212,Cutias - AP,Total,95253,Total,4461.0,40.0,0.9
+MUN,1600238,Ferreira Gomes - AP,Homens,1140,0 a 4 anos,274.0,5.0,1.9
+MUN,1600238,Ferreira Gomes - AP,Homens,1141,5 a 9 anos,362.0,16.0,4.3
+MUN,1600238,Ferreira Gomes - AP,Homens,1142,10 a 14 anos,440.0,36.0,8.1
+MUN,1600238,Ferreira Gomes - AP,Homens,1143,15 a 19 anos,307.0,,
+MUN,1600238,Ferreira Gomes - AP,Homens,1144,20 a 24 anos,294.0,,
+MUN,1600238,Ferreira Gomes - AP,Homens,1145,25 a 29 anos,223.0,,
+MUN,1600238,Ferreira Gomes - AP,Homens,1146,30 a 34 anos,278.0,,
+MUN,1600238,Ferreira Gomes - AP,Homens,1147,35 a 39 anos,201.0,,
+MUN,1600238,Ferreira Gomes - AP,Homens,1148,40 a 44 anos,227.0,,
+MUN,1600238,Ferreira Gomes - AP,Homens,1149,45 a 49 anos,152.0,,
+MUN,1600238,Ferreira Gomes - AP,Homens,1150,50 a 54 anos,177.0,,
+MUN,1600238,Ferreira Gomes - AP,Homens,1151,55 a 59 anos,148.0,,
+MUN,1600238,Ferreira Gomes - AP,Homens,1152,60 a 64 anos,92.0,,
+MUN,1600238,Ferreira Gomes - AP,Homens,1153,65 a 69 anos,81.0,,
+MUN,1600238,Ferreira Gomes - AP,Homens,1154,70 a 74 anos,31.0,,
+MUN,1600238,Ferreira Gomes - AP,Homens,1155,75 a 79 anos,46.0,,
+MUN,1600238,Ferreira Gomes - AP,Homens,6802,80 a 84 anos,21.0,,
+MUN,1600238,Ferreira Gomes - AP,Homens,6803,85 a 89 anos,5.0,,
+MUN,1600238,Ferreira Gomes - AP,Homens,95253,Total,3358.0,56.0,1.7
+MUN,1600238,Ferreira Gomes - AP,Mulheres,1140,0 a 4 anos,350.0,5.0,1.4
+MUN,1600238,Ferreira Gomes - AP,Mulheres,1141,5 a 9 anos,409.0,10.0,2.4
+MUN,1600238,Ferreira Gomes - AP,Mulheres,1142,10 a 14 anos,364.0,,
+MUN,1600238,Ferreira Gomes - AP,Mulheres,1143,15 a 19 anos,251.0,5.0,2.0
+MUN,1600238,Ferreira Gomes - AP,Mulheres,1144,20 a 24 anos,296.0,5.0,1.7
+MUN,1600238,Ferreira Gomes - AP,Mulheres,1145,25 a 29 anos,286.0,,
+MUN,1600238,Ferreira Gomes - AP,Mulheres,1146,30 a 34 anos,260.0,,
+MUN,1600238,Ferreira Gomes - AP,Mulheres,1147,35 a 39 anos,205.0,,
+MUN,1600238,Ferreira Gomes - AP,Mulheres,1148,40 a 44 anos,236.0,,
+MUN,1600238,Ferreira Gomes - AP,Mulheres,1149,45 a 49 anos,186.0,,
+MUN,1600238,Ferreira Gomes - AP,Mulheres,1150,50 a 54 anos,165.0,,
+MUN,1600238,Ferreira Gomes - AP,Mulheres,1151,55 a 59 anos,110.0,,
+MUN,1600238,Ferreira Gomes - AP,Mulheres,1152,60 a 64 anos,66.0,,
+MUN,1600238,Ferreira Gomes - AP,Mulheres,1153,65 a 69 anos,40.0,,
+MUN,1600238,Ferreira Gomes - AP,Mulheres,1154,70 a 74 anos,30.0,,
+MUN,1600238,Ferreira Gomes - AP,Mulheres,1155,75 a 79 anos,25.0,,
+MUN,1600238,Ferreira Gomes - AP,Mulheres,6802,80 a 84 anos,15.0,,
+MUN,1600238,Ferreira Gomes - AP,Mulheres,6803,85 a 89 anos,15.0,,
+MUN,1600238,Ferreira Gomes - AP,Mulheres,95253,Total,3308.0,25.0,0.7
+MUN,1600238,Ferreira Gomes - AP,Total,1140,0 a 4 anos,623.0,10.0,1.6
+MUN,1600238,Ferreira Gomes - AP,Total,1141,5 a 9 anos,771.0,25.0,3.3
+MUN,1600238,Ferreira Gomes - AP,Total,1142,10 a 14 anos,804.0,36.0,4.4
+MUN,1600238,Ferreira Gomes - AP,Total,1143,15 a 19 anos,557.0,5.0,0.9
+MUN,1600238,Ferreira Gomes - AP,Total,1144,20 a 24 anos,590.0,5.0,0.9
+MUN,1600238,Ferreira Gomes - AP,Total,1145,25 a 29 anos,509.0,,
+MUN,1600238,Ferreira Gomes - AP,Total,1146,30 a 34 anos,538.0,,
+MUN,1600238,Ferreira Gomes - AP,Total,1147,35 a 39 anos,406.0,,
+MUN,1600238,Ferreira Gomes - AP,Total,1148,40 a 44 anos,463.0,,
+MUN,1600238,Ferreira Gomes - AP,Total,1149,45 a 49 anos,338.0,,
+MUN,1600238,Ferreira Gomes - AP,Total,1150,50 a 54 anos,342.0,,
+MUN,1600238,Ferreira Gomes - AP,Total,1151,55 a 59 anos,258.0,,
+MUN,1600238,Ferreira Gomes - AP,Total,1152,60 a 64 anos,158.0,,
+MUN,1600238,Ferreira Gomes - AP,Total,1153,65 a 69 anos,121.0,,
+MUN,1600238,Ferreira Gomes - AP,Total,1154,70 a 74 anos,61.0,,
+MUN,1600238,Ferreira Gomes - AP,Total,1155,75 a 79 anos,71.0,,
+MUN,1600238,Ferreira Gomes - AP,Total,6802,80 a 84 anos,36.0,,
+MUN,1600238,Ferreira Gomes - AP,Total,6803,85 a 89 anos,20.0,,
+MUN,1600238,Ferreira Gomes - AP,Total,95253,Total,6666.0,81.0,1.2
+MUN,1600253,Itaubal - AP,Homens,1140,0 a 4 anos,330.0,,
+MUN,1600253,Itaubal - AP,Homens,1141,5 a 9 anos,304.0,3.0,1.0
+MUN,1600253,Itaubal - AP,Homens,1142,10 a 14 anos,322.0,7.0,2.2
+MUN,1600253,Itaubal - AP,Homens,1143,15 a 19 anos,332.0,7.0,2.0
+MUN,1600253,Itaubal - AP,Homens,1144,20 a 24 anos,221.0,4.0,1.6
+MUN,1600253,Itaubal - AP,Homens,1145,25 a 29 anos,215.0,,
+MUN,1600253,Itaubal - AP,Homens,1146,30 a 34 anos,186.0,4.0,2.1
+MUN,1600253,Itaubal - AP,Homens,1147,35 a 39 anos,201.0,,
+MUN,1600253,Itaubal - AP,Homens,1148,40 a 44 anos,196.0,,
+MUN,1600253,Itaubal - AP,Homens,1149,45 a 49 anos,122.0,,
+MUN,1600253,Itaubal - AP,Homens,1150,50 a 54 anos,117.0,,
+MUN,1600253,Itaubal - AP,Homens,1151,55 a 59 anos,97.0,,
+MUN,1600253,Itaubal - AP,Homens,1152,60 a 64 anos,97.0,,
+MUN,1600253,Itaubal - AP,Homens,1153,65 a 69 anos,64.0,,
+MUN,1600253,Itaubal - AP,Homens,1154,70 a 74 anos,38.0,,
+MUN,1600253,Itaubal - AP,Homens,1155,75 a 79 anos,35.0,,
+MUN,1600253,Itaubal - AP,Homens,6802,80 a 84 anos,13.0,,
+MUN,1600253,Itaubal - AP,Homens,6803,85 a 89 anos,8.0,,
+MUN,1600253,Itaubal - AP,Homens,95253,Total,2898.0,24.0,0.8
+MUN,1600253,Itaubal - AP,Mulheres,1140,0 a 4 anos,345.0,3.0,0.9
+MUN,1600253,Itaubal - AP,Mulheres,1141,5 a 9 anos,293.0,,
+MUN,1600253,Itaubal - AP,Mulheres,1142,10 a 14 anos,294.0,,
+MUN,1600253,Itaubal - AP,Mulheres,1143,15 a 19 anos,262.0,,
+MUN,1600253,Itaubal - AP,Mulheres,1144,20 a 24 anos,244.0,4.0,1.7
+MUN,1600253,Itaubal - AP,Mulheres,1145,25 a 29 anos,208.0,,
+MUN,1600253,Itaubal - AP,Mulheres,1146,30 a 34 anos,171.0,,
+MUN,1600253,Itaubal - AP,Mulheres,1147,35 a 39 anos,197.0,3.0,1.4
+MUN,1600253,Itaubal - AP,Mulheres,1148,40 a 44 anos,186.0,,
+MUN,1600253,Itaubal - AP,Mulheres,1149,45 a 49 anos,122.0,,
+MUN,1600253,Itaubal - AP,Mulheres,1150,50 a 54 anos,103.0,,
+MUN,1600253,Itaubal - AP,Mulheres,1151,55 a 59 anos,84.0,2.0,2.2
+MUN,1600253,Itaubal - AP,Mulheres,1152,60 a 64 anos,72.0,,
+MUN,1600253,Itaubal - AP,Mulheres,1153,65 a 69 anos,44.0,,
+MUN,1600253,Itaubal - AP,Mulheres,1154,70 a 74 anos,32.0,,
+MUN,1600253,Itaubal - AP,Mulheres,1155,75 a 79 anos,23.0,,
+MUN,1600253,Itaubal - AP,Mulheres,6802,80 a 84 anos,8.0,,
+MUN,1600253,Itaubal - AP,Mulheres,6803,85 a 89 anos,9.0,,
+MUN,1600253,Itaubal - AP,Mulheres,92963,90 a 94 anos,4.0,,
+MUN,1600253,Itaubal - AP,Mulheres,95253,Total,2701.0,12.0,0.4
+MUN,1600253,Itaubal - AP,Total,1140,0 a 4 anos,675.0,3.0,0.5
+MUN,1600253,Itaubal - AP,Total,1141,5 a 9 anos,597.0,3.0,0.5
+MUN,1600253,Itaubal - AP,Total,1142,10 a 14 anos,616.0,7.0,1.1
+MUN,1600253,Itaubal - AP,Total,1143,15 a 19 anos,594.0,7.0,1.1
+MUN,1600253,Itaubal - AP,Total,1144,20 a 24 anos,465.0,8.0,1.7
+MUN,1600253,Itaubal - AP,Total,1145,25 a 29 anos,423.0,,
+MUN,1600253,Itaubal - AP,Total,1146,30 a 34 anos,357.0,4.0,1.1
+MUN,1600253,Itaubal - AP,Total,1147,35 a 39 anos,398.0,3.0,0.7
+MUN,1600253,Itaubal - AP,Total,1148,40 a 44 anos,382.0,,
+MUN,1600253,Itaubal - AP,Total,1149,45 a 49 anos,244.0,,
+MUN,1600253,Itaubal - AP,Total,1150,50 a 54 anos,220.0,,
+MUN,1600253,Itaubal - AP,Total,1151,55 a 59 anos,181.0,2.0,1.0
+MUN,1600253,Itaubal - AP,Total,1152,60 a 64 anos,169.0,,
+MUN,1600253,Itaubal - AP,Total,1153,65 a 69 anos,108.0,,
+MUN,1600253,Itaubal - AP,Total,1154,70 a 74 anos,70.0,,
+MUN,1600253,Itaubal - AP,Total,1155,75 a 79 anos,58.0,,
+MUN,1600253,Itaubal - AP,Total,6802,80 a 84 anos,22.0,,
+MUN,1600253,Itaubal - AP,Total,6803,85 a 89 anos,17.0,,
+MUN,1600253,Itaubal - AP,Total,92963,90 a 94 anos,4.0,,
+MUN,1600253,Itaubal - AP,Total,95253,Total,5599.0,36.0,0.6
+MUN,1600279,Laranjal do Jari - AP,Homens,1140,0 a 4 anos,1569.0,46.0,2.9
+MUN,1600279,Laranjal do Jari - AP,Homens,1141,5 a 9 anos,1720.0,61.0,3.5
+MUN,1600279,Laranjal do Jari - AP,Homens,1142,10 a 14 anos,1736.0,32.0,1.9
+MUN,1600279,Laranjal do Jari - AP,Homens,1143,15 a 19 anos,1803.0,28.0,1.5
+MUN,1600279,Laranjal do Jari - AP,Homens,1144,20 a 24 anos,1605.0,25.0,1.5
+MUN,1600279,Laranjal do Jari - AP,Homens,1145,25 a 29 anos,1327.0,36.0,2.7
+MUN,1600279,Laranjal do Jari - AP,Homens,1146,30 a 34 anos,1209.0,5.0,0.5
+MUN,1600279,Laranjal do Jari - AP,Homens,1147,35 a 39 anos,1184.0,,
+MUN,1600279,Laranjal do Jari - AP,Homens,1148,40 a 44 anos,1147.0,13.0,1.1
+MUN,1600279,Laranjal do Jari - AP,Homens,1149,45 a 49 anos,1035.0,9.0,0.8
+MUN,1600279,Laranjal do Jari - AP,Homens,1150,50 a 54 anos,939.0,24.0,2.5
+MUN,1600279,Laranjal do Jari - AP,Homens,1151,55 a 59 anos,791.0,15.0,1.9
+MUN,1600279,Laranjal do Jari - AP,Homens,1152,60 a 64 anos,658.0,6.0,0.9
+MUN,1600279,Laranjal do Jari - AP,Homens,1153,65 a 69 anos,498.0,,
+MUN,1600279,Laranjal do Jari - AP,Homens,1154,70 a 74 anos,247.0,3.0,1.4
+MUN,1600279,Laranjal do Jari - AP,Homens,1155,75 a 79 anos,154.0,,
+MUN,1600279,Laranjal do Jari - AP,Homens,6802,80 a 84 anos,109.0,,
+MUN,1600279,Laranjal do Jari - AP,Homens,6803,85 a 89 anos,54.0,,
+MUN,1600279,Laranjal do Jari - AP,Homens,92963,90 a 94 anos,17.0,,
+MUN,1600279,Laranjal do Jari - AP,Homens,95253,Total,17803.0,303.0,1.7
+MUN,1600279,Laranjal do Jari - AP,Mulheres,1140,0 a 4 anos,1507.0,26.0,1.7
+MUN,1600279,Laranjal do Jari - AP,Mulheres,1141,5 a 9 anos,1537.0,25.0,1.6
+MUN,1600279,Laranjal do Jari - AP,Mulheres,1142,10 a 14 anos,1644.0,40.0,2.4
+MUN,1600279,Laranjal do Jari - AP,Mulheres,1143,15 a 19 anos,1668.0,4.0,0.2
+MUN,1600279,Laranjal do Jari - AP,Mulheres,1144,20 a 24 anos,1643.0,,
+MUN,1600279,Laranjal do Jari - AP,Mulheres,1145,25 a 29 anos,1466.0,17.0,1.2
+MUN,1600279,Laranjal do Jari - AP,Mulheres,1146,30 a 34 anos,1310.0,10.0,0.8
+MUN,1600279,Laranjal do Jari - AP,Mulheres,1147,35 a 39 anos,1331.0,8.0,0.6
+MUN,1600279,Laranjal do Jari - AP,Mulheres,1148,40 a 44 anos,1199.0,9.0,0.8
+MUN,1600279,Laranjal do Jari - AP,Mulheres,1149,45 a 49 anos,977.0,,
+MUN,1600279,Laranjal do Jari - AP,Mulheres,1150,50 a 54 anos,864.0,3.0,0.3
+MUN,1600279,Laranjal do Jari - AP,Mulheres,1151,55 a 59 anos,732.0,5.0,0.7
+MUN,1600279,Laranjal do Jari - AP,Mulheres,1152,60 a 64 anos,513.0,,
+MUN,1600279,Laranjal do Jari - AP,Mulheres,1153,65 a 69 anos,350.0,4.0,1.0
+MUN,1600279,Laranjal do Jari - AP,Mulheres,1154,70 a 74 anos,232.0,6.0,2.7
+MUN,1600279,Laranjal do Jari - AP,Mulheres,1155,75 a 79 anos,185.0,,
+MUN,1600279,Laranjal do Jari - AP,Mulheres,6802,80 a 84 anos,123.0,,
+MUN,1600279,Laranjal do Jari - AP,Mulheres,6803,85 a 89 anos,19.0,,
+MUN,1600279,Laranjal do Jari - AP,Mulheres,92963,90 a 94 anos,3.0,,
+MUN,1600279,Laranjal do Jari - AP,Mulheres,92964,95 a 99 anos,4.0,,
+MUN,1600279,Laranjal do Jari - AP,Mulheres,92965,100 anos ou mais,4.0,,
+MUN,1600279,Laranjal do Jari - AP,Mulheres,95253,Total,17311.0,158.0,0.9
+MUN,1600279,Laranjal do Jari - AP,Total,1140,0 a 4 anos,3076.0,72.0,2.3
+MUN,1600279,Laranjal do Jari - AP,Total,1141,5 a 9 anos,3257.0,86.0,2.7
+MUN,1600279,Laranjal do Jari - AP,Total,1142,10 a 14 anos,3380.0,72.0,2.1
+MUN,1600279,Laranjal do Jari - AP,Total,1143,15 a 19 anos,3471.0,31.0,0.9
+MUN,1600279,Laranjal do Jari - AP,Total,1144,20 a 24 anos,3248.0,25.0,0.8
+MUN,1600279,Laranjal do Jari - AP,Total,1145,25 a 29 anos,2793.0,53.0,1.9
+MUN,1600279,Laranjal do Jari - AP,Total,1146,30 a 34 anos,2519.0,16.0,0.6
+MUN,1600279,Laranjal do Jari - AP,Total,1147,35 a 39 anos,2515.0,8.0,0.3
+MUN,1600279,Laranjal do Jari - AP,Total,1148,40 a 44 anos,2346.0,22.0,1.0
+MUN,1600279,Laranjal do Jari - AP,Total,1149,45 a 49 anos,2012.0,9.0,0.4
+MUN,1600279,Laranjal do Jari - AP,Total,1150,50 a 54 anos,1803.0,26.0,1.5
+MUN,1600279,Laranjal do Jari - AP,Total,1151,55 a 59 anos,1523.0,20.0,1.3
+MUN,1600279,Laranjal do Jari - AP,Total,1152,60 a 64 anos,1171.0,6.0,0.5
+MUN,1600279,Laranjal do Jari - AP,Total,1153,65 a 69 anos,848.0,4.0,0.4
+MUN,1600279,Laranjal do Jari - AP,Total,1154,70 a 74 anos,479.0,10.0,2.0
+MUN,1600279,Laranjal do Jari - AP,Total,1155,75 a 79 anos,339.0,,
+MUN,1600279,Laranjal do Jari - AP,Total,6802,80 a 84 anos,233.0,,
+MUN,1600279,Laranjal do Jari - AP,Total,6803,85 a 89 anos,73.0,,
+MUN,1600279,Laranjal do Jari - AP,Total,92963,90 a 94 anos,20.0,,
+MUN,1600279,Laranjal do Jari - AP,Total,92964,95 a 99 anos,4.0,,
+MUN,1600279,Laranjal do Jari - AP,Total,92965,100 anos ou mais,4.0,,
+MUN,1600279,Laranjal do Jari - AP,Total,95253,Total,35114.0,461.0,1.3
+MUN,1600303,Macapá - AP,Homens,1140,0 a 4 anos,18734.0,780.0,4.2
+MUN,1600303,Macapá - AP,Homens,1141,5 a 9 anos,19603.0,1176.0,6.0
+MUN,1600303,Macapá - AP,Homens,1142,10 a 14 anos,19048.0,724.0,3.8
+MUN,1600303,Macapá - AP,Homens,1143,15 a 19 anos,19784.0,406.0,2.1
+MUN,1600303,Macapá - AP,Homens,1144,20 a 24 anos,20807.0,250.0,1.2
+MUN,1600303,Macapá - AP,Homens,1145,25 a 29 anos,19231.0,411.0,2.1
+MUN,1600303,Macapá - AP,Homens,1146,30 a 34 anos,17591.0,81.0,0.5
+MUN,1600303,Macapá - AP,Homens,1147,35 a 39 anos,17285.0,298.0,1.7
+MUN,1600303,Macapá - AP,Homens,1148,40 a 44 anos,15422.0,191.0,1.2
+MUN,1600303,Macapá - AP,Homens,1149,45 a 49 anos,12853.0,154.0,1.2
+MUN,1600303,Macapá - AP,Homens,1150,50 a 54 anos,10765.0,62.0,0.6
+MUN,1600303,Macapá - AP,Homens,1151,55 a 59 anos,8142.0,100.0,1.2
+MUN,1600303,Macapá - AP,Homens,1152,60 a 64 anos,6303.0,79.0,1.3
+MUN,1600303,Macapá - AP,Homens,1153,65 a 69 anos,4498.0,42.0,0.9
+MUN,1600303,Macapá - AP,Homens,1154,70 a 74 anos,2878.0,27.0,1.0
+MUN,1600303,Macapá - AP,Homens,1155,75 a 79 anos,1782.0,25.0,1.4
+MUN,1600303,Macapá - AP,Homens,6802,80 a 84 anos,990.0,19.0,1.9
+MUN,1600303,Macapá - AP,Homens,6803,85 a 89 anos,487.0,,
+MUN,1600303,Macapá - AP,Homens,92963,90 a 94 anos,279.0,19.0,6.7
+MUN,1600303,Macapá - AP,Homens,92964,95 a 99 anos,69.0,,
+MUN,1600303,Macapá - AP,Homens,95253,Total,216552.0,4844.0,2.2
+MUN,1600303,Macapá - AP,Mulheres,1140,0 a 4 anos,18214.0,361.0,2.0
+MUN,1600303,Macapá - AP,Mulheres,1141,5 a 9 anos,18948.0,370.0,2.0
+MUN,1600303,Macapá - AP,Mulheres,1142,10 a 14 anos,18327.0,340.0,1.9
+MUN,1600303,Macapá - AP,Mulheres,1143,15 a 19 anos,19239.0,230.0,1.2
+MUN,1600303,Macapá - AP,Mulheres,1144,20 a 24 anos,21285.0,202.0,0.9
+MUN,1600303,Macapá - AP,Mulheres,1145,25 a 29 anos,20327.0,193.0,0.9
+MUN,1600303,Macapá - AP,Mulheres,1146,30 a 34 anos,18693.0,171.0,0.9
+MUN,1600303,Macapá - AP,Mulheres,1147,35 a 39 anos,18684.0,229.0,1.2
+MUN,1600303,Macapá - AP,Mulheres,1148,40 a 44 anos,17136.0,180.0,1.1
+MUN,1600303,Macapá - AP,Mulheres,1149,45 a 49 anos,14021.0,147.0,1.1
+MUN,1600303,Macapá - AP,Mulheres,1150,50 a 54 anos,11660.0,126.0,1.1
+MUN,1600303,Macapá - AP,Mulheres,1151,55 a 59 anos,8963.0,38.0,0.4
+MUN,1600303,Macapá - AP,Mulheres,1152,60 a 64 anos,7121.0,47.0,0.7
+MUN,1600303,Macapá - AP,Mulheres,1153,65 a 69 anos,5238.0,31.0,0.6
+MUN,1600303,Macapá - AP,Mulheres,1154,70 a 74 anos,3348.0,17.0,0.5
+MUN,1600303,Macapá - AP,Mulheres,1155,75 a 79 anos,2308.0,58.0,2.5
+MUN,1600303,Macapá - AP,Mulheres,6802,80 a 84 anos,1503.0,,
+MUN,1600303,Macapá - AP,Mulheres,6803,85 a 89 anos,762.0,,
+MUN,1600303,Macapá - AP,Mulheres,92963,90 a 94 anos,394.0,,
+MUN,1600303,Macapá - AP,Mulheres,92964,95 a 99 anos,135.0,,
+MUN,1600303,Macapá - AP,Mulheres,92965,100 anos ou mais,76.0,,
+MUN,1600303,Macapá - AP,Mulheres,95253,Total,226381.0,2742.0,1.2
+MUN,1600303,Macapá - AP,Total,1140,0 a 4 anos,36948.0,1141.0,3.1
+MUN,1600303,Macapá - AP,Total,1141,5 a 9 anos,38551.0,1547.0,4.0
+MUN,1600303,Macapá - AP,Total,1142,10 a 14 anos,37375.0,1064.0,2.8
+MUN,1600303,Macapá - AP,Total,1143,15 a 19 anos,39023.0,636.0,1.6
+MUN,1600303,Macapá - AP,Total,1144,20 a 24 anos,42092.0,452.0,1.1
+MUN,1600303,Macapá - AP,Total,1145,25 a 29 anos,39558.0,604.0,1.5
+MUN,1600303,Macapá - AP,Total,1146,30 a 34 anos,36284.0,253.0,0.7
+MUN,1600303,Macapá - AP,Total,1147,35 a 39 anos,35969.0,527.0,1.5
+MUN,1600303,Macapá - AP,Total,1148,40 a 44 anos,32558.0,372.0,1.1
+MUN,1600303,Macapá - AP,Total,1149,45 a 49 anos,26874.0,301.0,1.1
+MUN,1600303,Macapá - AP,Total,1150,50 a 54 anos,22425.0,188.0,0.8
+MUN,1600303,Macapá - AP,Total,1151,55 a 59 anos,17105.0,138.0,0.8
+MUN,1600303,Macapá - AP,Total,1152,60 a 64 anos,13424.0,126.0,0.9
+MUN,1600303,Macapá - AP,Total,1153,65 a 69 anos,9736.0,73.0,0.8
+MUN,1600303,Macapá - AP,Total,1154,70 a 74 anos,6226.0,44.0,0.7
+MUN,1600303,Macapá - AP,Total,1155,75 a 79 anos,4090.0,83.0,2.0
+MUN,1600303,Macapá - AP,Total,6802,80 a 84 anos,2493.0,19.0,0.7
+MUN,1600303,Macapá - AP,Total,6803,85 a 89 anos,1249.0,,
+MUN,1600303,Macapá - AP,Total,92963,90 a 94 anos,673.0,19.0,2.8
+MUN,1600303,Macapá - AP,Total,92964,95 a 99 anos,204.0,,
+MUN,1600303,Macapá - AP,Total,92965,100 anos ou mais,76.0,,
+MUN,1600303,Macapá - AP,Total,95253,Total,442933.0,7586.0,1.7
+MUN,1600402,Mazagão - AP,Homens,1140,0 a 4 anos,1300.0,33.0,2.5
+MUN,1600402,Mazagão - AP,Homens,1141,5 a 9 anos,1145.0,30.0,2.6
+MUN,1600402,Mazagão - AP,Homens,1142,10 a 14 anos,1152.0,11.0,0.9
+MUN,1600402,Mazagão - AP,Homens,1143,15 a 19 anos,1304.0,23.0,1.7
+MUN,1600402,Mazagão - AP,Homens,1144,20 a 24 anos,1095.0,14.0,1.3
+MUN,1600402,Mazagão - AP,Homens,1145,25 a 29 anos,899.0,12.0,1.3
+MUN,1600402,Mazagão - AP,Homens,1146,30 a 34 anos,754.0,,
+MUN,1600402,Mazagão - AP,Homens,1147,35 a 39 anos,740.0,,
+MUN,1600402,Mazagão - AP,Homens,1148,40 a 44 anos,714.0,,
+MUN,1600402,Mazagão - AP,Homens,1149,45 a 49 anos,552.0,12.0,2.1
+MUN,1600402,Mazagão - AP,Homens,1150,50 a 54 anos,449.0,,
+MUN,1600402,Mazagão - AP,Homens,1151,55 a 59 anos,353.0,,
+MUN,1600402,Mazagão - AP,Homens,1152,60 a 64 anos,339.0,,
+MUN,1600402,Mazagão - AP,Homens,1153,65 a 69 anos,224.0,,
+MUN,1600402,Mazagão - AP,Homens,1154,70 a 74 anos,155.0,,
+MUN,1600402,Mazagão - AP,Homens,1155,75 a 79 anos,107.0,,
+MUN,1600402,Mazagão - AP,Homens,6802,80 a 84 anos,41.0,,
+MUN,1600402,Mazagão - AP,Homens,6803,85 a 89 anos,61.0,,
+MUN,1600402,Mazagão - AP,Homens,92963,90 a 94 anos,9.0,,
+MUN,1600402,Mazagão - AP,Homens,92964,95 a 99 anos,8.0,,
+MUN,1600402,Mazagão - AP,Homens,95253,Total,11401.0,134.0,1.2
+MUN,1600402,Mazagão - AP,Mulheres,1140,0 a 4 anos,1100.0,16.0,1.4
+MUN,1600402,Mazagão - AP,Mulheres,1141,5 a 9 anos,1180.0,,
+MUN,1600402,Mazagão - AP,Mulheres,1142,10 a 14 anos,1132.0,19.0,1.6
+MUN,1600402,Mazagão - AP,Mulheres,1143,15 a 19 anos,1172.0,13.0,1.1
+MUN,1600402,Mazagão - AP,Mulheres,1144,20 a 24 anos,1027.0,,
+MUN,1600402,Mazagão - AP,Mulheres,1145,25 a 29 anos,891.0,,
+MUN,1600402,Mazagão - AP,Mulheres,1146,30 a 34 anos,738.0,,
+MUN,1600402,Mazagão - AP,Mulheres,1147,35 a 39 anos,654.0,,
+MUN,1600402,Mazagão - AP,Mulheres,1148,40 a 44 anos,612.0,,
+MUN,1600402,Mazagão - AP,Mulheres,1149,45 a 49 anos,515.0,,
+MUN,1600402,Mazagão - AP,Mulheres,1150,50 a 54 anos,386.0,,
+MUN,1600402,Mazagão - AP,Mulheres,1151,55 a 59 anos,337.0,,
+MUN,1600402,Mazagão - AP,Mulheres,1152,60 a 64 anos,259.0,,
+MUN,1600402,Mazagão - AP,Mulheres,1153,65 a 69 anos,194.0,,
+MUN,1600402,Mazagão - AP,Mulheres,1154,70 a 74 anos,125.0,,
+MUN,1600402,Mazagão - AP,Mulheres,1155,75 a 79 anos,95.0,,
+MUN,1600402,Mazagão - AP,Mulheres,6802,80 a 84 anos,55.0,,
+MUN,1600402,Mazagão - AP,Mulheres,6803,85 a 89 anos,42.0,,
+MUN,1600402,Mazagão - AP,Mulheres,92963,90 a 94 anos,10.0,,
+MUN,1600402,Mazagão - AP,Mulheres,95253,Total,10523.0,48.0,0.5
+MUN,1600402,Mazagão - AP,Total,1140,0 a 4 anos,2400.0,49.0,2.0
+MUN,1600402,Mazagão - AP,Total,1141,5 a 9 anos,2325.0,30.0,1.3
+MUN,1600402,Mazagão - AP,Total,1142,10 a 14 anos,2284.0,29.0,1.3
+MUN,1600402,Mazagão - AP,Total,1143,15 a 19 anos,2476.0,36.0,1.5
+MUN,1600402,Mazagão - AP,Total,1144,20 a 24 anos,2122.0,14.0,0.7
+MUN,1600402,Mazagão - AP,Total,1145,25 a 29 anos,1790.0,12.0,0.6
+MUN,1600402,Mazagão - AP,Total,1146,30 a 34 anos,1492.0,,
+MUN,1600402,Mazagão - AP,Total,1147,35 a 39 anos,1394.0,,
+MUN,1600402,Mazagão - AP,Total,1148,40 a 44 anos,1326.0,,
+MUN,1600402,Mazagão - AP,Total,1149,45 a 49 anos,1067.0,12.0,1.1
+MUN,1600402,Mazagão - AP,Total,1150,50 a 54 anos,835.0,,
+MUN,1600402,Mazagão - AP,Total,1151,55 a 59 anos,690.0,,
+MUN,1600402,Mazagão - AP,Total,1152,60 a 64 anos,598.0,,
+MUN,1600402,Mazagão - AP,Total,1153,65 a 69 anos,418.0,,
+MUN,1600402,Mazagão - AP,Total,1154,70 a 74 anos,280.0,,
+MUN,1600402,Mazagão - AP,Total,1155,75 a 79 anos,202.0,,
+MUN,1600402,Mazagão - AP,Total,6802,80 a 84 anos,96.0,,
+MUN,1600402,Mazagão - AP,Total,6803,85 a 89 anos,103.0,,
+MUN,1600402,Mazagão - AP,Total,92963,90 a 94 anos,18.0,,
+MUN,1600402,Mazagão - AP,Total,92964,95 a 99 anos,8.0,,
+MUN,1600402,Mazagão - AP,Total,95253,Total,21924.0,181.0,0.8
+MUN,1600501,Oiapoque - AP,Homens,1140,0 a 4 anos,1383.0,24.0,1.7
+MUN,1600501,Oiapoque - AP,Homens,1141,5 a 9 anos,1512.0,2.0,0.1
+MUN,1600501,Oiapoque - AP,Homens,1142,10 a 14 anos,1467.0,12.0,0.8
+MUN,1600501,Oiapoque - AP,Homens,1143,15 a 19 anos,1375.0,5.0,0.3
+MUN,1600501,Oiapoque - AP,Homens,1144,20 a 24 anos,1520.0,,
+MUN,1600501,Oiapoque - AP,Homens,1145,25 a 29 anos,1233.0,,
+MUN,1600501,Oiapoque - AP,Homens,1146,30 a 34 anos,1121.0,10.0,0.9
+MUN,1600501,Oiapoque - AP,Homens,1147,35 a 39 anos,954.0,,
+MUN,1600501,Oiapoque - AP,Homens,1148,40 a 44 anos,761.0,2.0,0.3
+MUN,1600501,Oiapoque - AP,Homens,1149,45 a 49 anos,766.0,,
+MUN,1600501,Oiapoque - AP,Homens,1150,50 a 54 anos,611.0,,
+MUN,1600501,Oiapoque - AP,Homens,1151,55 a 59 anos,526.0,9.0,1.7
+MUN,1600501,Oiapoque - AP,Homens,1152,60 a 64 anos,341.0,,
+MUN,1600501,Oiapoque - AP,Homens,1153,65 a 69 anos,187.0,9.0,4.9
+MUN,1600501,Oiapoque - AP,Homens,1154,70 a 74 anos,186.0,,
+MUN,1600501,Oiapoque - AP,Homens,1155,75 a 79 anos,91.0,,
+MUN,1600501,Oiapoque - AP,Homens,6802,80 a 84 anos,39.0,,
+MUN,1600501,Oiapoque - AP,Homens,6803,85 a 89 anos,27.0,,
+MUN,1600501,Oiapoque - AP,Homens,92963,90 a 94 anos,2.0,,
+MUN,1600501,Oiapoque - AP,Homens,95253,Total,14102.0,73.0,0.5
+MUN,1600501,Oiapoque - AP,Mulheres,1140,0 a 4 anos,1530.0,13.0,0.8
+MUN,1600501,Oiapoque - AP,Mulheres,1141,5 a 9 anos,1428.0,17.0,1.2
+MUN,1600501,Oiapoque - AP,Mulheres,1142,10 a 14 anos,1278.0,12.0,0.9
+MUN,1600501,Oiapoque - AP,Mulheres,1143,15 a 19 anos,1562.0,20.0,1.3
+MUN,1600501,Oiapoque - AP,Mulheres,1144,20 a 24 anos,1437.0,17.0,1.2
+MUN,1600501,Oiapoque - AP,Mulheres,1145,25 a 29 anos,1096.0,17.0,1.6
+MUN,1600501,Oiapoque - AP,Mulheres,1146,30 a 34 anos,967.0,2.0,0.2
+MUN,1600501,Oiapoque - AP,Mulheres,1147,35 a 39 anos,974.0,,
+MUN,1600501,Oiapoque - AP,Mulheres,1148,40 a 44 anos,761.0,12.0,1.5
+MUN,1600501,Oiapoque - AP,Mulheres,1149,45 a 49 anos,735.0,,
+MUN,1600501,Oiapoque - AP,Mulheres,1150,50 a 54 anos,412.0,,
+MUN,1600501,Oiapoque - AP,Mulheres,1151,55 a 59 anos,491.0,,
+MUN,1600501,Oiapoque - AP,Mulheres,1152,60 a 64 anos,291.0,,
+MUN,1600501,Oiapoque - AP,Mulheres,1153,65 a 69 anos,184.0,,
+MUN,1600501,Oiapoque - AP,Mulheres,1154,70 a 74 anos,92.0,,
+MUN,1600501,Oiapoque - AP,Mulheres,1155,75 a 79 anos,39.0,,
+MUN,1600501,Oiapoque - AP,Mulheres,6802,80 a 84 anos,41.0,,
+MUN,1600501,Oiapoque - AP,Mulheres,6803,85 a 89 anos,27.0,,
+MUN,1600501,Oiapoque - AP,Mulheres,92963,90 a 94 anos,20.0,,
+MUN,1600501,Oiapoque - AP,Mulheres,92964,95 a 99 anos,2.0,,
+MUN,1600501,Oiapoque - AP,Mulheres,92965,100 anos ou mais,11.0,,
+MUN,1600501,Oiapoque - AP,Mulheres,95253,Total,13380.0,110.0,0.8
+MUN,1600501,Oiapoque - AP,Total,1140,0 a 4 anos,2913.0,36.0,1.3
+MUN,1600501,Oiapoque - AP,Total,1141,5 a 9 anos,2941.0,19.0,0.6
+MUN,1600501,Oiapoque - AP,Total,1142,10 a 14 anos,2745.0,23.0,0.9
+MUN,1600501,Oiapoque - AP,Total,1143,15 a 19 anos,2938.0,25.0,0.9
+MUN,1600501,Oiapoque - AP,Total,1144,20 a 24 anos,2957.0,17.0,0.6
+MUN,1600501,Oiapoque - AP,Total,1145,25 a 29 anos,2329.0,17.0,0.7
+MUN,1600501,Oiapoque - AP,Total,1146,30 a 34 anos,2089.0,13.0,0.6
+MUN,1600501,Oiapoque - AP,Total,1147,35 a 39 anos,1927.0,,
+MUN,1600501,Oiapoque - AP,Total,1148,40 a 44 anos,1522.0,14.0,0.9
+MUN,1600501,Oiapoque - AP,Total,1149,45 a 49 anos,1501.0,,
+MUN,1600501,Oiapoque - AP,Total,1150,50 a 54 anos,1023.0,,
+MUN,1600501,Oiapoque - AP,Total,1151,55 a 59 anos,1017.0,9.0,0.9
+MUN,1600501,Oiapoque - AP,Total,1152,60 a 64 anos,633.0,,
+MUN,1600501,Oiapoque - AP,Total,1153,65 a 69 anos,371.0,9.0,2.5
+MUN,1600501,Oiapoque - AP,Total,1154,70 a 74 anos,278.0,,
+MUN,1600501,Oiapoque - AP,Total,1155,75 a 79 anos,130.0,,
+MUN,1600501,Oiapoque - AP,Total,6802,80 a 84 anos,80.0,,
+MUN,1600501,Oiapoque - AP,Total,6803,85 a 89 anos,55.0,,
+MUN,1600501,Oiapoque - AP,Total,92963,90 a 94 anos,21.0,,
+MUN,1600501,Oiapoque - AP,Total,92964,95 a 99 anos,2.0,,
+MUN,1600501,Oiapoque - AP,Total,92965,100 anos ou mais,11.0,,
+MUN,1600501,Oiapoque - AP,Total,95253,Total,27482.0,183.0,0.7
+MUN,1600535,Porto Grande - AP,Homens,1140,0 a 4 anos,921.0,34.0,3.7
+MUN,1600535,Porto Grande - AP,Homens,1141,5 a 9 anos,901.0,44.0,4.9
+MUN,1600535,Porto Grande - AP,Homens,1142,10 a 14 anos,938.0,7.0,0.8
+MUN,1600535,Porto Grande - AP,Homens,1143,15 a 19 anos,899.0,,
+MUN,1600535,Porto Grande - AP,Homens,1144,20 a 24 anos,725.0,11.0,1.5
+MUN,1600535,Porto Grande - AP,Homens,1145,25 a 29 anos,660.0,,
+MUN,1600535,Porto Grande - AP,Homens,1146,30 a 34 anos,633.0,,
+MUN,1600535,Porto Grande - AP,Homens,1147,35 a 39 anos,617.0,,
+MUN,1600535,Porto Grande - AP,Homens,1148,40 a 44 anos,648.0,,
+MUN,1600535,Porto Grande - AP,Homens,1149,45 a 49 anos,525.0,21.0,4.0
+MUN,1600535,Porto Grande - AP,Homens,1150,50 a 54 anos,440.0,,
+MUN,1600535,Porto Grande - AP,Homens,1151,55 a 59 anos,385.0,,
+MUN,1600535,Porto Grande - AP,Homens,1152,60 a 64 anos,331.0,,
+MUN,1600535,Porto Grande - AP,Homens,1153,65 a 69 anos,195.0,22.0,11.4
+MUN,1600535,Porto Grande - AP,Homens,1154,70 a 74 anos,173.0,,
+MUN,1600535,Porto Grande - AP,Homens,1155,75 a 79 anos,94.0,,
+MUN,1600535,Porto Grande - AP,Homens,6802,80 a 84 anos,62.0,,
+MUN,1600535,Porto Grande - AP,Homens,6803,85 a 89 anos,22.0,,
+MUN,1600535,Porto Grande - AP,Homens,95253,Total,9169.0,139.0,1.5
+MUN,1600535,Porto Grande - AP,Mulheres,1140,0 a 4 anos,881.0,11.0,1.2
+MUN,1600535,Porto Grande - AP,Mulheres,1141,5 a 9 anos,881.0,,
+MUN,1600535,Porto Grande - AP,Mulheres,1142,10 a 14 anos,878.0,13.0,1.5
+MUN,1600535,Porto Grande - AP,Mulheres,1143,15 a 19 anos,857.0,11.0,1.3
+MUN,1600535,Porto Grande - AP,Mulheres,1144,20 a 24 anos,787.0,,
+MUN,1600535,Porto Grande - AP,Mulheres,1145,25 a 29 anos,685.0,,
+MUN,1600535,Porto Grande - AP,Mulheres,1146,30 a 34 anos,653.0,,
+MUN,1600535,Porto Grande - AP,Mulheres,1147,35 a 39 anos,632.0,,
+MUN,1600535,Porto Grande - AP,Mulheres,1148,40 a 44 anos,599.0,,
+MUN,1600535,Porto Grande - AP,Mulheres,1149,45 a 49 anos,460.0,9.0,1.9
+MUN,1600535,Porto Grande - AP,Mulheres,1150,50 a 54 anos,392.0,,
+MUN,1600535,Porto Grande - AP,Mulheres,1151,55 a 59 anos,304.0,,
+MUN,1600535,Porto Grande - AP,Mulheres,1152,60 a 64 anos,241.0,,
+MUN,1600535,Porto Grande - AP,Mulheres,1153,65 a 69 anos,182.0,,
+MUN,1600535,Porto Grande - AP,Mulheres,1154,70 a 74 anos,100.0,,
+MUN,1600535,Porto Grande - AP,Mulheres,1155,75 a 79 anos,73.0,,
+MUN,1600535,Porto Grande - AP,Mulheres,6802,80 a 84 anos,39.0,,
+MUN,1600535,Porto Grande - AP,Mulheres,6803,85 a 89 anos,29.0,,
+MUN,1600535,Porto Grande - AP,Mulheres,92963,90 a 94 anos,6.0,,
+MUN,1600535,Porto Grande - AP,Mulheres,95253,Total,8679.0,44.0,0.5
+MUN,1600535,Porto Grande - AP,Total,1140,0 a 4 anos,1802.0,45.0,2.5
+MUN,1600535,Porto Grande - AP,Total,1141,5 a 9 anos,1782.0,44.0,2.5
+MUN,1600535,Porto Grande - AP,Total,1142,10 a 14 anos,1816.0,20.0,1.1
+MUN,1600535,Porto Grande - AP,Total,1143,15 a 19 anos,1756.0,11.0,0.6
+MUN,1600535,Porto Grande - AP,Total,1144,20 a 24 anos,1512.0,11.0,0.7
+MUN,1600535,Porto Grande - AP,Total,1145,25 a 29 anos,1345.0,,
+MUN,1600535,Porto Grande - AP,Total,1146,30 a 34 anos,1286.0,,
+MUN,1600535,Porto Grande - AP,Total,1147,35 a 39 anos,1249.0,,
+MUN,1600535,Porto Grande - AP,Total,1148,40 a 44 anos,1247.0,,
+MUN,1600535,Porto Grande - AP,Total,1149,45 a 49 anos,985.0,30.0,3.0
+MUN,1600535,Porto Grande - AP,Total,1150,50 a 54 anos,832.0,,
+MUN,1600535,Porto Grande - AP,Total,1151,55 a 59 anos,689.0,,
+MUN,1600535,Porto Grande - AP,Total,1152,60 a 64 anos,572.0,,
+MUN,1600535,Porto Grande - AP,Total,1153,65 a 69 anos,377.0,22.0,5.9
+MUN,1600535,Porto Grande - AP,Total,1154,70 a 74 anos,273.0,,
+MUN,1600535,Porto Grande - AP,Total,1155,75 a 79 anos,167.0,,
+MUN,1600535,Porto Grande - AP,Total,6802,80 a 84 anos,101.0,,
+MUN,1600535,Porto Grande - AP,Total,6803,85 a 89 anos,51.0,,
+MUN,1600535,Porto Grande - AP,Total,92963,90 a 94 anos,6.0,,
+MUN,1600535,Porto Grande - AP,Total,95253,Total,17848.0,183.0,1.0
+MUN,1600550,Pracuúba - AP,Homens,1140,0 a 4 anos,231.0,,
+MUN,1600550,Pracuúba - AP,Homens,1141,5 a 9 anos,213.0,10.0,4.7
+MUN,1600550,Pracuúba - AP,Homens,1142,10 a 14 anos,249.0,4.0,1.5
+MUN,1600550,Pracuúba - AP,Homens,1143,15 a 19 anos,200.0,,
+MUN,1600550,Pracuúba - AP,Homens,1144,20 a 24 anos,192.0,6.0,3.2
+MUN,1600550,Pracuúba - AP,Homens,1145,25 a 29 anos,109.0,2.0,2.2
+MUN,1600550,Pracuúba - AP,Homens,1146,30 a 34 anos,130.0,,
+MUN,1600550,Pracuúba - AP,Homens,1147,35 a 39 anos,131.0,,
+MUN,1600550,Pracuúba - AP,Homens,1148,40 a 44 anos,122.0,,
+MUN,1600550,Pracuúba - AP,Homens,1149,45 a 49 anos,90.0,,
+MUN,1600550,Pracuúba - AP,Homens,1150,50 a 54 anos,98.0,3.0,2.8
+MUN,1600550,Pracuúba - AP,Homens,1151,55 a 59 anos,65.0,,
+MUN,1600550,Pracuúba - AP,Homens,1152,60 a 64 anos,52.0,,
+MUN,1600550,Pracuúba - AP,Homens,1153,65 a 69 anos,37.0,,
+MUN,1600550,Pracuúba - AP,Homens,1154,70 a 74 anos,40.0,,
+MUN,1600550,Pracuúba - AP,Homens,1155,75 a 79 anos,8.0,,
+MUN,1600550,Pracuúba - AP,Homens,6802,80 a 84 anos,17.0,,
+MUN,1600550,Pracuúba - AP,Homens,6803,85 a 89 anos,9.0,,
+MUN,1600550,Pracuúba - AP,Homens,95253,Total,1993.0,25.0,1.3
+MUN,1600550,Pracuúba - AP,Mulheres,1140,0 a 4 anos,207.0,,
+MUN,1600550,Pracuúba - AP,Mulheres,1141,5 a 9 anos,217.0,,
+MUN,1600550,Pracuúba - AP,Mulheres,1142,10 a 14 anos,217.0,,
+MUN,1600550,Pracuúba - AP,Mulheres,1143,15 a 19 anos,194.0,3.0,1.4
+MUN,1600550,Pracuúba - AP,Mulheres,1144,20 a 24 anos,155.0,3.0,2.0
+MUN,1600550,Pracuúba - AP,Mulheres,1145,25 a 29 anos,112.0,,
+MUN,1600550,Pracuúba - AP,Mulheres,1146,30 a 34 anos,124.0,,
+MUN,1600550,Pracuúba - AP,Mulheres,1147,35 a 39 anos,140.0,,
+MUN,1600550,Pracuúba - AP,Mulheres,1148,40 a 44 anos,111.0,,
+MUN,1600550,Pracuúba - AP,Mulheres,1149,45 a 49 anos,76.0,,
+MUN,1600550,Pracuúba - AP,Mulheres,1150,50 a 54 anos,70.0,,
+MUN,1600550,Pracuúba - AP,Mulheres,1151,55 a 59 anos,54.0,,
+MUN,1600550,Pracuúba - AP,Mulheres,1152,60 a 64 anos,45.0,,
+MUN,1600550,Pracuúba - AP,Mulheres,1153,65 a 69 anos,40.0,,
+MUN,1600550,Pracuúba - AP,Mulheres,1154,70 a 74 anos,20.0,,
+MUN,1600550,Pracuúba - AP,Mulheres,1155,75 a 79 anos,10.0,,
+MUN,1600550,Pracuúba - AP,Mulheres,6802,80 a 84 anos,7.0,,
+MUN,1600550,Pracuúba - AP,Mulheres,6803,85 a 89 anos,3.0,,
+MUN,1600550,Pracuúba - AP,Mulheres,92963,90 a 94 anos,4.0,,
+MUN,1600550,Pracuúba - AP,Mulheres,92964,95 a 99 anos,3.0,,
+MUN,1600550,Pracuúba - AP,Mulheres,95253,Total,1810.0,6.0,0.3
+MUN,1600550,Pracuúba - AP,Total,1140,0 a 4 anos,438.0,,
+MUN,1600550,Pracuúba - AP,Total,1141,5 a 9 anos,430.0,10.0,2.3
+MUN,1600550,Pracuúba - AP,Total,1142,10 a 14 anos,466.0,4.0,0.8
+MUN,1600550,Pracuúba - AP,Total,1143,15 a 19 anos,394.0,3.0,0.7
+MUN,1600550,Pracuúba - AP,Total,1144,20 a 24 anos,347.0,9.0,2.7
+MUN,1600550,Pracuúba - AP,Total,1145,25 a 29 anos,221.0,2.0,1.1
+MUN,1600550,Pracuúba - AP,Total,1146,30 a 34 anos,254.0,,
+MUN,1600550,Pracuúba - AP,Total,1147,35 a 39 anos,271.0,,
+MUN,1600550,Pracuúba - AP,Total,1148,40 a 44 anos,233.0,,
+MUN,1600550,Pracuúba - AP,Total,1149,45 a 49 anos,166.0,,
+MUN,1600550,Pracuúba - AP,Total,1150,50 a 54 anos,168.0,3.0,1.6
+MUN,1600550,Pracuúba - AP,Total,1151,55 a 59 anos,119.0,,
+MUN,1600550,Pracuúba - AP,Total,1152,60 a 64 anos,97.0,,
+MUN,1600550,Pracuúba - AP,Total,1153,65 a 69 anos,77.0,,
+MUN,1600550,Pracuúba - AP,Total,1154,70 a 74 anos,60.0,,
+MUN,1600550,Pracuúba - AP,Total,1155,75 a 79 anos,18.0,,
+MUN,1600550,Pracuúba - AP,Total,6802,80 a 84 anos,24.0,,
+MUN,1600550,Pracuúba - AP,Total,6803,85 a 89 anos,12.0,,
+MUN,1600550,Pracuúba - AP,Total,92963,90 a 94 anos,4.0,,
+MUN,1600550,Pracuúba - AP,Total,92964,95 a 99 anos,3.0,,
+MUN,1600550,Pracuúba - AP,Total,95253,Total,3803.0,31.0,0.8
+MUN,1600600,Santana - AP,Homens,1140,0 a 4 anos,4922.0,191.0,3.9
+MUN,1600600,Santana - AP,Homens,1141,5 a 9 anos,4925.0,348.0,7.1
+MUN,1600600,Santana - AP,Homens,1142,10 a 14 anos,4597.0,163.0,3.6
+MUN,1600600,Santana - AP,Homens,1143,15 a 19 anos,4967.0,108.0,2.2
+MUN,1600600,Santana - AP,Homens,1144,20 a 24 anos,5643.0,43.0,0.8
+MUN,1600600,Santana - AP,Homens,1145,25 a 29 anos,4540.0,40.0,0.9
+MUN,1600600,Santana - AP,Homens,1146,30 a 34 anos,4381.0,33.0,0.8
+MUN,1600600,Santana - AP,Homens,1147,35 a 39 anos,3962.0,39.0,1.0
+MUN,1600600,Santana - AP,Homens,1148,40 a 44 anos,3789.0,12.0,0.3
+MUN,1600600,Santana - AP,Homens,1149,45 a 49 anos,3012.0,19.0,0.6
+MUN,1600600,Santana - AP,Homens,1150,50 a 54 anos,2419.0,44.0,1.8
+MUN,1600600,Santana - AP,Homens,1151,55 a 59 anos,1846.0,,
+MUN,1600600,Santana - AP,Homens,1152,60 a 64 anos,1415.0,,
+MUN,1600600,Santana - AP,Homens,1153,65 a 69 anos,1099.0,,
+MUN,1600600,Santana - AP,Homens,1154,70 a 74 anos,822.0,,
+MUN,1600600,Santana - AP,Homens,1155,75 a 79 anos,561.0,,
+MUN,1600600,Santana - AP,Homens,6802,80 a 84 anos,338.0,9.0,2.8
+MUN,1600600,Santana - AP,Homens,6803,85 a 89 anos,218.0,,
+MUN,1600600,Santana - AP,Homens,92963,90 a 94 anos,66.0,,
+MUN,1600600,Santana - AP,Homens,92964,95 a 99 anos,14.0,,
+MUN,1600600,Santana - AP,Homens,92965,100 anos ou mais,14.0,,
+MUN,1600600,Santana - AP,Homens,95253,Total,53549.0,1048.0,2.0
+MUN,1600600,Santana - AP,Mulheres,1140,0 a 4 anos,4508.0,63.0,1.4
+MUN,1600600,Santana - AP,Mulheres,1141,5 a 9 anos,4675.0,77.0,1.6
+MUN,1600600,Santana - AP,Mulheres,1142,10 a 14 anos,4790.0,93.0,2.0
+MUN,1600600,Santana - AP,Mulheres,1143,15 a 19 anos,5081.0,49.0,1.0
+MUN,1600600,Santana - AP,Mulheres,1144,20 a 24 anos,5201.0,63.0,1.2
+MUN,1600600,Santana - AP,Mulheres,1145,25 a 29 anos,4650.0,47.0,1.0
+MUN,1600600,Santana - AP,Mulheres,1146,30 a 34 anos,4404.0,27.0,0.6
+MUN,1600600,Santana - AP,Mulheres,1147,35 a 39 anos,4240.0,23.0,0.5
+MUN,1600600,Santana - AP,Mulheres,1148,40 a 44 anos,3862.0,34.0,0.9
+MUN,1600600,Santana - AP,Mulheres,1149,45 a 49 anos,3357.0,28.0,0.8
+MUN,1600600,Santana - AP,Mulheres,1150,50 a 54 anos,2487.0,,
+MUN,1600600,Santana - AP,Mulheres,1151,55 a 59 anos,1864.0,,
+MUN,1600600,Santana - AP,Mulheres,1152,60 a 64 anos,1622.0,18.0,1.1
+MUN,1600600,Santana - AP,Mulheres,1153,65 a 69 anos,1250.0,,
+MUN,1600600,Santana - AP,Mulheres,1154,70 a 74 anos,804.0,,
+MUN,1600600,Santana - AP,Mulheres,1155,75 a 79 anos,570.0,,
+MUN,1600600,Santana - AP,Mulheres,6802,80 a 84 anos,369.0,,
+MUN,1600600,Santana - AP,Mulheres,6803,85 a 89 anos,212.0,6.0,2.8
+MUN,1600600,Santana - AP,Mulheres,92963,90 a 94 anos,81.0,,
+MUN,1600600,Santana - AP,Mulheres,92964,95 a 99 anos,5.0,,
+MUN,1600600,Santana - AP,Mulheres,92965,100 anos ou mais,38.0,,
+MUN,1600600,Santana - AP,Mulheres,95253,Total,54069.0,528.0,1.0
+MUN,1600600,Santana - AP,Total,1140,0 a 4 anos,9430.0,255.0,2.7
+MUN,1600600,Santana - AP,Total,1141,5 a 9 anos,9600.0,424.0,4.4
+MUN,1600600,Santana - AP,Total,1142,10 a 14 anos,9387.0,257.0,2.7
+MUN,1600600,Santana - AP,Total,1143,15 a 19 anos,10047.0,156.0,1.6
+MUN,1600600,Santana - AP,Total,1144,20 a 24 anos,10844.0,106.0,1.0
+MUN,1600600,Santana - AP,Total,1145,25 a 29 anos,9191.0,86.0,0.9
+MUN,1600600,Santana - AP,Total,1146,30 a 34 anos,8785.0,60.0,0.7
+MUN,1600600,Santana - AP,Total,1147,35 a 39 anos,8202.0,62.0,0.8
+MUN,1600600,Santana - AP,Total,1148,40 a 44 anos,7651.0,46.0,0.6
+MUN,1600600,Santana - AP,Total,1149,45 a 49 anos,6368.0,47.0,0.7
+MUN,1600600,Santana - AP,Total,1150,50 a 54 anos,4905.0,44.0,0.9
+MUN,1600600,Santana - AP,Total,1151,55 a 59 anos,3711.0,,
+MUN,1600600,Santana - AP,Total,1152,60 a 64 anos,3037.0,18.0,0.6
+MUN,1600600,Santana - AP,Total,1153,65 a 69 anos,2349.0,,
+MUN,1600600,Santana - AP,Total,1154,70 a 74 anos,1625.0,,
+MUN,1600600,Santana - AP,Total,1155,75 a 79 anos,1131.0,,
+MUN,1600600,Santana - AP,Total,6802,80 a 84 anos,706.0,9.0,1.3
+MUN,1600600,Santana - AP,Total,6803,85 a 89 anos,430.0,6.0,1.4
+MUN,1600600,Santana - AP,Total,92963,90 a 94 anos,147.0,,
+MUN,1600600,Santana - AP,Total,92964,95 a 99 anos,20.0,,
+MUN,1600600,Santana - AP,Total,92965,100 anos ou mais,53.0,,
+MUN,1600600,Santana - AP,Total,95253,Total,107618.0,1576.0,1.5
+MUN,1600709,Tartarugalzinho - AP,Homens,1140,0 a 4 anos,762.0,5.0,0.6
+MUN,1600709,Tartarugalzinho - AP,Homens,1141,5 a 9 anos,776.0,33.0,4.2
+MUN,1600709,Tartarugalzinho - AP,Homens,1142,10 a 14 anos,810.0,6.0,0.7
+MUN,1600709,Tartarugalzinho - AP,Homens,1143,15 a 19 anos,696.0,20.0,2.8
+MUN,1600709,Tartarugalzinho - AP,Homens,1144,20 a 24 anos,542.0,17.0,3.1
+MUN,1600709,Tartarugalzinho - AP,Homens,1145,25 a 29 anos,440.0,11.0,2.4
+MUN,1600709,Tartarugalzinho - AP,Homens,1146,30 a 34 anos,463.0,,
+MUN,1600709,Tartarugalzinho - AP,Homens,1147,35 a 39 anos,426.0,5.0,1.1
+MUN,1600709,Tartarugalzinho - AP,Homens,1148,40 a 44 anos,386.0,,
+MUN,1600709,Tartarugalzinho - AP,Homens,1149,45 a 49 anos,337.0,5.0,1.4
+MUN,1600709,Tartarugalzinho - AP,Homens,1150,50 a 54 anos,306.0,4.0,1.4
+MUN,1600709,Tartarugalzinho - AP,Homens,1151,55 a 59 anos,255.0,6.0,2.3
+MUN,1600709,Tartarugalzinho - AP,Homens,1152,60 a 64 anos,197.0,,
+MUN,1600709,Tartarugalzinho - AP,Homens,1153,65 a 69 anos,165.0,,
+MUN,1600709,Tartarugalzinho - AP,Homens,1154,70 a 74 anos,125.0,,
+MUN,1600709,Tartarugalzinho - AP,Homens,1155,75 a 79 anos,54.0,4.0,7.0
+MUN,1600709,Tartarugalzinho - AP,Homens,6802,80 a 84 anos,32.0,,
+MUN,1600709,Tartarugalzinho - AP,Homens,6803,85 a 89 anos,11.0,,
+MUN,1600709,Tartarugalzinho - AP,Homens,92963,90 a 94 anos,6.0,,
+MUN,1600709,Tartarugalzinho - AP,Homens,95253,Total,6789.0,114.0,1.7
+MUN,1600709,Tartarugalzinho - AP,Mulheres,1140,0 a 4 anos,714.0,,
+MUN,1600709,Tartarugalzinho - AP,Mulheres,1141,5 a 9 anos,718.0,16.0,2.3
+MUN,1600709,Tartarugalzinho - AP,Mulheres,1142,10 a 14 anos,674.0,11.0,1.6
+MUN,1600709,Tartarugalzinho - AP,Mulheres,1143,15 a 19 anos,648.0,,
+MUN,1600709,Tartarugalzinho - AP,Mulheres,1144,20 a 24 anos,488.0,4.0,0.9
+MUN,1600709,Tartarugalzinho - AP,Mulheres,1145,25 a 29 anos,444.0,,
+MUN,1600709,Tartarugalzinho - AP,Mulheres,1146,30 a 34 anos,476.0,4.0,0.8
+MUN,1600709,Tartarugalzinho - AP,Mulheres,1147,35 a 39 anos,422.0,5.0,1.2
+MUN,1600709,Tartarugalzinho - AP,Mulheres,1148,40 a 44 anos,331.0,,
+MUN,1600709,Tartarugalzinho - AP,Mulheres,1149,45 a 49 anos,317.0,4.0,1.2
+MUN,1600709,Tartarugalzinho - AP,Mulheres,1150,50 a 54 anos,252.0,,
+MUN,1600709,Tartarugalzinho - AP,Mulheres,1151,55 a 59 anos,199.0,,
+MUN,1600709,Tartarugalzinho - AP,Mulheres,1152,60 a 64 anos,169.0,4.0,2.4
+MUN,1600709,Tartarugalzinho - AP,Mulheres,1153,65 a 69 anos,127.0,,
+MUN,1600709,Tartarugalzinho - AP,Mulheres,1154,70 a 74 anos,82.0,5.0,6.3
+MUN,1600709,Tartarugalzinho - AP,Mulheres,1155,75 a 79 anos,50.0,,
+MUN,1600709,Tartarugalzinho - AP,Mulheres,6802,80 a 84 anos,12.0,,
+MUN,1600709,Tartarugalzinho - AP,Mulheres,6803,85 a 89 anos,20.0,,
+MUN,1600709,Tartarugalzinho - AP,Mulheres,92963,90 a 94 anos,13.0,,
+MUN,1600709,Tartarugalzinho - AP,Mulheres,95253,Total,6156.0,54.0,0.9
+MUN,1600709,Tartarugalzinho - AP,Total,1140,0 a 4 anos,1476.0,5.0,0.3
+MUN,1600709,Tartarugalzinho - AP,Total,1141,5 a 9 anos,1494.0,49.0,3.3
+MUN,1600709,Tartarugalzinho - AP,Total,1142,10 a 14 anos,1484.0,17.0,1.1
+MUN,1600709,Tartarugalzinho - AP,Total,1143,15 a 19 anos,1344.0,20.0,1.5
+MUN,1600709,Tartarugalzinho - AP,Total,1144,20 a 24 anos,1030.0,21.0,2.0
+MUN,1600709,Tartarugalzinho - AP,Total,1145,25 a 29 anos,884.0,11.0,1.2
+MUN,1600709,Tartarugalzinho - AP,Total,1146,30 a 34 anos,939.0,4.0,0.4
+MUN,1600709,Tartarugalzinho - AP,Total,1147,35 a 39 anos,848.0,10.0,1.2
+MUN,1600709,Tartarugalzinho - AP,Total,1148,40 a 44 anos,717.0,,
+MUN,1600709,Tartarugalzinho - AP,Total,1149,45 a 49 anos,654.0,9.0,1.3
+MUN,1600709,Tartarugalzinho - AP,Total,1150,50 a 54 anos,558.0,4.0,0.8
+MUN,1600709,Tartarugalzinho - AP,Total,1151,55 a 59 anos,454.0,6.0,1.3
+MUN,1600709,Tartarugalzinho - AP,Total,1152,60 a 64 anos,366.0,4.0,1.1
+MUN,1600709,Tartarugalzinho - AP,Total,1153,65 a 69 anos,292.0,,
+MUN,1600709,Tartarugalzinho - AP,Total,1154,70 a 74 anos,207.0,5.0,2.5
+MUN,1600709,Tartarugalzinho - AP,Total,1155,75 a 79 anos,104.0,4.0,3.7
+MUN,1600709,Tartarugalzinho - AP,Total,6802,80 a 84 anos,45.0,,
+MUN,1600709,Tartarugalzinho - AP,Total,6803,85 a 89 anos,31.0,,
+MUN,1600709,Tartarugalzinho - AP,Total,92963,90 a 94 anos,19.0,,
+MUN,1600709,Tartarugalzinho - AP,Total,95253,Total,12945.0,167.0,1.3
+MUN,1600808,Vitória do Jari - AP,Homens,1140,0 a 4 anos,633.0,4.0,0.6
+MUN,1600808,Vitória do Jari - AP,Homens,1141,5 a 9 anos,604.0,9.0,1.6
+MUN,1600808,Vitória do Jari - AP,Homens,1142,10 a 14 anos,569.0,6.0,1.0
+MUN,1600808,Vitória do Jari - AP,Homens,1143,15 a 19 anos,588.0,22.0,3.8
+MUN,1600808,Vitória do Jari - AP,Homens,1144,20 a 24 anos,576.0,3.0,0.6
+MUN,1600808,Vitória do Jari - AP,Homens,1145,25 a 29 anos,449.0,,
+MUN,1600808,Vitória do Jari - AP,Homens,1146,30 a 34 anos,411.0,,
+MUN,1600808,Vitória do Jari - AP,Homens,1147,35 a 39 anos,357.0,6.0,1.6
+MUN,1600808,Vitória do Jari - AP,Homens,1148,40 a 44 anos,367.0,,
+MUN,1600808,Vitória do Jari - AP,Homens,1149,45 a 49 anos,309.0,,
+MUN,1600808,Vitória do Jari - AP,Homens,1150,50 a 54 anos,242.0,,
+MUN,1600808,Vitória do Jari - AP,Homens,1151,55 a 59 anos,202.0,,
+MUN,1600808,Vitória do Jari - AP,Homens,1152,60 a 64 anos,177.0,6.0,3.6
+MUN,1600808,Vitória do Jari - AP,Homens,1153,65 a 69 anos,118.0,7.0,5.6
+MUN,1600808,Vitória do Jari - AP,Homens,1154,70 a 74 anos,93.0,3.0,3.0
+MUN,1600808,Vitória do Jari - AP,Homens,1155,75 a 79 anos,49.0,,
+MUN,1600808,Vitória do Jari - AP,Homens,6802,80 a 84 anos,24.0,,
+MUN,1600808,Vitória do Jari - AP,Homens,6803,85 a 89 anos,27.0,,
+MUN,1600808,Vitória do Jari - AP,Homens,92963,90 a 94 anos,13.0,,
+MUN,1600808,Vitória do Jari - AP,Homens,92964,95 a 99 anos,3.0,,
+MUN,1600808,Vitória do Jari - AP,Homens,95253,Total,5811.0,66.0,1.1
+MUN,1600808,Vitória do Jari - AP,Mulheres,1140,0 a 4 anos,559.0,3.0,0.4
+MUN,1600808,Vitória do Jari - AP,Mulheres,1141,5 a 9 anos,592.0,5.0,0.8
+MUN,1600808,Vitória do Jari - AP,Mulheres,1142,10 a 14 anos,542.0,19.0,3.5
+MUN,1600808,Vitória do Jari - AP,Mulheres,1143,15 a 19 anos,565.0,,
+MUN,1600808,Vitória do Jari - AP,Mulheres,1144,20 a 24 anos,523.0,6.0,1.1
+MUN,1600808,Vitória do Jari - AP,Mulheres,1145,25 a 29 anos,461.0,6.0,1.3
+MUN,1600808,Vitória do Jari - AP,Mulheres,1146,30 a 34 anos,393.0,4.0,1.0
+MUN,1600808,Vitória do Jari - AP,Mulheres,1147,35 a 39 anos,388.0,,
+MUN,1600808,Vitória do Jari - AP,Mulheres,1148,40 a 44 anos,360.0,,
+MUN,1600808,Vitória do Jari - AP,Mulheres,1149,45 a 49 anos,278.0,,
+MUN,1600808,Vitória do Jari - AP,Mulheres,1150,50 a 54 anos,228.0,,
+MUN,1600808,Vitória do Jari - AP,Mulheres,1151,55 a 59 anos,197.0,5.0,2.8
+MUN,1600808,Vitória do Jari - AP,Mulheres,1152,60 a 64 anos,129.0,3.0,2.1
+MUN,1600808,Vitória do Jari - AP,Mulheres,1153,65 a 69 anos,87.0,7.0,8.0
+MUN,1600808,Vitória do Jari - AP,Mulheres,1154,70 a 74 anos,68.0,,
+MUN,1600808,Vitória do Jari - AP,Mulheres,1155,75 a 79 anos,46.0,,
+MUN,1600808,Vitória do Jari - AP,Mulheres,6802,80 a 84 anos,39.0,6.0,16.3
+MUN,1600808,Vitória do Jari - AP,Mulheres,6803,85 a 89 anos,14.0,,
+MUN,1600808,Vitória do Jari - AP,Mulheres,92963,90 a 94 anos,4.0,,
+MUN,1600808,Vitória do Jari - AP,Mulheres,92965,100 anos ou mais,7.0,,
+MUN,1600808,Vitória do Jari - AP,Mulheres,95253,Total,5480.0,64.0,1.2
+MUN,1600808,Vitória do Jari - AP,Total,1140,0 a 4 anos,1192.0,6.0,0.5
+MUN,1600808,Vitória do Jari - AP,Total,1141,5 a 9 anos,1196.0,14.0,1.2
+MUN,1600808,Vitória do Jari - AP,Total,1142,10 a 14 anos,1111.0,25.0,2.2
+MUN,1600808,Vitória do Jari - AP,Total,1143,15 a 19 anos,1153.0,22.0,1.9
+MUN,1600808,Vitória do Jari - AP,Total,1144,20 a 24 anos,1099.0,9.0,0.8
+MUN,1600808,Vitória do Jari - AP,Total,1145,25 a 29 anos,910.0,6.0,0.7
+MUN,1600808,Vitória do Jari - AP,Total,1146,30 a 34 anos,804.0,4.0,0.5
+MUN,1600808,Vitória do Jari - AP,Total,1147,35 a 39 anos,745.0,6.0,0.8
+MUN,1600808,Vitória do Jari - AP,Total,1148,40 a 44 anos,727.0,,
+MUN,1600808,Vitória do Jari - AP,Total,1149,45 a 49 anos,587.0,,
+MUN,1600808,Vitória do Jari - AP,Total,1150,50 a 54 anos,470.0,,
+MUN,1600808,Vitória do Jari - AP,Total,1151,55 a 59 anos,399.0,5.0,1.4
+MUN,1600808,Vitória do Jari - AP,Total,1152,60 a 64 anos,306.0,9.0,3.0
+MUN,1600808,Vitória do Jari - AP,Total,1153,65 a 69 anos,205.0,14.0,6.6
+MUN,1600808,Vitória do Jari - AP,Total,1154,70 a 74 anos,161.0,3.0,1.7
+MUN,1600808,Vitória do Jari - AP,Total,1155,75 a 79 anos,95.0,,
+MUN,1600808,Vitória do Jari - AP,Total,6802,80 a 84 anos,63.0,6.0,10.1
+MUN,1600808,Vitória do Jari - AP,Total,6803,85 a 89 anos,41.0,,
+MUN,1600808,Vitória do Jari - AP,Total,92963,90 a 94 anos,17.0,,
+MUN,1600808,Vitória do Jari - AP,Total,92964,95 a 99 anos,3.0,,
+MUN,1600808,Vitória do Jari - AP,Total,92965,100 anos ou mais,7.0,,
+MUN,1600808,Vitória do Jari - AP,Total,95253,Total,11291.0,130.0,1.2

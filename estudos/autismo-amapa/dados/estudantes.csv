@@ -1,0 +1,661 @@
+cod,nome,sexo,idade,est,pct,tea,nivel
+1,Brasil,Homens,15 a 17 anos,3728236.0,1.8,66915.0,BR
+1,Brasil,Homens,18 a 24 anos,2747692.0,1.5,42311.0,BR
+1,Brasil,Homens,25 anos ou mais,3522449.0,1.3,46850.0,BR
+1,Brasil,Homens,6 a 14 anos,12424489.0,3.0,370360.0,BR
+1,Brasil,Homens,Total,22422866.0,2.3,526436.0,BR
+1,Brasil,Mulheres,15 a 17 anos,3623632.0,0.8,28554.0,BR
+1,Brasil,Mulheres,18 a 24 anos,3121243.0,0.8,25697.0,BR
+1,Brasil,Mulheres,25 anos ou mais,4597133.0,1.1,52125.0,BR
+1,Brasil,Mulheres,6 a 14 anos,11926097.0,1.1,127998.0,BR
+1,Brasil,Mulheres,Total,23268105.0,1.0,234375.0,BR
+1,Brasil,Total,15 a 17 anos,7351868.0,1.3,95470.0,BR
+1,Brasil,Total,18 a 24 anos,5868935.0,1.2,68008.0,BR
+1,Brasil,Total,25 anos ou mais,8119583.0,1.2,98975.0,BR
+1,Brasil,Total,6 a 14 anos,24350586.0,2.0,498358.0,BR
+1,Brasil,Total,Total,45690971.0,1.7,760810.0,BR
+11,Rondônia,Homens,15 a 17 anos,30652.0,2.1,653.0,UF
+11,Rondônia,Homens,18 a 24 anos,22995.0,1.5,344.0,UF
+11,Rondônia,Homens,25 anos ou mais,33821.0,1.6,551.0,UF
+11,Rondônia,Homens,6 a 14 anos,105048.0,3.1,3289.0,UF
+11,Rondônia,Homens,Total,192516.0,2.5,4837.0,UF
+11,Rondônia,Mulheres,15 a 17 anos,32030.0,0.9,288.0,UF
+11,Rondônia,Mulheres,18 a 24 anos,28087.0,0.7,193.0,UF
+11,Rondônia,Mulheres,25 anos ou mais,43577.0,1.4,599.0,UF
+11,Rondônia,Mulheres,6 a 14 anos,101635.0,1.2,1208.0,UF
+11,Rondônia,Mulheres,Total,205329.0,1.1,2289.0,UF
+11,Rondônia,Total,15 a 17 anos,62682.0,1.5,941.0,UF
+11,Rondônia,Total,18 a 24 anos,51081.0,1.1,537.0,UF
+11,Rondônia,Total,25 anos ou mais,77398.0,1.5,1150.0,UF
+11,Rondônia,Total,6 a 14 anos,206683.0,2.2,4498.0,UF
+11,Rondônia,Total,Total,397845.0,1.8,7125.0,UF
+12,Acre,Homens,15 a 17 anos,19857.0,2.5,504.0,UF
+12,Acre,Homens,18 a 24 anos,14272.0,1.8,253.0,UF
+12,Acre,Homens,25 anos ou mais,12750.0,0.8,108.0,UF
+12,Acre,Homens,6 a 14 anos,67583.0,5.1,3415.0,UF
+12,Acre,Homens,Total,114461.0,3.7,4279.0,UF
+12,Acre,Mulheres,15 a 17 anos,18982.0,1.0,190.0,UF
+12,Acre,Mulheres,18 a 24 anos,15748.0,0.8,119.0,UF
+12,Acre,Mulheres,25 anos ou mais,17292.0,1.0,173.0,UF
+12,Acre,Mulheres,6 a 14 anos,64350.0,1.6,1040.0,UF
+12,Acre,Mulheres,Total,116371.0,1.3,1521.0,UF
+12,Acre,Total,15 a 17 anos,38838.0,1.8,694.0,UF
+12,Acre,Total,18 a 24 anos,30020.0,1.2,371.0,UF
+12,Acre,Total,25 anos ou mais,30042.0,0.9,281.0,UF
+12,Acre,Total,6 a 14 anos,131933.0,3.4,4454.0,UF
+12,Acre,Total,Total,230833.0,2.5,5800.0,UF
+13,Amazonas,Homens,15 a 17 anos,95464.0,1.6,1542.0,UF
+13,Amazonas,Homens,18 a 24 anos,68706.0,1.8,1220.0,UF
+13,Amazonas,Homens,25 anos ou mais,87426.0,0.9,796.0,UF
+13,Amazonas,Homens,6 a 14 anos,317959.0,2.6,8135.0,UF
+13,Amazonas,Homens,Total,569555.0,2.1,11693.0,UF
+13,Amazonas,Mulheres,15 a 17 anos,91808.0,0.6,568.0,UF
+13,Amazonas,Mulheres,18 a 24 anos,72047.0,0.7,483.0,UF
+13,Amazonas,Mulheres,25 anos ou mais,109112.0,0.8,842.0,UF
+13,Amazonas,Mulheres,6 a 14 anos,308748.0,0.8,2550.0,UF
+13,Amazonas,Mulheres,Total,581714.0,0.8,4443.0,UF
+13,Amazonas,Total,15 a 17 anos,187271.0,1.1,2110.0,UF
+13,Amazonas,Total,18 a 24 anos,140753.0,1.2,1702.0,UF
+13,Amazonas,Total,25 anos ou mais,196538.0,0.8,1639.0,UF
+13,Amazonas,Total,6 a 14 anos,626707.0,1.7,10684.0,UF
+13,Amazonas,Total,Total,1151269.0,1.4,16135.0,UF
+14,Roraima,Homens,15 a 17 anos,14024.0,1.6,225.0,UF
+14,Roraima,Homens,18 a 24 anos,9052.0,1.7,152.0,UF
+14,Roraima,Homens,25 anos ou mais,10736.0,1.2,127.0,UF
+14,Roraima,Homens,6 a 14 anos,51499.0,2.3,1187.0,UF
+14,Roraima,Homens,Total,85310.0,2.0,1691.0,UF
+14,Roraima,Mulheres,15 a 17 anos,13263.0,0.9,113.0,UF
+14,Roraima,Mulheres,18 a 24 anos,10326.0,0.6,63.0,UF
+14,Roraima,Mulheres,25 anos ou mais,13770.0,1.1,151.0,UF
+14,Roraima,Mulheres,6 a 14 anos,48286.0,0.9,423.0,UF
+14,Roraima,Mulheres,Total,85645.0,0.9,750.0,UF
+14,Roraima,Total,15 a 17 anos,27287.0,1.2,338.0,UF
+14,Roraima,Total,18 a 24 anos,19378.0,1.1,214.0,UF
+14,Roraima,Total,25 anos ou mais,24506.0,1.1,278.0,UF
+14,Roraima,Total,6 a 14 anos,99785.0,1.6,1610.0,UF
+14,Roraima,Total,Total,170955.0,1.4,2441.0,UF
+15,Pará,Homens,15 a 17 anos,188750.0,1.7,3290.0,UF
+15,Pará,Homens,18 a 24 anos,142306.0,1.4,2021.0,UF
+15,Pará,Homens,25 anos ou mais,146875.0,1.2,1761.0,UF
+15,Pará,Homens,6 a 14 anos,613945.0,2.4,14921.0,UF
+15,Pará,Homens,Total,1091876.0,2.0,21992.0,UF
+15,Pará,Mulheres,15 a 17 anos,181516.0,0.8,1534.0,UF
+15,Pará,Mulheres,18 a 24 anos,148678.0,0.8,1254.0,UF
+15,Pará,Mulheres,25 anos ou mais,194225.0,0.9,1809.0,UF
+15,Pará,Mulheres,6 a 14 anos,587862.0,1.0,5651.0,UF
+15,Pará,Mulheres,Total,1112281.0,0.9,10247.0,UF
+15,Pará,Total,15 a 17 anos,370266.0,1.3,4823.0,UF
+15,Pará,Total,18 a 24 anos,290983.0,1.1,3275.0,UF
+15,Pará,Total,25 anos ou mais,341101.0,1.0,3570.0,UF
+15,Pará,Total,6 a 14 anos,1201807.0,1.7,20571.0,UF
+15,Pará,Total,Total,2204157.0,1.5,32239.0,UF
+16,Amapá,Homens,15 a 17 anos,17707.0,2.6,461.0,UF
+16,Amapá,Homens,18 a 24 anos,14140.0,1.5,208.0,UF
+16,Amapá,Homens,25 anos ou mais,14172.0,2.3,319.0,UF
+16,Amapá,Homens,6 a 14 anos,58501.0,4.0,2318.0,UF
+16,Amapá,Homens,Total,104520.0,3.2,3307.0,UF
+16,Amapá,Mulheres,15 a 17 anos,15975.0,1.0,160.0,UF
+16,Amapá,Mulheres,18 a 24 anos,15140.0,0.5,68.0,UF
+16,Amapá,Mulheres,25 anos ou mais,18988.0,0.5,95.0,UF
+16,Amapá,Mulheres,6 a 14 anos,57453.0,1.7,970.0,UF
+16,Amapá,Mulheres,Total,107556.0,1.2,1294.0,UF
+16,Amapá,Total,15 a 17 anos,33682.0,1.8,621.0,UF
+16,Amapá,Total,18 a 24 anos,29280.0,0.9,277.0,UF
+16,Amapá,Total,25 anos ou mais,33160.0,1.2,414.0,UF
+16,Amapá,Total,6 a 14 anos,115954.0,2.8,3288.0,UF
+16,Amapá,Total,Total,212076.0,2.2,4601.0,UF
+17,Tocantins,Homens,15 a 17 anos,33160.0,1.2,394.0,UF
+17,Tocantins,Homens,18 a 24 anos,22356.0,1.2,258.0,UF
+17,Tocantins,Homens,25 anos ou mais,21236.0,1.2,257.0,UF
+17,Tocantins,Homens,6 a 14 anos,107588.0,2.1,2211.0,UF
+17,Tocantins,Homens,Total,184340.0,1.7,3120.0,UF
+17,Tocantins,Mulheres,15 a 17 anos,32733.0,0.5,156.0,UF
+17,Tocantins,Mulheres,18 a 24 anos,27137.0,0.6,166.0,UF
+17,Tocantins,Mulheres,25 anos ou mais,29394.0,0.6,187.0,UF
+17,Tocantins,Mulheres,6 a 14 anos,103363.0,0.8,871.0,UF
+17,Tocantins,Mulheres,Total,192628.0,0.7,1381.0,UF
+17,Tocantins,Total,15 a 17 anos,65894.0,0.8,550.0,UF
+17,Tocantins,Total,18 a 24 anos,49493.0,0.9,424.0,UF
+17,Tocantins,Total,25 anos ou mais,50630.0,0.9,444.0,UF
+17,Tocantins,Total,6 a 14 anos,210951.0,1.5,3082.0,UF
+17,Tocantins,Total,Total,376968.0,1.2,4500.0,UF
+21,Maranhão,Homens,15 a 17 anos,161883.0,1.4,2298.0,UF
+21,Maranhão,Homens,18 a 24 anos,93815.0,1.3,1247.0,UF
+21,Maranhão,Homens,25 anos ou mais,90194.0,1.2,1104.0,UF
+21,Maranhão,Homens,6 a 14 anos,514220.0,2.4,12438.0,UF
+21,Maranhão,Homens,Total,860111.0,2.0,17088.0,UF
+21,Maranhão,Mulheres,15 a 17 anos,156773.0,0.7,1159.0,UF
+21,Maranhão,Mulheres,18 a 24 anos,103143.0,0.6,587.0,UF
+21,Maranhão,Mulheres,25 anos ou mais,130933.0,0.8,1109.0,UF
+21,Maranhão,Mulheres,6 a 14 anos,494291.0,1.0,4933.0,UF
+21,Maranhão,Mulheres,Total,885140.0,0.9,7788.0,UF
+21,Maranhão,Total,15 a 17 anos,318656.0,1.1,3457.0,UF
+21,Maranhão,Total,18 a 24 anos,196958.0,0.9,1834.0,UF
+21,Maranhão,Total,25 anos ou mais,221127.0,1.0,2214.0,UF
+21,Maranhão,Total,6 a 14 anos,1008511.0,1.7,17371.0,UF
+21,Maranhão,Total,Total,1745251.0,1.4,24876.0,UF
+22,Piauí,Homens,15 a 17 anos,70283.0,1.7,1204.0,UF
+22,Piauí,Homens,18 a 24 anos,50135.0,1.6,816.0,UF
+22,Piauí,Homens,25 anos ou mais,51687.0,1.1,554.0,UF
+22,Piauí,Homens,6 a 14 anos,212323.0,3.5,7416.0,UF
+22,Piauí,Homens,Total,384428.0,2.6,9990.0,UF
+22,Piauí,Mulheres,15 a 17 anos,67318.0,0.6,433.0,UF
+22,Piauí,Mulheres,18 a 24 anos,58238.0,0.8,472.0,UF
+22,Piauí,Mulheres,25 anos ou mais,71798.0,0.9,617.0,UF
+22,Piauí,Mulheres,6 a 14 anos,204294.0,1.2,2430.0,UF
+22,Piauí,Mulheres,Total,401649.0,1.0,3953.0,UF
+22,Piauí,Total,15 a 17 anos,137601.0,1.2,1637.0,UF
+22,Piauí,Total,18 a 24 anos,108373.0,1.2,1289.0,UF
+22,Piauí,Total,25 anos ou mais,123485.0,0.9,1171.0,UF
+22,Piauí,Total,6 a 14 anos,416618.0,2.4,9846.0,UF
+22,Piauí,Total,Total,786076.0,1.8,13943.0,UF
+23,Ceará,Homens,15 a 17 anos,170153.0,2.2,3706.0,UF
+23,Ceará,Homens,18 a 24 anos,110695.0,1.5,1684.0,UF
+23,Ceará,Homens,25 anos ou mais,135404.0,1.3,1763.0,UF
+23,Ceará,Homens,6 a 14 anos,559498.0,4.3,24145.0,UF
+23,Ceará,Homens,Total,975750.0,3.2,31297.0,UF
+23,Ceará,Mulheres,15 a 17 anos,165322.0,0.8,1352.0,UF
+23,Ceará,Mulheres,18 a 24 anos,121886.0,0.8,931.0,UF
+23,Ceará,Mulheres,25 anos ou mais,176563.0,1.0,1748.0,UF
+23,Ceará,Mulheres,6 a 14 anos,536816.0,1.4,7489.0,UF
+23,Ceará,Mulheres,Total,1000586.0,1.2,11520.0,UF
+23,Ceará,Total,15 a 17 anos,335475.0,1.5,5057.0,UF
+23,Ceará,Total,18 a 24 anos,232581.0,1.1,2615.0,UF
+23,Ceará,Total,25 anos ou mais,311967.0,1.1,3511.0,UF
+23,Ceará,Total,6 a 14 anos,1096313.0,2.9,31634.0,UF
+23,Ceará,Total,Total,1976337.0,2.2,42817.0,UF
+24,Rio Grande do Norte,Homens,15 a 17 anos,65213.0,2.1,1348.0,UF
+24,Rio Grande do Norte,Homens,18 a 24 anos,54722.0,1.4,745.0,UF
+24,Rio Grande do Norte,Homens,25 anos ou mais,56897.0,0.9,534.0,UF
+24,Rio Grande do Norte,Homens,6 a 14 anos,205986.0,3.2,6681.0,UF
+24,Rio Grande do Norte,Homens,Total,382819.0,2.4,9307.0,UF
+24,Rio Grande do Norte,Mulheres,15 a 17 anos,64080.0,0.8,520.0,UF
+24,Rio Grande do Norte,Mulheres,18 a 24 anos,57597.0,0.6,358.0,UF
+24,Rio Grande do Norte,Mulheres,25 anos ou mais,76273.0,0.9,699.0,UF
+24,Rio Grande do Norte,Mulheres,6 a 14 anos,197748.0,1.0,2035.0,UF
+24,Rio Grande do Norte,Mulheres,Total,395698.0,0.9,3611.0,UF
+24,Rio Grande do Norte,Total,15 a 17 anos,129293.0,1.4,1867.0,UF
+24,Rio Grande do Norte,Total,18 a 24 anos,112320.0,1.0,1102.0,UF
+24,Rio Grande do Norte,Total,25 anos ou mais,133170.0,0.9,1233.0,UF
+24,Rio Grande do Norte,Total,6 a 14 anos,403734.0,2.2,8715.0,UF
+24,Rio Grande do Norte,Total,Total,778517.0,1.7,12917.0,UF
+25,Paraíba,Homens,15 a 17 anos,77989.0,1.6,1236.0,UF
+25,Paraíba,Homens,18 a 24 anos,58641.0,1.1,669.0,UF
+25,Paraíba,Homens,25 anos ou mais,60176.0,1.0,605.0,UF
+25,Paraíba,Homens,6 a 14 anos,257768.0,3.4,8676.0,UF
+25,Paraíba,Homens,Total,454575.0,2.5,11187.0,UF
+25,Paraíba,Mulheres,15 a 17 anos,74261.0,1.0,713.0,UF
+25,Paraíba,Mulheres,18 a 24 anos,63089.0,0.8,488.0,UF
+25,Paraíba,Mulheres,25 anos ou mais,85226.0,1.1,904.0,UF
+25,Paraíba,Mulheres,6 a 14 anos,246121.0,1.1,2681.0,UF
+25,Paraíba,Mulheres,Total,468696.0,1.0,4786.0,UF
+25,Paraíba,Total,15 a 17 anos,152250.0,1.3,1949.0,UF
+25,Paraíba,Total,18 a 24 anos,121730.0,1.0,1157.0,UF
+25,Paraíba,Total,25 anos ou mais,145402.0,1.0,1509.0,UF
+25,Paraíba,Total,6 a 14 anos,503889.0,2.3,11357.0,UF
+25,Paraíba,Total,Total,923271.0,1.7,15972.0,UF
+26,Pernambuco,Homens,15 a 17 anos,177429.0,1.7,3064.0,UF
+26,Pernambuco,Homens,18 a 24 anos,119505.0,1.5,1828.0,UF
+26,Pernambuco,Homens,25 anos ou mais,132800.0,1.1,1506.0,UF
+26,Pernambuco,Homens,6 a 14 anos,592442.0,3.3,19524.0,UF
+26,Pernambuco,Homens,Total,1022176.0,2.5,25923.0,UF
+26,Pernambuco,Mulheres,15 a 17 anos,170942.0,0.7,1206.0,UF
+26,Pernambuco,Mulheres,18 a 24 anos,131002.0,0.9,1123.0,UF
+26,Pernambuco,Mulheres,25 anos ou mais,185637.0,1.1,2056.0,UF
+26,Pernambuco,Mulheres,6 a 14 anos,569711.0,1.1,6272.0,UF
+26,Pernambuco,Mulheres,Total,1057292.0,1.0,10656.0,UF
+26,Pernambuco,Total,15 a 17 anos,348372.0,1.2,4270.0,UF
+26,Pernambuco,Total,18 a 24 anos,250507.0,1.2,2951.0,UF
+26,Pernambuco,Total,25 anos ou mais,318437.0,1.1,3562.0,UF
+26,Pernambuco,Total,6 a 14 anos,1162153.0,2.2,25796.0,UF
+26,Pernambuco,Total,Total,2079468.0,1.8,36579.0,UF
+27,Alagoas,Homens,15 a 17 anos,67806.0,1.6,1064.0,UF
+27,Alagoas,Homens,18 a 24 anos,45508.0,1.2,535.0,UF
+27,Alagoas,Homens,25 anos ou mais,50719.0,1.2,628.0,UF
+27,Alagoas,Homens,6 a 14 anos,217471.0,2.6,5620.0,UF
+27,Alagoas,Homens,Total,381504.0,2.1,7848.0,UF
+27,Alagoas,Mulheres,15 a 17 anos,64457.0,0.8,514.0,UF
+27,Alagoas,Mulheres,18 a 24 anos,51401.0,0.6,292.0,UF
+27,Alagoas,Mulheres,25 anos ou mais,81167.0,0.9,727.0,UF
+27,Alagoas,Mulheres,6 a 14 anos,211996.0,1.0,2104.0,UF
+27,Alagoas,Mulheres,Total,409021.0,0.9,3638.0,UF
+27,Alagoas,Total,15 a 17 anos,132263.0,1.2,1578.0,UF
+27,Alagoas,Total,18 a 24 anos,96909.0,0.9,828.0,UF
+27,Alagoas,Total,25 anos ou mais,131886.0,1.0,1355.0,UF
+27,Alagoas,Total,6 a 14 anos,429468.0,1.8,7724.0,UF
+27,Alagoas,Total,Total,790525.0,1.5,11485.0,UF
+28,Sergipe,Homens,15 a 17 anos,46324.0,1.7,788.0,UF
+28,Sergipe,Homens,18 a 24 anos,34730.0,1.4,480.0,UF
+28,Sergipe,Homens,25 anos ou mais,29762.0,1.2,357.0,UF
+28,Sergipe,Homens,6 a 14 anos,147299.0,3.4,5063.0,UF
+28,Sergipe,Homens,Total,258115.0,2.6,6688.0,UF
+28,Sergipe,Mulheres,15 a 17 anos,46555.0,0.5,221.0,UF
+28,Sergipe,Mulheres,18 a 24 anos,38167.0,0.8,287.0,UF
+28,Sergipe,Mulheres,25 anos ou mais,40448.0,1.0,400.0,UF
+28,Sergipe,Mulheres,6 a 14 anos,140953.0,1.3,1823.0,UF
+28,Sergipe,Mulheres,Total,266123.0,1.0,2731.0,UF
+28,Sergipe,Total,15 a 17 anos,92879.0,1.1,1009.0,UF
+28,Sergipe,Total,18 a 24 anos,72897.0,1.1,767.0,UF
+28,Sergipe,Total,25 anos ou mais,70210.0,1.1,757.0,UF
+28,Sergipe,Total,6 a 14 anos,288252.0,2.4,6887.0,UF
+28,Sergipe,Total,Total,524238.0,1.8,9419.0,UF
+29,Bahia,Homens,15 a 17 anos,276215.0,1.4,3898.0,UF
+29,Bahia,Homens,18 a 24 anos,199181.0,1.5,2911.0,UF
+29,Bahia,Homens,25 anos ou mais,202151.0,1.2,2509.0,UF
+29,Bahia,Homens,6 a 14 anos,897240.0,2.3,21077.0,UF
+29,Bahia,Homens,Total,1574787.0,1.9,30395.0,UF
+29,Bahia,Mulheres,15 a 17 anos,270468.0,0.6,1573.0,UF
+29,Bahia,Mulheres,18 a 24 anos,214303.0,0.7,1570.0,UF
+29,Bahia,Mulheres,25 anos ou mais,290999.0,0.9,2725.0,UF
+29,Bahia,Mulheres,6 a 14 anos,866374.0,0.9,7464.0,UF
+29,Bahia,Mulheres,Total,1642144.0,0.8,13332.0,UF
+29,Bahia,Total,15 a 17 anos,546683.0,1.0,5471.0,UF
+29,Bahia,Total,18 a 24 anos,413483.0,1.1,4482.0,UF
+29,Bahia,Total,25 anos ou mais,493150.0,1.1,5233.0,UF
+29,Bahia,Total,6 a 14 anos,1763614.0,1.6,28541.0,UF
+29,Bahia,Total,Total,3216930.0,1.4,43728.0,UF
+31,Minas Gerais,Homens,15 a 17 anos,351730.0,1.8,6223.0,UF
+31,Minas Gerais,Homens,18 a 24 anos,251061.0,1.5,3661.0,UF
+31,Minas Gerais,Homens,25 anos ou mais,321088.0,1.3,4015.0,UF
+31,Minas Gerais,Homens,6 a 14 anos,1150113.0,3.0,34834.0,UF
+31,Minas Gerais,Homens,Total,2073993.0,2.3,48733.0,UF
+31,Minas Gerais,Mulheres,15 a 17 anos,346446.0,0.9,2948.0,UF
+31,Minas Gerais,Mulheres,18 a 24 anos,298127.0,0.8,2353.0,UF
+31,Minas Gerais,Mulheres,25 anos ou mais,422818.0,1.0,4277.0,UF
+31,Minas Gerais,Mulheres,6 a 14 anos,1105684.0,1.1,12697.0,UF
+31,Minas Gerais,Mulheres,Total,2173076.0,1.0,22275.0,UF
+31,Minas Gerais,Total,15 a 17 anos,698176.0,1.3,9171.0,UF
+31,Minas Gerais,Total,18 a 24 anos,549189.0,1.1,6014.0,UF
+31,Minas Gerais,Total,25 anos ou mais,743906.0,1.1,8292.0,UF
+31,Minas Gerais,Total,6 a 14 anos,2255798.0,2.1,47531.0,UF
+31,Minas Gerais,Total,Total,4247069.0,1.7,71009.0,UF
+32,Espírito Santo,Homens,15 a 17 anos,64571.0,2.3,1464.0,UF
+32,Espírito Santo,Homens,18 a 24 anos,48819.0,1.5,745.0,UF
+32,Espírito Santo,Homens,25 anos ou mais,62544.0,1.3,783.0,UF
+32,Espírito Santo,Homens,6 a 14 anos,226755.0,4.2,9552.0,UF
+32,Espírito Santo,Homens,Total,402689.0,3.1,12545.0,UF
+32,Espírito Santo,Mulheres,15 a 17 anos,63067.0,1.1,719.0,UF
+32,Espírito Santo,Mulheres,18 a 24 anos,58336.0,1.0,561.0,UF
+32,Espírito Santo,Mulheres,25 anos ou mais,74741.0,1.0,759.0,UF
+32,Espírito Santo,Mulheres,6 a 14 anos,218206.0,1.3,2897.0,UF
+32,Espírito Santo,Mulheres,Total,414350.0,1.2,4937.0,UF
+32,Espírito Santo,Total,15 a 17 anos,127638.0,1.7,2183.0,UF
+32,Espírito Santo,Total,18 a 24 anos,107155.0,1.2,1307.0,UF
+32,Espírito Santo,Total,25 anos ou mais,137284.0,1.1,1543.0,UF
+32,Espírito Santo,Total,6 a 14 anos,444961.0,2.8,12449.0,UF
+32,Espírito Santo,Total,Total,817039.0,2.1,17482.0,UF
+33,Rio de Janeiro,Homens,15 a 17 anos,263872.0,2.1,5593.0,UF
+33,Rio de Janeiro,Homens,18 a 24 anos,220974.0,1.9,4213.0,UF
+33,Rio de Janeiro,Homens,25 anos ou mais,329309.0,1.5,4848.0,UF
+33,Rio de Janeiro,Homens,6 a 14 anos,893190.0,3.3,29685.0,UF
+33,Rio de Janeiro,Homens,Total,1707344.0,2.6,44339.0,UF
+33,Rio de Janeiro,Mulheres,15 a 17 anos,254407.0,0.9,2402.0,UF
+33,Rio de Janeiro,Mulheres,18 a 24 anos,246130.0,1.1,2712.0,UF
+33,Rio de Janeiro,Mulheres,25 anos ou mais,427660.0,1.3,5665.0,UF
+33,Rio de Janeiro,Mulheres,6 a 14 anos,857496.0,1.2,10688.0,UF
+33,Rio de Janeiro,Mulheres,Total,1785693.0,1.2,21466.0,UF
+33,Rio de Janeiro,Total,15 a 17 anos,518279.0,1.5,7994.0,UF
+33,Rio de Janeiro,Total,18 a 24 anos,467103.0,1.5,6925.0,UF
+33,Rio de Janeiro,Total,25 anos ou mais,756969.0,1.4,10513.0,UF
+33,Rio de Janeiro,Total,6 a 14 anos,1750686.0,2.3,40373.0,UF
+33,Rio de Janeiro,Total,Total,3493037.0,1.9,65805.0,UF
+35,São Paulo,Homens,15 a 17 anos,740261.0,1.8,13219.0,UF
+35,São Paulo,Homens,18 a 24 anos,534188.0,1.6,8569.0,UF
+35,São Paulo,Homens,25 anos ou mais,833828.0,1.5,12883.0,UF
+35,São Paulo,Homens,6 a 14 anos,2496271.0,2.8,70849.0,UF
+35,São Paulo,Homens,Total,4604548.0,2.3,105520.0,UF
+35,São Paulo,Mulheres,15 a 17 anos,714096.0,0.7,5318.0,UF
+35,São Paulo,Mulheres,18 a 24 anos,608058.0,0.9,5472.0,UF
+35,São Paulo,Mulheres,25 anos ou mais,1042510.0,1.4,15044.0,UF
+35,São Paulo,Mulheres,6 a 14 anos,2389493.0,1.1,25197.0,UF
+35,São Paulo,Mulheres,Total,4754156.0,1.1,51031.0,UF
+35,São Paulo,Total,15 a 17 anos,1454357.0,1.3,18537.0,UF
+35,São Paulo,Total,18 a 24 anos,1142246.0,1.2,14041.0,UF
+35,São Paulo,Total,25 anos ou mais,1876338.0,1.5,27926.0,UF
+35,São Paulo,Total,6 a 14 anos,4885764.0,2.0,96046.0,UF
+35,São Paulo,Total,Total,9358705.0,1.7,156551.0,UF
+41,Paraná,Homens,15 a 17 anos,195090.0,1.8,3518.0,UF
+41,Paraná,Homens,18 a 24 anos,160055.0,1.7,2711.0,UF
+41,Paraná,Homens,25 anos ou mais,208895.0,1.4,2933.0,UF
+41,Paraná,Homens,6 a 14 anos,679580.0,3.0,20715.0,UF
+41,Paraná,Homens,Total,1243621.0,2.4,29877.0,UF
+41,Paraná,Mulheres,15 a 17 anos,193068.0,0.8,1489.0,UF
+41,Paraná,Mulheres,18 a 24 anos,189268.0,0.8,1554.0,UF
+41,Paraná,Mulheres,25 anos ou mais,261044.0,1.1,2948.0,UF
+41,Paraná,Mulheres,6 a 14 anos,651473.0,1.1,6951.0,UF
+41,Paraná,Mulheres,Total,1294853.0,1.0,12942.0,UF
+41,Paraná,Total,15 a 17 anos,388158.0,1.3,5008.0,UF
+41,Paraná,Total,18 a 24 anos,349323.0,1.2,4265.0,UF
+41,Paraná,Total,25 anos ou mais,469939.0,1.3,5881.0,UF
+41,Paraná,Total,6 a 14 anos,1331054.0,2.1,27666.0,UF
+41,Paraná,Total,Total,2538474.0,1.7,42819.0,UF
+42,Santa Catarina,Homens,15 a 17 anos,126538.0,2.4,2979.0,UF
+42,Santa Catarina,Homens,18 a 24 anos,98470.0,1.4,1387.0,UF
+42,Santa Catarina,Homens,25 anos ou mais,123422.0,1.5,1885.0,UF
+42,Santa Catarina,Homens,6 a 14 anos,433849.0,3.5,15276.0,UF
+42,Santa Catarina,Homens,Total,782279.0,2.8,21526.0,UF
+42,Santa Catarina,Mulheres,15 a 17 anos,121728.0,0.8,972.0,UF
+42,Santa Catarina,Mulheres,18 a 24 anos,120361.0,0.9,1031.0,UF
+42,Santa Catarina,Mulheres,25 anos ou mais,159886.0,1.0,1609.0,UF
+42,Santa Catarina,Mulheres,6 a 14 anos,411650.0,1.2,4815.0,UF
+42,Santa Catarina,Mulheres,Total,813626.0,1.0,8428.0,UF
+42,Santa Catarina,Total,15 a 17 anos,248265.0,1.6,3951.0,UF
+42,Santa Catarina,Total,18 a 24 anos,218832.0,1.1,2418.0,UF
+42,Santa Catarina,Total,25 anos ou mais,283308.0,1.2,3494.0,UF
+42,Santa Catarina,Total,6 a 14 anos,845500.0,2.4,20090.0,UF
+42,Santa Catarina,Total,Total,1595905.0,1.9,29954.0,UF
+43,Rio Grande do Sul,Homens,15 a 17 anos,173209.0,1.9,3293.0,UF
+43,Rio Grande do Sul,Homens,18 a 24 anos,137450.0,1.5,2122.0,UF
+43,Rio Grande do Sul,Homens,25 anos ou mais,193542.0,1.1,2116.0,UF
+43,Rio Grande do Sul,Homens,6 a 14 anos,585135.0,3.0,17756.0,UF
+43,Rio Grande do Sul,Homens,Total,1089335.0,2.3,25288.0,UF
+43,Rio Grande do Sul,Mulheres,15 a 17 anos,171327.0,0.9,1589.0,UF
+43,Rio Grande do Sul,Mulheres,18 a 24 anos,172336.0,0.8,1336.0,UF
+43,Rio Grande do Sul,Mulheres,25 anos ou mais,254238.0,1.0,2567.0,UF
+43,Rio Grande do Sul,Mulheres,6 a 14 anos,560461.0,1.1,6048.0,UF
+43,Rio Grande do Sul,Mulheres,Total,1158363.0,1.0,11540.0,UF
+43,Rio Grande do Sul,Total,15 a 17 anos,344536.0,1.4,4882.0,UF
+43,Rio Grande do Sul,Total,18 a 24 anos,309786.0,1.1,3458.0,UF
+43,Rio Grande do Sul,Total,25 anos ou mais,447780.0,1.0,4684.0,UF
+43,Rio Grande do Sul,Total,6 a 14 anos,1145596.0,2.1,23804.0,UF
+43,Rio Grande do Sul,Total,Total,2247698.0,1.6,36827.0,UF
+50,Mato Grosso do Sul,Homens,15 a 17 anos,50348.0,1.5,752.0,UF
+50,Mato Grosso do Sul,Homens,18 a 24 anos,38711.0,1.8,681.0,UF
+50,Mato Grosso do Sul,Homens,25 anos ou mais,55759.0,1.2,669.0,UF
+50,Mato Grosso do Sul,Homens,6 a 14 anos,183681.0,2.5,4683.0,UF
+50,Mato Grosso do Sul,Homens,Total,328499.0,2.1,6785.0,UF
+50,Mato Grosso do Sul,Mulheres,15 a 17 anos,48380.0,0.8,384.0,UF
+50,Mato Grosso do Sul,Mulheres,18 a 24 anos,43434.0,0.7,315.0,UF
+50,Mato Grosso do Sul,Mulheres,25 anos ou mais,67294.0,0.8,533.0,UF
+50,Mato Grosso do Sul,Mulheres,6 a 14 anos,175399.0,0.9,1629.0,UF
+50,Mato Grosso do Sul,Mulheres,Total,334507.0,0.9,2861.0,UF
+50,Mato Grosso do Sul,Total,15 a 17 anos,98729.0,1.2,1136.0,UF
+50,Mato Grosso do Sul,Total,18 a 24 anos,82144.0,1.2,996.0,UF
+50,Mato Grosso do Sul,Total,25 anos ou mais,123053.0,1.0,1202.0,UF
+50,Mato Grosso do Sul,Total,6 a 14 anos,359080.0,1.8,6312.0,UF
+50,Mato Grosso do Sul,Total,Total,663006.0,1.5,9646.0,UF
+51,Mato Grosso,Homens,15 a 17 anos,66515.0,1.6,1074.0,UF
+51,Mato Grosso,Homens,18 a 24 anos,46743.0,2.0,934.0,UF
+51,Mato Grosso,Homens,25 anos ou mais,69875.0,1.4,952.0,UF
+51,Mato Grosso,Homens,6 a 14 anos,246085.0,2.2,5508.0,UF
+51,Mato Grosso,Homens,Total,429217.0,2.0,8468.0,UF
+51,Mato Grosso,Mulheres,15 a 17 anos,64056.0,0.9,562.0,UF
+51,Mato Grosso,Mulheres,18 a 24 anos,55273.0,0.9,499.0,UF
+51,Mato Grosso,Mulheres,25 anos ou mais,83882.0,1.6,1376.0,UF
+51,Mato Grosso,Mulheres,6 a 14 anos,235080.0,0.9,2019.0,UF
+51,Mato Grosso,Mulheres,Total,438291.0,1.0,4455.0,UF
+51,Mato Grosso,Total,15 a 17 anos,130571.0,1.3,1636.0,UF
+51,Mato Grosso,Total,18 a 24 anos,102015.0,1.4,1433.0,UF
+51,Mato Grosso,Total,25 anos ou mais,153757.0,1.5,2328.0,UF
+51,Mato Grosso,Total,6 a 14 anos,481165.0,1.6,7526.0,UF
+51,Mato Grosso,Total,Total,867509.0,1.5,12923.0,UF
+52,Goiás,Homens,15 a 17 anos,127296.0,1.5,1900.0,UF
+52,Goiás,Homens,18 a 24 anos,96091.0,1.2,1192.0,UF
+52,Goiás,Homens,25 anos ou mais,118607.0,1.2,1454.0,UF
+52,Goiás,Homens,6 a 14 anos,436333.0,2.3,10152.0,UF
+52,Goiás,Homens,Total,778327.0,1.9,14698.0,UF
+52,Goiás,Mulheres,15 a 17 anos,126190.0,0.8,1045.0,UF
+52,Goiás,Mulheres,18 a 24 anos,112595.0,0.8,855.0,UF
+52,Goiás,Mulheres,25 anos ou mais,149879.0,0.9,1424.0,UF
+52,Goiás,Mulheres,6 a 14 anos,421414.0,0.8,3466.0,UF
+52,Goiás,Mulheres,Total,810077.0,0.8,6789.0,UF
+52,Goiás,Total,15 a 17 anos,253486.0,1.2,2945.0,UF
+52,Goiás,Total,18 a 24 anos,208686.0,1.0,2047.0,UF
+52,Goiás,Total,25 anos ou mais,268486.0,1.1,2878.0,UF
+52,Goiás,Total,6 a 14 anos,857747.0,1.6,13618.0,UF
+52,Goiás,Total,Total,1588405.0,1.4,21487.0,UF
+53,Distrito Federal,Homens,15 a 17 anos,55897.0,2.2,1225.0,UF
+53,Distrito Federal,Homens,18 a 24 anos,54372.0,1.3,723.0,UF
+53,Distrito Federal,Homens,25 anos ou mais,68775.0,1.2,830.0,UF
+53,Distrito Federal,Homens,6 a 14 anos,167127.0,3.1,5237.0,UF
+53,Distrito Federal,Homens,Total,346171.0,2.3,8016.0,UF
+53,Distrito Federal,Mulheres,15 a 17 anos,54384.0,0.8,427.0,UF
+53,Distrito Federal,Mulheres,18 a 24 anos,61338.0,0.9,557.0,UF
+53,Distrito Federal,Mulheres,25 anos ou mais,87779.0,1.2,1081.0,UF
+53,Distrito Federal,Mulheres,6 a 14 anos,159737.0,1.0,1647.0,UF
+53,Distrito Federal,Mulheres,Total,363238.0,1.0,3711.0,UF
+53,Distrito Federal,Total,15 a 17 anos,110280.0,1.5,1652.0,UF
+53,Distrito Federal,Total,18 a 24 anos,115711.0,1.1,1280.0,UF
+53,Distrito Federal,Total,25 anos ou mais,156554.0,1.2,1911.0,UF
+53,Distrito Federal,Total,6 a 14 anos,326864.0,2.1,6884.0,UF
+53,Distrito Federal,Total,Total,709410.0,1.7,11727.0,UF
+1600055,Serra do Navio - AP,Homens,15 a 17 anos,106.0,4.9,5.0,MUN
+1600055,Serra do Navio - AP,Homens,18 a 24 anos,64.0,,,MUN
+1600055,Serra do Navio - AP,Homens,25 anos ou mais,43.0,,,MUN
+1600055,Serra do Navio - AP,Homens,6 a 14 anos,386.0,3.3,13.0,MUN
+1600055,Serra do Navio - AP,Homens,Total,599.0,3.0,18.0,MUN
+1600055,Serra do Navio - AP,Mulheres,15 a 17 anos,126.0,,,MUN
+1600055,Serra do Navio - AP,Mulheres,18 a 24 anos,45.0,,,MUN
+1600055,Serra do Navio - AP,Mulheres,25 anos ou mais,96.0,,,MUN
+1600055,Serra do Navio - AP,Mulheres,6 a 14 anos,374.0,,,MUN
+1600055,Serra do Navio - AP,Mulheres,Total,641.0,,,MUN
+1600055,Serra do Navio - AP,Total,15 a 17 anos,232.0,2.2,5.0,MUN
+1600055,Serra do Navio - AP,Total,18 a 24 anos,109.0,,,MUN
+1600055,Serra do Navio - AP,Total,25 anos ou mais,140.0,,,MUN
+1600055,Serra do Navio - AP,Total,6 a 14 anos,760.0,1.7,13.0,MUN
+1600055,Serra do Navio - AP,Total,Total,1240.0,1.5,18.0,MUN
+1600105,Amapá - AP,Homens,15 a 17 anos,239.0,,,MUN
+1600105,Amapá - AP,Homens,18 a 24 anos,104.0,7.2,8.0,MUN
+1600105,Amapá - AP,Homens,25 anos ou mais,111.0,,,MUN
+1600105,Amapá - AP,Homens,6 a 14 anos,685.0,9.6,66.0,MUN
+1600105,Amapá - AP,Homens,Total,1138.0,6.4,73.0,MUN
+1600105,Amapá - AP,Mulheres,15 a 17 anos,150.0,,,MUN
+1600105,Amapá - AP,Mulheres,18 a 24 anos,100.0,,,MUN
+1600105,Amapá - AP,Mulheres,25 anos ou mais,176.0,,,MUN
+1600105,Amapá - AP,Mulheres,6 a 14 anos,666.0,2.2,14.0,MUN
+1600105,Amapá - AP,Mulheres,Total,1093.0,1.3,14.0,MUN
+1600105,Amapá - AP,Total,15 a 17 anos,389.0,,,MUN
+1600105,Amapá - AP,Total,18 a 24 anos,203.0,3.7,8.0,MUN
+1600105,Amapá - AP,Total,25 anos ou mais,287.0,,,MUN
+1600105,Amapá - AP,Total,6 a 14 anos,1351.0,5.9,80.0,MUN
+1600105,Amapá - AP,Total,Total,2230.0,3.9,88.0,MUN
+1600154,Pedra Branca do Amapari - AP,Homens,15 a 17 anos,358.0,0.5,2.0,MUN
+1600154,Pedra Branca do Amapari - AP,Homens,18 a 24 anos,233.0,4.6,11.0,MUN
+1600154,Pedra Branca do Amapari - AP,Homens,25 anos ou mais,309.0,1.8,5.0,MUN
+1600154,Pedra Branca do Amapari - AP,Homens,6 a 14 anos,1339.0,3.4,46.0,MUN
+1600154,Pedra Branca do Amapari - AP,Homens,Total,2239.0,2.9,64.0,MUN
+1600154,Pedra Branca do Amapari - AP,Mulheres,15 a 17 anos,275.0,,,MUN
+1600154,Pedra Branca do Amapari - AP,Mulheres,18 a 24 anos,231.0,0.4,1.0,MUN
+1600154,Pedra Branca do Amapari - AP,Mulheres,25 anos ou mais,384.0,0.3,1.0,MUN
+1600154,Pedra Branca do Amapari - AP,Mulheres,6 a 14 anos,1242.0,,,MUN
+1600154,Pedra Branca do Amapari - AP,Mulheres,Total,2132.0,0.1,2.0,MUN
+1600154,Pedra Branca do Amapari - AP,Total,15 a 17 anos,633.0,0.3,2.0,MUN
+1600154,Pedra Branca do Amapari - AP,Total,18 a 24 anos,464.0,2.5,12.0,MUN
+1600154,Pedra Branca do Amapari - AP,Total,25 anos ou mais,693.0,0.9,6.0,MUN
+1600154,Pedra Branca do Amapari - AP,Total,6 a 14 anos,2581.0,1.8,46.0,MUN
+1600154,Pedra Branca do Amapari - AP,Total,Total,4370.0,1.5,66.0,MUN
+1600204,Calçoene - AP,Homens,15 a 17 anos,245.0,,,MUN
+1600204,Calçoene - AP,Homens,18 a 24 anos,112.0,,,MUN
+1600204,Calçoene - AP,Homens,25 anos ou mais,67.0,,,MUN
+1600204,Calçoene - AP,Homens,6 a 14 anos,896.0,3.7,33.0,MUN
+1600204,Calçoene - AP,Homens,Total,1319.0,2.5,33.0,MUN
+1600204,Calçoene - AP,Mulheres,15 a 17 anos,260.0,2.2,6.0,MUN
+1600204,Calçoene - AP,Mulheres,18 a 24 anos,134.0,,,MUN
+1600204,Calçoene - AP,Mulheres,25 anos ou mais,105.0,,,MUN
+1600204,Calçoene - AP,Mulheres,6 a 14 anos,885.0,,,MUN
+1600204,Calçoene - AP,Mulheres,Total,1384.0,0.4,6.0,MUN
+1600204,Calçoene - AP,Total,15 a 17 anos,504.0,1.1,6.0,MUN
+1600204,Calçoene - AP,Total,18 a 24 anos,246.0,,,MUN
+1600204,Calçoene - AP,Total,25 anos ou mais,172.0,,,MUN
+1600204,Calçoene - AP,Total,6 a 14 anos,1781.0,1.9,33.0,MUN
+1600204,Calçoene - AP,Total,Total,2703.0,1.4,39.0,MUN
+1600212,Cutias - AP,Homens,15 a 17 anos,126.0,,,MUN
+1600212,Cutias - AP,Homens,18 a 24 anos,60.0,,,MUN
+1600212,Cutias - AP,Homens,25 anos ou mais,88.0,4.1,4.0,MUN
+1600212,Cutias - AP,Homens,6 a 14 anos,407.0,1.9,8.0,MUN
+1600212,Cutias - AP,Homens,Total,682.0,1.7,11.0,MUN
+1600212,Cutias - AP,Mulheres,15 a 17 anos,120.0,,,MUN
+1600212,Cutias - AP,Mulheres,18 a 24 anos,60.0,,,MUN
+1600212,Cutias - AP,Mulheres,25 anos ou mais,110.0,,,MUN
+1600212,Cutias - AP,Mulheres,6 a 14 anos,451.0,0.7,3.0,MUN
+1600212,Cutias - AP,Mulheres,Total,741.0,0.4,3.0,MUN
+1600212,Cutias - AP,Total,15 a 17 anos,246.0,,,MUN
+1600212,Cutias - AP,Total,18 a 24 anos,120.0,,,MUN
+1600212,Cutias - AP,Total,25 anos ou mais,198.0,1.8,4.0,MUN
+1600212,Cutias - AP,Total,6 a 14 anos,858.0,1.2,11.0,MUN
+1600212,Cutias - AP,Total,Total,1423.0,1.0,14.0,MUN
+1600238,Ferreira Gomes - AP,Homens,15 a 17 anos,195.0,,,MUN
+1600238,Ferreira Gomes - AP,Homens,18 a 24 anos,107.0,,,MUN
+1600238,Ferreira Gomes - AP,Homens,25 anos ou mais,96.0,,,MUN
+1600238,Ferreira Gomes - AP,Homens,6 a 14 anos,720.0,6.4,46.0,MUN
+1600238,Ferreira Gomes - AP,Homens,Total,1118.0,4.1,46.0,MUN
+1600238,Ferreira Gomes - AP,Mulheres,15 a 17 anos,152.0,,,MUN
+1600238,Ferreira Gomes - AP,Mulheres,18 a 24 anos,115.0,,,MUN
+1600238,Ferreira Gomes - AP,Mulheres,25 anos ou mais,182.0,,,MUN
+1600238,Ferreira Gomes - AP,Mulheres,6 a 14 anos,715.0,0.7,5.0,MUN
+1600238,Ferreira Gomes - AP,Mulheres,Total,1163.0,0.4,5.0,MUN
+1600238,Ferreira Gomes - AP,Total,15 a 17 anos,346.0,,,MUN
+1600238,Ferreira Gomes - AP,Total,18 a 24 anos,222.0,,,MUN
+1600238,Ferreira Gomes - AP,Total,25 anos ou mais,278.0,,,MUN
+1600238,Ferreira Gomes - AP,Total,6 a 14 anos,1435.0,3.5,51.0,MUN
+1600238,Ferreira Gomes - AP,Total,Total,2281.0,2.2,51.0,MUN
+1600253,Itaubal - AP,Homens,15 a 17 anos,187.0,,,MUN
+1600253,Itaubal - AP,Homens,18 a 24 anos,59.0,,,MUN
+1600253,Itaubal - AP,Homens,25 anos ou mais,22.0,,,MUN
+1600253,Itaubal - AP,Homens,6 a 14 anos,548.0,0.7,4.0,MUN
+1600253,Itaubal - AP,Homens,Total,817.0,0.4,4.0,MUN
+1600253,Itaubal - AP,Mulheres,15 a 17 anos,111.0,,,MUN
+1600253,Itaubal - AP,Mulheres,18 a 24 anos,84.0,,,MUN
+1600253,Itaubal - AP,Mulheres,25 anos ou mais,72.0,,,MUN
+1600253,Itaubal - AP,Mulheres,6 a 14 anos,521.0,,,MUN
+1600253,Itaubal - AP,Mulheres,Total,788.0,,,MUN
+1600253,Itaubal - AP,Total,15 a 17 anos,298.0,,,MUN
+1600253,Itaubal - AP,Total,18 a 24 anos,143.0,,,MUN
+1600253,Itaubal - AP,Total,25 anos ou mais,94.0,,,MUN
+1600253,Itaubal - AP,Total,6 a 14 anos,1069.0,0.3,4.0,MUN
+1600253,Itaubal - AP,Total,Total,1605.0,0.2,4.0,MUN
+1600279,Laranjal do Jari - AP,Homens,15 a 17 anos,980.0,1.8,18.0,MUN
+1600279,Laranjal do Jari - AP,Homens,18 a 24 anos,677.0,1.5,10.0,MUN
+1600279,Laranjal do Jari - AP,Homens,25 anos ou mais,688.0,,,MUN
+1600279,Laranjal do Jari - AP,Homens,6 a 14 anos,3095.0,2.5,78.0,MUN
+1600279,Laranjal do Jari - AP,Homens,Total,5441.0,1.9,106.0,MUN
+1600279,Laranjal do Jari - AP,Mulheres,15 a 17 anos,945.0,,,MUN
+1600279,Laranjal do Jari - AP,Mulheres,18 a 24 anos,661.0,0.5,4.0,MUN
+1600279,Laranjal do Jari - AP,Mulheres,25 anos ou mais,934.0,1.9,18.0,MUN
+1600279,Laranjal do Jari - AP,Mulheres,6 a 14 anos,2887.0,2.0,57.0,MUN
+1600279,Laranjal do Jari - AP,Mulheres,Total,5427.0,1.4,78.0,MUN
+1600279,Laranjal do Jari - AP,Total,15 a 17 anos,1925.0,0.9,18.0,MUN
+1600279,Laranjal do Jari - AP,Total,18 a 24 anos,1338.0,1.0,14.0,MUN
+1600279,Laranjal do Jari - AP,Total,25 anos ou mais,1622.0,1.1,18.0,MUN
+1600279,Laranjal do Jari - AP,Total,6 a 14 anos,5982.0,2.2,134.0,MUN
+1600279,Laranjal do Jari - AP,Total,Total,10868.0,1.7,183.0,MUN
+1600303,Macapá - AP,Homens,15 a 17 anos,10017.0,3.3,328.0,MUN
+1600303,Macapá - AP,Homens,18 a 24 anos,9156.0,1.5,139.0,MUN
+1600303,Macapá - AP,Homens,25 anos ou mais,9646.0,2.5,245.0,MUN
+1600303,Macapá - AP,Homens,6 a 14 anos,33022.0,4.4,1466.0,MUN
+1600303,Macapá - AP,Homens,Total,61841.0,3.5,2179.0,MUN
+1600303,Macapá - AP,Mulheres,15 a 17 anos,8699.0,1.3,109.0,MUN
+1600303,Macapá - AP,Mulheres,18 a 24 anos,9692.0,0.5,44.0,MUN
+1600303,Macapá - AP,Mulheres,25 anos ou mais,12412.0,0.5,61.0,MUN
+1600303,Macapá - AP,Mulheres,6 a 14 anos,32734.0,1.9,636.0,MUN
+1600303,Macapá - AP,Mulheres,Total,63537.0,1.3,851.0,MUN
+1600303,Macapá - AP,Total,15 a 17 anos,18716.0,2.3,437.0,MUN
+1600303,Macapá - AP,Total,18 a 24 anos,18848.0,1.0,184.0,MUN
+1600303,Macapá - AP,Total,25 anos ou mais,22058.0,1.4,307.0,MUN
+1600303,Macapá - AP,Total,6 a 14 anos,65756.0,3.2,2103.0,MUN
+1600303,Macapá - AP,Total,Total,125377.0,2.4,3031.0,MUN
+1600402,Mazagão - AP,Homens,15 a 17 anos,694.0,0.8,5.0,MUN
+1600402,Mazagão - AP,Homens,18 a 24 anos,448.0,,,MUN
+1600402,Mazagão - AP,Homens,25 anos ou mais,276.0,4.2,12.0,MUN
+1600402,Mazagão - AP,Homens,6 a 14 anos,2008.0,1.0,19.0,MUN
+1600402,Mazagão - AP,Homens,Total,3426.0,1.1,36.0,MUN
+1600402,Mazagão - AP,Mulheres,15 a 17 anos,594.0,,,MUN
+1600402,Mazagão - AP,Mulheres,18 a 24 anos,503.0,,,MUN
+1600402,Mazagão - AP,Mulheres,25 anos ou mais,597.0,,,MUN
+1600402,Mazagão - AP,Mulheres,6 a 14 anos,2044.0,0.9,19.0,MUN
+1600402,Mazagão - AP,Mulheres,Total,3737.0,0.5,19.0,MUN
+1600402,Mazagão - AP,Total,15 a 17 anos,1289.0,0.4,5.0,MUN
+1600402,Mazagão - AP,Total,18 a 24 anos,951.0,,,MUN
+1600402,Mazagão - AP,Total,25 anos ou mais,873.0,1.3,12.0,MUN
+1600402,Mazagão - AP,Total,6 a 14 anos,4051.0,0.9,38.0,MUN
+1600402,Mazagão - AP,Total,Total,7164.0,0.8,55.0,MUN
+1600501,Oiapoque - AP,Homens,15 a 17 anos,761.0,0.6,5.0,MUN
+1600501,Oiapoque - AP,Homens,18 a 24 anos,562.0,,,MUN
+1600501,Oiapoque - AP,Homens,25 anos ou mais,626.0,,,MUN
+1600501,Oiapoque - AP,Homens,6 a 14 anos,2596.0,0.5,14.0,MUN
+1600501,Oiapoque - AP,Homens,Total,4544.0,0.4,18.0,MUN
+1600501,Oiapoque - AP,Mulheres,15 a 17 anos,760.0,1.2,9.0,MUN
+1600501,Oiapoque - AP,Mulheres,18 a 24 anos,680.0,,,MUN
+1600501,Oiapoque - AP,Mulheres,25 anos ou mais,576.0,,,MUN
+1600501,Oiapoque - AP,Mulheres,6 a 14 anos,2354.0,1.1,26.0,MUN
+1600501,Oiapoque - AP,Mulheres,Total,4370.0,0.8,36.0,MUN
+1600501,Oiapoque - AP,Total,15 a 17 anos,1521.0,0.9,14.0,MUN
+1600501,Oiapoque - AP,Total,18 a 24 anos,1242.0,,,MUN
+1600501,Oiapoque - AP,Total,25 anos ou mais,1202.0,,,MUN
+1600501,Oiapoque - AP,Total,6 a 14 anos,4950.0,0.8,40.0,MUN
+1600501,Oiapoque - AP,Total,Total,8914.0,0.6,54.0,MUN
+1600535,Porto Grande - AP,Homens,15 a 17 anos,402.0,,,MUN
+1600535,Porto Grande - AP,Homens,18 a 24 anos,277.0,,,MUN
+1600535,Porto Grande - AP,Homens,25 anos ou mais,211.0,6.1,13.0,MUN
+1600535,Porto Grande - AP,Homens,6 a 14 anos,1624.0,2.6,42.0,MUN
+1600535,Porto Grande - AP,Homens,Total,2514.0,2.2,55.0,MUN
+1600535,Porto Grande - AP,Mulheres,15 a 17 anos,458.0,2.4,11.0,MUN
+1600535,Porto Grande - AP,Mulheres,18 a 24 anos,250.0,,,MUN
+1600535,Porto Grande - AP,Mulheres,25 anos ou mais,253.0,,,MUN
+1600535,Porto Grande - AP,Mulheres,6 a 14 anos,1587.0,0.8,13.0,MUN
+1600535,Porto Grande - AP,Mulheres,Total,2548.0,0.9,24.0,MUN
+1600535,Porto Grande - AP,Total,15 a 17 anos,860.0,1.3,11.0,MUN
+1600535,Porto Grande - AP,Total,18 a 24 anos,527.0,,,MUN
+1600535,Porto Grande - AP,Total,25 anos ou mais,464.0,2.8,13.0,MUN
+1600535,Porto Grande - AP,Total,6 a 14 anos,3211.0,1.7,55.0,MUN
+1600535,Porto Grande - AP,Total,Total,5063.0,1.6,79.0,MUN
+1600550,Pracuúba - AP,Homens,15 a 17 anos,94.0,,,MUN
+1600550,Pracuúba - AP,Homens,18 a 24 anos,53.0,,,MUN
+1600550,Pracuúba - AP,Homens,25 anos ou mais,23.0,,,MUN
+1600550,Pracuúba - AP,Homens,6 a 14 anos,421.0,1.6,7.0,MUN
+1600550,Pracuúba - AP,Homens,Total,591.0,1.2,7.0,MUN
+1600550,Pracuúba - AP,Mulheres,15 a 17 anos,85.0,,,MUN
+1600550,Pracuúba - AP,Mulheres,18 a 24 anos,71.0,4.4,3.0,MUN
+1600550,Pracuúba - AP,Mulheres,25 anos ou mais,47.0,,,MUN
+1600550,Pracuúba - AP,Mulheres,6 a 14 anos,379.0,,,MUN
+1600550,Pracuúba - AP,Mulheres,Total,581.0,0.5,3.0,MUN
+1600550,Pracuúba - AP,Total,15 a 17 anos,178.0,,,MUN
+1600550,Pracuúba - AP,Total,18 a 24 anos,125.0,2.5,3.0,MUN
+1600550,Pracuúba - AP,Total,25 anos ou mais,70.0,,,MUN
+1600550,Pracuúba - AP,Total,6 a 14 anos,799.0,0.9,7.0,MUN
+1600550,Pracuúba - AP,Total,Total,1172.0,0.9,10.0,MUN
+1600600,Santana - AP,Homens,15 a 17 anos,2624.0,2.6,69.0,MUN
+1600600,Santana - AP,Homens,18 a 24 anos,1905.0,1.5,28.0,MUN
+1600600,Santana - AP,Homens,25 anos ou mais,1730.0,1.7,30.0,MUN
+1600600,Santana - AP,Homens,6 a 14 anos,8289.0,5.3,443.0,MUN
+1600600,Santana - AP,Homens,Total,14548.0,3.9,570.0,MUN
+1600600,Santana - AP,Mulheres,15 a 17 anos,2571.0,1.0,25.0,MUN
+1600600,Santana - AP,Mulheres,18 a 24 anos,2195.0,0.5,10.0,MUN
+1600600,Santana - AP,Mulheres,25 anos ou mais,2585.0,0.4,11.0,MUN
+1600600,Santana - AP,Mulheres,6 a 14 anos,8386.0,1.9,156.0,MUN
+1600600,Santana - AP,Mulheres,Total,15736.0,1.3,203.0,MUN
+1600600,Santana - AP,Total,15 a 17 anos,5195.0,1.8,94.0,MUN
+1600600,Santana - AP,Total,18 a 24 anos,4099.0,0.9,38.0,MUN
+1600600,Santana - AP,Total,25 anos ou mais,4315.0,1.0,41.0,MUN
+1600600,Santana - AP,Total,6 a 14 anos,16675.0,3.6,599.0,MUN
+1600600,Santana - AP,Total,Total,30284.0,2.6,773.0,MUN
+1600709,Tartarugalzinho - AP,Homens,15 a 17 anos,347.0,3.9,14.0,MUN
+1600709,Tartarugalzinho - AP,Homens,18 a 24 anos,141.0,4.2,6.0,MUN
+1600709,Tartarugalzinho - AP,Homens,25 anos ou mais,100.0,10.4,10.0,MUN
+1600709,Tartarugalzinho - AP,Homens,6 a 14 anos,1402.0,2.1,29.0,MUN
+1600709,Tartarugalzinho - AP,Homens,Total,1989.0,2.9,59.0,MUN
+1600709,Tartarugalzinho - AP,Mulheres,15 a 17 anos,387.0,,,MUN
+1600709,Tartarugalzinho - AP,Mulheres,18 a 24 anos,152.0,,,MUN
+1600709,Tartarugalzinho - AP,Mulheres,25 anos ou mais,222.0,1.8,4.0,MUN
+1600709,Tartarugalzinho - AP,Mulheres,6 a 14 anos,1204.0,1.8,21.0,MUN
+1600709,Tartarugalzinho - AP,Mulheres,Total,1965.0,1.3,25.0,MUN
+1600709,Tartarugalzinho - AP,Total,15 a 17 anos,734.0,1.8,14.0,MUN
+1600709,Tartarugalzinho - AP,Total,18 a 24 anos,293.0,2.0,6.0,MUN
+1600709,Tartarugalzinho - AP,Total,25 anos ou mais,322.0,4.5,14.0,MUN
+1600709,Tartarugalzinho - AP,Total,6 a 14 anos,2606.0,1.9,50.0,MUN
+1600709,Tartarugalzinho - AP,Total,Total,3955.0,2.1,84.0,MUN
+1600808,Vitória do Jari - AP,Homens,15 a 17 anos,333.0,4.7,15.0,MUN
+1600808,Vitória do Jari - AP,Homens,18 a 24 anos,181.0,3.6,7.0,MUN
+1600808,Vitória do Jari - AP,Homens,25 anos ou mais,136.0,,,MUN
+1600808,Vitória do Jari - AP,Homens,6 a 14 anos,1063.0,0.5,6.0,MUN
+1600808,Vitória do Jari - AP,Homens,Total,1713.0,1.6,28.0,MUN
+1600808,Vitória do Jari - AP,Mulheres,15 a 17 anos,282.0,,,MUN
+1600808,Vitória do Jari - AP,Mulheres,18 a 24 anos,168.0,3.5,6.0,MUN
+1600808,Vitória do Jari - AP,Mulheres,25 anos ou mais,238.0,,,MUN
+1600808,Vitória do Jari - AP,Mulheres,6 a 14 anos,1025.0,1.9,19.0,MUN
+1600808,Vitória do Jari - AP,Mulheres,Total,1713.0,1.5,25.0,MUN
+1600808,Vitória do Jari - AP,Total,15 a 17 anos,615.0,2.5,15.0,MUN
+1600808,Vitória do Jari - AP,Total,18 a 24 anos,349.0,3.5,12.0,MUN
+1600808,Vitória do Jari - AP,Total,25 anos ou mais,374.0,,,MUN
+1600808,Vitória do Jari - AP,Total,6 a 14 anos,2088.0,1.2,25.0,MUN
+1600808,Vitória do Jari - AP,Total,Total,3426.0,1.5,53.0,MUN
