@@ -5,11 +5,19 @@ com diagnóstico de autismo, com comparação nacional, análise por idade, sexo
 município e escolarização, modelagem de coortes de nascimento e projeções em quatro cenários
 (com simulação de Monte Carlo) até 2040.
 
+O documento segue as normas da ABNT para trabalhos técnico-científicos (NBR 14724: estrutura,
+margens 3/3/2/2 cm, Arial 12, entrelinha 1,5, paginação a partir da parte textual; NBR 6024:
+numeração progressiva; NBR 6027: sumário; NBR 6028: resumo e abstract; NBR 10520: citações
+autor-data; NBR 6023: referências) e as Normas de Apresentação Tabular do IBGE (título com
+conteúdo, local e período; fonte e notas no rodapé; laterais abertas; sinais convencionais),
+com a estrutura editorial do IBGE (apresentação, notas técnicas com conceitos e definições,
+glossário e apêndices).
+
 ## Entregáveis
 
 - `Estudo_Autismo_Amapa_Censo2022.docx` — relatório completo (Word)
-- `Estudo_Autismo_Amapa_Censo2022.pdf` — mesma versão em PDF (31 páginas)
-- `figuras/` — 11 figuras em PNG utilizadas no relatório
+- `Estudo_Autismo_Amapa_Censo2022.pdf` — mesma versão em PDF (48 páginas)
+- `figuras/` — 11 gráficos em PNG utilizados no relatório (títulos e fontes ficam no documento, conforme ABNT/IBGE)
 - `dados/` — bases tratadas (CSV), resultados consolidados (`results.json`) e dados brutos da API do SIDRA (`dados/brutos/`)
 - `scripts/` — pipeline reprodutível
 
@@ -26,9 +34,9 @@ cd scripts
 python3 fetch_sidra.py        # baixa as tabelas do SIDRA para ../raw (criar a pasta)
 python3 prep.py               # gera os CSV tratados em ../data
 python3 analysis.py           # indicadores, padronização, Bayes empírico, coortes, projeções -> ../data/results.json
-python3 figures.py            # figuras em ../fig
-node build_docx.js            # monta o DOCX em ../out (requer o pacote npm `docx`)
-python3 uno_pdf.py ../out/Estudo_Autismo_Amapa_Censo2022.docx ../out/Estudo_Autismo_Amapa_Censo2022.pdf  # PDF com sumário atualizado (LibreOffice)
+python3 figures_abnt.py       # gráficos em ../fig_abnt
+node build_abnt.js && bash pass_abnt.sh   # 1ª passagem: DOCX em ../out_abnt, PDF e números de página (LibreOffice/UNO)
+node build_abnt.js && bash pass_abnt.sh   # 2ª passagem: listas de gráficos e tabelas com os números de página
 ```
 
 Dependências Python: pandas, numpy, scipy, statsmodels, matplotlib, openpyxl.
