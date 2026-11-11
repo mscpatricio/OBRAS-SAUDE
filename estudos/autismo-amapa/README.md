@@ -1,5 +1,7 @@
 # Caracterização do Autismo no Amapá — Censo 2022 e Projeções 2022–2040
 
+**Autor:** Dr. Patrício Almeida
+
 Estudo técnico elaborado a partir dos dados do Censo Demográfico 2022 (IBGE) sobre pessoas
 com diagnóstico de autismo, com comparação nacional, análise por idade, sexo, cor ou raça,
 município e escolarização, modelagem de coortes de nascimento e projeções em quatro cenários
@@ -17,6 +19,7 @@ glossário e apêndices).
 
 - `Estudo_Autismo_Amapa_Censo2022.docx` — relatório completo (Word)
 - `Estudo_Autismo_Amapa_Censo2022.pdf` — mesma versão em PDF (48 páginas)
+- `apresentacao/` — slides da apresentação (17 slides, fonte HTML do deck publicado em claude.ai)
 - `figuras/` — 11 gráficos em PNG utilizados no relatório (títulos e fontes ficam no documento, conforme ABNT/IBGE)
 - `dados/` — bases tratadas (CSV), resultados consolidados (`results.json`) e dados brutos da API do SIDRA (`dados/brutos/`)
 - `scripts/` — pipeline reprodutível

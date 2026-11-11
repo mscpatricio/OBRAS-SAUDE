@@ -1,0 +1,18 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-11-11T14:10:00Z"},
+  "lists": "css",
+  "title": "Autismo no Amapá — Censo 2022",
+  "order": ["cover", "contexto", "numeros", "brasil", "idade", "sexo", "raca", "municipios", "concentracao", "educacao", "coortes", "cenarios", "projecoes", "publicos", "politicas", "limites", "fim"],
+  "sections": {
+    "s1": {"description": "O que o Censo 2022 mediu e por que importa.", "start": "cover"},
+    "s2": {"description": "Quem são e onde estão as pessoas com diagnóstico de autismo no Amapá.", "start": "numeros"},
+    "s3": {"description": "Como o diagnóstico cresce entre gerações e o que esperar até 2040.", "start": "coortes"},
+    "s4": {"description": "O que os dados recomendam às políticas públicas.", "start": "politicas"}
+  },
+  "faces": {
+    "source-serif-4": {"family": "Source Serif 4", "href": "https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400..700&display=swap"},
+    "ibm-plex-sans": {"family": "IBM Plex Sans", "href": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap"}
+  },
+  "designSystems": []
+}

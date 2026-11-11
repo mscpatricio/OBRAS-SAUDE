@@ -58,7 +58,9 @@ const SEC_PROPS={page:{size:{width:11906,height:16838},margin:{top:1701,bottom:1
 const capa=[
  new Paragraph({alignment:AlignmentType.CENTER,spacing:{line:360,after:0},children:[B('ESTUDO TÉCNICO')]}),
  new Paragraph({alignment:AlignmentType.CENTER,spacing:{line:360,after:0},children:[T('Informação Demográfica e Socioeconômica')]}),
- ...Array.from({length:8},()=>SP(240)),
+ ...Array.from({length:3},()=>SP(240)),
+ new Paragraph({alignment:AlignmentType.CENTER,spacing:{line:360,after:0},children:[B('DR. PATRÍCIO ALMEIDA')]}),
+ ...Array.from({length:4},()=>SP(240)),
  new Paragraph({alignment:AlignmentType.CENTER,spacing:{line:360,after:0},children:[new TextRun({text:'CARACTERIZAÇÃO DO AUTISMO NO AMAPÁ:',font:FONT,size:28,bold:true})]}),
  new Paragraph({alignment:AlignmentType.CENTER,spacing:{line:360,after:0},children:[new TextRun({text:'evidências do Censo Demográfico 2022, análise de coortes e projeções 2022-2040',font:FONT,size:28,bold:true})]}),
  ...Array.from({length:11},()=>SP(240)),
@@ -69,7 +71,9 @@ const capa=[
 const pre=[];
 // Folha de rosto
 pre.push(new Paragraph({alignment:AlignmentType.CENTER,spacing:{line:360,after:0},children:[B('ESTUDO TÉCNICO')]}));
-pre.push(...Array.from({length:6},()=>SP(240)));
+pre.push(...Array.from({length:2},()=>SP(240)));
+pre.push(new Paragraph({alignment:AlignmentType.CENTER,spacing:{line:360,after:0},children:[B('DR. PATRÍCIO ALMEIDA')]}));
+pre.push(...Array.from({length:3},()=>SP(240)));
 pre.push(new Paragraph({alignment:AlignmentType.CENTER,spacing:{line:360,after:0},children:[new TextRun({text:'CARACTERIZAÇÃO DO AUTISMO NO AMAPÁ:',font:FONT,size:28,bold:true})]}));
 pre.push(new Paragraph({alignment:AlignmentType.CENTER,spacing:{line:360,after:0},children:[new TextRun({text:'evidências do Censo Demográfico 2022, análise de coortes e projeções 2022-2040',font:FONT,size:28,bold:true})]}));
 pre.push(...Array.from({length:4},()=>SP(240)));
@@ -82,6 +86,7 @@ pre.push(PB());
 pre.push(PRE('APRESENTAÇÃO'));
 pre.push(P(`O Censo Demográfico 2022 investigou, pela primeira vez na história dos recenseamentos brasileiros, a existência de diagnóstico de autismo entre os moradores dos domicílios, em cumprimento à Lei nº 13.861, de 18 de julho de 2019. A divulgação dos resultados preliminares da amostra, em maio de 2025, ofereceu ao País a primeira medida oficial e territorialmente desagregada desse fenômeno, com informações para Brasil, Grandes Regiões, Unidades da Federação e Municípios.`));
 pre.push(P(`Este estudo técnico reúne, organiza e analisa essas informações para o Estado do Amapá, em conformidade com as normas de apresentação tabular do IBGE e com as normas da Associação Brasileira de Normas Técnicas (ABNT) para trabalhos técnico-científicos. Além da caracterização descritiva por sexo, idade, cor ou raça, município e situação educacional, apresentam-se a análise da dinâmica diagnóstica por coorte de nascimento e projeções do contingente de pessoas com diagnóstico de autismo até 2040, com explicitação de hipóteses e quantificação de incertezas.`));
+pre.push(P(`O estudo é de autoria de Dr. Patrício Almeida, responsável pela concepção, pela análise dos dados e pela redação.`));
 pre.push(P(`Espera-se que o documento sirva de referência para gestores, profissionais de saúde e educação, pesquisadores, organizações da sociedade civil e famílias, e que contribua para o aperfeiçoamento das políticas de identificação, cuidado e inclusão das pessoas autistas no Amapá.`));
 pre.push(PB());
 // Resumo (NBR 6028)
@@ -405,7 +410,7 @@ fs.writeFileSync('out_abnt/captions.json',JSON.stringify({graf:grafList,tab:tabL
 const headerNum=new Header({children:[new Paragraph({alignment:AlignmentType.RIGHT,children:[new TextRun({children:[PageNumber.CURRENT],font:FONT,size:20})]})]});
 const emptyHeader=new Header({children:[new Paragraph({children:[]})]});
 const doc=new Document({
-  creator:'Estudo técnico',title:'Caracterização do Autismo no Amapá: evidências do Censo Demográfico 2022, análise de coortes e projeções 2022-2040',language:'pt-BR',
+  creator:'Dr. Patrício Almeida',title:'Caracterização do Autismo no Amapá: evidências do Censo Demográfico 2022, análise de coortes e projeções 2022-2040',language:'pt-BR',
   styles:{default:{document:{run:{font:FONT,size:24}}},
     paragraphStyles:[
       {id:'Heading1',name:'Heading 1',basedOn:'Normal',next:'Normal',quickFormat:true,run:{font:FONT,size:24,bold:true,allCaps:true},paragraph:{spacing:{before:0,after:360,line:360},keepNext:true,outlineLevel:0}},
